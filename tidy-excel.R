@@ -116,3 +116,10 @@ while(x <= nrow(df)) {
     x <- x + 1
   }
 }
+
+# removes data frames we don't need from your environment
+rm(v, ref, opposites, d)
+
+# removes values we don't neeed from your environment
+# some values about players and match event locations you might find useful
+rm(e, posslocations, deflocations, x)
