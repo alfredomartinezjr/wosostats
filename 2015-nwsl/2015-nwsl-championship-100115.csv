@@ -315,7 +315,8 @@
 11,11,0,0,288,"20","M","FCKC","O'Reilly","take.on.lost","OPP.3RD.C",NA,NA,NA,"M","SRFC","Winters","tackles.wins.ball","DEF.3RD.C",NA,NA,NA,NA
 11,11,0,0,289,"20","M","SRFC","Winters","passes.f.c","DEF.3RD.C","DEF.MID.3RD.L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 11,11,0,0,290,"20","F","SRFC","Rapinoe","passes.s.c","OPP.3RD.C","OPP.3RD.C",NA,"unscored.key.passes",NA,NA,NA,NA,NA,NA,NA,NA,NA
-11,11,0,0,291,"20","M","SRFC","Little","shots.stopped.by.gk","OPP.3RD.C",NA,NA,"big.chances.shot.on.goal","GK","FCKC","Barnhart","gk.shot.on.goal.faced","DEF.6.YD","collected","standing.save",NA,"big.chances.stopped"
+11,11,0,0,291,"20","M","SRFC","Little","shots.stopped.by.gk","OPP.3RD.C",NA,NA,NA,"GK","FCKC","Barnhart","gk.shot.on.goal.faced","DEF.6.YD","collected","standing.save",NA,"big.chances.stopped"
+11,11,0,0,291,"20",NA,NA,NA,NA,NA,NA,NA,NA,NA,"FCKC","Sauerbrunn","pressured.opp","DEF.18.YD",NA,NA,NA,NA
 11,11,0,0,292,"20",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 11,11,0,0,293,"20","M","SRFC","Fishlock","passes.s.c","DEF.MID.3RD.C","DEF.MID.3RD.R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 11,11,0,0,294,"20","D","SRFC","Fletcher","passes.b.c","OPP.MID.3RD.R","DEF.MID.3RD.R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
