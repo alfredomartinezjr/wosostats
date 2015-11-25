@@ -117,9 +117,30 @@ while(x <= nrow(df)) {
   }
 }
 
+d <- df
+
 # removes data frames we don't need from your environment
-rm(v, ref, opposites, d)
+rm(v, ref, opposites, df)
 
 # removes values we don't neeed from your environment
 # some values about players and match event locations you might find useful
 rm(e, posslocations, deflocations, x)
+
+## Change relevant columns to character type
+d$poss.position <- as.character(d$poss.position)
+d$poss.team <- as.character(d$poss.team)
+d$poss.player <- as.character(d$poss.player)
+d$poss.player.event <- as.character(d$poss.player.event)
+d$poss.location <- as.character(d$poss.location)
+d$poss.destination <- as.character(d$poss.destination)
+d$ball.type <- as.character(d$ball.type)
+d$poss.notes <- as.character(d$poss.notes)
+d$def.position <- as.character(d$def.position)
+d$def.team <- as.character(d$def.team)
+d$def.player <- as.character(d$def.player)
+d$def.event <- as.character(d$def.event)
+d$def.location <- as.character(d$def.location)
+d$gk.ball.result <- as.character(d$gk.ball.result)
+d$gk.s.o.g.attempt <- as.character(d$gk.s.o.g.attempt)
+d$def.player.disciplinary <- as.character(d$def.player.disciplinary)
+d$def.notes <- as.character(d$def.notes)
