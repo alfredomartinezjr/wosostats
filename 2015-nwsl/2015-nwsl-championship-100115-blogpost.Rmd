@@ -36,9 +36,11 @@ source("https://github.com/amj2012/nwsl-stats/raw/master/analysis-functions.R")
 
 I went through the 2015 NWSL Championship watch, which is freely available on YouTube, logged a bunch of stats, and put the results into this R Markdown document.
 
-That's the short of it. To read more about the process and learn more about how you can do this yourself, scroll to the bottom. The basics is that I tracked every match "event" out of a list of 150 different events (e.g. forward passes completed, take ons won, aerial duels won, etc.) onto an Excel spreadsheet, filled in the blanks and converted the file into a csv file, and analyzed what I wanted with R. 
+That's the short of it. The basics is that I tracked every match "event" out of a list of 150 different events (e.g. forward passes completed, take ons won, aerial duels won, etc.) onto an Excel spreadsheet, filled in the blanks and converted the file into a csv file, and analyzed what I wanted with R. 
 
 I'd ideally want to turn this into a dynamic document where you can play with the stats yourself and analyze a variety of matches and players, but right now I only have this match. I'm going to start tracking more matches, ideally for more than the NWSL, but definitely starting with the NWSL season, but I'll never get it done if I'm the only one tracking this. (I don't know of another site on the web that has advanced soccer stats like these for women's soccer. Help!)
+
+I'd love to get help from people if anyone wants to start logging match stats so that they can be analyzed like this, but I first need to write down a how-to for how I did this and list out a pretty precise definition for each match event. For now, here's what I was able to do with this one match.
 
 Table of Contents
 ---
@@ -160,7 +162,7 @@ print(t3, digits=2)
 
 ```
 
-## Shot Location
+### Shot Location
 *I split up the field into opponent, middle, and defensive thirds and into left, center, and right sides of the fields. I also noted if a play occurred in the 18 or 6 yard box. If it gets kinda hard to read, just remember that OPP means the opponent's third of the field, MID refers to the middle third, DEF refers to the defensive third. The letters R, C, and L refer to right, center, and left sides of the field, respectively.*
 ```{r shot_location, echo=FALSE, comment=NA}
 t <- createCleanDataFrame(c("shots", "accuracy", "shots.scored", "shots.stopped.by.gk", "shots.stopped.by.def", "shots.blocked.by.def", "shots.missed") ,"poss.player.event", d)
@@ -204,7 +206,7 @@ names(t4) <- c("Completed", "Pct", "Attempts", "Corner", "Long")
 print(t4, digits=2)
 ```
 
-## Through Balls
+### Through Balls
 *Through balls are defined as passes that split the defense and are intended to meet a teammate, running past a defender, at the end of their run*
 ```{r through_balls, echo=FALSE, comment=NA}
 t <- createCleanDataFrame(c("through.balls"), "ball.type", d)
@@ -227,7 +229,8 @@ print(t2, digits=2)
 **Observations**: Honestly, most of this game appears to have occured in the midfield. Despite there being 16 shots, there were very few big chances allowed by either defense, which was to be expected from what many thought were two of the best defenses in the league. Half the key passes came from the one goal, which featured an incredible **Lauren Holiday** pass from deep down the field. **Heather O'Reilly's** workrate is worth noting, however; she had more cross attempts (8) and through ball attempts (6) than anyone else on the field
 
 #Passing Stats
-## All Pass Attempts
+
+### All Pass Attempts
 ```{r overall_passing, echo=FALSE, comment=NA}
 t <- createCleanDataFrame(c("passes.f.c", "passes.f.b", "passes.f.m", 
                     "passes.s.c", "passes.s.b", "passes.s.m", "passes.b.c", 
@@ -271,7 +274,7 @@ passlocation <- cbind("Player" = rownames(passlocation), passlocation)
 
 ```
 
-## Passing in the Attacking Third
+### Passing in the Attacking Third
 ```{r attack_3rd_passing, echo=FALSE, comment=NA}
 t2 <- createCleanDataFrame(c("OPP.6.YD","OPP.18.YD","OPP.3RD.L","OPP.3RD.C","OPP.3RD.R"), "poss.destination", t)
 
@@ -289,7 +292,7 @@ print(t3, digits=2)
 
 ```
 
-## Passing in the Middle Third
+### Passing in the Middle Third
 ```{r middle_3rd_passing, echo=FALSE, comment=NA}
 t2 <- createCleanDataFrame(c("OPP.MID.3RD.L","OPP.MID.3RD.C","OPP.MID.3RD.R","DEF.MID.3RD.L","DEF.MID.3RD.C", "DEF.MID.3RD.R"), "poss.destination", t)
 
@@ -308,7 +311,7 @@ print(t3, digits=2)
 
 ```
 
-## Passing in the Defensive Third
+### Passing in the Defensive Third
 ```{r defensive_3rd_passing, echo=FALSE, comment=NA}
 t2 <- createCleanDataFrame(c("DEF.3RD.L","DEF.3RD.C", "DEF.3RD.R","DEF.18.YD","DEF.6.YD"), "poss.destination", t)
 
@@ -326,7 +329,7 @@ print(t3, digits=2)
 
 ```
 
-## Passing Under Pressure
+### Passing Under Pressure
 *"Pct.of.Passes" refers to the percentage of all pass attempts by a player that were under pressure*
 ```{r passing_under_pressire, echo=FALSE, comment=NA}
 t2 <- addColumnForQualifier("pressure", "pressured.opp", "def.event", d, t)
@@ -374,7 +377,7 @@ And this is where we put a number to **Kim Little's** woes during that game, who
 
 #Possession Stats
 
-##Take Ons and Dispossessions
+###Take Ons and Dispossessions
 *A take on is an attempt by a player to get past their opponent. To be "Dispossessed" means that a player lost the ball without attempting to beat the player; usually the result of a bad touch that goes too far or getting snuck up from behind.*
 ```{r take_ons, echo=FALSE, comment=NA}
 t <- createCleanDataFrame(c("take.on.won", "take.on.lost", "dispossessed"),"poss.player.event", d)
@@ -389,7 +392,7 @@ names(t2) <- c("Won", "Pct", "Attempts", "Lost", "Dispossessed")
 print(t2, digits=2)
 ```
 
-##Aerial Duels
+###Aerial Duels
 *An aerial duel is a challenge for a 50/50 ball in the air. It's important to note that the first person to the ball is deemed the winner of the duel, regardless of whether the ball ended up being recovered by the other team. Those "second ball" opportunities are something that might be worth tracking in the future.*
 ```{r aerial_duels, echo=FALSE, comment=NA}
 t <- createDataFrame(c("aerial.challenges.won", "aerial.challenges.lost"), "poss.player.event", d)
@@ -486,7 +489,7 @@ names(t2) <- c("Total", "In Def 3rd", "In Mid 3rd", "In Opp 3rd")
 print(t2, digits=2)
 ```
 
-##Blocks & Clearances
+###Blocks & Clearances
 *Overall passes blocked are tracked here. Goalkeepers aren't counted here; they have a separate category below*
 ```{r clearances_shields_blocks, echo=FALSE, comment=NA}
 t <- createDataFrame(c("clearances", "passes.blocked", "shots.blocked"), "def.event", d)
@@ -506,7 +509,7 @@ print(t2, digits=2)
 
 #Goalkeeper Stats
 
-##Shots Faced
+###Shots Faced
 ```{r gk_shots_faced, echo=FALSE, comment=NA}
 t <- createDataFrame(c("gk.shot.on.goal.faced"), "def.event", d)
 t <- t[!is.na(t[,"gk.ball.result"]),c(5:6,14:21)]
@@ -580,7 +583,7 @@ print(t2, digits=2)
 t <- createDataFrame("smother", "def.event", d)
 ```
 
-##Distribution
+###Distribution
 *A LOT of goal kicks and throws from the goalkeepers were cut off by the broadcast, which often cut into play and prevented me from seeing what the goalkeeper did with the ball after her team won the ball. Those instances of the broadcast cutting off the play are not counted in this table. This doesn't count passes in open play, and this is a section I'd like to flesh out more as I get more data from more matches.*
 ```{r distribution, echo=FALSE, comment=NA}
 t <- createDataFrame(c("free.kick.pass", "goal.kick", "gk.short.throws", "gk.long.throws", "gk.drop.kick"), "ball.type", d)
@@ -609,6 +612,5 @@ print(t2, digits=2)
 * The full match can be seen at [https://www.youtube.com/watch?v=AD5jqwDieiE](https://www.youtube.com/watch?v=AD5jqwDieiE).
 * The csv file with all the match events from which this analysis is source [can be found here on GitHub.](https://github.com/amj2012/woso-stats/blob/master/2015-nwsl/2015-nwsl-championship-100115.csv)
 * The raw Excel file, in all it's ugliness, with the blank spots that I filled in with some help from R (more on that below), [cab also be found here on GitHub.](https://github.com/amj2012/woso-stats/blob/master/2015-nwsl/2015-nwsl-championship-100115.xlsx)
-* If you have R Studio, can view this entire page and all the source code behind each table by downloading the R Markdown file here on GitHub.
-
-# How I Did This (And So Can You!)
+* If you have R Studio, can view this entire page and all the source code behind each table by [downloading the R Markdown file here on GitHub.](https://github.com/amj2012/woso-stats/blob/master/2015-nwsl/2015-nwsl-championship-100115-blogpost.Rmd)
+* The R files I used to tidy the original raw Excel file and to help create the tables [can be found here on GitHub.](https://github.com/amj2012/woso-stats)

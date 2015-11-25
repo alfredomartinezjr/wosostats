@@ -1,16 +1,13 @@
 ---
-title: "NWSL Championship 2015"
+title: "NWSL Championship 2015 Stats"
 output: html_document
 runtime: shiny
 ---
-![alt text](http://i.imgur.com/XnkhZ2z.jpg)
 
-Intro
+What this is
 ---
 
-
-This R Markdown document is an exploratory analysis of the updated stats from Template 2 I measured from the Thorns-Breakers match from April 11, 2015. The full match can be seen here: <https://www.youtube.com/watch?v=8rXqnzA58-A>. The csv file with the stats is named 
-"thorns-breakers-041115-2.csv"
+This is an R Markdown document that 
 
 The purpose of this document is to explore how effective the stats I measured are for determining the effectiveness of the Portland Thorns both as individual players and as a team. I will also explore how these stats, which are different from the Template 1 stats I used for the Thorns-Red Stars match from April 25, 2015, compare as a what-should-be more effective set of metrics.
 
@@ -34,6 +31,25 @@ library(dplyr)
 
 ## KANSAS CITY-only
 ## dnotused <- d[d[,"poss.team"] == "FCKC" & d[,"poss.player"] != " ",]
+
+## Change relevant columns to character type
+d$poss.position <- as.character(d$poss.position)
+d$poss.team <- as.character(d$poss.team)
+d$poss.player <- as.character(d$poss.player)
+d$poss.player.event <- as.character(d$poss.player.event)
+d$poss.location <- as.character(d$poss.location)
+d$poss.destination <- as.character(d$poss.destination)
+d$ball.type <- as.character(d$ball.type)
+d$poss.notes <- as.character(d$poss.notes)
+d$def.position <- as.character(d$def.position)
+d$def.team <- as.character(d$def.team)
+d$def.player <- as.character(d$def.player)
+d$def.event <- as.character(d$def.event)
+d$def.location <- as.character(d$def.location)
+d$gk.ball.result <- as.character(d$gk.ball.result)
+d$gk.s.o.g.attempt <- as.character(d$gk.s.o.g.attempt)
+d$def.player.disciplinary <- as.character(d$def.player.disciplinary)
+d$def.notes <- as.character(d$def.notes)
 
 ```
 
