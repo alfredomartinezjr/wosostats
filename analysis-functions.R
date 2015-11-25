@@ -50,7 +50,7 @@ fillBlanks <- function(df) {
   x <- 1
   while (x <= nrow(df)) {
     if (is.na(df[x,"poss.player"])) {
-      df[x,7:13] <- df[x-1,7:13] 
+      df[x,7:14] <- df[x-1,7:14] 
       x <- x + 1
     } else {
       x <- x + 1
@@ -88,6 +88,6 @@ createCleanDataFrame <- function(pattern, col, df) {
   
   ## Create the data.frame from which we will create the final table
   ## Takes only unique instances of "event" numbers
-  t <- t[!duplicated(t$event),c("event", "time", "poss.team", "poss.player" ,"poss.player.event", "poss.location", "ball.type", "poss.notes")]
+  t <- t[!duplicated(t$event),c("event", "time","poss.position", "poss.team", "poss.player" ,"poss.player.event", "poss.location", "poss.destination" ,"ball.type", "poss.notes")]
   t
 }
