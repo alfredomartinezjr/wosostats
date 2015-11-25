@@ -49,7 +49,7 @@ createDataFrame <- function(pattern, col, df) {
 fillBlanks <- function(df) {
   x <- 1
   while (x <= nrow(df)) {
-    if (df[x,"poss.player"] == "") {
+    if (is.na(df[x,"poss.player"])) {
       df[x,7:13] <- df[x-1,7:13] 
       x <- x + 1
     } else {
