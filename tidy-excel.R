@@ -1,9 +1,9 @@
 ## Functions for reading and tidying up a raw Excel file of match stats
+## and turning it into a data.frame in your environment
+
 ## Install if necessary
 require(xlsx)
-## Takes string "matchlocation", which should be the raw GitHub URL of 
-## the match stats Excel spreadsheet you want to analyze, and uses that string
-## to locate the Excel spreadsheet in GitHub and writes is as data.frame "d"
+
 ## IMPORTANT: "matchlocation" must be set as a string value, or this won't work
 ##
 ## Might take a while to create. Takes about two minutes. Hold tight.
