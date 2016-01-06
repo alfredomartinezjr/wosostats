@@ -9,7 +9,7 @@ There are the obvious types of actions, such as shots, pass attempts, take ons. 
 
 Say a player takes on a defender, the defender tackles the ball away from her, and a second defender recovers the ensuing loose ball. The player who took on the defender is credited with a “take.on.lost” action in the “poss.player.action” column, the defender who tackled the ball away is credited with a “tackles.ball.away” action in the “def.event.action” column, AND the second defender who recovered the loose ball and wins possession for her team triggers a new event since the  “def.recoveries” action that gets credited to her falls is to be logged in the “poss.player.action” column.
 
-Shots
+##Shots
 Shots stopped by the goalkeeper
 shots.stopped.by.gk
 A shot that would have been scored but for being stopped by a goalkeeper's save
@@ -20,7 +20,7 @@ Shots stopped by a defender
 shots.stopped.by.def
 A shot that would have been scored but for being blocked by a defender who was the last defender
 
-![](http://i.imgur.com/sasP8Jn.gif)
+![](http://i.imgur.com/1rI71JW.gif)
 
 Shots blocked by a defender
 shots.blocked.by.def
@@ -35,4 +35,4 @@ Shots scored
 shots.scored
 A shot that goes into the goal
 
-![](http://i.imgur.com/7aQaxMn.gif)
+![](http://i.imgur.com/6NCHYA6.gif)
