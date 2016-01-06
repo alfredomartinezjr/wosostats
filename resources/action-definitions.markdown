@@ -28,8 +28,11 @@ A shot heading towards the goal that was blocked by a defender who had other def
 Shots missed
 shots.missed
 A shot that misses the goal or hits the post or crossbar.
-http://i.imgur.com/e0BpEze.gif
+
+![](http://i.imgur.com/e0BpEze.gif)
+
 Shots scored
 shots.scored
 A shot that goes into the goal
-http://i.imgur.com/7aQaxMn.gif
+
+![](http://i.imgur.com/7aQaxMn.gif)
