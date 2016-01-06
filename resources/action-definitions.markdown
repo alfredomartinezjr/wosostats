@@ -29,7 +29,7 @@ Shots missed
 shots.missed
 A shot that misses the goal or hits the post or crossbar.
 
-![](http://i.imgur.com/e0BpEze.gif)
+![](http://i.imgur.com/Dp3hVaX.gif?1)
 
 Shots scored
 shots.scored
