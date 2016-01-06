@@ -14,7 +14,7 @@ Shots stopped by the goalkeeper
 shots.stopped.by.gk
 A shot that would have been scored but for being stopped by a goalkeeper's save
 
-![](http://i.imgur.com/REK3TLU.gif)
+![](https://i.imgur.com/REK3TLU.gif)
 
 Shots stopped by a defender
 shots.stopped.by.def
