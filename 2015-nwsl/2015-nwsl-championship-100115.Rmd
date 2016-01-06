@@ -25,6 +25,10 @@ These are all the pass events for Rachel Van Hollebeke, just to test things out.
 ```{r, echo=FALSE, comment=NA, include=FALSE}
 library(plyr)
 library(dplyr)
+require(RCurl)
+
+d <- getURL("https://raw.githubusercontent.com/amj2012/woso-stats/master/2015-nwsl/2015-nwsl-championship-100115.csv")
+d <- read.csv(textConnection(d))
 
 ## FOR SEATTLE-only
 ## dnotused <- d[d[,"poss.team"] == "SRFC" & d[,"poss.player"] != " ",]
@@ -50,6 +54,9 @@ d$gk.ball.result <- as.character(d$gk.ball.result)
 d$gk.s.o.g.attempt <- as.character(d$gk.s.o.g.attempt)
 d$def.player.disciplinary <- as.character(d$def.player.disciplinary)
 d$def.notes <- as.character(d$def.notes)
+
+source("https://github.com/amj2012/nwsl-stats/raw/master/analysis-functions.R")
+
 
 ```
 
