@@ -35,4 +35,4 @@ Shots scored
 shots.scored
 A shot that goes into the goal
 
-![](http://i.imgur.com/6NCHYA6.gif)
+![](http://i.imgur.com/6NCHYA6.gif?1)
