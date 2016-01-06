@@ -19,7 +19,9 @@ A shot that would have been scored but for being stopped by a goalkeeper's save
 Shots stopped by a defender
 shots.stopped.by.def
 A shot that would have been scored but for being blocked by a defender who was the last defender
-http://i.imgur.com/sasP8Jn.gif
+
+![](http://i.imgur.com/sasP8Jn.gif)
+
 Shots blocked by a defender
 shots.blocked.by.def
 A shot heading towards the goal that was blocked by a defender who had other defenders or the goalkeeper behind her.
