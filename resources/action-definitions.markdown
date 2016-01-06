@@ -12,6 +12,7 @@ Say a player takes on a defender, the defender tackles the ball away from her, a
 ##Shots
 ###Shots stopped by the goalkeeper
 *shots.stopped.by.gk*
+
 A shot that would have been scored but for being stopped by a goalkeeper's save
 
 ![](http://i.imgur.com/SKaaerO.gif)
