@@ -117,16 +117,85 @@ A player is deemed to have lost an aerial duel if she
 
 **Clearances**
 
+`playcutoffbybroadcast`
+
+`offside.calls`
+
+`stoppage.in.play`
+
+`substitution.on`
+
+`substitution.off`
+
+`halftime`
+
+`fulltime`
+
+`end.of.1.ET`
+
+`end.of.2.ET`
+
+`end.of.match`
+
 #Play Types
 Column name: `play.type`
 
-Defensive Plays
-interceptions
-def.recoveries
-poss.recoveries
-balls.shielded
-clearances
+`corner.crosses`
 
-Miscellaneous
-playcutoffbybroadcast
-offside.calls
+`deep.crosses`
+
+`switch`
+
+`launch`
+
+`through`
+
+`lay.off`
+
+`flick.on`
+
+`throw.in`
+
+`free.kick`
+
+`headed`
+
+`corner.kick`
+
+`goal.kick`
+
+`gk.throws`
+
+`gk.drop.kick`
+
+`pk`
+
+#Defensive Player Actions
+Column name: `def.action`
+
+dispossess.ball.shield
+dispossess.steal
+dispossess.lost.touch
+tackles.ball.away
+tackles.ball.won
+dribbled.tackles.missed
+dribbled.out.run
+dribbled.turned
+pressured
+challenged
+blocks
+interceptions
+ball.shield
+clearances
+aerial.won
+aerial.lost
+gk.s.o.g.stop
+gk.s.o.g.def.stop
+gk.s.o.g.scored
+gk.shot.miss
+gk.high.balls.won
+gk.high.balls.lost
+gk.smothers.won
+gk.smothers.lost
+gk.loose.balls.won
+gk.loose.balls.lost
