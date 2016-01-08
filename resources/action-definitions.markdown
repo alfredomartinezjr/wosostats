@@ -22,59 +22,43 @@ Column name: `poss.player.action`
 
 The actions below will be tracked under the `poss.player.action` column. As the name suggests, these are actions by a player on a team "in possession” of the ball. 
 
-* **Shots stopped by the goalkeeper** - `shots.stopped.by.gk`
+**Shots stopped by the goalkeeper** - `shots.stopped.by.gk`
 
 A shot that would have been scored but for being stopped by a goalkeeper's save
 
 ![](http://i.imgur.com/SKaaerO.gif)
 
-* **Shots stopped by a defender** - `shots.stopped.by.def`
+**Shots stopped by a defender** - `shots.stopped.by.def`
 
 A shot that would have been scored but for being blocked the last defender behind the goalkeeper
 
 ![](http://i.imgur.com/1rI71JW.gif)
 
-* **Shots blocked by a defender** - `shots.blocked.by.def`
+**Shots blocked by a defender** - `shots.blocked`
 
-A shot heading towards the goal that was blocked by a defender who had other defenders or the goalkeeper behind her.
+A shot heading towards the goal that was blocked by a defender who had other defenders and/or the goalkeeper behind her.
 
-* **Shots missed** - `shots.missed`
+**Shots missed** - `shots.missed`
 
 A shot that misses the goal or hits the post or crossbar.
 
 ![](http://i.imgur.com/Dp3hVaX.gif?1)
 
-* **Shots scored** - `shots.scored`
+**Shots scored** - `shots.scored`
 
 A shot that goes into the goal. Easy!
 
-Pass Attempts
-Passes attempts, intentional balls played to another player, are broken down in this category by direction (forward, sideways, backwards) and result (completed, backwards, missed)
+**Forward pass attempts** - `passes.f`
 
-A completed pass attempt is a pass attempt that results in the intended recipient either possessing the ball or being put in a position where she is expected to have maintained possession of the ball.
+Forward pass attempts, regardless of whether the pass attempt was completed
 
-A blocked pass attempt is a pass attempt that was prevented from reaching its intended recipient by a defender who got in the way of the pass attempt. This includes clearances and interceptions. If a pass was deflected but still reached the intended recipient, it does not count as a blocked pass.
+**Sideway pass attempts** - `passes.s`
 
-A missed pass attempt is a pass attempt, unblocked by a defender, which missed the intended recipient.
+Sideway pass attempts, regardless of whether the pass attempt was completed 
 
-Forward pass attempts completed
-passes.f.c
-Forward pass attempts blocked
-passes.f.b
-Forward pass attempts missed
-passes.f.m
-Sideway pass attempts completed
-passes.s.c
-Sideway pass attempts blocked
-passes.s.b
-Sideway pass attempts missed
-passes.s.m
-Sideway pass attempts missed
-passes.b.c
-Sideway pass attempts missed
-passes.b.b
-Sideway pass attempts missed
-passes.b.m
+**Backward pass attempts** - `passes.b`
+
+Backward pass attempts, regardless of whether the pass attempt was completed 
 
 Possession
 Movement to another zone (for more on zones of a field, refer to the location how-to). Each movement from one zone to another should be tracked separately.
