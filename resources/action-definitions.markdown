@@ -272,3 +272,39 @@ Column names: `poss.player.disciplinary` & `def.player.disciplinary`
 
 `penalties.conceded`
 
+poss.notes
+big.chances.scored
+big.chances.shot.on.goal
+big.chances.dispossessed
+big.chances.shot.missed
+assists
+second.assists
+unscored.key.passes
+out.of.bounds.keep.poss
+out.of.bounds.lost.poss
+errors.to.goals
+errors.to.big.chances
+
+def.notes
+big.chances.stopped
+own.goals
+errors.to.goals
+errors.to.big.chances
+
+poss.location poss.play.destination def.location
+A6
+A18
+A3L
+A3C
+A3R
+AM3L
+AM3C
+AM3R
+DM3L
+DM3C
+DM3R
+D3L
+D3C
+D3R
+D18
+D6
