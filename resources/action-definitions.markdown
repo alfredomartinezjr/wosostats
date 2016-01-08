@@ -7,10 +7,18 @@
 * Other Notes - `poss.notes` & `def.notes`
 * Location-based Notes - `poss.location`, `poss.play.destination`, & `def.location`
 
+Below is a list of definitions for values to be used when logging match stats in the match-stats-template.xlsx Excel document. These values are player actions, such as passes and fouls, which take up most of this document, and location data, which merits its own section. When logging stats, refer to this document when in doubt about what a certain value means and when to log it. Feedback is welcome.
+
+Each player action falls under one of nine different types of actions. In the match-stats-templace.xlsx Excel document, this looks like nine different columns.
+
+A key part of this model is that during any given moment in a match there is a team in "possession" of the ball and a team "defending" the ball. As such, these nine different columns will fall into one of three different types of actions: 1) actions by a player from the team "in possession" of the ball, 2) actions by a player from the team "defending" against the ball, and 3) actions by a goalkeeper making a play on the ball.
+
+Location data will be logged, either manually or coded after the fact, for three different instances, which will be discussed in the "Location-based Notes" section.
+
+For each definition, the long name will be shown in **bold like this** and the logged name (the value that will actually be input into the spreadsheet) will be shown in `code span like this`. A GIF showing an example will be provided for a definition when appropriate and possible.
+
 #Possessing Player Actions
 Column name: poss.player.action
-
-A key part of the way this model tracks match stats is the idea that at any given moment a team or player for a team has “possession” of the ball, and the other team or a player from the other team is playing in “defense.” 
 
 The actions below will be tracked under the “poss.player.action” column. As the name suggests, they are actions that correspond to the player who belongs to the team deemed to be in “possession” of the ball. 
 
