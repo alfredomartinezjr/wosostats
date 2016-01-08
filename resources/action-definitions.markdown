@@ -1,3 +1,12 @@
+#Table of Contents
+* Possessing Player Actions - `poss.action`
+* Play Type - `play.type`
+* Defensive Player Actions - `def.action`
+* Goalkeeper Actions - `gk.ball.stop` & `gk.s.o.g.attempt`
+* Disciplinary Actions - `poss.player.disciplinary` & `def.player.disciplinary`
+* Other Notes - `poss.notes` & `def.notes`
+* Location-based Notes - `poss.location`, `poss.play.destination`, & `def.location`
+
 #Possessing Player Actions
 Column name: poss.player.action
 
