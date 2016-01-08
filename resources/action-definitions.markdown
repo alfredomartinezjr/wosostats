@@ -63,7 +63,7 @@ Backward pass attempts, regardless of whether the pass attempt was completed
 **Movement into another zone** - `movement`
 When a player moves from one "zone" (zone definitions are outlined in the "Location-based Data" section below) into another "zone." If a player consecutively moves from one zone into another, each instance should be tracked separately.
 
-Examples: http://i.imgur.com/mYoa9eF.gif
+Example: [http://i.imgur.com/mYoa9eF.gif](http://i.imgur.com/mYoa9eF.gif)
 
 In the GIF above, Leigh Ann Brown, the player in white and blue, moves with the ball from her defensive right third, to her defensive right middle third, to the opposing right middle third, to her opposing right third. This should be logged as three separate 'movement' events.
 
