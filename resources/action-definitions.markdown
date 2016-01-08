@@ -18,7 +18,7 @@ Location data will be logged, either manually or coded after the fact, for three
 For each definition, the long name will be shown in **bold like this** and the logged name (the value that will actually be input into the spreadsheet) will be shown in `code span like this`. A GIF showing an example will be provided for a definition when appropriate and possible.
 
 #Possessing Player Actions
-Column name: `poss.player.action`
+Column name: `poss.action`
 
 The actions below will be tracked under the `poss.player.action` column. As the name suggests, these are actions by a player on a team "in possession” of the ball. 
 
@@ -86,21 +86,39 @@ Megan Rapinoe, the player in yellow and purple, wins a take on against Erika Tym
 
 **Take ons lost** - `take.on.lost`
 
-A take on is “lost” if the ball is tackled away, regardless of who recovers the ball or where it ends up.
+A take on is “lost” if the ball is tackled away, regardless of who recovers the ball or where it ends up, or if the player loses possession through a lost touch or a ball shield.
 
 Example: [http://i.imgur.com/n0ThErg.gif](http://i.imgur.com/n0ThErg.gif)
 
 Different take on attempts can occur in succession and should be logged separately. Here, Kim Little, the player in yellow and purple, wins a take on against #6 Jen Buczkowski by dribbling through her tackle attempt, but Little proceeds to lose the following take on attempt against #3 Becca Moros, who steps up to tackle the ball away from her.
 
-A dispossession is when the possessing player is dispossessed off the ball without attemping to “take on” her defender. This is meant to encompass moments such as a bad touch on the ball, being shielded away from ones own ball, or losing the ball to a defender who snuck up from behind.
-dispossessed
-Examples:
-Jess Fishlock, the player in yellow and purple, receives a pass from Kim Little but loses the ball to Maddy Laddish, in the white and blue, due to a bad first touch. Since it is not clear that Fishlock was attempting to take on Laddish with that touch, this is logged as a dispossession: http://i.imgur.com/9CaWO5l.gif
-Keelin Winters, the player in yellow and purple who receives the pass, is dispossessed from behind by Jen Buczkowski, in the white and blue. Since it does not appear like Winters did not have a chance to attempt a take on, this is logged as a dispossession: http://i.imgur.com/wfXAGUx.gif
+**Dispossessed of the ball** - `dispossessed`
 
-Aerial duels are when two players challenge in the air for a 50/50 ball. 
-aerial.challenges.won
-aerial.challenges.lost
+A dispossession is when the player in possession of the ball loses the ball to a defender without attemping to “take on” the defender. This is different from a lost take on in that it encompasses moments such as a bad touch on the ball or losing the ball to a defender who snuck up from behind.
+
+Example 1: [http://i.imgur.com/9CaWO5l.gif](http://i.imgur.com/9CaWO5l.gif)
+
+Jess Fishlock, the player in yellow and purple, receives a pass from Kim Little but loses the ball to Maddy Laddish, in the white and blue, due to a bad first touch. Since it is not clear that Fishlock was attempting to take on Laddish with that touch, this is logged as a dispossession: 
+
+Example 2: [http://i.imgur.com/wfXAGUx.gif](http://i.imgur.com/wfXAGUx.gif)
+Keelin Winters, the player in yellow and purple who receives the pass, is dispossessed from behind by Jen Buczkowski, in the white and blue. Since it does not appear like Winters had a chance to attempt a take on, this is logged as a dispossession.
+
+**Aerial duels won** - `aerial.won`
+
+Aerial duels are when two players challenge for a 50/50 ball in the air. In the `poss.action` column, The first player to make contact with the ball is deemed to have won the aerial duel, regardless of where the ball ends up or who recovers it.
+
+**Aerial duels lost** - `aerial.lost`
+
+A player is deemed to have lost an aerial duel if she
+
+**Recoveries**
+
+**Balls shielded**
+
+**Clearances**
+
+#Play Types
+Column name: `play.type`
 
 Defensive Plays
 interceptions
