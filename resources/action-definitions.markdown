@@ -18,40 +18,35 @@ Location data will be logged, either manually or coded after the fact, for three
 For each definition, the long name will be shown in **bold like this** and the logged name (the value that will actually be input into the spreadsheet) will be shown in `code span like this`. A GIF showing an example will be provided for a definition when appropriate and possible.
 
 #Possessing Player Actions
-Column name: poss.player.action
+Column name: `poss.player.action`
 
-The actions below will be tracked under the “poss.player.action” column. As the name suggests, they are actions that correspond to the player who belongs to the team deemed to be in “possession” of the ball. 
+The actions below will be tracked under the `poss.player.action` column. As the name suggests, these are actions by a player on a team "in possession” of the ball. 
 
-There are the obvious types of actions, such as shots, pass attempts, take ons. There are also actions that result in the ball being lost such as being dispossessed or losing a bad touch on the ball.
-
-Say a player takes on a defender, the defender tackles the ball away from her, and a second defender recovers the ensuing loose ball. The player who took on the defender is credited with a “take.on.lost” action in the “poss.player.action” column, the defender who tackled the ball away is credited with a “tackles.ball.away” action in the “def.event.action” column, AND the second defender who recovered the loose ball and wins possession for her team triggers a new event since the  “def.recoveries” action that gets credited to her falls is to be logged in the “poss.player.action” column.
-
-##Shots
-###Shots stopped by the goalkeeper
-``*shots.stopped.by.gk*``
+* **Shots stopped by the goalkeeper** - `shots.stopped.by.gk`
 
 A shot that would have been scored but for being stopped by a goalkeeper's save
 
 ![](http://i.imgur.com/SKaaerO.gif)
 
-Shots stopped by a defender
-shots.stopped.by.def
-A shot that would have been scored but for being blocked by a defender who was the last defender
+* **Shots stopped by a defender** - `shots.stopped.by.def`
+
+A shot that would have been scored but for being blocked the last defender behind the goalkeeper
 
 ![](http://i.imgur.com/1rI71JW.gif)
 
-Shots blocked by a defender
-shots.blocked.by.def
+* **Shots blocked by a defender** - `shots.blocked.by.def`
+
 A shot heading towards the goal that was blocked by a defender who had other defenders or the goalkeeper behind her.
-Shots missed
-shots.missed
+
+* **Shots missed** - `shots.missed`
+
 A shot that misses the goal or hits the post or crossbar.
 
 ![](http://i.imgur.com/Dp3hVaX.gif?1)
 
-Shots scored
-shots.scored
-A shot that goes into the goal
+* **Shots scored** - `shots.scored`
+
+A shot that goes into the goal. Easy!
 
 Pass Attempts
 Passes attempts, intentional balls played to another player, are broken down in this category by direction (forward, sideways, backwards) and result (completed, backwards, missed)
