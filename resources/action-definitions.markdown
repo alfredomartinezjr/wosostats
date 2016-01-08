@@ -61,20 +61,36 @@ Sideway pass attempts, regardless of whether the pass attempt was completed
 Backward pass attempts, regardless of whether the pass attempt was completed 
 
 **Movement into another zone** - `movement`
+
 When a player moves from one "zone" (zone definitions are outlined in the "Location-based Data" section below) into another "zone." If a player consecutively moves from one zone into another, each instance should be tracked separately.
 
 Example: [http://i.imgur.com/mYoa9eF.gif](http://i.imgur.com/mYoa9eF.gif)
 
-In the GIF above, Leigh Ann Brown, the player in white and blue, moves with the ball from her defensive right third, to her defensive right middle third, to the opposing right middle third, to her opposing right third. This should be logged as three separate 'movement' events.
+In the GIF above, Leigh Ann Brown, the player in white and blue, moves with the ball from her defensive right third, into her defensive right middle third, into her opposing right middle third, to her opposing right third. This should be logged as three separate 'movement' events; one from defensive right third into defensive right middle third, one from defensive right middle third into opposing right middle third, and one from opposing right middle third into opposing right third.
 
-A take on is an attempt by a player to beat her defender and maintain possession of the ball. A take on is “won” if the player dribbles past a defender, turns a defender to create open space, or draws a foul. A take on is “lost” if the ball is tackled away
-take.on.won
-take.on.lost
-Examples:
-Mandy Laddish, the player in white and blue, wins a take on against Jess Fishlock, in the yellow and purple, by dribbling past a missed tackle: http://i.imgur.com/uTDOeay.gif
-Erika Tymrak, the player in white and blue, wins a take on against Kendall Fletcher, in the yellow and purple, by running right past her for a chance at a cross: http://i.imgur.com/GXS3exL.gif
-Megan Rapinoe, the player in yellow and purple, wins a take on against Erika Tymrak, in the white and blue, by turning her and dribbling past her into the open midfield: http://i.imgur.com/OVbQKZH.gif
-Different take on attempts can occur in succession and should be logged separately. Here, Kim Little, the player in yellow and purple, wins a take on against #6 Jen Buczkowski by dribbling through her tackle attempt, but Little proceeds to lose the following take on attempt against #3 Becca Moros, who steps up to tackle the ball away from her: http://i.imgur.com/n0ThErg.gif
+**Take ons won** - `take.on.won`
+
+A take on is an attempt by a player to get past her defender and maintain possession of the ball. A take on is “won” if the player dribbles past a defender, turns a defender to create open space, or draws a foul. 
+
+Example 1: [http://i.imgur.com/uTDOeay.gif](http://i.imgur.com/uTDOeay.gif)
+
+Mandy Laddish, the player in white and blue, wins a take on against Jess Fishlock, in the yellow and purple, by dribbling past a missed tackle
+
+Example 2:  [http://i.imgur.com/GXS3exL.gif](http://i.imgur.com/GXS3exL.gif)
+
+Erika Tymrak, the player in white and blue, wins a take on against Kendall Fletcher, in the yellow and purple, by running right past her for a chance at a cross.
+
+Example 3: [http://i.imgur.com/OVbQKZH.gif](http://i.imgur.com/OVbQKZH.gif)
+
+Megan Rapinoe, the player in yellow and purple, wins a take on against Erika Tymrak, in the white and blue, by turning her and dribbling past her into the open midfield: 
+
+**Take ons lost** - `take.on.lost`
+
+A take on is “lost” if the ball is tackled away, regardless of who recovers the ball or where it ends up.
+
+Example: [http://i.imgur.com/n0ThErg.gif](http://i.imgur.com/n0ThErg.gif)
+
+Different take on attempts can occur in succession and should be logged separately. Here, Kim Little, the player in yellow and purple, wins a take on against #6 Jen Buczkowski by dribbling through her tackle attempt, but Little proceeds to lose the following take on attempt against #3 Becca Moros, who steps up to tackle the ball away from her.
 
 A dispossession is when the possessing player is dispossessed off the ball without attemping to “take on” her defender. This is meant to encompass moments such as a bad touch on the ball, being shielded away from ones own ball, or losing the ball to a defender who snuck up from behind.
 dispossessed
