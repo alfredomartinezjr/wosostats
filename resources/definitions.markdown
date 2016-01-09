@@ -254,39 +254,75 @@ When a defender is turned and allows a possessing player to dribble past her. Us
 
 **Pressuring an opponent** - `pressured`
 
+When a defender applies pressure onto a possessing player's pass, shot, movement into another zone, ball shield, or recovery by stepping up, running at the player, or staying close in front of her, all with the intent of hurrying up the possessing player's play or impeding the possessing player's chance at making a play.
+
 **Challenging an opponent** - `challenged`
+
+Same as a `pressured` instance, except these are instances when a defender ends up making contact with a possessing player as she is making one of the aforementioned plays (pass, shot, movement into another zone, ball shield, recovery), further challening that possessing player's ability to make that play on the ball.
 
 **Blocks** - `blocks`
 
+When a defender blocks a pass or a shot and creates a loose ball situation that usually either goes out of bounds or is recovered by another player.
+
 **Interceptions** - `interceptions`
+
+When a defender blocks a pass (or sometimes a shot) and clearly wins possession of the ball.
 
 **Balls shielded** - `ball.shield`
 
+When a defender attempts to shields a loose ball that was in possession of the opposing team.
+
 **Clearances** - `clearances`
 
-**Aerial duels won** `aerial.won`
+When a defender intentionally kicks a ball away, without an intended recipient, that was played by the opposing team, without having clearly won possession of the ball. Otherwise, it would be considered an interception followed by a clearance logged in the `poss.action` column.
 
-**Aerial duels lost** `aerial.lost`
+**Aerial duels won** - `aerial.won`
 
-`gk.s.o.g.stop`
+Aerial duels are when two players challenge for a 50/50 ball in the air. The first player to make contact with the ball is deemed to have won the aerial duel, regardless of where the ball ends up or who recovers it.
 
-`gk.s.o.g.def.stop`
+**Aerial duels lost** - `aerial.lost`
 
-`gk.s.o.g.scored`
+A player is deemed to have lost an aerial duel if the player challenging her for the ball got to the ball first, regardless of where the ball ends up or who recovers it.
 
-`gk.shot.miss`
+**Shots on goal stopped by a goalkeeper** - `gk.s.o.g.stop`
 
-`gk.high.balls.won`
+Credited to a goalkeeper when a shot on goal is faced and stopped by the goalkeeper.
 
-`gk.high.balls.lost`
+**Shots on goal stopped by a defender** - `gk.s.o.g.def.stop`
 
-`gk.smothers.won`
+Credited to the last defender, behind the goalie, who stops a shot that would have been scored.
 
-`gk.smothers.lost`
+**Shots on goal scored** - `gk.s.o.g.scored`
 
-`gk.loose.balls.won`
+Credited to the goalkeeper when a goal is scored.
 
-`gk.loose.balls.lost`
+**Shots missed** - `gk.shot.miss`
+
+Credited to the goalkeeper when a shot is missed.
+
+**High balls won by the goalkeeper** - `gk.high.balls.won`
+
+When a goalkeeper faces a high ball, usually from a corner kick, cross, or launch ball, and wins it by either gaining possession of the ball or clearing the ball away.
+
+**High balls lost by the goalkeeper** - `gk.high.balls.lost`
+
+When a goalkeeper faces a high ball, usually from a corner kick, cross, or launch ball, and loses it by either mishandling it or completely missing the ball.
+
+**Smothers won by the goalkeeper** - `gk.smothers.won`
+
+When a goalkeeper faces a take on by an opposing player in the box and wins it by successfully coming out to either claim the ball or clear it to safety.
+
+**Smothers lost by the goalkeeper** - `gk.smothers.lost`
+
+When a goalkeeper faces a take on by an opposing player in the box and loses it by missing the ball, causing a foul, or mishandling the ball.
+
+**Loose balls claimed by the goalkeeper** - `gk.loose.balls.won`
+
+When a goalkeeper successfully claims a loose ball.
+
+**Loose balls lost by the goalkeeper** - `gk.loose.balls.lost`
+
+When a goalkeeper unsuccessfully comes out for a loose ball. Usually the result of mishandling the ball.
 
 #Goalkeeper Ball Stops
 Column name: `gk.ball.stop`
