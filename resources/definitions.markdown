@@ -388,26 +388,46 @@ Column names: `poss.player.disciplinary` & `def.player.disciplinary`
 
 `penalties.conceded`
 
-poss.notes
-big.chances.scored
-big.chances.shot.on.goal
-big.chances.dispossessed
-big.chances.shot.missed
-assists
-second.assists
-unscored.key.passes
-out.of.bounds.keep.poss
-out.of.bounds.lost.poss
-errors.to.goals
-errors.to.big.chances
+#Additional Possessing Player Notes
+Column name: `poss.notes`
 
-def.notes
-big.chances.stopped
-own.goals
-errors.to.goals
-errors.to.big.chances
+`big.chances.scored`
 
-poss.location poss.play.destination def.location
+`big.chances.shot.on.goal`
+
+`big.chances.dispossessed`
+
+`big.chances.shot.missed`
+
+`assists`
+
+`second.assists`
+
+`unscored.key.passes`
+
+`out.of.bounds.keep.poss`
+
+`out.of.bounds.lost.poss`
+
+`errors.to.goals`
+
+`errors.to.big.chances`
+
+#Additonal Defensive Player Notes
+Column name: `def.notes`
+
+`big.chances.stopped`
+
+`own.goals`
+
+`errors.to.goals`
+
+`errors.to.big.chances`
+
+
+#Location-based Notes
+Column names: `poss.location`, `poss.play.destination`, & `def.location`
+
 A6
 A18
 A3L
