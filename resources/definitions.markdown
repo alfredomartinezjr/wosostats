@@ -105,37 +105,55 @@ Keelin Winters, the player in yellow and purple who receives the pass, is dispos
 
 **Aerial duels won** - `aerial.won`
 
-Aerial duels are when two players challenge for a 50/50 ball in the air. In the `poss.action` column, The first player to make contact with the ball is deemed to have won the aerial duel, regardless of where the ball ends up or who recovers it.
+Aerial duels are when two players challenge for a 50/50 ball in the air. The first player to make contact with the ball is deemed to have won the aerial duel, regardless of where the ball ends up or who recovers it.
 
 **Aerial duels lost** - `aerial.lost`
 
-A player is deemed to have lost an aerial duel if she
+A player is deemed to have lost an aerial duel if the player challenging her for the ball got to the ball first, regardless of where the ball ends up or who recovers it.
 
-**Recoveries**
+**Recoveries** - `recoveries`
 
-**Balls shielded**
+A recovery is when a player gets posession of a loose ball.  In the `poss.action' column, a recovery should be logged to a player if the last player to have possession of the ball was on the same team. If a player on the opposing team interfered with the ball such as with (but not limited to) a block, a won aerial duel, a clearance, or a tackle. For a ball to change possession under this model, a player on the opposing team must have clear possession of the ball; otherwise, it's created a loose ball that is still technically under  "possession" by the other team and is thus recovered when a player wins it back.
 
-**Clearances**
+**Balls shielded** - `ball.shield`
 
-`playcutoffbybroadcast`
+A ball shield is when a player successfully and intentionally uses her body to shield the ball from a defender as it goes out of play.
 
-`offside.calls`
+**Clearances** - `clearances`
 
-`stoppage.in.play`
+A clearance is logged in the `poss.action` column when a player in possession of the ball intentionally kicks the ball away without an intended recipient.
 
-`substitution.on`
+**Offside Calls** - `offside.calls`
 
-`substitution.off`
+Logged when a player is called offside.
 
-`halftime`
+**Breaks in play or broadcast**
 
-`fulltime`
+**Play cut off by broadcast** - `playcutoffbybroadcast`
 
-`end.of.1.ET`
+These are pesky instances when the broadcast of the game is cut off by something such as a replay or sideline interview. They can completely cut off your ability to log match stats and can affect how stats are analyzed if they aren't outright mentioned. They should be logged in the `poss.action` column.
 
-`end.of.2.ET`
+**Substitutions** - `substitution.on` & `substitution.off`
 
-`end.of.match`
+Note which players are being substituted on and off.
+
+**Halftime** - `halftime`
+
+**Fulltime, but with extra time on the way** - `fulltime`
+
+This should be logged if there is extra time on the way.
+
+**End of first period of extra time** - `end.of.1.ET`
+
+**End of second period of extra time** - `end.of.2.ET`
+
+**End of the match** - `end.of.match`
+
+**Other stoppages in play** - `stoppage.in.play`
+
+If not a substitution or end of play, any other instances that stop play, such as an injury, should be noted.
+
+
 
 #Play Types
 Column name: `play.type`
