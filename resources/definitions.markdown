@@ -218,37 +218,55 @@ This is separate from a `goal.kick` in that a drop kick is after a goalkeeper wi
 #Defensive Player Actions
 Column name: `def.action`
 
-`dispossess.ball.shield`
+Not everything in the 'poss.action' will have a reaction from the defending team that will be logged. The following defensive actions are to be logged in the `def.action` column for the corresponding event to which they are reacting.
 
-`dispossess.steal`
+**Dispossessing through a ball shield** - `dispossess.ball.shield`
 
-`dispossess.lost.touch`
+When a defender steps in between a player of the possessing team and shields the ball away from her for either another player from the defending team to recover or until the ball goes out of bounds.
 
-`tackles.ball.away`
+**Dispossessing through a steal** - `dispossess.steal`
 
-`tackles.ball.won`
+When a defender wins the ball without the possessing player having had a chance to take on the player or get rid of the ball. Usually the result of a defender sneaking up on a player from behind.
 
-`dribbled.tackles.missed`
+**Dispossessing a lost touch** - `dispossess.lost.touch`
 
-`dribbled.out.run`
+When a defender steps up to win a ball that the possessing player, usually under pressure, gives away due to a bad touch.
 
-`dribbled.turned`
+**Tackling the ball away** - `tackles.ball.away`
 
-`pressured`
+When a defender challenges a possessing player, connects with the ball, and successfully tackles the ball away for another player to recover. If the defending player who made the tackle doesn't win the ball then she should be credited with a `tackles.ball.away` regardless of which team's player ends up recovering the loose ball.
 
-`challenged`
+**Tackling and winning the ball** - `tackles.ball.won`
 
-`blocks`
+When a defender challenges a possessing player, connects with the ball, successfully tackles the ball away, and wins possession of the ball.
 
-`interceptions`
+**Dibbled by an opponent due to a missed tackle** - `dribbled.tackles.missed`
 
-`ball.shield`
+When a defender goes in for a tackle, misses the ball, and the possessing player dribbles past the missed tackle.
 
-`clearances`
+**Dribbled by an opponent due to being out-run** - `dribbled.out.run`
 
-`aerial.won`
+Also known as getting "burnt." When a defender has a possessing player dribble past her without clearly going in for a tackle.
 
-`aerial.lost`
+**Dribbled by an opponent due to being turned** - `dribbled.turned`
+
+When a defender is turned and allows a possessing player to dribble past her. Usually the result of a defender getting caught going the wrong way due to a feint.
+
+**Pressuring an opponent** - `pressured`
+
+**Challenging an opponent** - `challenged`
+
+**Blocks** - `blocks`
+
+**Interceptions** - `interceptions`
+
+**Balls shielded** - `ball.shield`
+
+**Clearances** - `clearances`
+
+**Aerial duels won** `aerial.won`
+
+**Aerial duels lost** `aerial.lost`
 
 `gk.s.o.g.stop`
 
