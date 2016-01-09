@@ -327,34 +327,51 @@ When a goalkeeper unsuccessfully comes out for a loose ball. Usually the result 
 #Goalkeeper Ball Stops
 Column name: `gk.ball.stop`
 
-`caught`
+When a goalkeeper makes an attempt to stop a ball with any part of her body, whether it's a high ball, loose ball, or shot, the type of stop attempt should be logged in the `gk.ball.stop` column. The stop will be one of the below.
 
-`punched.to.safety`
+**Caught** - `caught`
 
-`punched.to.danger`
+**Punched to safety** - `punched.to.safety`
 
-`dropped`
+**Punched to danger** - `punched.to.danger`
 
-`missed.the.ball`
+When a goalkeeper punches the ball away, but close to the goal and at the feet of an opponent ready to make a play on the ball.
 
-`collected`
+**Dropped** - `dropped`
 
-`parried.to.safety`
+When a goalkeeper mishandles the ball and ultimately loses it.
 
-`parried.to.danger`
+**Missed the ball** - `missed.the.ball`
+
+When a goalkeeper misses the ball which rolls or flies by.
+
+**Collected** - `collected`
+
+When a goalkeeper doesn't cleanly catch the ball but does handle it, usually with a bounce, and ultimately collect it.
+
+**Parried to safety** - `parried.to.safety`
+
+When a goalkeeper gets a glancing touch on the ball and deviates it into safety.
+
+**Parried to danger** - `parried.to.danger`
+
+When a goalkeeper gets a glancing touch on the ball and deviates it away, but close to the goal and at the feet of an opponent ready to make a play on the ball.
+
 
 #Goalkeeper save attempt
 Column name: `gk.s.o.g.attempt`
 
-`diving`
+When a goalkeeper makes a save attempt on a shot on goal with any part of her body, the type of save will be one of the ones below and should be logged in the `gk.s.o.g.attempt` column.
 
-`standing`
+**Diving save** - `diving`
 
-`reaching`
+**Standing save** - `standing`
 
-`stooping`
+**Reaching save** - `reaching`
 
-`none`
+**Stooping save** - `stooping`
+
+**No save attempt** - `none`
 
 #Disciplinary notes
 Column names: `poss.player.disciplinary` & `def.player.disciplinary`
