@@ -158,35 +158,62 @@ If not a substitution or end of play, any other instances that stop play, such a
 #Play Types
 Column name: `play.type`
 
-`corner.crosses`
+Certain shots and passes logged in the `poss.action` column will be of special types that should be further logged in this column. Sometimes more than one of these will apply, such as a lay off that was also headed, in which case a comma should separate the two in the same cell so it looks like `lay.off,headed`
 
-`deep.crosses`
+**Corner crosses** - `corner.crosses`
 
-`switch`
+Crosses, a ball launched from the left third or right third of the field into the box, that were also struck from within the attacking third. 
 
-`launch`
+**Deep crosses** - `deep.crosses`
 
-`through`
+Crosses, a ball launched from the left third or right third of the field into the box, that were also struck from beyond the attacking third.
 
-`lay.off`
+**Switch** - `switch`
 
-`flick.on`
+A long, high ball to an intended recipient across the field
 
-`throw.in`
+**Launch balls** - `launch`
 
-`free.kick`
+Also sometimes known as "long balls." Long, high balls into open space, not clearly towards any one intended recipient, or into a crowded area. If they come from the left or right thirds of the field, they should be logged as crosses and NOT as a launch ball.
 
-`headed`
+**Through balls** - `through`
 
-`corner.kick`
+A pass that splits the defense, into open space, to meet a teammate at the end of her run.
 
-`goal.kick`
+**Lay-off balls** - `lay.off`
 
-`gk.throws`
+A one-touch backwards pass.
 
-`gk.drop.kick`
+**Flick-on balls** - `flick.on`
 
-`pk`
+A glancing pass into the same general direction from which it came from.
+
+**Throw-ins** - `throw.in`
+
+**Free kicks** - `free.kick`
+
+This should be logged for both shots and passes.
+
+**Headed balls** - `headed`
+
+This should be logged for both shots and passes.
+
+**Corner kicks** - `corner.kick`
+
+This should be logged for corner kicks that are launched into the box and for those that are just short passes.
+
+**Goal kick** - `goal.kick`
+
+This is separate from a `gk.drop.kick` in that a goal kick happens after a stoppage in play.
+
+**Goalkeeper throws** - `gk.throws`
+
+**Goalkeeper drop kicks** - `gk.drop.kick`
+
+This is separate from a `goal.kick` in that a drop kick is after a goalkeeper wins the ball from open play.
+
+**Penalty kicks** - `pk`
+
 
 #Defensive Player Actions
 Column name: `def.action`
