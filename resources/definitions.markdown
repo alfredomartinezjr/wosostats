@@ -376,45 +376,65 @@ When a goalkeeper makes a save attempt on a shot on goal with any part of her bo
 #Disciplinary notes
 Column names: `poss.player.disciplinary` & `def.player.disciplinary`
 
-`fouls.won`
+When a player wins or concededes foul, card, and/or penaly, it should be logged for the possessing player in the `poss.player.disciplinary` column and for the defending player in the `def.player.disciplinary` column. Sometimes more than one of these will apply, such as penalty kick conceded that was also a yellow card, in which case a comma should separate the two in the same cell so it looks like `yellow.cards,penalties.conceded`.
 
-`fouls.conceded`
+**Fould won** - `fouls.won`
 
-`yellow.cards`
+**Fouls conceded** `fouls.conceded`
 
-`red.cards`
+**Yellow cards** - `yellow.cards`
 
-`penalties.won`
+**Red cards** - `red.cards`
 
-`penalties.conceded`
+**Penalty kicks won** - `penalties.won`
+
+**Penalty kicks conceded** - `penalties.conceded`
 
 #Additional Possessing Player Notes
 Column name: `poss.notes`
 
-`big.chances.scored`
+Certain possessing player actions need additional qualifiers, related to scoring opportunities or defensive mistakes, that don't fit in any of the other aforementioned columns and should instead be be logged in the `poss.notes` column. Sometimes more than one of these will apply, such as a big chance that was shot and missed, and thus went out of bounds, in which case a comma should separate the two in the same cell so it looks like `big.chances.shot.missed,out.of.bounds.lost.poss`.
 
-`big.chances.shot.on.goal`
+**Big chances scored** - `big.chances.scored`
 
-`big.chances.dispossessed`
+A big chance is a clear-cut goal scoring opportunity where a possessing player is reasonably expected to score. These are usually one-on-one chances with the goalkeeper or very close range and generally unpressured shots.
 
-`big.chances.shot.missed`
+When a big chance has occurred, log `big.chances.scored` if the possessing player scores.
 
-`assists`
+**Big chances shot on goal** - `big.chances.shot.on.goal`
 
-`second.assists`
+When a big chance has occured, log `big.chances.shot.on.goal` if the possessing player gets a shot on goal but does not score.
 
-`unscored.key.passes`
+**Big chances missed** - `big.chances.shot.missed`
 
-`out.of.bounds.keep.poss`
+When a big chance has occured, log `big.chances.shot.missed` if the possessing player misses the shot.
 
-`out.of.bounds.lost.poss`
+**Big chances disspossessed** - `big.chances.dispossessed`
 
-`errors.to.goals`
+When a big chance has occured, log `big.chances.dispossessed` if the possessing player gets dispossessed before having a chance at a shot on goal
 
-`errors.to.big.chances`
+**Assists** - `assists`
+
+**Second assists** - `second.assists`
+
+A pass that wasn't an assist that was still instrumental in creating a scored big chance, such as a through ball to an player in the box who lays it off for the goalscorer to shoot.
+
+**Unscored key passes** - `unscored.key.passes`
+
+A pass instrumental in creating a big chance that wasn't converted into a goal.
+
+**Ball goes out of bounds and possession is kept** - `out.of.bounds.keep.poss`
+
+**Ball goes out of bounds and possession is lost** - `out.of.bounds.lost.poss`
+
+**Errors leading to a goal for the opposition** - `errors.to.goals`
+
+**Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`
 
 #Additonal Defensive Player Notes
 Column name: `def.notes`
+
+Certain possessing player actions need additional qualifiers, related to scoring opportunities or defensive mistakes, that don't fit in any of the other aforementioned columns and should instead be be logged in the `poss.notes` column. Sometimes more than one of these will apply, such as a big chance that was shot and missed, and thus went out of bounds, in which case a comma should separate the two in the same cell so it looks like `big.chances.shot.missed,out.of.bounds.lost.poss`.
 
 `big.chances.stopped`
 
