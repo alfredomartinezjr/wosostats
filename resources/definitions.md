@@ -456,7 +456,7 @@ Similarly, for each `def.action`, a location on the pitch for the defensive acti
 
 The acronyms used for each location are defined below. To better get an idea of how the pitch is split up, refer to this image: 
 
-![](http://i.imgur.com/EtBW0bx.png)
+![](http://i.imgur.com/EQLmpYp.png)
 
 **Opponent’s 6-yard box** - `A6`
 
