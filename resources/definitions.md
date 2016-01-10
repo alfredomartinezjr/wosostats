@@ -450,6 +450,12 @@ When a defending player or a goalkeeper stops a possessing player's big chance f
 #Location-based Notes
 Column names: `poss.location`, `poss.play.destination`, & `def.location`
 
+Each `poss.action` will have a location on the pitch, which will either be manually logged or coded into the `poss.location` column. If it is a type of play with a destination, such as a pass or movement, the destination on the pitch will also either be manually logged or coded into the `poss.play.destination` column.
+
+Similarly, for each `def.action`, a location on the pitch for the defensive action will be either manually logged or coded into the `def.location` column.
+
+The acronyms used for each location are defined below. To better get an idea of how the pitch is split up, refer to this image: [](http://i.imgur.com/EtBW0bx.png)
+
 `A6`
 
 `A18`
