@@ -434,33 +434,50 @@ A pass instrumental in creating a big chance that wasn't converted into a goal.
 #Additonal Defensive Player Notes
 Column name: `def.notes`
 
-Certain possessing player actions need additional qualifiers, related to scoring opportunities or defensive mistakes, that don't fit in any of the other aforementioned columns and should instead be be logged in the `poss.notes` column. Sometimes more than one of these will apply, such as a big chance that was shot and missed, and thus went out of bounds, in which case a comma should separate the two in the same cell so it looks like `big.chances.shot.missed,out.of.bounds.lost.poss`.
+Similary for defending players, certain defensive actions will also need additional qualifiers, related to defensive accomplishments and mistakes, that don't fit in any of the other aforementioned columns and should instead be be logged in the `def.notes` column.
 
-`big.chances.stopped`
+**Big chances stopped** - `big.chances.stopped`
 
-`own.goals`
+When a defending player or a goalkeeper stops a possessing player's big chance from being scored or shot, such as with a block, tackle, or save.
 
-`errors.to.goals`
+**Own goals allowed** - `own.goals`
 
-`errors.to.big.chances`
+**Errors leading to a goal for the opposition** - `errors.to.goals`
+
+**Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`
 
 
 #Location-based Notes
 Column names: `poss.location`, `poss.play.destination`, & `def.location`
 
-A6
-A18
-A3L
-A3C
-A3R
-AM3L
-AM3C
-AM3R
-DM3L
-DM3C
-DM3R
-D3L
-D3C
-D3R
-D18
-D6
+`A6`
+
+`A18`
+
+`A3L`
+
+`A3C`
+
+`A3R`
+
+`AM3L`
+
+`AM3C`
+
+`AM3R`
+
+`DM3L`
+
+`DM3C`
+
+`DM3R`
+
+`D3L`
+
+`D3C`
+
+`D3R`
+
+`D18`
+
+`D6`
