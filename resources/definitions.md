@@ -455,11 +455,12 @@ Each `poss.action` will have a location on the pitch, which will either be manua
 Similarly, for each `def.action`, a location on the pitch for the defensive action will be either manually logged or coded into the `def.location` column.
 
 The acronyms used for each location are defined below. To better get an idea of how the pitch is split up, refer to this image: 
+
 ![](http://i.imgur.com/EtBW0bx.png)
 
 **Opponent’s 6-yard box** - `A6`
 
-**Opponent’s 18-yard box ** - `A18`
+**Opponent’s 18-yard box** - `A18`
 
 **Attacking third, left wing** - `A3L`
 
@@ -483,7 +484,7 @@ The acronyms used for each location are defined below. To better get an idea of 
 
 **Defensive third, center field** - `D3C`
 
-**Defensive third, right wing ** - `D3R`
+**Defensive third, right wing** - `D3R`
 
 **Own 18-yard box** - `D18`
 
