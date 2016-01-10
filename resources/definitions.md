@@ -4,7 +4,8 @@
 * Defensive Player Actions - `def.action`
 * Goalkeeper Actions - `gk.ball.stop` & `gk.s.o.g.attempt`
 * Disciplinary Actions - `poss.player.disciplinary` & `def.player.disciplinary`
-* Other Notes - `poss.notes` & `def.notes`
+* Additonal Possessing Player Notes - `poss.notes`
+* Additonal Defensive Player Notes - `def.notes`
 * Location-based Notes - `poss.location`, `poss.play.destination`, & `def.location`
 
 Below is a list of definitions for values to be used when logging match stats in the match-stats-template.xlsx Excel document. These values are player actions, such as passes and fouls, which take up most of this document, and location data, which merits its own section. When logging stats, refer to this document when in doubt about what a certain value means and when to log it. Feedback is welcome.
