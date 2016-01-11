@@ -19,7 +19,7 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
 
 #While logging match stats
 1. Start logging stats in the row below the one with “kickoff” in the `poss.action` column.
-2. Create a new row for the following types of events (refer to the events-definitions.doc file for how to define each event), to be typed in the “poss.action” exactly as it’s shown in italics for each event
+2. Create a new row for the following types of events (refer to the events-definitions.doc file for how to define each event), to be typed in the `poss.action` exactly as it’s shown in the code span.
   * Shots stopped by the goalkeeper - `shots.stopped.by.gk`
   * Shots stopped by a defender - `shots.stopped.by.def`
   * Shots blocked by a defender - `shots.blocked`
@@ -39,7 +39,7 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
   * Clearances - `clearances`
   * Offside Calls - `offside.calls`
   * Substitutions - `substitution.on` & `substitution.off`
-There will be instances where play is either stopped or peskily cut off by the broadcast. There will also be breaks in play. These instances should be noted.
+  * There will be instances where play is either stopped or peskily cut off by the broadcast. There will also be breaks in play. These instances should be noted.
   * Play cut off by broadcast - `playcutoffbybroadcast`
   * Halftime - `halftime`
   * Fulltime, but with extra time on the way - `fulltime`
@@ -47,26 +47,26 @@ There will be instances where play is either stopped or peskily cut off by the b
   * End of second period of extra time - `end.of.2.ET`
   * End of the match - `end.of.match`
   * Other stoppages in play - `stoppage.in.play`
-3. For every single new action logged in the “poss.action” column, the value in that row’s “event” column should automatically increase by 1. 
-If the “poss.action” column has a “-” denoting that there are additional defensive actions being credited to the event, then the value in the “event” column should remain the same. The idea is that a new event is only triggered by a new possessive action or something like a stoppage in play or break in broadcast.
-For every single new action logged in the “poss.action” column, log the possessing player’s name in “poss.player” and the location of the event in “poss.location.”
-In the “poss.location” column, you must type in the appropriate acronym, in italics below. The location is relative to the player for which you are logging it (e.g. a player is in her 18-yard box if she is defending someone in possession of the ball in the opponent’s 18-yard box, and vice versa)
-(A6) - Opponent’s 6-yard box
-(A18) - Opponent’s 18-yard box 
-(A3L) - Attacking third, left wing 
-(A3C) - Attacking third, center field 
-(A3R) - Attacking third, right wing 
-(AM3L) - Opponent’s half of middle third, left wing 
-(AM3C) - Opponent’s half of middle third, center field 
-(AM3R) - Opponent’s half of middle third, right wing 
-(DM3L) - Own half of middle third, left wing 
-(DM3C) - Own half of middle third, center field 
-(DM3R) - Own half of middle third, right wing 
-(D3L) - Defensive third, left wing
-(D3C) - Defensive third, center field 
-(D3R) - Defensive third, right wing 
-(D18) - Own 18-yard box 
-(D6) - Own 6-yard box 
+3. For every single new action logged in the `poss.action` column, the value in that row’s `event` column should automatically increase by 1. 
+  * If the “poss.action” column has a “-” denoting that there are additional defensive actions being credited to the event, then the value in the “event” column should remain the same. The idea is that a new event is only triggered by a new possessive action or something like a stoppage in play or break in broadcast.
+4. For every single new action logged in the `poss.action` column, log the possessing player’s name in `poss.player` and the location of the event in `poss.location`.
+  * In the `poss.location` column, you must type in the appropriate acronym, in italics below. The location is relative to the player for which you are logging it (e.g. a player is in her 18-yard box if she is defending someone in possession of the ball in the opponent’s 18-yard box, and vice versa)
+    * Opponent’s 6-yard box - `A6`
+    * Opponent’s 18-yard box - `A18`
+    * Attacking third, left wing - `A3L`
+    * Attacking third, center field - `A3C`
+    * Attacking third, right wing - `A3R`
+    * Opponent’s half of middle third, left wing - `AM3L`
+    * Opponent’s half of middle third, center field - `AM3C`
+    * Opponent’s half of middle third, right wing - `AM3R`
+    * Own half of middle third, left wing - `DM3L`
+    * Own half of middle third, center field - `DM3C`
+    * Own half of middle third, right wing - `DM3R`
+    * Defensive third, left wing - `D3L`
+    * Defensive third, center field - `D3C`
+    * Defensive third, right wing - `D3R`
+    * Own 18-yard box - `D18`
+    * Own 6-yard box - `D6`
 The “poss.play.destination” column should only be filled in if the following event was cut off by a broadcast interruption or a stoppage in play. For example, if a player completes a pass, but the receiving player did not have a chance to create an event worth logging because the broadcast decided to interrupt the feed with a replay, then manually enter the destination of the action. Otherwise, there is no way of determining the destination.
 The “play.type” column should be filled in for the following types of passing and shots actions written in italics below.
 (corner.crosses) - Crosses from the corner area 
