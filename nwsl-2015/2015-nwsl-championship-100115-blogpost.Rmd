@@ -8,7 +8,7 @@ require(plyr)
 require(dplyr)
 require(RCurl)
 
-d <- getURL("https://raw.githubusercontent.com/amj2012/woso-stats/master/2015-nwsl/2015-nwsl-championship-100115.csv")
+d <- getURL("https://raw.githubusercontent.com/amj2012/woso-stats/master/nwsl-2015/2015-nwsl-championship-100115.csv")
 d <- read.csv(textConnection(d))
 
 ## Change relevant columns to character type
