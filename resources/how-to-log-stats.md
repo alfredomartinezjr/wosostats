@@ -4,11 +4,11 @@ So you want to log stats for matches on your own? You’re amazing! Here are the
 1. Download the match-stats-templae.xlsx Excel document from this link: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-template.xlsx?raw=true.  
   * Using Excel is highly recommended as the ability to format, auto-fill, auto-complete, and utilize formulas makes the job of logging stats way easier and faster.
   * To get an idea of what this spreadsheet should look like, it can help to refer to the sample spreadsheet, based on a match between USA and Trinidad & Tobago, which can be found here: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-sample.xlsx?raw=true. 
-2. In the “poss.player” column, write in the last name of each player who played in the match as either a starter or a sub, starting with all the home team players. Do the same for the “def.player” column.
-3. In the “poss.team” and “def.team” columns, write in the acronym of the team for each respective player. 
+2. In the `poss.player` column, write in the last name of each player who played in the match as either a starter or a sub, starting with all the home team players. Do the same for the `def.player` column.
+3. In the `poss.team` and `def.team` columns, write in the acronym of the team for each respective player. 
   * For club teams, refer to the acronyms.csv spreadsheet which can be found at: https://github.com/amj2012/woso-stats/blob/master/resources/acronyms.csv.
   * For international teams, refer to the FIFA country codes
-4. In the “poss.position” and “def.position” columns, write in the starting position for each respective player.
+4. In the `poss.position` and `def.position` columns, write in the starting position for each respective player.
 Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.”
 5. Field dimensions can vary widely, so figure out where the borders of the middle third are, so you can tell if a player is in their attacking, middle, or defensive third.
   * It helps to use landmarks around the stadium to figure this out. For example, if the field has football lines or lawn stripes, you can use them to figure out the thirds of the field.
@@ -18,37 +18,36 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
 7. The template spreadsheet should be 1500 rows long. However, if the match you are logging requires more rows and ends up going into blank rows (beyond the ones filled in with “-” hyphens), then guesstimate how many more rows you’ll need and fill them all in with additional “-” hyphens (more on what those are about below).
 
 #While logging match stats
-Start logging stats in the row below the one with “kickoff” in the “poss.action” column.
-Create a new row for the following types of events (refer to the events-definitions.doc file for how to define each event), to be typed in the “poss.action” exactly as it’s shown in italics for each event
-(shots.stopped.by.gk) - Shots stopped by the goalkeeper
-(shots.stopped.by.def) - Shots stopped by a defender 
-(shots.blocked) - Shots blocked by a defender
-(shots.missed) - Shots missed
-(shots.scored) - Shots scored 
-(passes.f) - Forward pass attempt
-(passes.s) - Sideways pass attempt
-(passes.b) - Backwards pass attempt
-(movement) - Movement into a different zone
-(take.on.won) - Take ons won
-(take.on.lost) - Take ons lost 
-(dispossessed) - Dispossessed
-(lost.touch) - Lost touches 
-(aerial.won) - Aerial duels won 
-(aerial.lost) - Aerial duels lost 
-(recoveries) - Recoveries 
-(balls.shielded) - Balls Shielded 
-(clearances) - Clearances 
-(offside.calls) - Offside calls 
-(substitution.on, substitution.off) - Substitutions 
+1. Start logging stats in the row below the one with “kickoff” in the `poss.action` column.
+2. Create a new row for the following types of events (refer to the events-definitions.doc file for how to define each event), to be typed in the “poss.action” exactly as it’s shown in italics for each event
+  * Shots stopped by the goalkeeper - `shots.stopped.by.gk`
+  * Shots stopped by a defender - `shots.stopped.by.def`
+  * Shots blocked by a defender - `shots.blocked`
+  * Shots missed - `shots.missed`
+  * Shots scored - `shots.scored`
+  * Forward pass attempts - `passes.f`
+  * Sideway pass attempts - `passes.s`
+  * Backward pass attempts - `passes.b`
+  * Movement into another zone - `movement`
+  * Take ons won - `take.on.won`
+  * Take ons lost - `take.on.lost`
+  * Dispossessed of the ball - `dispossessed`
+  * Aerial duels won - `aerial.won`
+  * Aerial duels lost - `aerial.lost`
+  * Recoveries - `recoveries`
+  * Balls shielded - `ball.shield`
+  * Clearances - `clearances`
+  * Offside Calls - `offside.calls`
+  * Substitutions - `substitution.on` & `substitution.off`
 There will be instances where play is either stopped or peskily cut off by the broadcast. There will also be breaks in play. These instances should be noted.
-playcutoffbybroadcast
-stoppage.in.play
-halftime
-(fulltime) - End of regulation, if game has not ended
-(end.of.1ET) - End of first extra time
-(end.of.2OT) - End of second extra time, if game has not ended 
-(end.of.match) - End of game 
-For every single new action logged in the “poss.action” column, the value in that row’s “event” column should automatically increase by 1. 
+  * Play cut off by broadcast - `playcutoffbybroadcast`
+  * Halftime - `halftime`
+  * Fulltime, but with extra time on the way - `fulltime`
+  * End of first period of extra time - `end.of.1.ET`
+  * End of second period of extra time - `end.of.2.ET`
+  * End of the match - `end.of.match`
+  * Other stoppages in play - `stoppage.in.play`
+3. For every single new action logged in the “poss.action” column, the value in that row’s “event” column should automatically increase by 1. 
 If the “poss.action” column has a “-” denoting that there are additional defensive actions being credited to the event, then the value in the “event” column should remain the same. The idea is that a new event is only triggered by a new possessive action or something like a stoppage in play or break in broadcast.
 For every single new action logged in the “poss.action” column, log the possessing player’s name in “poss.player” and the location of the event in “poss.location.”
 In the “poss.location” column, you must type in the appropriate acronym, in italics below. The location is relative to the player for which you are logging it (e.g. a player is in her 18-yard box if she is defending someone in possession of the ball in the opponent’s 18-yard box, and vice versa)
