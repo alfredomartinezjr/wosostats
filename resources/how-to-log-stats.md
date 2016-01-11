@@ -6,7 +6,7 @@ So you want to log stats for matches on your own? You’re amazing! Here are the
   * To get an idea of what this spreadsheet should look like, it can help to refer to the sample spreadsheet, based on a match between USA and Trinidad & Tobago, which can be found here: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-sample.xlsx?raw=true. 
 2. In the `poss.player` column, write in the last name of each player who played in the match as either a starter or a sub, starting with all the home team players. Do the same for the `def.player` column.
 3. In the `poss.team` and `def.team` columns, write in the acronym of the team for each respective player. 
-  * For club teams, refer to the acronyms.csv spreadsheet which can be found at: https://github.com/amj2012/woso-stats/blob/master/resources/acronyms.csv.
+  * For club teams, refer to the acronyms.csv spreadsheet which can be found at: https://github.com/amj2012/woso-stats/blob/master/resources/abbreviations.csv.
   * For international teams, refer to the FIFA country codes
 4. In the `poss.position` and `def.position` columns, write in the starting position for each respective player.
 Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.”
