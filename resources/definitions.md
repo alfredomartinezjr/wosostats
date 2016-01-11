@@ -104,6 +104,10 @@ Jess Fishlock, the player in yellow and purple, receives a pass from Kim Little 
 Example 2: [http://i.imgur.com/wfXAGUx.gif](http://i.imgur.com/wfXAGUx.gif)
 Keelin Winters, the player in yellow and purple who receives the pass, is dispossessed from behind by Jen Buczkowski, in the white and blue. Since it does not appear like Winters had a chance to attempt a take on, this is logged as a dispossession.
 
+**Lost touch** - `lost.touch`
+
+A lost touch is when a player loses possession of the ball, without having taken a shot or attempting to pass the ball, and without having been under pressure or having been challenged.
+
 **Aerial duels won** - `aerial.won`
 
 Aerial duels are when two players challenge for a 50/50 ball in the air. The first player to make contact with the ball is deemed to have won the aerial duel, regardless of where the ball ends up or who recovers it.
