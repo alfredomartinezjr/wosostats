@@ -32,6 +32,7 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
   * **Take ons won** - `take.on.won`
   * **Take ons lost** - `take.on.lost`
   * **Dispossessed of the ball** - `dispossessed`
+  * **Lost touch** - `lost.touch`
   * **Aerial duels won** - `aerial.won`
   * **Aerial duels lost** - `aerial.lost`
   * **Recoveries** - `recoveries`
