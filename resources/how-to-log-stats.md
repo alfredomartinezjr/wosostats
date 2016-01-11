@@ -1,21 +1,21 @@
 So you want to log stats for matches on your own? You’re amazing! Here are the steps you to take:
 
 #Before you start logging the match stats
-Download the match-stats-templae.xlsx Excel document from this link: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-template.xlsx?raw=true.  
-Using Excel is highly recommended as the ability to format, auto-fill, auto-complete, and utilize formulas makes the job of logging stats way easier and faster.
-To get an idea of what this spreadsheet should look like, it can help to refer to the sample spreadsheet, based on a match between USA and Trinidad & Tobago, which can be found here: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-sample.xlsx?raw=true. 
-In the “poss.player” column, write in the last name of each player who played in the match as either a starter or a sub, starting with all the home team players. Do the same for the “def.player” column.
-In the “poss.team” and “def.team” columns, write in the acronym of the team for each respective player. 
-For club teams, refer to the acronyms.csv spreadsheet which can be found at: https://github.com/amj2012/woso-stats/blob/master/resources/acronyms.csv.
-For international teams, refer to the FIFA country codes
-In the “poss.position” and “def.position” columns, write in the starting position for each respective player.
+1. Download the match-stats-templae.xlsx Excel document from this link: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-template.xlsx?raw=true.  
+  * Using Excel is highly recommended as the ability to format, auto-fill, auto-complete, and utilize formulas makes the job of logging stats way easier and faster.
+  * To get an idea of what this spreadsheet should look like, it can help to refer to the sample spreadsheet, based on a match between USA and Trinidad & Tobago, which can be found here: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-sample.xlsx?raw=true. 
+2. In the “poss.player” column, write in the last name of each player who played in the match as either a starter or a sub, starting with all the home team players. Do the same for the “def.player” column.
+3. In the “poss.team” and “def.team” columns, write in the acronym of the team for each respective player. 
+  * For club teams, refer to the acronyms.csv spreadsheet which can be found at: https://github.com/amj2012/woso-stats/blob/master/resources/acronyms.csv.
+  * For international teams, refer to the FIFA country codes
+4. In the “poss.position” and “def.position” columns, write in the starting position for each respective player.
 Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.”
-Field dimensions can vary widely, so figure out where the borders of the middle third are, so you can tell if a player is in their attacking, middle, or defensive third.
-It helps to use landmarks around the stadium to figure this out. For example, if the field has football lines or lawn stripes, you can use them to figure out the thirds of the field.
-Or, you can also use the stands as landmarks.
-Worst comes to worst, find the widest shot you can of the field, either during the match stream or from an image online, and literally use a ruler to figure out the thirds of the fields.
-Try to also get a sense of where the left, center, and right thirds of the fields are. The left and right thirds will usually cut a few yards into the 18-yard box, and the center third will usually extend a few yards from the center circle. Width of the field can vary widely, so use your best judgment here.
-The template spreadsheet should be 1500 rows long. However, if the match you are logging requires more rows and ends up going into blank rows (beyond the ones filled in with “-” hyphens), then guesstimate how many more rows you’ll need and fill them all in with additional “-” hyphens (more on what those are about below).
+5. Field dimensions can vary widely, so figure out where the borders of the middle third are, so you can tell if a player is in their attacking, middle, or defensive third.
+  * It helps to use landmarks around the stadium to figure this out. For example, if the field has football lines or lawn stripes, you can use them to figure out the thirds of the field.
+  * Or, you can also use the stands as landmarks.
+  * Worst comes to worst, find the widest shot you can of the field, either during the match stream or from an image online, and literally use a ruler to figure out the thirds of the fields.
+6. Try to also get a sense of where the left, center, and right thirds of the fields are. The left and right thirds will usually cut a few yards into the 18-yard box, and the center third will usually extend a few yards from the center circle. Width of the field can vary widely, so use your best judgment here.
+7. The template spreadsheet should be 1500 rows long. However, if the match you are logging requires more rows and ends up going into blank rows (beyond the ones filled in with “-” hyphens), then guesstimate how many more rows you’ll need and fill them all in with additional “-” hyphens (more on what those are about below).
 
 #While logging match stats
 Start logging stats in the row below the one with “kickoff” in the “poss.action” column.
