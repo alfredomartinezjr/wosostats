@@ -20,72 +20,70 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
 #While logging match stats
 1. Start logging stats in the row below the one with “kickoff” in the `poss.action` column.
 2. Create a new row for the following types of events (refer to the events-definitions.doc file for how to define each event), to be typed in the `poss.action` exactly as it’s shown in the code span.
-  * Shots stopped by the goalkeeper - `shots.stopped.by.gk`
-  * Shots stopped by a defender - `shots.stopped.by.def`
-  * Shots blocked by a defender - `shots.blocked`
-  * Shots missed - `shots.missed`
-  * Shots scored - `shots.scored`
-  * Forward pass attempts - `passes.f`
-  * Sideway pass attempts - `passes.s`
-  * Backward pass attempts - `passes.b`
-  * Movement into another zone - `movement`
-  * Take ons won - `take.on.won`
-  * Take ons lost - `take.on.lost`
-  * Dispossessed of the ball - `dispossessed`
-  * Aerial duels won - `aerial.won`
-  * Aerial duels lost - `aerial.lost`
-  * Recoveries - `recoveries`
-  * Balls shielded - `ball.shield`
-  * Clearances - `clearances`
-  * Offside Calls - `offside.calls`
-  * Substitutions - `substitution.on` & `substitution.off`
+  * **Shots stopped by the goalkeeper** - `shots.stopped.by.gk`
+  * **Shots stopped by a defender** - `shots.stopped.by.def`
+  * **Shots blocked by a defender** - `shots.blocked`
+  * **Shots missed** - `shots.missed`
+  * **Shots scored** - `shots.scored`
+  * **Forward pass attempts** - `passes.f`
+  * **Sideway pass attempts** - `passes.s`
+  * **Backward pass attempts** - `passes.b`
+  * **Movement into another zone** - `movement`
+  * **Take ons won** - `take.on.won`
+  * **Take ons lost** - `take.on.lost`
+  * **Dispossessed of the ball** - `dispossessed`
+  * **Aerial duels won** - `aerial.won`
+  * **Aerial duels lost** - `aerial.lost`
+  * **Recoveries** - `recoveries`
+  * **Balls shielded** - `ball.shield`
+  * **Clearances** - `clearances`
+  * **Offside Calls** - `offside.calls`
+  * **Substitutions** - `substitution.on` & `substitution.off`
   * There will be instances where play is either stopped or peskily cut off by the broadcast. There will also be breaks in play. These instances should be noted.
-  * Play cut off by broadcast - `playcutoffbybroadcast`
-  * Halftime - `halftime`
-  * Fulltime, but with extra time on the way - `fulltime`
-  * End of first period of extra time - `end.of.1.ET`
-  * End of second period of extra time - `end.of.2.ET`
-  * End of the match - `end.of.match`
-  * Other stoppages in play - `stoppage.in.play`
+  * **Play cut off by broadcast** - `playcutoffbybroadcast`
+  * **Halftime** - `halftime`
+  * **Fulltime, but with extra time on the way** - `fulltime`
+  * **End of first period of extra time** - `end.of.1.ET`
+  * **End of second period of extra time** - `end.of.2.ET`
+  * ****End of the match** - `end.of.match`
+  * **Other stoppages in play** - `stoppage.in.play`
 3. For every single new action logged in the `poss.action` column, the value in that row’s `event` column should automatically increase by 1. 
   * If the “poss.action” column has a “-” denoting that there are additional defensive actions being credited to the event, then the value in the “event” column should remain the same. The idea is that a new event is only triggered by a new possessive action or something like a stoppage in play or break in broadcast.
 4. For every single new action logged in the `poss.action` column, log the possessing player’s name in `poss.player` and the location of the event in `poss.location`.
   * In the `poss.location` column, you must type in the appropriate acronym, in italics below. The location is relative to the player for which you are logging it (e.g. a player is in her 18-yard box if she is defending someone in possession of the ball in the opponent’s 18-yard box, and vice versa)
-    * Opponent’s 6-yard box - `A6`
-    * Opponent’s 18-yard box - `A18`
-    * Attacking third, left wing - `A3L`
-    * Attacking third, center field - `A3C`
-    * Attacking third, right wing - `A3R`
-    * Opponent’s half of middle third, left wing - `AM3L`
-    * Opponent’s half of middle third, center field - `AM3C`
-    * Opponent’s half of middle third, right wing - `AM3R`
-    * Own half of middle third, left wing - `DM3L`
-    * Own half of middle third, center field - `DM3C`
-    * Own half of middle third, right wing - `DM3R`
-    * Defensive third, left wing - `D3L`
-    * Defensive third, center field - `D3C`
-    * Defensive third, right wing - `D3R`
-    * Own 18-yard box - `D18`
-    * Own 6-yard box - `D6`
+    * **Opponent’s 6-yard box** - `A6`
+    * **Opponent’s 18-yard box** - `A18`
+    * **Attacking third, left wing** - `A3L`
+    * **Attacking third, center field** - `A3C`
+    * **Attacking third, right wing** - `A3R`
+    * **Opponent’s half of middle third, left wing** - `AM3L`
+    * **Opponent’s half of middle third, center field** - `AM3C`
+    * **Opponent’s half of middle third, right wing** - `AM3R`
+    * **Own half of middle third, left wing** - `DM3L`
+    * **Own half of middle third, center field** - `DM3C`
+    * **Own half of middle third, right wing** - `DM3R`
+    * **Defensive third, left wing** - `D3L`
+    * **Defensive third, center field** - `D3C`
+    * **Defensive third, right wing** - `D3R`
+    * **Own 18-yard box** - `D18`
+    * **Own 6-yard box** - `D6`
 5. The “poss.play.destination” column should only be filled in if the following event was cut off by a broadcast interruption or a stoppage in play. For example, if a player completes a pass, but the receiving player did not have a chance to create an event worth logging because the broadcast decided to interrupt the feed with a replay, then manually enter the destination of the action. Otherwise, there is no way of determining the destination.
 6. The “play.type” column should be filled in for the following types of passing and shots actions written in italics below.
-(corner.crosses) - Crosses from the corner area 
-(deep.crosses) - Crosses from beyond the 18-yd box 
-(switch) - Switch; A long, high ball to an intended recipient across the field
-(launch) - Launch balls; Long, high balls into open space or into a crowded area 
-Launch balls from the wings into the box should be logged as corner.crosses or deep.crosses.
-(through) - Through balls ; A pass splitting the defense, into open space, to meet a teammate at the end of her run 
-(lay.off) - Lay-offs ; A one-touch backwards pass
-(flick.on) - Flick-ons ; A glancing pass into the same general direction from which it came from
-(throw.in) - Throw ins 
-(free.kick) - Free kicks , regardless of whether it ends up being a pass or shot
-(headed) - Headed passes or shots
-(corner.kick) - Corner kicks
-(goal.kick) - Goal kicks 
-(gk.throws) - Goalkeeper throws 
-(gk.drop.kick) - Goalkeeper drop kicks 
-(header.shot) - Headed shots 
-(pk) - Penalty kicks 
+  * **Corner crosses** - `corner.crosses`
+  * **Deep crosses** - `deep.crosses`
+  * **Switch** - `switch`
+  * **Launch balls** - `launch`
+  * **Through balls** - `through`
+  * **Lay-off balls** - `lay.off`
+  * **Flick-on balls** - `flick.on`
+  * **Throw-ins** - `throw.in`
+  * **Free kicks** - `free.kick`
+  * **Headed balls** - `headed`
+  * **Corner kicks** - `corner.kick`
+  * **Goal kick** - `goal.kick`
+  * **Goalkeeper throws** - `gk.throws`
+  * **Goalkeeper drop kicks** - `gk.drop.kick`
+  * **Penalty kicks** - `pk`
 7. For each event in the “poss.action” column, log any of the following defensive actions in italics below in the “def.action” column. Refer to the action-definitions.doc file at ___ for in-depth definitions for each action
 (dispossess.ball.shield) - Dispossessing a player by stepping between the player and the ball and ultimately shielding the ball 
 (dispossess.steal) - Dispossessing a player by stealing the ball 
