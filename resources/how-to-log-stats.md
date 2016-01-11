@@ -45,7 +45,7 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
   * **Fulltime, but with extra time on the way** - `fulltime`
   * **End of first period of extra time** - `end.of.1.ET`
   * **End of second period of extra time** - `end.of.2.ET`
-  * ****End of the match** - `end.of.match`
+  * **End of the match** - `end.of.match`
   * **Other stoppages in play** - `stoppage.in.play`
 3. For every single new action logged in the `poss.action` column, the value in that row’s `event` column should automatically increase by 1. 
   * If the `poss.action` column has a “-” denoting that there are additional defensive actions being credited to the event, then the value in the `event` column should remain the same. The idea is that a new event is only triggered by a new possessive action or something like a stoppage in play or break in broadcast.
