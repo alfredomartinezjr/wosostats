@@ -27,7 +27,7 @@ library(plyr)
 library(dplyr)
 require(RCurl)
 
-d <- getURL("https://raw.githubusercontent.com/amj2012/woso-stats/master/2015-nwsl/2015-nwsl-championship-100115.csv")
+d <- getURL("https://raw.githubusercontent.com/amj2012/woso-stats/master/source/csv/nwsl-2015/2015-nwsl-championship-100115.csv")
 d <- read.csv(textConnection(d))
 
 ## FOR SEATTLE-only
@@ -55,7 +55,7 @@ d$gk.s.o.g.attempt <- as.character(d$gk.s.o.g.attempt)
 d$def.player.disciplinary <- as.character(d$def.player.disciplinary)
 d$def.notes <- as.character(d$def.notes)
 
-source("https://github.com/amj2012/nwsl-stats/raw/master/analysis-functions.R")
+source("https://raw.githubusercontent.com/amj2012/woso-stats/master/code/version-1/analysis-functions.R")
 
 
 ```
