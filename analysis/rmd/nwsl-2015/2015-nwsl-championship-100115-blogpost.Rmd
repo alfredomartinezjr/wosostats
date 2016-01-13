@@ -8,7 +8,7 @@ require(plyr)
 require(dplyr)
 require(RCurl)
 
-d <- getURL("https://raw.githubusercontent.com/amj2012/woso-stats/master/nwsl-2015/2015-nwsl-championship-100115.csv")
+d <- getURL("https://raw.githubusercontent.com/amj2012/woso-stats/master/source/csv/nwsl-2015/2015-nwsl-championship-100115.csv")
 d <- read.csv(textConnection(d))
 
 ## Change relevant columns to character type
@@ -30,7 +30,7 @@ d$gk.s.o.g.attempt <- as.character(d$gk.s.o.g.attempt)
 d$def.player.disciplinary <- as.character(d$def.player.disciplinary)
 d$def.notes <- as.character(d$def.notes)
 
-source("https://github.com/amj2012/nwsl-stats/raw/master/analysis-functions.R")
+source("https://raw.githubusercontent.com/amj2012/woso-stats/master/code/version-1/analysis-functions.R")
 ```
 
 
@@ -371,7 +371,7 @@ print(t5, digits=2)
 
 **Observations:** There's surely a lot to talk about here, but **Lauren Holiday** (why'd ya have to retire?) had a phenomenal passing day, completing nearly all her passes under pressure (90%), and more straight up than anyone else on the field. There was also a lot of offense going through the wings, as evidence by six out of the top seven passers by completions in the attacking third all having been on the wing for most of the game.
 
-Maybe also worth noting that four of the top five passers in the middle third by completions were FCKC players, the lone Seattle Reign player being **Rachel Corsie**. In fact, the most active Seattle Reign midfielder, **Jess Fishlock* doesn't show up until 10th on that list.
+Maybe also worth noting that four of the top five passers in the middle third by completions were FCKC players, the lone Seattle Reign player being **Rachel Corsie**. In fact, the most active Seattle Reign midfielder, **Jess Fishlock** doesn't show up until 10th on that list.
 
 And this is where we put a number to **Kim Little's** woes during that game, who had the worst passing percentage (56%) of anyone in the attacking third. **Erika Tymrak** too, had a tough passing day with the worst overall passing percentage (64%) of the game.
 
