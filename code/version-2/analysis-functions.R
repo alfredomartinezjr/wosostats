@@ -10,8 +10,8 @@ createTable <- function(pattern, col, df) {
   e <- df[df[,col] %in% c(pattern),"event"]
   e <- paste0("^", e, "$")
   
-  ## Go back to the original data frame and get all rows that is an "event" number that 
-  ## matches a value in the "e" vector
+  ## Go back to the original data frame and get all rows with an "event" number 
+  ## matching a value in the "e" vector
   d2 <- df[grep(paste(e,collapse="|"), df[,"event"]),]
   
   ## Include only the rows with the pattern events (excludes defensive plays that added rows to an event)
@@ -42,8 +42,6 @@ createDataFrame <- function(pattern, col, df) {
 # 3.
 ## Function that fills in blanks with values from above in specified columns that
 ## relate to the possessing player
-## If this doesn't work, check to see if columns 7 through 13 have changed
-## May want to just plug in the names manually, instead of using "7:13"
 fillBlanks <- function(df) {
   x <- 1
   while (x <= nrow(df)) {
