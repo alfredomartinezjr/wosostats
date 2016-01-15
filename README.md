@@ -1,4 +1,4 @@
-# woso-stats
+# WoSo Stats
 This repository is for a collection of stats from women's soccer matches
 
 The [analysis](https://github.com/amj2012/woso-stats/tree/master/analysis) folder is where to find the documents that show the results of each match analysis. Working on putting these into a blog to make it easier to read. Soon.
