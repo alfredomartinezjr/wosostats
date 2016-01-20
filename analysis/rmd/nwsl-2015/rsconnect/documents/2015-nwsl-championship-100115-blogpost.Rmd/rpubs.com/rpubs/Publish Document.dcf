@@ -1,0 +1,7 @@
+name: Publish Document
+account: rpubs
+server: rpubs.com
+bundleId:
+        https://api.rpubs.com/api/v1/document/144671/147169830a0f4a2ba4551cf857a622ac
+url: http://rpubs.com/AMJ/144671/edit
+when: 1453315678.13486

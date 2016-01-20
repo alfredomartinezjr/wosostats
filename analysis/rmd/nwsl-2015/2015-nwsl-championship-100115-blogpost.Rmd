@@ -226,7 +226,7 @@ print(t2, digits=2)
 
 ```
 
-**Observations**: Honestly, most of this game appears to have occured in the midfield. Despite there being 16 shots, there were very few big chances allowed by either defense, which was to be expected from what many thought were two of the best defenses in the league. Half the key passes came from the one goal, which featured an incredible **Lauren Holiday** pass from deep down the field. **Heather O'Reilly's** workrate is worth noting, however; she had more cross attempts (8) and through ball attempts (6) than anyone else on the field
+**Observations**: Most of this game appears to have occured in the midfield. Despite there being 16 shots, there were very few big chances allowed by either defense, which was to be expected from what many thought were two of the best defenses in the league. Half the key passes came from the one goal, which featured an incredible **Lauren Holiday** pass from deep down the field. **Heather O'Reilly's** workrate is worth noting, however; she had more cross attempts (8) and through ball attempts (6) than anyone else on the field
 
 #Passing Stats
 
