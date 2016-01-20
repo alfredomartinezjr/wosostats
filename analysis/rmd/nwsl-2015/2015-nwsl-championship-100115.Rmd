@@ -7,20 +7,15 @@ runtime: shiny
 What this is
 ---
 
-This is an R Markdown document that 
+I went through the 2015 NWSL Championship watch, which is freely available on YouTube, logged a bunch of stats, and put the results into this R Markdown document.
 
-The purpose of this document is to explore how effective the stats I measured are for determining the effectiveness of the Portland Thorns both as individual players and as a team. I will also explore how these stats, which are different from the Template 1 stats I used for the Thorns-Red Stars match from April 25, 2015, compare as a what-should-be more effective set of metrics.
+That’s the short of it. The basics is that I tracked every match “action” out of a list (e.g. forward passes, take ons won, aerial duels won, etc.) onto an Excel spreadsheet, filled in the blanks and converted the file into a csv file, and analyzed what I wanted with R.
 
-Compared to the Red Stars match, this should better measure location of events, defensive events, types of passes, and take-ons.
+I’d ideally want to create a place where you can play with the stats yourself and analyze a variety of matches and players, but right now I only have this match. I’m going to start tracking more matches, ideally for more than the NWSL, but definitely starting with the NWSL season, but I’ll never get it done if I’m the only one tracking this. (I don’t know of another site on the web that has advanced soccer stats like these for women’s soccer. Help!)
 
-Perhaps more importantly, this R markdown document will (hopefully) only need the raw match stats. I'll hopefully be able to read these stats into this R Markdown document without having to create a new csv file with thousands of columns for every conceivable combination of events. This should greatly improve the way these stats are stored and transformed for analysis, and perhaps, since the chronological aspect of the events will be preserved, this will even enhance how I can measure match stats and situational stats.
+Want to log stats on your own and help out? Read more [here.](https://github.com/amj2012/wosostats/blob/master/resources/how-to-log-stats.md) To learn about action definitions, read more [here.](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md)
 
-Here we go. This R Markdown document only tracks the first 15 minutes of the match.
-
-Testing stuff
 ---
-This section, like all following sections, will be broken up into Basic Metrics and Advanced Metrics.
-These are all the pass events for Rachel Van Hollebeke, just to test things out.
 
 ```{r, echo=FALSE, comment=NA, include=FALSE}
 library(plyr)
@@ -646,3 +641,10 @@ goalieInput <- reactive({
 renderDataTable(goalieInput(), options = list(searching = FALSE, digits = 2))
 
 ```
+
+#Sources
+* The full match can be seen at [https://www.youtube.com/watch?v=AD5jqwDieiE](https://www.youtube.com/watch?v=AD5jqwDieiE).
+* The csv file with all the match events from which this analysis is source [can be found here on GitHub.](https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/nwsl-2015/2015-nwsl-championship-100115.csv)
+* The raw Excel file, in all it's ugliness, with the blank spots that I filled in with some help from R (more on that below), [cab also be found here on GitHub.](https://github.com/amj2012/wosostats/blob/master/source/excel/nwsl-2015/2015-nwsl-championship-100115.xlsx)
+* If you have R Studio, can view this entire page and all the source code behind each table by [downloading the R Markdown file here on GitHub.](https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/rmd/nwsl-2015/2015-nwsl-championship-100115.Rmd)
+* The R files I used to tidy the original raw Excel file and to help create the tables [can be found here on GitHub.](https://github.com/amj2012/wosostats/tree/master/code/version-1)
