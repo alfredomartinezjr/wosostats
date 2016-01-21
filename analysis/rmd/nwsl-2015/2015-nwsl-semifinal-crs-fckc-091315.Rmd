@@ -202,7 +202,7 @@ print(t2, digits=2)
 
 ```
 
-Passing
+Passing Stats
 ---
 
 * Overall Passing
@@ -352,7 +352,7 @@ print(t4, digits=2)
 
 ```
 
-Possession
+Possession Stats
 ---
 * Take Ons
 * Aerial Duels
@@ -396,7 +396,7 @@ print(t5, digits=2)
 
 ```
 
-Defending
+Defending Stats
 ---
 * Tackles & Pressure
 * Interceptions
@@ -495,7 +495,7 @@ print(t2, digits=2)
 ```
 
 
-Goalkeeping
+Goalkeeping Stats
 ---
 * Shots On Goal Faced
 * High Balls
