@@ -13,7 +13,7 @@ That’s the short of it. The basics is that I tracked every match “action” 
 
 I’d ideally want to create a place where you can play with the stats yourself and analyze a variety of matches and players, but right now I only have this match. I’m going to start tracking more matches, ideally for more than the NWSL, but definitely starting with the NWSL season, but I’ll never get it done if I’m the only one tracking this. (I don’t know of another site on the web that has advanced soccer stats like these for women’s soccer. Help!)
 
-Want to log stats on your own and help out? Read more [here.](https://github.com/amj2012/wosostats/blob/master/resources/how-to-log-stats.md) To learn about action definitions, read more [here.](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md)
+Want to log stats on your own and help out? Read more [here.](https://github.com/amj2012/wosostats/blob/master/resources/how-to-log-stats.md) To learn about action definitions that are used to log stats and used in this analysis, read more [here.](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md)
 
 ---
 
