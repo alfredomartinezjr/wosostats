@@ -38,7 +38,7 @@ source("https://raw.githubusercontent.com/amj2012/woso-stats/master/code/version
 
 This is a summary of match stats from the NWSL 2015 Semifinal between the Chicago Red Stars and FC Kansas City. It is broken down into what are defined as "attacking," "passing," "possession," "defending," and "goalkeeping" stats. 
 
-Want to log stats on your own and help out? Please do! Read more [here](https://github.com/amj2012/wosostats/blob/master/resources/how-to-log-stats.md) and email me at alfredom790@gmail.com if you're interested. To learn about the action definitions that are used to log stats and used in this analysis, read more [here.](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md)
+Want to log stats on your own and help out? Please do! Right now this is just one person doing all this; more people logging stats means more data that can be analyzed. Read more about how to do this on your own [here](https://github.com/amj2012/wosostats/blob/master/resources/how-to-log-stats.md) and email me at alfredom790@gmail.com if you're interested. To learn about the action definitions that are used to log stats and used in this analysis, read more [here.](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md)
 
 Attacking Stats
 ---
@@ -107,7 +107,7 @@ print(t, digits=2)
 ```
 
 ### Shots Under Pressure
-*I define what makes a shot (and a pass, for that matter) as being "under pressure" [here.](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md)*
+*I define what makes a shot (and a pass, for that matter) as being "under pressure" [here.](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md#defensive-player-actions)*
 ```{r shots_under_pressure, echo=FALSE, comment=NA}
 t <- createCleanDataFrame(c("shots", "accuracy", "shots.scored", "shots.stopped.by.gk", "shots.stopped.by.def", "shots.missed") ,"poss.action", d)
 ## Adds column for whether shot is "pressured" or "challenged"
@@ -202,7 +202,7 @@ print(t2, digits=2)
 
 ```
 
-Passing Stats
+Passing
 ---
 
 * Overall Passing
@@ -352,7 +352,7 @@ print(t4, digits=2)
 
 ```
 
-Possession Stats
+Possession
 ---
 * Take Ons
 * Aerial Duels
@@ -396,7 +396,7 @@ print(t5, digits=2)
 
 ```
 
-Defending Stats
+Defending
 ---
 * Tackles & Pressure
 * Interceptions
@@ -481,13 +481,13 @@ print(t2, digits=2)
 
 ###Clearances, Ball Shields, & Blocks
 ```{r clearances_shields_blocks, echo=FALSE, comment=NA}
-t <- createDataFrame(c("clearances", "balls.shielded", "blocks"), "def.action", d)
+t <- createDataFrame(c("clearances", "ball.shield", "blocks"), "def.action", d)
 t <- t[,c("event","time", "def.position","def.team","def.player","def.action","def.location", "def.player.disciplinary","def.notes")]
 
 names(t) <- c("event", "time", "position","team", "poss.player", "player.event", "location", 
               "def.player.disciplinary", "def.notes")
 
-t2 <- createTable(c("blocks", "clearances", "balls.shielded"), "player.event", t)
+t2 <- createTable(c("blocks", "clearances", "ball.shield"), "player.event", t)
 t2 <- t2[order(-t2$blocks),]
 names(t2) <- c("Blocks","Clearances", "Balls Shielded")
 
@@ -495,7 +495,7 @@ print(t2, digits=2)
 ```
 
 
-Goalkeeping Stats
+Goalkeeping
 ---
 * Shots On Goal Faced
 * High Balls
@@ -570,14 +570,21 @@ t2 <- cbind(createTable(c("gk.high.balls.won", "gk.high.balls.lost"), "def.actio
             createTable(c("yes", "no"), "free.kick", t))
 
 t2 <- t2[,c(1,2,3,5,7,9,11,13,15,17)]
-names(t2) <- c("Won", "Lost", "Caught", "Punched Away", "Parried", "Collected", "Fouled", "Crosses Faced", "Corners Faced", "FK Faced")
+names(t2) <- c("Won", "Lost", "Caught", "Punched", "Parried", "Collected", "Fouls Won", "Crosses", "Corners", "FKs")
 
 print(t2, digits=2)
 ```
 
 ###Smothers
 ``` {r smothers, echo=FALSE, comment=NA}
-t <- createDataFrame("smother", "def.action", d)
+t <- createDataFrame(c("gk.smothers.won", "gk.smothers.lost"), "def.action", d)
+t <- t[grep("[Gg][Kk]", t[,"def.position"]),]
+t$poss.player <- t$def.player
+
+t <- createTable(c("gk.smothers.won", "gk.smothers.lost"), "def.action", t)
+names(t) <- c("Won", "Lost")
+
+print(t, digits=2)
 ```
 
 ###Distribution
@@ -614,5 +621,5 @@ print(t2, digits=2)
 * The full match can be seen at [https://www.youtube.com/watch?v=fFW9GXXOizU](https://www.youtube.com/watch?v=fFW9GXXOizU).
 * The csv file with all the match events from which this analysis is source [can be found here on GitHub.](https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/nwsl-2015/2015-nwsl-semifinal-crs-fckc-091315.csv)
 * The raw Excel file, in all it's ugliness, with the blank spots that I filled in with some help from R, [can be found here on GitHub.](https://github.com/amj2012/wosostats/blob/master/source/excel/nwsl-2015/2015-nwsl-semifinal-crs-fckc-091315.xlsx)
-* If you have R Studio, can view this entire page and all the source code behind each table by [downloading the R Markdown file here on GitHub.](https://github.com/amj2012/woso-stats/blob/master/2015-nwsl/2015-nwsl-championship-100115-blogpost.Rmd)
+* If you have R Studio, can view this entire page and all the source code behind each table by [downloading the R Markdown file here on GitHub.](https://github.com/amj2012/wosostats/blob/master/analysis/rmd/nwsl-2015/2015-nwsl-semifinal-crs-fckc-091315.Rmd)
 * The R files I used to tidy the original raw Excel file and to help create the tables [can be found here on GitHub.](https://github.com/amj2012/wosostats)

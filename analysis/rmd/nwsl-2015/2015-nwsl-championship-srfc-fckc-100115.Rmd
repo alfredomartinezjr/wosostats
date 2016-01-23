@@ -1,35 +1,16 @@
 ---
 title: "NWSL Championship 2015 Stats"
 output: html_document
-runtime: shiny
----
-
-What this is
----
-
-I went through the 2015 NWSL Championship watch, which is freely available on YouTube, logged a bunch of stats, and put the results into this R Markdown document.
-
-That’s the short of it. The basics is that I tracked every match “action” out of a list (e.g. forward passes, take ons won, aerial duels won, etc.) onto an Excel spreadsheet, filled in the blanks and converted the file into a csv file, and analyzed what I wanted with R.
-
-I’d ideally want to create a place where you can play with the stats yourself and analyze a variety of matches and players, but right now I only have this match. I’m going to start tracking more matches, ideally for more than the NWSL, but definitely starting with the NWSL season, but I’ll never get it done if I’m the only one tracking this. (I don’t know of another site on the web that has advanced soccer stats like these for women’s soccer. Help!)
-
-Want to log stats on your own and help out? Read more [here.](https://github.com/amj2012/wosostats/blob/master/resources/how-to-log-stats.md) To learn about action definitions that are used to log stats and used in this analysis, read more [here.](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md)
-
+runtime: html
 ---
 
 ```{r, echo=FALSE, comment=NA, include=FALSE}
-library(plyr)
-library(dplyr)
+require(plyr)
+require(dplyr)
 require(RCurl)
 
-d <- getURL("https://raw.githubusercontent.com/amj2012/woso-stats/master/source/csv/nwsl-2015/2015-nwsl-championship-100115.csv")
+d <- getURL("https://github.com/amj2012/wosostats/raw/master/source/csv/nwsl-2015/2015-nwsl-championship-srfc-fckc-100115.csv")
 d <- read.csv(textConnection(d))
-
-## FOR SEATTLE-only
-## dnotused <- d[d[,"poss.team"] == "SRFC" & d[,"poss.player"] != " ",]
-
-## KANSAS CITY-only
-## dnotused <- d[d[,"poss.team"] == "FCKC" & d[,"poss.player"] != " ",]
 
 ## Change relevant columns to character type
 d$poss.position <- as.character(d$poss.position)
@@ -51,13 +32,15 @@ d$def.player.disciplinary <- as.character(d$def.player.disciplinary)
 d$def.notes <- as.character(d$def.notes)
 
 source("https://raw.githubusercontent.com/amj2012/woso-stats/master/code/version-1/analysis-functions.R")
-
-
 ```
 
-Attacking
----
+This is a summary of match stats from the NWSL 2015 Championship between Seattle Reign FC and FC Kansas City. It is broken down into what are defined as "attacking," "passing," "possession," "defending," and "goalkeeping" stats. 
 
+I went through the 2015 NWSL Championship watch, which is freely available on YouTube, logged a bunch of stats, and put the results into this R Markdown document. That's the short of it. The slightly longer explanation is that I tracked every match "event" out of a list of 150 different events (e.g. forward passes completed, take ons won, aerial duels won, etc.) onto an Excel spreadsheet, filled in the blanks and converted the file into a csv file, and analyzed what I wanted with R. 
+
+Want to log stats on your own and help out? Please do! Right now this is just one person doing all this; more people logging stats means more data that can be analyzed. Read more about how to do this on your own [here](https://github.com/amj2012/wosostats/blob/master/resources/how-to-log-stats.md) and email me at alfredom790@gmail.com if you're interested. To learn about the action definitions that are used to log stats and used in this analysis, read more [here.](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md)
+
+#Attacking Stats
 * Shots
 * Assists & Key Passes
 * Big Chances
@@ -67,6 +50,7 @@ Attacking
 * Crosses
 * Through Balls
 
+### Shots
 ```{r shots, echo=FALSE, comment=NA}
 ## Creates table for players pased on types of shots.
 t <- createTable(c("shots", "accuracy", "shots.scored", "shots.stopped.by.gk", "shots.stopped.by.def", "shots.blocked.by.def", "shots.missed") ,"poss.player.event", d)
@@ -83,11 +67,12 @@ t <- t[order(-t$shots, -t$accuracy),]
 ## Change names to be more readable
 names(t) <- c("Shots","Accuracy","Scored","GK Stop", "DEF Stop", "Blocked", "Missed")
 
-shots <-t
-shots <- cbind("Player" = rownames(shots), shots)
+print(t, digits=2)
 
 ```
 
+### Assists & Key Passes
+*A key pass is defined as a pass that leads to a clear goal-scoring opportunity (a big chance, defined below). Not all key passes result in goals, but they're worth noting when they happen*
 ```{r key_passes, echo=FALSE, comment=NA}
 t <- createTable(c("key.passes" ,"assists", "second.assists", "unscored.key.passes"), "poss.notes", d)
 
@@ -100,11 +85,12 @@ t <- t[order(-t$assists, -t$second.assists),]
 ## Change names to be more readable
 names(t) <- c("Total Key Passes","Assists","Second Assists", "Unscored Key Passes")
 
-keypasses <- t
-keypasses <- cbind(rownames(keypasses), keypasses)
+print(t, digits=2)
 
 ```
 
+###Big Chances
+*A big chance is a clear goal-scoring opportunity, usually a one-one scenario with the goalkeeper or an unpressured point-blank shot, where the player is expected to score*
 ```{r big_chances, echo=FALSE, comment=NA}
 t <- createTable(c("big.chances", "big.chances.scored", "big.chances.shot.on.goal", "big.chances.shot.missed",  "big.chances.dispossessed"),"poss.notes", d)
 
@@ -115,11 +101,12 @@ t <- t[order(-t$big.chances, -t$big.chances.scored),]
 
 names(t) <- c("Big Chances","Scored", "SOG", "Missed", "Dispossessed")
 
-bigchances <- t
-bigchances <- cbind("Player" = rownames(bigchances), bigchances)
+print(t, digits=2)
 
 ```
 
+### Shots Under Pressure
+*I define what makes a shot (and a pass, for that matter) as being "under pressure" [here.](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md#defensive-player-actions)*
 ```{r shots_under_pressure, echo=FALSE, comment=NA}
 t <- createCleanDataFrame(c("shots", "accuracy", "shots.scored", "shots.stopped.by.gk", "shots.stopped.by.def", "shots.blocked.by.def", "shots.missed") ,"poss.player.event", d)
 ## Adds column for whether shot is "under.pressure" or "not.under.pressure"
@@ -132,12 +119,14 @@ t3$total <- t3$yes + t3$no
 t3$pct <- t3$yes/t3$total
 # rename and print
 t3 <- t3[,2:4]
+t3 <- t3[order(-t3$yes, -t3$pct),]
 names(t3) <- c("Pct of All Shots", "Under Press.", "Not Under Press.")
-shotsunderpressure <- t3
-shotsunderpressure <- cbind("Player" = rownames(shotsunderpressure), shotsunderpressure)
+print(t3, digits=2)
 
 ```
 
+### Shot Location
+*I split up the field into attacking, middle, and defensive thirds and into left, center, and right sides of the fields. I also noted if a play occurred in the 18 or 6 yard box. If it gets kinda hard to read, just remember that "A"" means the opponent's third of the field, "M" refers to the middle third, "D" refers to the defensive third. The letters R, C, and L refer to right, center, and left sides of the field, respectively.*
 ```{r shot_location, echo=FALSE, comment=NA}
 t <- createCleanDataFrame(c("shots", "accuracy", "shots.scored", "shots.stopped.by.gk", "shots.stopped.by.def", "shots.blocked.by.def", "shots.missed") ,"poss.player.event", d)
 
@@ -149,13 +138,13 @@ t2 <- createTable(c("OPP.6.YD", "OPP.18.YD","OPP.3RD.L","OPP.3RD.C","OPP.3RD.R",
 t2$beyond <- rowSums(t2[,7:17])
 ## Get rid of all columns after the "Beyond" column to save space
 t2 <- t2[,1:6]
-shotlocation <- t2
-shotlocation <- cbind("Player" = rownames(shotlocation), shotlocation)
 
-## Might use this later
-## d6$poss.player.location <- factor(as.character(d6$poss.player.location), levels = c("in.attacking.third.left", "in.attacking.third.center", "in.attacking.third.right", "in.middle.third.left", "in.middle.third.center", "in.middle.third.right", "in.defensive.third.left", "in.defensive.third.center", "in.defensive.third.right", "in.opp.18.yd.box", "in.opp.6.yd.box", "in.own.18.yd.box", "in.own.6.yd.bx"))
+print(t2, digits=2)
+
 ```
 
+### Crosses
+*Crosses are defined as passes, usually through the air, deep into the box from the right or left side of the field. "Corner" refers to crosses from the opposing third of the field and "Long" refers to crosses from deeper up the field.*
 ```{r crosses, echo=FALSE, comment=NA}
 t <- createCleanDataFrame(c("corner.crosses", "deep.crosses"), "ball.type", d)
 
@@ -173,14 +162,15 @@ t3 <- createTable(c("corner.crosses", "deep.crosses"), "ball.type", t)
 
 # Merge the two sets of columns
 t4 <- cbind(t2, t3)
-t4 <- t4[order(-t4$completed, -t4$pct, t4$attempts),]
+t4 <- t4[order(-t4$completed, -t4$pct, t4$attempts, -t4$corner.crosses),]
 
 names(t4) <- c("Completed", "Pct", "Attempts", "Corner", "Long")
-crosses <- t4
-crosses <- cbind("Player" = rownames(crosses), crosses)
 
+print(t4, digits=2)
 ```
 
+### Through Balls
+*Through balls are defined as passes that split the defense and are intended to meet a teammate, running past a defender, at the end of their run*
 ```{r through_balls, echo=FALSE, comment=NA}
 t <- createCleanDataFrame(c("through.balls"), "ball.type", d)
 
@@ -195,26 +185,12 @@ t2 <- t2[order(-t2$completed, -t2$pct, t2$attempts),]
 
 names(t2) <- c("Completed", "Pct", "Attempts")
 
-throughballs <- t2
-throughballs <- cbind("Player" = rownames(throughballs), throughballs)
-
-selectInput("shotsevent", "Select an Attacking Stat:", c("Shots", "Key Passes", "Big Chances", "Shots Under Pressure", "Shot Location", "Crosses", "Through Balls"))
-
-shotsInput <- reactive({
-  selection <- switch(input$shotsevent, "Shots" = shots, "Key Passes" = keypasses, "Big Chances" = 
-                        bigchances, "Shots Under Pressure" = shotsunderpressure, 
-                      "Shot Location" = shotlocation, "Crosses" = crosses, 
-                      "Through Balls" = throughballs)
-})
-
-renderDataTable(shotsInput(), options = list(searching = FALSE, digits = 2))
+print(t2, digits=2)
 
 ```
 
-Passing
----
-
-* Overall Passing
+#Passing Stats
+* All Pass Attempts
 * Pass Attempts by Location
     * Attacking Third
     * Middle Third
@@ -222,6 +198,7 @@ Passing
 * Passing Under Pressure
 * Passes by Length
 
+### All Pass Attempts
 ```{r overall_passing, echo=FALSE, comment=NA}
 t <- createCleanDataFrame(c("passes.f.c", "passes.f.b", "passes.f.m", 
                     "passes.s.c", "passes.s.b", "passes.s.m", "passes.b.c", 
@@ -240,11 +217,13 @@ t2 <- t2[,1:3]
 t2 <- t2[order(-t2$completed, -t2$pct),]
 
 names(t2) <- c("Completed", "Pct", "Attempts")
-allpasses <- t2
-allpasses <- cbind("Player" = rownames(allpasses), allpasses)
+
+print(t2, digits=2)
+
 
 ```
 
+### Pass Attempts by Location
 ```{r pass_attempt_location, echo=FALSE, comment=NA}
 t2 <- createTable(c("Total","Attacking Third", "Middle Third","Defensive Third","Left Flank",
                     "Right Flank","OPP.6.YD","OPP.18.YD","OPP.3RD.L","OPP.3RD.C","OPP.3RD.R",
@@ -259,11 +238,13 @@ t2[,"Defensive.Third"] <- rowSums(t2[,c("DEF.3RD.L","DEF.3RD.C", "DEF.3RD.R","DE
 t2[,"Left.Flank"] <- rowSums(t2[,c(9,12,15,18)])
 t2[,"Right.Flank"] <- rowSums(t2[,c(11,14,17,20)])
  
-passlocation <- t2
-passlocation <- cbind("Player" = rownames(passlocation), passlocation)
+t2[order(-t2$Total),]
+
+print(t2, digits=2)
 
 ```
 
+### Passing in the Attacking Third
 ```{r attack_3rd_passing, echo=FALSE, comment=NA}
 t2 <- createCleanDataFrame(c("OPP.6.YD","OPP.18.YD","OPP.3RD.L","OPP.3RD.C","OPP.3RD.R"), "poss.destination", t)
 
@@ -277,10 +258,11 @@ t3[,"Pct"] <- t3[,"Completed"]/t3[,"Attempts"]
 t3 <- t3[,1:3]
 
 t3 <- t3[order(-t3[,"Completed"], -t3[,"Pct"]),]
-attack3rdpasses <- t3
-attack3rdpasses <- cbind("Player" = rownames(attack3rdpasses), attack3rdpasses)
+print(t3, digits=2)
+
 ```
 
+### Passing in the Middle Third
 ```{r middle_3rd_passing, echo=FALSE, comment=NA}
 t2 <- createCleanDataFrame(c("OPP.MID.3RD.L","OPP.MID.3RD.C","OPP.MID.3RD.R","DEF.MID.3RD.L","DEF.MID.3RD.C", "DEF.MID.3RD.R"), "poss.destination", t)
 
@@ -294,11 +276,12 @@ t3[,"Pct"] <- t3[,"Completed"]/t3[,"Attempts"]
 t3 <- t3[,1:3]
 
 t3 <- t3[order(-t3[,"Completed"], -t3[,"Pct"]),]
-mid3rdpasses <- t3
-mid3rdpasses <- cbind("Player" = rownames(mid3rdpasses), mid3rdpasses)
+print(t3, digits=2)
+
 
 ```
 
+### Passing in the Defensive Third
 ```{r defensive_3rd_passing, echo=FALSE, comment=NA}
 t2 <- createCleanDataFrame(c("DEF.3RD.L","DEF.3RD.C", "DEF.3RD.R","DEF.18.YD","DEF.6.YD"), "poss.destination", t)
 
@@ -312,10 +295,12 @@ t3[,"Pct"] <- t3[,"Completed"]/t3[,"Attempts"]
 t3 <- t3[,1:3]
 
 t3 <- t3[order(-t3[,"Completed"], -t3[,"Pct"]),]
-def3rdpasses <- t3
-def3rdpasses <- cbind("Player" = rownames(def3rdpasses), def3rdpasses)
+print(t3, digits=2)
+
 ```
 
+### Passing Under Pressure
+*"Pct.of.Passes" refers to the percentage of all pass attempts by a player that were under pressure. I define what makes a pass "under pressure" [here.](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md)*
 ```{r passing_under_pressire, echo=FALSE, comment=NA}
 t2 <- addColumnForQualifier("pressure", "pressured.opp", "def.event", d, t)
 
@@ -343,39 +328,23 @@ t5 <- cbind(t4,t3)
 t5 <- t5[order(-t5[,"Completed"], -t5[,"Comp.Pct"], -t5[,"Pct.of.Passes"]),]
 t5 <- t5[,c("Pct.of.Passes", "Completed", "Comp.Pct","Attempts")]
 
-pressuredpasses <- t5
-pressuredpasses <- cbind("Player" = rownames(pressuredpasses), pressuredpasses)
+print(t5, digits=2)
+
 #table(t5)
 #
 #renderTable({
 #  head(t5)
 #})
 
-selectInput("passingevent", "Select a Passing Stat:", c("All Pass Attempts", 
-                                                    "Passes by Location", 
-                                                    "Passes in Attacking 3rd", 
-                                                    "Passes in Middle 3rd", 
-                                                    "Passes in Defensive 3rd", 
-                                                    "Passing Under Pressure"))
-
-passingInput <- reactive({
-  selection <- switch(input$passingevent, "All Pass Attempts" = allpasses, 
-                      "Passes by Location" = passlocation, 
-                      "Passes in Attacking 3rd" = attack3rdpasses, 
-                      "Passes in Middle 3rd" = mid3rdpasses, 
-                      "Passes in Defensive 3rd" = def3rdpasses, 
-                      "Passing Under Pressure" = pressuredpasses)
-})
-
-renderDataTable(passingInput(), options = list(searching = FALSE, digits = 2))
 
 ```
 
-Possession
----
-* Take Ons
+#Possession Stats
+* Take Ons and Dispossessions
 * Aerial Duels
 
+###Take Ons and Dispossessions
+*A take on is an attempt by a player to get past her defender and maintain possession of the ball. A take on is “won” if the player dribbles past a defender, turns a defender to create open space, or draws a foul. A take on is “lost” if the ball is tackled away, regardless of who recovers the ball or where it ends up, or if the player loses possession through a lost touch or a ball shield.*
 ```{r take_ons, echo=FALSE, comment=NA}
 t <- createCleanDataFrame(c("take.on.won", "take.on.lost", "dispossessed"),"poss.player.event", d)
 
@@ -386,10 +355,11 @@ t2[,"Take.On.Success"] <- t2[,"take.on.won"]/t2[,"Take.Ons"]
 t2 <- t2[order(-t2[,"take.on.won"], -t2[,"Take.On.Success"]),]
 names(t2) <- c("Won", "Pct", "Attempts", "Lost", "Dispossessed")
 
-takeons <- cbind("Player" = rownames(t2), t2)
-
+print(t2, digits=2)
 ```
 
+###Aerial Duels
+*Aerial duels are when two players challenge for a 50/50 ball in the air. The first player to make contact with the ball is deemed to have won the aerial duel, regardless of where the ball ends up or who recovers it.*
 ```{r aerial_duels, echo=FALSE, comment=NA}
 t <- createDataFrame(c("aerial.challenges.won", "aerial.challenges.lost"), "poss.player.event", d)
 
@@ -408,28 +378,18 @@ t5 <- t5[order(-t5[,"aerial.challenges.won"], -t5[,"Success.Pct"], t5[,"Aerial.D
 t5 <- t5[,1:3]
 names(t5) <- c("Won", "Pct", "Attempts")
 
-aerialduels <- cbind("Player" = rownames(t5), t5)
-
-selectInput("possessionevent", "Select a Possession Stat:", c("Take Ons", "Aerial Duels"))
-
-possessionInput <- reactive({
-  selection <- switch(input$possessionevent, "Take Ons" = takeons, 
-                      "Aerial Duels" = aerialduels)
-})
-
-renderDataTable(possessionInput(), options = list(searching = FALSE, digits = 2))
+print(t5, digits=2)
 
 ```
 
-Defending
----
+#Defending Stats
 * Tackles & Pressure
 * Interceptions
 * Recoveries
 * Clearances, Ball Shields, & Blocks
-* Balls Disrupted per 90 Minutes
 
 ###Tackles & Pressure
+*For a list of definitions for these actions, read more [here](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md#defensive-player-actions)*
 ```{r tackles_pressure, echo=FALSE,comment=NA}
 t <- createDataFrame(c("dispossessed.ball.shielded", "dispossessed.steal", "dispossessed.lost.touch", 
                        "tackles.ball.away", "tackles.wins.ball", "dribbled.tackles.missed", 
@@ -449,10 +409,10 @@ t2$Tackles <- t2$tackles.ball.away + t2$tackles.wins.ball
 t2$Dribbles.Allowed <- t2$dribbled.tackles.missed + t2$dribbled.out.run + t2$dribbled.turned
 t2$Dispossessed.Opp <- t2$dispossessed.ball.shielded + t2$dispossessed.steal + t2$dispossessed.lost.touch
 t2 <- t2[,1:5]
-t2 <- t2[order(-t2$Tackles, t2[,"Dribbles.Allowed"]),]
-names(t2) <- c("Tackles", "Dribbles Allowed", "Pressed Opp", "Dispossessed Opp", "Balls Shielded")
+t2 <- t2[order(-t2$Tackles, t2$Dribbles.Allowed, -t2$pressured.opp),]
+names(t2) <- c("Tackles", "Dribbled", "Presses", "Dispossesses", "Ball Shields")
 
-tacklespressure <- cbind("Player" = rownames(t2), t2)
+print(t2, digits=2)
 ```
 
 ###Interceptions
@@ -473,10 +433,11 @@ t2 <- t2[,1:4]
 t2 <- t2[order(-t2$interceptions, -t2[,"Def.3rd"]),]
 names(t2) <- c("Total", "In Def 3rd", "In Mid 3rd", "In Opp 3rd")
 
-interceptions <- cbind("Player" = rownames(t2), t2)
+print(t2, digits=2)
 ```
 
 ###Recoveries
+*A recovery is when a player gets posession of a loose ball*
 ```{r recoveries, echo=FALSE, comment=NA}
 t2 <- t[t[,"poss.player.event"] != "interceptions",]
 t2 <- createTable(c("recoveries", "Def 3rd", "Mid 3rd", "Opp 3rd", "OPP.6.YD","OPP.18.YD","OPP.3RD.L","OPP.3RD.C","OPP.3RD.R",
@@ -492,38 +453,25 @@ t2 <- t2[,1:4]
 t2 <- t2[order(-t2$recoveries),]
 names(t2) <- c("Total", "In Def 3rd", "In Mid 3rd", "In Opp 3rd")
 
-recoveries <- cbind("Player" = rownames(t2), t2)
+print(t2, digits=2)
 ```
 
 ###Clearances, Ball Shields, & Blocks
 ```{r clearances_shields_blocks, echo=FALSE, comment=NA}
-t <- createDataFrame(c("clearances", "balls.shielded", "passes.blocked", "shots.blocked"), "def.event", d)
+t <- createDataFrame(c("clearances", "passes.blocked", "shots.blocked"), "def.event", d)
 t <- t[,c("event","time", "def.position","def.team","def.player","def.event","def.location", "def.player.disciplinary","def.notes")]
 
 names(t) <- c("event", "time", "position","team", "poss.player", "player.event", "location", 
               "def.player.disciplinary", "def.notes")
 
-t2 <- createTable(c("passes.blocked","shots.blocked", "clearances", "balls.shielded"), "player.event", t)
+t2 <- createTable(c("passes.blocked","shots.blocked", "clearances"), "player.event", t)
 t2 <- t2[order(-t2$passes.blocked, -t2$shots.blocked),]
-names(t2) <- c("Passes Blocked", "Shots Blocked","Clearances", "Balls Shielded")
+names(t2) <- c("Passes Blocked", "Shots Blocked","Clearances")
 
-clearances <- cbind("Player" = rownames(t2), t2)
-
-selectInput("defendingevent", "Select a Possession Stat:", c("Tackles", "Interceptions", "Recoveries", "Clearances/Shields/Blocks"))
-
-defendingInput <- reactive({
-  selection <- switch(input$defendingevent, "Tackles" = tacklespressure, 
-                      "Interceptions" = interceptions,
-                      "Recoveries" = recoveries,
-                      "Clearances/Shields/Blocks" = clearances)
-})
-
-renderDataTable(defendingInput(), options = list(searching = FALSE, digits = 2))
+print(t2, digits=2)
 ```
 
-
-Goalkeeping
----
+#Goalkeeping
 * Shots Faced
 * High Balls
 * Smothers
@@ -551,8 +499,9 @@ t3$goals.conceded <- t3$yes
 t4 <- cbind(t2, t3)
 t4$saves <- t4$save.attempts - t4$goals.conceded
 t4 <- t4[,1:3]
+names(t4) <- c("Saves", "Attempts", "Goals Conceded")
 
-shots.faced <- cbind("Player" = rownames(t4), t4)
+print(t4, digits=2)
 
 ```
 
@@ -595,17 +544,15 @@ t2 <- t2[,c(1,3,4,6,8,10,12)]
 t2$won <- rowSums(t2[,3:4])
 names(t2) <- c("Faced", "Won", "Caught", "Punched Away", "Crosses", "Corners", "Free Kicks")
 
-high.balls.faced <- cbind("Player" = rownames(t2), t2)
-
+print(t2, digits=2)
 ```
 
-###Smothers
 ``` {r smothers, echo=FALSE, comment=NA}
 t <- createDataFrame("smother", "def.event", d)
 ```
 
 ###Distribution
-A lot of kicks and throws from the goalkeepers were cut off by the broadcast, which often cut into play and prevented me from seeing what the goalkeeper did with the ball after winning it. Those instances are not counted in this table.
+*A LOT of goal kicks and throws from the goalkeepers were cut off by the broadcast, which often cut into play and prevented me from seeing what the goalkeeper did with the ball after her team won the ball. Those instances of the broadcast cutting off the play are not counted in this table. This doesn't count passes in open play, and this is a section I'd like to flesh out more as I get more data from more matches.*
 ```{r distribution, echo=FALSE, comment=NA}
 t <- createDataFrame(c("free.kick.pass", "goal.kick", "gk.short.throws", "gk.long.throws", "gk.drop.kick"), "ball.type", d)
 
@@ -626,25 +573,12 @@ t2 <- t2[order(-t2$completed, -t2$pct),]
 names(t2) <- c("Completed", "Pct", "Attempts")
 t2 <- t2[,c("Pct", "Attempts")]
 
-distribution <- cbind("Player" = rownames(t2), t2)
-
-selectInput("goalieevent", "Select a Possession Stat:", c("Shots Faced", 
-                                                          "High Balls Faced", 
-                                                          "Distribution"))
-
-goalieInput <- reactive({
-  selection <- switch(input$goalieevent, "Shots Faced" = shots.faced, 
-                      "High Balls Faced" = high.balls.faced,
-                      "Distribution" = distribution)
-})
-
-renderDataTable(goalieInput(), options = list(searching = FALSE, digits = 2))
-
+print(t2, digits=2)
 ```
 
 #Sources
 * The full match can be seen at [https://www.youtube.com/watch?v=AD5jqwDieiE](https://www.youtube.com/watch?v=AD5jqwDieiE).
-* The csv file with all the match events from which this analysis is source [can be found here on GitHub.](https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/nwsl-2015/2015-nwsl-championship-100115.csv)
-* The raw Excel file, in all it's ugliness, with the blank spots that I filled in with some help from R (more on that below), [cab also be found here on GitHub.](https://github.com/amj2012/wosostats/blob/master/source/excel/nwsl-2015/2015-nwsl-championship-100115.xlsx)
-* If you have R Studio, can view this entire page and all the source code behind each table by [downloading the R Markdown file here on GitHub.](https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/rmd/nwsl-2015/2015-nwsl-championship-100115.Rmd)
-* The R files I used to tidy the original raw Excel file and to help create the tables [can be found here on GitHub.](https://github.com/amj2012/wosostats/tree/master/code/version-1)
+* The csv file with all the match events from which this analysis is source [can be found here on GitHub.](https://github.com/amj2012/wosostats/raw/master/source/csv/nwsl-2015/2015-nwsl-championship-srfc-fckc-100115.csv)
+* The raw Excel file, in all it's ugliness, with the blank spots that I filled in with some help from R (more on that below), [cab also be found here on GitHub.](https://github.com/amj2012/wosostats/blob/master/source/excel/nwsl-2015/2015-nwsl-championship-srfc-fckc-100115.xlsx)
+* If you have R Studio, can view this entire page and all the source code behind each table by [downloading the R Markdown file here on GitHub.](https://github.com/amj2012/woso-stats/blob/master/2015-nwsl/2015-nwsl-championship-100115-blogpost.Rmd)
+* The R files I used to tidy the original raw Excel file and to help create the tables [can be found here on GitHub.](https://github.com/amj2012/woso-stats)
