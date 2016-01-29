@@ -106,8 +106,8 @@
 101,"7",NA,"WAS","Nairn","passes.b","AM3L",NA,NA,NA,"SRFC","Veje","interceptions","AM3C",NA,NA,NA,NA,NA,"errors.to.big.chances"
 102,"7",NA,"SRFC","Veje","movement","AM3C","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 103,"7",NA,"SRFC","Veje","movement","A3C","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-104,"7",NA,"SRFC","Veje","shots.stopped.by.gk","A18",NA,NA,"GK","WAS","Harris","gk.s.o.g.stop","D18","parried.to.safety","diving",NA,"big.chances.shot.on.goal,out.of.bounds.keep.poss",NA,"big.chances.stopped"
-104,"7",NA,NA,NA,NA,NA,NA,NA,NA,"WAS","Nairn","clearances",NA,NA,NA,NA,NA,NA,NA
+104,"7",NA,"SRFC","Veje","shots.stopped.by.gk","A18",NA,NA,"GK","WAS","Harris","gk.s.o.g.stop","D18","parried.to.safety","diving",NA,"big.chances.shot.on.goal",NA,"big.chances.stopped"
+104,"7",NA,NA,NA,NA,NA,NA,NA,NA,"WAS","Nairn","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 105,"8",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 106,"8",NA,"SRFC","Mathias","recoveries","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 107,"8",NA,"SRFC","Mathias","passes.b.c","A3C","AM3C",NA,NA,"WAS","Johnson","pressured","D3C",NA,NA,NA,NA,NA,NA
@@ -1032,7 +1032,8 @@
 941,"71",NA,"SRFC","Cox","movement","DM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 942,"71",NA,"SRFC","Cox","passes.f.c","AM3L","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 943,"71",NA,"SRFC","Rapinoe","take.on.won","A3L",NA,NA,NA,"WAS","Church","dribbled.turned","D3R",NA,NA,NA,NA,NA,NA
-944,"71",NA,"SRFC","Rapinoe","passes.s.c","A3L","A6","corner.crosses",NA,"WAS","Church","pressured","D3R",NA,NA,NA,"assists,key.pass",NA,NA
+944,"71",NA,"SRFC","Rapinoe","passes.s.c","A3L","A6","corner.crosses",NA,"WAS","Church","pressured","D3R",NA,NA,NA,"assist",NA,NA
+944,"71",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"key.pass",NA,NA
 945,"71",NA,"SRFC","Yanez","shots.scored","A6",NA,NA,NA,"WAS","Reynolds","challenged","D6",NA,NA,NA,"big.chances.scored",NA,NA
 945,"71",NA,NA,NA,NA,NA,NA,NA,"GK","WAS","Harris","gk.s.o.g.scored","D6","missed","diving",NA,NA,NA,NA
 946,"72",NA,"WAS","Ordega","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
