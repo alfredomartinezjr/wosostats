@@ -175,7 +175,7 @@ For stoppage time, use a plus sign to denote how much stoppage time was added. F
 2. Turn the Excel file into the filled-in completed .csv file that will be used for the actual analyses, by doing one of the following:
   * IF you are comfortable with using R:
     * set the directory in which the Excel file is as the working directory
-    * source the tidy-excel.R file in ______. This should create a data frame named df in your working environment.
+    * source the tidy-excel.R file in https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/tidy-excel.R. This should create a data frame named df in your working environment.
     * save the df data frame as a .csv file in either your working directory or anywhere else you’d like
     * If you’re comfortable with GitHub, push the new .csv file as an addition to the appropriate folder in the wo-so depository. Otherwise, just email me the .csv file at alfredom790@gmail.com.
   * IF you are not comfortable with using R to create this .csv file yourself, just notify me via email and I’ll take care of it.
