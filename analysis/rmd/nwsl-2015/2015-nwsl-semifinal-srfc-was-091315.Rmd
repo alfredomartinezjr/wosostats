@@ -36,7 +36,7 @@ source("https://raw.githubusercontent.com/amj2012/woso-stats/master/code/version
 
 ```
 
-This is a summary of match stats from the NWSL 2015 Semifinal between Seattle Reign FC and the Washington Spirit. It is broken down into what are defined as "attacking," "passing," "possession," "defending," and "goalkeeping" stats. 
+This is a summary of match stats from the NWSL 2015 Semifinal between Seattle Reign FC and the Washington Spirit. It is broken down into what are defined as "attacking," "passing," "possession," "defending," and "goalkeeping" stats.
 
 Want to log stats on your own and help out? Please do! Right now this is just one person doing all this; more people logging stats means more data that can be analyzed. Read more about how to do this on your own [here](https://github.com/amj2012/wosostats/blob/master/resources/how-to-log-stats.md) and email me at alfredom790@gmail.com if you're interested. To learn about the action definitions that are used to log stats and used in this analysis, read more [here.](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md)
 
@@ -618,7 +618,7 @@ print(t2, digits=2)
 ```
 
 #Sources
-* The full match can be seen at [https://www.youtube.com/watch?v=fFW9GXXOizU](https://www.youtube.com/watch?v=fFW9GXXOizU).
+* The full match can be seen at [https://www.youtube.com/watch?v=_jdBcOVuEus](https://www.youtube.com/watch?v=_jdBcOVuEus).
 * The csv file with all the match events from which this analysis is source [can be found here on GitHub.](https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/nwsl-2015/2015-nwsl-semifinal-srfc-was-091315.csv)
 * The raw Excel file, in all it's ugliness, with the blank spots that I filled in with some help from R, [can be found here on GitHub.](https://github.com/amj2012/wosostats/blob/master/source/excel/nwsl-2015/2015-nwsl-semifinal-srfc-was-091315.xlsx)
 * If you have R Studio, can view this entire page and all the source code behind each table by [downloading the R Markdown file here on GitHub.](https://github.com/amj2012/wosostats/blob/master/analysis/rmd/nwsl-2015/2015-nwsl-semifinal-srfc-was-091315.Rmd)
