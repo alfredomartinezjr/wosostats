@@ -5,6 +5,7 @@
 require(xlsx)
 ## IMPORTANT: "match" must be set as a string value, or this won't work
 ## Might take a while to create. Takes about two minutes. Hold tight.
+## The Excel file must be in the working directory
 df <- read.xlsx(match, sheetName = "match")
 ## Deletes all rows before kickoff and saves them in a separate data frame "head"
 ### Gets the row number where the match starts, stores it in x
@@ -15,8 +16,9 @@ ref <- df[1:(start-1),]
 df <- df[start:nrow(df),]
 ## Changes select column factors to integers
 df$event <- as.integer(as.character(df[,"event"]))
-## Gets rid of all those "-"'s and turn them into NAs
+## Gets rid of all those "-" and "" and turn them into NAs
 df[(df) == "-"] <- NA
+df[(df) == ""] <- NA
 
 rm(start)
 
@@ -140,3 +142,5 @@ while (e <= max(df$event)) {
     e <- e + 1
   }
 }
+
+rm(opposites, awayplayers, homeplayers, deflocations, location, awayteam, hometeam, posslocations, teams)
