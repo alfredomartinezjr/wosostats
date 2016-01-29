@@ -1,4 +1,4 @@
-So you want to log stats for matches on your own? You’re amazing! Here are the steps you to take:
+So you want to log stats for matches on your own? You’re amazing! Here are the steps you to take. If you have questions, send me a DM/mention at [@WoSoStats](https://twitter.com/wosostats) or email me at alfredom790@gmail.com.
 
 #Before you start logging the match stats
 1. Download the match-stats-templae.xlsx Excel document from this link: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-template.xlsx?raw=true.  
