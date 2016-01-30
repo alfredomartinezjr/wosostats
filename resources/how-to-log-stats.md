@@ -3,7 +3,7 @@ So you want to log stats for matches on your own? You’re amazing! Here are the
 #Before you start logging the match stats
 1. Download the match-stats-templae.xlsx Excel document from this link: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-template.xlsx?raw=true.  
   * Using Excel is highly recommended as the ability to format, auto-fill, auto-complete, and utilize formulas makes the job of logging stats way easier and faster.
-  * To get an idea of what this spreadsheet should look like, I highly recommend to look over the Excel file for the NWSL SRFC-WAS semifinal, which can be found here https://github.com/amj2012/wosostats/blob/master/source/excel/nwsl-2015/2015-nwsl-semifinal-srfc-was-091315.xlsx, and look it alongside the actual match which can be seen here: https://www.youtube.com/watch?v=_jdBcOVuEus. 
+  * To get an idea of what this spreadsheet should look like, I highly recommend to look over the Excel file for the NWSL SRFC-WAS semifinal, which can be found here https://github.com/amj2012/wosostats/blob/master/source/excel/nwsl-2015/2015-nwsl-semifinal-srfc-was-091315.xlsx, and look at it alongside the actual match which can be seen here: https://www.youtube.com/watch?v=_jdBcOVuEus. 
 2. In the `poss.player` column, write in the last name of each player who played in the match as either a starter or a sub, starting with all the home team players. Do the same for the `def.player` column.
 3. In the `poss.team` and `def.team` columns, write in the acronym of the team for each respective player. 
   * For club teams, refer to the acronyms.csv spreadsheet which can be found at: https://github.com/amj2012/woso-stats/blob/master/resources/abbreviations.csv.
