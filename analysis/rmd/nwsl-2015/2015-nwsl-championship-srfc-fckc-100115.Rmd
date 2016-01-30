@@ -214,7 +214,7 @@ t2$pct <- t2$completed/t2$attempts
 t2 <- t2[,1:3]
 
 # Order
-t2 <- t2[order(-t2$completed, -t2$pct),]
+t2 <- t2[order(-t2$pct,-t2$completed),]
 
 names(t2) <- c("Completed", "Pct", "Attempts")
 
@@ -257,7 +257,7 @@ t3[,"Attempts"] <- rowSums(t3[,4:12])
 t3[,"Pct"] <- t3[,"Completed"]/t3[,"Attempts"]
 t3 <- t3[,1:3]
 
-t3 <- t3[order(-t3[,"Completed"], -t3[,"Pct"]),]
+t3 <- t3[order(-t3[,"Pct"], -t3[,"Completed"]),]
 print(t3, digits=2)
 
 ```
@@ -275,7 +275,7 @@ t3[,"Attempts"] <- rowSums(t3[,4:12])
 t3[,"Pct"] <- t3[,"Completed"]/t3[,"Attempts"]
 t3 <- t3[,1:3]
 
-t3 <- t3[order(-t3[,"Completed"], -t3[,"Pct"]),]
+t3 <- t3[order(-t3[,"Pct"], -t3[,"Completed"]),]
 print(t3, digits=2)
 
 
@@ -294,7 +294,7 @@ t3[,"Attempts"] <- rowSums(t3[,4:12])
 t3[,"Pct"] <- t3[,"Completed"]/t3[,"Attempts"]
 t3 <- t3[,1:3]
 
-t3 <- t3[order(-t3[,"Completed"], -t3[,"Pct"]),]
+t3 <- t3[order(-t3[,"Pct"], -t3[,"Completed"]),]
 print(t3, digits=2)
 
 ```
@@ -325,7 +325,7 @@ t4 <- t4[t4[,"Pct.of.Passes"] != 0,]
 
 ## Merge columns
 t5 <- cbind(t4,t3)
-t5 <- t5[order(-t5[,"Completed"], -t5[,"Comp.Pct"], -t5[,"Pct.of.Passes"]),]
+t5 <- t5[order(-t5[,"Comp.Pct"], -t5[,"Completed"], -t5[,"Pct.of.Passes"]),]
 t5 <- t5[,c("Pct.of.Passes", "Completed", "Comp.Pct","Attempts")]
 
 print(t5, digits=2)
