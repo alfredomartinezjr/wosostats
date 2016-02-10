@@ -623,5 +623,5 @@ print(t2, digits=2)
 * The full match was broadcast on FOX Sports 1.
 * The csv file with all the match events from which this analysis is source [can be found here on GitHub.](https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/international-friendlies-2016/2016-international-friendly-usa-irl-012316.csv)
 * The raw Excel file, in all it's ugliness, with the blank spots that I filled in with some help from R, [can be found here on GitHub.](https://github.com/amj2012/wosostats/blob/master/source/excel/international-friendlies-2016/2016-international-friendly-usa-irl-012316.xlsx)
-* If you have R Studio, can view this entire page and all the source code behind each table by [downloading the R Markdown file here on GitHub.](https://github.com/amj2012/wosostats/blob/master/analysis/rmd/nwsl-2015/2015-nwsl-ptfc-srfc-072215.Rmd)
+* If you have R Studio, can view this entire page and all the source code behind each table by [downloading the R Markdown file here on GitHub.]((https://github.com/amj2012/wosostats/blob/master/analysis/rmd/international-friendlies-2016/2016-international-friendly-usa-irl-012316.Rmd)
 * The R files I used to tidy the original raw Excel file and to help create the tables [can be found here on GitHub.](https://github.com/amj2012/wosostats/tree/master/code/version-2)
