@@ -368,7 +368,7 @@
 332,"22",NA,"LYON","Renard","passes.f.c","AM3L","A18","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 333,"22",NA,"LYON","Hegerberg","aerial.won","A18",NA,NA,NA,"PSG","Erika","aerial.lost","D18",NA,NA,NA,NA,NA,NA
 334,"22",NA,"LYON","Abily","recoveries","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-335,"22",NA,"LYON","Abily","shots.missed","A3C",NA,NA,NA,"PSG","Georges","pressured","D3C",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
+335,"22",NA,"LYON","Abily","shots.missed","A3C","A3C",NA,NA,"PSG","Georges","pressured","D3C",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 335,"22",NA,NA,NA,NA,NA,NA,NA,"GK","PSG","Berger","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA
 336,"22","GK","PSG","Berger","passes.f","D6",NA,"goal.kick,launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 337,"22",NA,"PSG","Hamraoui","aerial.lost","DM3L",NA,NA,NA,"LYON","Abily","aerial.won","AM3R",NA,NA,NA,NA,NA,NA
@@ -381,7 +381,7 @@
 342,"23",NA,NA,NA,NA,NA,NA,NA,NA,"PSG","Cristiane","clearances","D18",NA,NA,NA,NA,NA,NA
 343,"23",NA,"LYON","Majri","recoveries","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 344,"23",NA,"LYON","Majri","take.on.won","A3C",NA,NA,NA,"PSG","Cruz","dribbled.tackles.missed","D3C",NA,NA,NA,NA,NA,NA
-345,"23",NA,"LYON","Majri","shots.stopped.by.gk",NA,NA,NA,"GK","PSG","Berger","gk.s.o.g.stop","D6","parried.to.safety","diving",NA,NA,NA,NA
+345,"23",NA,"LYON","Majri","shots.stopped.by.gk","A3C",NA,NA,"GK","PSG","Berger","gk.s.o.g.stop","D6","parried.to.safety","diving",NA,NA,NA,NA
 346,"23",NA,"LYON","Schelin","recoveries","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 347,"23",NA,"LYON","Schelin","movement","A18","A3R",NA,NA,"PSG","Boulleau","pressured","D18",NA,NA,NA,NA,NA,NA
 348,"23",NA,"LYON","Schelin","passes.b.c","A3R","A3R",NA,NA,"PSG","Boulleau","pressured","D3L",NA,NA,NA,NA,NA,NA
@@ -601,8 +601,8 @@
 542,"36",NA,NA,NA,NA,NA,NA,NA,"GK","PSG","Berger","gk.loose.balls.won","D18","collected",NA,NA,NA,NA,NA
 543,"36","GK","PSG","Berger","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 544,"37",NA,"PSG","Cruz","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-545,"37",NA,"PSG","Delannoy","passes.f.c",NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-546,"37",NA,"PSG","Mittag","shots.blocked",NA,NA,NA,NA,"LYON","Mbock","blocks",NA,NA,NA,NA,NA,NA,NA
+545,"37",NA,"PSG","Delannoy","passes.f.c",NA,"A18","corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+546,"37",NA,"PSG","Mittag","shots.blocked","A18",NA,NA,NA,"LYON","Mbock","blocks",NA,NA,NA,NA,NA,NA,NA
 546,"37",NA,NA,NA,NA,NA,NA,NA,"GK","LYON","Bouhaddi","gk.loose.balls.won","D18","collected",NA,NA,NA,NA,NA
 547,"37",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 548,"37",NA,"LYON","Majri","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -801,8 +801,8 @@
 726,"48",NA,"LYON","Kaci","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 727,"48",NA,"LYON","Mbock","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 728,"48",NA,"LYON","Renard","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-729,"48",NA,"LYON","Renard","passes.f.c",NA,NA,NA,NA,"PSG","Hamraoui","pressured",NA,NA,NA,NA,NA,NA,NA
-730,"48",NA,"LYON","Le Sommer","shots.missed",NA,NA,NA,NA,"PSG","Delannoy","pressured",NA,NA,NA,NA,NA,NA,NA
+729,"48",NA,"LYON","Renard","passes.f.c",NA,"A3C",NA,NA,"PSG","Hamraoui","pressured",NA,NA,NA,NA,NA,NA,NA
+730,"48",NA,"LYON","Le Sommer","shots.missed","A3C",NA,NA,NA,"PSG","Delannoy","pressured","D3C",NA,NA,NA,NA,NA,NA
 730,"48",NA,NA,NA,NA,NA,NA,NA,"GK","PSG","Berger","gk.shot.missed",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 731,"48","GK","PSG","Berger","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 732,"48",NA,"PSG","Delannoy","aerial.lost",NA,NA,NA,NA,"LYON","Schelin","aerial.won",NA,NA,NA,NA,NA,NA,NA
@@ -994,7 +994,7 @@
 896,"60",NA,"LYON","Kaci","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 897,"60",NA,"LYON","Kaci","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 898,"60",NA,"LYON","Necib","take.on.won",NA,NA,NA,NA,"PSG","Dahlkvist","dribbled.turned",NA,NA,NA,NA,NA,NA,NA
-899,"60",NA,"LYON","Necib","shots.stopped.by.gk",NA,NA,NA,"GK","PSG","Berger","gk.s.o.g.stop","D6","caught","standing",NA,NA,NA,NA
+899,"60",NA,"LYON","Necib","shots.stopped.by.gk","A3R",NA,NA,"GK","PSG","Berger","gk.s.o.g.stop","D6","caught","standing",NA,NA,NA,NA
 900,"60","GK","PSG","Berger","passes.f",NA,NA,"gk.drop.kick","GK","LYON","Bouhaddi","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 901,"60",NA,"PSG","Cruz","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 902,"60",NA,"PSG","Mittag","passes.s.c",NA,NA,NA,NA,"LYON","Necib","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -1073,7 +1073,7 @@
 970,"67",NA,"PSG","Delie","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 971,"67",NA,"PSG","Delannoy","passes.f",NA,NA,"throw.in",NA,"LYON","Majri","blocks",NA,NA,NA,NA,NA,NA,NA
 972,"67",NA,"PSG","Cruz","aerial.lost",NA,NA,NA,NA,"LYON","Kumagai","aerial.won",NA,NA,NA,"fouls.conceded",NA,"fouls.won",NA
-973,"67",NA,"LYON","Necib","shots.stopped.by.gk",NA,NA,"free.kick","GK","PSG","Berger","gk.s.o.g.stop","D6","caught","standing",NA,NA,NA,NA
+973,"67",NA,"LYON","Necib","shots.stopped.by.gk","A3L",NA,"free.kick","GK","PSG","Berger","gk.s.o.g.stop","D6","caught","standing",NA,NA,NA,NA
 974,"67","GK","PSG","Berger","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 975,"67",NA,"PSG","Boulleau","take.on.lost",NA,NA,NA,NA,"LYON","Kaci","tackles.ball.away",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 976,"68",NA,"LYON","Le Sommer","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1172,7 +1172,7 @@
 1063,"75",NA,"LYON","Necib","passes.f",NA,NA,NA,NA,"PSG","Hamraoui","blocks",NA,NA,NA,NA,NA,NA,NA
 1064,"75",NA,"LYON","Kumagai","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1064,"75",NA,"LYON","Kumagai",NA,NA,NA,NA,NA,"PSG","Mittag",NA,NA,NA,NA,"fouls.won",NA,"yellow.card",NA
-1065,"76",NA,"LYON","Necib","shots.missed",NA,NA,"free.kick","GK","PSG","Berger","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
+1065,"76",NA,"LYON","Necib","shots.missed","A3C",NA,"free.kick","GK","PSG","Berger","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 1066,"77","GK","PSG","Berger","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1067,"77",NA,"PSG","Delie","aerial.won",NA,NA,NA,NA,"LYON","Kaci","aerial.lost",NA,NA,NA,NA,NA,NA,NA
 1068,"77",NA,"LYON","Renard","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1254,8 +1254,8 @@
 1137,"82",NA,"LYON","Kaci","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1138,"82",NA,"LYON","Abily","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1139,"82",NA,"LYON","Kaci","passes.b.c",NA,NA,NA,NA,"PSG","Mittag","pressured",NA,NA,NA,NA,NA,NA,NA
-1140,"82",NA,"LYON","Abily","passes.f.c",NA,NA,"crosses",NA,"PSG","Dahlkvist","pressured",NA,NA,NA,NA,NA,NA,NA
-1141,"82",NA,"LYON","Lavogez","shots.stopped.by.gk",NA,NA,NA,"GK","PSG","Berger","gk.s.o.g.stop","D6","caught","diving",NA,"big.chances.shot.on.goal",NA,"big.chances.stopped"
+1140,"82",NA,"LYON","Abily","passes.f.c",NA,"A18","crosses",NA,"PSG","Dahlkvist","pressured",NA,NA,NA,NA,NA,NA,NA
+1141,"82",NA,"LYON","Lavogez","shots.stopped.by.gk","A18",NA,"headed","GK","PSG","Berger","gk.s.o.g.stop","D6","caught","diving",NA,"big.chances.shot.on.goal",NA,"big.chances.stopped"
 1142,"82",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1143,"83",NA,"LYON","Abily","passes.f.c",NA,NA,NA,NA,"PSG","Hamraoui","pressured",NA,NA,NA,NA,NA,NA,NA
 1144,"83",NA,"LYON","Schelin","passes.s",NA,NA,"flick.on",NA,"PSG","Cruz","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
@@ -1292,8 +1292,8 @@
 1173,"84",NA,"PSG","Hamraoui","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1174,"84",NA,"PSG","Boulleau","passes.s.c",NA,NA,NA,NA,"LYON","Thomis","pressured",NA,NA,NA,NA,NA,NA,NA
 1175,"84",NA,"PSG","Dahlkvist","passes.f.c",NA,NA,NA,NA,"LYON","Thomis","pressured",NA,NA,NA,NA,NA,NA,NA
-1176,"84",NA,"PSG","Mittag","passes.f.c",NA,NA,NA,NA,"LYON","Mbock","challenged",NA,NA,NA,NA,NA,NA,NA
-1177,"84",NA,"PSG","Dahlkvist","shots.missed",NA,NA,NA,NA,"LYON","Mbock","pressured",NA,NA,NA,NA,NA,NA,NA
+1176,"84",NA,"PSG","Mittag","passes.f.c",NA,"A18",NA,NA,"LYON","Mbock","challenged",NA,NA,NA,NA,NA,NA,NA
+1177,"84",NA,"PSG","Dahlkvist","shots.missed","A18",NA,NA,NA,"LYON","Mbock","pressured","D18",NA,NA,NA,NA,NA,NA
 1177,"84",NA,NA,NA,NA,NA,NA,NA,NA,"LYON","Renard","pressured",NA,NA,NA,NA,NA,NA,NA
 1177,"84",NA,NA,NA,NA,NA,NA,NA,"GK","PSG","Berger","gk.shot.miss","D6",NA,NA,NA,NA,NA,NA
 1178,"84",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1358,8 +1358,8 @@
 1231,"90",NA,"LYON","Abily","passes.f.c",NA,NA,NA,NA,"PSG","Hamraoui","pressured",NA,NA,NA,NA,NA,NA,NA
 1232,"90",NA,"LYON","Hegerberg","take.on.lost",NA,NA,NA,NA,"PSG","Delannoy","tackles.ball.away",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 1233,"90",NA,"LYON","Majri","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1234,"90",NA,"LYON","Hegerberg","passes.s.c",NA,NA,"corner.crosses",NA,"PSG","Delannoy","challenged",NA,NA,NA,NA,NA,NA,NA
-1235,"90",NA,"LYON","Schelin","shots.missed",NA,NA,NA,NA,"PSG","Boulleau","challenged",NA,NA,NA,NA,NA,NA,NA
+1234,"90",NA,"LYON","Hegerberg","passes.s.c",NA,"A18","corner.crosses",NA,"PSG","Delannoy","challenged",NA,NA,NA,NA,NA,NA,NA
+1235,"90",NA,"LYON","Schelin","shots.missed","A18",NA,NA,NA,"PSG","Boulleau","challenged","D18",NA,NA,NA,NA,NA,NA
 1235,"90",NA,NA,NA,NA,NA,NA,NA,"GK","PSG","Berger","gk.shot.miss","D6",NA,NA,NA,NA,NA,NA
 1236,"90+1","GK","PSG","Berger","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1237,"90+1",NA,"PSG","Dahlkvist","aerial.lost",NA,NA,NA,NA,"LYON","Lavogez","aerial.won",NA,NA,NA,NA,NA,NA,NA
@@ -1399,12 +1399,12 @@
 1268,"90+3",NA,"LYON","Mbock","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1269,"90+3",NA,"LYON","Renard","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1270,"90+3",NA,"LYON","Mbock","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1271,"90+3",NA,"LYON","Hegerberg","passes.f.c",NA,NA,"flick.on,headed",NA,"PSG","Erika","challenged",NA,NA,NA,NA,NA,NA,NA
-1272,"90+3",NA,"LYON","Thomis","shots.blocked",NA,NA,NA,NA,"PSG","Boulleau","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
+1271,"90+3",NA,"LYON","Hegerberg","passes.f.c",NA,"A18","flick.on,headed",NA,"PSG","Erika","challenged",NA,NA,NA,NA,NA,NA,NA
+1272,"90+3",NA,"LYON","Thomis","shots.blocked","A18",NA,NA,NA,"PSG","Boulleau","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 1273,"90+3",NA,"LYON","Abily","passes.s.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1274,"90+3",NA,"LYON","Renard","passes.f",NA,NA,"headed",NA,"PSG","Mittag","challenged",NA,NA,NA,NA,NA,NA,NA
-1275,"90+3",NA,"PSG","Mittag","shots.stopped.by.gk",NA,NA,NA,"GK","PSG","Berger","challenged",NA,NA,NA,NA,NA,NA,NA
-1275,"90+3",NA,NA,NA,NA,NA,NA,NA,"GK","PSG","Berger","gk.s.o.g.stop","D6","parried.to.danger","reaching",NA,"big.chances.shot.on.goal",NA,"big.chances.stopped"
+1274,"90+3",NA,"LYON","Renard","passes.f.c",NA,"A18","headed",NA,"PSG","Mittag","challenged",NA,NA,NA,NA,NA,NA,NA
+1275,"90+3",NA,"LYON","Schelin","shots.stopped.by.gk","A18",NA,NA,"GK","PSG","Berger","challenged","D18",NA,NA,NA,"big.chances.shot.on.goal",NA,NA
+1275,"90+3",NA,NA,NA,NA,NA,NA,NA,"GK","PSG","Berger","gk.s.o.g.stop","D6","parried.to.danger","reaching",NA,NA,NA,"big.chances.stopped"
 1275,"90+3",NA,NA,NA,NA,NA,NA,NA,"GK","PSG","Berger","gk.loose.balls.won","D6","collected",NA,NA,NA,NA,NA
 1276,"90+3",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1277,"90+4",NA,"LYON","Renard","passes.f",NA,NA,"launch",NA,"PSG","Erika","blocks",NA,NA,NA,NA,NA,NA,NA
