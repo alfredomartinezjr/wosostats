@@ -95,3 +95,29 @@ createCleanDataFrame <- function(pattern, col, df) {
                                 "poss.player.disciplinary", "poss.notes")]
   t
 }
+
+# 6.
+## Converts factors in csv file into character classes, where appropriate
+convertToCharacter <- function(d) {
+  ## Change relevant columns to character type
+  d$poss.position <- as.character(d$poss.position)
+  d$poss.team <- as.character(d$poss.team)
+  d$poss.player <- as.character(d$poss.player)
+  d$poss.action <- as.character(d$poss.action)
+  d$poss.location <- as.character(d$poss.location)
+  d$poss.play.destination <- as.character(d$poss.play.destination)
+  d$play.type <- as.character(d$play.type)
+  d$def.position <- as.character(d$def.position)
+  d$def.team <- as.character(d$def.team)
+  d$def.player <- as.character(d$def.player)
+  d$def.action <- as.character(d$def.action)
+  d$def.location <- as.character(d$def.location)
+  d$gk.ball.stop <- as.character(d$gk.ball.stop)
+  d$gk.s.o.g.attempt <- as.character(d$gk.s.o.g.attempt)
+  d$poss.player.disciplinary <- as.character(d$poss.player.disciplinary)
+  d$poss.notes <- as.character(d$poss.notes)
+  d$def.player.disciplinary <- as.character(d$def.player.disciplinary)
+  d$def.notes <- as.character(d$def.notes)
+  
+  d
+}
