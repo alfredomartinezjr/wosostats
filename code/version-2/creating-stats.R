@@ -166,9 +166,11 @@ t$accuracy <- (t$shots.scored + t$shots.stopped.by.gk + t$shots.stopped.by.def)/
   (t$shots.scored + t$shots.stopped.by.gk + t$shots.stopped.by.def + t$shots.missed)
 ##Sort by "shots" and "accuracy"
 t <- t[order(-t$shots, -t$accuracy),]
+
 ## Change names to be more readable
 names(t) <- c("Player","Shots","Shot Accuracy","Goals Scored","Shots Stopped by GK", "Shots Stopped by Def", "Shots Missed")
 shots <- t
+
 print(shots, digits=2)
 
 all <- merge(players, shots, by="Player", all=TRUE)
@@ -502,3 +504,6 @@ smothers <- t
 print(t, digits=2)
 
 all <- merge(all, smothers, by=1, all=TRUE)
+
+#CLEANING UP TABLE----------
+all[is.na(all)] <- 0
