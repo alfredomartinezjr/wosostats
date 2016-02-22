@@ -112,6 +112,8 @@ A lost touch is when a player loses possession of the ball, without having taken
 
 Aerial duels are when two players challenge for a 50/50 ball in the air. The first player to make contact with the ball is deemed to have won the aerial duel, regardless of where the ball ends up or who recovers it.
 
+Passes that are also aerial duels should still be counted as aerial duels in a separate row as its own event. So, if a player challenges for a launched ball and heads it to an intended recipient, it should be logged as an `aerial.won` in one event and as a `passes.f/s/b` in the next event.
+
 **Aerial duels lost** - `aerial.lost`
 
 A player is deemed to have lost an aerial duel if the player challenging her for the ball got to the ball first, regardless of where the ball ends up or who recovers it.
