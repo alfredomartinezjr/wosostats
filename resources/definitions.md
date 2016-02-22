@@ -118,7 +118,9 @@ A player is deemed to have lost an aerial duel if the player challenging her for
 
 **Recoveries** - `recoveries`
 
-A recovery is when a player gets posession of a loose ball.  In the `poss.action' column, a recovery should be logged to a player if the last player to have possession of the ball was on the same team. If a player on the opposing team interfered with the ball such as with (but not limited to) a block, a won aerial duel, a clearance, or a tackle. For a ball to change possession under this model, a player on the opposing team must have clear possession of the ball; otherwise, it's created a loose ball that is still technically under  "possession" by the other team and is thus recovered when a player wins it back.
+A recovery is when a player gets posession of a loose ball.  In the `poss.action' column, a recovery should be logged to a player if the last player to have possession of the ball was on the same team. A recovery usually happens after a player on the defending team interferes with the ball such as with (but not limited to) a block, a won aerial duel, a clearance, or a tackle. 
+
+For a ball to change possession under this model, a player on the opposing team must have clear possession of the ball; otherwise, it's created a loose ball that is still technically under "possession" by the other team and is thus recovered when a player wins it back. Recoveries are a way of noting how a team wins or maintains possession.
 
 **Balls shielded** - `ball.shield`
 
@@ -187,7 +189,7 @@ A pass that splits the defense, into open space, to meet a teammate at the end o
 
 **Lay-off balls** - `lay.off`
 
-A one-touch backwards pass.
+A one-touch pass into the direction from where the ball came from.
 
 **Flick-on balls** - `flick.on`
 
@@ -259,11 +261,11 @@ When a defender is turned and allows a possessing player to dribble past her. Us
 
 **Pressuring an opponent** - `pressured`
 
-When a defender applies pressure onto a possessing player's pass, shot, movement into another zone, ball shield, or recovery by stepping up, running at the player, or staying close in front of her, all with the intent of hurrying up the possessing player's play or impeding the possessing player's chance at making a play.
+When a defender applies pressure onto a possessing player's pass, shot, movement into another zone, ball shield, or recovery by stepping up, running at the player, or staying close in front of her, all with the intent of hurrying up the possessing player's play or impeding the possessing player's chance at making a play. There can be more than one defender deemed to be pressuring an opponent (for example, being double-teamed).
 
 **Challenging an opponent** - `challenged`
 
-Same as a `pressured` instance, except these are instances when a defender ends up making contact with a possessing player as she is making one of the aforementioned plays (pass, shot, movement into another zone, ball shield, recovery), further challening that possessing player's ability to make that play on the ball.
+Same as a `pressured` instance, except these are instances when a defender ends up making contact with a possessing player as she is making one of the aforementioned plays (pass, shot, movement into another zone, ball shield, recovery), further challening that possessing player's ability to make that play on the ball. Like with pressuring an opponent, there can be more than one defender deemed to be challeging an opponent (for example, being double-teamed).
 
 **Blocks** - `blocks`
 
@@ -271,7 +273,7 @@ When a defender blocks a pass or a shot and creates a loose ball situation that 
 
 **Interceptions** - `interceptions`
 
-When a defender blocks a pass (or sometimes a shot) and clearly wins possession of the ball.
+When a defender blocks a pass (or sometimes a shot) and clearly wins possession of the ball. These should NOT be counted for missed passes that go into open area, too far away from its intended recipient, and were going to be won by the opposing team anyways. Interceptions should be logged for passes that, were it not for the intercepting defender, were going to meet its intended recipient at her standing location or at the end of her run.
 
 **Balls shielded** - `ball.shield`
 
@@ -288,6 +290,8 @@ Aerial duels are when two players challenge for a 50/50 ball in the air. The fir
 **Aerial duels lost** - `aerial.lost`
 
 A player is deemed to have lost an aerial duel if the player challenging her for the ball got to the ball first, regardless of where the ball ends up or who recovers it.
+
+When both players challenge for the ball and neither wins the ball (i.e., they both mistime their jumps) but can reasonable be said to have had a chance to win the ball, then they both get credidet with an "aerial.lost."
 
 **Shots on goal stopped by a goalkeeper** - `gk.s.o.g.stop`
 
@@ -338,9 +342,11 @@ When a goalkeeper makes an attempt to stop a ball with any part of her body, whe
 
 **Punched to safety** - `punched.to.safety`
 
+Punching a ball out of bounds counts as "to safety."
+
 **Punched to danger** - `punched.to.danger`
 
-When a goalkeeper punches the ball away, but close to the goal and at the feet of an opponent ready to make a play on the ball.
+When a goalkeeper punches the ball away, but close to the goal and at the feet of an opponent ready to make a play on the ball. 
 
 **Dropped** - `dropped`
 
@@ -356,11 +362,20 @@ When a goalkeeper doesn't cleanly catch the ball but does handle it, usually wit
 
 **Parried to safety** - `parried.to.safety`
 
-When a goalkeeper gets a glancing touch on the ball and deviates it into safety.
+When a goalkeeper gets a glancing touch on the ball and deviates it into safety. Parrying a ball out of bounds counts as "to safety."
 
 **Parried to danger** - `parried.to.danger`
 
 When a goalkeeper gets a glancing touch on the ball and deviates it away, but close to the goal and at the feet of an opponent ready to make a play on the ball.
+
+**Deflected to safety** - `deflected.to.safety`
+
+When a goalkeeper uses a part of her body other than her hands (such as her body or legs) to deviate the direction of the ball into safety. Deviating a ball out of bounds counts as "to safety."
+
+**Deflected to danger** - `deflected.to.danger`
+
+When a goalkeeper uses a part of her body other than her hands (such as her body or legs) to deviate the direction of the ball, but it ends up close to goal and at the feet of an opponent ready to make a play on the ball.
+
 
 
 #Goalkeeper save attempt
@@ -417,6 +432,10 @@ When a big chance has occured, log `big.chances.shot.missed` if the possessing p
 **Big chances disspossessed** - `big.chances.dispossessed`
 
 When a big chance has occured, log `big.chances.dispossessed` if the possessing player gets dispossessed before having a chance at a shot on goal
+
+**Big chances created** - `big.chances.created`
+
+To be noted for plays, usually via successful take ons or interceptions in dangerous areas, where a player creates a big chance by herself.
 
 **Assists** - `assists`
 
