@@ -104,9 +104,9 @@ createCleanDataFrame <- function(pattern, col, df) {
   t
 }
 
-##MINUTES PLAYED & META DATA
-### Gets data frame that binds data frames of every player who shows up in "poss.player" and "def.player" column
-players <- rbind(data.frame(Player=unique(d$poss.player), MP=NA,GS=NA),data.frame(Player=unique(d$def.player), MP=NA,GS=NA))
+#MINUTES PLAYED & META DATA----------
+## Gets data frame that binds data frames of every player who shows up in "poss.player" and "def.player" column
+players <- rbind(data.frame(Player=unique(d$poss.player), Team=NA, MP=NA,GS=NA),data.frame(Player=unique(d$def.player), Team=NA, MP=NA,GS=NA))
 players <- players[!is.na(players[,"Player"]),]
 players <- players[unique(players[,"Player"]),]
 matchlength <- length(unique(d$time))
@@ -129,32 +129,41 @@ while (x <= nrow(players)) {
       players[x,"MP"] <- minutesplayed
       players[x,"GS"] <- 1
     } else
-    #if she wasn't a starter and got subbed on and wasn't also later subbed off
-    if ((substitutions[substitutions[,"poss.player"] == player,"poss.action"] %in% "substitution.on")
-        & !(substitutions[substitutions[,"poss.player"] == player,"poss.action"] %in% "substitution.off")){
-      #if she wasn't a starter, got subbed on, and was never subbed off, get the length of unique
-      #values for vector d[,"time] from when she got subbed on to when she got subbed off
-      e <- substitutions[substitutions[,"poss.player"] == player,"event"]
-      firstminute <- grep(e, d[,"event"])
-      minutesplayed <- length(unique(d[firstminute:nrow(d),"time"]))
-      players[x,"MP"] <- minutesplayed
-      players[x,"GS"] <- 0
-    } else
-    #if she wasn't a starter, got subbed on, and was later subbed off
-    if ((substitutions[substitutions[,"poss.player"] == player,"poss.action"] %in% "substitution.on")
-        & (substitutions[substitutions[,"poss.player"] == player,"poss.action"] %in% "substitution.off")) {
-      #if she wasn't a starter, got subbed on, and as later subbed off, get the length of unique
-      #values for vector d[,"time] from when she got subbed on to when she got subbed off
-      e <- substitutions[substitutions[,"poss.player"] == player,"event"]
-      firstminute <- grep(e[1], d[,"event"])
-      lastminute <- grep(e[2], d[,"event"])
-      minutesplayed <- length(unique(d[firstminute:lastminute,"time"]))
-      players[x,"MP"] <- minutesplayed
-      players[x,"GS"] <- 0
-    }
+      #if she wasn't a starter and got subbed on and wasn't also later subbed off
+      if ((substitutions[substitutions[,"poss.player"] == player,"poss.action"] %in% "substitution.on")
+          & !(substitutions[substitutions[,"poss.player"] == player,"poss.action"] %in% "substitution.off")){
+        #if she wasn't a starter, got subbed on, and was never subbed off, get the length of unique
+        #values for vector d[,"time] from when she got subbed on to when she got subbed off
+        e <- substitutions[substitutions[,"poss.player"] == player,"event"]
+        firstminute <- grep(e, d[,"event"])
+        minutesplayed <- length(unique(d[firstminute:nrow(d),"time"]))
+        players[x,"MP"] <- minutesplayed
+        players[x,"GS"] <- 0
+      } else
+        #if she wasn't a starter, got subbed on, and was later subbed off
+        if ((substitutions[substitutions[,"poss.player"] == player,"poss.action"] %in% "substitution.on")
+            & (substitutions[substitutions[,"poss.player"] == player,"poss.action"] %in% "substitution.off")) {
+          #if she wasn't a starter, got subbed on, and as later subbed off, get the length of unique
+          #values for vector d[,"time] from when she got subbed on to when she got subbed off
+          e <- substitutions[substitutions[,"poss.player"] == player,"event"]
+          firstminute <- grep(e[1], d[,"event"])
+          lastminute <- grep(e[2], d[,"event"])
+          minutesplayed <- length(unique(d[firstminute:lastminute,"time"]))
+          players[x,"MP"] <- minutesplayed
+          players[x,"GS"] <- 0
+        }
   }
   x <- x + 1
 }
+## Set team name
+x <- 1
+while (x <= nrow(players)) {
+  player <- as.character(players[x,"Player"])
+  playerteam <- unique(d[d[,"poss.player"] == player & !is.na(d[,"poss.player"]),"poss.team"])
+  players[x,"Team"] <- playerteam
+  x <- x + 1
+}
+
 
 #SHOTS---------------
 ## Creates table for players pased on types of shots.
@@ -166,11 +175,9 @@ t$accuracy <- (t$shots.scored + t$shots.stopped.by.gk + t$shots.stopped.by.def)/
   (t$shots.scored + t$shots.stopped.by.gk + t$shots.stopped.by.def + t$shots.missed)
 ##Sort by "shots" and "accuracy"
 t <- t[order(-t$shots, -t$accuracy),]
-
 ## Change names to be more readable
 names(t) <- c("Player","Shots","Shot Accuracy","Goals Scored","Shots Stopped by GK", "Shots Stopped by Def", "Shots Missed")
 shots <- t
-
 print(shots, digits=2)
 
 all <- merge(players, shots, by="Player", all=TRUE)
