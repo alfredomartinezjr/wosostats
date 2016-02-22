@@ -1,5 +1,7 @@
 So you want to log stats for matches on your own? You’re amazing! Here are the steps you to take. If you have questions, send me a DM/mention at [@WoSoStats](https://twitter.com/wosostats) or email me at alfredom790@gmail.com.
 
+**IMPORTANT: If you decide to start logging match stats, IT IS NOT recommended that you log location data for events in the `poss.location`, `poss.play.destination`, or `def.location` columns, except for `poss.location` data for shots. Logging location data on top of everything else is VERY time-consuming and, while interesting, is not as important as getting a match logged and done, which can be logged for location data later.**
+
 #Before you start logging the match stats
 1. Download the match-stats-templae.xlsx Excel document from this link: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-template.xlsx?raw=true.  
   * Using Excel is highly recommended as the ability to format, auto-fill, auto-complete, and utilize formulas makes the job of logging stats way easier and faster.
@@ -50,8 +52,9 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
   * **Other stoppages in play** - `stoppage.in.play`
 3. For every single new action logged in the `poss.action` column, the value in that row’s `event` column should automatically increase by 1. 
   * If the `poss.action` column has a “-” denoting that there are additional defensive actions being credited to the event, then the value in the `event` column should remain the same. The idea is that a new event is only triggered by a new possessive action or something like a stoppage in play or break in broadcast.
-4. For every single new action logged in the `poss.action` column, log the possessing player’s name in `poss.player` and the location of the event in `poss.location`.
-  * In the `poss.location` column, you must type in the appropriate acronym, in italics below. The location is relative to the player for which you are logging it (e.g. a player is in her 18-yard box if she is defending someone in possession of the ball in the opponent’s 18-yard box, and vice versa). 
+4. For every single new action logged in the `poss.action` column, log the possessing player’s name in `poss.player` 
+5. You do NOT have to define the event's location in `poss.location` for anything other than shots. If you decided to log the location of every event, it could take about as much as 50% longer to finish the entire match. It is recommended that you leave `poss.location` blank unless otherwise specified, or unless you know what you're getting yourself into.
+  * In the `poss.location` column, the value must be one of the appropriate acronyms, shown in italics below. The location is relative to the player for which you are logging it (e.g. a player is in her 18-yard box if she is defending someone in possession of the ball in the opponent’s 18-yard box, and vice versa). 
     * **Opponent’s 6-yard box** - `A6`
     * **Opponent’s 18-yard box** - `A18`
     * **Attacking third, left wing** - `A3L`
@@ -115,7 +118,7 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
   * **Loose balls lost by the goalkeeper** - `gk.loose.balls.lost`
   * Create a new row if necessary when there are multiple defensive actions for one possessing event, but be sure to leave the `poss.action` column blank so that a new event number is not accidentally created
 8. For each `def.action` value, fill in the corresponding player in the `def.player` column.
-9. The `def.location` column should ONLY be manually filled in for the following defensive events:
+9. The `def.location` column should ONLY be manually filled in for the following defensive events and ONLY if you're additionally interested in location data:
   * **Blocks** - `blocks`
   * **Interceptions** - `interceptions`
   * **Balls shielded** - `ball.shield`
@@ -129,6 +132,8 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
   * **Missed the ball** - `missed.the.ball`**Collected** - `collected`
   * **Parried to safety** - `parried.to.safety`
   * **Parried to danger** - `parried.to.danger`
+  * **Deflected to safety** - `deflected.to.safety`
+  * **Deflected to danger** - `deflected.to.danger`
 11. For goalkeeper defensive actions that are shots on goals, log the type of save attempt, regardless of whether it was successful, by filling in the `gk.s.o.g.attempt` column with one of the following values to be written as it is shown in italics below:
   * **Diving save** - `diving`
   * **Standing save** - `standing`
@@ -146,6 +151,7 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
   * **Big chances shot on goal** - `big.chances.shot.on.goal`
   * **Big chances missed** - `big.chances.shot.missed`
   * **Big chances disspossessed** - `big.chances.dispossessed`
+  * **Big chance created** - `big.chances.created`
   * **Assists** - `assists`
   * **Second assists** - `second.assists`
   * **Unscored key passes** - `unscored.key.passes`
@@ -189,3 +195,5 @@ For stoppage time, use a plus sign to denote how much stoppage time was added. F
     * The R code I have written is able to use some logic to figure out, based on values around it, what that “blank” value should be. For example, if a defending player was pressuring an opponent, you can just leave her location as the “-” value. The R code that this Excel file will run through will take the location of the possessing player and use that to figure out the location of the defensive action. If the match was properly logged (and if the code doesn't run into a bug), these logical checks in the R code will fill in these values for you. This saves you hours.
   * **Why does this process take so long?**
     * Logging each action in chronological order unfortunately takes a while, but this is the fastest process I’ve been able to create that can return mountains of data. It takes close to half a day to log an entire match, but you could spend days, or even longer, poring through the data. I could make this process shorter by getting rid of things like location data or special types of passes, but then we’d lose out on valuable data that I really don't yet know how to log otherwise. I hope to explore some ideas on how to make this faster, and ideas are welcome.
+    * **Why not log in location data for everything?**
+    * Logging location data increases that amount of time it takes to log a match by about 50%. I believe it's better to get rich data without location data for 30 matches, and then add that location data later as part of a separate project, than to take longer to get those 30 matches done in the first place. It's just a matter of priorities. Besides, as the columns for location data are still there, it should be simple to go back and add location data for any match.
