@@ -1,6 +1,6 @@
 So you want to log stats for matches on your own? You’re amazing! Here are the steps you to take. If you have questions, send me a DM/mention at [@WoSoStats](https://twitter.com/wosostats) or email me at alfredom790@gmail.com.
 
-**IMPORTANT: If you decide to start logging match stats, IT IS NOT recommended that you log location data for events in the `poss.location`, `poss.play.destination`, or `def.location` columns, except for `poss.location` data for shots. Logging location data on top of everything else is VERY time-consuming and, while interesting, is not as important as getting a match logged and done, which can be logged for location data later.**
+**IMPORTANT: If you decide to start logging match stats, IT IS NOT recommended that you log location data for events in the `poss.location`, `poss.play.destination`, or `def.location` columns, except for `poss.location` data for shots. Logging location data on top of everything else is VERY time-consuming and, while interesting, is not as important as getting a match logged and done, which can be logged for location data later, anyways, as the location data columns will still be there.**
 
 #Before you start logging the match stats
 1. Download the match-stats-templae.xlsx Excel document from this link: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-template.xlsx?raw=true.  
