@@ -1,7 +1,5 @@
 So you want to log stats for matches on your own? You’re amazing! Here are the steps you to take. If you have questions, send me a DM/mention at [@WoSoStats](https://twitter.com/wosostats) or email me at alfredom790@gmail.com.
 
-**IMPORTANT: If you decide to start logging match stats, IT IS NOT recommended that you log location data for events in the `poss.location`, `poss.play.destination`, or `def.location` columns, except for `poss.location` data for shots. Logging location data on top of everything else is VERY time-consuming and, while interesting, is not as important as getting a match logged and done, which can be logged for location data later, anyways, as the location data columns will still be there.**
-
 #Before you start logging the match stats
 1. Download the match-stats-templae.xlsx Excel document from this link: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-template.xlsx?raw=true.  
   * Using Excel is highly recommended as the ability to format, auto-fill, auto-complete, and utilize formulas makes the job of logging stats way easier and faster.
@@ -20,8 +18,10 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
 6. The template spreadsheet should be 1500 rows long. However, if the match you are logging requires more rows and ends up going into blank rows (beyond the ones filled in with “-” hyphens), then guesstimate how many more rows you’ll need and fill them all in with additional “-” hyphens (more on what those are about below).
 
 #While logging match stats
-1. Start logging stats in the row below the one with “kickoff” in the `poss.action` column.
-2. Create a new row for the following types of events, to be typed in the `poss.action` exactly as it’s shown in the code span below. Refer to the action-definitions.doc file at [https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md](https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md) for in-depth definitions for each action.
+1. **IMPORTANT: If you decide to start logging match stats, IT IS NOT recommended that you log location data for events in the `poss.location`, `poss.play.destination`, or `def.location` columns, except for `poss.location` data for shots. Logging location data on top of everything else is VERY time-consuming and, while interesting, is not as important as getting a match logged and done, which can be logged for location data later, anyways, as the location data columns will still be there.**
+2. It is **HIGHLY** recommended that you use shorthand keywords and letters for players, actions, and qualifiers. For example, in the Excel file it is recommended you write down "pf" for a forward pass instead of typing out "passes.f", or even a shortened nickname for a player with a long name. The act of physically typing out the entire keyword adds a lot of unnecessary time, and it is highly recommended that you create your own shorthand keywords for each value shown below. You can then use find and replace after you're done with the match to replace the shortened keywords you used with the long keywords shown below.
+3. Start logging stats in the row below the one with “kickoff” in the `poss.action` column.
+4. Create a new row for the following types of events, to be typed in the `poss.action` exactly as it’s shown in the code span below. Refer to the action-definitions.doc file at [https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md](https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md) for in-depth definitions for each action.
   * **Shots stopped by the goalkeeper** - `shots.stopped.by.gk`
   * **Shots stopped by a defender** - `shots.stopped.by.def`
   * **Shots blocked by a defender** - `shots.blocked`
@@ -50,10 +50,10 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
   * **End of second period of extra time** - `end.of.2.ET`
   * **End of the match** - `end.of.match`
   * **Other stoppages in play** - `stoppage.in.play`
-3. For every single new action logged in the `poss.action` column, the value in that row’s `event` column should automatically increase by 1. 
+5. For every single new action logged in the `poss.action` column, the value in that row’s `event` column should automatically increase by 1. 
   * If the `poss.action` column has a “-” denoting that there are additional defensive actions being credited to the event, then the value in the `event` column should remain the same. The idea is that a new event is only triggered by a new possessive action or something like a stoppage in play or break in broadcast.
-4. For every single new action logged in the `poss.action` column, log the possessing player’s name in `poss.player` 
-5. You do NOT have to define the event's location in `poss.location` for anything other than shots. If you decided to log the location of every event, it could take about as much as 50% longer to finish the entire match. It is recommended that you leave `poss.location` blank unless otherwise specified, or unless you know what you're getting yourself into.
+6. For every single new action logged in the `poss.action` column, log the possessing player’s name in `poss.player` 
+7. You do NOT have to define the event's location in `poss.location` for anything other than shots. If you decided to log the location of every event, it could take about as much as 50% longer to finish the entire match. It is recommended that you leave `poss.location` blank unless otherwise specified, or unless you know what you're getting yourself into.
   * In the `poss.location` column, the value must be one of the appropriate acronyms, shown in italics below. The location is relative to the player for which you are logging it (e.g. a player is in her 18-yard box if she is defending someone in possession of the ball in the opponent’s 18-yard box, and vice versa). 
     * **Opponent’s 6-yard box** - `A6`
     * **Opponent’s 18-yard box** - `A18`
@@ -71,8 +71,8 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
     * **Defensive third, right wing** - `D3R`
     * **Own 18-yard box** - `D18`
     * **Own 6-yard box** - `D6`
-5. The `poss.play.destination` column should only be filled in if the following event was cut off by a broadcast interruption or a stoppage in play. For example, if a player completes a pass, but the receiving player did not have a chance to create an event worth logging because the broadcast decided to interrupt the feed with a replay, then manually enter the destination of the action. Otherwise, there is no way of determining the destination.
-6. The `play.type` column should be filled in for the following types of passing and shots actions written in italics below. Refer to the action-definitions.doc file at [https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md](https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md) for in-depth definitions for each qualifier.
+8. The `poss.play.destination` column should only be filled in if the following event was cut off by a broadcast interruption or a stoppage in play. For example, if a player completes a pass, but the receiving player did not have a chance to create an event worth logging because the broadcast decided to interrupt the feed with a replay, then manually enter the destination of the action. Otherwise, there is no way of determining the destination.
+9. The `play.type` column should be filled in for the following types of passing and shots actions written in italics below. Refer to the action-definitions.doc file at [https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md](https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md) for in-depth definitions for each qualifier.
   * **Corner crosses** - `corner.crosses`
   * **Deep crosses** - `deep.crosses`
   * **Switch** - `switch`
@@ -88,7 +88,7 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
   * **Goalkeeper throws** - `gk.throws`
   * **Goalkeeper drop kicks** - `gk.drop.kick`
   * **Penalty kicks** - `pk`
-7. For each event in the `poss.action` column, log any of the following defensive actions in italics below in the `def.action` column. Refer to the action-definitions.doc file at [https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md](https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md) for in-depth definitions for each action.
+10. For each event in the `poss.action` column, log any of the following defensive actions in italics below in the `def.action` column. Refer to the action-definitions.doc file at [https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md](https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md) for in-depth definitions for each action.
   * **Dispossessing through a ball shield** - `dispossess.ball.shield`
   * **Dispossessing through a steal** - `dispossess.steal`
   * **Dispossessing a lost touch** - `dispossess.lost.touch`
@@ -117,14 +117,14 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
   * **Loose balls claimed by the goalkeeper** - `gk.loose.balls.won`
   * **Loose balls lost by the goalkeeper** - `gk.loose.balls.lost`
   * Create a new row if necessary when there are multiple defensive actions for one possessing event, but be sure to leave the `poss.action` column blank so that a new event number is not accidentally created
-8. For each `def.action` value, fill in the corresponding player in the `def.player` column.
-9. The `def.location` column should ONLY be manually filled in for the following defensive events and ONLY if you're additionally interested in location data:
+11. For each `def.action` value, fill in the corresponding player in the `def.player` column.
+12. The `def.location` column should ONLY be manually filled in for the following defensive events and ONLY if you're additionally interested in location data:
   * **Blocks** - `blocks`
   * **Interceptions** - `interceptions`
   * **Balls shielded** - `ball.shield`
   * **Clearances** - `clearances`
   * All goalkeeper-specific events
-10. For all goalkeeper defensive actions, except for missed shots and goals, you should further describe the action by filling in the `gk.ball.stop` column with the appropriate descriptor for what happened to the ball, to be written as it is shown in italics below:
+13. For all goalkeeper defensive actions, except for missed shots and goals, you should further describe the action by filling in the `gk.ball.stop` column with the appropriate descriptor for what happened to the ball, to be written as it is shown in italics below:
   * **Caught** - `caught`
   * **Punched to safety** - `punched.to.safety`
   * **Punched to danger** - `punched.to.danger`
@@ -134,19 +134,19 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
   * **Parried to danger** - `parried.to.danger`
   * **Deflected to safety** - `deflected.to.safety`
   * **Deflected to danger** - `deflected.to.danger`
-11. For goalkeeper defensive actions that are shots on goals, log the type of save attempt, regardless of whether it was successful, by filling in the `gk.s.o.g.attempt` column with one of the following values to be written as it is shown in italics below:
+14. For goalkeeper defensive actions that are shots on goals, log the type of save attempt, regardless of whether it was successful, by filling in the `gk.s.o.g.attempt` column with one of the following values to be written as it is shown in italics below:
   * **Diving save** - `diving`
   * **Standing save** - `standing`
   * **Reaching save** - `reaching`
   * **Stooping save** - `stooping`
-12. If a foul was committed, log for the possessing player in the `poss.player.disciplinary` column and for the defending player in the `def.player.disciplinary` column one of the following values to be written as it is shown in italics below:
+15. If a foul was committed, log for the possessing player in the `poss.player.disciplinary` column and for the defending player in the `def.player.disciplinary` column one of the following values to be written as it is shown in italics below:
   * **Fouls won** - `fouls.won`
   * **Fouls conceded** `fouls.conceded`
   * **Yellow cards** - `yellow.cards`
   * **Red cards** - `red.cards`
   * **Penalty kicks won** - `penalties.won`
   * **Penalty kicks conceded** - `penalties.conceded`
-13. Certain possessing player actions need additional qualifiers, related to scoring opportunities or defensive mistakes, that should be added in the `poss.notes` column, to be written in as they are shown in italics below. In the event that more than one of these apply to the same event, add them all into the same cell but separate them by a comma:
+16. Certain possessing player actions need additional qualifiers, related to scoring opportunities or defensive mistakes, that should be added in the `poss.notes` column, to be written in as they are shown in italics below. In the event that more than one of these apply to the same event, add them all into the same cell but separate them by a comma:
   * **Big chances scored** - `big.chances.scored`
   * **Big chances shot on goal** - `big.chances.shot.on.goal`
   * **Big chances missed** - `big.chances.shot.missed`
@@ -159,12 +159,12 @@ Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.
   * **Ball goes out of bounds and possession is lost** - `out.of.bounds.lost.poss`
   * **Errors leading to a goal for the opposition** - `errors.to.goals`
   * **Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`
-14. Similarly, certain defending player actions need additional qualifiers, related to defensive accomplishments and mistakes, that should be added in the `def.notes` column, to be written in as they are shown in italics below.
+17. Similarly, certain defending player actions need additional qualifiers, related to defensive accomplishments and mistakes, that should be added in the `def.notes` column, to be written in as they are shown in italics below.
   * **Big chances stopped** - `big.chances.stopped`
   * **Own goals allowed** - `own.goals`
   * **Errors leading to a goal for the opposition** - `errors.to.goals`
   * **Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`
-15. When a new minute in play is reached, change the “time” column for the first event of each minute to the time in minutes. An event in the first 30 seconds is in minute 1, an event at 30:34 is in minute 31, and so on. 
+18. When a new minute in play is reached, change the “time” column for the first event of each minute to the time in minutes. An event in the first 30 seconds is in minute 1, an event at 30:34 is in minute 31, and so on. 
 For stoppage time, use a plus sign to denote how much stoppage time was added. For example, 2 minutes into stoppage time after 90 minutes should be written as “90+3”, NOT as “93.” The same goes with examples such as “45+3”, “120+1”, and so on.
 
 #After logging match stats
