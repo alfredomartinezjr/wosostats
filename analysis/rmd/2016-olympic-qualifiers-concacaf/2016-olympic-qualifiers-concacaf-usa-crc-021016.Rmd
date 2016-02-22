@@ -9,7 +9,7 @@ library(plyr)
 library(dplyr)
 require(RCurl)
 
-d <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/2016-olympic-qualifier-concacaf/2016-olympic-qualifier-concacaf-usa-crc-021016.csv")
+d <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/2016-olympic-qualifiers-concacaf/2016-olympic-qualifiers-concacaf-usa-crc-021016.csv")
 d <- read.csv(textConnection(d))
 
 ## Change relevant columns to character type
@@ -504,8 +504,8 @@ print(t2, digits=2)
 ```
 
 #Sources
-* The full match was broadcast on France 4.
-* The csv file with all the match events from which this analysis is source [can be found here on GitHub.](https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/2016-olympic-qualifier-concacaf/2016-olympic-qualifier-concacaf-usa-crc-021016.csv)
-* The raw Excel file, in all it's ugliness, with the blank spots that I filled in with some help from R, [can be found here on GitHub.](https://github.com/amj2012/wosostats/blob/master/source/excel/olympic-qualifiers-2016-concacaf/2016-olympic-qualifier-concacaf-usa-crc-021016.xlsx)
-* If you have R Studio, can view this entire page and all the source code behind each table by [downloading the R Markdown file here on GitHub.](https://github.com/amj2012/wosostats/blob/master/analysis/rmd/olympic-qualifiers-2016-concacaf/2016-olympic-qualifier-concacaf-usa-crc-021016.Rmd)
+* The full match was broadcast on NBC.
+* The csv file with all the match events from which this analysis is source [can be found here on GitHub.](https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/2016-olympic-qualifiers-concacaf/2016-olympic-qualifiers-concacaf-usa-crc-021016.csv)
+* The raw Excel file, in all it's ugliness, with the blank spots that I filled in with some help from R, [can be found here on GitHub.](https://github.com/amj2012/wosostats/blob/master/source/excel/2016-olympic-qualifiers-concacaf/2016-olympic-qualifiers-concacaf-usa-crc-021016.xlsx)
+* If you have R Studio, can view this entire page and all the source code behind each table by [downloading the R Markdown file here on GitHub.](https://github.com/amj2012/wosostats/blob/master/analysis/rmd/2016-olympic-qualifiers-concacaf/2016-olympic-qualifiers-concacaf-usa-crc-021016.Rmd)
 * The R files I used to tidy the original raw Excel file and to help create the tables [can be found here on GitHub.](https://github.com/amj2012/wosostats/tree/master/code/version-2)
