@@ -10,27 +10,7 @@ library(dplyr)
 require(RCurl)
 
 d <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/2016-olympic-qualifiers-concacaf/2016-olympic-qualifiers-concacaf-usa-can-022116.csv")
-d <- read.csv(textConnection(d))
-
-## Change relevant columns to character type
-d$poss.position <- as.character(d$poss.position)
-d$poss.team <- as.character(d$poss.team)
-d$poss.player <- as.character(d$poss.player)
-d$poss.action <- as.character(d$poss.action)
-d$poss.location <- as.character(d$poss.location)
-d$poss.play.destination <- as.character(d$poss.play.destination)
-d$play.type <- as.character(d$play.type)
-d$def.position <- as.character(d$def.position)
-d$def.team <- as.character(d$def.team)
-d$def.player <- as.character(d$def.player)
-d$def.action <- as.character(d$def.action)
-d$def.location <- as.character(d$def.location)
-d$gk.ball.stop <- as.character(d$gk.ball.stop)
-d$gk.s.o.g.attempt <- as.character(d$gk.s.o.g.attempt)
-d$poss.player.disciplinary <- as.character(d$poss.player.disciplinary)
-d$poss.notes <- as.character(d$poss.notes)
-d$def.player.disciplinary <- as.character(d$def.player.disciplinary)
-d$def.notes <- as.character(d$def.notes)
+d <- read.csv(textConnection(d), stringsAsFactors = FALSE)
 
 source("https://raw.githubusercontent.com/amj2012/woso-stats/master/code/version-2/analysis-functions.R")
 
@@ -38,7 +18,7 @@ source("https://raw.githubusercontent.com/amj2012/woso-stats/master/code/version
 
 This is a summary of match stats from the 2016 CONCACF Olympic Qualifying Final on February 21, 2016 between the United States and Candaa. It is broken down into what are defined as "attacking," "passing," "possession," "defending," and "goalkeeping" stats.
 
-Want to log stats on your own and help out? Please do! More people logging stats means more data that's logged and that can be analyzed. Read more about how to do this on your own [here](https://github.com/amj2012/wosostats/blob/master/resources/how-to-log-stats.md) and, if you're interested, email me at alfredom790@gmail.com or send me a DM on Twitter at [WoSoStats](https://www.twitter.com/wosostats). To learn about the action definitions that are used to log stats and used in this analysis, read more [here.](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md)
+Want to log stats on your own and help out? Please do! More people logging stats means more data that's logged and that can be analyzed. Read more about how to do this on your own [here at https://github.com/amj2012/wosostats/blob/master/resources/how-to-log-stats.md](https://github.com/amj2012/wosostats/blob/master/resources/how-to-log-stats.md) and, if you're interested, email me at alfredom790@gmail.com or send me a DM on Twitter at [WoSoStats](https://www.twitter.com/wosostats). To learn about the action definitions that are used to log stats and used in this analysis, read more [here at https://github.com/amj2012/wosostats/blob/master/resources/definitions.md.](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md)
 
 A big thank you to Kombayn for helping log the stats for half of this match.
 
@@ -75,7 +55,7 @@ print(t, digits=2)
 ```
 
 ### Assists & Key Passes
-*A key pass is defined as a pass that leads to a clear goal-scoring opportunity (a big chance, defined below). Not all key passes result in goals, but they're worth noting when they happen*
+*A key pass is defined as a pass that leads to a clear goal-scoring opportunity (such as a big chance, defined below). Not all key passes result in goals or even shots, but they're worth noting when they happen*
 ```{r key_passes, echo=FALSE, comment=NA}
 t <- createTable(c("key.passes","assists", "second.assists", "unscored.key.passes"), "poss.notes", d)
 
