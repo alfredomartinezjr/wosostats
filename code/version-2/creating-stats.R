@@ -207,7 +207,7 @@ t2$pct <- t2$yes/t2$total
 # rename and print
 t2 <- t2[,c(1,2:4)]
 t2 <- t2[order(-t2$yes),]
-names(t2) <- c("Player","Pct of Shots Under Pressure", "Shots Under Pressure", "Shots Not Under Pressure")
+names(t2) <- c("Player","Shots Under Pressure", "Pct of Shots Under Pressure", "Shots Not Under Pressure")
 shotspressure <- t2
 print(t2, digits=2)
 
