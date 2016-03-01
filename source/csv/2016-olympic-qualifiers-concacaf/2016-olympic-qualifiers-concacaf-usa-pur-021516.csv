@@ -577,7 +577,8 @@
 542,"45",NA,"USA","McCaffrey","passes.s.c",NA,"A6","corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,"assists",NA,NA
 542,"45",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"big.chances.created",NA,NA
 543,"45",NA,"USA","O'Hara","shots.scored","A6",NA,NA,"GK","PUR","Gustafson","gk.s.o.g.scored",NA,"missed.ball","diving",NA,"big.chances.scored",NA,NA
-544,"45",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,"PUR","K. Johnson","pressured",NA,NA,NA,NA,NA,NA,NA
+543,"45",NA,NA,NA,NA,NA,NA,NA,NA,"PUR","K. Johnson","pressured",NA,NA,NA,NA,NA,NA,NA
+544,"45",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 545,"45+1",NA,"USA","Hinkle","passes.f.c",NA,NA,NA,NA,"PUR","Fiol","pressured",NA,NA,NA,NA,NA,NA,NA
 546,"45+1",NA,"USA","Dunn","passes.b.c",NA,NA,NA,NA,"PUR","Suarez","pressured",NA,NA,NA,NA,NA,NA,NA
 547,"45+1",NA,"USA","Lloyd","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1151,7 +1152,7 @@
 1062,"87",NA,"USA","Klingenberg","passes.f",NA,NA,"launch",NA,"PUR","Rivera","blocks",NA,NA,NA,NA,NA,NA,NA
 1063,"87",NA,"USA","Morgan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1064,"87",NA,"USA","Morgan","passes.f",NA,NA,"launch",NA,"PUR","Suarez","pressured",NA,NA,NA,NA,NA,NA,NA
-1064,"87",NA,NA,NA,NA,NA,NA,"through",NA,"PUR","Colon","interceptions",NA,NA,NA,NA,NA,NA,NA
+1064,"87",NA,NA,NA,NA,NA,NA,"through",NA,"PUR","Colon","interceptions","A3C",NA,NA,NA,NA,NA,NA
 1065,"87",NA,"PUR","Colon","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1066,"87",NA,"PUR","Rodriguez","passes.f",NA,NA,NA,NA,"USA","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA
 1067,"87",NA,"USA","Krieger","passes.f.c",NA,NA,NA,NA,"PUR","Socarras","pressured",NA,NA,NA,NA,NA,NA,NA
