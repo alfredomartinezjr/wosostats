@@ -774,7 +774,7 @@
 718,"56",NA,"USA","Pugh","passes.f",NA,NA,"flick.on",NA,"PUR","K. Johnson","blocks",NA,NA,NA,NA,NA,NA,NA
 718,"56",NA,NA,NA,NA,NA,NA,NA,NA,"PUR","K. Johnson","challenged",NA,NA,NA,NA,NA,NA,NA
 719,"56",NA,"USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-720,"56",NA,"USA","Press","shots.missed",NA,NA,NA,"GK","PUR","Gustafson","gk.shot.miss",NA,NA,NA,NA,"lost.poss.out.of.bounds",NA,NA
+720,"56",NA,"USA","Press","shots.missed","A3C",NA,NA,"GK","PUR","Gustafson","gk.shot.miss",NA,NA,NA,NA,"lost.poss.out.of.bounds",NA,NA
 721,"57","GK","PUR","Gustafson","passes.f",NA,NA,"goal.kick,launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 722,"57",NA,"PUR","Rodriguez","aerial.lost",NA,NA,NA,NA,"USA","Mewis","aerial.won",NA,NA,NA,NA,NA,NA,NA
 723,"57",NA,"PUR","Mendez","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -852,7 +852,7 @@
 787,"62",NA,"USA","Pugh","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 788,"62",NA,"USA","Pugh","dispossessed",NA,NA,NA,NA,NA,"Rodriquez","tackles.ball.away",NA,NA,NA,NA,NA,NA,NA
 789,"62",NA,"USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-790,"62",NA,"USA","Press","shots.scored",NA,NA,NA,"GK","PUR","Gustafson","gk.s.o.g.scored","D6","missed.ball","diving",NA,NA,NA,NA
+790,"62",NA,"USA","Press","shots.scored","A3C",NA,NA,"GK","PUR","Gustafson","gk.s.o.g.scored","D6","missed.ball","diving",NA,NA,NA,NA
 791,"62",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 792,"63",NA,"PUR","A. Johnson","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 793,"63",NA,"PUR","Rodriguez","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1032,7 +1032,7 @@
 953,"76",NA,"USA","Klingenberg","take.on.lost",NA,NA,NA,NA,"PUR","Colon","tackles.ball.away",NA,NA,NA,NA,NA,NA,NA
 954,"76",NA,"USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 955,"76",NA,"USA","O'Hara","passes.s",NA,NA,"corner.crosses",NA,"PUR","K. Johnson","blocks",NA,NA,NA,NA,NA,NA,NA
-956,"76",NA,"USA","Mewis","shots.missed",NA,NA,NA,"GK","PUR","Gustafson","gk.shot.miss","D6",NA,NA,NA,"big.chances.shot.missed",NA,NA
+956,"76",NA,"USA","Mewis","shots.missed","A18",NA,NA,"GK","PUR","Gustafson","gk.shot.miss","D6",NA,NA,NA,"big.chances.shot.missed",NA,NA
 957,"77","GK","PUR","Gustafson","passes.f",NA,NA,"goal.kick,launch",NA,NA,NA,NA,NA,NA,NA,NA,"lost.poss.out.of.bounds",NA,NA
 958,"77",NA,"PUR","Carrion","aerial.lost",NA,NA,NA,NA,"USA","Brian","aerial.won",NA,NA,NA,NA,NA,NA,NA
 959,"77",NA,"PUR","Colon","aerial.won",NA,NA,NA,NA,"USA","Mewis","aerial.lost",NA,NA,NA,NA,NA,NA,NA
