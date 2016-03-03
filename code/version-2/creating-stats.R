@@ -108,7 +108,7 @@ createCleanDataFrame <- function(pattern, col, df) {
 ## Gets data frame that binds data frames of every player who shows up in "poss.player" and "def.player" column
 players <- rbind(data.frame(Player=unique(d$poss.player), Team=NA, MP=NA,GS=NA),data.frame(Player=unique(d$def.player), Team=NA, MP=NA,GS=NA))
 players <- players[!is.na(players[,"Player"]),]
-players <- players[unique(players[,"Player"]),]
+players <- unique(players[,])
 matchlength <- length(unique(d$time))
 substitutions <- d[grepl("substitution",d[,"poss.action"]),]
 x <- 1
@@ -160,6 +160,9 @@ x <- 1
 while (x <= nrow(players)) {
   player <- as.character(players[x,"Player"])
   playerteam <- unique(d[d[,"poss.player"] == player & !is.na(d[,"poss.player"]),"poss.team"])
+  if(length(playerteam) == 0) {
+    playerteam <- unique(d[d[,"def.player"] == player & !is.na(d[,"def.player"]),"def.team"])
+  }
   players[x,"Team"] <- playerteam
   x <- x + 1
 }
