@@ -7,5 +7,7 @@ The [code](https://github.com/amj2012/woso-stats/tree/master/code) folder is whe
 
 The [resources](https://github.com/amj2012/woso-stats/tree/master/resources) folder is where to find necessary and helpful resources for how to log stats on your own (please help! volunteers needed!) and definitions for what is being measured and analyzed.
 
+The [shiny](https://github.com/amj2012/wosostats/tree/master/shiny/wosostats) folder is where to find the R code behind the WoSo Stats Shiny app, which can be found at [https://amj2012.shinyapps.io/wosostats/](https://amj2012.shinyapps.io/wosostats/).
+
 The [source](https://github.com/amj2012/woso-stats/tree/master/source) folder is where to find the Excel and csv files of stats logged for each match.
 
