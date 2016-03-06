@@ -36,7 +36,9 @@ shinyUI(fluidPage(
                    tabPanel('Shot Location', dataTableOutput('shotlocation')),
                    tabPanel('Big Chances', dataTableOutput('bigchances')),
                    tabPanel('Key Passes', dataTableOutput('keypasses')),
-                   tabPanel('Crosses & Through Balls', dataTableOutput('specialpassing'))
+                   tabPanel('Crosses & Through Balls', dataTableOutput('specialpassing')),
+                   tabPanel('Passing by Direction', dataTableOutput('directionpassing')),
+                   tabPanel('Passing Under Pressure by Direction', dataTableOutput('directionpressuredpassing'))
         ))), style="font-size:12px")
   )
 ))
