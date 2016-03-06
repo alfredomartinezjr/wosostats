@@ -1,3 +1,4 @@
+#SOURCING---------------
 library(plyr)
 library(dplyr)
 library(RCurl)
@@ -5,7 +6,6 @@ library(RCurl)
 #locationofmatchcsv must be a string
 d <- getURL(matchURL)
 d <- read.csv(textConnection(d), stringsAsFactors = FALSE)
-
 
 #FUNCTIONS---------------
 # 1.
@@ -167,10 +167,9 @@ while (x <= nrow(players)) {
   x <- x + 1
 }
 
-
 #SHOTS---------------
 ## Creates table for players pased on types of shots.
-t <- createTable(c("shots", "accuracy", "shots.scored", "shots.stopped.by.gk", "shots.stopped.by.def", "shots.missed") ,"poss.action", d)
+t <- createTable(c("shots.scored", "shots", "accuracy", "shots.stopped.by.gk", "shots.stopped.by.def", "shots.missed") ,"poss.action", d)
 ## Add column adding all shot attempts
 t$shots <- t$shots.scored + t$shots.stopped.by.gk + t$shots.stopped.by.def + t$shots.missed
 ## Add column for accuracy
@@ -179,11 +178,11 @@ t$accuracy <- (t$shots.scored + t$shots.stopped.by.gk + t$shots.stopped.by.def)/
 ##Sort by "shots" and "accuracy"
 t <- t[order(-t$shots, -t$accuracy),]
 ## Change names to be more readable
-names(t) <- c("Player","Shots","Shot Accuracy","Goals Scored","Shots Stopped by GK", "Shots Stopped by Def", "Shots Missed")
+names(t) <- c("Player","Goals","Shots","Shot Accuracy","SOG GK Stop", "SOG Def Stop", "Shots Missed")
 shots <- t
-print(shots, digits=2)
 
 all <- merge(players, shots, by="Player", all=TRUE)
+rm(shots)
 
 #SHOTS UNDER PRESSURE---------------
 t <- createCleanDataFrame(c("shots", "accuracy", "shots.scored", "shots.stopped.by.gk", 
@@ -203,18 +202,19 @@ while(x <= nrow(t)) {
   }
 }
 ## Create table with a column for shots under and not under pressure
-t2 <- createTable(c("total", "pct", "yes", "no"), "pressed", t)
+t2 <- createTable(c("yes", "pct", "total", "no"), "pressed", t)
 ## Add "total" and "pct" values
 t2$total <- t2$yes + t2$no
 t2$pct <- t2$yes/t2$total
-# rename and print
-t2 <- t2[,c(1,2:4)]
+# rename
+t2 <- t2[,1:3]
 t2 <- t2[order(-t2$yes),]
-names(t2) <- c("Player","Shots Under Pressure", "Pct of Shots Under Pressure", "Shots Not Under Pressure")
+names(t2) <- c("Player","Shots Pressured", "Pct of Shots Pressured")
 shotspressure <- t2
-print(t2, digits=2)
+rm(t2, t)
 
 all <- merge(all, shotspressure, by="Player", all=TRUE)
+rm(shotspressure)
 
 #SHOT LOCATION---------------
 t <- createCleanDataFrame(c("shots", "accuracy", "shots.scored", "shots.stopped.by.gk", "shots.stopped.by.def", "shots.missed") ,
@@ -227,36 +227,77 @@ t2 <- createTable(c("A6", "A18", "A3L", "A3C", "A3R", "Beyond","AM3L", "AM3C",
 t2$beyond <- rowSums(t2[,8:18])
 ## Get rid of all columns after the "Beyond" column to save space
 t2 <- t2[,1:7]
-names(t2) <- c("Player", "Shots from A6", "Shots from A18", "Shots from A3L", "Shots from A3C", "Shots from A3R", "Shots from Beyond")
+names(t2) <- c("Player", "A6 Shots", "A18 Shots", "A3L Shots", "A3C Shots", "A3R Shots", "Further Shots")
 shotlocation <- t2
-print(t2, digits=2)
+rm(t,t2)
 
 all <- merge(all, shotlocation, by="Player", all=TRUE)
+rm(shotlocation)
 
 #ASSISTS---------------
-t <- createTable(c("key.passes","assists", "second.assists", "unscored.key.passes"), "poss.notes", d)
-## Add column for all key passes
-t$key.passes <- t$assists + t$second.assists + t$unscored.key.passes
+t <- createCleanDataFrame(c("assists", "second.assists", "key.passes", "key.assists", "unscored.key.passes"), "poss.notes", d)
+t <- addColumnForQualifier("assists", "assists", "poss.notes", d, t)
+t <- addColumnForQualifier("key.passes", "key.passes", "poss.notes", d, t)
+t$key.assists <- "no"
+t <- addColumnForQualifier("second.assists", "^second.assists$", "poss.notes", d, t)
+t <- addColumnForQualifier("unscored.key.passes", "unscored.key.passes", "poss.notes", d, t)
+##account for fact that "second.assists" in this code are also counted as "assists."
+x <- 1
+while (x <= nrow(t)) {
+  if (t[x,"assists"] == "yes" && t[x,"second.assists"] == "yes") {
+    t[x,"assists"] <- "no"
+    t[x,"key.passes"] <- "yes"
+    
+  }
+  if (t[x,"assists"] == "yes" && t[x,"key.passes"] == "yes") {
+    t[x,"key.assists"] <- "yes"
+  }
+  x <- x + 1
+}
+
+##Create tables for each column (five different ones)
+t1 <- createTable(c("yes"),"assists",t)
+names(t1) <- c("Player", "Assists")
+
+t2 <- createTable(c("yes", "key.passes.to.goals"),"key.passes",t)
+names(t2) <- c("Player", "All Key Passes", "Key Passes to Goals")
+t6 <- merge(t1, t2, by="Player", all=TRUE)
+
+t3 <- createTable(c("yes"),"key.assists",t)
+names(t3) <- c("Player", "Key Assists")
+t6 <- merge(t6, t3, by="Player", all=TRUE)
+
+t4 <- createTable(c("yes"),"second.assists",t)
+names(t4) <- c("Player", "Second Assists")
+t6 <- merge(t6, t4, by="Player", all=TRUE)
+
+t5 <- createTable(c("yes"),"unscored.key.passes",t)
+names(t5) <- c("Player", "Unscored Key Passes")
+t6 <- merge(t6, t5, by="Player", all=TRUE)
+
 ##Sort by "assists" and "second.assists"
-t <- t[order(-t$assists, -t$second.assists),]
-## Change names to be more readable
-names(t) <- c("Player","All Key Passes","Assists","Second Assists", "Unscored Key Passes")
-assists <- t
-print(t, digits=2)
+t6[is.na(t6)] <- 0
+t6[,"Key Passes to Goals"] <- (t6[,"Key Assists"] + t6[,"Second Assists"])/t6[,"All Key Passes"]
+t6 <- t6[order(-t6[,"Assists"], -t6[,"All Key Passes"]),]
+assists <- t6
+rm(t, t1, t2, t3, t4, t5, t6)
 
 all <-merge(all, assists, by="Player", all=TRUE)
+rm(assists)
 
 #BIG CHANCES---------------
-t <- createTable(c("big.chances", "big.chances.scored", "big.chances.shot.on.goal", "big.chances.shot.missed", 
+t <- createTable(c("big.chances", "big.chances.scored", "big.chances.conversion","big.chances.shot.on.goal", "big.chances.shot.missed", 
                    "big.chances.dispossessed"),"poss.notes", d)
 t$big.chances <- t$big.chances.scored + t$big.chances.dispossessed + t$big.chances.shot.on.goal + t$big.chances.shot.missed
+t$big.chances.conversion <- t$big.chances.scored/t$big.chances
 ## Sort by "big.chances" and "big.chances.scored"
 t <- t[order(-t$big.chances, -t$big.chances.scored),]
-names(t) <- c("Player","Big Chances","BC Scored", "BC SOG", "BC Missed", "BC Dispossessed")
+names(t) <- c("Player","Big Chances","BC Scored", "BC Scored %","BC SOG", "BC Missed", "BC Dispossessed")
 bigchances <- t
 print(t, digits=2)
-
+rm(t)
 all <- merge(all, bigchances, by="Player", all=TRUE)
+rm(bigchances)
 
 #CROSSES---------------
 t <- createCleanDataFrame(c("corner.crosses", "deep.crosses"), "play.type", d)
@@ -278,8 +319,10 @@ t4 <- t4[order(-t4$completed, -t4$pct, t4$attempts),]
 names(t4) <- c("Player","Crosses Completed", "Cross Comp Pct", "Cross Attempts", "Crosses from Corner", "Crosses from Far")
 crosses <- t4
 print(t4, digits=2)
+rm(t2, t3, t4)
 
 all <- merge(all, crosses, by=1, all=TRUE)
+rm(crosses)
 
 #THROUGH BALS---------------
 t <- createCleanDataFrame(c("through"), "play.type", d)
@@ -296,10 +339,13 @@ through <- t2
 print(t2, digits=2)
 
 all <- merge(all, through, by=1, all=TRUE)
+rm(t2, through)
 
 #OVERALL PASSING---------------
 t <- createCleanDataFrame(c("passes.f.c", "passes.f", 
                             "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", d)
+
+##add qualifiers for being pressed and challenged
 t <- addColumnForQualifier("pressured", "pressured", "def.action", d, t)
 t <- addColumnForQualifier("challenged", "challenged", "def.action", d, t)
 t$pressed <- NA
@@ -313,6 +359,13 @@ while(x <= nrow(t)) {
     x <- x + 1
   }
 }
+
+##add qualifiers for forward, sideways, and backward pass attemps & completions
+t <- addColumnForQualifier("forward.pass", "^passes.f", "poss.action", d, t)
+t <- addColumnForQualifier("sideways.pass", "^passes.s", "poss.action", d, t)
+t <- addColumnForQualifier("backward.pass", "^passes.b", "poss.action", d, t)
+
+##create overall passing table
 t2 <- createTable(c("completed", "pct", "attempts" , "passes.f.c", "passes.f", 
                     "passes.s.c", "passes.s", "passes.b.c", 
                     "passes.b"), "poss.action", t)
@@ -325,9 +378,51 @@ t2 <- t2[,1:4]
 t2 <- t2[order(-t2$pct, -t2$completed),]
 names(t2) <- c("Player","Passes Completed", "Pass Comp Pct", "Pass Attempts")
 overallpassing <- t2
-print(t2, digits=2)
+rm(t2)
 
 all <- merge(all, overallpassing, by=1, all=TRUE)
+rm(overallpassing)
+
+#OVERALL PASSING BY DIRECTION---------------
+#Cut down d data.frame to three different ones for forward, sideways, and backwards passes
+fwdpasses <- t[t[,"forward.pass"] == "yes",]
+sidepasses <- t[t[,"sideways.pass"] == "yes",]
+backpasses <- t[t[,"backward.pass"] == "yes",]
+##Creates blank table with columns for direction distribution
+directiondist <- createTable(c("PctPassAttFwd", "PctPassAttSide", "PctPassAttBack", "yes", "no"), "pressed", t)
+directiondist <- directiondist[,1:4]
+##Create a table for completions, attempts, and comp pct for FORWARD passes
+fwdtab <- createTable(c("FwdPassComp", "FwdPassAtt", "FwdPassCompPct" ,"passes.f", "passes.f.c"), "poss.action", fwdpasses)
+fwdtab$FwdPassComp <- fwdtab$passes.f.c
+fwdtab$FwdPassAtt <- fwdtab$passes.f + fwdtab$passes.f.c
+fwdtab$FwdPassCompPct <- fwdtab$FwdPassComp/fwdtab$FwdPassAtt
+fwdtab <- fwdtab[,1:4]
+passdirection <- merge(directiondist, fwdtab, by="Player", all=TRUE)
+rm(directiondist, fwdtab, fwdpasses)
+##Create a table for completions, attempts, and comp pct for SIDEWAYS passes
+sidetab <- createTable(c("SidePassComp", "SidePassAtt", "SidePassCompPct" ,"passes.s", "passes.s.c"), "poss.action", sidepasses)
+sidetab$SidePassComp <- sidetab$passes.s.c
+sidetab$SidePassAtt <- sidetab$passes.s + sidetab$passes.s.c
+sidetab$SidePassCompPct <- sidetab$SidePassComp/sidetab$SidePassAtt
+sidetab <- sidetab[,1:4]
+passdirection <- merge(passdirection, sidetab, by="Player", all=TRUE)
+rm(sidetab, sidepasses)
+##Create a table for completions, attempts, and comp pct for BACKWARDS passes
+backtab <- createTable(c("BackPassComp", "BackPassAtt", "BackPassCompPct" ,"passes.b", "passes.b.c"), "poss.action", backpasses)
+backtab$BackPassComp <- backtab$passes.b.c
+backtab$BackPassAtt <- backtab$passes.b + backtab$passes.b.c
+backtab$BackPassCompPct <- backtab$BackPassComp/backtab$BackPassAtt
+backtab <- backtab[,1:4]
+passdirection <- merge(passdirection, backtab, by="Player", all=TRUE)
+rm(backtab, backpasses)
+##Calculate direction distribution
+passdirection[is.na(passdirection)] <- 0
+passdirection$PctPassAttFwd <- passdirection$FwdPassAtt/rowSums(passdirection[,c("FwdPassAtt", "SidePassAtt", "BackPassAtt")])
+passdirection$PctPassAttSide <- passdirection$SidePassAtt/rowSums(passdirection[,c("FwdPassAtt", "SidePassAtt", "BackPassAtt")])
+passdirection$PctPassAttBack <- passdirection$BackPassAtt/rowSums(passdirection[,c("FwdPassAtt", "SidePassAtt", "BackPassAtt")])
+
+all <- merge(all, passdirection, by="Player", all=TRUE)
+rm(passdirection)
 
 #PASSING UNDER PRESSURE---------------
 ## Include only passing attempts under pressure
@@ -356,8 +451,53 @@ names(t4) <- c("Player", "Pct of Passes Under Pressure", "Passes Completed Under
                "Pass Comp Pct Under Pressure", "Pass Attempts Under Pressure")
 passespressure <- t4
 print(t4, digits=2)
+rm(t2, t3, t4)
 
 all <- merge(all, passespressure, by="Player", all=TRUE)
+rm(passespressure)
+
+#PASSING UNDER PRESSURE BY DIRECTION---------------
+##Cut down d data.frame to three different ones for forward, sideways, and backwards passes
+##All under pressure
+fwdpasses <- t[t[,"forward.pass"] == "yes" & t[,"pressed"] == "yes",]
+sidepasses <- t[t[,"sideways.pass"] == "yes" & t[,"pressed"] == "yes",]
+backpasses <- t[t[,"backward.pass"] == "yes" & t[,"pressed"] == "yes",]
+##Creates blank table with columns for direction distribution
+directiondist <- createTable(c("Pct PressedPassAtt Fwd", "Pct PressedPassAtt Side", "Pct PressedPassAtt Back", "yes"), "pressed", t)
+directiondist <- directiondist[,1:4]
+##Create a table for completions, attempts, and comp pct for FORWARD passes
+fwdtab <- createTable(c("FwdPass Comp", "FwdPass Att", "FwdPass Comp Pct" ,"passes.f", "passes.f.c"), "poss.action", fwdpasses)
+fwdtab$FwdPass.Comp <- fwdtab$passes.f.c
+fwdtab$FwdPass.Att <- fwdtab$passes.f + fwdtab$passes.f.c
+fwdtab$FwdPass.Comp.Pct <- fwdtab$FwdPass.Comp/fwdtab$FwdPass.Att
+fwdtab <- fwdtab[,1:4]
+passdirection <- merge(directiondist, fwdtab, by="Player", all=TRUE)
+rm(directiondist, fwdtab, fwdpasses)
+##Create a table for completions, attempts, and comp pct for SIDEWAYS passes
+sidetab <- createTable(c("SidePass Comp", "SidePass Att", "SidePass Comp Pct" ,"passes.s", "passes.s.c"), "poss.action", sidepasses)
+sidetab$SidePass.Comp <- sidetab$passes.s.c
+sidetab$SidePass.Att <- sidetab$passes.s + sidetab$passes.s.c
+sidetab$SidePass.Comp.Pct <- sidetab$SidePass.Comp/sidetab$SidePass.Att
+sidetab <- sidetab[,1:4]
+passdirection <- merge(passdirection, sidetab, by="Player", all=TRUE)
+rm(sidetab, sidepasses)
+##Create a table for completions, attempts, and comp pct for BACKWARDS passes
+backtab <- createTable(c("BackPass Comp", "BackPass Att", "BackPass Comp Pct" ,"passes.b", "passes.b.c"), "poss.action", backpasses)
+backtab$BackPass.Comp <- backtab$passes.b.c
+backtab$BackPass.Att <- backtab$passes.b + backtab$passes.b.c
+backtab$BackPass.Comp.Pct <- backtab$BackPass.Comp/backtab$BackPass.Att
+backtab <- backtab[,1:4]
+passdirection <- merge(passdirection, backtab, by="Player", all=TRUE)
+rm(backtab, backpasses)
+##Calculate direction distribution
+passdirection[is.na(passdirection)] <- 0
+passdirection$Pct.PressedPassAtt.Fwd <- passdirection$FwdPass.Att/rowSums(passdirection[,c("FwdPass.Att", "SidePass.Att", "BackPass.Att")])
+passdirection$Pct.PressedPassAtt.Side <- passdirection$SidePass.Att/rowSums(passdirection[,c("FwdPass.Att", "SidePass.Att", "BackPass.Att")])
+passdirection$Pct.PressedPassAtt.Back <- passdirection$BackPass.Att/rowSums(passdirection[,c("FwdPass.Att", "SidePass.Att", "BackPass.Att")])
+
+all <- merge(all, passdirection, by="Player", all=TRUE)
+rm(passdirection)
+rm(t)
 
 #TAKE ONS---------------
 t <- createCleanDataFrame(c("take.on.won", "take.on.lost", "dispossessed", "lost.touch"),"poss.action", d)
@@ -371,6 +511,7 @@ takeons <- t2
 print(t2, digits=2)
 
 all <- merge(all, takeons, by=1, all=TRUE)
+rm(takeons)
 
 #AERIAL DUELS---------------
 t <- createDataFrame(c("aerial.won", "aerial.lost"), "poss.action", d)
@@ -391,6 +532,7 @@ print(t5, digits=2)
 rm(t2,t3,t4,t5)
 
 all <- merge(all, aerialduels, by=1, all=TRUE)
+rm(aerialduels)
 
 #TACKLES & PRESSURE---------------
 t <- createDataFrame(c("dispossess.ball.shielded", "dispossess.steal", "dispossess.lost.touch", 
@@ -414,6 +556,7 @@ tackles <- t2
 print(t2, digits=2)
 
 all <- merge(all, tackles, by=1, all=TRUE)
+rm(tackles)
 
 #RECOVERIES---------------
 t <- createDataFrame(c("recoveries"), "poss.action", d)
@@ -426,6 +569,7 @@ print(t2, digits=2)
 rm(t2)
 
 all <- merge(all, recoveries, by=1, all=TRUE)
+rm(recoveries)
 
 #INTERCEPTIONS, BLOCKS, CLEARANCES, BALL SHIELDS----------
 t <- createDataFrame(c("interceptions","clearances", "ball.shield", "blocks"), "def.action", d)
@@ -440,6 +584,7 @@ print(t2, digits=2)
 rm(t2)
 
 all <- merge(all, interceptions, by=1, all=TRUE)
+rm(interceptions)
 
 #GK SHOTS ON GOAL FACED----------
 t <- createDataFrame(c("gk.s.o.g.stop", "gk.s.o.g.def.stop","gk.s.o.g.scored"), "def.action", d)
@@ -469,6 +614,7 @@ print(t4, digits=2)
 rm(t2,t3,t4)
 
 all <- merge(all, gksogfaced, by=1, all=TRUE)
+rm(gksogfaced)
 
 #GK HIGH BALLS FACED----------
 t <- createDataFrame(c("gk.high.balls.won","gk.high.balls.lost"), "def.action", d)
@@ -503,6 +649,7 @@ print(t2, digits=2)
 rm(t2)
 
 all <- merge(all, gkhighballs, by=1, all=TRUE)
+rm(gkhighballs)
 
 #GK SMOTHERS----------
 t <- createDataFrame(c("gk.smothers.won", "gk.smothers.lost"), "def.action", d)
@@ -514,6 +661,7 @@ smothers <- t
 print(t, digits=2)
 
 all <- merge(all, smothers, by=1, all=TRUE)
+rm(smothers)
 
 #CLEANING UP TABLE----------
 all[is.na(all)] <- 0
