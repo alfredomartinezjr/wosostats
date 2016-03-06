@@ -400,7 +400,7 @@ fwdtab <- fwdtab[,1:4]
 passdirection <- merge(directiondist, fwdtab, by="Player", all=TRUE)
 rm(directiondist, fwdtab, fwdpasses)
 ##Create a table for completions, attempts, and comp pct for SIDEWAYS passes
-sidetab <- createTable(c("Side.Pass.Comp", "Side.Pass.Att", "Side.Pass.CompPct" ,"passes.s", "passes.s.c"), "poss.action", sidepasses)
+sidetab <- createTable(c("Side.Pass.Comp", "Side.Pass.Att", "Side.Pass.Comp.Pct" ,"passes.s", "passes.s.c"), "poss.action", sidepasses)
 sidetab$Side.Pass.Comp <- sidetab$passes.s.c
 sidetab$Side.Pass.Att <- sidetab$passes.s + sidetab$passes.s.c
 sidetab$Side.Pass.Comp.Pct <- sidetab$Side.Pass.Comp/sidetab$Side.Pass.Att
