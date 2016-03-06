@@ -482,7 +482,7 @@ sidetab <- sidetab[,1:4]
 passdirection <- merge(passdirection, sidetab, by="Player", all=TRUE)
 rm(sidetab, sidepasses)
 ##Create a table for completions, attempts, and comp pct for BACKWARDS passes
-backtab <- createTable(c("Back.Pressed.Pass.Comp", "Back.Pressed.Pass.Att", "Back.PressedPass.Comp.Pct" ,"passes.b", "passes.b.c"), "poss.action", backpasses)
+backtab <- createTable(c("Back.Pressed.Pass.Comp", "Back.Pressed.Pass.Att", "Back.Pressed.Pass.Comp.Pct" ,"passes.b", "passes.b.c"), "poss.action", backpasses)
 backtab$Back.Pressed.Pass.Comp <- backtab$passes.b.c
 backtab$Back.Pressed.Pass.Att <- backtab$passes.b + backtab$passes.b.c
 backtab$Back.Pressed.Pass.Comp.Pct <- backtab$Back.Pressed.Pass.Comp/backtab$Back.Pressed.Pass.Att
