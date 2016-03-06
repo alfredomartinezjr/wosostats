@@ -235,7 +235,7 @@ all <- merge(all, shotlocation, by="Player", all=TRUE)
 rm(shotlocation)
 
 #ASSISTS---------------
-t <- createCleanDataFrame(c("assists", "second.assists", "key.passes", "key.assists", "unscored.key.passes"), "poss.notes", d)
+t <- d
 t <- addColumnForQualifier("assists", "assists", "poss.notes", d, t)
 t <- addColumnForQualifier("key.passes", "key.passes", "poss.notes", d, t)
 t$key.assists <- "no"
