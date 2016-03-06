@@ -292,7 +292,7 @@ t$big.chances <- t$big.chances.scored + t$big.chances.dispossessed + t$big.chanc
 t$big.chances.conversion <- t$big.chances.scored/t$big.chances
 ## Sort by "big.chances" and "big.chances.scored"
 t <- t[order(-t$big.chances, -t$big.chances.scored),]
-names(t) <- c("Player","Big Chances","BC Scored", "BC Scored %","BC SOG", "BC Missed", "BC Dispossessed")
+names(t) <- c("Player","Big Chances","BC Scored", "BC Scored Pct","BC SOG", "BC Missed", "BC Dispossessed")
 bigchances <- t
 print(t, digits=2)
 rm(t)
@@ -389,37 +389,37 @@ fwdpasses <- t[t[,"forward.pass"] == "yes",]
 sidepasses <- t[t[,"sideways.pass"] == "yes",]
 backpasses <- t[t[,"backward.pass"] == "yes",]
 ##Creates blank table with columns for direction distribution
-directiondist <- createTable(c("Pct.PassAtt.Fwd", "Pct.PassAtt.Side", "Pct.PassAtt.Back", "yes", "no"), "pressed", t)
+directiondist <- createTable(c("Pct.of.Pass.Att.Fwd", "Pct.of.Pass.Att.Side", "Pct.of.Pass.Att.Back", "yes", "no"), "pressed", t)
 directiondist <- directiondist[,1:4]
 ##Create a table for completions, attempts, and comp pct for FORWARD passes
-fwdtab <- createTable(c("FwdPass.Comp", "FwdPass.Att", "FwdPass.Comp.Pct" ,"passes.f", "passes.f.c"), "poss.action", fwdpasses)
-fwdtab$FwdPass.Comp <- fwdtab$passes.f.c
-fwdtab$FwdPass.Att <- fwdtab$passes.f + fwdtab$passes.f.c
-fwdtab$FwdPass.Comp.Pct <- fwdtab$FwdPass.Comp/fwdtab$FwdPass.Att
+fwdtab <- createTable(c("Fwd.Pass.Comp", "Fwd.Pass.Att", "Fwd.Pass.Comp.Pct" ,"passes.f", "passes.f.c"), "poss.action", fwdpasses)
+fwdtab$Fwd.Pass.Comp <- fwdtab$passes.f.c
+fwdtab$Fwd.Pass.Att <- fwdtab$passes.f + fwdtab$passes.f.c
+fwdtab$Fwd.Pass.Comp.Pct <- fwdtab$Fwd.Pass.Comp/fwdtab$Fwd.Pass.Att
 fwdtab <- fwdtab[,1:4]
 passdirection <- merge(directiondist, fwdtab, by="Player", all=TRUE)
 rm(directiondist, fwdtab, fwdpasses)
 ##Create a table for completions, attempts, and comp pct for SIDEWAYS passes
-sidetab <- createTable(c("SidePass.Comp", "SidePass.Att", "SidePass.Comp.Pct" ,"passes.s", "passes.s.c"), "poss.action", sidepasses)
-sidetab$SidePass.Comp <- sidetab$passes.s.c
-sidetab$SidePass.Att <- sidetab$passes.s + sidetab$passes.s.c
-sidetab$SidePass.Comp.Pct <- sidetab$SidePass.Comp/sidetab$SidePass.Att
+sidetab <- createTable(c("Side.Pass.Comp", "Side.Pass.Att", "Side.Pass.CompPct" ,"passes.s", "passes.s.c"), "poss.action", sidepasses)
+sidetab$Side.Pass.Comp <- sidetab$passes.s.c
+sidetab$Side.Pass.Att <- sidetab$passes.s + sidetab$passes.s.c
+sidetab$Side.Pass.Comp.Pct <- sidetab$Side.Pass.Comp/sidetab$Side.Pass.Att
 sidetab <- sidetab[,1:4]
 passdirection <- merge(passdirection, sidetab, by="Player", all=TRUE)
 rm(sidetab, sidepasses)
 ##Create a table for completions, attempts, and comp pct for BACKWARDS passes
-backtab <- createTable(c("BackPass.Comp", "BackPass.Att", "BackPass.Comp.Pct" ,"passes.b", "passes.b.c"), "poss.action", backpasses)
-backtab$BackPass.Comp <- backtab$passes.b.c
-backtab$BackPass.Att <- backtab$passes.b + backtab$passes.b.c
-backtab$BackPass.Comp.Pct <- backtab$BackPass.Comp/backtab$BackPass.Att
+backtab <- createTable(c("Back.Pass.Comp", "Back.Pass.Att", "Back.Pass.Comp.Pct" ,"passes.b", "passes.b.c"), "poss.action", backpasses)
+backtab$Back.Pass.Comp <- backtab$passes.b.c
+backtab$Back.Pass.Att <- backtab$passes.b + backtab$passes.b.c
+backtab$Back.Pass.Comp.Pct <- backtab$Back.Pass.Comp/backtab$Back.Pass.Att
 backtab <- backtab[,1:4]
 passdirection <- merge(passdirection, backtab, by="Player", all=TRUE)
 rm(backtab, backpasses)
 ##Calculate direction distribution
 passdirection[is.na(passdirection)] <- 0
-passdirection$Pct.PassAtt.Fwd <- passdirection$FwdPass.Att/rowSums(passdirection[,c("FwdPass.Att", "SidePass.Att", "BackPass.Att")])
-passdirection$Pct.PassAtt.Side <- passdirection$SidePass.Att/rowSums(passdirection[,c("FwdPass.Att", "SidePass.Att", "BackPass.Att")])
-passdirection$Pct.PassAtt.Back <- passdirection$BackPass.Att/rowSums(passdirection[,c("FwdPass.Att", "SidePass.Att", "BackPass.Att")])
+passdirection$Pct.of.Pass.Att.Fwd <- passdirection$Fwd.Pass.Att/rowSums(passdirection[,c("Fwd.Pass.Att", "Side.Pass.Att", "Back.Pass.Att")])
+passdirection$Pct.of.Pass.Att.Side <- passdirection$Side.Pass.Att/rowSums(passdirection[,c("Fwd.Pass.Att", "Side.Pass.Att", "Back.Pass.Att")])
+passdirection$Pct.of.Pass.Att.Back <- passdirection$Back.Pass.Att/rowSums(passdirection[,c("Fwd.Pass.Att", "Side.Pass.Att", "Back.Pass.Att")])
 
 all <- merge(all, passdirection, by="Player", all=TRUE)
 rm(passdirection)
@@ -463,37 +463,37 @@ fwdpasses <- t[t[,"forward.pass"] == "yes" & t[,"pressed"] == "yes",]
 sidepasses <- t[t[,"sideways.pass"] == "yes" & t[,"pressed"] == "yes",]
 backpasses <- t[t[,"backward.pass"] == "yes" & t[,"pressed"] == "yes",]
 ##Creates blank table with columns for direction distribution
-directiondist <- createTable(c("Pct PressedPassAtt Fwd", "Pct PressedPassAtt Side", "Pct PressedPassAtt Back", "yes"), "pressed", t)
+directiondist <- createTable(c("Pct.of.Pressed.Pass.Att.Fwd", "Pct.of.Pressed.Pass.Att.Side", "Pct.of.Pressed.Pass.Att.Back", "yes"), "pressed", t)
 directiondist <- directiondist[,1:4]
 ##Create a table for completions, attempts, and comp pct for FORWARD passes
-fwdtab <- createTable(c("FwdPass Comp", "FwdPass Att", "FwdPass Comp Pct" ,"passes.f", "passes.f.c"), "poss.action", fwdpasses)
-fwdtab$FwdPass.Comp <- fwdtab$passes.f.c
-fwdtab$FwdPass.Att <- fwdtab$passes.f + fwdtab$passes.f.c
-fwdtab$FwdPass.Comp.Pct <- fwdtab$FwdPass.Comp/fwdtab$FwdPass.Att
+fwdtab <- createTable(c("Fwd.Pressed.Pass.Comp", "Fwd.Pressed.Pass.Att", "Fwd.Pressed.Pass.Comp.Pct" ,"passes.f", "passes.f.c"), "poss.action", fwdpasses)
+fwdtab$Fwd.Pressed.Pass.Comp <- fwdtab$passes.f.c
+fwdtab$Fwd.Pressed.Pass.Att <- fwdtab$passes.f + fwdtab$passes.f.c
+fwdtab$Fwd.Pressed.Pass.Comp.Pct <- fwdtab$Fwd.Pressed.Pass.Comp/fwdtab$Fwd.Pressed.Pass.Att
 fwdtab <- fwdtab[,1:4]
 passdirection <- merge(directiondist, fwdtab, by="Player", all=TRUE)
 rm(directiondist, fwdtab, fwdpasses)
 ##Create a table for completions, attempts, and comp pct for SIDEWAYS passes
-sidetab <- createTable(c("SidePass Comp", "SidePass Att", "SidePass Comp Pct" ,"passes.s", "passes.s.c"), "poss.action", sidepasses)
-sidetab$SidePass.Comp <- sidetab$passes.s.c
-sidetab$SidePass.Att <- sidetab$passes.s + sidetab$passes.s.c
-sidetab$SidePass.Comp.Pct <- sidetab$SidePass.Comp/sidetab$SidePass.Att
+sidetab <- createTable(c("Side.Pressed.Pass.Comp", "Side.Pressed.Pass.Att", "Side.Pressed.Pass.Comp.Pct" ,"passes.s", "passes.s.c"), "poss.action", sidepasses)
+sidetab$Side.Pressed.Pass.Comp <- sidetab$passes.s.c
+sidetab$Side.Pressed.Pass.Att <- sidetab$passes.s + sidetab$passes.s.c
+sidetab$Side.Pressed.Pass.Comp.Pct <- sidetab$Side.Pressed.Pass.Comp/sidetab$Side.Pressed.Pass.Att
 sidetab <- sidetab[,1:4]
 passdirection <- merge(passdirection, sidetab, by="Player", all=TRUE)
 rm(sidetab, sidepasses)
 ##Create a table for completions, attempts, and comp pct for BACKWARDS passes
-backtab <- createTable(c("BackPass Comp", "BackPass Att", "BackPass Comp Pct" ,"passes.b", "passes.b.c"), "poss.action", backpasses)
-backtab$BackPass.Comp <- backtab$passes.b.c
-backtab$BackPass.Att <- backtab$passes.b + backtab$passes.b.c
-backtab$BackPass.Comp.Pct <- backtab$BackPass.Comp/backtab$BackPass.Att
+backtab <- createTable(c("Back.Pressed.Pass.Comp", "Back.Pressed.Pass.Att", "Back.PressedPass.Comp.Pct" ,"passes.b", "passes.b.c"), "poss.action", backpasses)
+backtab$Back.Pressed.Pass.Comp <- backtab$passes.b.c
+backtab$Back.Pressed.Pass.Att <- backtab$passes.b + backtab$passes.b.c
+backtab$Back.Pressed.Pass.Comp.Pct <- backtab$Back.Pressed.Pass.Comp/backtab$Back.Pressed.Pass.Att
 backtab <- backtab[,1:4]
 passdirection <- merge(passdirection, backtab, by="Player", all=TRUE)
 rm(backtab, backpasses)
 ##Calculate direction distribution
 passdirection[is.na(passdirection)] <- 0
-passdirection$Pct.PressedPassAtt.Fwd <- passdirection$FwdPass.Att/rowSums(passdirection[,c("FwdPass.Att", "SidePass.Att", "BackPass.Att")])
-passdirection$Pct.PressedPassAtt.Side <- passdirection$SidePass.Att/rowSums(passdirection[,c("FwdPass.Att", "SidePass.Att", "BackPass.Att")])
-passdirection$Pct.PressedPassAtt.Back <- passdirection$BackPass.Att/rowSums(passdirection[,c("FwdPass.Att", "SidePass.Att", "BackPass.Att")])
+passdirection$Pct.of.Pressed.Pass.Att.Fwd <- passdirection$Fwd.Pressed.Pass.Att/rowSums(passdirection[,c("Fwd.Pressed.Pass.Att", "Side.Pressed.Pass.Att", "Back.Pressed.Pass.Att")])
+passdirection$Pct.of.Pressed.Pass.Att.Side <- passdirection$Side.Pressed.Pass.Att/rowSums(passdirection[,c("Fwd.Pressed.Pass.Att", "Side.Pressed.Pass.Att", "Back.Pressed.Pass.Att")])
+passdirection$Pct.of.Pressed.Pass.Att.Back <- passdirection$Back.Pressed.Pass.Att/rowSums(passdirection[,c("Fwd.Pressed.Pass.Att", "Side.Pressed.Pass.Att", "Back.Pressed.Pass.Att")])
 
 all <- merge(all, passdirection, by="Player", all=TRUE)
 rm(passdirection)
@@ -665,3 +665,5 @@ rm(smothers)
 
 #CLEANING UP TABLE----------
 all[is.na(all)] <- 0
+names(all) <- gsub(" ",".", names(all))
+
