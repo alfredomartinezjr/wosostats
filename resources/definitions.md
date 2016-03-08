@@ -61,7 +61,7 @@ Forward pass attempts, regardless of whether the pass attempt was completed
 
 **Sideway pass attempts** - `passes.s`, `ps`
 
-Sideway pass attempts, regardless of whether the pass attempt was completed. For a pass to go sideways, it does not have to go in a strict 
+Sideway pass attempts, regardless of whether the pass attempt was completed. For a pass to go sideways, it does not have to be at a perfect 90 angle; if it goes a little bit backwards or forwards but can be deemed to be going largely sideways, it should be logged as such. 
 
 **Backward pass attempts** - `passes.b`, `pb`
 
@@ -74,6 +74,9 @@ When a player moves from one "zone" (zone definitions are outlined in the "Locat
 Example: [http://i.imgur.com/mYoa9eF.gif](http://i.imgur.com/mYoa9eF.gif)
 
 In the GIF above, Leigh Ann Brown, the player in white and blue, moves with the ball from her defensive right third, into her defensive right middle third, into her opposing right middle third, to her opposing right third. This should be logged as three separate 'movement' events; one from defensive right third into defensive right middle third, one from defensive right middle third into opposing right middle third, and one from opposing right middle third into opposing right third.
+
+The above example on an Excel spreadsheet would look like this, with each "movement" in it's own row in the poss.action column, triggering a new event each time:
+[http://i.imgur.com/vOolLGF.png](http://i.imgur.com/vOolLGF.png)
 
 **Take ons won** - `take.on.won`, `tow`
 
