@@ -1,4 +1,4 @@
-*This is a list of action definitions that are meant to inform how actions should be logged. It is meant to be used by people who are either logging stats on their own or would like to have a look at how they are being defined. If you would like to see definitions for stats that are calculated from these actions (such as in the Shiny app or on various R Markdown docs), you'll want to go to the stats-glossary.md page!*
+**This is a list of action definitions that are meant to inform how actions should be logged. It is meant to be used by people who are either logging stats on their own or would like to have a look at how they are being defined. If you would like to see definitions for stats that are calculated from these actions (such as in the Shiny app or on various R Markdown docs), you'll want to go to the stats-glossary.md page!**
 
 #Table of Contents
 * Possessing Player Actions - `poss.action`
