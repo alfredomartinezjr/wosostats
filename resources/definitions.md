@@ -76,6 +76,7 @@ Example: [http://i.imgur.com/mYoa9eF.gif](http://i.imgur.com/mYoa9eF.gif)
 In the GIF above, Leigh Ann Brown, the player in white and blue, moves with the ball from her defensive right third, into her defensive right middle third, into her opposing right middle third, to her opposing right third. This should be logged as three separate 'movement' events; one from defensive right third into defensive right middle third, one from defensive right middle third into opposing right middle third, and one from opposing right middle third into opposing right third.
 
 The above example on an Excel spreadsheet would look like this, with each "movement" in it's own row in the poss.action column, triggering a new event each time:
+
 ![](http://i.imgur.com/vOolLGF.png)
 
 **Take ons won** - `take.on.won`, `tow`
@@ -187,9 +188,11 @@ Certain shots and passes logged in the `poss.action` column will be of special t
 To further show how multiple qualifiers can be added to the same action, below are two examples taken from an Excel spreadsheet for an actual match (certain columns have been hidden to better show the use of mutiple qualifiers).
 
 Example 1: Karen Bardsley passes the ball forward, and the pass was both a goal kick and launched into the air. Note how the poss.action column for the row with the additional qualifier was left "blank" with a hyphen, which, based on a formula in the spreadsheet, ensures that the additional row is logged under the same event number (in this case, event 12).
+
 ![](http://i.imgur.com/JyNiAMu.png)
 
 Example 2: Fara Williams passes the ball forward, and the pass was both a header and a flick-on. Again, the poss.action column is left blank so as not to create a new event:
+
 ![](http://i.imgur.com/O1wl4ep.png)
 
 **Corner crosses** - `corner.crosses`, `cc`
