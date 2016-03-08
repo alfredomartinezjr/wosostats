@@ -187,7 +187,7 @@ Certain shots and passes logged in the `poss.action` column will be of special t
 
 To further show how multiple qualifiers can be added to the same action, below are two examples taken from an Excel spreadsheet for an actual match (certain columns have been hidden to better show the use of mutiple qualifiers).
 
-Example 1: Karen Bardsley passes the ball forward, and the pass was both a goal kick and launched into the air. Note how the poss.action column for the row with the additional qualifier was left "blank" with a hyphen, which, based on a formula in the spreadsheet, ensures that the additional row is logged under the same event number (in this case, event 12).
+Example 1: Karen Bardsley passes the ball forward, and the pass was both a goal kick and launched into the air. Note how the poss.action column for the row with the additional qualifier was left "blank" with a hyphen, which, based on a formula in the spreadsheet, ensures that the additional row is logged under the same event number (in this case, event 6).
 
 ![](http://i.imgur.com/JyNiAMu.png)
 
