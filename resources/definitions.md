@@ -209,19 +209,19 @@ A long, high ball to an intended recipient across the field.
 
 **Launch balls** - `launch`, `lau`
 
-Also sometimes known as "long balls." Long, high balls into open space, not clearly towards any one intended recipient, or into a crowded area. If they come from the left or right thirds of the field, they should be logged as crosses and NOT as a launch ball.
+Also sometimes known as "long balls." Long, high balls into open space, not clearly towards any one intended recipient, or into a crowded area, or into open space for a teammate to run into. If they come from the left or right thirds of the field, they should be logged as crosses and NOT as a launch ball.
 
 **Through balls** - `through`, `th`
 
-A pass that splits the defense, into open space, to meet a teammate at the end of her run.
+A pass, through the ground or air, that splits the defense by going between two defenders, into open space, to meet a teammate at the end of her run.
 
 **Lay-off balls** - `lay.off`, `lay`
 
-A one-touch pass into the direction from where the ball came from.
+A one-touch pass into the direction from where the ball came from. Does not necessarily have to be a pass back to the player who made the previous pass.
 
 **Flick-on balls** - `flick.on`, `flick`
 
-A glancing pass into the same general direction from which it came from.
+A glancing pass into the same general direction from which it came from. Does not necessarily have to be a pass to the player who made the previous pass.
 
 **Throw-ins** - `throw.in`, `ti`
 
@@ -257,7 +257,7 @@ Not everything in the 'poss.action' will have a reaction from the defending team
 
 **Dispossessing through a ball shield** - `dispossess.ball.shield`, `dbs`
 
-When a defender steps in between a player of the possessing team and shields the ball away from her for either another player from the defending team to recover or until the ball goes out of bounds.
+When a defender steps in between a player of the possessing team and shields the ball away from her until another player from the defending team either recovers the ball or clears it away, or until the ball goes out of bounds.
 
 **Dispossessing through a steal** - `dispossess.steal`, `ds`
 
@@ -269,11 +269,13 @@ When a defender steps up to win a ball that the possessing player, usually under
 
 **Tackling the ball away** - `tackles.ball.away`, `tba`
 
-When a defender challenges a possessing player, connects with the ball, and successfully tackles the ball away for another player to recover. If the defending player who made the tackle doesn't win the ball then she should be credited with a `tackles.ball.away` regardless of which team's player ends up recovering the loose ball.
+When a defender challenges a possessing player, connects with the ball while making contact and engaging with the player, and successfully dispossesses the possessing player of the ball for someone else to recover. As opposed to a tackle where the tackler also wins the ball (described below), this should be logged for when the ball is tackled away but the person making the tackle isn't the one to immediately recover it in the act of making a tackle. A tackle should be logged regardless of which team ends up recovering the loose  ball. 
+
+If the defending player who made the tackle doesn't win the ball then she should be credited with a `tackles.ball.away` regardless of which team's player ends up recovering the loose ball. 
 
 **Tackling and winning the ball** - `tackles.ball.won`, `tbw`
 
-When a defender challenges a possessing player, connects with the ball, successfully tackles the ball away, and wins possession of the ball.
+When a defender challenges a possessing player, connects with the ball while making contact and engaging with the player, and successfully dispossesses the possessing player of the ball and also clearly wins possession of the ball in the same instance as making the tackle. Sometimes a defender will tackle the ball some distance away and then run up to it to recover it, which should be logged as a `tackles.ball.away` followed by a `recoveries`, as the tackle wasn't what immediately won the ball.
 
 **Dibbled by an opponent due to a missed tackle** - `dribbled.tackles.missed`, `dbm`
 
@@ -281,7 +283,7 @@ When a defender goes in for a tackle, misses the ball, and the possessing player
 
 **Dribbled by an opponent due to being out-run** - `dribbled.out.run`, `dot`
 
-Also known as getting "burnt." When a defender has a possessing player dribble past her without clearly going in for a tackle.
+Also known as getting "burnt." When a defender has a possessing player dribble past her without clearly going in for a tackle and without getting turned.
 
 **Dribbled by an opponent due to being turned** - `dribbled.turned`, `dt`
 
@@ -301,11 +303,11 @@ When a defender blocks a pass or a shot and creates a loose ball situation that 
 
 **Interceptions** - `interceptions`, `int`
 
-When a defender blocks a pass (or sometimes a shot) and clearly wins possession of the ball. These should NOT be counted for missed passes that go into open area, too far away from its intended recipient, and were going to be won by the opposing team anyways. Interceptions should be logged for passes that, were it not for the intercepting defender, were going to meet its intended recipient at her standing location or at the end of her run.
+When a defender blocks a pass (or sometimes a shot) and clearly wins possession of the ball. These should NOT be counted for missed passes that go into open area, too far away from its intended recipient, and were going to be won by the opposing team anyways. Interceptions should be logged for passes that, were it not for the intercepting defender, were going to meet its intended recipient at her location or at the end of her run.
 
 **Balls shielded** - `ball.shield`, `bs`
 
-When a defender attempts to shields a loose ball that was in possession of the opposing team.
+When a defender attempts to shield a loose ball that was in possession of the opposing team.
 
 **Clearances** - `clearances`, `cl`
 
