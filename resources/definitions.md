@@ -175,7 +175,7 @@ A recovery is when a player gets posession of a loose ball, regardless of which 
 
 **Balls shielded** - `ball.shield`, `bs`
 
-A ball shield is when a player successfully and intentionally uses her body to shield the ball from a defender as it goes out of play.
+A ball shield is when a possessing player intentionally and successfully uses her body to shield the ball from a defender. This action is meant to encompass moments where a player is trying to waste time, or when a player is trying to win a throw in or corner by getting a defender to knock the ball out of bounds.
 
 **Clearances** - `clearances`, `c`
 
