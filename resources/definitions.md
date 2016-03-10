@@ -37,7 +37,7 @@ A shot that would have been scored but for being stopped by a goalkeeper's save
 
 **Shots stopped by a defender** - `shots.stopped.by.def`, `sog.def`, `sdef`
 
-A shot that would have been scored but for being blocked the last defender behind the goalkeeper
+A shot that would have been scored but for being blocked by the last defender behind the goalkeeper
 
 ![](http://i.imgur.com/1rI71JW.gif)
 
