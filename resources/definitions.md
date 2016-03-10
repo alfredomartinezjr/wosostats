@@ -161,6 +161,14 @@ Lindsey Horan, the player in white, launches a pass forward. Carli Lloyd, the pl
 
 A player is deemed to have lost an aerial duel if the player challenging her for the ball got to the ball first, regardless of where the ball ends up or who recovers it.
 
+A lost aerial duel should be logged for both players when they both had a reasonable chance at winning the ball but ended up mistiming their jump.
+
+Example 1: [http://i.imgur.com/EspvEYN.gif](http://i.imgur.com/EspvEYN.gif)
+
+Mallory Pugh, the player in white, and Steph Houghton, the player in red, both have a resonable chance at winning this launched pass, but neither really manages to get off a good jump, due to running into each other, even though it was a winnable ball in the air for both of them. This goes down as an "aerial.lost" for the "possessing" player (due to the ball still being in "possession" of the team in white), and also an "aerial.lost" for the defending player. On the spreadsheet, this action would look like the following (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/lK5EHAs.png)
+
 **Recoveries** - `recoveries`, `r`
 
 A recovery is when a player gets posession of a loose ball.  In the `poss.action' column, a recovery should be logged to a player if the last player to have possession of the ball was on the same team. A recovery usually happens after a player on the defending team interferes with the ball such as with (but not limited to) a block, a won aerial duel, a clearance, or a tackle. 
