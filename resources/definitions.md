@@ -105,14 +105,17 @@ Different take on attempts can occur in succession and should be logged separate
 
 **Dispossessed of the ball** - `dispossessed`, `d`
 
-A dispossession is when the player in possession of the ball loses the ball to a defender without attemping to “take on” the defender. This is different from a lost take on in that it encompasses moments such as a bad touch on the ball or losing the ball to a defender who snuck up from behind.
+A dispossession is when the player in possession of the ball loses the ball to a defender who stepped up to take away the ball, without the possessing player having attempted to a “take on” the defender. This is different from a lost take on in that encompasses moments other than "lost take ons" where a possessing player was dispossessed by a defender who was making an intentional attempt at dispossessing that possessing player.
 
-Example 1: [http://i.imgur.com/9CaWO5l.gif](http://i.imgur.com/9CaWO5l.gif)
+This is meant to define moments such as a possessing player getting snuck up from behind. It is also meant to define moments where a possessing player isn't so much attempting to take on a defender as she is trying to just maintain possession in the face of a player challenging her off the ball.
 
-Jess Fishlock, the player in yellow and purple, receives a pass from Kim Little but loses the ball to Maddy Laddish, in the white and blue, due to a bad first touch. Since it is not clear that Fishlock was attempting to take on Laddish with that touch, this is logged as a dispossession: 
+Example 1: [http://i.imgur.com/wfXAGUx.gif](http://i.imgur.com/wfXAGUx.gif)
 
-Example 2: [http://i.imgur.com/wfXAGUx.gif](http://i.imgur.com/wfXAGUx.gif)
 Keelin Winters, the player in yellow and purple who receives the pass, is dispossessed from behind by Jen Buczkowski, in the white and blue. Since it does not appear like Winters had a chance to attempt a take on, this is logged as a dispossession.
+
+Example 2: [http://i.imgur.com/GWHVuk5.gif](http://i.imgur.com/GWHVuk5.gif)
+
+Demi Stokes, the player in red who receives the pass, is immediatelly challenged for the ball by Tobin Heath, the player in white. Stokes, with her back to Heath, never seems to be taking on Heath so much as she is trying to keep the ball away. Since it doesn't look like a clear take on, and since it's clear that Heath was forcing a dispossession with a tackle, this is considered a "dispossessed" for Stokes.
 
 **Lost touch** - `lost.touch`, `lt`
 
@@ -134,7 +137,9 @@ Mallory Pugh, the player in white, attemps to win a ball that has been knocked i
 
 ![](http://i.imgur.com/JtSy0jH.png)
 
+Example 3: [http://i.imgur.com/9CaWO5l.gif](http://i.imgur.com/9CaWO5l.gif)
 
+Jess Fishlock, the player in yellow and purple, receives a pass from Kim Little but loses the ball to Maddy Laddish, in the white and blue, due to a bad first touch. Since it is not clear that Fishlock was attempting to take on Laddish with that touch, this is logged as a dispossession: 
 
 **Aerial duels won** - `aerial.won`, `aw`
 
