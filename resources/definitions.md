@@ -111,11 +111,15 @@ This is meant to define moments such as a possessing player getting snuck up fro
 
 Example 1: [http://i.imgur.com/wfXAGUx.gif](http://i.imgur.com/wfXAGUx.gif)
 
-Keelin Winters, the player in yellow and purple who receives the pass, is dispossessed from behind by Jen Buczkowski, in the white and blue. Since it does not appear like Winters had a chance to attempt a take on, this is logged as a dispossession.
+Keelin Winters, the player in yellow and purple who receives the pass, is dispossessed from behind by Jen Buczkowski, in the white and blue. Since it does not appear like Winters had a chance to attempt a take on, this is logged as a dispossession. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/Qs8a6oO.png)
 
 Example 2: [http://i.imgur.com/GWHVuk5.gif](http://i.imgur.com/GWHVuk5.gif)
 
-Demi Stokes, the player in red who receives the pass, is immediatelly challenged for the ball by Tobin Heath, the player in white. Stokes, practically face to face with Heath, never seems to be taking on Heath so much as she is trying to keep the ball away. Since it doesn't look like a clear take on, and since it's clear that Heath was forcing a dispossession with a tackle, this is considered a "dispossessed" for Stokes.
+Demi Stokes, the player in red who receives the pass, is immediatelly challenged for the ball by Tobin Heath, the player in white. Stokes, practically face to face with Heath, never seems to be taking on Heath so much as she is trying to keep the ball away. Since it doesn't look like a clear take on, and since it's clear that Heath was forcing a dispossession with a tackle, this is considered a "dispossessed" for Stokes. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/NxF9P55.png)
 
 **Lost touch** - `lost.touch`, `lt`
 
