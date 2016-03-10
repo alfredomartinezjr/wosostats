@@ -120,7 +120,7 @@ A lost touch is when a player loses possession of the ball, without it being cle
 
 This type of action is meant to be different from the ones defined above (lost take ons and "dispossessions") in that a "lost touch", as it should appear in this Excel spreadsheet, is meant to encompass unforced bad touches.
 
-Example 1: [https://streamable.com/oppt](https://streamable.com/oppt)
+Example 1: [](https://streamable.com/oppt)
 
 Lindsey Horan, the player in white, attempts to trap a ball with her body ends up knocking the ball away. She was not being challenged by any one from England, the team in red, and it is not clear that she was attempting a pass, so this is considered a "lost.touch."
 
