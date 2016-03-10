@@ -116,11 +116,13 @@ Keelin Winters, the player in yellow and purple who receives the pass, is dispos
 
 **Lost touch** - `lost.touch`, `lt`
 
-A lost touch is when a player loses possession of the ball, without it being clear that she was attempting a shot or pass, and without having been challenged by defender, or it is when a player attempts to win possession of the ball and unsuccessfully knocks it away with a bad touch.
+A lost touch is when a player loses possession of the ball due to a mistouch or heavy touch, without it being clear that she was attempting a shot, pass or taken; or it is when a player attempts to win possession of the ball and unsuccessfully knocks it away with a mistouch or bad touch.
 
-This type of action is meant to be different from the ones defined above (lost take ons and "dispossessions") in that a "lost touch", as it should appear in this Excel spreadsheet, is meant to encompass unforced bad touches.
+This type of action is meant to be different from the ones defined above (lost take ons and "dispossessions") in that a "lost touch", as it should appear in this Excel spreadsheet, is meant to encompass bad touches. It is not meant to define unsuccessful intentional attempts to get past opponents, and it is not meant to define moments where a player, who wasn't attempting to take on anyone, was dispossessed because of a defender intentional attempt at taking the ball away. 
 
-Example 1: ![](http://i.imgur.com/W4y6DOs.gif)
+Put in other words, if the possessing player wasn't clearly attempting to take on a defender, and the defender who ended up with the ball didn't dispossess the possessing player as much as she actually just recovered a loose ball, then the possessing player's action should be considered a "lost.touch."
+
+Example 1: [http://i.imgur.com/W4y6DOs.gif](http://i.imgur.com/W4y6DOs.gif)
 
 Lindsey Horan, the player in white, attempts to trap a ball with her body ends up knocking the ball away. She was not being challenged by any one from England, the team in red, and it is not clear that she was attempting a pass, so this is considered a "lost.touch." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
@@ -131,6 +133,8 @@ Example 2: [http://i.imgur.com/hVcRbPJ.gif](http://i.imgur.com/hVcRbPJ.gif)
 Mallory Pugh, the player in white, attemps to win a ball that has been knocked into her direction from an aerial duel, and she ends up mistouching it and glancing it into the direction of a player on the opposing team. It's not clear that this was meant to be a pass and Jordan Nobbs, the player in red from the opposing team running towards her from behind, was not physically engaged with her as Pugh was attempting to control the ball, so this is considered a "lost.touch." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
 ![](http://i.imgur.com/JtSy0jH.png)
+
+
 
 **Aerial duels won** - `aerial.won`, `aw`
 
