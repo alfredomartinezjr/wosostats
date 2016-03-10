@@ -171,9 +171,7 @@ Mallory Pugh, the player in white, and Steph Houghton, the player in red, both h
 
 **Recoveries** - `recoveries`, `r`
 
-A recovery is when a player gets posession of a loose ball.  In the `poss.action' column, a recovery should be logged to a player if the last player to have possession of the ball was on the same team. A recovery usually happens after a player on the defending team interferes with the ball such as with (but not limited to) a block, a won aerial duel, a clearance, or a tackle. 
-
-For a ball to change possession under this model, a player on the opposing team must have clear possession of the ball; otherwise, it's created a loose ball that is still technically under "possession" by the other team and is thus recovered when a player wins it back. Recoveries are a way of noting how a team wins or maintains possession.
+A recovery is when a player gets posession of a loose ball, regardless of which team was the one to previously have possession of the ball. A recovery should always be logged when a player wins possession of the ball after a scenario that creates a loose ball, such as (but not limited to) a block, an aerial duel, a clearance, or a tackle, a missed pass, or a dispossession. Recoveries are a way of noting how a team wins or maintains possession.
 
 **Balls shielded** - `ball.shield`, `bs`
 
