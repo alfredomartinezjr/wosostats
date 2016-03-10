@@ -115,7 +115,7 @@ Keelin Winters, the player in yellow and purple who receives the pass, is dispos
 
 Example 2: [http://i.imgur.com/GWHVuk5.gif](http://i.imgur.com/GWHVuk5.gif)
 
-Demi Stokes, the player in red who receives the pass, is immediatelly challenged for the ball by Tobin Heath, the player in white. Stokes, with her back to Heath, never seems to be taking on Heath so much as she is trying to keep the ball away. Since it doesn't look like a clear take on, and since it's clear that Heath was forcing a dispossession with a tackle, this is considered a "dispossessed" for Stokes.
+Demi Stokes, the player in red who receives the pass, is immediatelly challenged for the ball by Tobin Heath, the player in white. Stokes, practically face to face with Heath, never seems to be taking on Heath so much as she is trying to keep the ball away. Since it doesn't look like a clear take on, and since it's clear that Heath was forcing a dispossession with a tackle, this is considered a "dispossessed" for Stokes.
 
 **Lost touch** - `lost.touch`, `lt`
 
