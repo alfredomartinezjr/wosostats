@@ -131,7 +131,7 @@ Put in other words, if the possessing player wasn't clearly attempting to take o
 
 Example 1: [http://i.imgur.com/W4y6DOs.gif](http://i.imgur.com/W4y6DOs.gif)
 
-Lindsey Horan, the player in white, attempts to trap a ball with her body ends up knocking the ball away. She was not being challenged by any one from England, the team in red, and it is not clear that she was attempting a pass, so this is considered a "lost.touch." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+Lindsey Horan, the player in white, attempts to trap a ball with her body but ends up knocking the ball away. She was not being challenged by any one from England, the team in red, and it is not clear that she was attempting a pass, so this is considered a "lost.touch." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
 ![](http://i.imgur.com/hXESkEU.png)
 
