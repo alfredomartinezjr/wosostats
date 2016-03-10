@@ -124,13 +124,13 @@ Example 1: [https://streamable.com/oppt](https://streamable.com/oppt)
 
 Lindsey Horan, the player in white, attempts to trap a ball with her body ends up knocking the ball away. She was not being challenged by any one from England, the team in red, and it is not clear that she was attempting a pass, so this is considered a "lost.touch." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
-[http://i.imgur.com/hXESkEU.png](http://i.imgur.com/hXESkEU.png)
+[](http://i.imgur.com/hXESkEU.png)
 
 Example 2: [http://i.imgur.com/hVcRbPJ.gif](http://i.imgur.com/hVcRbPJ.gif)
 
 Mallory Pugh, the player in white, attemps to win a ball that has been knocked into her direction from an aerial duel, and she ends up mistouching it and glancing it into the direction of a player on the opposing team. It's not clear that this was meant to be a pass and Jordan Nobbs, the player in red from the opposing team running towards her from behind, was not physically engaged with her as Pugh was attempting to control the ball, so this is considered a "lost.touch." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
-[http://i.imgur.com/JtSy0jH.png](http://i.imgur.com/JtSy0jH.png)
+[](http://i.imgur.com/JtSy0jH.png)
 
 **Aerial duels won** - `aerial.won`, `aw`
 
