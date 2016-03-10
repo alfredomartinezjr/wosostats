@@ -81,7 +81,7 @@ The above example on an Excel spreadsheet would look like this, with each "movem
 
 **Take ons won** - `take.on.won`, `tow`
 
-A take on is an attempt by a player to get past her defender and maintain possession of the ball. A take on is “won” if the player dribbles past a defender, turns a defender to create open space, or draws a foul. 
+A take on is an intentional attempt by a player to get past her defender while maintaining possession of the ball. A take on is “won” if the player dribbles past a defender, turns a defender to create open space, or draws a foul. 
 
 Example 1: [http://i.imgur.com/uTDOeay.gif](http://i.imgur.com/uTDOeay.gif)
 
@@ -97,7 +97,7 @@ Megan Rapinoe, the player in yellow and purple, wins a take on against Erika Tym
 
 **Take ons lost** - `take.on.lost`, `tol`
 
-A take on is “lost” if the ball is tackled away, regardless of who recovers the ball or where it ends up, or if the player loses possession through a lost touch or a ball shield.
+A take on is “lost” if a player intentionally attempts to get past her defender and ends up getting dispossessed by a tackle (regardless of who recovers the ball), a lost touch, a ball shield, or because she conceded a foul to a defender. A lost take-on is different from the "dispossessed" definition covered below because a "take on lost" was the result of an intential attempt to get past a defender.
 
 Example: [http://i.imgur.com/n0ThErg.gif](http://i.imgur.com/n0ThErg.gif)
 
@@ -116,7 +116,15 @@ Keelin Winters, the player in yellow and purple who receives the pass, is dispos
 
 **Lost touch** - `lost.touch`, `lt`
 
-A lost touch is when a player loses possession of the ball, without having taken a shot or attempting to pass the ball, and without having been under pressure or having been challenged.
+A lost touch is when a player loses possession of the ball, without it being clear that she was attempting a shot or pass, and without having been challenged by defender, or it is when a player attempts to win possession of the ball and unsuccessfully knocks it away with a bad touch.
+
+This type of action is meant to be different from the ones defined above (lost take ons and "dispossessions") in that a "lost touch", as it should appear in this Excel spreadsheet, is meant to encompass unforced bad touches.
+
+Example 1: [https://streamable.com/oppt](https://streamable.com/oppt)
+
+Lindsey Horan, the player in white, attempts to trap a ball with her body ends up knocking the ball away. She was not being challenged by any one from England, the team in red, and it is not clear that she was attempting a pass, so this is considered a "lost.touch."
+
+Example 2: [http://i.imgur.com/hVcRbPJ.gif](http://i.imgur.com/hVcRbPJ.gif)
 
 **Aerial duels won** - `aerial.won`, `aw`
 
