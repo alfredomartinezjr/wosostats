@@ -151,7 +151,9 @@ Aerial duels are when two players challenge for a 50/50 ball in the air. The fir
 
 Passes that are also aerial duels should still be counted as aerial duels in a separate row as its own event. So, if a player challenges for a launched ball and heads it to an intended recipient, it should be logged as an `aerial.won` in one event and as a `passes.f/s/b` in the next event.
 
-Example 1: ![](http://imgur.com/W4dC52H.gif)
+Example 1: ![http://imgur.com/W4dC52H.gif](http://imgur.com/W4dC52H.gif)
+
+Lindsey Horan, the player in white, launches a pass forward. Carli Lloyd, the player in white, and Carol Sanchez, the player in red, both go up into the air to challenge for the ball, and Lloyd wins the challenge by being the first to make contact with the ball. In addition, Lloyd also looks to clearly be, in that same motion, making a flick-on header pass forward to her teammate. In this case, Lloyd gets an "aerial.won" and a "passes.f". On the spreadsheet, this action would look like the following (certain columns have been hidden to better show this):
 
 ![](http://i.imgur.com/QQ9hosw.png)
 
