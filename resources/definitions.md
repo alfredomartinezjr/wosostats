@@ -173,11 +173,31 @@ Mallory Pugh, the player in white, and Steph Houghton, the player in red, both h
 
 A recovery is when a player gets posession of a loose ball, regardless of which team was the one to previously have possession of the ball. A recovery should always be logged when a player wins possession of the ball after a scenario that creates a loose ball, such as (but not limited to) a block, an aerial duel, a clearance, or a tackle, a missed pass, or a dispossession. Recoveries are a way of noting how a team wins or maintains possession.
 
+To reiterate, every moment where a player gains possession of a loose ball, regardless of which team last possessed the ball, must be logged as recovery for the recovering player.
+
+Example 1: [http://i.imgur.com/v6B4AIK.gif](http://i.imgur.com/v6B4AIK.gif)
+
+Mallory Pugh, the player in white, attempts to pass the ball forward but is blocked by a player from the opposing team. The ball is now a loose ball and the person who regains possession is Carli Lloyd, the player in white, who should then be logged with a recovery. On the spreadsheet, this action would look like the following (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/PsAGVSv.png)
+
+Example 2: [http://i.imgur.com/hwBHR4z.gif](http://i.imgur.com/hwBHR4z.gif)
+
+Kelley O'Hara, the player in white, clears the ball away from the box. Her teammate, Carli Lloyd gets a bad touch on the ball and knocks it away, causing a loose ball scenario. Jordan Nobbs, the player in red, ends up gaining possession of the loose ball and gets credited with a recovery. On the spreadsheet, this action would look like the following (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/IQZBj93.png)
+
+Example 3: [http://i.imgur.com/ZBFFuH1.gif](http://i.imgur.com/ZBFFuH1.gif)
+
+Toni Duggan, the player in red, attempts to pass the ball sideways but it ends up being incomplete and becoming a missed pass. A missed pass that doesn't go out of bounds is pretty much a loose ball scenario, and Mallory Pugh, the player in white, gains possession of it and gets credited with a recovery. On the spreadsheet, this action would look like the following (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/4OIvG2y.png)
+
 **Balls shielded** - `ball.shield`, `bs`
 
-A ball shield is when a possessing player intentionally and successfully uses her body to shield the ball from a defender. This action is meant to encompass moments where a player is trying to waste time, or when a player is trying to win a throw in or corner by getting a defender to knock the ball out of bounds.
+A ball shield is when a possessing player, who it should be reiterated already has possession of the ball, intentionally and successfully uses her body to shield the ball from a defender. This action is meant to encompass moments where a player is trying to waste time, or when a player is trying to win a throw in or corner by getting a defender to knock the ball out of bounds.
 
-**Clearances** - `clearances`, `c`
+**Clearances** - `clearances`, `cl`
 
 A clearance is logged in the `poss.action` column when a player in possession of the ball intentionally kicks the ball away without an intended recipient.
 
