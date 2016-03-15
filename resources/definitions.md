@@ -195,11 +195,19 @@ Toni Duggan, the player in red, attempts to pass the ball sideways but it ends u
 
 **Balls shielded** - `ball.shield`, `bs`
 
-A ball shield is when a possessing player, who it should can be deemed to already have possession of the ball, intentionally uses her body to shield the ball from a defender with the intention of keeping the ball in her team's possession. This action is meant to encompass moments where a player is trying to waste time by shielding the ball in the corner; when a player is trying to earn a throw-in or corner by getting a defender to knock the ball out of bounds; when a player shields a loose ball or pass for a teammate to pick up; or when a player shields a pass to turn a defender before touching the balll.
+A ball shield in the "poss.action" column is when a possessing player, *who it should can be deemed to already have possession of the ball*, intentionally uses her body to shield the ball from a defender with the intention of keeping the ball in her team's possession. This action is meant to encompass moments where a player is trying to waste time by shielding the ball in the corner; when a player is trying to earn a throw-in or corner by getting a defender to knock the ball out of bounds; when a player shields a loose ball or pass for a teammate to pick up; or when a player shields a pass to turn a defender before touching the balll.
+
+There is a "ball.shield" action in the "def.action" column, but that goes for a separate type of ball shields that gets credited to a player from a team defending the ball.
+
+Example 1: [http://i.imgur.com/As8VvLs.gifv](http://i.imgur.com/As8VvLs.gifv)
+
+Katrine Veje, the player in black and blue, receives a pass in the corner area and proceeds to attempt a cross which is blocked by Amanda Da Costa, the player in white. The blocked ball, which was last touched by Da Costa, the defender, is now a loose ball rolling out of bounds and Veje shields the ball away from Da Costa as it goes out of bounds for a corner kick. As the blocked ball is still technically, under this model, "under possession" by Veje's team, she gets credited with a "ball shield" in the "poss.action" column for keeping the ball under her team's possession. On the spreadsheet, this action would look like the following (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/FxISiGC.png)
 
 Example 2: [http://i.imgur.com/0dICuJ7.gifv](http://i.imgur.com/0dICuJ7.gifv)
 
-Diana Matheson, the player in white, passes the ball forward to her teammate, Francisca Ordega. Before touching the ball, Ordega shields the ball away from her defender, Lauren Barnes, who is challenging her for the ball. Ordega successfully shields the pass and maintains possession of the ball for her team as she then runs forward towards the box.
+Diana Matheson, the player in white, passes the ball forward to her teammate, Francisca Ordega. Before touching the ball, Ordega shields the ball away from her defender, Lauren Barnes, who is challenging her for the ball. Ordega successfully shields the pass and maintains possession of the ball for her team as she then runs forward towards the box.  On the spreadsheet, this action would look like the following (certain columns have been hidden to better show this):
 
 ![](http://i.imgur.com/Rk261Cz.png)
 
