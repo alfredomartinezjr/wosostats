@@ -211,9 +211,15 @@ Diana Matheson, the player in white, passes the ball forward to her teammate, Fr
 
 ![](http://i.imgur.com/Rk261Cz.png)
 
+Example 3: [http://i.imgur.com/IPEyEHb.gifv](http://i.imgur.com/IPEyEHb.gifv)
+
+Kim Little, the player in black and blue, dribbles the ball towards the corner flag while being challenged by Diana Matheson and Estelle Johnson, the players in white. While what happens next could be considered a "dispossessed" action, context and apparent intent is important; it is the 87th minute, Little's team has a 2-0 lead, and she appears to be more shielding the ball than actually trying to dribble it past her defenders. Matheson proceeds to gets a touch on the ball and knocks it out of bounds, keeping the ball in possession of Little's team and winning Little a "ball.shield" as it appears her intent was to shield the ball rather than beat her defenders. On the spreadsheet, this action would look like the following (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/Oq3hEuQ.png)
+
 **Clearances** - `clearances`, `cl`
 
-A clearance is logged in the `poss.action` column when a player in possession of the ball intentionally kicks the ball away without an intended recipient.
+A clearance is logged in the `poss.action` column when a player in possession of the ball intentionally kicks the ball away without an intended recipient. Intent, time on the ball, pressure from defenders, and the angle the player was facing when she kicked the ball all should be considered when deciding to consider something a "clearance" rather than a pass attempt.
 
 **Offside Calls** - `offside.calls`, `os`
 
@@ -224,6 +230,14 @@ Logged when a player is called offside.
 **Play cut off by broadcast** - `playcutoffbybroadcast`, `playcutoff`, `pco`
 
 These are pesky instances when the broadcast of the game is cut off by something such as a replay or sideline interview. They can completely cut off your ability to log match stats and can affect how stats are analyzed if they aren't outright mentioned. They should be logged in the `poss.action` column.
+
+On super-pesky instances when the broadcast cuts off right after a completed, impeding your ability to tell if the pass was completed or not and to who, log the last pass that could be seen that was completed as "passes.f.c", "passes.s.c", or "passes.b.c", depending on the direction of the pass. The "c" at the end indicates that the pass was completed. You only need add that "c" when a completed pass was the last action before a stoppage in play or broadcast interruption. 
+
+The shory story for the reason for the "c", and why you don't have to add it to every single completed pass attempt in the game, is that the R code that reads the Excel file, which generates the match actions .csv file that is used to compute match stats, can tell if a pass attempt was completed based on other actions and qualifiers in the surrounding events and columns, except for these instances when play was stopped or cut off directly after a completed pass.
+
+For example, observe this moment: (https://streamable.com/7o9o)[https://streamable.com/7o9o]. Ali Krieger, the player in white, completes a pass forward to her teammate Sam Mewis, and then the broadcast cuts to a shot of Hope Solo for a couple of seconds. When the broadcast, does return to the game, the ball is still in possession of the same team but is now at the feet of Whitney Engen. Since it is not 100% clear what happened while the camera was on Solo, on the spreadsheet this action would look like the following (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/8Q3ZbAc.png)
 
 **Substitutions** - `substitution.on` & `substitution.off` (OR `sub.f` & `sub.o`)
 
@@ -250,7 +264,6 @@ This should be logged if there is extra time on the way.
 **Other stoppages in play** - `stoppage.in.play`
 
 If not a substitution or end of play, any other instances that stop play, such as an injury, should be noted.
-
 
 
 #Play Types
