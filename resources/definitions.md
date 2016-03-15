@@ -339,7 +339,7 @@ This is separate from a `goal.kick` in that a drop kick is after a goalkeeper wi
 #Defensive Player Actions
 Column name: `def.action`
 
-Not everything in the 'poss.action' will have a reaction from the defending team that will be logged. The following defensive actions are to be logged in the `def.action` column for the corresponding event to which they are reacting.
+Not everything in the 'poss.action' will have a reaction from the defending team that gets to be logged. The following defensive actions, when they happen, are to be logged in the `def.action` column within the same event as the possessing action to which the defender is acting upon.
 
 **Dispossessing through a ball shield** - `dispossess.ball.shield`, `dbs`
 
