@@ -53,18 +53,14 @@ createDataFrame <- function(pattern, col, df) {
 fillBlanks <- function(df) {
   x <- 1
   while (x <= nrow(df)) {
+    #Fill in all player info
     if (is.na(df[x,"poss.player"])) {
       df[x,c("poss.position", "poss.team", "poss.player", "poss.action", 
-             "poss.location", "poss.play.destination", "play.type", 
-             "poss.player.disciplinary", "poss.notes")] <- df[x-1,c("poss.position", "poss.team", 
+             "poss.location", "poss.play.destination")] <- df[x-1,c("poss.position", "poss.team", 
                                                                     "poss.player", "poss.action",
-                                                                    "poss.location", "poss.play.destination", 
-                                                                    "play.type", "poss.player.disciplinary", 
-                                                                    "poss.notes")] 
-      x <- x + 1
-    } else {
-      x <- x + 1
+                                                                    "poss.location", "poss.play.destination")] 
     }
+    x <- x + 1
   }
   df
 }
@@ -300,8 +296,12 @@ all <- merge(all, bigchances, by="Player", all=TRUE)
 rm(bigchances)
 
 #CROSSES---------------
-t <- createCleanDataFrame(c("corner.crosses", "deep.crosses"), "play.type", d)
-
+t <- createDataFrame(c("corner.crosses", "deep.crosses"), "play.type", d)
+## Fills in blanks with info from cell above it
+t <- fillBlanks(t)
+## Then, exclude anything that marks a stoppage in time
+t <- t[t[,"poss.action"] != "playcutoffbybroadcast",]
+t <- t[grep("corner.crosses|deep.crosses", t[,"play.type"]),]
 ## Create table with columns for completed, blocked, and missed crosses
 t2 <- createTable(c("completed", "pct", "attempts", "passes.f.c", "passes.f", 
                     "passes.s.c", "passes.s"), "poss.action", t)
