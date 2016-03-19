@@ -349,7 +349,17 @@ Kim Little, the player in black and blue, receives a pass from her teammate, Meg
 
 A glancing pass into the same general direction from which it came from. Does not necessarily have to be a pass to the player who made the previous pass. A header can be a flick-on.
 
-Example 1: 
+Example 1: [http://i.imgur.com/fB5auDp.gifv](http://i.imgur.com/fB5auDp.gifv)
+
+Diana Matheson, the player in white, receives a pass from her teammate and flicks it on into the same direction with a glancing touch. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/I1eM2h3.png)
+
+Example 2: [http://i.imgur.com/bPL1ReE.gifv](http://i.imgur.com/bPL1ReE.gifv)
+
+Demi Stokes, the player in red, receives a throw-in from her teammate and heads it forward with a glancing touch into the same direction. This should be logged as a flick-on. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/ccdyrDc.png)
 
 **Throw-ins** - `throw.in`, `ti`
 
@@ -376,7 +386,6 @@ This is separate from a `gk.drop.kick` in that a goal kick happens after a stopp
 This is separate from a `goal.kick` in that a drop kick is after a goalkeeper wins the ball from open play.
 
 **Penalty kicks** - `pk`
-
 
 #Defensive Player Actions
 Column name: `def.action`
