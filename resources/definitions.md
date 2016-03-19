@@ -628,23 +628,44 @@ Certain possessing player actions need additional qualifiers, related to scoring
 
 A big chance is a clear-cut goal scoring opportunity where a possessing player is reasonably expected to score. These are usually one-on-one chances with the goalkeeper or very close range and generally unpressured shots.
 
+When deciding if a certain moment is a big chance, consider the following: pressure on a possessing player, position of the player, movement of the player, angle at which the player was facing the goal, position of goalkeeper, and control on the ball.
+
 When a big chance has occurred, log `big.chances.scored` if the possessing player scores.
 
 **Big chances shot on goal** - `big.chances.shot.on.goal`, `bcsog`
+
+A big chance is a clear-cut goal scoring opportunity where a possessing player is reasonably expected to score. These are usually one-on-one chances with the goalkeeper or very close range and generally unpressured shots.
+
+When deciding if a certain moment is a big chance, consider the following: pressure on a possessing player, position of the player, movement of the player, angle at which the player was facing the goal, position of goalkeeper, and control on the ball.
 
 When a big chance has occured, log `big.chances.shot.on.goal` if the possessing player gets a shot on goal but does not score.
 
 **Big chances missed** - `big.chances.shot.missed`, `bcsm`
 
+A big chance is a clear-cut goal scoring opportunity where a possessing player is reasonably expected to score. These are usually one-on-one chances with the goalkeeper or very close range and generally unpressured shots.
+
+When deciding if a certain moment is a big chance, consider the following: pressure on a possessing player, position of the player, movement of the player, angle at which the player was facing the goal, position of goalkeeper, and control on the ball.
+
 When a big chance has occured, log `big.chances.shot.missed` if the possessing player misses the shot.
 
-**Big chances disspossessed** - `big.chances.dispossessed`, `bcd`
+**Big chances dispossessed** - `big.chances.dispossessed`, `bcd`
+
+A big chance is a clear-cut goal scoring opportunity where a possessing player is reasonably expected to score. These are usually one-on-one chances with the goalkeeper or very close range and generally unpressured shots.
+
+When deciding if a certain moment is a big chance, consider the following: pressure on a possessing player, position of the player, movement of the player, angle at which the player was facing the goal, position of goalkeeper, and control on the ball.
 
 When a big chance has occured, log `big.chances.dispossessed` if the possessing player gets dispossessed before having a chance at a shot on goal
 
-**Big chances created** - `big.chances.created`, `bcc`
+**Big chances lost** - `big.chances.lost`, `bcl`
 
-To be noted for plays, usually via successful take ons or interceptions in dangerous areas, where a player creates a big chance by herself.
+A big chance is a clear-cut goal scoring opportunity where a possessing player is reasonably expected to score. These are usually one-on-one chances with the goalkeeper or very close range and generally unpressured shots.
+
+When deciding if a certain moment is a big chance, consider the following: pressure on a possessing player, position of the player, movement of the player, angle at which the player was facing the goal, position of goalkeeper, and control on the ball.
+
+When a big chance has occured, log `big.chances.lost` for moments when a player had a reasonable chance at winning control of the ball but missed the ball, usually due to a mistimed kick.
+
+**Big chances created** - `big.chances.created`, `bcc`
+To be noted for plays, usually via successful take ons or interceptions in dangerous areas, where a player creates a big chance by herself. Passes that create big chances should be separately logged as "key.passes."
 
 **Assists** - `assists`, `a`
 
@@ -652,9 +673,9 @@ To be noted for plays, usually via successful take ons or interceptions in dange
 
 A pass that wasn't an assist that was still instrumental in creating a scored big chance, such as a through ball to an player in the box who lays it off for the goalscorer to shoot.
 
-**Unscored key passes** - `unscored.key.passes`, `ukp`
+**Key passes** - `key.passes`, `ukp`
 
-A pass instrumental in creating a big chance that wasn't converted into a goal.
+A pass instrumental in creating a big chance, regardless of whether it was converted into a goal.
 
 **Ball goes out of bounds and possession is kept** - `out.of.bounds.keep.poss`, `kept.poss.out.of.bounds`, `kpob`
 
