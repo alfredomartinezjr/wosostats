@@ -679,7 +679,7 @@ To be noted for plays, usually via successful take ons or interceptions in dange
 
 A pass that wasn't an assist that was still instrumental in creating a scored big chance, such as a through ball to an player in the box who lays it off for the goalscorer to shoot.
 
-**Key passes** - `key.passes`, `ukp`
+**Key passes** - `key.passes`, `kp`
 
 A pass instrumental in creating a big chance, regardless of whether it was converted into a goal.
 
