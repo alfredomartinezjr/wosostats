@@ -76,6 +76,7 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
     * **Own 18-yard box** - `D18`
     * **Own 6-yard box** - `D6`
 8. The `play.type` column should be filled in for the following types of passing and shots actions written in italics below. Refer to the action-definitions.doc file at [https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md](https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md) for in-depth definitions for each qualifier.
+  * In the event that a play has more than two `play.type` qualifiers that could apply, log each one in a different row but leave the `poss.player` column blank so as not to accidentally create a new event: ![](http://i.imgur.com/sVAefoq.png) 
   * **Corner crosses** - `corner.crosses`
   * **Deep crosses** - `deep.crosses`
   * **Switch** - `switch`
