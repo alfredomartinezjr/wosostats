@@ -464,15 +464,9 @@ Saskia Bartusiak, the player in red, faces Carli Lloyd, the player in white, and
 
 ![](http://i.imgur.com/PvF7S21.png)
 
-**Dispossessing through a ball shield** - `dispossess.ball.shield`, `dbs`
-
-When a defender steps in between a player of the possessing team and shields the ball away from her until another player from the defending team either recovers the ball or clears it away, or until the ball goes out of bounds.
-
-**Dispossessing through a steal** - `dispossess.steal`, `ds`
+**Dispossessing through a steal** - `dispossess`, `dis`
 
 When a defender wins the ball without the possessing player having had a chance to take on the player or get rid of the ball. Usually the result of a defender sneaking up on a player from behind.
-
-**Dispossessing a lost touch** - `dispossess.lost.touch`, `dlt`
 
 When a defender steps up to win a ball that the possessing player, usually under pressure, gives away due to a bad touch.
 
@@ -494,7 +488,7 @@ When a defender blocks a pass (or sometimes a shot) and clearly wins possession 
 
 **Balls shielded** - `ball.shield`, `bs`
 
-When a defender attempts to shield a loose ball that was in possession of the opposing team.
+When a defender successfully shields ball that was in possession of the opposing team by either stepping up in between the ball and the possessing player; shielding a loose ball away from the possessing team for another player to recover, clear away, or until the ball rolls out of bounds; or shielding a pass from the possessing team for another player to recover, clear away, or until the ball rolls out of bounds.
 
 **Clearances** - `clearances`, `cl`
 
