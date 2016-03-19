@@ -392,23 +392,35 @@ Column name: `def.action`
 
 Not everything in the 'poss.action' will have a reaction from the defending team that gets to be logged. The following defensive actions, when they happen, are to be logged in the `def.action` column within the same event as the possessing action to which the defender is acting upon.
 
-**Dispossessing through a ball shield** - `dispossess.ball.shield`, `dbs`
+Defensive actions end up getting logged in the "def.action" column like this on the spreadsheet (certain columns have been hidden to better show this): 
 
-When a defender steps in between a player of the possessing team and shields the ball away from her until another player from the defending team either recovers the ball or clears it away, or until the ball goes out of bounds.
-
-**Dispossessing through a steal** - `dispossess.steal`, `ds`
-
-When a defender wins the ball without the possessing player having had a chance to take on the player or get rid of the ball. Usually the result of a defender sneaking up on a player from behind.
-
-**Dispossessing a lost touch** - `dispossess.lost.touch`, `dlt`
-
-When a defender steps up to win a ball that the possessing player, usually under pressure, gives away due to a bad touch.
+![](http://i.imgur.com/QTJxw3l.png)
 
 **Tackling the ball away** - `tackles.ball.away`, `tba`
 
-When a defender challenges a possessing player, connects with the ball while making contact and engaging with the player, and successfully dispossesses the possessing player of the ball for someone else to recover. As opposed to a tackle where the tackler also wins the ball (described below), this should be logged for when the ball is tackled away but the person making the tackle isn't the one to immediately recover it in the act of making a tackle. A tackle should be logged regardless of which team ends up recovering the loose  ball. 
+When a defender challenges a possessing player, connects with the ball while making contact and engaging with the player, and successfully dispossesses the possessing player of the ball, it's a tackle. When it's tackle that creates a loose ball that someone else recovers, regardless of which team's player recovered it, it gets logged as a "tackles.ball.away", as opposed to a tackle where the tackler also wins the ball (described below).
 
-If the defending player who made the tackle doesn't win the ball then she should be credited with a `tackles.ball.away` regardless of which team's player ends up recovering the loose ball. 
+To reiterate, a if the defending player who made the tackle doesn't win the ball then she should be credited with a `tackles.ball.away` regardless of which team's player ends up recovering the loose ball.
+
+Also to reiterate, the difference between a tackle and the "dispossessing" defensive actions described below is that a tackle involves the defender enganging the possessing player (i.e. making contact with her and actually trying to challenge her off the ball).
+
+Example 1: [http://i.imgur.com/zSzJ4bC.gifv](http://i.imgur.com/zSzJ4bC.gifv)
+
+Demi Stokes, the player in red, attempts to take on Morgan Brian, the defender in white, and get past her but Brian successfully tackles the ball away, which Becky Sauerbrunn, the player in white, ends up clearing away. Brian gets credited with a "tackles.ball.away" for engaging with the possessing player, challenging her for the ball, and successfully tackling the ball away. Since Brian didn't win possession of the ball, she just gets a "tackles.ball.away." In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/Pz3H0hN.png)
+
+Example 2: [http://i.imgur.com/GWHVuk5.gif](http://i.imgur.com/GWHVuk5.gif)
+
+Demi Stokes, the player in red who receives the pass, is immediatelly challenged for the ball by Tobin Heath, the player in white. Stokes, practically face to face with Heath, never seems to be taking on Heath so much as she is trying to keep the ball away. Despite the fact that it doesn't look like a take on, Heath looks like she was engaging Stokes, was challenging her for the ball, and ultimately tackled the ball away. Since it was tackled out of bounds, this is a "tackles.ball.away." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/NxF9P55.png)
+
+Example 3: [http://i.imgur.com/60baBdL.gifv](http://i.imgur.com/60baBdL.gifv)
+
+Mallory Pugh, the player in white, successfully takes on Jill Scott, the player in red, by dribbling past her but then proceeds to have the ball tackled away while trying to take on Jordan Nobbs. The ball then gets recovered by Pugh's teammate, Meghan Klingenberg. Nobbs gets credited with a "tackles.ball.away" for successfully tackling the ball away, even though the ball was recovered by the possessing team. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/cz7tZe5.png)
 
 **Tackling and winning the ball** - `tackles.ball.won`, `tbw`
 
@@ -425,6 +437,18 @@ Also known as getting "burnt." When a defender has a possessing player dribble p
 **Dribbled by an opponent due to being turned** - `dribbled.turned`, `dt`
 
 When a defender is turned and allows a possessing player to dribble past her. Usually the result of a defender getting caught going the wrong way due to a feint.
+
+**Dispossessing through a ball shield** - `dispossess.ball.shield`, `dbs`
+
+When a defender steps in between a player of the possessing team and shields the ball away from her until another player from the defending team either recovers the ball or clears it away, or until the ball goes out of bounds.
+
+**Dispossessing through a steal** - `dispossess.steal`, `ds`
+
+When a defender wins the ball without the possessing player having had a chance to take on the player or get rid of the ball. Usually the result of a defender sneaking up on a player from behind.
+
+**Dispossessing a lost touch** - `dispossess.lost.touch`, `dlt`
+
+When a defender steps up to win a ball that the possessing player, usually under pressure, gives away due to a bad touch.
 
 **Pressuring an opponent** - `pressured`, `p`
 
