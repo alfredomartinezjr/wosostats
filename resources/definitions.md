@@ -273,11 +273,15 @@ Certain shots and passes logged in the `poss.action` column will be of special t
 
 To further show how multiple qualifiers can be added to the same action, below are two examples taken from an Excel spreadsheet for an actual match (certain columns have been hidden to better show the use of mutiple qualifiers).
 
-Example 1: Karen Bardsley passes the ball forward, and the pass was both a goal kick and launched into the air. Note how the poss.action column for the row with the additional qualifier was left "blank" with a hyphen, which, based on a formula in the spreadsheet, ensures that the additional row is logged under the same event number (in this case, event 6).
+Example 1: [http://i.imgur.com/hPSFSq9.gifv](http://i.imgur.com/hPSFSq9.gifv)
+
+Karen Bardsley passes the ball forward, and the pass was both a goal kick and launched into the air. Note how the poss.action column for the row with the additional qualifier was left "blank" with a hyphen, which, based on a formula in the spreadsheet, ensures that the additional row is logged under the same event number (in this case, event 6).
 
 ![](http://i.imgur.com/JyNiAMu.png)
 
-Example 2: Fara Williams passes the ball forward, and the pass was both a header and a flick-on. Again, the poss.action column is left blank so as not to create a new event:
+Example 2: [http://i.imgur.com/hPSFSq9.gifv](http://i.imgur.com/hPSFSq9.gifv)
+
+Fara Williams, the player in red, receives a pass from her teammate Lucy Bronze and passes the ball forward, and the pass was both a header and a flick-on. Again, the poss.action column is left blank so as not to create a new event:
 
 ![](http://i.imgur.com/O1wl4ep.png)
 
@@ -297,25 +301,61 @@ A long, high ball to an intended recipient across the field.
 
 Also sometimes known as "long balls." Long, high balls into open space, not clearly towards any one intended recipient, or into a crowded area, or into open space for a teammate to run into. If they come from the left or right thirds of the field, they should be logged as crosses and NOT as a launch ball.
 
+Example 1: [http://i.imgur.com/HgK2mXJ.gifv](http://i.imgur.com/HgK2mXJ.gifv)
+
+Hope Solo, the goalkeeper in black, passes the ball forward by launching into the air to be contested in the midfield. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/1x6eyKT.png)
+
+Example 2: [http://i.imgur.com/Ad7Pa60.gifv](http://i.imgur.com/Ad7Pa60.gifv)
+
+Many goal kicks, passes taken by a goalkeeper after the ball has gone out of bounds, end up being launched passes, such as this one by Karen Bardsley, the goalkeeper in green. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/nZAjQFF.png)
+
 **Through balls** - `through`, `th`
 
-A pass, through the ground or air, that splits the defense by going between two defenders, into open space, to meet a teammate at the end of her run.
+A pass, through the ground or air, that splits the defense by going between two defenders, or between a defender and the touchline, or around the defensive line, into open space, to meet a teammate at the end of her run.
+
+Example 1: [http://i.imgur.com/rVWTJs3.gifv](http://i.imgur.com/rVWTJs3.gifv)
+
+Alex Greenwood, the player in red, passes the ball forward, which goes between the defender, Kelley O'Hara, and the touchline into open space for her teammate, Toni Duggan, to receive. Regardless of the result of the pass, the attempt was a through ball and it should be logged as such. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/hxxI92P.png)
+
+Example 2: [http://i.imgur.com/FK1fDSB.gifv](http://i.imgur.com/FK1fDSB.gifv)
+
+Toni Duggan, the player in red, passes the ball forward, which attempts to meet her teammate at the end of her run in front of the defenders. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/ICPK2hk.png)
 
 **Lay-off balls** - `lay.off`, `lay`
 
-A one-touch pass into the direction from where the ball came from. Does not necessarily have to be a pass back to the player who made the previous pass.
+A one-touch pass back into the same general direction from where the ball came from. Does not necessarily have to be a pass back to the player who made the previous pass.
 
 Example 1: [http://i.imgur.com/gXJMNcW.gifv](http://i.imgur.com/gXJMNcW.gifv)
 
+Diana Matheson, the player in white, receives a pass from her teammate and in touch passes it back in the same direction to another teammate, Crystal Dunn. Despite the fact that the pass wasn't back to the same player, Matheson should get credited with what's the definition of a lay-off, a one-touch pass into the same general direction. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/Oqcwlvq.png)
+
+Example 2: [http://i.imgur.com/QvNtzvr.gifv](http://i.imgur.com/QvNtzvr.gifv)
+
+Kim Little, the player in black and blue, receives a pass from her teammate, Megan Rapinoe, and in one touch passes it back in the same general direction from where it came from to her teammate Jess Fishlock. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/YLktCyC.png)
+
 **Flick-on balls** - `flick.on`, `flick`
 
-A glancing pass into the same general direction from which it came from. Does not necessarily have to be a pass to the player who made the previous pass.
+A glancing pass into the same general direction from which it came from. Does not necessarily have to be a pass to the player who made the previous pass. A header can be a flick-on.
+
+Example 1: 
 
 **Throw-ins** - `throw.in`, `ti`
 
 **Free kicks** - `free.kick`, `fk`
 
-This should be logged for both shots and passes.
+A ball given to a team after a foul. This should be logged for both shots and passes.
 
 **Headed balls** - `headed`, `h`
 
