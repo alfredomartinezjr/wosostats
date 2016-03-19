@@ -664,6 +664,12 @@ When deciding if a certain moment is a big chance, consider the following: press
 
 When a big chance has occured, log `big.chances.lost` for moments when a player had a reasonable chance at winning control of the ball but missed the ball, usually due to a mistimed kick.
 
+Example 1: [http://i.imgur.com/Wt6giq4.gifv](http://i.imgur.com/Wt6giq4.gifv)
+
+Louisa Necib, the player in white, completes a corner kick to her teammate, Eugenie Le Sommer, who flicks it forward with a headed pass towards her teammate, Ada Hegerberg, who mistimes her kick and misses the ball. Le Sommer gets credited with a key pass for her headed pass which found Hegerberg in the 6-yard box, and Hegerberg gets credited with a "big.chances.lost" for losing a chance at making a play on a big chance. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/A2nBPTX.png)
+
 **Big chances created** - `big.chances.created`, `bcc`
 To be noted for plays, usually via successful take ons or interceptions in dangerous areas, where a player creates a big chance by herself. Passes that create big chances should be separately logged as "key.passes."
 
