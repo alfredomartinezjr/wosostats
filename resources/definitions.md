@@ -424,19 +424,53 @@ Mallory Pugh, the player in white, successfully takes on Jill Scott, the player 
 
 **Tackling and winning the ball** - `tackles.ball.won`, `tbw`
 
-When a defender challenges a possessing player, connects with the ball while making contact and engaging with the player, and successfully dispossesses the possessing player of the ball and also clearly wins possession of the ball in the same instance as making the tackle. Sometimes a defender will tackle the ball some distance away and then run up to it to recover it, which should be logged as a `tackles.ball.away` followed by a `recoveries`, as the tackle wasn't what immediately won the ball.
+When a defender challenges a possessing player, connects with the ball while making contact and engaging with the player, and successfully dispossesses the possessing player of the ball, it's a tackle. When in the act of making the tackle, the defending player wins possession of the ball instead of just tackling it away for someone else to recover, it gets logged as a "tackles.ball.won".
+
+To reiterate, a if the defending player who made the tackle immediately wins the ball then she should be credited with a `tackles.ball.won`. Sometimes a defender will tackle the ball some distance away and then run up to it to recover it, which should be logged as a `tackles.ball.away` followed by a `recoveries`, as the tackle wasn't what immediately won the ball.
+
+Also to reiterate, the difference between a tackle and the "dispossessing" defensive actions described below is that a tackle involves the defender enganging the possessing player (i.e. making contact with her and actually trying to challenge her off the ball).
+
+Example 1: [http://i.imgur.com/w8B42qA.gifv](http://i.imgur.com/w8B42qA.gifv)
+
+Dzsenifer Marozsán, the player in red, tackles the ball away from Sam Mewis, the possessing player in white who didn't appear to clearly be attempting a take on, and wins possession without having to run too far to recover a loose ball. Marozsán gets credited with a "tackles.ball.won" for successfully tackling the ball and winning possession of it in the same action. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/gwXA5KK.png)
+
+Example 2: [http://i.imgur.com/KtW7aSJ.gifv](http://i.imgur.com/KtW7aSJ.gifv)
+
+Meghan Klingenberg, the player in white, tackles the ball away from Anna Blasse, the player in red who turned and was attempting to take on Klingenberg and get past her. Klingenberg wins possession of the ball while making the tackle, so she gets credited with a "tackles.ball.won." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/i0nm13t.png)
 
 **Dibbled by an opponent due to a missed tackle** - `dribbled.tackles.missed`, `dbm`
 
-When a defender goes in for a tackle, misses the ball, and the possessing player dribbles past the missed tackle.
+When a defender goes in for a tackle, either misses the ball or connects with the ball but without being able to dispossess the possessing player, and the possessing player dribbles past the missed tackle.
+
+Example 1: [http://i.imgur.com/ACwuQQS.gifv](http://i.imgur.com/ACwuQQS.gifv)
+
+Melanie Behringer, the player in red, attempts to tackle the ball away from Carli Lloyd, the player in white, but misses her tackle as Lloyd dribbles past the missed tackle. Behringer gets credited with a "dribbled.tackles.missed." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/iLAeIk5.png)
 
 **Dribbled by an opponent due to being out-run** - `dribbled.out.run`, `dot`
 
 Also known as getting "burnt." When a defender has a possessing player dribble past her without clearly going in for a tackle and without getting turned.
 
+Example 1: [http://i.imgur.com/7BuGs8N.gifv](http://i.imgur.com/7BuGs8N.gifv)
+
+Babett Peter, the player in red, faces Alex Morgan, the player in white with possession of the ball, but proceeds to get out-run by Morgan as she dribbles past her in the 18-yad box. Peter gets credited with a "dribbled.out.run". This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/pZ4lCKr.png)
+
 **Dribbled by an opponent due to being turned** - `dribbled.turned`, `dt`
 
 When a defender is turned and allows a possessing player to dribble past her. Usually the result of a defender getting caught going the wrong way due to a feint.
+
+Example 1: [http://i.imgur.com/58zonnm.gifv](http://i.imgur.com/58zonnm.gifv)
+
+Saskia Bartusiak, the player in red, faces Carli Lloyd, the player in white, and gets turned as Carli Lloyd takes on her to create space for a shot. Bartusiak gets credited with a "dribbled.turned." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+
+![](http://i.imgur.com/PvF7S21.png)
 
 **Dispossessing through a ball shield** - `dispossess.ball.shield`, `dbs`
 
