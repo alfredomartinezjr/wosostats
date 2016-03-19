@@ -76,7 +76,7 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
     * **Own 18-yard box** - `D18`
     * **Own 6-yard box** - `D6`
 8. The `play.type` column should be filled in for the following types of passing and shots actions written in italics below. Refer to the action-definitions.doc file at [https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md](https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md) for in-depth definitions for each qualifier.
-  * In the event that a play has more than two `play.type` qualifiers that could apply, log each one in a different row but leave the `poss.player` column blank so as not to accidentally create a new event: ![](http://i.imgur.com/sVAefoq.png) 
+  * In the event that a play has more than one `play.type` qualifier that could apply, log each one in a different row but leave the `poss.player` column blank so as not to accidentally create a new event: ![](http://i.imgur.com/sVAefoq.png) 
   * **Corner crosses** - `corner.crosses`
   * **Deep crosses** - `deep.crosses`
   * **Switch** - `switch`
@@ -93,11 +93,9 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
   * **Goalkeeper drop kicks** - `gk.drop.kick`
   * **Penalty kicks** - `pk`
 9. For each event in the `poss.action` column, log any of the following defensive actions in italics below in the `def.action` column. Refer to the action-definitions.doc file at [https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md](https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md) for in-depth definitions for each action.
-  * **Dispossessing through a ball shield** - `dispossess.ball.shield`
-  * **Dispossessing through a steal** - `dispossess.steal`
-  * **Dispossessing a lost touch** - `dispossess.lost.touch`
-  * **Tackling the ball away** - `tackles.ball.away`
-  * **Tackling and winning the ball** - `tackles.ball.won`
+  * Create a new row if necessary when there are multiple defensive actions for one possessing event, but be sure to leave the `poss.action` column blank so that a new event number is not accidentally created: ![](http://i.imgur.com/i4dtSCV.png)
+  * **Dispossessing the opponent** - `dispossess`
+  * **Tackling the ball** - `tackles.ball`
   * **Dibbled by an opponent due to a missed tackle** - `dribbled.tackles.missed`
   * **Dribbled by an opponent due to being out-run** - `dribbled.out.run`
   * **Dribbled by an opponent due to being turned** - `dribbled.turned`
@@ -120,7 +118,6 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
   * **Smothers lost by the goalkeeper** - `gk.smothers.lost`
   * **Loose balls claimed by the goalkeeper** - `gk.loose.balls.won`
   * **Loose balls lost by the goalkeeper** - `gk.loose.balls.lost`
-  * Create a new row if necessary when there are multiple defensive actions for one possessing event, but be sure to leave the `poss.action` column blank so that a new event number is not accidentally created
 10. For each `def.action` value, fill in the corresponding player in the `def.player` column.
 11. The `def.location` column should ONLY be manually filled in for the following defensive events and ONLY if you're additionally interested in location data:
   * **Blocks** - `blocks`
@@ -144,6 +141,7 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
   * **Reaching save** - `reaching`
   * **Stooping save** - `stooping`
 14. If a foul was committed, log for the possessing player in the `poss.player.disciplinary` column and for the defending player in the `def.player.disciplinary` column one of the following values to be written as it is shown in italics below:
+  * In the event that a play has more than one `poss.player.disciplinary` or `def.player.disciplinary` qualifiers that could apply, log each one in a different row but leave the `poss.player` column blank so as not to accidentally create a new event: ![](http://i.imgur.com/kw6zb5R.png)
   * **Fouls won** - `fouls.won`
   * **Fouls conceded** `fouls.conceded`
   * **Yellow cards** - `yellow.cards`
@@ -151,19 +149,21 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
   * **Penalty kicks won** - `penalties.won`
   * **Penalty kicks conceded** - `penalties.conceded`
 15. Certain possessing player actions need additional qualifiers, related to scoring opportunities or defensive mistakes, that should be added in the `poss.notes` column, to be written in as they are shown in italics below. In the event that more than one of these apply to the same event, add them all into the same cell but separate them by a comma:
+  * In the event that a play has more than one `poss.notes` qualifier that could apply, log each one in a different row but leave the `poss.player` column blank so as not to accidentally create a new event: ![](http://i.imgur.com/OJaytuw.png)
   * **Big chances scored** - `big.chances.scored`
   * **Big chances shot on goal** - `big.chances.shot.on.goal`
   * **Big chances missed** - `big.chances.shot.missed`
   * **Big chances disspossessed** - `big.chances.dispossessed`
+  * **Big chances lost** - `big.chances.lost`
   * **Big chance created** - `big.chances.created`
   * **Assists** - `assists`
   * **Second assists** - `second.assists`
-  * **Unscored key passes** - `unscored.key.passes`
+  * **Key passes** - `key.passes`
   * **Ball goes out of bounds and possession is kept** - `out.of.bounds.keep.poss`
   * **Ball goes out of bounds and possession is lost** - `out.of.bounds.lost.poss`
   * **Errors leading to a goal for the opposition** - `errors.to.goals`
   * **Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`
-16. Similarly, certain defending player actions need additional qualifiers, related to defensive accomplishments and mistakes, that should be added in the `def.notes` column, to be written in as they are shown in italics below.
+16. Similarly, certain defending player actions need additional qualifiers, related to defensive accomplishments and mistakes, that should be added in the `def.notes` column, to be written in as they are shown in italics below. In the event that a play has more than one `def.notes` qualifier that could apply, log each one in a different row but leave the `poss.player` column blank so as not to accidentally create a new event
   * **Big chances stopped** - `big.chances.stopped`
   * **Own goals allowed** - `own.goals`
   * **Errors leading to a goal for the opposition** - `errors.to.goals`
