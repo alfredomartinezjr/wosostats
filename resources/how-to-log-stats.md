@@ -55,7 +55,8 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
 5. For every single new action logged in the `poss.action` column, the value in that row’s `event` column should automatically increase by 1. 
   * ![](http://i.imgur.com/wonYmwH.gif)
   * If the `poss.action` column has a “-” denoting that there are additional defensive actions being credited to the event, then the value in the `event` column should remain the same. The idea is that a new event is only triggered by a new possessive action or something like a stoppage in play or break in broadcast.
-6. For every single new action logged in the `poss.action` column, log the possessing player’s name in `poss.player` 
+6. For every single new action logged in the `poss.action` column, log the possessing player’s name in `poss.player`
+  * ![](http://i.imgur.com/O9z0QG7.gif)
 7. You do NOT have to define the event's location in `poss.location` for anything other than shots. If you decided to log the location of every event, it could take about as much as 50% longer to finish the entire match. It is recommended that you leave `poss.location` blank unless otherwise specified, or unless you know what you're getting yourself into.
   * In the `poss.location` column, the value must be one of the appropriate acronyms, shown in italics below. The location is relative to the player for which you are logging it (e.g. a player is in her 18-yard box if she is defending someone in possession of the ball in the opponent’s 18-yard box, and vice versa). 
     * **Opponent’s 6-yard box** - `A6`
