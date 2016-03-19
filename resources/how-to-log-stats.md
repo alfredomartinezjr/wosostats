@@ -1,4 +1,4 @@
-So you want to log stats for matches on your own? You’re amazing! Here are the steps you to take. If you have questions, send me a DM/mention at [@WoSoStats](https://twitter.com/wosostats) or email me at alfredom790@gmail.com.
+So you want to log matches on your own? You’re amazing! Here are the steps you to take. If you have questions, send me a DM/mention at [@WoSoStats](https://twitter.com/wosostats) or email me at alfredom790@gmail.com.
 
 #Before you start logging the match stats
 1. Download the match-stats-templae.xlsx Excel document from this link: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-template.xlsx?raw=true.  
@@ -18,11 +18,12 @@ So you want to log stats for matches on your own? You’re amazing! Here are the
   * Worst comes to worst, find the widest shot you can of the field, either during the match stream or from an image online, and literally use a ruler to figure out the thirds of the fields. ![](http://i.imgur.com/eA1YDtA.png)
 6. The template spreadsheet should be 1500 rows long. However, if the match you are logging requires more rows and ends up going into blank rows (beyond the ones filled in with “-” hyphens), then guesstimate how many more rows you’ll need and fill them all in with additional “-” hyphens (more on what those are about below).
 
-#While logging match stats
-1. **IMPORTANT: If you decide to start logging match stats, IT IS NOT recommended that you log location data for events in the `poss.location`, `poss.play.destination`, or `def.location` columns, except for `poss.location` data for shots. Logging location data on top of everything else is VERY time-consuming and, while interesting, is not as important as getting a match logged and done, which can be logged for location data later, anyways, as the location data columns will still be there.**
-2. It is **HIGHLY** recommended that you use shorthand keywords and letters for players, actions, and qualifiers. For example, in the Excel file it is recommended you write down "pf" for a forward pass instead of typing out "passes.f", or even a shortened nickname for a player with a long name. The act of physically typing out the entire keyword adds a lot of unnecessary time, and it is highly recommended that you create your own shorthand keywords for each value shown below. You can then use find and replace after you're done with the match to replace the shortened keywords you used with the long keywords shown below.
-3. Start logging stats in the row below the one with “kickoff” in the `poss.action` column.
-4. Create a new row for the following types of events, to be typed in the `poss.action` exactly as it’s shown in the code span below. Refer to the action-definitions.doc file at [https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md](https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md) for in-depth definitions for each action.
+#While logging match actions
+1. **IMPORTANT: If you decide to start logging matches, IT IS NOT recommended that you log location data for events in the `poss.location`, `poss.play.destination`, OR `def.location` columns, EXCEPT for `poss.location` data for shots. Logging location data on top of everything else is VERY time-consuming and, while interesting, is not as important as getting a match logged and done, which can be logged for location data later, anyways, as the location data columns will still be there.**
+2. It is **HIGHLY** recommended that you use shorthand keywords and letters for players, actions, and qualifiers. For example, in the Excel file it is recommended you write down "pf" for a forward pass instead of typing out "passes.f", or even a shortened nickname for a player with a long name.
+  * If you use a shortcut that isn't featured in the metadata above the kickoff (i.e. anything other than "pf", "passes.f" or "pf (passes.f)" for a forward pass) or isn't featured as a shortcut in the definitions.md document, then you will have to search and replace this with a term that is in the metadata section. Otherwise, the R code that computes stats from this spreadsheet won't be able to read what your shortcut is.
+3. Start logging actions in the row below the one with “kickoff” in the `poss.action` column.
+4. Create a new row for the following types of events, to be typed in the `poss.action` as one of the options shown `like this` or as one of the shortcut options shown in the definitions.md doc. You can write down the action as  Refer to the action-definitions.doc file at [https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md](https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md) for in-depth definitions for each action.
   * **Shots stopped by the goalkeeper** - `shots.stopped.by.gk`
   * **Shots stopped by a defender** - `shots.stopped.by.def`
   * **Shots blocked by a defender** - `shots.blocked`
@@ -52,6 +53,7 @@ So you want to log stats for matches on your own? You’re amazing! Here are the
   * **End of the match** - `end.of.match`
   * **Other stoppages in play** - `stoppage.in.play`
 5. For every single new action logged in the `poss.action` column, the value in that row’s `event` column should automatically increase by 1. 
+  * ![](http://i.imgur.com/wonYmwH.gif)
   * If the `poss.action` column has a “-” denoting that there are additional defensive actions being credited to the event, then the value in the `event` column should remain the same. The idea is that a new event is only triggered by a new possessive action or something like a stoppage in play or break in broadcast.
 6. For every single new action logged in the `poss.action` column, log the possessing player’s name in `poss.player` 
 7. You do NOT have to define the event's location in `poss.location` for anything other than shots. If you decided to log the location of every event, it could take about as much as 50% longer to finish the entire match. It is recommended that you leave `poss.location` blank unless otherwise specified, or unless you know what you're getting yourself into.
