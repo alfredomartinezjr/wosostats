@@ -4,17 +4,18 @@ So you want to log stats for matches on your own? You’re amazing! Here are the
 1. Download the match-stats-templae.xlsx Excel document from this link: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-template.xlsx?raw=true.  
   * Using Excel is highly recommended as the ability to format, auto-fill, auto-complete, and utilize formulas makes the job of logging stats way easier and faster.
   * To get an idea of what this spreadsheet should look like, I highly recommend to look over the Excel file for the NWSL SRFC-WAS semifinal, which can be found here https://github.com/amj2012/wosostats/blob/master/source/excel/nwsl-2015/2015-nwsl-semifinal-srfc-was-091315.xlsx, and look at it alongside the actual match which can be seen here: https://www.youtube.com/watch?v=_jdBcOVuEus. 
-2. In the `poss.player` column, write in the last name of each player who played in the match as either a starter or a sub, starting with all the home team players. Do the same for the `def.player` column.
-3. In the `poss.team` and `def.team` columns, write in the acronym of the team for each respective player. 
-  * For club teams, refer to the acronyms.csv spreadsheet which can be found at: https://github.com/amj2012/woso-stats/blob/master/resources/abbreviations.csv.
-  * For international teams, refer to the FIFA country codes
-4. In the `poss.position` and `def.position` columns, write in the starting position for each respective player.
-Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.”
+2. Write into the spreadsheet metadata for player names, player teams, and player positions
+  1. In the `poss.player` column, write in the last name of each player who played in the match as either a starter or a sub, starting with all the home team players. Do the same for the `def.player` column.
+  2. In the `poss.team` and `def.team` columns, write in the acronym of the team for each respective player. 
+    * For club teams, refer to the acronyms.csv spreadsheet which can be found at: https://github.com/amj2012/woso-stats/blob/master/resources/abbreviations.csv.
+    * For international teams, refer to the FIFA country code
+  3. In the `poss.position` and `def.position` columns, write in the starting position for each respective player. Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.”
+  4. When this is done, the top of the spreadsheet, above the "kickoff" action, should look like this, using the USA-England 2016 SheBelieves match as an example: ![](http://i.imgur.com/ofxSTGP.png)
 5. Field dimensions can vary widely, so figure out where the borders of the middle third are, so you can tell if a player is in their attacking, middle, or defensive third. Try to also get a sense of where the left, center, and right thirds of the fields are. The left and right thirds will usually cut a few yards into the 18-yard box, and the center third will usually extend a few yards from the center circle. Width of the field can vary widely, so use your best judgment here.
-  * It helps to use landmarks around the stadium to figure this out. For example, if the field has football lines or lawn stripes, you can use them to figure out the thirds of the field.
-  * Or, you can also use the stands as landmarks.
-  * Worst comes to worst, find the widest shot you can of the field, either during the match stream or from an image online, and literally use a ruler to figure out the thirds of the fields.
   * The breakdown of the field should be based on this: ![](http://i.imgur.com/EQLmpYp.png)
+  * It helps to use landmarks around the stadium to figure this out. For example, if the field has football lines or lawn stripes, you can use them to figure out the thirds of the field. ![](http://i.imgur.com/atMDAJZ.png)
+  * Or, you can also use the stands as landmarks.
+  * Worst comes to worst, find the widest shot you can of the field, either during the match stream or from an image online, and literally use a ruler to figure out the thirds of the fields. ![](http://i.imgur.com/eA1YDtA.png)
 6. The template spreadsheet should be 1500 rows long. However, if the match you are logging requires more rows and ends up going into blank rows (beyond the ones filled in with “-” hyphens), then guesstimate how many more rows you’ll need and fill them all in with additional “-” hyphens (more on what those are about below).
 
 #While logging match stats
