@@ -235,7 +235,7 @@ On super-pesky instances when the broadcast cuts off right after a completed, im
 
 The shory story for the reason for the "c", and why you don't have to add it to every single completed pass attempt in the game, is that the R code that reads the Excel file, which generates the match actions .csv file that is used to compute match stats, can tell if a pass attempt was completed based on other actions and qualifiers in the surrounding events and columns, except for these instances when play was stopped or cut off directly after a completed pass.
 
-For example, observe this moment: (https://streamable.com/7o9o)[https://streamable.com/7o9o]. Ali Krieger, the player in white, completes a pass forward to her teammate Sam Mewis, and then the broadcast cuts to a shot of Hope Solo for a couple of seconds. When the broadcast, does return to the game, the ball is still in possession of the same team but is now at the feet of Whitney Engen. Since it is not 100% clear what happened while the camera was on Solo, on the spreadsheet this action would look like the following (certain columns have been hidden to better show this):
+For example, observe this moment: [https://streamable.com/7o9o](https://streamable.com/7o9o). Ali Krieger, the player in white, completes a pass forward to her teammate Sam Mewis, and then the broadcast cuts to a shot of Hope Solo for a couple of seconds. When the broadcast, does return to the game, the ball is still in possession of the same team but is now at the feet of Whitney Engen. Since it is not 100% clear what happened while the camera was on Solo, on the spreadsheet this action would look like the following (certain columns have been hidden to better show this):
 
 ![](http://i.imgur.com/8Q3ZbAc.png)
 
