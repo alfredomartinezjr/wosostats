@@ -396,51 +396,43 @@ Defensive actions end up getting logged in the "def.action" column like this on 
 
 ![](http://i.imgur.com/QTJxw3l.png)
 
-**Tackling the ball away** - `tackles.ball.away`, `tba`
+**Tackling the ball away** - `tackles.ball`, `tb`
 
-When a defender challenges a possessing player, connects with the ball while making contact and engaging with the player, and successfully dispossesses the possessing player of the ball, it's a tackle. When it's tackle that creates a loose ball that someone else recovers, regardless of which team's player recovered it, it gets logged as a "tackles.ball.away", as opposed to a tackle where the tackler also wins the ball (described below).
+When a defender challenges a possessing player, connects with the ball while making contact and engaging with the player, and successfully dispossesses the possessing player of the ball, it's a successful tackle that should be logged as "tackles.ball". Regardless of whether the defending player immediately wins the tackled ball, or just tackles the ball away, it should always be logged as a "tackles.ball."
 
-To reiterate, a if the defending player who made the tackle doesn't win the ball then she should be credited with a `tackles.ball.away` regardless of which team's player ends up recovering the loose ball.
+The difference between a tackle and the "dispossessing" defensive actions described below is that a tackle involves the defender enganging the possessing player (i.e. making contact with her and actually trying to challenge her off the ball).
 
-Also to reiterate, the difference between a tackle and the "dispossessing" defensive actions described below is that a tackle involves the defender enganging the possessing player (i.e. making contact with her and actually trying to challenge her off the ball).
+There will be moments when a defender tackles the ball away, creates a loose ball, and has to run to recover the ball. This should be logged as a "tackles.ball" for the defender and then that defender should get a "recoveries" in the next event in the "poss.action" column. For moments when a defender tackles the ball away and another player recovers the ball, regardless of which team recovers the ball, the defender should get credited with a "tackles.ball" and the player who subsequently recovers the ball gets credited with a "recoveries" in the next event in the "poss.action" column.
 
 Example 1: [http://i.imgur.com/zSzJ4bC.gifv](http://i.imgur.com/zSzJ4bC.gifv)
 
-Demi Stokes, the player in red, attempts to take on Morgan Brian, the defender in white, and get past her but Brian successfully tackles the ball away, which Becky Sauerbrunn, the player in white, ends up clearing away. Brian gets credited with a "tackles.ball.away" for engaging with the possessing player, challenging her for the ball, and successfully tackling the ball away. Since Brian didn't win possession of the ball, she just gets a "tackles.ball.away." In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
+Demi Stokes, the player in red, attempts to take on Morgan Brian, the defender in white, and get past her but Brian successfully tackles the ball away, which Becky Sauerbrunn, the player in white, ends up clearing away. Brian gets credited with a "tackles.ball" for engaging with the possessing player, challenging her for the ball, and successfully tackling the ball away. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
 
-![](http://i.imgur.com/Pz3H0hN.png)
+![](http://i.imgur.com/FNXukAf.png)
 
 Example 2: [http://i.imgur.com/GWHVuk5.gif](http://i.imgur.com/GWHVuk5.gif)
 
-Demi Stokes, the player in red who receives the pass, is immediatelly challenged for the ball by Tobin Heath, the player in white. Stokes, practically face to face with Heath, never seems to be taking on Heath so much as she is trying to keep the ball away. Despite the fact that it doesn't look like a take on, Heath looks like she was engaging Stokes, was challenging her for the ball, and ultimately tackled the ball away. Since it was tackled out of bounds, this is a "tackles.ball.away." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+Demi Stokes, the player in red who receives the pass, is immediatelly challenged for the ball by Tobin Heath, the player in white. Stokes, practically face to face with Heath, never seems to be taking on Heath so much as she is trying to keep the ball away. Despite the fact that it doesn't look like a take on, Heath looks like she was engaging Stokes, was challenging her for the ball, and ultimately tackled the ball away. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
-![](http://i.imgur.com/NxF9P55.png)
+![](http://i.imgur.com/gQCcBVq.png)
 
 Example 3: [http://i.imgur.com/60baBdL.gifv](http://i.imgur.com/60baBdL.gifv)
 
-Mallory Pugh, the player in white, successfully takes on Jill Scott, the player in red, by dribbling past her but then proceeds to have the ball tackled away while trying to take on Jordan Nobbs. The ball then gets recovered by Pugh's teammate, Meghan Klingenberg. Nobbs gets credited with a "tackles.ball.away" for successfully tackling the ball away, even though the ball was recovered by the possessing team. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+Mallory Pugh, the player in white, successfully takes on Jill Scott, the player in red, by dribbling past her but then proceeds to have the ball tackled away while trying to take on Jordan Nobbs. The ball then gets recovered by Pugh's teammate, Meghan Klingenberg. Nobbs gets credited with a "tackles.ball" for successfully tackling the ball away, even though the ball was recovered by the possessing team. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
-![](http://i.imgur.com/cz7tZe5.png)
+![](http://i.imgur.com/RmdZjIm.png)
 
-**Tackling and winning the ball** - `tackles.ball.won`, `tbw`
+Example 4: [http://i.imgur.com/w8B42qA.gifv](http://i.imgur.com/w8B42qA.gifv)
 
-When a defender challenges a possessing player, connects with the ball while making contact and engaging with the player, and successfully dispossesses the possessing player of the ball, it's a tackle. When in the act of making the tackle, the defending player wins possession of the ball instead of just tackling it away for someone else to recover, it gets logged as a "tackles.ball.won".
+Dzsenifer Marozsán, the player in red, tackles the ball away from Sam Mewis, the possessing player in white who didn't appear to clearly be attempting a take on, and wins possession without having to run too far to recover a loose ball. Marozsán gets credited with a "tackles.ball" for successfully tackling the ball and winning possession of it in the same action. Since Marozsán won possession of the ball in the act of making a tackle, the following event isn't a recovery, but just the next action she does. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
-To reiterate, a if the defending player who made the tackle immediately wins the ball then she should be credited with a `tackles.ball.won`. Sometimes a defender will tackle the ball some distance away and then run up to it to recover it, which should be logged as a `tackles.ball.away` followed by a `recoveries`, as the tackle wasn't what immediately won the ball.
+![](http://i.imgur.com/TZEfjFg.png)
 
-Also to reiterate, the difference between a tackle and the "dispossessing" defensive actions described below is that a tackle involves the defender enganging the possessing player (i.e. making contact with her and actually trying to challenge her off the ball).
+Example 5: [http://i.imgur.com/KtW7aSJ.gifv](http://i.imgur.com/KtW7aSJ.gifv)
 
-Example 1: [http://i.imgur.com/w8B42qA.gifv](http://i.imgur.com/w8B42qA.gifv)
+Meghan Klingenberg, the player in white, tackles the ball away from Anna Blasse, the player in red who turned and was attempting to take on Klingenberg and get past her. Klingenberg wins possession of the ball while making the tackle, so she gets credited with a "tackles.ball." Like with the Marozsán example above, Klingenberg's next event isn't a recovery but simply her next action, since she won possession with the tackle. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
-Dzsenifer Marozsán, the player in red, tackles the ball away from Sam Mewis, the possessing player in white who didn't appear to clearly be attempting a take on, and wins possession without having to run too far to recover a loose ball. Marozsán gets credited with a "tackles.ball.won" for successfully tackling the ball and winning possession of it in the same action. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
-
-![](http://i.imgur.com/gwXA5KK.png)
-
-Example 2: [http://i.imgur.com/KtW7aSJ.gifv](http://i.imgur.com/KtW7aSJ.gifv)
-
-Meghan Klingenberg, the player in white, tackles the ball away from Anna Blasse, the player in red who turned and was attempting to take on Klingenberg and get past her. Klingenberg wins possession of the ball while making the tackle, so she gets credited with a "tackles.ball.won." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
-
-![](http://i.imgur.com/i0nm13t.png)
+![](http://i.imgur.com/pdL8BL9.png)
 
 **Dibbled by an opponent due to a missed tackle** - `dribbled.tackles.missed`, `dbm`
 
