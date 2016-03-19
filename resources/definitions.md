@@ -464,11 +464,9 @@ Saskia Bartusiak, the player in red, faces Carli Lloyd, the player in white, and
 
 ![](http://i.imgur.com/PvF7S21.png)
 
-**Dispossessing through a steal** - `dispossess`, `dis`
+**Dispossessing the opponent** - `dispossess`, `dis`
 
-When a defender wins the ball without the possessing player having had a chance to take on the player or get rid of the ball. Usually the result of a defender sneaking up on a player from behind.
-
-When a defender steps up to win a ball that the possessing player, usually under pressure, gives away due to a bad touch.
+When a defender dispossesses the possessing player without the possessing player having had a chance to take on the player or get rid of the ball. This is meant to encompass moments when a defender dispossesses a possessing player without having gone in for a tackle, such as sneaking up from behind to steal the ball, stepping up to knock away the ball, or stepping up to take possession while a player is being challenged or pressured by someone else.
 
 **Pressuring an opponent** - `pressured`, `p`
 
@@ -680,7 +678,6 @@ When a defending player or a goalkeeper stops a possessing player's big chance f
 **Errors leading to a goal for the opposition** - `errors.to.goals`, `etg`
 
 **Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`, `etbc`
-
 
 #Location-based Notes
 Column names: `poss.location`, `poss.play.destination`, & `def.location`
