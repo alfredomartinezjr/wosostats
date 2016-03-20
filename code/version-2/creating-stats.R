@@ -535,23 +535,20 @@ all <- merge(all, aerialduels, by=1, all=TRUE)
 rm(aerialduels)
 
 #TACKLES & PRESSURE---------------
-t <- createDataFrame(c("dispossess.ball.shielded", "dispossess.steal", "dispossess.lost.touch", 
-                       "tackles.ball.away", "tackles.ball.won", "dribbled.tackles.missed", 
+t <- createDataFrame(c("dispossessed", "tackles.ball.away", "tackles.ball.won", "dribbled.tackles.missed", 
                        "dribbled.out.run","dribbled.turned", "pressured", "challenged"), "def.action", d)
 t <- t[,c("event","time","def.position","def.team","def.player","def.action","def.location","def.player.disciplinary","def.notes")]
 names(t) <- c("event", "time", "position" ,"team", "poss.player", "player.event", "location", 
               "def.player.disciplinary", "def.notes")
-t2 <- createTable(c("tackles", "dribbled", "pressured", "challenged", "dispossessed", 
-                    "dispossess.ball.shielded", "dispossess.steal",
-                    "dispossess.lost.touch", "tackles.ball.away", "tackles.ball.won",
+t2 <- createTable(c("tackles","dispossessed", "dribbled", "pressured", "challenged", 
+                    "tackles.ball.away", "tackles.ball.won",
                     "dribbled.tackles.missed", "dribbled.out.run","dribbled.turned"), "player.event", t)
 ## Fill in blank columns, get rid of excess columns, and rename
 t2$tackles <- t2$tackles.ball.away + t2$tackles.ball.won
 t2$dribbled <- t2$dribbled.tackles.missed + t2$dribbled.out.run + t2$dribbled.turned
-t2$dispossessed <- t2$dispossess.ball.shielded + t2$dispossess.steal + t2$dispossess.lost.touch
 t2 <- t2[,1:6]
-t2 <- t2[order(-t2$tackles, t2$dribbled, t2$pressured, t2$challenged),]
-names(t2) <- c("Player","Tackles", "Dribbled by Opp", "Pressured Opp", "Challenged Opp", "Dispossessed Opp")
+t2 <- t2[order(-t2$tackles, -t2$dispossessed, t2$dribbled, t2$pressured, t2$challenged),]
+names(t2) <- c("Player","Tackles", "Dispossessed Opp", "Dribbled by Opp", "Pressured Opp", "Challenged Opp")
 tackles <- t2
 print(t2, digits=2)
 
