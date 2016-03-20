@@ -2,15 +2,15 @@
 ## and turning it into a data.frame in your environment
 ##
 ## Save the file into your working directory by running read.csv(df, file="filenamegoeshere.csv", row.names=FALSE)
-
+##READING EXCEL FILE----------
 ## Install if necessary
 require(xlsx)
-
 ## IMPORTANT: "match" must be set as a string value, or this won't work
 ## Might take a while to create. Takes about two minutes. Hold tight.
 ## The Excel file must be in the working directory
 df <- read.xlsx(match, sheetName = "match")
 
+##FINDS METADATA----------
 ## Delete all rows before kickoff and saves them in a separate data frame "head"
 ### Gets the row number where the match starts, stores it in x
 start <- grep("kickoff", df[,"poss.action"])
@@ -20,12 +20,17 @@ ref <- df[1:(start-1),]
 df <- df[start:nrow(df),]
 ### Changes select column factors to integers
 df$event <- as.integer(as.character(df[,"event"]))
+### Changes select column factors to characters
+df$poss.action <- as.character(df[,"poss.action"])
+df$play.type <- as.character(df[,"play.type"])
+df$def.action <- as.character(df[,"def.action"])
+df$poss.player.disciplinary <- as.character(df[,"poss.player.disciplinary"])
+df$poss.notes <- as.character(df[,"poss.notes"])
+df$def.player.disciplinary <- as.character(df[,"def.player.disciplinary"])
 ### Gets rid of all those "-" and "" and turn them into NAs
 df[(df) == "-"] <- NA
 df[(df) == ""] <- NA
-
 rm(start)
-
 ## There are a lot of blank spaces where the team acronym should be. The code below fills them in
 ### Creates a vector for the "home" team and the "away" team
 teams <- as.character(unique(ref$poss.team))
@@ -41,9 +46,7 @@ df[grepl(paste(paste0("^", homeplayers, "$"), collapse ="|"), df[,"poss.player"]
 df[grepl(paste(paste0("^", awayplayers, "$"), collapse ="|"), df[,"poss.player"]), "poss.team"] <- awayteam
 df[grepl(paste(paste0("^", homeplayers, "$"), collapse ="|"), df[,"def.player"]), "def.team"] <- hometeam 
 df[grepl(paste(paste0("^", awayplayers, "$"), collapse ="|"), df[,"def.player"]), "def.team"] <- awayteam
-
 rm(ref)
-
 ## Create data frame with opposites of each location
 posslocations <- c("A6", "A18", "A3L", "A3C", "A3R", "AM3L", "AM3C", 
                    "AM3R", "DM3L", "DM3C", "DM3R", "D3L", "D3C", "D3R", 
@@ -53,12 +56,179 @@ deflocations <- c("D6", "D18", "D3R", "D3C", "D3L", "DM3R", "DM3C",
                   "A18", "A6")
 opposites <- data.frame(posslocations, deflocations)
 
+##INVERTIBLE FUNCTION----------
 ##Function to determine if an action's location is invertible based on the
 ##location of certain opposing players' action
 actionIsInvertible <- function(action, col) {
   grepl("pressure|challenge|aerial|tackle|dispossess|dribble|pass|move|take|shots",df[action, col])
 }
 
+##CONVERT SHORTCUTS----------
+x <- 1
+while (x <= nrow(df)) {
+  ##Convert "poss.action" shortcuts
+  if (grepl("^sgk", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "shots.stopped.by.gk"
+  }
+  if (grepl("^sdef", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "shots.stopped.by.def"
+  }
+  if (grepl("^sb", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "shots.blocked"
+  }
+  if (grepl("^sc", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "shots.scored"
+  }
+  if (grepl("^pf", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "passes.f"
+  }
+  if (grepl("^ps", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "passes.s"
+  }
+  if (grepl("^pb", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "passes.b"
+  }
+  if (grepl("^m", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "movement"
+  }
+  if (grepl("^tkw", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "take.on.won"
+  }
+  if (grepl("^tkl", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "take.on.lost"
+  }
+  if (grepl("^d", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "dispossessed"
+  }
+  if (grepl("^lt", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "lost.touch"
+  }
+  if (grepl("^aw", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "aerial.won"
+  }
+  if (grepl("^al", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "aerial.lost"
+  }
+  if (grepl("^r", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "recoveries"
+  }
+  if (grepl("^bs", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "ball.shield"
+  }
+  if (grepl("^cl", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "clearances"
+  }
+  if (grepl("^playcutoff", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "playcutoffbybroadcast"
+  }
+  ##Convert "play.type" shortcuts
+  if (grepl("^th", df[x,"play.type"])) {
+    df[x,"play.type"] <- "through"
+  }
+  if (grepl("^lay", df[x,"play.type"])) {
+    df[x,"play.type"] <- "lay.off"
+  }
+  if (grepl("^flick", df[x,"play.type"])) {
+    df[x,"play.type"] <- "flick.on"
+  }
+  if (grepl("^ti", df[x,"play.type"])) {
+    df[x,"play.type"] <- "through"
+  }
+  if (grepl("^fk", df[x,"play.type"])) {
+    df[x,"play.type"] <- "free.kick"
+  }
+  if (grepl("^h", df[x,"play.type"])) {
+    df[x,"play.type"] <- "headed"
+  }
+  if (grepl("^ck", df[x,"play.type"])) {
+    df[x,"play.type"] <- "corner.kick"
+  }
+  if (grepl("^gk$|^gk ", df[x,"play.type"])) {
+    df[x,"play.type"] <- "goal.kick"
+  }
+  if (grepl("^gkt", df[x,"play.type"])) {
+    df[x,"play.type"] <- "gk.throws"
+  }
+  if (grepl("^gkdk", df[x,"play.type"])) {
+    df[x,"play.type"] <- "gk.drop.kick"
+  }
+  if (grepl("^pk", df[x,"play.type"])) {
+    df[x,"play.type"] <- "penalty.kick"
+  }
+  ##Convert "def.action" shortcuts
+  if (grepl("^dbs", df[x,"def.action"])) {
+    df[x,"def.action"] <- "ball.shield"
+  }
+  if (grepl("^ds", df[x,"def.action"])) {
+    df[x,"def.action"] <- "dispossess"
+  }
+  if (grepl("^dlt", df[x,"def.action"])) {
+    df[x,"def.action"] <- "dispossess"
+  }
+  if (grepl("^tba", df[x,"def.action"])) {
+    df[x,"def.action"] <- "tackles.ball.away"
+  }
+  if (grepl("^tbw", df[x,"def.action"])) {
+    df[x,"def.action"] <- "tackles.ball.won"
+  }
+  if (grepl("^dtm", df[x,"def.action"])) {
+    df[x,"def.action"] <- "dribbled.tackles.missed"
+  }
+  if (grepl("^dor", df[x,"def.action"])) {
+    df[x,"def.action"] <- "dribbled.out.run"
+  }
+  if (grepl("^dt", df[x,"def.action"])) {
+    df[x,"def.action"] <- "dribbled.turned"
+  }
+  if (grepl("^p", df[x,"def.action"])) {
+    df[x,"def.action"] <- "pressured"
+  }
+  if (grepl("^ch", df[x,"def.action"])) {
+    df[x,"def.action"] <- "challenged"
+  }
+  if (grepl("^bl", df[x,"def.action"])) {
+    df[x,"def.action"] <- "blocks"
+  }
+  if (grepl("^int", df[x,"def.action"])) {
+    df[x,"def.action"] <- "interceptions"
+  }
+  if (grepl("^bd", df[x,"def.action"])) {
+    df[x,"def.action"] <- "ball.shield"
+  }
+  if (grepl("^cl", df[x,"def.action"])) {
+    df[x,"def.action"] <- "clearances"
+  }
+  if (grepl("^aw", df[x,"def.action"])) {
+    df[x,"def.action"] <- "aerial.won"
+  }
+  if (grepl("^al", df[x,"def.action"])) {
+    df[x,"def.action"] <- "aerial.lost"
+  }
+  ##Convert "poss.player.disciplinary" shortcuts
+  if (grepl("^fw", df[x,"poss.player.disciplinary"])) {
+    df[x,"poss.player.disciplinary"] <- "fouls.won"
+  }
+  if (grepl("^fc", df[x,"poss.player.disciplinary"])) {
+    df[x,"poss.player.disciplinary"] <- "fouls.conceded"
+  }
+  ##Convert "poss.notes" shortcuts
+  if (grepl("^keep.poss", df[x,"poss.notes"])) {
+    df[x,"poss.notes"] <- "out.of.bounds.keep.poss"
+  }
+  if (grepl("^lost.poss", df[x,"poss.notes"])) {
+    df[x,"poss.notes"] <- "out.of.bounds.lost.poss"
+  }
+  ##Convert "def.player.disciplinary" shortcuts
+  if (grepl("^fw", df[x,"def.player.disciplinary"])) {
+    df[x,"def.player.disciplinary"] <- "fouls.won"
+  }
+  if (grepl("^fc", df[x,"def.player.disciplinary"])) {
+    df[x,"def.player.disciplinary"] <- "fouls.conceded"
+  }
+  x <- x + 1
+}
+
+##FILLS IN BLANK DEF.LOCATION CELLS----------
 ## Goes down the entire data.frame, row by row, and fills in blank "def.location" cells
 x <- 1
 while (x <= nrow(df)) {
@@ -98,6 +268,7 @@ while (x <= nrow(df)) {
   x <- x + 1
 }
 
+##FILLS IN BLANK POSS.LOCATION CELLS----------
 df$poss.action <- as.character(df$poss.action)
 e <- 1
 while (e <= max(df$event)) {
