@@ -160,7 +160,7 @@ while (x <= nrow(df)) {
     df[x,"def.action"] <- "ball.shield"
   }
   if (grepl("^ds", df[x,"def.action"])) {
-    df[x,"def.action"] <- "dispossess"
+    df[x,"def.action"] <- "dispossessed"
   }
   if (grepl("^dlt", df[x,"def.action"])) {
     df[x,"def.action"] <- "dispossess"
