@@ -271,7 +271,7 @@ while (x <= nrow(df)) {
 ##FILLS IN BLANK POSS.LOCATION CELLS----------
 df$poss.action <- as.character(df$poss.action)
 e <- 1
-while (e <= max(df$event)) {
+while (e <= max(df$event, na.rm=TRUE)) {
   # get row for "poss.action" for "event"
   row <- grep(e,df[,"event"])[1]
   # get event value and row for "poss.action" for next event
