@@ -79,6 +79,9 @@ while (x <= nrow(df)) {
   if (grepl("^sc", df[x,"poss.action"])) {
     df[x,"poss.action"] <- "shots.scored"
   }
+  if (grepl("^sm", df[x,"poss.action"])) {
+    df[x,"poss.action"] <- "shots.missed"
+  }
   if (grepl("^pf", df[x,"poss.action"])) {
     df[x,"poss.action"] <- "passes.f"
   }
@@ -128,6 +131,18 @@ while (x <= nrow(df)) {
   if (grepl("^lay", df[x,"play.type"])) {
     df[x,"play.type"] <- "lay.off"
   }
+  if (grepl("^cc", df[x,"play.type"])) {
+    df[x,"play.type"] <- "corner.crosses"
+  }
+  if (grepl("^dc", df[x,"play.type"])) {
+    df[x,"play.type"] <- "deep.crosses"
+  }
+  if (grepl("^s", df[x,"play.type"])) {
+    df[x,"play.type"] <- "switch"
+  }
+  if (grepl("^lay", df[x,"play.type"])) {
+    df[x,"play.type"] <- "lay.off"
+  }
   if (grepl("^flick", df[x,"play.type"])) {
     df[x,"play.type"] <- "flick.on"
   }
@@ -159,11 +174,14 @@ while (x <= nrow(df)) {
   if (grepl("^dbs", df[x,"def.action"])) {
     df[x,"def.action"] <- "ball.shield"
   }
+  if (grepl("^bs", df[x,"def.action"])) {
+    df[x,"def.action"] <- "ball.shield"
+  }
   if (grepl("^ds", df[x,"def.action"])) {
     df[x,"def.action"] <- "dispossessed"
   }
   if (grepl("^dlt", df[x,"def.action"])) {
-    df[x,"def.action"] <- "dispossess"
+    df[x,"def.action"] <- "dispossessed"
   }
   if (grepl("^tba", df[x,"def.action"])) {
     df[x,"def.action"] <- "tackles.ball.away"
@@ -271,7 +289,7 @@ while (x <= nrow(df)) {
 ##FILLS IN BLANK POSS.LOCATION CELLS----------
 df$poss.action <- as.character(df$poss.action)
 e <- 1
-while (e <= max(df$event, na.rm=TRUE)) {
+while (e <= max(df$event)) {
   # get row for "poss.action" for "event"
   row <- grep(e,df[,"event"])[1]
   # get event value and row for "poss.action" for next event
