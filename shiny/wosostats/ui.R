@@ -11,8 +11,8 @@ shinyUI(fluidPage(
     sidebarPanel(
       div(helpText("Select your competition and match, then click on 'Go'"), style="font-size:12px"),
       div(radioButtons("competition",
-                   label = "Select a competition",
-                   choices = comp.choices), style="font-size:12px"),
+                       label = "Select a competition",
+                       choices = comp.choices), style="font-size:12px"),
       div(uiOutput("matches"), style="font-size:12px"),
       actionButton("go", "Go!"),
       br(),
@@ -31,14 +31,27 @@ shinyUI(fluidPage(
         tabPanel('Possession', dataTableOutput('possession')),
         tabPanel('Player Defending', dataTableOutput('playerdefending')),
         tabPanel('Ball Defending', dataTableOutput('balldefending')),
-        tabPanel('Goalkeeping', dataTableOutput('goalkeeping')),
+        tabPanel('GK Saves', dataTableOutput('gksaves')),
         navbarMenu("More",
                    tabPanel('Shot Location', dataTableOutput('shotlocation')),
                    tabPanel('Big Chances', dataTableOutput('bigchances')),
                    tabPanel('Key Passes', dataTableOutput('keypasses')),
-                   tabPanel('Crosses & Through Balls', dataTableOutput('specialpassing')),
+                   tabPanel('Passing Under Pressure', dataTableOutput('passingpressure')),
                    tabPanel('Passing by Direction', dataTableOutput('directionpassing')),
-                   tabPanel('Passing Under Pressure by Direction', dataTableOutput('directionpressuredpassing'))
+                   tabPanel('Passing Under Pressure by Direction',dataTableOutput('directionpressuredpassing')),
+                   tabPanel('Crosses', dataTableOutput('crosses')),
+                   tabPanel('Launch Balls', dataTableOutput('launchballs')),
+                   tabPanel('Through Balls', dataTableOutput('throughballs')),
+                   tabPanel('Throw Ins', dataTableOutput('throwins')),
+                   tabPanel('Corner Kicks', dataTableOutput('cornerkicks')),
+                   tabPanel('Free Kicks', dataTableOutput('freekicks')),
+                   tabPanel('Aerial Duels', dataTableOutput('aerialduels')),
+                   tabPanel('Disciplinary', dataTableOutput('disciplinary')),
+                   tabPanel('Errors & Big Chance Stops', dataTableOutput('defnotes')),
+                   tabPanel('GK High Balls', dataTableOutput('gkhighballs')),
+                   tabPanel('GK Set Pieces', dataTableOutput('gksetpieces')),
+                   tabPanel('GK Distribution', dataTableOutput('gkdistribution'))
+                   
         ))), style="font-size:12px")
   )
 ))

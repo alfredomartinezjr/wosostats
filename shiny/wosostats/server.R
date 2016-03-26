@@ -1,14 +1,17 @@
 library(RCurl)
-meta <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
-meta <- read.csv(textConnection(meta), stringsAsFactors = FALSE)
+library(dplyr)
+database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
+database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
+stats <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/stats.csv")
+stats <- read.csv(textConnection(stats), stringsAsFactors = FALSE)
 
 shinyServer(function(input, output) {
   
   output$matches <- renderUI({
     league <- as.character(input$competition)
-    matchups <- meta[meta[,"competition.slug"] == league,"matchup"]
-    dates <- meta[meta[,"competition.slug"] == league,"date"]
-    links <- meta[meta[,"competition.slug"] == league,"stats.csv.link"]
+    matchups <- database[database[,"competition.slug"] == league,"matchup"]
+    dates <- database[database[,"competition.slug"] == league,"date"]
+    links <- database[database[,"competition.slug"] == league,"stats.csv.link"]
     names(links) <- paste(matchups, dates)
     selectInput("matchselection", "Select a match", links)
   })
@@ -18,84 +21,47 @@ shinyServer(function(input, output) {
     d <- read.csv(textConnection(d), stringsAsFactors = FALSE)
     is.num <- sapply(d, is.numeric)
     d[is.num] <- lapply(d[is.num], round, 2)
+    players <- length(d$Player)
+    names(d) <- gsub("\\."," ", names(d))
     
-    #Shots
-    shots <- d[,c("Player","Team","MP","GS","Goals","Shots","Shot.Accuracy","SOG.GK.Stop","SOG.Def.Stop","Shots.Missed","Shots.Pressured","Pct.of.Shots.Pressured")]
-    names(shots) <- gsub("\\."," ", names(shots))
-
-    #Passing
-    passing <- d[,c("Player", "Team", "MP", "Passes.Completed","Pass.Attempts", "Pass.Comp.Pct", "Pct.of.Passes.Under.Pressure",
-           "Passes.Completed.Under.Pressure","Pass.Attempts.Under.Pressure","Pass.Comp.Pct.Under.Pressure")] 
-    names(passing) <- gsub("\\."," ", names(passing))
-
-    #Possession
-    possession <- d[,c("Player", "Team", "MP", "Take.Ons.Won","Take.Ons.Lost", "Take.On.Attempts","Take.On.Win.Pct", "Dispossessed.by.Opp","Lost.Touches")] 
-    names(possession) <- gsub("\\."," ", names(possession))
-    
-    #Player Defending
-    playerdefending <- d[,c("Player","Team","MP","Tackles","Dribbled.by.Opp", "Pressured.Opp","Challenged.Opp","Dispossessed.Opp")]
-    names(playerdefending) <- gsub("\\."," ", names(playerdefending))
-
-    #Ball Defending
-    balldefending <- d[,c("Player","Team","MP","Interceptions","Recoveries","Blocks","Clearances","Balls.Shielded")]
-    names(balldefending) <- gsub("\\."," ", names(balldefending))
-
-    
-    #Goalkeeping
-    goalkeeping <- d[,c("Player","Team","MP","Saves","Goals.Allowed","High.Balls.Won","High.Balls.Lost",
-           "High.Balls.Caught","High.Balls.Punched.Away","High.Balls.Parried","High.Balls.Collected",
-           "High.Ball.Fouls.Won","Crosses.High.Balls.Won","Corner.Kick.High.Balls.Won",
-           "Free.Kick.High.Balls.Won","Smothers.Won","Smothers.Lost")]
-    names(goalkeeping) <- gsub("\\."," ", names(goalkeeping))
-    
-    #Shot Location
-    shotlocation <- d[,c("Player","Team","MP","A6.Shots","A18.Shots","A3L.Shots","A3C.Shots","A3R.Shots","Further.Shots")]
-    names(shotlocation) <- gsub("\\."," ", names(shotlocation))
-    
-    #Big Chances
-    bigchances <- d[,c("Player","Team","MP","Big.Chances","BC.Scored","BC.SOG","BC.Missed","BC.Dispossessed")]
-    names(bigchances) <- gsub("\\."," ", names(bigchances))
-    
-    #Key Passes
-    keypasses <- d[,c("Player","Team","MP","Assists","All.Key.Passes","Key.Passes.to.Goals","Key.Assists","Second.Assists","Unscored.Key.Passes")]
-    names(keypasses) <- gsub("\\."," ", names(keypasses))
-    
-    #Crosses & Through Balls
-    specialpassing <- d[,c("Player","Team","MP","Crosses.Completed","Cross.Attempts","Cross.Comp.Pct","Crosses.from.Corner","Crosses.from.Far",
-           "Through.Balls.Completed","Through.Ball.Attempts","Through.Ball.Pct")]
-    names(specialpassing) <- gsub("\\."," ", names(specialpassing))
-    
-    #Passes by Direction
-    directionpassing <- d[,c("Player","Team","MP","Pct.of.Pass.Att.Fwd","Pct.of.Pass.Att.Side","Pct.of.Pass.Att.Back","Fwd.Pass.Comp",
-           "Fwd.Pass.Att","Fwd.Pass.Comp.Pct","Side.Pass.Comp","Side.Pass.Att","Side.Pass.Comp.Pct",
-           "Back.Pass.Comp","Back.Pass.Att","Back.Pass.Comp.Pct")]
-    names(directionpassing) <- gsub("\\."," ", names(directionpassing))
-    names(directionpassing) <- c("Player","Team","MP","Pct Fwd Passes","Pct Side Passes","Pct Back Passes","Fwd Passes Comp",
-                                   "Fwd Passes Att","Fwd Passes Comp Pct","Side Passes Comp","Side Passes Att","Side Passes Comp Pct",
-                                   "Back Passes Comp","Back Passes Att","Back Passes Comp Pct")
-    
-    #Pressured Passes by Direction
-    directionpressuredpassing <- d[,c("Player","Team","MP","Pct.of.Pressed.Pass.Att.Fwd","Pct.of.Pressed.Pass.Att.Side","Pct.of.Pressed.Pass.Att.Back",
-           "Fwd.Pressed.Pass.Comp","Fwd.Pressed.Pass.Att","Fwd.Pressed.Pass.Comp.Pct","Side.Pressed.Pass.Comp",
-           "Side.Pressed.Pass.Att","Side.Pressed.Pass.Comp.Pct","Back.Pressed.Pass.Comp","Back.Pressed.Pass.Att",
-           "Back.Pressed.Pass.Comp.Pct")]
-    names(directionpressuredpassing) <- gsub("\\."," ", names(directionpressuredpassing))
-    
-    list(d, shots, passing, possession, playerdefending, balldefending, goalkeeping, shotlocation, bigchances, keypasses, specialpassing, directionpassing, directionpressuredpassing)
+    statstable <- as.data.frame(matrix(rep(0, length(stats$Acronym)), nrow = 1))
+    names(statstable) <- c(stats$Acronym)
+    statstable <- statstable[-1,]
+    statstable$Player <- as.character(statstable$Player)
+    statstable$Team <- as.character(statstable$Team)
+    statstable <- bind_rows(statstable, d)
+    statstable
   })
   
-  output$shots <- renderDataTable(dataInput()[[2]], options = list(pageLength = 10))
-  output$passing <- renderDataTable(dataInput()[[3]], options = list(pageLength = 10))
-  output$possession <- renderDataTable(dataInput()[[4]], options = list(pageLength = 10))
-  output$playerdefending <- renderDataTable(dataInput()[[5]], options = list(pageLength = 10))
-  output$balldefending <- renderDataTable(dataInput()[[6]], options = list(pageLength = 10))
-  output$goalkeeping <- renderDataTable(dataInput()[[7]], options = list(pageLength = 10))
-  output$shotlocation <- renderDataTable(dataInput()[[8]], options = list(pageLength = 10))
-  output$bigchances <- renderDataTable(dataInput()[[9]], options = list(pageLength = 10))
-  output$keypasses <- renderDataTable(dataInput()[[10]], options = list(pageLength = 10))
-  output$specialpassing <- renderDataTable(dataInput()[[11]], options = list(pageLength = 10))
-  output$directionpassing <- renderDataTable(dataInput()[[12]], options = list(pageLength = 10))
-  output$directionpressuredpassing <- renderDataTable(dataInput()[[13]], options = list(pageLength = 10))
+  output$shots <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Shots","Acronym"])], options = list(pageLength = 10))
+  output$shotlocation <- renderDataTable(dataInput()[,c("Player","Team","MP", "Shots" ,stats[stats[,"Panel"]=="Shot Location","Acronym"])], options = list(pageLength = 10))
+  output$bigchances <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Big Chances","Acronym"])], options = list(pageLength = 10))
+  output$keypasses <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Key Passes","Acronym"])], options = list(pageLength = 10))
+  
+  output$passing <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Overall Passing","Acronym"], stats[stats[,"Panel"]=="Adjusted Passing","Acronym"])], options = list(pageLength = 10))
+  output$crosses <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Crosses","Acronym"])], options = list(pageLength = 10))
+  output$launchballs <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Launch Balls","Acronym"])], options = list(pageLength = 10))
+  output$throughballs <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Through Balls","Acronym"])], options = list(pageLength = 10))
+  output$passingpressure <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Passing Under Pressure","Acronym"], stats[stats[,"Panel"]=="Adjusted Passing Under Pressure","Acronym"])], options = list(pageLength = 10))
+  output$directionpassing <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Passing By Direction","Acronym"])], options = list(pageLength = 10))
+  output$directionpressuredpassing <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Passing Under Pressure by Direction","Acronym"])], options = list(pageLength = 10))
+  
+  output$throwins <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Throw Ins","Acronym"])], options = list(pageLength = 10))
+  output$cornerkicks <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Corner Kicks","Acronym"])], options = list(pageLength = 10))
+  output$freekicks <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Free Kicks","Acronym"])], options = list(pageLength = 10))
+  
+  output$possession <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Possession","Acronym"])], options = list(pageLength = 10))
+  output$aerialduels <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Aerial Duels","Acronym"])], options = list(pageLength = 10))
+  output$disciplinary <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Disciplinary","Acronym"])], options = list(pageLength = 10))
+  
+  output$playerdefending <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Player Defending","Acronym"])], options = list(pageLength = 10))
+  output$balldefending <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Ball Defending","Acronym"])], options = list(pageLength = 10))
+  output$defnotes <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="Errors & Big Chance Stops","Acronym"])], options = list(pageLength = 10))
+  
+  output$gksaves <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="GK Saves","Acronym"])], options = list(pageLength = 10))
+  output$gkhighballs <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="GK High Balls","Acronym"])], options = list(pageLength = 10))
+  output$gksetpieces <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="GK Set Pieces","Acronym"])], options = list(pageLength = 10))
+  output$gkdistribution <- renderDataTable(dataInput()[,c("Player","Team","MP",stats[stats[,"Panel"]=="GK Distribution","Acronym"])], options = list(pageLength = 10))
   
   output$downloadData <- downloadHandler(
     filename = function() {
