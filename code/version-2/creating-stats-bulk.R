@@ -18,7 +18,7 @@ for (i in matches) {
 }
 
 #Writes csv files in bulk into whatever directory you're in
-for (i in 1:length(stats_list)) {
-  file_name <- strsplit(matches[i], "/")[[1]][[length(strsplit(matches[i], "/")[[1]])]]
-  write.csv(stats_list[[i]], file=file_name, row.names = FALSE)
-}
+#for (i in 1:length(stats_list)) {
+#  file_name <- strsplit(matches[i], "/")[[1]][[length(strsplit(matches[i], "/")[[1]])]]
+#  write.csv(stats_list[[i]], file=file_name, row.names = FALSE)
+#}
