@@ -147,7 +147,7 @@ while (x <= nrow(df)) {
     df[x,"play.type"] <- "flick.on"
   }
   if (grepl("^ti", df[x,"play.type"])) {
-    df[x,"play.type"] <- "through"
+    df[x,"play.type"] <- "throw.in"
   }
   if (grepl("^fk", df[x,"play.type"])) {
     df[x,"play.type"] <- "free.kick"
