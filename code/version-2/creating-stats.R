@@ -739,6 +739,87 @@ passdirection$rFreq.Pass.Back <- passdirection$bPass.Att/rowSums(passdirection[,
 all <- merge(all, passdirection, by="Player", all=TRUE)
 rm(passdirection)
 
+#OPEN PLAY PASSING BY DIRECTION----------
+#Passing stats, without dead ball scenarios (GKs, GK throws, GK drop kicks,FKs, CKs, throw ins)
+t2 <- createDataFrame(c("passes.f.c", "passes.f", 
+                        "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", d)
+##Create blank "opPass" column, to be filled with "yes" or "no"
+t2$opPass <- NA
+x <- 1
+while (x <= length(unique(t2$event))) {
+  if (grepl("throw|gk|corner.kick|free.kick",
+            paste(unlist(strsplit(t2[t2[,"event"] == unique(t2$event)[x],"play.type"], ","), 
+                         recursive=TRUE), 
+                  sep="", 
+                  collapse=" "))) {
+    t2[t2[,"event"] == unique(t2$event)[x],"opPass"] <- "no"
+  } else {
+    t2[t2[,"event"] == unique(t2$event)[x],"opPass"] <- "yes"
+  }
+  x <- x + 1
+}
+##Keep only rows with "yes" in "opPass" column
+t2 <- t2[t2[,"opPass"]=="yes",]
+##Clean up the data frame
+t2 <- createCleanDataFrame(c("passes.f.c", "passes.f", 
+                             "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", t2)
+##add qualifiers for forward, sideways, and backward pass attemps & completions
+t2 <- addColumnForQualifier("forward.pass", "^passes.f", "poss.action", d, t2)
+t2 <- addColumnForQualifier("sideways.pass", "^passes.s", "poss.action", d, t2)
+t2 <- addColumnForQualifier("backward.pass", "^passes.b", "poss.action", d, t2)
+t2 <- addColumnForQualifier("pressured", "pressured", "def.action", d, t2)
+t2 <- addColumnForQualifier("challenged", "challenged", "def.action", d, t2)
+##add qualifiers for pressed passes
+t2$pressed <- NA
+x <- 1
+while(x <= nrow(t2)) {
+  if (t2[x,"pressured"] == "yes" | t2[x,"challenged"] == "yes") {
+    t2[x,"pressed"] <- "yes"
+    x <- x + 1
+  } else {
+    t2[x,"pressed"] <- "no"
+    x <- x + 1
+  }
+}
+#Cut down d data.frame to three different ones for forward, sideways, and backwards passes
+fwdpasses <- t2[t2[,"forward.pass"] == "yes",]
+sidepasses <- t2[t2[,"sideways.pass"] == "yes",]
+backpasses <- t2[t2[,"backward.pass"] == "yes",]
+##Creates blank table with columns for direction distribution
+directiondist <- createTable(c("rFreq opPass Fwd", "rFreq opPass Side", "rFreq opPass Back", "yes", "no"), "pressed", t2)
+directiondist <- directiondist[,1:4]
+##Create a table for completions, attempts, and comp pct for FORWARD passes
+fwdtab <- createTable(c("fwopPass.Comp", "fwopPass.Att", "fwopPass.Comp.Pct" ,"passes.f", "passes.f.c"), "poss.action", fwdpasses)
+fwdtab$fwopPass.Comp <- fwdtab$passes.f.c
+fwdtab$fwopPass.Att <- fwdtab$passes.f + fwdtab$passes.f.c
+fwdtab$fwopPass.Comp.Pct <- fwdtab$fwopPass.Comp/fwdtab$fwopPass.Att
+fwdtab <- fwdtab[,1:4]
+passdirection <- merge(directiondist, fwdtab, by="Player", all=TRUE)
+rm(directiondist, fwdtab, fwdpasses)
+##Create a table for completions, attempts, and comp pct for SIDEWAYS passes
+sidetab <- createTable(c("sopPass.Comp", "sopPass.Att", "sopPass.Comp.Pct" ,"passes.s", "passes.s.c"), "poss.action", sidepasses)
+sidetab$sopPass.Comp <- sidetab$passes.s.c
+sidetab$sopPass.Att <- sidetab$passes.s + sidetab$passes.s.c
+sidetab$sopPass.Comp.Pct <- sidetab$sopPass.Comp/sidetab$sopPass.Att
+sidetab <- sidetab[,1:4]
+passdirection <- merge(passdirection, sidetab, by="Player", all=TRUE)
+rm(sidetab, sidepasses)
+##Create a table for completions, attempts, and comp pct for BACKWARDS passes
+backtab <- createTable(c("bopPass.Comp", "bopPass.Att", "bopPass.Comp.Pct" ,"passes.b", "passes.b.c"), "poss.action", backpasses)
+backtab$bopPass.Comp <- backtab$passes.b.c
+backtab$bopPass.Att <- backtab$passes.b + backtab$passes.b.c
+backtab$bopPass.Comp.Pct <- backtab$bopPass.Comp/backtab$bopPass.Att
+backtab <- backtab[,1:4]
+passdirection <- merge(passdirection, backtab, by="Player", all=TRUE)
+rm(backtab, backpasses)
+##Calculate direction distribution
+passdirection[is.na(passdirection)] <- 0
+passdirection$rFreq.opPass.Fwd <- passdirection$fwopPass.Att/rowSums(passdirection[,c("fwopPass.Att", "sopPass.Att", "bopPass.Att")])
+passdirection$rFreq.opPass.Side <- passdirection$sopPass.Att/rowSums(passdirection[,c("fwopPass.Att", "sopPass.Att", "bopPass.Att")])
+passdirection$rFreq.opPass.Back <- passdirection$bopPass.Att/rowSums(passdirection[,c("fwopPass.Att", "sopPass.Att", "bopPass.Att")])
+
+all <- merge(all, passdirection, by="Player", all=TRUE)
+
 #PASSING UNDER PRESSURE---------------
 ## Include only passing attempts under pressure
 t2 <- t[t[,"pressed"] == "yes",]
