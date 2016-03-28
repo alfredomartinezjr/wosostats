@@ -230,10 +230,10 @@ while (x <= nrow(df)) {
     df[x,"poss.player.disciplinary"] <- "fouls.conceded"
   }
   ##Convert "poss.notes" shortcuts
-  if (grepl("^keep.poss", df[x,"poss.notes"])) {
+  if (grepl("^keep.poss|^kept.poss", df[x,"poss.notes"])) {
     df[x,"poss.notes"] <- "out.of.bounds.keep.poss"
   }
-  if (grepl("^lost.poss", df[x,"poss.notes"])) {
+  if (grepl("^lost.poss|^lose", df[x,"poss.notes"])) {
     df[x,"poss.notes"] <- "out.of.bounds.lost.poss"
   }
   ##Convert "def.player.disciplinary" shortcuts
