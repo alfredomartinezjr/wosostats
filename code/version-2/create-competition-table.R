@@ -30,9 +30,11 @@ getTeamMatches <- function(team){
   while (x <= length(matches)) {
     d <- getURL(matches[x])
     d <- read.csv(textConnection(d), stringsAsFactors = FALSE)
+    d$Match <- names[[x]]
     match_list[[x]] <- d
     x <- x + 1
   }
+  names(match_list) <- names
   match_list
 }
 
@@ -119,6 +121,11 @@ cbindCompetitionMatches <- function(match_list) {
   overall
 }
 
+##Takes a match list, rbinds them, and includes only rows for specific teams
+rbindTeamMatches <- function(match_list, team) {
+  d <- do.call("rbind", match_list)
+  d <- d[d[,"Team"] == team,]
+}
 
 ##For when you just want one team, given an "overall" data frame, culls it down
 ##to "team"
