@@ -993,14 +993,15 @@ t <- createDataFrame(c("interceptions","clearances", "ball.shield", "blocks"), "
 t <- t[,c("event","time", "def.position","def.team","def.player","def.action","def.location", "def.player.disciplinary","def.notes")]
 names(t) <- c("event", "time", "position","team", "poss.player", "player.event", "location", 
               "def.player.disciplinary", "def.notes")
-t2 <- createTable(c("interceptions", "blocks", "clearances", "ball.shield"), "player.event", t)
+t2 <- createTable(c("interceptions", "interceptions.per.90","interceptions.per.op.pass","blocks", "clearances", "ball.shield"), "player.event", t)
 t2 <- t2[order(-t2$interceptions,-t2$blocks, -t2$clearances),]
-names(t2) <- c("Player","Interceptions","Blocks","Clearances", "Balls Shields")
+names(t2) <- c("Player","Interceptions","Int per 90","Int per OP Pass", "Blocks","Clearances", "Balls Shields")
 interceptions <- t2
 rm(t2)
 
 all <- merge(all, interceptions, by=1, all=TRUE)
 rm(interceptions)
+all$`Int per 90` <- (all$Interceptions/all$MP)*90
 
 #ERRORS & BIG CHANCE STOPS
 
