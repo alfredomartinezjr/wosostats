@@ -3,8 +3,7 @@ database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/d
 database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
 
 #This just pulls every match in the database. This could be a long vector
-matches <- database[,"match.csv.link"]
-
+matches <- database[!is.na(database[,"match.csv.link"]),"match.csv.link"]
 
 #Create empty list
 stats_list <- vector("list", 0)
