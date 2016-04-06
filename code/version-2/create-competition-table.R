@@ -8,8 +8,13 @@ database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
 #Set "competition" as the competition slug that is in the database
 #competition <- competitionsluggoeshere
 getCompetitionMatches <- function(competition.slug) {
-  matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"stats.csv.link"]
-  names <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"matchup"]
+  if(competition.slug == "database"){
+    matches <- database[!is.na(database[,"match.csv.link"]),"stats.csv.link"]
+    names <- database[!is.na(database[,"match.csv.link"]),"matchup"]
+  } else {
+    matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"stats.csv.link"]
+    names <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"matchup"]
+  }
   match_list <- vector("list", 0)
   x <- 1
   while (x <= length(matches)) {
@@ -49,7 +54,7 @@ cbindCompetitionMatches <- function(match_list) {
   stats$Player <- as.character(stats$Player)
   stats$Team <- as.character(stats$Team)
   overall <- merge(players, stats, by=c("Player", "Team"), all=TRUE)
-  
+
   #for each row in "overall", gets each column's colSums for that row's "Player"-"Team" combo in d
   x <- 1
   while(x <= nrow(overall)) {
