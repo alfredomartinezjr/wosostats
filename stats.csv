@@ -41,9 +41,9 @@ Launch Ball Comp Pct,Launch Comp Pct,Launch Balls,
 Through Balls Completed,Through Comp,Through Balls,frequency
 Through Balls Attempted,Through Att,Through Balls,frequency
 Through Ball Comp Pct,Through Comp Pct,Through Balls,
-Throw Ins Completed,Throw Ins Comp,Throw Ins,frequency
-Throw Ins Attempted,Throw Ins Att,Throw Ins,frequency
-Throw In Comp Pct,Throw Ins Comp Pct,Throw Ins,
+Throw Ins Completed,Throw In Comp,Throw Ins,frequency
+Throw Ins Attempted,Throw In Att,Throw Ins,frequency
+Throw In Comp Pct,Throw In Comp Pct,Throw Ins,
 Corner Kicks Taken,Corner Kicks Taken,Corner Kicks,frequency
 Corner Kicks Completed,Corner Kicks Completed,Corner Kicks,frequency
 Pct of all Corner Kicks Taken that were Completed,CK Effectiveness,Corner Kicks,
