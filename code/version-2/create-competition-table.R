@@ -21,6 +21,21 @@ getCompetitionMatches <- function(competition.slug) {
   match_list
 }
 
+#Set team as the team acronymn as its shown in the database
+getTeamMatches <- function(team){
+  matches <- database[database[,"home.team"] == team & !is.na(database[,"match.csv.link"]),"stats.csv.link"]
+  names <- database[database[,"home.team"] == team & !is.na(database[,"match.csv.link"]),"matchup"]
+  match_list <- vector("list", 0)
+  x <- 1
+  while (x <= length(matches)) {
+    d <- getURL(matches[x])
+    d <- read.csv(textConnection(d), stringsAsFactors = FALSE)
+    match_list[[x]] <- d
+    x <- x + 1
+  }
+  match_list
+}
+
 #Given a match_list list with all the matches, rbinds them
 cbindCompetitionMatches <- function(match_list) {
   #Creates a blank overall table
@@ -102,4 +117,12 @@ cbindCompetitionMatches <- function(match_list) {
   overall[,"Drop.Kick.Comp.Pct"] <- overall[,"Drop.Kick.Comp"]/overall[,"Drop.Kick.Att"]
   overall[,"GK.FK.Comp.Pct"] <- overall[,"GK.FK.Comp"]/overall[,"GK.FK.Att"]
   overall
+}
+
+
+##For when you just want one team, given an "overall" data frame, culls it down
+##to "team"
+subsetOverall <- function(team, table) {
+  table <- table[table[,"Team"] == team,]
+  table
 }
