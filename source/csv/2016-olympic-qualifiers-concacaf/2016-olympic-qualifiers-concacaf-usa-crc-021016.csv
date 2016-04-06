@@ -4,7 +4,8 @@
 3,"1",NA,"USA","Brian","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 4,"1",NA,"USA","Horan","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"second.assists",NA,NA
 5,"1",NA,"USA","Lloyd","aerial.won",NA,NA,NA,NA,"CRC","Sanchez","aerial.lost",NA,NA,NA,NA,NA,NA,NA
-6,"1",NA,"USA","Lloyd","passes.f.c",NA,"A18","headed,flick.on",NA,NA,NA,NA,NA,NA,NA,NA,"assists",NA,NA
+6,"1",NA,"USA","Lloyd","passes.f.c",NA,"A18","headed",NA,NA,NA,NA,NA,NA,NA,NA,"assists",NA,NA
+6,"1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA
 7,"1",NA,"USA","Morgan","shots.scored","A18",NA,NA,NA,"CRC","Acosta","challenged","D18",NA,NA,NA,"big.chances.scored",NA,NA
 7,"1",NA,NA,NA,NA,NA,NA,NA,"GK","CRC","Diaz","gk.s.o.g.scored",NA,"missed.the.ball","diving",NA,NA,NA,NA
 8,"1",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -48,10 +49,10 @@
 41,"4",NA,"USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 42,"4",NA,"USA","Krieger","passes.f.c",NA,NA,NA,NA,"CRC","Barrantes","challenged",NA,NA,NA,NA,NA,NA,NA
 43,"4",NA,"USA","Dunn","dispossessed",NA,NA,NA,NA,"CRC","D. Cruz","dispossess.steal",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-44,"5",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+44,"5",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45,"5",NA,"CRC","S. Cruz","dispossessed",NA,NA,NA,NA,"USA","Dunn","dispossess.steal",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 45,"5",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Krieger","challenged",NA,NA,NA,NA,NA,NA,NA
-46,"5",NA,"CRC","D. Cruz","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46,"5",NA,"CRC","D. Cruz","passes.s.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 47,"5",NA,"CRC","Barrantes","passes.b.c",NA,NA,NA,NA,"USA","Dunn","challenged",NA,NA,NA,NA,NA,NA,NA
 48,"5",NA,"CRC","D. Cruz","passes.s",NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 49,"6","GK","USA","Solo","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -60,10 +61,10 @@
 52,"6",NA,"USA","Horan","passes.s.c",NA,"DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 53,"6",NA,"USA","Krieger","movement","DM3R","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 54,"6",NA,"USA","Krieger","passes.f",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-55,"6",NA,"CRC","D. Cruz","passes.f",NA,NA,"throw.in",NA,"USA","Krieger","interceptions",NA,NA,NA,NA,NA,NA,NA
+55,"6",NA,"CRC","D. Cruz","passes.f",NA,NA,"through",NA,"USA","Krieger","interceptions",NA,NA,NA,NA,NA,NA,NA
 56,"6",NA,"USA","Krieger","clearances",NA,NA,NA,NA,"CRC","Rodriguez","interceptions",NA,NA,NA,NA,NA,NA,NA
 57,"6",NA,"CRC","Rodriguez","lost.touch",NA,NA,NA,NA,"USA","Brian","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-58,"6",NA,"USA","Krieger","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+58,"6",NA,"USA","Krieger","passes.b.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 59,"6",NA,"USA","Johnston","passes.s.c",NA,"DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 60,"6",NA,"USA","Sauerbrunn","movement","DM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 61,"6",NA,"USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -96,16 +97,16 @@
 88,"7",NA,"USA","Dunn","passes.f",NA,NA,"through",NA,"CRC","D. Cruz","pressured",NA,NA,NA,NA,NA,NA,NA
 89,"7",NA,"CRC","S. Cruz","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 90,"7",NA,"CRC","S. Cruz","clearances",NA,NA,NA,NA,"USA","Krieger","pressured",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-91,"8",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+91,"8",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 92,"8",NA,"CRC","S. Cruz","aerial.won",NA,NA,NA,NA,"USA","Krieger","aerial.lost",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-93,"8",NA,"USA","Krieger","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+93,"8",NA,"USA","Krieger","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 94,"8",NA,"USA","Lloyd","aerial.won",NA,NA,NA,NA,"CRC","Acosta","aerial.lost",NA,NA,NA,NA,NA,NA,NA
-95,"8",NA,"USA","Lloyd","passes.f.c",NA,NA,"headed,flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+95,"8",NA,"USA","Lloyd","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 96,"8",NA,"USA","Morgan","passes.b.c",NA,"A3R",NA,NA,"CRC","Sanchez","challenged",NA,NA,NA,NA,NA,NA,NA
 97,"8",NA,"USA","Dunn","movement","A3R","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 98,"8",NA,"USA","Dunn","movement","A3C","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 99,"8",NA,"USA","Dunn","take.on.won",NA,NA,NA,NA,"CRC","Herrera","dribbled.tackles.missed",NA,NA,NA,"penalties.won",NA,"penalties.conceded",NA
-100,"9",NA,"USA","Lloyd","shots.scored","A18",NA,"pk","GK","CRC","Diaz","gk.s.o.g.scored",NA,"diving",NA,NA,NA,NA,NA
+100,"9",NA,"USA","Lloyd","shots.scored","A18",NA,"penalty.kick","GK","CRC","Diaz","gk.s.o.g.scored",NA,"diving",NA,NA,NA,NA,NA
 101,"9",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 102,"10",NA,"CRC","Rodriguez","passes.b.c",NA,NA,NA,NA,"USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA
 103,"10",NA,"CRC","Alvarado","passes.f.c",NA,NA,NA,NA,"USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -151,13 +152,13 @@
 139,"12",NA,"CRC","S. Cruz","dispossessed",NA,NA,NA,NA,"USA","Lloyd","dispossess.steal",NA,NA,NA,NA,NA,NA,NA
 139,"12",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Krieger","challenged",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 140,"12",NA,"USA","Lloyd","lost.touch",NA,NA,NA,NA,"CRC","Barrantes","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-141,"13",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+141,"13",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 142,"13",NA,"CRC","Venegas","dispossessed",NA,NA,NA,NA,"USA","Krieger","dispossess.ball.shield",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-143,"13",NA,"USA","Krieger","passes.b.c",NA,"DM3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+143,"13",NA,"USA","Krieger","passes.b.c",NA,"DM3R","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 144,"13",NA,"USA","Johnston","movement","DM3R","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 145,"13",NA,"USA","Johnston","passes.f",NA,NA,"launch",NA,"CRC","Saenz","interceptions",NA,NA,NA,NA,NA,NA,NA
 146,"13",NA,"CRC","Saenz","passes.f",NA,NA,NA,NA,"USA","Horan","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-147,"13",NA,"CRC","Saenz","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+147,"13",NA,"CRC","Saenz","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 148,"13",NA,"CRC","S. Cruz","passes.s.c",NA,NA,NA,NA,"USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA
 149,"13",NA,"CRC","Rodriguez","passes.b.c",NA,NA,NA,NA,"USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA
 149,"13",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -174,7 +175,7 @@
 160,"14",NA,"USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 161,"14",NA,"USA","Johnston","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 162,"14",NA,"USA","Sauerbrunn","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-163,"14",NA,"CRC","Saenz","passes.f",NA,NA,"throw.in",NA,"USA","Heath","interceptions","A3R",NA,NA,NA,NA,NA,NA
+163,"14",NA,"CRC","Saenz","passes.f",NA,NA,"through",NA,"USA","Heath","interceptions",NA,NA,NA,NA,NA,NA,NA
 164,"14",NA,"USA","Heath","passes.s.c",NA,NA,NA,NA,"CRC","Herrera","pressured",NA,NA,NA,NA,NA,NA,NA
 164,"14",NA,NA,NA,NA,NA,NA,NA,NA,"CRC","S. Cruz","pressured",NA,NA,NA,NA,NA,NA,NA
 165,"14",NA,"USA","Lloyd","dispossessed",NA,NA,NA,NA,"CRC","S. Cruz","dispossess.lost.touch",NA,NA,NA,NA,NA,NA,NA
@@ -190,8 +191,8 @@
 175,"15",NA,"USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 176,"15",NA,"USA","Heath","passes.f.c",NA,NA,NA,NA,"CRC","Herrera","pressured",NA,NA,NA,NA,NA,NA,NA
 176,"15",NA,NA,NA,NA,NA,NA,NA,NA,"CRC","Sanchez","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-177,"15",NA,"USA","Sauerbrunn","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-178,"15",NA,"USA","Horan","passes.s.c",NA,"A18","headed,flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+177,"15",NA,"USA","Sauerbrunn","passes.s.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+178,"15",NA,"USA","Horan","passes.s.c",NA,"A18","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 179,"15",NA,"USA","Morgan","shots.stopped.by.gk","A18",NA,NA,"GK","CRC","Diaz","gk.s.o.g.stop",NA,"parried.to.danger","diving",NA,NA,NA,NA
 179,"15",NA,NA,NA,NA,NA,NA,NA,NA,"CRC","Acosta","challenged",NA,NA,NA,NA,NA,NA,NA
 180,"15",NA,"USA","Dunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -205,7 +206,7 @@
 187,"16",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA
 188,"16",NA,"CRC","Alvarado","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 189,"16",NA,"CRC","Acosta","passes.f",NA,NA,"launch",NA,"USA","Krieger","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-190,"17",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+190,"17",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 190,"17",NA,"CRC","Barrantes",NA,NA,NA,NA,NA,"USA","Krieger",NA,NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA
 191,"17",NA,"CRC","Alvarado","passes.f",NA,NA,"free.kick,deep.crosses","GK","USA","Solo","gk.high.balls.won",NA,NA,NA,NA,NA,NA,NA
 192,"18","GK","USA","Solo","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -240,12 +241,12 @@
 218,"19",NA,"USA","Horan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 219,"19",NA,"USA","Krieger","passes.f.c",NA,NA,NA,NA,"CRC","Barrantes","pressured",NA,NA,NA,NA,NA,NA,NA
 220,"19",NA,"USA","Dunn","passes.b",NA,NA,NA,NA,"CRC","Rodriguez","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-221,"19",NA,"USA","Krieger","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-222,"19",NA,"USA","Lloyd","passes.s",NA,NA,"headed,flick.on",NA,"CRC","Rodriguez","blocks",NA,NA,NA,NA,NA,NA,NA
+221,"19",NA,"USA","Krieger","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+222,"19",NA,"USA","Lloyd","passes.s",NA,NA,"headed",NA,"CRC","Rodriguez","blocks",NA,NA,NA,NA,NA,NA,NA
 223,"19",NA,"CRC","Herrera","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 224,"19",NA,"CRC","Herrera","passes.b.c",NA,NA,NA,NA,"USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA
 225,"19",NA,"CRC","Alvarado","passes.f",NA,NA,NA,NA,"USA","Dunn","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-226,"19",NA,"USA","Krieger","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+226,"19",NA,"USA","Krieger","passes.b.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 227,"19",NA,"USA","Johnston","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 228,"19",NA,"USA","Brian","passes.f.c",NA,"AM3L",NA,NA,"CRC","Venegas","pressured",NA,NA,NA,NA,NA,NA,NA
 229,"19",NA,"USA","Heath","movement","AM3L","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -298,7 +299,7 @@
 271,"23",NA,"CRC","Acosta","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 272,"23","GK","CRC","Diaz","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 273,"23",NA,"CRC","Acosta","passes.f",NA,NA,NA,NA,"USA","Morgan","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-274,"24",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+274,"24",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 275,"24",NA,"CRC","Venegas","dispossessed",NA,NA,NA,NA,"USA","Brian","dispossess.ball.shield",NA,NA,NA,NA,NA,NA,NA
 275,"24",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Dunn","challenged",NA,NA,NA,NA,NA,NA,NA
 275,"24",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -315,7 +316,7 @@
 284,"24",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA
 285,"24",NA,"CRC","Acosta","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 286,"25",NA,"CRC","Acosta","passes.f",NA,NA,"launch",NA,"USA","Morgan","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-287,"25",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+287,"25",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 288,"25",NA,"CRC","Venegas","aerial.won",NA,NA,NA,NA,"USA","Krieger","aerial.lost",NA,NA,NA,NA,NA,NA,NA
 289,"25",NA,"USA","Johnston","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 290,"25",NA,"USA","Johnston","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -348,8 +349,8 @@
 315,"26","GK","CRC","Diaz","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 316,"26",NA,"CRC","Alvarado","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 317,"27",NA,"CRC","Acosta","passes.f",NA,NA,NA,NA,"USA","Lloyd","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-318,"27",NA,"USA","Krieger","passes.f",NA,NA,"throw.in",NA,"CRC","Alvarado","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-319,"27",NA,"USA","Krieger","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+318,"27",NA,"USA","Krieger","passes.f",NA,NA,"through",NA,"CRC","Alvarado","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
+319,"27",NA,"USA","Krieger","passes.b.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 320,"27",NA,"USA","Johnston","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 321,"27",NA,"USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 322,"27",NA,"USA","Heath","passes.s.c",NA,NA,NA,NA,"CRC","Herrera","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -447,7 +448,7 @@
 406,"35",NA,"CRC","D. Cruz","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 407,"35","GK","CRC","Diaz","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 408,"35",NA,"CRC","D. Cruz","passes.f",NA,NA,NA,NA,"USA","Krieger","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-409,"35",NA,"USA","Krieger","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+409,"35",NA,"USA","Krieger","passes.b.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 410,"35",NA,"USA","Brian","passes.f.c",NA,NA,NA,NA,"CRC","Barrantes","pressured",NA,NA,NA,NA,NA,NA,NA
 411,"35",NA,"USA","Krieger","passes.s.c",NA,NA,NA,NA,"CRC","Barrantes","pressured",NA,NA,NA,NA,NA,NA,NA
 412,"35",NA,"USA","Dunn","passes.b",NA,NA,NA,NA,"CRC","Herrera","interceptions",NA,NA,NA,NA,NA,NA,NA
@@ -598,7 +599,7 @@
 543,"45",NA,"CRC","Sanchez","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 544,"45",NA,"CRC","Alvarado","passes.s.c",NA,NA,NA,NA,"USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA
 545,"45",NA,"CRC","Sanchez","passes.f",NA,NA,NA,NA,"USA","Morgan","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-546,"45",NA,"CRC","Saenz","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+546,"45",NA,"CRC","Saenz","passes.s.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 547,"45",NA,"CRC","Rodriguez","dispossessed",NA,NA,NA,NA,"USA","Heath","dispossess.lost.touch",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 547,"45",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA
 548,"45",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -611,7 +612,7 @@
 555,"45+1",NA,"USA","Brian","passes.f.c",NA,NA,NA,NA,"CRC","Barrantes","pressured",NA,NA,NA,NA,NA,NA,NA
 556,"45+1",NA,"USA","Horan","passes.b",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 557,"45+1",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-558,"45+1",NA,"CRC","D. Cruz","passes.f",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+558,"45+1",NA,"CRC","D. Cruz","passes.f",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 559,"45+1",NA,"CRC","Barrantes","aerial.lost",NA,NA,NA,NA,"USA","Krieger","aerial.won",NA,NA,NA,NA,NA,NA,NA
 559,"45+1",NA,"CRC","Barrantes",NA,NA,NA,NA,NA,"USA","Dunn",NA,NA,NA,NA,"fouls.conceded",NA,"fouls.won",NA
 560,"45+1",NA,"USA","Brian","passes.b.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -635,7 +636,7 @@
 576,"45+2",NA,"CRC","Sanchez","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 577,"45+2",NA,"CRC","Alvarado","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 578,"45+2",NA,"CRC","Saenz","passes.f",NA,NA,NA,NA,"USA","Heath","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-579,"45+2",NA,"CRC","Saenz","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+579,"45+2",NA,"CRC","Saenz","passes.s.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 580,"45+2",NA,"CRC","S. Cruz","passes.b.c",NA,NA,NA,NA,"USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA
 581,"45+2",NA,"CRC","Alvarado","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 582,"45+2",NA,"CRC","Acosta","clearances",NA,NA,NA,NA,"USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -648,7 +649,7 @@
 589,"46",NA,"CRC","Herrera","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 590,"46",NA,"CRC","Herrera","passes.f",NA,NA,NA,NA,"USA","Heath","blocks",NA,NA,NA,NA,NA,NA,NA
 590,"46",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Heath","pressured",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-591,"46",NA,"CRC","Saenz","passes.f",NA,NA,"throw.in",NA,"USA","Klingenberg","blocks",NA,NA,NA,NA,NA,NA,NA
+591,"46",NA,"CRC","Saenz","passes.f",NA,NA,"through",NA,"USA","Klingenberg","blocks",NA,NA,NA,NA,NA,NA,NA
 592,"46",NA,"CRC","Herrera","aerial.won",NA,NA,NA,NA,"USA","Klingenberg","aerial.lost",NA,NA,NA,NA,NA,NA,NA
 593,"46",NA,"CRC","Herrera","passes.f.c",NA,NA,"headed",NA,"USA","Klingenberg","challenged",NA,NA,NA,NA,NA,NA,NA
 594,"46",NA,"CRC","Venegas","movement",NA,NA,NA,NA,"USA","Sauerbrunn","challenged",NA,NA,NA,NA,NA,NA,NA
@@ -666,7 +667,7 @@
 602,"47",NA,"CRC","Herrera","passes.b.c",NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 603,"47",NA,"CRC","S. Cruz","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 604,"47",NA,"CRC","Sanchez","dispossessed",NA,NA,NA,NA,"USA","Krieger","dispossess.lost.touch",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-605,"48",NA,"CRC","Saenz","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+605,"48",NA,"CRC","Saenz","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 606,"48",NA,"CRC","Venegas","passes.b.c",NA,NA,"lay.off",NA,"USA","Heath","pressured",NA,NA,NA,NA,NA,NA,NA
 607,"48",NA,"CRC","Saenz","take.on.lost",NA,NA,NA,NA,"USA","Horan","tackles.ball.away",NA,NA,NA,NA,NA,NA,NA
 608,"48",NA,"CRC","S. Cruz","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -685,7 +686,7 @@
 620,"48",NA,"USA","Morgan","passes.s.c",NA,NA,NA,NA,"CRC","S. Cruz","pressured",NA,NA,NA,NA,NA,NA,NA
 621,"48",NA,"USA","Heath","passes.b.c",NA,NA,NA,NA,"CRC","Herrera","pressured",NA,NA,NA,NA,NA,NA,NA
 622,"48",NA,"USA","Krieger","take.on.lost",NA,NA,NA,NA,"CRC","Herrera","tackles.ball.away",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-623,"48",NA,"USA","Krieger","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+623,"48",NA,"USA","Krieger","passes.b.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 624,"48",NA,"USA","Heath","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 625,"49",NA,"USA","Johnston","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 626,"49",NA,"USA","Johnston","passes.f",NA,NA,NA,NA,"CRC","S. Cruz","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -715,7 +716,7 @@
 648,"50",NA,"CRC","Herrera","clearances",NA,NA,NA,NA,"USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA
 649,"50",NA,"USA","Johnston","recoveries",NA,NA,NA,NA,"USA","Heath","challenged",NA,NA,NA,NA,NA,NA,NA
 650,"50",NA,"USA","Johnston","passes.f",NA,NA,"launch",NA,"CRC","Saenz","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-651,"50",NA,"USA","Heath","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+651,"50",NA,"USA","Heath","passes.b.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 652,"50",NA,"USA","Horan","take.on.won",NA,NA,NA,NA,"CRC","S. Cruz","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA
 653,"50",NA,"USA","Horan","passes.f.c",NA,NA,NA,NA,"CRC","Herrera","challenged",NA,NA,NA,NA,NA,NA,NA
 654,"50",NA,"USA","Heath","passes.s.c",NA,NA,NA,NA,"CRC","S. Cruz","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -743,7 +744,7 @@
 672,"52",NA,"CRC","Sanchez","passes.f",NA,NA,NA,NA,"USA","Lloyd","blocks",NA,NA,NA,NA,NA,NA,NA
 672,"52",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA
 672,"52",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Morgan","pressured",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-673,"52",NA,"CRC","Saenz","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+673,"52",NA,"CRC","Saenz","passes.s.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 674,"52",NA,"CRC","S. Cruz","passes.b.c",NA,NA,NA,NA,"USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA
 675,"52",NA,"CRC","Sanchez","passes.s.c",NA,NA,NA,NA,"USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA
 676,"52",NA,"CRC","Acosta","clearances",NA,NA,NA,NA,"USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -758,7 +759,7 @@
 684,"52",NA,"CRC","Rodriguez","take.on.won",NA,NA,NA,NA,"USA","Horan","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA
 685,"52",NA,"CRC","Rodriguez","passes.f.c",NA,NA,NA,NA,"USA","Dunn","challenged",NA,NA,NA,NA,NA,NA,NA
 685,"52",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Dunn","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-686,"53",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+686,"53",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 687,"53",NA,"CRC","Venegas","lost.touch",NA,NA,NA,NA,"USA","Krieger","challenged",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 688,"53","GK","USA","Solo","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 689,"53",NA,"USA","Brian","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -781,9 +782,9 @@
 703,"54",NA,"USA","Dunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 704,"54",NA,"USA","Dunn","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 705,"54",NA,"USA","Morgan","lost.touch",NA,NA,NA,NA,"CRC","Sanchez","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-706,"54",NA,"USA","Krieger","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+706,"54",NA,"USA","Krieger","passes.s.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 707,"54",NA,"USA","Horan","aerial.won",NA,NA,NA,NA,"CRC","Granados","aerial.lost",NA,NA,NA,NA,NA,NA,NA
-708,"54",NA,"USA","Horan","passes.b.c",NA,"A18","flick.on,headed",NA,"CRC","Granados","challenged",NA,NA,NA,NA,NA,NA,NA
+708,"54",NA,"USA","Horan","passes.b.c",NA,"A18","flick.on",NA,"CRC","Granados","challenged",NA,NA,NA,NA,NA,NA,NA
 709,"54",NA,"USA","Dunn","shots.missed","A18",NA,NA,NA,"CRC","Acosta","pressured","D18",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 709,"54",NA,NA,NA,NA,NA,NA,NA,"GK","CRC","Diaz","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA
 710,"55","GK","CRC","Diaz","passes.f",NA,NA,"goal.kick,launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -915,6 +916,7 @@
 817,"61",NA,"USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 818,"61",NA,"USA","Krieger","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 819,"61",NA,"USA","Lloyd","passes.s.c",NA,"A6","corner.crosses",NA,"CRC","Rodriguez","pressured",NA,NA,NA,NA,"assists",NA,NA
+819,"61",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA
 820,"62",NA,"USA","Morgan","shots.scored","A6",NA,NA,NA,"CRC","Saenz","pressured","D6",NA,NA,NA,"big.chances.scored",NA,NA
 820,"62",NA,NA,NA,NA,NA,NA,NA,"GK","CRC","Diaz","gk.s.o.g.scored","D6","missed.the.ball","reaching",NA,NA,NA,NA
 821,"62",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -927,7 +929,7 @@
 828,"63",NA,"CRC","Acosta","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 829,"63",NA,"CRC","D. Cruz","passes.b.c",NA,NA,NA,NA,"USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA
 830,"63",NA,"CRC","Acosta","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-831,"63",NA,"USA","Krieger","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+831,"63",NA,"USA","Krieger","passes.s.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 832,"63",NA,"USA","Horan","passes.b.c",NA,NA,NA,NA,"CRC","Venegas","pressured",NA,NA,NA,NA,NA,NA,NA
 833,"63",NA,"USA","Johnston","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 834,"63",NA,"USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1019,7 +1021,7 @@
 915,"69",NA,"CRC","Sanchez","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 916,"69",NA,"CRC","Acosta","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 917,"70",NA,"CRC","K. Villalobos","passes.s",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-918,"70",NA,"USA","Klingenberg","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+918,"70",NA,"USA","Klingenberg","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 919,"70",NA,"USA","Lloyd","passes.s",NA,NA,"flick.on",NA,"CRC","Acosta","challenged",NA,NA,NA,NA,NA,NA,NA
 920,"70",NA,"CRC","Acosta","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 921,"70",NA,"CRC","Acosta","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1047,7 +1049,7 @@
 940,"71",NA,"USA","Lloyd","passes.f.c",NA,NA,NA,NA,"CRC","S. Cruz","challenged",NA,NA,NA,NA,NA,NA,NA
 941,"71",NA,"USA","Pugh","passes.b.c",NA,NA,NA,NA,"CRC","Saenz","challenged",NA,NA,NA,NA,NA,NA,NA
 942,"71",NA,"USA","Heath","passes.f",NA,NA,"lay.off",NA,"CRC","Sanchez","clearances",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-943,"72",NA,"USA","Heath","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+943,"72",NA,"USA","Heath","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 944,"72",NA,"USA","Horan","take.on.won",NA,NA,NA,NA,"CRC","Saenz","dribbled.turned",NA,NA,NA,NA,NA,NA,NA
 945,"72",NA,"USA","Horan","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 946,"72",NA,"USA","Horan","passes.s.c",NA,NA,"corner.crosses",NA,"CRC","Saenz","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -1080,7 +1082,7 @@
 971,"74",NA,"USA","Morgan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 972,"74",NA,"USA","Johnston","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 973,"74",NA,"USA","Press","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-974,"74",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+974,"74",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 975,"74",NA,"CRC","Venegas","aerial.won",NA,NA,NA,NA,"USA","Klingenberg","aerial.lost",NA,NA,NA,NA,NA,NA,NA
 976,"74",NA,"USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 977,"74",NA,"USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1117,7 +1119,7 @@
 1007,"76",NA,"USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1008,"76",NA,"USA","Horan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1009,"76",NA,"USA","Morgan","lost.touch",NA,NA,NA,NA,"CRC","Sanchez","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-1010,"76",NA,"USA","Hinkle","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1010,"76",NA,"USA","Hinkle","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1011,"76",NA,"USA","Press","passes.f.c",NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1012,"76",NA,"USA","Heath","take.on.won",NA,NA,NA,NA,"CRC","Sanchez","dribbled.turned",NA,NA,NA,NA,NA,NA,NA
 1013,"76",NA,"USA","Heath","passes.s",NA,NA,"corner.crosses",NA,"CRC","Granados","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -1132,7 +1134,7 @@
 1020,"77",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA
 1021,"77","GK","CRC","Diaz","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1022,"77","GK","CRC","Diaz","passes.f",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-1023,"77",NA,"USA","Klingenberg","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1023,"77",NA,"USA","Klingenberg","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1024,"77",NA,"USA","Press","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1025,"77",NA,"USA","Brian","passes.f.c",NA,NA,NA,NA,"CRC","Venegas","pressured",NA,NA,NA,NA,NA,NA,NA
 1026,"77",NA,"USA","Lloyd","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1140,7 +1142,7 @@
 1028,"77",NA,"USA","Lloyd","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1029,"78",NA,"USA","Heath","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1030,"78",NA,"USA","Hinkle","passes.f",NA,NA,NA,NA,"CRC","Barrantes","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-1031,"78",NA,"CRC","Saenz","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1031,"78",NA,"CRC","Saenz","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1032,"78",NA,"CRC","Barrantes","aerial.won",NA,NA,NA,NA,"USA","Hinkle","aerial.lost",NA,NA,NA,NA,NA,NA,NA
 1033,"78",NA,"USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1034,"78",NA,"USA","Horan","passes.b.c",NA,NA,NA,NA,"CRC","Venegas","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -1171,15 +1173,15 @@
 1059,"79",NA,"CRC","S. Cruz","substitution.off",NA,NA,NA,NA,"USA","Hinkle","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 1060,"80",NA,"CRC","G. Villalobos","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1061,"80",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1062,"80",NA,"CRC","Saenz","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1062,"80",NA,"CRC","Saenz","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1063,"81",NA,"CRC","Barrantes","lost.touch",NA,NA,NA,NA,"USA","Heath","challenged",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 1063,"81",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Brian","challenged",NA,NA,NA,NA,NA,NA,NA
-1064,"81",NA,"USA","Hinkle","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1064,"81",NA,"USA","Hinkle","passes.b.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1065,"81",NA,"USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1066,"81",NA,"USA","Horan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1067,"81",NA,"USA","Lloyd","dispossessed",NA,NA,NA,NA,"CRC","Rodriguez","tackles.ball.away",NA,NA,NA,NA,NA,NA,NA
 1068,"81",NA,"CRC","Granados","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1069,"81",NA,"CRC","Granados","passes.f",NA,NA,"launch",NA,"USA","Klingenberg","interceptions",NA,NA,NA,NA,NA,NA,NA
+1069,"81",NA,"CRC","Granados","passes.f",NA,NA,"launch",NA,"USA","Klingenberg","interceptions","A18",NA,NA,NA,NA,NA,NA
 1070,"81",NA,"USA","Klingenberg","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1071,"81",NA,"USA","Pugh","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1072,"81",NA,"USA","Klingenberg","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1220,7 +1222,7 @@
 1106,"83",NA,"USA","Press","shots.scored","A18",NA,NA,NA,"CRC","Acosta","pressured","D18",NA,NA,NA,"big.chances.scored",NA,NA
 1106,"83",NA,NA,NA,NA,NA,NA,NA,"GK","CRC","Diaz","gk.s.o.g.scored","D6","missed.the.ball","reaching",NA,NA,NA,NA
 1107,"83",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1108,"84",NA,"USA","Klingenberg","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1108,"84",NA,"USA","Klingenberg","passes.b.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1109,"84",NA,"USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1110,"84",NA,"USA","Brian","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1111,"84",NA,"USA","Brian","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1234,7 +1236,7 @@
 1119,"85",NA,"USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1120,"85",NA,"USA","Klingenberg","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1121,"85",NA,"USA","Lloyd","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-1122,"86",NA,"CRC","Saenz","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1122,"86",NA,"CRC","Saenz","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1123,"86",NA,"CRC","Barrantes","passes.f.c",NA,NA,NA,NA,"USA","Brian","challenged",NA,NA,NA,NA,NA,NA,NA
 1123,"86",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Heath","challenged",NA,NA,NA,NA,NA,NA,NA
 1123,"86",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Heath","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
@@ -1278,7 +1280,7 @@
 1158,"87",NA,"USA","Hinkle","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1159,"87",NA,"USA","Lloyd","passes.b.c",NA,NA,NA,NA,"CRC","Venegas","challenged",NA,NA,NA,NA,NA,NA,NA
 1160,"88",NA,"USA","Brian","passes.f",NA,NA,NA,NA,"CRC","G. Villalobos","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-1161,"88",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1161,"88",NA,"CRC","D. Cruz","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1162,"88",NA,"CRC","G. Villalobos","aerial.won",NA,NA,NA,NA,"USA","Klingenberg","aerial.lost",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA
 1163,"88",NA,"CRC","Acosta","passes.f.c",NA,NA,"free.kick,launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1164,"88",NA,"CRC","K. Villalobos","aerial.won",NA,NA,NA,NA,"USA","Brian","aerial.lost",NA,NA,NA,NA,NA,NA,NA
@@ -1289,7 +1291,7 @@
 1169,"89",NA,"CRC","Acosta","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1170,"89",NA,"CRC","Acosta","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1171,"89",NA,"CRC","Sanchez","clearances",NA,NA,NA,NA,"USA","Press","challenged",NA,NA,NA,NA,NA,NA,NA
-1172,"89",NA,"USA","Heath","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1172,"89",NA,"USA","Heath","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1173,"89",NA,"USA","Press","passes.b",NA,NA,"flick.on",NA,"CRC","Rodriguez","interceptions",NA,NA,NA,NA,NA,NA,NA
 1174,"89",NA,"CRC","Rodriguez","dispossessed",NA,NA,NA,NA,"USA","Horan","tackles.ball.away",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 1175,"89",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1301,7 +1303,7 @@
 1181,"90",NA,"USA","Klingenberg","passes.f.c",NA,NA,"corner.crosses",NA,"CRC","K. Villalobos","pressured",NA,NA,NA,NA,NA,NA,NA
 1181,"90",NA,NA,NA,NA,NA,NA,NA,NA,"CRC","Acosta","blocks",NA,NA,NA,NA,NA,NA,NA
 1181,"90",NA,NA,NA,NA,NA,NA,NA,NA,"CRC","D. Cruz","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-1182,"90",NA,"USA","Klingenberg","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1182,"90",NA,"USA","Klingenberg","passes.b.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1183,"90",NA,"USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1184,"90",NA,"USA","Horan","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1185,"90",NA,"USA","Horan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1313,7 +1315,7 @@
 1191,"90",NA,"CRC","D. Cruz","passes.f.c",NA,NA,NA,NA,"USA","Press","challenged",NA,NA,NA,NA,NA,NA,NA
 1192,"90",NA,"CRC","K. Villalobos","take.on.lost",NA,NA,NA,NA,"USA","Pugh","challenged",NA,NA,NA,NA,NA,NA,NA
 1192,"90",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Press","tackles.ball.away",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-1193,"90+1",NA,"CRC","D. Cruz","passes.f",NA,NA,"throw.in",NA,"USA","Pugh","interceptions",NA,NA,NA,NA,NA,NA,NA
+1193,"90+1",NA,"CRC","D. Cruz","passes.f",NA,NA,"through",NA,"USA","Pugh","interceptions",NA,NA,NA,NA,NA,NA,NA
 1194,"90+1",NA,"USA","Pugh","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1195,"90+1",NA,"USA","Press","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1196,"90+1",NA,"USA","Hinkle","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1336,7 +1338,7 @@
 1211,"90+1",NA,"CRC","Barrantes","passes.f.c",NA,NA,NA,NA,"USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA
 1211,"90+1",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Brian","blocks",NA,NA,NA,NA,NA,NA,NA
 1212,"90+1",NA,"CRC","Sanchez","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-1213,"90+2",NA,"USA","Hinkle","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1213,"90+2",NA,"USA","Hinkle","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1214,"90+2",NA,"USA","Morgan","aerial.won",NA,NA,NA,NA,"CRC","Acosta","aerial.lost",NA,NA,NA,NA,NA,NA,NA
 1215,"90+2",NA,"USA","Morgan","passes.b.c",NA,NA,"lay.off",NA,"CRC","Acosta","challenged",NA,NA,NA,NA,NA,NA,NA
 1216,"90+2",NA,"USA","Press","passes.s.c",NA,NA,NA,NA,"CRC","Sanchez","pressured",NA,NA,NA,NA,NA,NA,NA
