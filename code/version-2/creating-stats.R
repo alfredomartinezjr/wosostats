@@ -302,10 +302,10 @@ t6[is.na(t6)] <- 0
 t6[,"KP Goal"] <- (t6[,"Key Assists"] + t6[,"Second Assists"])/t6[,"Key Passes"]
 t6 <- t6[order(-t6[,"Assists"], -t6[,"Key Passes"]),]
 rm(t, t1, t2, t3, t4, t5)
-t6$`Assists per 90` <- NA
-t6$`Key Passes per 90` <- NA
-t6$`Assists per Pass` <- NA
-t6$`Key Passes per Pass` <- NA
+t6$`Assists per 90` <- numeric(nrow(t6))
+t6$`Key Passes per 90` <- numeric(nrow(t6))
+t6$`Assists per Pass` <- numeric(nrow(t6))
+t6$`Key Passes per Pass` <- numeric(nrow(t6))
 
 all <-merge(all, t6, by="Player", all=TRUE)
 rm(t6)
