@@ -8,6 +8,7 @@ If you'd like to contribute to our growing knowledge base about women's soccer s
 As for competitions and teams for which there is a need for help, and for which I am confident there will be a reliable availability of downloads or replays of matches:
 * **All NWSL 2016 season matches**
 * **All USA matches**
+* **All England matches**
 * **The 2016 Olympics**
 * **FA WSL matches that will be televised**
 * If there is a team or competition out there that is not listed above that you know has replays/downloads available for a significant number of matches, and if you are willing to help log matches, let me know.
