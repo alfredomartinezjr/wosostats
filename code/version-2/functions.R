@@ -109,7 +109,7 @@ addMultiColumnsForQualifiers <- function(patterns, pattern_locations, ogdf, ndf,
 addColumnForMultiQualifiers <- function(pattern, newcol, ogdf, ndf, exp, invert=FALSE) {
   ndf[,newcol] <- NA
   x <- 1
-  if (exp = "OR") {
+  if (exp == "OR") {
     #then condition is satisfied if any of the columns are TRUE
   }
   while(x <= nrow(ndf)) {
