@@ -67,23 +67,44 @@ fillBlanks <- function(df) {
 
 # 4.
 ## Adds column that fills in yes/no values based on qualifiers
-addColumnForQualifier <- function (newcol, pattern, patternLocation, ogdf, ndf) {
+addColumnForQualifier <- function (newcol, pattern, patternLocation, ogdf, ndf, invert=FALSE) {
+  #By default, a row is marked as "yes" if a pattern is found. If you want the opposite,
+  #the invert should be set to FALSE
+  if (invert==TRUE) {
+    success <- "no"
+    failure <- "yes"
+  } else {
+    success <- "yes"
+    failure <- "no"
+  }
   ndf[,newcol] <- NA
   x <- 1
   while (x <= nrow(ndf)) {
     e <- ndf[x,"event"]
     v <- ogdf[ogdf[,"event"] == e,patternLocation]
     if (grepl(pattern, paste(v, collapse = "|")) == TRUE) {
-      ndf[x,newcol] = "yes"
+      ndf[x,newcol] = success
     } else {
-      ndf[x,newcol] = "no"
+      ndf[x,newcol] = failure
     }
     x <- x + 1
   }
   ndf
 }
 
-# 5.
+##Adds a column for qualifiers across multiple columns
+## "patterns" should be a vector where each element's name is the column where the qualifier
+## is to be found, and the element is the pattern we're looking for in that column
+addMultiColumnsForQualifiers <- function(newcol, patterns, ogdf, ndf, invert=FALSE) {
+  #temporary dataframe where each qualifier will get its own column
+  temp <- ndf
+  #creates a new column for each qualifier in "patterns"
+  for(i in 1:length(patterns)) {
+    temp[,names(patterns[1])] <- NA
+  }
+  ndf
+}
+
 ## Fills in blanks and then gets rid of duplicates. Is poss-focused
 createCleanDataFrame <- function(pattern, col, df) {
   t <- createDataFrame(pattern, col, df)
@@ -100,7 +121,6 @@ createCleanDataFrame <- function(pattern, col, df) {
   t
 }
 
-# 6. 
 ## Create passing table
 createPassingTable <- function(df, extra=NA){
   if (is.na(extra[1])){
@@ -225,6 +245,8 @@ while(x <= nrow(t)) {
     x <- x + 1
   }
 }
+t <- addColumnForQualifier("new_col", pattern = "pressured")
+
 ## Create table with a column for shots under and not under pressure
 t2 <- createTable(c("yes", "pct", "total", "no"), "pressed", t)
 ## Add "total" and "pct" values

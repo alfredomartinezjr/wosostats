@@ -79,6 +79,19 @@ addColumnForQualifier <- function (newcol, pattern, patternLocation, ogdf, ndf) 
   ndf
 }
 
+# 4.
+## Adds a column for qualifiers across multiple columns
+## "patterns" should be a vector where each element's name is the column where the qualifier
+## is to be found, and the element is the pattern we're looking for in that column
+addMultiColumnsForQualifiers <- function(newcol, patterns, pattern_locations, ogdf, ndf, invert=FALSE) {
+  #creates a new column for each qualifier in "patterns"
+  for(i in 1:length(patterns)) {
+    ndf[,names(patterns[i])] <- NA
+    ndf <- addColumnForQualifier(names(patterns[i]), patterns[i], pattern_locations[i], d, ndf)
+  }
+  ndf
+}
+
 # 5.
 ## Fills in blanks and then gets rid of duplicates. Is poss-focused
 createCleanDataFrame <- function(pattern, col, df) {
