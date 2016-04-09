@@ -67,11 +67,11 @@ addColumnForQualifier <- function (newcol, pattern, patternLocation, ogdf, ndf, 
   ## By default, if a condition is satisfied then the row is filled in with "yes"
   ## set "invert" as TRUE if you'd like to flip this
   if (invert == TRUE){
-    success = "yes"
-    failure = "no"
-  } else {
     success = "no"
     failure = "yes"
+  } else {
+    success = "yes"
+    failure = "no"
   }
   ndf[,newcol] <- NA
   x <- 1
