@@ -69,7 +69,7 @@ addColumnForQualifier <- function (newcol, pattern, patternLocation, ogdf, ndf, 
   if (invert == TRUE){
     success = "no"
     failure = "yes"
-  } else {
+  } else { #default
     success = "yes"
     failure = "no"
   }
@@ -92,7 +92,7 @@ addColumnForQualifier <- function (newcol, pattern, patternLocation, ogdf, ndf, 
 ## Adds a column for qualifiers across multiple columns
 ## "patterns" should be a vector where each element's name is the column where the qualifier
 ## is to be found, and the element is the pattern we're looking for in that column
-addMultiColumnsForQualifiers <- function(patterns, pattern_locations, ogdf, ndf, invert=FALSE) {
+addMultiColumnsForQualifiers <- function(patterns, pattern_locations, ogdf, ndf) {
   #creates a new column for each qualifier in "patterns"
   for(i in 1:length(patterns)) {
     ndf[,names(patterns[i])] <- NA
@@ -106,21 +106,51 @@ addMultiColumnsForQualifiers <- function(patterns, pattern_locations, ogdf, ndf,
 ## "patterns" here will have each element be a column's pattern, and the element's name
 ## will be the name of the column to be searched
 ## "exp" is the type of expression. Such as, is it an OR, AND search
-addColumnForMultiQualifiers <- function(pattern, newcol, ogdf, ndf, exp, invert=FALSE) {
-  ndf[,newcol] <- NA
-  x <- 1
+addColumnForMultiQualifiers <- function(pattern, newcol, df, exp, invert=FALSE) {
   if (exp == "OR") {
+    df[,newcol] <- "no"
     #then condition is satisfied if any of the columns are TRUE
-  }
-  while(x <= nrow(ndf)) {
-    if (t[x,"pressured"] == "yes" | t[x,"challenged"] == "yes") {
-      t[x,"pressed"] <- "yes"
+    x <- 1
+    while(x <= nrow(df)) {
+      #subsets df to only the row in question
+      subsetcol <- df[x,names(pattern)]
+      y <- 1
+      #goes through each column to find a TRUE
+      while(y <= ncol(subsetcol)){
+        if (subsetcol[,names(pattern[y])] == pattern[y]) {
+          df[x,newcol] <- "yes"
+        }
+        y <- y + 1
+      }
       x <- x + 1
-    } else {
-      t[x,"pressed"] <- "no"
+    }
+  } else if (exp == "AND") {
+    #then condition is satisfied if all of the columns are TRUE
+    df[,newcol] <- "yes"
+    x <- 1
+    while(x <= nrow(df)) {
+      #subsets df to only the row in question
+      subsetcol <- df[x,names(pattern)]
+      y <- 1
+      #goes through each column to find a FALSE
+      while(y <= ncol(subsetcol)){
+        if (subsetcol[,names(pattern[y])] != pattern[y]) {
+          df[x,newcol] <- "no"
+        }
+        y <- y + 1
+      }
       x <- x + 1
     }
   }
+  df
+}
+
+if (ndf[x,names(pattern)] == "yes" | t[x,"challenged"] == "yes") {
+  t[x,"pressed"] <- "yes"
+  x <- x + 1
+} else {
+  t[x,"pressed"] <- "no"
+  x <- x + 1
 }
 
 # 6.

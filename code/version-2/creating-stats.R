@@ -94,24 +94,12 @@ all$`Shots per 90` <- (all$Shots/all$MP)*90
 rm(shots, players)
 
 #SHOTS UNDER PRESSURE---------------
-t <- createCleanDataFrame(c("shots", "accuracy", "shots.scored", "shots.stopped.by.gk", 
-                            "shots.stopped.by.def", "shots.missed") ,"poss.action", d)
-## Adds column for whether shot is "pressured" or "challenged"
-t <- addColumnForQualifier("pressured", "pressured", "def.action", d, t)
-t <- addColumnForQualifier("challenged", "challenged", "def.action", d, t)
-t$pressed <- NA
-x <- 1
-while(x <= nrow(t)) {
-  if (t[x,"pressured"] == "yes" | t[x,"challenged"] == "yes") {
-    t[x,"pressed"] <- "yes"
-    x <- x + 1
-  } else {
-    t[x,"pressed"] <- "no"
-    x <- x + 1
-  }
-}
-t <- addColumnForQualifier("new_col", pattern = "pressured")
-
+t <- addMultiColumnsForQualifiers(patterns = c("pressured"="pressure", "challenged"="challenge"), 
+                                  pattern_locations = c("def.action", "def.action"), ogdf = d,
+                                  ndf = createCleanDataFrame(c("shots", "accuracy", "shots.scored", "shots.stopped.by.gk", 
+                                                         "shots.stopped.by.def", "shots.missed") ,"poss.action", d))
+t <- addColumnForMultiQualifiers(c("pressured"="yes","challenged"="yes"), newcol = "pressed",
+                                 df = t, exp="OR")
 ## Create table with a column for shots under and not under pressure
 t2 <- createTable(c("yes", "pct", "total", "no"), "pressed", t)
 ## Add "total" and "pct" values
