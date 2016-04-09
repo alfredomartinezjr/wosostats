@@ -63,16 +63,25 @@ fillBlanks <- function(df) {
 
 # 4.
 ## Adds column that fills in yes/no values based on qualifiers
-addColumnForQualifier <- function (newcol, pattern, patternLocation, ogdf, ndf) {
+addColumnForQualifier <- function (newcol, pattern, patternLocation, ogdf, ndf, invert=FALSE) {
+  ## By default, if a condition is satisfied then the row is filled in with "yes"
+  ## set "invert" as TRUE if you'd like to flip this
+  if (invert = TRUE){
+    success = "yes"
+    failure = "no"
+  } else {
+    success = "no"
+    failure = "yes"
+  }
   ndf[,newcol] <- NA
   x <- 1
   while (x <= nrow(ndf)) {
     e <- ndf[x,"event"]
     v <- ogdf[ogdf[,"event"] == e,patternLocation]
     if (grepl(pattern, paste(v, collapse = "|")) == TRUE) {
-      ndf[x,newcol] = "yes"
+      ndf[x,newcol] = success
     } else {
-      ndf[x,newcol] = "no"
+      ndf[x,newcol] = failure
     }
     x <- x + 1
   }
@@ -87,9 +96,31 @@ addMultiColumnsForQualifiers <- function(patterns, pattern_locations, ogdf, ndf,
   #creates a new column for each qualifier in "patterns"
   for(i in 1:length(patterns)) {
     ndf[,names(patterns[i])] <- NA
-    ndf <- addColumnForQualifier(names(patterns[i]), patterns[i], pattern_locations[i], d, ndf)
+    ndf <- addColumnForQualifier(names(patterns[i]), patterns[i], pattern_locations[i], ogdf, ndf)
   }
   ndf
+}
+
+# 6.
+## Adds column that looks for multiple qualifiers across multiple columns
+## "patterns" here will have each element be a column's pattern, and the element's name
+## will be the name of the column to be searched
+## "exp" is the type of expression. Such as, is it an OR, AND search
+addColumnForMultiQualifiers <- function(pattern, newcol, ogdf, ndf, exp, invert=FALSE) {
+  ndf[,newcol] <- NA
+  x <- 1
+  if (exp = "OR") {
+    #then condition is satisfied if any of the columns are TRUE
+  }
+  while(x <= nrow(ndf)) {
+    if (t[x,"pressured"] == "yes" | t[x,"challenged"] == "yes") {
+      t[x,"pressed"] <- "yes"
+      x <- x + 1
+    } else {
+      t[x,"pressed"] <- "no"
+      x <- x + 1
+    }
+  }
 }
 
 # 6.
