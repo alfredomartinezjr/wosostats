@@ -66,7 +66,7 @@ fillBlanks <- function(df) {
 addColumnForQualifier <- function (newcol, pattern, patternLocation, ogdf, ndf, invert=FALSE) {
   ## By default, if a condition is satisfied then the row is filled in with "yes"
   ## set "invert" as TRUE if you'd like to flip this
-  if (invert = TRUE){
+  if (invert == TRUE){
     success = "yes"
     failure = "no"
   } else {
