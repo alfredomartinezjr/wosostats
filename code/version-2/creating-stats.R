@@ -573,51 +573,11 @@ all <- merge(all, t5, by=1, all=TRUE)
 rm(t5)
 
 #GK BIG CHANCES SOG FACED----------
-t <- createDataFrame(c("gk.s.o.g.stop", "gk.s.o.g.def.stop","gk.s.o.g.scored"), "def.action", d)
-##Create blank "BC SOG Faced", "BC Saves" & "BC Goals Allowed" columns
-t$BC.SOG.Faced <- NA
-t$BC.Saves <- NA
-t$BC.Goals.Allowed <- NA
-##Fill in "BC SOG Faced" column based on if a big chance SOG is logged in "poss.notes"
-x <- 1
-while (x <= length(unique(t$event))) {
-  #Checks if an event has a big chance SOG
-  if (grepl("big.chances.scored|big.chances.shot.on.goal",
-            paste(unlist(strsplit(t[t[,"event"] == unique(t$event)[x],"poss.notes"], ","), 
-                         recursive=TRUE), 
-                  sep="", 
-                  collapse=" "))) {
-    t[t[,"event"] == unique(t$event)[x],"BC.SOG.Faced"] <- "yes"
-  } else {
-    t[t[,"event"] == unique(t$event)[x],"BC.SOG.Faced"] <- "no"
-  }
-  #Checks if an event is a big chance saved
-  if (grepl("gk.s.o.g.stop",
-           paste(unlist(strsplit(t[t[,"event"] == unique(t$event)[x],"def.action"], ","), 
-                        recursive=TRUE), 
-                 sep="", 
-                 collapse=" ")) && 
-      grepl("yes",
-            paste(unlist(strsplit(t[t[,"event"] == unique(t$event)[x],"BC.SOG.Faced"], ","), 
-                         recursive=TRUE), 
-                  sep="", 
-                  collapse=" "))) {
-    t[t[,"event"] == unique(t$event)[x],"BC.Saves"] <- "yes"
-  } else {
-    t[t[,"event"] == unique(t$event)[x],"BC.Saves"] <- "no"
-  }
-  #Checks if an event has a big chance scored
-  if (grepl("big.chances.scored",
-            paste(unlist(strsplit(t[t[,"event"] == unique(t$event)[x],"poss.notes"], ","), 
-                         recursive=TRUE), 
-                  sep="", 
-                  collapse=" "))) {
-    t[t[,"event"] == unique(t$event)[x],"BC.Goals.Allowed"] <- "yes"
-  } else {
-    t[t[,"event"] == unique(t$event)[x],"BC.Goals.Allowed"] <- "no"
-  }
-  x <- x + 1
-}
+t <- addMultiColumnsForQualifiers(patterns=c("BC.SOG.Faced"="big.chances.scored|big.chances.shot.on.goal","BC.Goals.Allowed"="big.chances.scored"),
+                                     pattern_locations = c("poss.notes", "poss.notes"),
+                                     ogdf = d, ndf = createDataFrame(c("gk.s.o.g.stop", "gk.s.o.g.def.stop","gk.s.o.g.scored"), "def.action", d))
+t <- addColumnForMultiQualifiers(newcol = "BC.Saves", df = t, exp = "AND", 
+                                    pattern = c("BC.SOG.Faced"="yes", "def.action"="gk.s.o.g.stop"))
 #Shift def columns to be poss columns, to be readable by createTable function
 t <- t[grep("gk", t[,"def.action"]),c("event","time","def.position", "def.team", "def.player", "def.action",
                                       "def.location", "gk.ball.stop", "gk.s.o.g.attempt", "poss.player.disciplinary", 
@@ -636,23 +596,15 @@ all <- merge(all, t2, by="Player", all=TRUE)
 rm(t, t2)
 
 #GK HIGH BALLS FACED----------
-t <- createDataFrame(c("gk.high.balls.won","gk.high.balls.lost"), "def.action", d)
-## Add column for whether a high ball was won
-t <- addColumnForQualifier("hbwon", "gk.high.balls.won", "def.action", d, t)
-## Add column for whether a high ball was lost
-t <- addColumnForQualifier("hblost", "gk.high.balls.lost", "def.action", d, t)
-## Add column for whether an event is a cross
-t <- addColumnForQualifier("cross", "cross", "play.type", d, t)
-## Add column for whether an event is a corner kick
-t <- addColumnForQualifier("corner.kick", "corner.kick", "play.type", d, t)
-## Add column for whether an event is a free kick
-t <- addColumnForQualifier("free.kick", "free.kick", "play.type", d, t)
-## Add columns for how high balls were won
-t <- addColumnForQualifier("caught", "caught", "gk.ball.stop", d, t)
-t <- addColumnForQualifier("punched.away", "punched.to.safety", "gk.ball.stop", d, t)
-t <- addColumnForQualifier("parried.away", "parried.to.safety", "gk.ball.stop", d, t)
-t <- addColumnForQualifier("collected", "collected", "gk.ball.stop", d, t)
-t <- addColumnForQualifier("foul.won", "fouls.won", "gk.ball.stop", d, t)
+t <- addMultiColumnsForQualifiers(patterns = c("hbwon"="gk.high.balls.won", "hblost"="gk.high.balls.lost", "cross"="cross",
+                                                  "corner.kick"="corner.kick","free.kick"="free.kick", "caught"="caught",
+                                                  "punched.away"="punched.to.safety", "parried.away"="parried.to.safety",
+                                                  "collected"="collected","foul.won"="fouls.won"),
+                                     pattern_locations = c("def.action", "def.action", "play.type","play.type",
+                                                           "play.type",  "gk.ball.stop", "gk.ball.stop", "gk.ball.stop",
+                                                           "gk.ball.stop", "gk.ball.stop"),
+                                     ogdf = d, ndf = createDataFrame(c("gk.high.balls.won","gk.high.balls.lost"), "def.action", d))
+
 ## Only goalkeepers
 t <- t[grep("[Gg][Kk]", t[,"def.position"]),]
 t$poss.player <- t$def.player
@@ -670,8 +622,6 @@ t2 <- merge(t2, createTable(c("yes", "no"), "collected", t)[,c("Player", "yes")]
 names(t2)[8] <- "HB Collected"
 t2 <- merge(t2, createTable(c("yes", "no"), "foul.won", t)[,c("Player", "yes")], by="Player", all=TRUE)
 names(t2)[9] <- "HB Fouls Won"
-
-
 t2 <- merge(t2, createTable(c("yes", "no"), "cross", t)[,c("Player", "yes")], by="Player", all=TRUE)
 names(t2)[10] <- "Crosses"
 t2 <- merge(t2, createTable(c("yes", "no"), "hbwon", t[t["cross"]=="yes",]), by="Player", all=TRUE)
@@ -684,7 +634,6 @@ t2 <- merge(t2, createTable(c("yes", "no"), "free.kick", t)[,c("Player", "yes")]
 names(t2)[16] <- "Free Kicks"
 t2 <- merge(t2, createTable(c("yes", "no"), "hbwon", t[t["free.kick"]=="yes",]), by="Player", all=TRUE)
 names(t2)[17:18] <- c("FKs Won", "FKs Lost")
-
 all <- merge(all, t2, by=1, all=TRUE)
 rm(t, t2)
 
@@ -701,86 +650,28 @@ rm(smothers)
 
 #GK DISTRIBUTION----------
 #Create clean data frame with only goalkeeper passing events
-t <- createDataFrame(c("passes.f.c", "passes.f", 
-                            "passes.s.c", "passes.s", "passes.b.c", "passes.b"), 
-                          "poss.action", 
-                          d[grep("[Gg][Kk]", d[,"poss.position"]),])
-##Create blank "gkthrow", "gkdropkick", and "gkfk" columns
-t$gkthrow <- NA
-t$gkdropkick <- NA
-t$gkfk <- NA
-x <- 1
-while (x <= length(unique(t$event))) {
-  if (grepl("gk.throw",
-            paste(unlist(strsplit(t[t[,"event"] == unique(t$event)[x],"play.type"], ","), 
-                         recursive=TRUE), 
-                  sep="", 
-                  collapse=" "))) {
-    t[t[,"event"] == unique(t$event)[x],"gkthrow"] <- "throw"
-  } else {
-    t[t[,"event"] == unique(t$event)[x],"gkthrow"] <- "no"
-  }
-  if (grepl("gk.drop.kick",
-            paste(unlist(strsplit(t[t[,"event"] == unique(t$event)[x],"play.type"], ","), 
-                         recursive=TRUE), 
-                  sep="", 
-                  collapse=" "))) {
-    t[t[,"event"] == unique(t$event)[x],"gkdropkick"] <- "dropkick"
-  } else {
-    t[t[,"event"] == unique(t$event)[x],"gkdropkick"] <- "no"
-  }
-  if (grepl("goal.kick|free.kick",
-            paste(unlist(strsplit(t[t[,"event"] == unique(t$event)[x],"play.type"], ","), 
-                         recursive=TRUE), 
-                  sep="", 
-                  collapse=" "))) {
-    t[t[,"event"] == unique(t$event)[x],"gkfk"] <- "goalfreekick"
-  } else {
-    t[t[,"event"] == unique(t$event)[x],"gkfk"] <- "no"
-  }
-  x <- x + 1
-}
+t <- addMultiColumnsForQualifiers(patterns=c("gkthrow"="gk.throw", "gkdropkick"="gk.drop.kick","gkfk"="goal.kick|free.kick"),
+                                     pattern_locations = c("play.type","play.type","play.type"),
+                                     ogdf = d, ndf = createDataFrame(c("passes.f.c", "passes.f", 
+                                                                       "passes.s.c", "passes.s", "passes.b.c", "passes.b"), 
+                                                                     "poss.action", 
+                                                                     d[grep("[Gg][Kk]", d[,"poss.position"]),]))
 ##create overall GK passing table
-t2 <- createTable(c("completed", "pct", "attempts" , "passes.f.c", "passes.f", 
-                    "passes.s.c", "passes.s", "passes.b.c", 
-                    "passes.b"), "poss.action", t)
-t2$attempts <- rowSums(t2[,c(5:10)])
-t2$completed <- rowSums(t2[,c(5,7,9)])
-t2$pct <- t2$completed/t2$attempts
-t2 <- t2[,1:4]
-names(t2) <- c("Player","All Pass Comp", "Distribution Success", "All Pass Att")
+t2 <- createPassingTable(t)
+names(t2) <- c("Player","All Pass Comp", "All Pass Att", "Distribution Success")
 #create GK throws passing table
-t3 <- createTable(c("completed", "pct", "attempts" , "passes.f.c", "passes.f", 
-                    "passes.s.c", "passes.s", "passes.b.c", 
-                    "passes.b"), "poss.action", t[t[,"gkthrow"]=="throw",])
-t3$attempts <- rowSums(t3[,c(5:10)])
-t3$completed <- rowSums(t3[,c(5,7,9)])
-t3$pct <- t3$completed/t3$attempts
-t3 <- t3[,1:4]
-names(t3) <- c("Player","Throw Comp", "Throw Comp Pct", "Throw Att")
+t3 <- createPassingTable(t[t[,"gkthrow"]=="yes",])
+names(t3) <- c("Player","Throw Comp", "Throw Att", "Throw Comp Pct")
 #create GK drop kick passing table
-t4 <- createTable(c("completed", "pct", "attempts" , "passes.f.c", "passes.f", 
-                    "passes.s.c", "passes.s", "passes.b.c", 
-                    "passes.b"), "poss.action", t[t[,"gkdropkick"]=="dropkick",])
-t4$attempts <- rowSums(t4[,c(5:10)])
-t4$completed <- rowSums(t4[,c(5,7,9)])
-t4$pct <- t4$completed/t4$attempts
-t4 <- t4[,1:4]
-names(t4) <- c("Player","Drop Kick Comp", "Drop Kick Comp Pct", "Drop Kick Att")
+t4 <- createPassingTable(t[t[,"gkdropkick"]=="yes",])
+names(t4) <- c("Player","Drop Kick Comp", "Drop Kick Att", "Drop Kick Comp Pct")
 #create GK goal kick + free kick passing table
-t5 <- createTable(c("completed", "pct", "attempts" , "passes.f.c", "passes.f", 
-                    "passes.s.c", "passes.s", "passes.b.c", 
-                    "passes.b"), "poss.action", t[t[,"gkfk"]=="goalfreekick",])
-t5$attempts <- rowSums(t5[,c(5:10)])
-t5$completed <- rowSums(t5[,c(5,7,9)])
-t5$pct <- t5$completed/t5$attempts
-t5 <- t5[,1:4]
-names(t5) <- c("Player","GK+FK Comp", "GK+FK Comp Pct", "GK+FK Att")
+t5 <- createPassingTable(t[t[,"gkfk"]=="yes",])
+names(t5) <- c("Player","GK+FK Comp", "GK+FK Att", "GK+FK Comp Pct")
 #Merge tables together
 t6 <- merge(t2, t3, by="Player", all=TRUE)
 t6 <- merge(t6, t4, by="Player", all=TRUE)
 t6 <- merge(t6, t5, by="Player", all=TRUE)
-
 all <- merge(all, t6, by=1, all=TRUE)
 rm(t, t2, t3, t4, t5, t6)
 
