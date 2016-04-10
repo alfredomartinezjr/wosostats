@@ -23,6 +23,8 @@ createTable <- function(pattern, col, df) {
   ## Create the table
   t <- table(d2$poss.player, d2[,col])
   t <- data.frame(unclass(t))
+  t <- cbind(Player=rownames(t), t)
+  rownames(t) <- NULL
   t
 }
 
@@ -45,18 +47,14 @@ createDataFrame <- function(pattern, col, df) {
 fillBlanks <- function(df) {
   x <- 1
   while (x <= nrow(df)) {
+    #Fill in all player info
     if (is.na(df[x,"poss.player"])) {
       df[x,c("poss.position", "poss.team", "poss.player", "poss.action", 
-             "poss.location", "poss.play.destination", "play.type", 
-             "poss.player.disciplinary", "poss.notes")] <- df[x-1,c("poss.position", "poss.team", 
+             "poss.location", "poss.play.destination")] <- df[x-1,c("poss.position", "poss.team", 
                                                                     "poss.player", "poss.action",
-                                                                    "poss.location", "poss.play.destination", 
-                                                                    "play.type", "poss.player.disciplinary", 
-                                                                    "poss.notes")] 
-      x <- x + 1
-    } else {
-      x <- x + 1
+                                                                    "poss.location", "poss.play.destination")] 
     }
+    x <- x + 1
   }
   df
 }
@@ -90,8 +88,9 @@ addColumnForQualifier <- function (newcol, pattern, patternLocation, ogdf, ndf, 
 
 # 5.
 ## Adds a column for qualifiers across multiple columns
-## "patterns" should be a vector where each element's name is the column where the qualifier
-## is to be found, and the element is the pattern we're looking for in that column
+## "patterns" should be a vector where each element's name is the name of each new column to
+## be created, and the element is the pattern we're looking for in that instance of
+## "pattern_locations"
 addMultiColumnsForQualifiers <- function(patterns, pattern_locations, ogdf, ndf) {
   #creates a new column for each qualifier in "patterns"
   for(i in 1:length(patterns)) {
@@ -153,7 +152,7 @@ if (ndf[x,names(pattern)] == "yes" | t[x,"challenged"] == "yes") {
   x <- x + 1
 }
 
-# 6.
+# 7.
 ## Fills in blanks and then gets rid of duplicates. Is poss-focused
 createCleanDataFrame <- function(pattern, col, df) {
   t <- createDataFrame(pattern, col, df)
@@ -168,4 +167,28 @@ createCleanDataFrame <- function(pattern, col, df) {
                                 "poss.location", "poss.play.destination", "play.type", 
                                 "poss.player.disciplinary", "poss.notes")]
   t
+}
+
+
+# 8. 
+## Create passing table
+createPassingTable <- function(df, extra=NA){
+  if (is.na(extra[1])){
+    s <- createTable(c("completed", "attempts", "pct",  "passes.f.c", "passes.f", 
+                       "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", df)
+  } else {
+    s <- createTable(c("completed", "attempts", extra, "pct",  "passes.f.c", "passes.f", 
+                       "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", df)
+  }
+  ## Calculate empty columns
+  s$completed <- s$passes.f.c + s$passes.s.c + s$passes.b.c
+  s$attempts <- rowSums(s[,c("passes.f.c", "passes.f", 
+                             "passes.s.c", "passes.s", "passes.b.c", "passes.b")])
+  s$pct <- s$completed/s$attempts
+  if (is.na(extra[1])) {
+    s <- s[,c("Player", "completed", "attempts", "pct")]
+  } else {
+    s <- s[,c("Player", "completed", "attempts", extra, "pct")]
+  }
+  s
 }

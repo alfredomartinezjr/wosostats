@@ -81,17 +81,12 @@ t$shots <- t$shots.scored + t$shots.stopped.by.gk + t$shots.stopped.by.def + t$s
 ## Add column for accuracy
 t$accuracy <- (t$shots.scored + t$shots.stopped.by.gk + t$shots.stopped.by.def)/
   (t$shots.scored + t$shots.stopped.by.gk + t$shots.stopped.by.def + t$shots.missed)
-##Sort by "shots" and "accuracy"
-t <- t[order(-t$shots, -t$accuracy),]
 ## Change names to be more readable
 names(t) <- c("Player","Goals","Shots","Shots per 90","Shot Accuracy","Shot GK Stop", "Shot Def Stop", "Shot Miss")
-shots <- t
-
-all <- merge(players, shots, by="Player", all=TRUE)
+all <- merge(players, t, by="Player", all=TRUE)
 ## Calculate "per 90" stats
 all$`Shots per 90` <- (all$Shots/all$MP)*90
-
-rm(shots, players)
+rm(t, players)
 
 #SHOTS UNDER PRESSURE---------------
 t <- addMultiColumnsForQualifiers(patterns = c("pressured"="pressure", "challenged"="challenge"), 
@@ -107,12 +102,9 @@ t2$total <- t2$yes + t2$no
 t2$pct <- t2$yes/t2$total
 # rename
 t2 <- t2[,1:3]
-t2 <- t2[order(-t2$yes),]
 names(t2) <- c("Player","Shot Pressd", "Pct Shots Pressd")
-rm(t)
-
 all <- merge(all, t2, by="Player", all=TRUE)
-rm(t2)
+rm(t,t2)
 
 #SHOT LOCATION---------------
 t <- createCleanDataFrame(c("shots", "accuracy", "shots.scored", "shots.stopped.by.gk", "shots.stopped.by.def", "shots.missed") ,
@@ -126,18 +118,15 @@ t2$beyond <- rowSums(t2[,8:18])
 ## Get rid of all columns after the "Beyond" column to save space
 t2 <- t2[,1:7]
 names(t2) <- c("Player", "A6 Shots", "A18 Shots", "A3L Shots", "A3C Shots", "A3R Shots", "Far Shots")
-rm(t)
-
 all <- merge(all, t2, by="Player", all=TRUE)
-rm(t2)
+rm(t,t2)
 
 #ASSISTS---------------
-t <- d
-t <- addColumnForQualifier("assists", "assists", "poss.notes", d, t)
-t <- addColumnForQualifier("key.passes", "key.passes", "poss.notes", d, t)
+t <- addMultiColumnsForQualifiers(c("assists"="^assist", "key.passes"="key.pass", "second.assists"="^second.assist"),
+                                  pattern_locations = c("poss.notes", "poss.notes", "poss.notes"),
+                                  ogdf = d, ndf = createDataFrame(c("passes.f.c", "passes.f", 
+                                                                         "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", d))
 t$key.assists <- "no"
-t <- addColumnForQualifier("second.assists", "^second.assists$", "poss.notes", d, t)
-t <- addColumnForQualifier("unscored.key.passes", "unscored.key.passes", "poss.notes", d, t)
 ##account for fact that "second.assists" in this code are also counted as "assists."
 x <- 1
 while (x <= nrow(t)) {
