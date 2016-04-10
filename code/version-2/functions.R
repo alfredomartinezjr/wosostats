@@ -105,7 +105,7 @@ addMultiColumnsForQualifiers <- function(patterns, pattern_locations, ogdf, ndf)
 ## "patterns" here will have each element be a column's pattern, and the element's name
 ## will be the name of the column to be searched
 ## "exp" is the type of expression. Such as, is it an OR, AND search
-addColumnForMultiQualifiers <- function(pattern, newcol, df, exp, invert=FALSE) {
+addColumnForMultiQualifiers <- function(newcol, pattern, df, exp, invert=FALSE) {
   if (exp == "OR") {
     df[,newcol] <- "no"
     #then condition is satisfied if any of the columns are TRUE
@@ -184,3 +184,7 @@ createPassingTable <- function(df, extra=NA){
   }
   s
 }
+
+#7. Create multiple tables
+## useful for when you're going to need to create a lot of tables for
+## given qualifiers, and then merge them all into one table
