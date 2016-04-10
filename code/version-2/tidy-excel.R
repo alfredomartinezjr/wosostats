@@ -338,4 +338,4 @@ while (e <= max(df$event)) {
   }
 }
 
-rm(opposites, awayplayers, homeplayers, deflocations, location, awayteam, hometeam, posslocations, teams)
+rm(opposites, awayplayers, homeplayers, deflocations, awayteam, hometeam, posslocations, teams)
