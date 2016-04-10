@@ -144,14 +144,6 @@ addColumnForMultiQualifiers <- function(pattern, newcol, df, exp, invert=FALSE) 
   df
 }
 
-if (ndf[x,names(pattern)] == "yes" | t[x,"challenged"] == "yes") {
-  t[x,"pressed"] <- "yes"
-  x <- x + 1
-} else {
-  t[x,"pressed"] <- "no"
-  x <- x + 1
-}
-
 # 7.
 ## Fills in blanks and then gets rid of duplicates. Is poss-focused
 createCleanDataFrame <- function(pattern, col, df) {
