@@ -680,4 +680,4 @@ all[is.na(all)] <- 0
 names(all) <- gsub(" ",".", names(all))
 rm(x)
 rm(d, substitutions, e, matchlength, playerteam, matchURL)
-rm(addColumnForQualifier, createCleanDataFrame, createDataFrame, createTable, fillBlanks, createPassingTable, player)
+rm(addColumnForMultiQualifiers,addMultiColumnsForQualifiers,addColumnForQualifier, createCleanDataFrame, createDataFrame, createTable, fillBlanks, createPassingTable, player)
