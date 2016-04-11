@@ -19,12 +19,12 @@
 18,"1",NA,"COL","Rincon","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 19,"1",NA,"COL","Rincon","passes.s.c",NA,NA,NA,NA,"USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA
 20,"1",NA,"COL","Santos","passes.f.c",NA,"AM3C",NA,NA,"USA","Sauerbrunn","pressured",NA,NA,NA,NA,NA,NA,NA
-21,"1",NA,"COL","Usme","shots.missed","AM3C",NA,NA,NA,"USA","Solo","gk.shot.miss",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
+21,"1",NA,"COL","Usme","shots.missed","AM3C",NA,NA,"GK","USA","Solo","gk.shot.miss",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 21,"1",NA,NA,NA,NA,NA,NA,NA,NA,"USA","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA
-22,"1",NA,"USA","Solo","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,"1","GK","USA","Solo","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 23,"1",NA,"USA","Johnston","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 24,"1",NA,"USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-25,"1",NA,"USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+25,"1","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 26,"2",NA,"USA","Johnston","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 27,"2",NA,"USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 28,"2",NA,"USA","Pugh","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -75,9 +75,9 @@
 70,"5",NA,"USA","Heath","take.on.won",NA,NA,NA,NA,"COL","Arias","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA
 71,"5",NA,"USA","Heath","take.on.won",NA,NA,NA,NA,"COL","Echeverri","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA
 72,"5",NA,"USA","Heath","passes.s",NA,NA,NA,NA,"COL","Gaitan","blocks",NA,NA,NA,NA,NA,NA,NA
-72,"5",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","pressured",NA,NA,NA,NA,NA,NA,NA
+72,"5",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","pressured",NA,NA,NA,NA,NA,NA,NA
 73,"5",NA,"USA","Dunn","shots.stopped.by.def","A18",NA,NA,NA,"COL","Velasquez","gk.s.o.g.def.stop",NA,NA,NA,NA,"big.chances.shot.on.goal",NA,NA
-74,"5",NA,"COL","Perez","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+74,"5","GK","COL","Perez","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 75,"5",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 76,"5",NA,"COL","Santos","dispossessed",NA,NA,NA,NA,"USA","Pugh","dis (dispossess.opp)",NA,NA,NA,NA,NA,NA,NA
 77,"5",NA,"USA","Pugh","passes.b.c",NA,NA,NA,NA,"COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -135,7 +135,7 @@
 123,"7",NA,"USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 124,"7",NA,"USA","Horan","passes.b.c",NA,NA,NA,NA,"COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA
 125,"7",NA,"USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,"COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA
-126,"8",NA,"USA","Solo","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
+126,"8","GK","USA","Solo","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 127,"8",NA,"COL","Velasquez","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 128,"8",NA,"COL","Santos","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 128,"8",NA,"COL","Echeverri",NA,NA,NA,NA,NA,"USA","Long",NA,NA,NA,NA,"fouls.conceded",NA,"fouls.won",NA
@@ -180,8 +180,8 @@
 161,"12",NA,"USA","Klingenberg","passes.s.c",NA,NA,NA,NA,"COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA
 162,"12",NA,"USA","Dunn","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 163,"12",NA,"USA","Long","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-164,"12",NA,"USA","Long","shots.missed","A3C",NA,NA,NA,"COL","Perez","gk.shot.miss",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-165,"12",NA,"COL","Perez","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+164,"12",NA,"USA","Long","shots.missed","A3C",NA,NA,"GK","COL","Perez","gk.shot.miss",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
+165,"12","GK","COL","Perez","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 166,"12",NA,"USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 167,"12",NA,"USA","Sauerbrunn","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 168,"12",NA,"USA","Pugh","aerial.lost",NA,NA,NA,NA,"COL","Velasquez","aerial.won",NA,NA,NA,NA,NA,NA,NA
@@ -260,7 +260,7 @@
 232,"16",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA
 233,"17",NA,"USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 234,"17",NA,"USA","Long","passes.b.c",NA,NA,NA,NA,"COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA
-235,"17",NA,"USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+235,"17","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 236,"17",NA,"USA","Johnston","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 237,"17",NA,"USA","Pugh","passes.b.c",NA,NA,NA,NA,"COL","Echeverri","pressured",NA,NA,NA,NA,NA,NA,NA
 238,"17",NA,"USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -306,8 +306,8 @@
 269,"20",NA,"COL","Rincon","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 270,"20",NA,"COL","Santos","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 271,"20",NA,"COL","Santos","passes.b.c",NA,"A3L",NA,NA,"USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA
-272,"20",NA,"COL","Ospina","shots.stopped.by.gk","A3L",NA,NA,NA,"USA","Solo","gk.s.o.g.stop",NA,"caught","stooping",NA,NA,NA,NA
-273,"20",NA,"USA","Solo","passes.f.c",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+272,"20",NA,"COL","Ospina","shots.stopped.by.gk","A3L",NA,NA,"GK","USA","Solo","gk.s.o.g.stop",NA,"caught","stooping",NA,NA,NA,NA
+273,"20","GK","USA","Solo","passes.f.c",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 274,"20",NA,"USA","Klingenberg","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 275,"20",NA,"USA","Horan","passes.b.c",NA,NA,NA,NA,"COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA
 276,"20",NA,"USA","Long","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -330,10 +330,10 @@
 291,"21",NA,"COL","Ospina","passes.f",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 292,"21",NA,"USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 293,"21",NA,"USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-294,"21",NA,"USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+294,"21","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 295,"21",NA,"USA","Johnston","passes.s.c",NA,NA,NA,NA,"COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA
 296,"22",NA,"USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-297,"22",NA,"USA","Solo","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+297,"22","GK","USA","Solo","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 298,"22",NA,"USA","Johnston","passes.f",NA,NA,"launch",NA,"COL","Echeverri","blocks",NA,NA,NA,NA,NA,NA,NA
 299,"22",NA,"USA","Klingenberg","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 300,"22",NA,"USA","Klingenberg","passes.b.c",NA,NA,NA,NA,"COL","Echeverri","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -366,7 +366,7 @@
 323,"24",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA
 324,"24",NA,"USA","Long","passes.s.c",NA,NA,NA,NA,"COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA
 325,"24",NA,"USA","Klingenberg","passes.f",NA,NA,"launch",NA,"COL","Arias","ball.shield",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-326,"25",NA,"COL","Perez","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+326,"25","GK","COL","Perez","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 327,"25",NA,"COL","Salazar","aerial.lost",NA,NA,NA,NA,"USA","Long","aerial.won",NA,NA,NA,NA,NA,NA,NA
 328,"25",NA,"COL","Usme","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 329,"25",NA,"COL","Usme","passes.s",NA,NA,"headed",NA,"USA","O'Hara","blocks",NA,NA,NA,NA,NA,NA,NA
@@ -385,7 +385,7 @@
 340,"25",NA,"USA","Klingenberg","passes.s",NA,NA,NA,NA,"COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA
 341,"25",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 342,"25",NA,"USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,"COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA
-343,"25",NA,"USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+343,"25","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 344,"25",NA,"USA","Johnston","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 345,"26",NA,"USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 346,"26",NA,"USA","Klingenberg","passes.b.c",NA,NA,NA,NA,"COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -408,7 +408,7 @@
 362,"26",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA
 362,"26",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Gaitan","blocks",NA,NA,NA,NA,NA,NA,NA
 363,"26",NA,"USA","Dunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-364,"27",NA,"USA","Dunn","shots.scored",NA,NA,NA,NA,"COL","Perez","gk.s.o.g.scored",NA,"missed.the.ball","diving",NA,NA,NA,NA
+364,"27",NA,"USA","Dunn","shots.scored",NA,NA,NA,"GK","COL","Perez","gk.s.o.g.scored",NA,"missed.the.ball","diving",NA,NA,NA,NA
 365,"27",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 366,"27",NA,"COL","Gaitan","passes.f",NA,NA,NA,NA,"USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA
 366,"27",NA,NA,NA,NA,NA,NA,NA,NA,"USA","O'Hara","blocks",NA,NA,NA,NA,NA,NA,NA
@@ -426,7 +426,7 @@
 377,"28",NA,"USA","Dunn","passes.s.c",NA,NA,NA,NA,"COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA
 378,"28",NA,"USA","Lloyd","passes.f.c",NA,NA,NA,NA,"COL","Santos","challenged",NA,NA,NA,NA,NA,NA,NA
 379,"29",NA,"USA","Heath","passes.s.c",NA,NA,"deep.crosses",NA,"COL","Velasquez","pressured",NA,NA,NA,NA,NA,NA,NA
-379,"29",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","gk.loose.balls.lost",NA,"dropped","stooping",NA,NA,NA,NA
+379,"29",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","gk.loose.balls.lost",NA,"dropped","stooping",NA,NA,NA,NA
 379,"29",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Asprilla","clearances",NA,NA,NA,NA,NA,NA,NA
 380,"29",NA,"USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 381,"29",NA,"USA","Horan","passes.f.c",NA,NA,NA,NA,"COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -448,8 +448,8 @@
 394,"30",NA,"COL","Rincon","passes.f",NA,NA,NA,NA,"USA","Sauerbrunn","blocks",NA,NA,NA,NA,NA,NA,NA
 395,"30",NA,"COL","Ospina","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 396,"30",NA,"COL","Ospina","passes.b.c",NA,"AM3L",NA,NA,"USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA
-397,"30",NA,"COL","Usme","shots.missed","AM3L",NA,NA,NA,"USA","Solo","gk.shot.miss",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-398,"30",NA,"USA","Solo","passes.s.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+397,"30",NA,"COL","Usme","shots.missed","AM3L",NA,NA,"GK","USA","Solo","gk.shot.miss",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
+398,"30","GK","USA","Solo","passes.s.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 399,"30",NA,"USA","O'Hara","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 400,"30",NA,"USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 401,"30",NA,"USA","Long","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -457,9 +457,9 @@
 403,"30",NA,"USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 404,"30",NA,"USA","Johnston","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 405,"30",NA,"USA","Klingenberg","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-406,"30",NA,"USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+406,"30","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 407,"30",NA,"USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-408,"31",NA,"USA","Solo","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+408,"31","GK","USA","Solo","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 409,"31",NA,"USA","Johnston","passes.f",NA,NA,NA,NA,"COL","Ospina","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 410,"31",NA,"USA","Klingenberg","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 410,"31",NA,"USA","Long",NA,NA,NA,NA,NA,"COL","Usme",NA,NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA
@@ -472,7 +472,7 @@
 417,"32",NA,"USA","Dunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 418,"32",NA,"USA","Horan","passes.s.c",NA,NA,"corner.crosses",NA,"COL","Velasquez","pressured",NA,NA,NA,NA,"assists",NA,NA
 419,"32",NA,"USA","Long","aerial.won",NA,NA,NA,NA,"COL","Gaitan","aerial.lost",NA,NA,NA,NA,NA,NA,NA
-420,"32",NA,"USA","Long","shots.scored","A18",NA,NA,NA,"COL","Perez","gk.s.o.g.scored",NA,"missed.the.ball","diving",NA,NA,NA,NA
+420,"32",NA,"USA","Long","shots.scored","A18",NA,NA,"GK","COL","Perez","gk.s.o.g.scored",NA,"missed.the.ball","diving",NA,NA,NA,NA
 421,"32",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 422,"33",NA,"USA","Dunn","take.on.won",NA,NA,NA,NA,"COL","Echeverri","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA
 423,"33",NA,"USA","Dunn","passes.b.c",NA,NA,NA,NA,"COL","Rincon","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -483,7 +483,7 @@
 428,"33",NA,"USA","Lloyd","recoveries",NA,NA,NA,NA,"COL","Gaitan","dis (dispossess.opp)",NA,NA,NA,NA,NA,NA,NA
 429,"33",NA,"USA","Lloyd","take.on.won",NA,NA,NA,NA,"COL","Salazar","dribbled.turned",NA,NA,NA,NA,NA,NA,NA
 430,"33",NA,"USA","Lloyd","passes.f.c",NA,NA,"through",NA,"COL","Salazar","pressured",NA,NA,NA,NA,"assists",NA,NA
-431,"33",NA,"USA","Pugh","shots.scored",NA,NA,NA,NA,"COL","Perez","gk.s.o.g.scored",NA,"missed.the.ball","diving",NA,"big.chances.scored",NA,NA
+431,"33",NA,"USA","Pugh","shots.scored",NA,NA,NA,"GK","COL","Perez","gk.s.o.g.scored",NA,"missed.the.ball","diving",NA,"big.chances.scored",NA,NA
 431,"33",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA
 432,"33",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 433,"34",NA,"USA","Johnston","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -493,12 +493,12 @@
 437,"34",NA,"USA","Long","passes.s.c",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 438,"34",NA,"USA","Klingenberg","passes.b.c",NA,NA,NA,NA,"COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA
 439,"34",NA,"USA","Johnston","passes.b.c",NA,NA,NA,NA,"COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA
-440,"34",NA,"USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+440,"34","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 441,"34",NA,"USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-442,"34",NA,"USA","Solo","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+442,"34","GK","USA","Solo","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 443,"34",NA,"USA","Johnston","passes.b.c",NA,NA,NA,NA,"COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA
 444,"34",NA,"USA","Klingenberg","passes.b.c",NA,NA,NA,NA,"COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA
-445,"35",NA,"USA","Solo","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+445,"35","GK","USA","Solo","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 446,"35",NA,"USA","Horan","dispossessed",NA,NA,NA,NA,"COL","Ospina","dis (dispossess.opp)",NA,NA,NA,NA,NA,NA,NA
 447,"35",NA,"COL","Ospina","dispossessed",NA,NA,NA,NA,"USA","Horan","dis (dispossess.opp)",NA,NA,NA,NA,NA,NA,NA
 448,"35",NA,"USA","Pugh","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
@@ -526,8 +526,8 @@
 470,"36",NA,"USA","Dunn","passes.b.c",NA,NA,NA,NA,"COL","Echeverri","challenged",NA,NA,NA,NA,NA,NA,NA
 470,"36",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Gaitan","challenged",NA,NA,NA,NA,NA,NA,NA
 471,"36",NA,"USA","Long","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-472,"36",NA,"COL","Perez","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-473,"36",NA,"COL","Perez","passes.f",NA,NA,"launch",NA,"USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA
+472,"36","GK","COL","Perez","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+473,"36","GK","COL","Perez","passes.f",NA,NA,"launch",NA,"USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA
 474,"37",NA,"COL","Salazar","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 475,"37",NA,"USA","Pugh","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 476,"37",NA,"USA","Pugh","dispossessed",NA,NA,NA,NA,"COL","Asprilla","dis (dispossess.opp)",NA,NA,NA,NA,NA,NA,NA
@@ -536,15 +536,15 @@
 478,"37",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Velasquez","ball.shield",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 479,"37",NA,"USA","Heath","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 480,"37",NA,"USA","Dunn","passes.s",NA,NA,NA,NA,"COL","Gaitan","challenged",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-481,"37",NA,"COL","Perez","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+481,"37","GK","COL","Perez","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 482,"37",NA,"COL","Arias","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 482,"38",NA,"COL","Santos",NA,NA,NA,NA,NA,"USA","O'Hara",NA,NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA
 483,"38",NA,"COL","Velasquez","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 484,"38",NA,"COL","Echeverri","aerial.lost",NA,NA,NA,NA,"USA","Johnston","aerial.won",NA,NA,NA,NA,NA,NA,NA
 485,"38",NA,"COL","Asprilla","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-486,"38",NA,"COL","Asprilla","shots.missed","A3C",NA,NA,NA,"USA","Solo","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA
+486,"38",NA,"COL","Asprilla","shots.missed","A3C",NA,NA,"GK","USA","Solo","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA
 486,"38",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA
-487,"38",NA,"USA","Solo","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+487,"38","GK","USA","Solo","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 488,"38",NA,"USA","Johnston","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 489,"38",NA,"USA","Long","passes.f.c",NA,NA,NA,NA,"COL","Echeverri","pressured",NA,NA,NA,NA,NA,NA,NA
 490,"39",NA,"USA","Dunn","passes.f.c",NA,NA,NA,NA,"COL","Salazar","challenged",NA,NA,NA,NA,NA,NA,NA
@@ -553,7 +553,7 @@
 493,"39",NA,"USA","Dunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 494,"39",NA,"USA","Dunn","passes.f.c",NA,NA,NA,NA,"COL","Echeverri","pressured",NA,NA,NA,NA,NA,NA,NA
 495,"39",NA,"USA","Pugh","passes.s.c",NA,"A18",NA,NA,"COL","Arias","pressured",NA,NA,NA,NA,"assists",NA,NA
-496,"39",NA,"USA","Lloyd","shots.scored","A18",NA,NA,NA,"COL","Perez","gk.s.o.g.scored",NA,"missed.the.ball","diving",NA,"big.chances.scored",NA,NA
+496,"39",NA,"USA","Lloyd","shots.scored","A18",NA,NA,"GK","COL","Perez","gk.s.o.g.scored",NA,"missed.the.ball","diving",NA,"big.chances.scored",NA,NA
 496,"39",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Velasquez","pressured",NA,NA,NA,NA,NA,NA,NA
 497,"39",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 498,"40",NA,"USA","Horan","passes.f.c",NA,NA,NA,NA,"COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -606,8 +606,8 @@
 536,"42",NA,"USA","Klingenberg","dispossessed",NA,NA,NA,NA,"COL","Ospina","tb (tackles.ball)",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 537,"42",NA,"USA","Klingenberg","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 538,"42",NA,"USA","Dunn","passes.s.c",NA,"A18","corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-539,"42",NA,"USA","Lloyd","shots.stopped.by.gk","A18",NA,NA,NA,"COL","Perez","gk.s.o.g.stop",NA,"caught","standing",NA,NA,NA,NA
-540,"42",NA,"COL","Perez","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+539,"42",NA,"USA","Lloyd","shots.stopped.by.gk","A18",NA,NA,"GK","COL","Perez","gk.s.o.g.stop",NA,"caught","standing",NA,NA,NA,NA
+540,"42","GK","COL","Perez","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 541,"42",NA,"COL","Santos","aerial.lost",NA,NA,NA,NA,"USA","O'Hara","aerial.won",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 542,"43",NA,"COL","Velasquez","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 543,"43",NA,"COL","Santos","dispossessed",NA,NA,NA,NA,"USA","Heath","def.action",NA,NA,NA,NA,NA,NA,NA
@@ -643,14 +643,14 @@
 571,"44",NA,"COL","Ospina","passes.s.c",NA,NA,NA,NA,"USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA
 572,"44",NA,"COL","Usme","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 573,"44",NA,"USA","Johnston","passes.b.c",NA,NA,NA,NA,"COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA
-574,"44",NA,"USA","Solo","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
+574,"44","GK","USA","Solo","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 575,"44",NA,"COL","Asprilla","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 576,"44",NA,"COL","Rincon","passes.s.c",NA,NA,NA,NA,"USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA
 577,"44",NA,"COL","Salazar","dispossessed",NA,NA,NA,NA,"USA","Long","dis (dispossess.opp)",NA,NA,NA,NA,NA,NA,NA
 578,"44",NA,"USA","Long","passes.s.c",NA,NA,NA,NA,"COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA
 579,"44",NA,"USA","Heath","passes.b.c",NA,NA,NA,NA,"COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA
 580,"44",NA,"USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-581,"44",NA,"USA","Solo","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+581,"44","GK","USA","Solo","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 582,"44",NA,"COL","Velasquez","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 583,"45",NA,"COL","Velasquez","passes.f",NA,NA,"launch",NA,"USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA
 584,"45",NA,"USA","Heath","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -705,8 +705,8 @@
 628,"46",NA,"USA","Heath","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 629,"46",NA,"USA","Heath","passes.f.c",NA,NA,NA,NA,"COL","Asprilla","pressured",NA,NA,NA,NA,NA,NA,NA
 630,"46",NA,"USA","Dunn","passes.s.c",NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-631,"46",NA,"USA","Heath","passes.s",NA,NA,"flick.on",NA,"COL","Perez","gk.smothers.won",NA,NA,NA,NA,NA,NA,NA
-632,"46",NA,"COL","Perez","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+631,"46",NA,"USA","Heath","passes.s",NA,NA,"flick.on","GK","COL","Perez","gk.smothers.won",NA,NA,NA,NA,NA,NA,NA
+632,"46","GK","COL","Perez","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 633,"46",NA,"COL","Usme","aerial.lost",NA,NA,NA,NA,"USA","Sauerbrunn","aerial.won",NA,NA,NA,NA,NA,NA,NA
 634,"46",NA,"USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 635,"46",NA,"USA","Press","passes.b.c",NA,NA,NA,NA,"COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -738,8 +738,8 @@
 659,"47",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Echeverri","blocks",NA,NA,NA,NA,NA,NA,NA
 660,"47",NA,"USA","Lloyd","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 661,"47",NA,"USA","Lloyd","shots.missed","A3C",NA,NA,NA,"COL","Salazar","pressured","D3C",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-661,"47",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA
-662,"48",NA,"COL","Perez","passes.f",NA,NA,"launch",NA,"USA","Mewis","interceptions",NA,NA,NA,NA,NA,NA,NA
+661,"47",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA
+662,"48","GK","COL","Perez","passes.f",NA,NA,"launch",NA,"USA","Mewis","interceptions",NA,NA,NA,NA,NA,NA,NA
 662,"48",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 663,"48",NA,"COL","Usme","aerial.lost",NA,NA,NA,NA,"USA","Mewis","aerial.won",NA,NA,NA,NA,NA,NA,NA
 664,"48",NA,"USA","Mewis","passes.f",NA,NA,"headed",NA,"COL","Velasquez","clearances",NA,NA,NA,NA,NA,NA,NA
@@ -761,7 +761,7 @@
 678,"49",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Ospina","clearances",NA,NA,NA,NA,NA,NA,NA
 679,"49",NA,"USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 680,"49",NA,"USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-681,"49",NA,"USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+681,"49","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 682,"49",NA,"USA","Mewis","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 683,"49",NA,"USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 684,"49",NA,"USA","Mewis","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -771,8 +771,8 @@
 688,"50",NA,"USA","Long","fouls.won",NA,NA,NA,NA,"COL","Asprilla","fouls.conceded",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA
 689,"50",NA,"USA","Klingenberg","passes.f.c",NA,"A3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 690,"50",NA,"USA","Press","shots.missed","A3C",NA,NA,NA,"COL","Echeverri","pressured","D3C",NA,NA,NA,NA,NA,NA
-690,"50",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","gk.shot.miss",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-691,"50",NA,"COL","Perez","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+690,"50",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","gk.shot.miss",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
+691,"50","GK","COL","Perez","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 691,"50",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 692,"50",NA,"COL","Santos","passes.f.c",NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 692,"50",NA,NA,NA,NA,NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -794,7 +794,7 @@
 706,"51",NA,"USA","Dunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 707,"51",NA,"USA","Press","movement",NA,NA,NA,NA,"COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA
 708,"51",NA,"USA","Press","passes.s.c",NA,NA,"corner.crosses",NA,"COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA
-708,"51",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","gk.high.balls.lost","D6","parried.to.danger",NA,NA,NA,NA,NA
+708,"51",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","gk.high.balls.lost","D6","parried.to.danger",NA,NA,NA,NA,NA
 709,"51",NA,"USA","Lloyd","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 710,"51",NA,"USA","Lloyd","take.on.won",NA,NA,NA,NA,"COL","Echeverri","dribbled.turned",NA,NA,NA,NA,NA,NA,NA
 711,"51",NA,"USA","Lloyd","dispossessed",NA,NA,NA,NA,"COL","Salazar","tb (tackles.ball)",NA,NA,NA,NA,NA,NA,NA
@@ -825,8 +825,8 @@
 733,"52",NA,"USA","Mewis","passes.f.c",NA,NA,NA,NA,"COL","Rincon","pressured",NA,NA,NA,NA,NA,NA,NA
 734,"52",NA,"USA","Long","passes.b.c",NA,"A3C","lay.off",NA,"COL","Salazar","challenged",NA,NA,NA,NA,NA,NA,NA
 735,"52",NA,"USA","Mewis","shots.missed","A3C",NA,NA,NA,"COL","Rincon","pressured","D3C",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-735,"52",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA
-736,"52",NA,"COL","Perez","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+735,"52",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA
+736,"52","GK","COL","Perez","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 736,"52",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 737,"52",NA,"COL","Ospina","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 738,"52",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -853,10 +853,10 @@
 758,"54",NA,"USA","Heath","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 759,"54",NA,"USA","Long","passes.s.c",NA,"A18","corner.crosses",NA,"COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA
 760,"54",NA,"USA","Dunn","shots.missed","A18",NA,NA,NA,"COL","Gaitan","challenged","D18",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-760,"54",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA
-761,"55",NA,"COL","Perez","passes.f",NA,NA,NA,NA,"USA","Press","interceptions",NA,NA,NA,NA,NA,NA,NA
+760,"54",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA
+761,"55","GK","COL","Perez","passes.f",NA,NA,NA,NA,"USA","Press","interceptions",NA,NA,NA,NA,NA,NA,NA
 762,"55",NA,"USA","Press","passes.f",NA,NA,"launch",NA,"COL","Santos","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-763,"55",NA,"COL","Perez","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+763,"55","GK","COL","Perez","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 763,"55",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 764,"55",NA,"COL","Santos","lost.touch",NA,NA,NA,NA,"USA","Press","challenged",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 764,"55",NA,NA,NA,NA,NA,NA,NA,NA,"USA","O'Hara","challenged",NA,NA,NA,NA,NA,NA,NA
@@ -900,8 +900,8 @@
 800,"57",NA,"COL","Usme","passes.f.c",NA,"A3C","through",NA,"USA","Dunn","pressured",NA,NA,NA,NA,"key.passes",NA,NA
 800,"57",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 801,"57",NA,"COL","Santos","shots.stopped.by.gk","A3C",NA,NA,NA,"USA","O'Hara","pressured","D3C","caught","stooping",NA,"big.chances.shot.on.goal",NA,NA
-801,"57",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Solo","gk.s.o.g.stop",NA,NA,NA,NA,NA,NA,"big.chances.stopped"
-802,"57",NA,"USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+801,"57",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Solo","gk.s.o.g.stop",NA,NA,NA,NA,NA,NA,"big.chances.stopped"
+802,"57","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 803,"57",NA,"USA","Johnston","passes.s.c",NA,NA,NA,NA,"COL","Rincon","pressured",NA,NA,NA,NA,NA,NA,NA
 804,"57",NA,"USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,"COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA
 805,"57",NA,"USA","Klingenberg","passes.f",NA,NA,NA,NA,"COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -913,10 +913,10 @@
 809,"57",NA,"COL","Usme","passes.b.c",NA,NA,NA,NA,"USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA
 810,"57",NA,"COL","Rincon","passes.s.c",NA,"A3C",NA,NA,"USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA
 811,"57",NA,"COL","Ospina","shots.missed","A3C",NA,NA,NA,"USA","Long","pressured","D3C",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-812,"57",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,"USA","Solo","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA
-813,"58",NA,"USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+812,"57",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,"GK","USA","Solo","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA
+813,"58","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 814,"58",NA,"USA","Johnston","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-815,"58",NA,"USA","Solo","passes.f.c",NA,NA,NA,NA,"COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA
+815,"58","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,"COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA
 816,"58",NA,"USA","Sauerbrunn","dispossessed",NA,NA,NA,NA,"COL","Usme","tb (tackles.ball)",NA,NA,NA,NA,NA,NA,NA
 817,"58",NA,"USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 818,"58",NA,"USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,"COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -934,8 +934,8 @@
 830,"59",NA,"USA","Press","passes.b.c",NA,"A3C",NA,NA,"COL","Arias","pressured",NA,NA,NA,NA,NA,NA,NA
 831,"59",NA,"USA","Long","shots.stopped.by.gk","A3C",NA,NA,NA,"COL","Rincon","challenged","D3C",NA,NA,NA,NA,NA,NA
 831,"59",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA
-831,"59",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","gk.s.o.g.stop","D6","collected","stooping",NA,NA,NA,NA
-832,"59",NA,"COL","Perez","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+831,"59",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","gk.s.o.g.stop","D6","collected","stooping",NA,NA,NA,NA
+832,"59","GK","COL","Perez","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 833,"59",NA,"COL","Usme","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 834,"59",NA,"USA","Mewis","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 835,"59",NA,"USA","Mewis","passes.b.c",NA,NA,NA,NA,"COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -948,8 +948,8 @@
 842,"59",NA,"USA","O'Hara","passes.s",NA,NA,"corner.crosses",NA,"COL","Arias","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 843,"60",NA,"USA","Heath","passes.s.c",NA,"A18","corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 843,"60",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-844,"60",NA,"USA","Long","shots.missed","A18",NA,"headed",NA,"COL","Perez","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-845,"61",NA,"COL","Perez","passes.f",NA,NA,"pf",NA,"USA","Johnston","interceptions",NA,NA,NA,NA,NA,NA,NA
+844,"60",NA,"USA","Long","shots.missed","A18",NA,"headed","GK","COL","Perez","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
+845,"61","GK","COL","Perez","passes.f",NA,NA,"pf",NA,"USA","Johnston","interceptions",NA,NA,NA,NA,NA,NA,NA
 845,"61",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 846,"61",NA,"USA","Johnston","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 847,"61",NA,"USA","Long","aerial.won",NA,NA,NA,NA,"COL","Salazar","aerial.lost",NA,NA,NA,NA,NA,NA,NA
@@ -966,7 +966,7 @@
 855,"61",NA,"COL","Ospina","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 856,"61",NA,"COL","Ospina","passes.s",NA,NA,"corner.crosses",NA,"USA","Klingenberg","pressured",NA,NA,NA,NA,NA,NA,NA
 856,"61",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Johnston","pressured",NA,NA,NA,NA,NA,NA,NA
-856,"61",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Solo","gk.high.balls.won","D6","caught",NA,NA,NA,NA,NA
+856,"61",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Solo","gk.high.balls.won","D6","caught",NA,NA,NA,NA,NA
 857,"61",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 858,"61",NA,"USA","O'Hara","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 859,"61",NA,"USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -997,7 +997,7 @@
 881,"62",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 882,"62",NA,"USA","Dunn","passes.s.c",NA,"A18","corner.crosses",NA,"COL","Gaitan","pressured",NA,NA,NA,NA,"key.passes",NA,NA
 882,"62",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"assists",NA,NA
-883,"62",NA,"USA","Heath","shots.scored","A18",NA,NA,NA,"COL","Perez","gk.s.o.g.scored","D6",NA,"reaching",NA,"big.chances.scored",NA,NA
+883,"62",NA,"USA","Heath","shots.scored","A18",NA,NA,"GK","COL","Perez","gk.s.o.g.scored","D6",NA,"reaching",NA,"big.chances.scored",NA,NA
 884,"63",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 885,"63",NA,"COL","Salazar","passes.s.c",NA,NA,NA,NA,"USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA
 886,"63",NA,"COL","Asprilla","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1021,10 +1021,10 @@
 901,"65",NA,"USA","Heath","passes.s.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 902,"65",NA,"USA","Press","passes.s",NA,NA,"flick.on",NA,"COL","Usme","clearances",NA,NA,NA,NA,NA,NA,"errors.to.goals"
 903,"65",NA,"USA","Johnston","aerial.won",NA,NA,NA,NA,"COL","Gaitan","aerial.lost",NA,NA,NA,NA,NA,NA,NA
-903,"65",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","gk.high.balls.lost","D6",NA,NA,NA,NA,NA,NA
+903,"65",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","gk.high.balls.lost","D6",NA,NA,NA,NA,NA,NA
 904,"65",NA,"USA","Johnston","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 905,"65",NA,"USA","Johnston","passes.b.c",NA,"D6","headed",NA,"COL","Gaitan","pressured",NA,NA,NA,NA,"assists",NA,NA
-905,"65",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","challenged",NA,NA,NA,NA,"key.passes",NA,NA
+905,"65",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","challenged",NA,NA,NA,NA,"key.passes",NA,NA
 906,"65",NA,"USA","Long","shots.scored","D6",NA,"headed",NA,"COL","Arias","pressured","A6",NA,NA,NA,"big.chances.scored",NA,NA
 907,"65",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 908,"65",NA,NA,"RIncon","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1051,10 +1051,10 @@
 926,"67",NA,"USA","Engen","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 927,"67",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 928,"67",NA,"USA","Sonnett","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-929,"67",NA,"USA","Solo","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-930,"67",NA,"USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+929,"67","GK","USA","Solo","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+930,"67","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 931,"67",NA,"USA","Engen","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-932,"67",NA,"USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+932,"67","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 933,"67",NA,"USA","Engen","passes.f.c",NA,NA,NA,NA,"COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA
 934,"67",NA,"USA","Mewis","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 935,"67",NA,"USA","Mewis","take.on.won",NA,NA,NA,NA,"COL","Cuesta","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -1105,7 +1105,7 @@
 975,"70",NA,"USA","Dunn","passes.s.c",NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 976,"71",NA,"USA","Lloyd","aerial.won",NA,NA,NA,NA,"COL","Echeverri","aerial.lost",NA,NA,NA,NA,NA,NA,NA
 977,"71",NA,"USA","O'Reilly","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-978,"71",NA,"COL","Perez","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+978,"71","GK","COL","Perez","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 978,"71",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 979,"71",NA,"USA","Engen","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 980,"71",NA,"USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1172,7 +1172,7 @@
 1037,"74",NA,"USA","Long","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1038,"74",NA,"USA","Dunn","passes.f.c",NA,"A3L","through",NA,NA,NA,NA,NA,NA,NA,NA,"assists",NA,NA
 1039,"74",NA,"USA","Press","shots.scored","A3L",NA,NA,NA,"COL","Asprilla","pressured","D3R",NA,NA,NA,NA,NA,NA
-1039,"74",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","gk.s.o.g.scored","D6",NA,NA,NA,NA,NA,NA
+1039,"74",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","gk.s.o.g.scored","D6",NA,NA,NA,NA,NA,NA
 1040,"75",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1041,"75",NA,"USA","Sonnett","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1042,"75",NA,"USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1196,8 +1196,8 @@
 1057,"76",NA,"COL","Arias","passes.f",NA,NA,NA,NA,"USA","Mewis","interceptions",NA,NA,NA,NA,NA,NA,NA
 1058,"76",NA,"USA","Mewis","passes.f.c",NA,NA,"through",NA,"COL","Usme","pressured",NA,NA,NA,NA,"key.passes",NA,NA
 1058,"76",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1059,"76",NA,"USA","O'Reilly","take.on.lost",NA,NA,NA,NA,"COL","Perez","gk.smothers.won","D18","collected",NA,NA,NA,NA,NA
-1060,"77",NA,"COL","Perez","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1059,"76",NA,"USA","O'Reilly","take.on.lost",NA,NA,NA,"GK","COL","Perez","gk.smothers.won","D18","collected",NA,NA,NA,NA,NA
+1060,"77","GK","COL","Perez","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1061,"77",NA,"COL","Cuesta","aerial.lost",NA,NA,NA,NA,"USA","Mewis","aerial.lost",NA,NA,NA,NA,NA,NA,NA
 1062,"77",NA,"COL","Santos","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1063,"77",NA,"COL","Santos","passes.f.c",NA,NA,NA,NA,"USA","O'Reilly","challenged",NA,NA,NA,NA,NA,NA,NA
@@ -1220,7 +1220,7 @@
 1077,"77",NA,"USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1078,"77",NA,"USA","Sonnett","passes.s.c",NA,NA,NA,NA,"COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA
 1079,"77",NA,"USA","Engen","passes.b.c",NA,NA,NA,NA,"COL","Cuesta","pressured",NA,NA,NA,NA,NA,NA,NA
-1080,"77",NA,"USA","Solo","passes.f.c",NA,NA,NA,NA,"COL","Cuesta","pressured",NA,NA,NA,NA,NA,NA,NA
+1080,"77","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,"COL","Cuesta","pressured",NA,NA,NA,NA,NA,NA,NA
 1081,"77",NA,"USA","Engen","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1082,"77",NA,"USA","Engen","passes.f.c",NA,NA,NA,NA,"COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA
 1083,"77",NA,"USA","O'Reilly","passes.b.c",NA,NA,NA,NA,"COL","Echeverri","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -1233,7 +1233,7 @@
 1089,"78",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1090,"78",NA,"USA","Press","shots.missed","A18",NA,NA,NA,"COL","Gaitan","pressured","D18",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 1090,"78",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Gaitan","blocks",NA,NA,NA,NA,NA,NA,NA
-1090,"78",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","gk.shot.miss","D6",NA,NA,NA,NA,NA,NA
+1090,"78",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","gk.shot.miss","D6",NA,NA,NA,NA,NA,NA
 1091,"78",NA,"COL","Asprilla","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1092,"78",NA,"COL","Arbelaez","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1093,"78",NA,"USA","Heath","passes.s.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1241,8 +1241,8 @@
 1095,"79",NA,"USA","Heath","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1096,"79",NA,"USA","Press","passes.f.c",NA,"A18","corner.crosses",NA,"COL","Pineda","pressured",NA,NA,NA,NA,NA,NA,NA
 1097,"79",NA,"USA","Mewis","shots.missed","A18",NA,"headed",NA,"COL","Arias","challenged","D18",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
-1097,"79",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","gk.shot.miss","D6",NA,NA,NA,NA,NA,NA
-1098,"79",NA,"COL","Perez","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1097,"79",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","gk.shot.miss","D6",NA,NA,NA,NA,NA,NA
+1098,"79","GK","COL","Perez","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1098,"79",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1099,"79",NA,"COL","Pineda","aerial.lost",NA,NA,NA,NA,"USA","Mewis","aerial.won",NA,NA,NA,NA,NA,NA,NA
 1100,"79",NA,"COL","Arbelaez","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1300,7 +1300,7 @@
 1144,"82",NA,"COL","Gaitan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1145,"82",NA,"COL","Gaitan","clearances",NA,NA,NA,NA,"USA","Dunn","blocks",NA,NA,NA,NA,NA,NA,NA
 1145,"82",NA,NA,NA,NA,NA,NA,NA,NA,"USA","Dunn","pressured",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
-1146,"83",NA,"COL","Perez","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1146,"83","GK","COL","Perez","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1146,"83",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1147,"83",NA,"COL","Echeverri","aerial.lost",NA,NA,NA,NA,"USA","Mewis","aerial.won",NA,NA,NA,NA,NA,NA,NA
 1148,"83",NA,"COL","Velasquez","aerial.won",NA,NA,NA,NA,"USA","Dunn","aerial.lost",NA,NA,NA,NA,NA,NA,NA
@@ -1317,8 +1317,8 @@
 1158,"83",NA,"COL","Arbelaez","passes.f.c",NA,NA,NA,NA,"USA","Press","challenged",NA,NA,NA,NA,NA,NA,NA
 1159,"83",NA,"COL","Pineda","passes.f.c",NA,NA,"flick.on",NA,"USA","Mewis","challenged",NA,NA,NA,NA,NA,NA,NA
 1160,"83",NA,"COL","Usme","passes.f",NA,NA,"launch",NA,"USA","Sonnett","ball.shield",NA,NA,NA,NA,NA,NA,NA
-1160,"83",NA,NA,NA,NA,NA,NA,"through",NA,"USA","Solo","gk.smothers.won","D6",NA,NA,NA,NA,NA,NA
-1161,"83",NA,"USA","Solo","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1160,"83",NA,NA,NA,NA,NA,NA,"through","GK","USA","Solo","gk.smothers.won","D6",NA,NA,NA,NA,NA,NA
+1161,"83","GK","USA","Solo","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1162,"83",NA,"USA","Mewis","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1163,"83",NA,"USA","Krieger","passes.f.c",NA,NA,NA,NA,"COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA
 1164,"84",NA,"USA","O'Reilly","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1342,8 +1342,8 @@
 1179,"85",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Echeverri","pressured",NA,NA,NA,NA,NA,NA,NA
 1180,"85",NA,"USA","Heath","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1181,"85",NA,"USA","Heath","passes.f",NA,NA,"corner.crosses",NA,"COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA
-1181,"85",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","gk.loose.balls.won","D18","caught",NA,NA,NA,NA,NA
-1182,"85",NA,"COL","Perez","passes.f",NA,NA,"launch",NA,"USA","Sonnett","interceptions",NA,NA,NA,NA,NA,NA,NA
+1181,"85",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","gk.loose.balls.won","D18","caught",NA,NA,NA,NA,NA
+1182,"85","GK","COL","Perez","passes.f",NA,NA,"launch",NA,"USA","Sonnett","interceptions",NA,NA,NA,NA,NA,NA,NA
 1183,"85",NA,"USA","Sonnett","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1184,"85",NA,"USA","Long","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1185,"85",NA,"USA","Long","passes.s.c",NA,NA,"headed",NA,"COL","Pineda","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -1364,7 +1364,7 @@
 1199,"86",NA,"COL","Usme","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1200,"86",NA,"COL","Usme","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1201,"86",NA,"COL","Echeverri","fouls.won",NA,NA,NA,NA,"USA","O'Reilly","fouls.conceded",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA
-1202,"86",NA,"COL","Perez","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1202,"86","GK","COL","Perez","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1202,"86",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1203,"86",NA,"COL","Santos","aerial.lost",NA,NA,NA,NA,"USA","Krieger","aerial.won",NA,NA,NA,NA,NA,NA,NA
 1204,"86",NA,"USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1385,7 +1385,7 @@
 1217,"87",NA,"COL","Gaitan","passes.f",NA,NA,"launch",NA,"USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA
 1218,"87",NA,"USA","Heath","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1219,"87",NA,"USA","Heath","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1220,"87",NA,"USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1220,"87","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1221,"87",NA,"USA","Engen","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1222,"87",NA,"USA","Engen","passes.f.c",NA,NA,NA,NA,"COL","Cuesta","pressured",NA,NA,NA,NA,NA,NA,NA
 1223,"87",NA,"USA","Lloyd","passes.f",NA,NA,NA,NA,"COL","Echeverri","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
@@ -1406,7 +1406,7 @@
 1238,"88",NA,"USA","Heath","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1239,"88",NA,"USA","Long","passes.b.c",NA,NA,NA,NA,"COL","Ariza","challenged",NA,NA,NA,NA,NA,NA,NA
 1240,"88",NA,"USA","Sonnett","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1241,"88",NA,"USA","Solo","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1241,"88","GK","USA","Solo","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1242,"88",NA,"USA","Krieger","aerial.won",NA,NA,NA,NA,"COL","Santos","aerial.lost",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA
 1243,"88",NA,"USA","Krieger","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1244,"89",NA,"USA","Mewis","passes.f.c",NA,NA,NA,NA,"COL","Regnier","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -1441,7 +1441,7 @@
 1267,"90",NA,"USA","Mewis","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1268,"90",NA,"USA","Press","passes.s.c",NA,"A18","corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1269,"90",NA,"USA","Long","shots.stopped.by.gk","A18",NA,"headed",NA,"COL","Santos","pressured","D18",NA,NA,NA,NA,NA,NA
-1269,"90",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","gk.s.o.g.stop","D6","caught","diving",NA,NA,NA,NA
+1269,"90",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","gk.s.o.g.stop","D6","caught","diving",NA,NA,NA,NA
 1270,"90",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1271,"90",NA,"COL","Ariza","aerial.lost",NA,NA,NA,NA,"USA","Heath","aerial.won",NA,NA,NA,NA,NA,NA,NA
 1272,"90",NA,"USA","Heath","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1507,5 +1507,5 @@
 1323,"90+3",NA,"USA","Lloyd","passes.f.c",NA,NA,"flick.on",NA,"COL","Pineda","pressured",NA,NA,NA,NA,NA,NA,NA
 1324,"90+3",NA,"USA","Dunn","passes.b.c",NA,"A3C","lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1325,"90+3",NA,"USA","Lloyd","shots.missed","A3C",NA,NA,NA,"COL","Pineda","challenged","D3C",NA,NA,NA,NA,NA,NA
-1325,"90+3",NA,NA,NA,NA,NA,NA,NA,NA,"COL","Perez","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
+1325,"90+3",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Perez","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA
 1326,"90+3",NA,NA,NA,"end.of.match",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
