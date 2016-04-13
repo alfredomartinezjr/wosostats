@@ -1,6 +1,6 @@
 *This is a list of action definitions that are meant to inform how actions should be logged. It is meant to be used by people who are either logging stats on their own or would like to have a look at how they are being defined. If you would like to see definitions for stats that are calculated from these actions (such as in the Shiny app or on various R Markdown docs), you'll want to go to the stats-glossary.md page (coming soon)!*
 
-Below is a list of definitions for values to be used when logging match actions in the match-stats-template.xlsx Excel document. These values are player actions (such as passes and shotsb), qualifiers to player actions that further describe the action (such as the type of pass or if a big chance was stopped), and location data. When logging actions, refer to this document when in doubt about what a certain value means and when to log it. Feedback is welcome and should be sent to alfredom790@gmail or @WoSoStats on Twitter.
+Below is a list of definitions for values to be used when logging match actions in the match-stats-template.xlsx Excel document. These values are player actions (such as passes and shots), qualifiers to player actions that further describe the action (such as the type of pass or if a big chance was stopped), and location data. When logging actions, refer to this document when in doubt about what a certain value means and when to log it. Feedback is welcome and should be sent to alfredom790@gmail or @WoSoStats on Twitter.
 
 #Table of Contents
 * Possessing Player Actions - `poss.action`
@@ -8,17 +8,17 @@ Below is a list of definitions for values to be used when logging match actions 
 * Defensive Player Actions - `def.action`
 * Goalkeeper Actions - `gk.ball.stop` & `gk.s.o.g.attempt`
 * Disciplinary Actions - `poss.player.disciplinary` & `def.player.disciplinary`
-* Additonal Possessing Player Notes - `poss.notes`
-* Additonal Defensive Player Notes - `def.notes`
+* Additional Possessing Player Notes - `poss.notes`
+* Additional Defensive Player Notes - `def.notes`
 * Location-based Notes - `poss.location`, `poss.play.destination`, & `def.location`
 
-Each player action falls under one of nine different types of actions. In the match-stats-templace.xlsx Excel document, this looks like nine different columns.
+Each player action falls under one of nine different types of actions. In the match-stats-template.xlsx Excel document, this looks like nine different columns.
 
 A key part of this model is that during any given moment in a match there is a team in "possession" of the ball and a team "defending" the ball. As such, these nine different columns will fall into one of three different types of actions: 1) actions by a player from the team "in possession" of the ball, 2) actions by a player from the team "defending" against the ball, and 3) actions by a goalkeeper making a play on the ball.
 
-Another key part of this model is that there are actions that can only be done by a team in posession of the ball, actions that can only be done by a team playing defense, and actions that denote a clear change in possession. The last point is crucial; there are certain defensive actions (such as an interception) that signal a clear change in possession to the defending team, certain possessive actions (such as a recovery by a team that was formerly defending that do the same, and certain actions in other columns (such as a ball that went out of bounds and goes to the other team) that also do the same. This "flow" to the game where one team is in possession of the ball, the other team is defending, and certain moments denote a change in possession are key to logging stats under this model.
+Another key part of this model is that there are actions that can only be done by a team in possession of the ball, actions that can only be done by a team playing defense, and actions that denote a clear change in possession. The last point is crucial; there are certain defensive actions (such as an interception) that signal a clear change in possession to the defending team, certain possessive actions (such as a recovery by a team that was formerly defending that do the same, and certain actions in other columns (such as a ball that went out of bounds and goes to the other team) that also do the same. This "flow" to the game where one team is in possession of the ball, the other team is defending, and certain moments denote a change in possession are key to logging stats under this model.
 
-Locgging location data is laborious and, unless requested or unless you really want to know it, it is only recommended that it be logged for shots. More on how to define the different locations of a soccer pitch will be covered in its section, "Location-based Notes".
+Logging location data is laborious and, unless requested or unless you really want to know it, it is only recommended that it be logged for shots. More on how to define the different locations of a soccer pitch will be covered in its section, "Location-based Notes".
 
 For each definition, the long name will be shown in **bold like this** and the different ways you can actually write it in the Excel spreadsheet will be shown in `code span like this`, separated by a comma. You are not to write out the long name in the Excel spreadsheet, and it is highly recommended you use the shortest version possible, as using shortcuts will save you a significant amount of time. Shortcuts specified below do not need to be searched and replaced after the fact with anything, as they will be correctly logged by the R code used by the Shiny App. However, while you are free to use any other shortcuts you like (such as nicknames for players), know that those will have to be searched and replaced in order to be readable by the R code that has been created.
 
@@ -97,7 +97,7 @@ Megan Rapinoe, the player in yellow and purple, wins a take on against Erika Tym
 
 **Take ons lost** - `take.on.lost`, `tol`
 
-A take on is “lost” if a player intentionally attempts to get past her defender and ends up getting dispossessed by a tackle (regardless of who recovers the ball), a lost touch, a ball shield, or because she conceded a foul to a defender. A lost take-on is different from the "dispossessed" definition covered below because a "take on lost" was the result of an intential attempt to get past a defender.
+A take on is “lost” if a player intentionally attempts to get past her defender and ends up getting dispossessed by a tackle (regardless of who recovers the ball), a lost touch, a ball shield, or because she conceded a foul to a defender. A lost take-on is different from the "dispossessed" definition covered below because a "take on lost" was the result of an intentional attempt to get past a defender.
 
 Example: [http://i.imgur.com/n0ThErg.gif](http://i.imgur.com/n0ThErg.gif)
 
@@ -117,7 +117,7 @@ Keelin Winters, the player in yellow and purple who receives the pass, is dispos
 
 Example 2: [http://i.imgur.com/GWHVuk5.gif](http://i.imgur.com/GWHVuk5.gif)
 
-Demi Stokes, the player in red who receives the pass, is immediatelly challenged for the ball by Tobin Heath, the player in white. Stokes, practically face to face with Heath, never seems to be taking on Heath so much as she is trying to keep the ball away. Since it doesn't look like a clear take on, and since it's clear that Heath was forcing a dispossession with a tackle, this is considered a "dispossessed" for Stokes. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+Demi Stokes, the player in red who receives the pass, is immediately challenged for the ball by Tobin Heath, the player in white. Stokes, practically face to face with Heath, never seems to be taking on Heath so much as she is trying to keep the ball away. Since it doesn't look like a clear take on, and since it's clear that Heath was forcing a dispossession with a tackle, this is considered a "dispossessed" for Stokes. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
 ![](http://i.imgur.com/NxF9P55.png)
 
@@ -137,7 +137,7 @@ Lindsey Horan, the player in white, attempts to trap a ball with her body but en
 
 Example 2: [http://i.imgur.com/hVcRbPJ.gif](http://i.imgur.com/hVcRbPJ.gif)
 
-Mallory Pugh, the player in white, attemps to win a ball that has been knocked into her direction from an aerial duel, and she ends up mistouching it and glancing it into the direction of a player on the opposing team. It's not clear that this was meant to be a pass and Jordan Nobbs, the player in red from the opposing team running towards her from behind, was not physically engaged with her as Pugh was attempting to control the ball, so this is considered a "lost.touch." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+Mallory Pugh, the player in white, attempts to win a ball that has been knocked into her direction from an aerial duel, and she ends up mistouching it and glancing it into the direction of a player on the opposing team. It's not clear that this was meant to be a pass and Jordan Nobbs, the player in red from the opposing team running towards her from behind, was not physically engaged with her as Pugh was attempting to control the ball, so this is considered a "lost.touch." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
 ![](http://i.imgur.com/JtSy0jH.png)
 
@@ -165,13 +165,13 @@ A lost aerial duel should be logged for both players when they both had a reason
 
 Example 1: [http://i.imgur.com/EspvEYN.gif](http://i.imgur.com/EspvEYN.gif)
 
-Mallory Pugh, the player in white, and Steph Houghton, the player in red, both have a resonable chance at winning this launched pass, but neither really manages to get off a good jump, due to running into each other, even though it was a winnable ball in the air for both of them. This goes down as an "aerial.lost" for the "possessing" player (due to the ball still being in "possession" of the team in white), and also an "aerial.lost" for the defending player. On the spreadsheet, this action would look like the following (certain columns have been hidden to better show this):
+Mallory Pugh, the player in white, and Steph Houghton, the player in red, both have a reasonable chance at winning this launched pass, but neither really manages to get off a good jump, due to running into each other, even though it was a winnable ball in the air for both of them. This goes down as an "aerial.lost" for the "possessing" player (due to the ball still being in "possession" of the team in white), and also an "aerial.lost" for the defending player. On the spreadsheet, this action would look like the following (certain columns have been hidden to better show this):
 
 ![](http://i.imgur.com/lK5EHAs.png)
 
 **Recoveries** - `recoveries`, `r`
 
-A recovery is when a player gets posession of a loose ball, regardless of which team was the one to previously have possession of the ball. A recovery should always be logged when a player wins possession of the ball after a scenario that creates a loose ball, such as (but not limited to) a block, an aerial duel, a clearance, or a tackle, a missed pass, or a dispossession. Recoveries are a way of noting how a team wins or maintains possession.
+A recovery is when a player gets possession of a loose ball, regardless of which team was the one to previously have possession of the ball. A recovery should always be logged when a player wins possession of the ball after a scenario that creates a loose ball, such as (but not limited to) a block, an aerial duel, a clearance, or a tackle, a missed pass, or a dispossession. Recoveries are a way of noting how a team wins or maintains possession.
 
 To reiterate, every moment where a player gains possession of a loose ball, regardless of which team last possessed the ball, must be logged as recovery for the recovering player.
 
@@ -195,7 +195,7 @@ Toni Duggan, the player in red, attempts to pass the ball sideways but it ends u
 
 **Balls shielded** - `ball.shield`, `bs`
 
-A ball shield in the "poss.action" column is when a possessing player, *who it should can be deemed to already have possession of the ball*, intentionally uses her body to shield the ball from a defender with the intention of keeping the ball in her team's possession. This action is meant to encompass moments where a player is trying to waste time by shielding the ball in the corner; when a player is trying to earn a throw-in or corner by getting a defender to knock the ball out of bounds; when a player shields a loose ball or pass for a teammate to pick up; or when a player shields a pass to turn a defender before touching the balll.
+A ball shield in the "poss.action" column is when a possessing player, *who it should can be deemed to already have possession of the ball*, intentionally uses her body to shield the ball from a defender with the intention of keeping the ball in her team's possession. This action is meant to encompass moments where a player is trying to waste time by shielding the ball in the corner; when a player is trying to earn a throw-in or corner by getting a defender to knock the ball out of bounds; when a player shields a loose ball or pass for a teammate to pick up; or when a player shields a pass to turn a defender before touching the ball.
 
 There is a "ball.shield" action in the "def.action" column, but that goes for a separate type of ball shields that gets credited to a player from a team defending the ball.
 
@@ -233,7 +233,7 @@ These are pesky instances when the broadcast of the game is cut off by something
 
 On super-pesky instances when the broadcast cuts off right after a completed, impeding your ability to tell if the pass was completed or not and to who, log the last pass that could be seen that was completed as "passes.f.c", "passes.s.c", or "passes.b.c", depending on the direction of the pass. The "c" at the end indicates that the pass was completed. You only need add that "c" when a completed pass was the last action before a stoppage in play or broadcast interruption. 
 
-The shory story for the reason for the "c", and why you don't have to add it to every single completed pass attempt in the game, is that the R code that reads the Excel file, which generates the match actions .csv file that is used to compute match stats, can tell if a pass attempt was completed based on other actions and qualifiers in the surrounding events and columns, except for these instances when play was stopped or cut off directly after a completed pass.
+The short story for the reason for the "c", and why you don't have to add it to every single completed pass attempt in the game, is that the R code that reads the Excel file, which generates the match actions .csv file that is used to compute match stats, can tell if a pass attempt was completed based on other actions and qualifiers in the surrounding events and columns, except for these instances when play was stopped or cut off directly after a completed pass.
 
 For example, observe this moment: [https://streamable.com/7o9o](https://streamable.com/7o9o). Ali Krieger, the player in white, completes a pass forward to her teammate Sam Mewis, and then the broadcast cuts to a shot of Hope Solo for a couple of seconds. When the broadcast, does return to the game, the ball is still in possession of the same team but is now at the feet of Whitney Engen. Since it is not 100% clear what happened while the camera was on Solo, on the spreadsheet this action would look like the following (certain columns have been hidden to better show this):
 
@@ -269,9 +269,9 @@ If not a substitution or end of play, any other instances that stop play, such a
 #Play Types
 Column name: `play.type`
 
-Certain shots and passes logged in the `poss.action` column will be of special types that will require additional qualifiers to be logged in this column. Sometimes more than one of these will apply, such as a lay off that was also headed, in which case a new row should be created (but leaving the 'poss.action' column blank so as not to create a new event by accidet), and the additional qualifier should be added in the new row.
+Certain shots and passes logged in the `poss.action` column will be of special types that will require additional qualifiers to be logged in this column. Sometimes more than one of these will apply, such as a lay off that was also headed, in which case a new row should be created (but leaving the 'poss.action' column blank so as not to create a new event by accident), and the additional qualifier should be added in the new row.
 
-To further show how multiple qualifiers can be added to the same action, below are two examples taken from an Excel spreadsheet for an actual match (certain columns have been hidden to better show the use of mutiple qualifiers).
+To further show how multiple qualifiers can be added to the same action, below are two examples taken from an Excel spreadsheet for an actual match (certain columns have been hidden to better show the use of multiple qualifiers).
 
 Example 1: [http://i.imgur.com/hPSFSq9.gifv](http://i.imgur.com/hPSFSq9.gifv)
 
@@ -400,7 +400,7 @@ Defensive actions end up getting logged in the "def.action" column like this on 
 
 When a defender challenges a possessing player, connects with the ball while making contact and engaging with the player, and successfully dispossesses the possessing player of the ball, it's a successful tackle that should be logged as "tackles.ball". Regardless of whether the defending player immediately wins the tackled ball, or just tackles the ball away, it should always be logged as a "tackles.ball."
 
-The difference between a tackle and the "dispossessing" defensive actions described below is that a tackle involves the defender enganging the possessing player (i.e. making contact with her and actually trying to challenge her off the ball).
+The difference between a tackle and the "dispossessing" defensive actions described below is that a tackle involves the defender engaging the possessing player (i.e. making contact with her and actually trying to challenge her off the ball).
 
 There will be moments when a defender tackles the ball away, creates a loose ball, and has to run to recover the ball. This should be logged as a "tackles.ball" for the defender and then that defender should get a "recoveries" in the next event in the "poss.action" column. For moments when a defender tackles the ball away and another player recovers the ball, regardless of which team recovers the ball, the defender should get credited with a "tackles.ball" and the player who subsequently recovers the ball gets credited with a "recoveries" in the next event in the "poss.action" column.
 
@@ -412,7 +412,7 @@ Demi Stokes, the player in red, attempts to take on Morgan Brian, the defender i
 
 Example 2: [http://i.imgur.com/GWHVuk5.gif](http://i.imgur.com/GWHVuk5.gif)
 
-Demi Stokes, the player in red who receives the pass, is immediatelly challenged for the ball by Tobin Heath, the player in white. Stokes, practically face to face with Heath, never seems to be taking on Heath so much as she is trying to keep the ball away. Despite the fact that it doesn't look like a take on, Heath looks like she was engaging Stokes, was challenging her for the ball, and ultimately tackled the ball away. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+Demi Stokes, the player in red who receives the pass, is immediately challenged for the ball by Tobin Heath, the player in white. Stokes, practically face to face with Heath, never seems to be taking on Heath so much as she is trying to keep the ball away. Despite the fact that it doesn't look like a take on, Heath looks like she was engaging Stokes, was challenging her for the ball, and ultimately tackled the ball away. This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
 ![](http://i.imgur.com/gQCcBVq.png)
 
@@ -434,7 +434,7 @@ Meghan Klingenberg, the player in white, tackles the ball away from Anna Blasse,
 
 ![](http://i.imgur.com/pdL8BL9.png)
 
-**Dibbled by an opponent due to a missed tackle** - `dribbled.tackles.missed`, `dbm`
+**Dribbled by an opponent due to a missed tackle** - `dribbled.tackles.missed`, `dbm`
 
 When a defender goes in for a tackle, either misses the ball or connects with the ball but without being able to dispossess the possessing player, and the possessing player dribbles past the missed tackle.
 
@@ -450,7 +450,7 @@ Also known as getting "burnt." When a defender has a possessing player dribble p
 
 Example 1: [http://i.imgur.com/7BuGs8N.gifv](http://i.imgur.com/7BuGs8N.gifv)
 
-Babett Peter, the player in red, faces Alex Morgan, the player in white with possession of the ball, but proceeds to get out-run by Morgan as she dribbles past her in the 18-yad box. Peter gets credited with a "dribbled.out.run". This looks like this on the spreadsheet (certain columns have been hidden to better show this):
+Babett Peter, the player in red, faces Alex Morgan, the player in white with possession of the ball, but proceeds to get out-run by Morgan as she dribbles past her in the 18-yard box. Peter gets credited with a "dribbled.out.run". This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
 ![](http://i.imgur.com/pZ4lCKr.png)
 
@@ -474,7 +474,7 @@ When a defender applies pressure onto a possessing player's pass, shot, movement
 
 **Challenging an opponent** - `challenged`, `ch`
 
-Same as a `pressured` instance, except these are instances when a defender ends up making contact with a possessing player as she is making one of the aforementioned plays (pass, shot, movement into another zone, ball shield, recovery), further challening that possessing player's ability to make that play on the ball. Like with pressuring an opponent, there can be more than one defender deemed to be challeging an opponent (for example, being double-teamed).
+Same as a `pressured` instance, except these are instances when a defender ends up making contact with a possessing player as she is making one of the aforementioned plays (pass, shot, movement into another zone, ball shield, recovery), further challenging that possessing player's ability to make that play on the ball. Like with pressuring an opponent, there can be more than one defender deemed to be challeging an opponent (for example, being double-teamed).
 
 **Blocks** - `blocks`, `bl`
 
@@ -500,7 +500,7 @@ Aerial duels are when two players challenge for a 50/50 ball in the air. The fir
 
 A player is deemed to have lost an aerial duel if the player challenging her for the ball got to the ball first, regardless of where the ball ends up or who recovers it.
 
-When both players challenge for the ball and neither wins the ball (i.e., they both mistime their jumps) but can reasonable be said to have had a chance to win the ball, then they both get credidet with an "aerial.lost."
+When both players challenge for the ball and neither wins the ball (i.e., they both mistime their jumps) but can reasonable be said to have had a chance to win the ball, then they both get credited with an "aerial.lost."
 
 **Shots on goal stopped by a goalkeeper** - `gk.s.o.g.stop`, `gksogstop`
 
@@ -605,9 +605,9 @@ When a goalkeeper makes a save attempt on a shot on goal with any part of her bo
 #Disciplinary notes
 Column names: `poss.player.disciplinary` & `def.player.disciplinary`
 
-When a player wins or concededes foul, card, and/or penaly, it should be logged for the possessing player in the `poss.player.disciplinary` column and for the defending player in the `def.player.disciplinary` column. Sometimes more than one of these will apply, such as penalty kick conceded that was also a yellow card, in which case a comma should separate the two in the same cell so it looks like `yellow.cards,penalties.conceded`.
+When a player wins or concedes foul, card, and/or penalty, it should be logged for the possessing player in the `poss.player.disciplinary` column and for the defending player in the `def.player.disciplinary` column. Sometimes more than one of these will apply, such as penalty kick conceded that was also a yellow card, in which case a comma should separate the two in the same cell so it looks like `yellow.cards,penalties.conceded`.
 
-**Fould won** - `fouls.won`, `fw`
+**Fouls won** - `fouls.won`, `fw`
 
 **Fouls conceded** `fouls.conceded`, `fc`
 
@@ -638,7 +638,7 @@ A big chance is a clear-cut goal scoring opportunity where a possessing player i
 
 When deciding if a certain moment is a big chance, consider the following: pressure on a possessing player, position of the player, movement of the player, angle at which the player was facing the goal, position of goalkeeper, and control on the ball.
 
-When a big chance has occured, log `big.chances.shot.on.goal` if the possessing player gets a shot on goal but does not score.
+When a big chance has occurred, log `big.chances.shot.on.goal` if the possessing player gets a shot on goal but does not score.
 
 **Big chances missed** - `big.chances.shot.missed`, `bcsm`
 
@@ -646,7 +646,7 @@ A big chance is a clear-cut goal scoring opportunity where a possessing player i
 
 When deciding if a certain moment is a big chance, consider the following: pressure on a possessing player, position of the player, movement of the player, angle at which the player was facing the goal, position of goalkeeper, and control on the ball.
 
-When a big chance has occured, log `big.chances.shot.missed` if the possessing player misses the shot.
+When a big chance has occurred, log `big.chances.shot.missed` if the possessing player misses the shot.
 
 **Big chances dispossessed** - `big.chances.dispossessed`, `bcd`
 
@@ -654,7 +654,7 @@ A big chance is a clear-cut goal scoring opportunity where a possessing player i
 
 When deciding if a certain moment is a big chance, consider the following: pressure on a possessing player, position of the player, movement of the player, angle at which the player was facing the goal, position of goalkeeper, and control on the ball.
 
-When a big chance has occured, log `big.chances.dispossessed` if the possessing player gets dispossessed before having a chance at a shot on goal
+When a big chance has occurred, log `big.chances.dispossessed` if the possessing player gets dispossessed before having a chance at a shot on goal
 
 **Big chances lost** - `big.chances.lost`, `bcl`
 
@@ -662,7 +662,7 @@ A big chance is a clear-cut goal scoring opportunity where a possessing player i
 
 When deciding if a certain moment is a big chance, consider the following: pressure on a possessing player, position of the player, movement of the player, angle at which the player was facing the goal, position of goalkeeper, and control on the ball.
 
-When a big chance has occured, log `big.chances.lost` for moments when a player had a reasonable chance at winning control of the ball but missed the ball, usually due to a mistimed kick.
+When a big chance has occurred, log `big.chances.lost` for moments when a player had a reasonable chance at winning control of the ball but missed the ball, usually due to a mistimed kick.
 
 Example 1: [http://i.imgur.com/Wt6giq4.gifv](http://i.imgur.com/Wt6giq4.gifv)
 
@@ -691,10 +691,10 @@ A pass instrumental in creating a big chance, regardless of whether it was conve
 
 **Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`, `etbc`
 
-#Additonal Defensive Player Notes
+#Additional Defensive Player Notes
 Column name: `def.notes`
 
-Similary for defending players, certain defensive actions will also need additional qualifiers, related to defensive accomplishments and mistakes, that don't fit in any of the other aforementioned columns and should instead be be logged in the `def.notes` column.
+Likewise for defending players, certain defensive actions will also need additional qualifiers, related to defensive accomplishments and mistakes, that don't fit in any of the other aforementioned columns and should instead be be logged in the `def.notes` column.
 
 **Big chances stopped** - `big.chances.stopped`, `bcc`
 
