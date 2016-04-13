@@ -474,7 +474,7 @@ When a defender applies pressure onto a possessing player's pass, shot, movement
 
 **Challenging an opponent** - `challenged`, `ch`
 
-Same as a `pressured` instance, except these are instances when a defender ends up making contact with a possessing player as she is making one of the aforementioned plays (pass, shot, movement into another zone, ball shield, recovery), further challenging that possessing player's ability to make that play on the ball. Like with pressuring an opponent, there can be more than one defender deemed to be challeging an opponent (for example, being double-teamed).
+Same as a `pressured` instance, except these are instances when a defender ends up making contact with a possessing player as she is making one of the aforementioned plays (pass, shot, movement into another zone, ball shield, recovery), further challenging that possessing player's ability to make that play on the ball. Like with pressuring an opponent, there can be more than one defender deemed to be challenging an opponent (for example, being double-teamed).
 
 **Blocks** - `blocks`, `bl`
 
@@ -500,7 +500,7 @@ Aerial duels are when two players challenge for a 50/50 ball in the air. The fir
 
 A player is deemed to have lost an aerial duel if the player challenging her for the ball got to the ball first, regardless of where the ball ends up or who recovers it.
 
-When both players challenge for the ball and neither wins the ball (i.e., they both mistime their jumps) but can reasonable be said to have had a chance to win the ball, then they both get credited with an "aerial.lost."
+When both players challenge for the ball and neither wins the ball (i.e., they both mistime their jumps) but can reasonably be said to have had a chance to win the ball, then they both get credited with an "aerial.lost."
 
 **Shots on goal stopped by a goalkeeper** - `gk.s.o.g.stop`, `gksogstop`
 
