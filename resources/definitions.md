@@ -171,7 +171,7 @@ Mallory Pugh, the player in white, and Steph Houghton, the player in red, both h
 
 **Recoveries** - `recoveries`, `r`
 
-A recovery is when a player gets possession of a loose ball, regardless of which team was the one to previously have possession of the ball. A recovery should always be logged when a player wins possession of the ball after a scenario that creates a loose ball, such as (but not limited to) a block, an aerial duel, a clearance, or a tackle, a missed pass, or a dispossession. Recoveries are a way of noting how a team wins or maintains possession.
+A recovery is when a player gets possession of a loose ball, regardless of which team was the one to previously have possession of the ball. A recovery should always be logged when a player wins possession of the ball after a scenario that creates a loose ball, such as (**but not limited to**) a block, an aerial duel, a clearance, or a tackle, a blocked shot, a missed pass, a lost touch, or a dispossession. Recoveries are a way of noting how a team wins or maintains possession.
 
 To reiterate, every moment where a player gains possession of a loose ball, regardless of which team last possessed the ball, must be logged as recovery for the recovering player.
 
