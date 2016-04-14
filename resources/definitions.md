@@ -536,7 +536,7 @@ When a goalkeeper faces a take on by an opposing player in the box and loses it 
 
 **Loose balls claimed by the goalkeeper** - `gk.loose.balls.won`, `gklbw`
 
-When a goalkeeper successfully claims a loose ball.
+When a goalkeeper successfully claims a loose ball and wins possession with her hands.
 
 **Loose balls lost by the goalkeeper** - `gk.loose.balls.lost`, `gklbl`
 
