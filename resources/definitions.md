@@ -123,7 +123,7 @@ Demi Stokes, the player in red who receives the pass, is immediately challenged 
 
 **Lost touch** - `lost.touch`, `lt`
 
-A lost touch is when a player loses possession of the ball due to a mistouch or heavy touch, without it being clear that she was attempting a shot, pass or taken; or it is when a player attempts to win possession of the ball and unsuccessfully knocks it away with a mistouch or bad touch.
+A lost touch is when a player loses possession of the ball due to a mistouch or heavy touch, without it being clear that she was attempting a shot, pass or take-on; or it is when a player attempts to win possession of the ball and unsuccessfully knocks it away with a mistouch or bad touch.
 
 This type of action is meant to be different from the ones defined above (lost take ons and "dispossessions") in that a "lost touch", as it should appear in this Excel spreadsheet, is meant to encompass bad touches. It is not meant to define unsuccessful intentional attempts to get past opponents, and it is not meant to define moments where a player, who wasn't attempting to take on anyone, was dispossessed because of a defender intentional attempt at taking the ball away. 
 
