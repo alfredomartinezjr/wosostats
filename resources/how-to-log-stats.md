@@ -130,7 +130,8 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
   * **Punched to safety** - `punched.to.safety`
   * **Punched to danger** - `punched.to.danger`
   * **Dropped** - `dropped`
-  * **Missed the ball** - `missed.the.ball`**Collected** - `collected`
+  * **Missed the ball** - `missed.the.ball`
+  * **Collected** - `collected`
   * **Parried to safety** - `parried.to.safety`
   * **Parried to danger** - `parried.to.danger`
   * **Deflected to safety** - `deflected.to.safety`
