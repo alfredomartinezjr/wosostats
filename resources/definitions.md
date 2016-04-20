@@ -81,7 +81,9 @@ The above example on an Excel spreadsheet would look like this, with each "movem
 
 **Take ons won** - `take.on.won`, `tkw`
 
-A take on is an intentional attempt by a player to get past her defender while maintaining possession of the ball. A take on is “won” if the player dribbles past a defender, turns a defender to create open space, or draws a foul. 
+A take on is an intentional attempt by a player to get past her defender while maintaining possession of the ball. A take on is “won” if the player dribbles past a defender, turns a defender to create open space, or draws a foul.
+
+When a player wins a take on, the defender who was beat (or multiple defenders) must be logged as "dribbled" in the "def.action" column. More on the different ways a defender can be dribbled are described further below, but every take on won should also have in that event at least one defender who shown to have been dribbled.
 
 Example 1: [http://i.imgur.com/uTDOeay.gif](http://i.imgur.com/uTDOeay.gif)
 
@@ -147,9 +149,11 @@ Jess Fishlock, the player in yellow and purple, receives a pass from Kim Little 
 
 **Aerial duels won** - `aerial.won`, `aw`
 
-Aerial duels are when two players challenge for a 50/50 ball in the air. The first player to make contact with the ball is deemed to have won the aerial duel, regardless of where the ball ends up or who recovers it.
+Aerial duels are when two players challenge for a 50/50 ball in the air. The first player to make contact with the ball is deemed to have won the aerial duel, regardless of where the ball ends up or who recovers it. An aerial duel can only happen if two players challenge for the same ball in the air; if just one player goes up for a ball and wasn't clearly being challenged by anyone else, then it's not an aerial duel.
 
 Passes that are also aerial duels should still be counted as aerial duels in a separate row as its own event. So, if a player challenges for a launched ball and heads it to an intended recipient, it should be logged as an `aerial.won` in one event and as a `passes.f/s/b` in the next event.
+
+If a player wins an aerial duel, the defending player who lost that aerial duel must have that "aerial.lost" action logged in the "def.action" column.
 
 Example 1: [http://imgur.com/W4dC52H.gif](http://imgur.com/W4dC52H.gif)
 
@@ -163,6 +167,8 @@ A player is deemed to have lost an aerial duel if the player challenging her for
 
 A lost aerial duel should be logged for both players when they both had a reasonable chance at winning the ball but ended up mistiming their jump.
 
+If a player loses an aerial duel, the defending player who won that aerial duel must have that "aerial.won" action logged in the "def.action" column.
+
 Example 1: [http://i.imgur.com/EspvEYN.gif](http://i.imgur.com/EspvEYN.gif)
 
 Mallory Pugh, the player in white, and Steph Houghton, the player in red, both have a reasonable chance at winning this launched pass, but neither really manages to get off a good jump, due to running into each other, even though it was a winnable ball in the air for both of them. This goes down as an "aerial.lost" for the "possessing" player (due to the ball still being in "possession" of the team in white), and also an "aerial.lost" for the defending player. On the spreadsheet, this action would look like the following (certain columns have been hidden to better show this):
@@ -171,9 +177,19 @@ Mallory Pugh, the player in white, and Steph Houghton, the player in red, both h
 
 **Recoveries** - `recoveries`, `r`
 
-A recovery is when a player gets possession of a loose ball, regardless of which team was the one to previously have possession of the ball. A recovery should always be logged when a player wins possession of the ball after a scenario that creates a loose ball, such as (**but not limited to**) a block, an aerial duel, a clearance, or a tackle, a blocked shot, a missed pass, a lost touch, or a dispossession. Recoveries are a way of noting how a team wins or maintains possession.
+A recovery is when a player gets possession of a loose ball, regardless of which team was the one to previously have possession of the ball. A recovery should always be logged when a player wins possession of the ball after a scenario that creates a loose ball, such as (**but not limited to**):
 
-To reiterate, every moment where a player gains possession of a loose ball, regardless of which team last possessed the ball, must be logged as recovery for the recovering player.
+* A block
+* An aerial duel
+* A clearance
+* A tackle
+* A blocked shot
+* A missed pass
+* A lost touch
+* A dispossession
+* A save going into open play
+
+Recoveries are a way of noting how a team wins or maintains possession. To reiterate, you must log as a recovery every moment where a player gains possession of a loose ball, regardless of which team previously possessed the ball.
 
 Example 1: [http://i.imgur.com/v6B4AIK.gif](http://i.imgur.com/v6B4AIK.gif)
 
@@ -195,7 +211,9 @@ Toni Duggan, the player in red, attempts to pass the ball sideways but it ends u
 
 **Balls shielded** - `ball.shield`, `bs`
 
-A ball shield in the "poss.action" column is when a possessing player, *who it should can be deemed to already have possession of the ball*, intentionally uses her body to shield the ball from a defender with the intention of keeping the ball in her team's possession. This action is meant to encompass moments where a player is trying to waste time by shielding the ball in the corner; when a player is trying to earn a throw-in or corner by getting a defender to knock the ball out of bounds; when a player shields a loose ball or pass for a teammate to pick up; or when a player shields a pass to turn a defender before touching the ball.
+A ball shield in the "poss.action" column is when a possessing player *on a team that already has possession of the ball* intentionally uses her body to shield the ball from a defender and keep it in her team's possession. This action is meant to encompass moments where a player is trying to waste time by shielding the ball in the corner; when a player is trying to earn a throw-in or corner by getting a defender to tackle the ball out of bounds; when a player shields a loose ball or untouched pass for a teammate to pick up; or when a player shields a pass to turn a defender before touching the ball.
+
+To differentiate between a "ball.shield" and a "take.on.won" that turns a defender, a ball shield is for when the player on the possessing team doesn't make a touch on the ball until after the defender is turned.
 
 There is a "ball.shield" action in the "def.action" column, but that goes for a separate type of ball shields that gets credited to a player from a team defending the ball.
 
@@ -207,7 +225,7 @@ Katrine Veje, the player in black and blue, receives a pass in the corner area a
 
 Example 2: [http://i.imgur.com/0dICuJ7.gifv](http://i.imgur.com/0dICuJ7.gifv)
 
-Diana Matheson, the player in white, passes the ball forward to her teammate, Francisca Ordega. Before touching the ball, Ordega shields the ball away from her defender, Lauren Barnes, who is challenging her for the ball. Ordega successfully shields the pass and maintains possession of the ball for her team as she then runs forward towards the box.  On the spreadsheet, this action would look like the following (certain columns have been hidden to better show this):
+Diana Matheson, the player in white, passes the ball forward to her teammate, Francisca Ordega. Before touching the ball, Ordega shields the ball away from her defender, Lauren Barnes, who is challenging her for the ball. Ordega successfully shields the pass and maintains possession of the ball for her team as she then runs forward towards the box. This is an example of a ball shield that would have been a take-on if Ordega had gotten a touch on the ball first. On the spreadsheet, this action would look like the following (certain columns have been hidden to better show this):
 
 ![](http://i.imgur.com/Rk261Cz.png)
 
@@ -219,7 +237,7 @@ Kim Little, the player in black and blue, dribbles the ball towards the corner f
 
 **Clearances** - `clearances`, `cl`
 
-A clearance is logged in the `poss.action` column when a player in possession of the ball intentionally kicks the ball away without an intended recipient. Intent, time on the ball, pressure from defenders, and the angle the player was facing when she kicked the ball all should be considered when deciding to consider something a "clearance" rather than a pass attempt.
+A clearance is logged in the `poss.action` column when a player *in possession of the ball* intentionally kicks the ball away without an intended recipient. Intent, time on the ball, pressure from defenders, and the angle the player was facing when she kicked the ball all should be considered when deciding to consider something a "clearance" rather than a pass attempt.
 
 **Offside Calls** - `offside.calls`
 
@@ -490,15 +508,21 @@ When a defender successfully shields ball that was in possession of the opposing
 
 **Clearances** - `clearances`, `cl`
 
-When a defender intentionally kicks a ball away, without an intended recipient, that was played by the opposing team, without having clearly won possession of the ball. Otherwise, it would be considered an interception followed by a clearance logged in the `poss.action` column.
+When a defender intentionally kicks a ball away that was in possession of the opposing team, without an intended recipient and without having deemed to have recovered or intercepted it, and without having clearly won possession of the ball before the ball was cleared. Otherwise, it would be considered either an interception or recovery, followed by a clearance logged in the `poss.action` column.
 
 **Aerial duels won** - `aerial.won`, `aw`
 
 Aerial duels are when two players challenge for a 50/50 ball in the air. The first player to make contact with the ball is deemed to have won the aerial duel, regardless of where the ball ends up or who recovers it.
 
+If a defender wins an aerial duel, the possessing player who lost that aerial duel must have that "aerial.lost" action logged in the "poss.action" column.
+
+When an aerial duel can be said to also be an interception, log the aerial duel as its own event and make sure to log the interception for the pass event that led to the aerial duel. When an aerial duel can be said to be a recovery of a loose ball that used to be under possession of the opposing team, such as a pass that was blocked and went up in the air, then log the aerial duel as its own event, and then log the recovery for the defending player as the following event.
+
 **Aerial duels lost** - `aerial.lost`, `al`
 
 A player is deemed to have lost an aerial duel if the player challenging her for the ball got to the ball first, regardless of where the ball ends up or who recovers it.
+
+If a defender loses an aerial duel, the possessing player who won that aerial duel must have that "aerial.won" action logged in the "poss.action" column.
 
 When both players challenge for the ball and neither wins the ball (i.e., they both mistime their jumps) but can reasonably be said to have had a chance to win the ball, then they both get credited with an "aerial.lost."
 
@@ -536,11 +560,11 @@ When a goalkeeper faces a take on by an opposing player in the box and loses it 
 
 **Loose balls claimed by the goalkeeper** - `gk.loose.balls.won`
 
-When a goalkeeper successfully claims a loose ball and wins possession with her hands.
+When a goalkeeper successfully claims a loose ball and wins possession with her hands. This usually encompasses moments such as stray missed passes that a goalkeeper goes out to pick up off the ground.
 
 **Loose balls lost by the goalkeeper** - `gk.loose.balls.lost`
 
-When a goalkeeper unsuccessfully comes out for a loose ball. Usually the result of mishandling the ball.
+When a goalkeeper unsuccessfully comes out for a loose ball. Usually the result of mishandling or mistouching the ball.
 
 #Goalkeeper Ball Stops
 Column name: `gk.ball.stop`
@@ -628,7 +652,14 @@ Certain possessing player actions need additional qualifiers, related to scoring
 
 A big chance is a clear-cut goal scoring opportunity where a possessing player is reasonably expected to score. These are usually one-on-one chances with the goalkeeper or very close range and generally unpressured shots.
 
-When deciding if a certain moment is a big chance, consider the following: pressure on a possessing player, position of the player, movement of the player, angle at which the player was facing the goal, position of goalkeeper, and control on the ball.
+When deciding if a certain moment is a big chance, consider the following:
+
+* Pressure on a possessing player from defenders
+* Position of the player
+* Movement of the player
+* Angle at which the player was facing the goal
+* Position of goalkeeper
+* Control on the ball.
 
 When a big chance has occurred, log `big.chances.scored` if the possessing player scores.
 
@@ -681,7 +712,9 @@ A pass that wasn't an assist that was still instrumental in creating a scored bi
 
 **Key passes** - `key.passes`
 
-A pass instrumental in creating a big chance, regardless of whether it was converted into a goal.
+A pass *instrumental* in creating a big chance, regardless of whether it was converted into a goal. Just because a pass led to a shot DOES NOT necessarily make it a key pass, and just because a pass was a nice pass DOES NOT necessarily make it a key pass unless it was *instrumental* in creating a big chance.
+
+As not all assists are necessarily key passes, but it should be noted when an assist is a key pass, when an assist is a key pass, create two rows in the "poss.notes" column: one to note that it was an "assists", another to note it was a "key.passes".
 
 **Ball goes out of bounds and possession is kept** - `out.of.bounds.keep.poss`
 
