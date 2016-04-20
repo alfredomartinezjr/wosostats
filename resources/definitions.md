@@ -79,7 +79,7 @@ The above example on an Excel spreadsheet would look like this, with each "movem
 
 ![](http://i.imgur.com/vOolLGF.png)
 
-**Take ons won** - `take.on.won`, `tow`
+**Take ons won** - `take.on.won`, `tkw`
 
 A take on is an intentional attempt by a player to get past her defender while maintaining possession of the ball. A take on is “won” if the player dribbles past a defender, turns a defender to create open space, or draws a foul. 
 
@@ -95,7 +95,7 @@ Example 3: [http://i.imgur.com/OVbQKZH.gif](http://i.imgur.com/OVbQKZH.gif)
 
 Megan Rapinoe, the player in yellow and purple, wins a take on against Erika Tymrak, in the white and blue, by turning her and dribbling past her into the open midfield: 
 
-**Take ons lost** - `take.on.lost`, `tol`
+**Take ons lost** - `take.on.lost`, `tkl`
 
 A take on is “lost” if a player intentionally attempts to get past her defender and ends up getting dispossessed by a tackle (regardless of who recovers the ball), a lost touch, a ball shield, or because she conceded a foul to a defender. A lost take-on is different from the "dispossessed" definition covered below because a "take on lost" was the result of an intentional attempt to get past a defender.
 
@@ -221,13 +221,13 @@ Kim Little, the player in black and blue, dribbles the ball towards the corner f
 
 A clearance is logged in the `poss.action` column when a player in possession of the ball intentionally kicks the ball away without an intended recipient. Intent, time on the ball, pressure from defenders, and the angle the player was facing when she kicked the ball all should be considered when deciding to consider something a "clearance" rather than a pass attempt.
 
-**Offside Calls** - `offside.calls`, `os`
+**Offside Calls** - `offside.calls`
 
 Logged when a player is called offside.
 
 **Breaks in play or broadcast**
 
-**Play cut off by broadcast** - `playcutoffbybroadcast`, `playcutoff`, `pco`
+**Play cut off by broadcast** - `playcutoffbybroadcast`, `playcutoff`
 
 These are pesky instances when the broadcast of the game is cut off by something such as a replay or sideline interview. They can completely cut off your ability to log match stats and can affect how stats are analyzed if they aren't outright mentioned. They should be logged in the `poss.action` column.
 
@@ -239,7 +239,7 @@ For example, observe this moment: [https://streamable.com/7o9o](https://streamab
 
 ![](http://i.imgur.com/8Q3ZbAc.png)
 
-**Substitutions** - `substitution.on` & `substitution.off` (OR `sub.f` & `sub.o`)
+**Substitutions** - `substitution.on` & `substitution.off`
 
 Note which players are being substituted on and off. 
 
@@ -434,7 +434,7 @@ Meghan Klingenberg, the player in white, tackles the ball away from Anna Blasse,
 
 ![](http://i.imgur.com/pdL8BL9.png)
 
-**Dribbled by an opponent due to a missed tackle** - `dribbled.tackles.missed`, `dbm`
+**Dribbled by an opponent due to a missed tackle** - `dribbled.tackles.missed`, `dtm`
 
 When a defender goes in for a tackle, either misses the ball or connects with the ball but without being able to dispossess the possessing player, and the possessing player dribbles past the missed tackle.
 
@@ -444,7 +444,7 @@ Melanie Behringer, the player in red, attempts to tackle the ball away from Carl
 
 ![](http://i.imgur.com/iLAeIk5.png)
 
-**Dribbled by an opponent due to being out-run** - `dribbled.out.run`, `dot`
+**Dribbled by an opponent due to being out-run** - `dribbled.out.run`, `dor`
 
 Also known as getting "burnt." When a defender has a possessing player dribble past her without clearly going in for a tackle and without getting turned.
 
@@ -502,43 +502,43 @@ A player is deemed to have lost an aerial duel if the player challenging her for
 
 When both players challenge for the ball and neither wins the ball (i.e., they both mistime their jumps) but can reasonably be said to have had a chance to win the ball, then they both get credited with an "aerial.lost."
 
-**Shots on goal stopped by a goalkeeper** - `gk.s.o.g.stop`, `gksogstop`
+**Shots on goal stopped by a goalkeeper** - `gk.s.o.g.stop`
 
 Credited to a goalkeeper when a shot on goal is faced and stopped by the goalkeeper.
 
-**Shots on goal stopped by a defender** - `gk.s.o.g.def.stop`, `gksogdefstop`
+**Shots on goal stopped by a defender** - `gk.s.o.g.def.stop`
 
 Credited to the last defender, behind the goalie, who stops a shot that would have been scored.
 
-**Shots on goal scored** - `gk.s.o.g.scored`, `gksogscored`
+**Shots on goal scored** - `gk.s.o.g.scored`
 
 Credited to the goalkeeper when a goal is scored.
 
-**Shots missed** - `gk.shot.miss`, `gksmiss`
+**Shots missed** - `gk.shot.miss`
 
 Credited to the goalkeeper when a shot is missed.
 
-**High balls won by the goalkeeper** - `gk.high.balls.won`, `gkhbw`
+**High balls won by the goalkeeper** - `gk.high.balls.won`
 
 When a goalkeeper faces a high ball, usually from a corner kick, cross, or launch ball, and wins it by either gaining possession of the ball or clearing the ball away.
 
-**High balls lost by the goalkeeper** - `gk.high.balls.lost`, `gkhbw`
+**High balls lost by the goalkeeper** - `gk.high.balls.lost`
 
 When a goalkeeper faces a high ball, usually from a corner kick, cross, or launch ball, and loses it by either mishandling it or completely missing the ball.
 
-**Smothers won by the goalkeeper** - `gk.smothers.won`, `gksw`
+**Smothers won by the goalkeeper** - `gk.smothers.won`
 
 When a goalkeeper faces a take on by an opposing player in the box and wins it by successfully coming out to either claim the ball or clear it to safety.
 
-**Smothers lost by the goalkeeper** - `gk.smothers.lost`, `gksl`
+**Smothers lost by the goalkeeper** - `gk.smothers.lost`
 
 When a goalkeeper faces a take on by an opposing player in the box and loses it by missing the ball, causing a foul, or mishandling the ball.
 
-**Loose balls claimed by the goalkeeper** - `gk.loose.balls.won`, `gklbw`
+**Loose balls claimed by the goalkeeper** - `gk.loose.balls.won`
 
 When a goalkeeper successfully claims a loose ball and wins possession with her hands.
 
-**Loose balls lost by the goalkeeper** - `gk.loose.balls.lost`, `gklbl`
+**Loose balls lost by the goalkeeper** - `gk.loose.balls.lost`
 
 When a goalkeeper unsuccessfully comes out for a loose ball. Usually the result of mishandling the ball.
 
