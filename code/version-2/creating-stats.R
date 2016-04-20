@@ -464,19 +464,18 @@ all <- merge(all, t5, by=1, all=TRUE)
 rm(t, t2,t3,t4,t5)
 
 #TACKLES & PRESSURE---------------
-t <- createDataFrame(c("dispossessed", "tackles.ball.away", "tackles.ball.won", "dribbled.tackles.missed", 
+t <- createDataFrame(c("dispossessed", "tackles.ball.away", "tackles.ball.won", "tackles.ball","dribbled.tackles.missed", 
                        "dribbled.out.run","dribbled.turned", "pressured", "challenged"), "def.action", d)
 t <- t[,c("event","time","def.position","def.team","def.player","def.action","def.location","def.player.disciplinary","def.notes")]
 names(t) <- c("event", "time", "position" ,"team", "poss.player", "player.event", "location", 
               "def.player.disciplinary", "def.notes")
 t2 <- createTable(c("tackles","dispossessed", "dribbled", "pressured", "challenged", 
-                    "tackles.ball.away", "tackles.ball.won",
+                    "tackles.ball.away", "tackles.ball.won", "tackles.ball",
                     "dribbled.tackles.missed", "dribbled.out.run","dribbled.turned"), "player.event", t)
 ## Fill in blank columns, get rid of excess columns, and rename
-t2$tackles <- t2$tackles.ball.away + t2$tackles.ball.won
+t2$tackles <- t2$tackles.ball.away + t2$tackles.ball.won + t2$tackles.ball
 t2$dribbled <- t2$dribbled.tackles.missed + t2$dribbled.out.run + t2$dribbled.turned
 t2 <- t2[,1:6]
-t2 <- t2[order(-t2$tackles, -t2$dispossessed, t2$dribbled, t2$pressured, t2$challenged),]
 names(t2) <- c("Player","Tackles", "Dispossesses", "Dribbled", "Press Opp", "Challenge Opp")
 tackles <- t2
 
