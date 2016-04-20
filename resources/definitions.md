@@ -611,20 +611,20 @@ When a player wins or concedes foul, card, and/or penalty, it should be logged f
 
 **Fouls conceded** `fouls.conceded`, `fc`
 
-**Yellow cards** - `yellow.cards`, `yc`
+**Yellow cards** - `yellow.cards`
 
-**Red cards** - `red.cards`, `rc`
+**Red cards** - `red.cards`
 
-**Penalty kicks won** - `penalties.won`, `pw`
+**Penalty kicks won** - `penalties.won`
 
-**Penalty kicks conceded** - `penalties.conceded`, `pc`
+**Penalty kicks conceded** - `penalties.conceded`
 
 #Additional Possessing Player Notes
 Column name: `poss.notes`
 
 Certain possessing player actions need additional qualifiers, related to scoring opportunities or defensive mistakes, that don't fit in any of the other aforementioned columns and should instead be be logged in the `poss.notes` column. Sometimes more than one of these will apply, such as a big chance that was shot and missed, and thus went out of bounds, in which case a comma should separate the two in the same cell so it looks like `big.chances.shot.missed,out.of.bounds.lost.poss`.
 
-**Big chances scored** - `big.chances.scored`, `bcs`
+**Big chances scored** - `big.chances.scored`
 
 A big chance is a clear-cut goal scoring opportunity where a possessing player is reasonably expected to score. These are usually one-on-one chances with the goalkeeper or very close range and generally unpressured shots.
 
@@ -632,7 +632,7 @@ When deciding if a certain moment is a big chance, consider the following: press
 
 When a big chance has occurred, log `big.chances.scored` if the possessing player scores.
 
-**Big chances shot on goal** - `big.chances.shot.on.goal`, `bcsog`
+**Big chances shot on goal** - `big.chances.shot.on.goal`
 
 A big chance is a clear-cut goal scoring opportunity where a possessing player is reasonably expected to score. These are usually one-on-one chances with the goalkeeper or very close range and generally unpressured shots.
 
@@ -640,7 +640,7 @@ When deciding if a certain moment is a big chance, consider the following: press
 
 When a big chance has occurred, log `big.chances.shot.on.goal` if the possessing player gets a shot on goal but does not score.
 
-**Big chances missed** - `big.chances.shot.missed`, `bcsm`
+**Big chances missed** - `big.chances.shot.missed`
 
 A big chance is a clear-cut goal scoring opportunity where a possessing player is reasonably expected to score. These are usually one-on-one chances with the goalkeeper or very close range and generally unpressured shots.
 
@@ -648,7 +648,7 @@ When deciding if a certain moment is a big chance, consider the following: press
 
 When a big chance has occurred, log `big.chances.shot.missed` if the possessing player misses the shot.
 
-**Big chances dispossessed** - `big.chances.dispossessed`, `bcd`
+**Big chances dispossessed** - `big.chances.dispossessed`
 
 A big chance is a clear-cut goal scoring opportunity where a possessing player is reasonably expected to score. These are usually one-on-one chances with the goalkeeper or very close range and generally unpressured shots.
 
@@ -656,7 +656,7 @@ When deciding if a certain moment is a big chance, consider the following: press
 
 When a big chance has occurred, log `big.chances.dispossessed` if the possessing player gets dispossessed before having a chance at a shot on goal
 
-**Big chances lost** - `big.chances.lost`, `bcl`
+**Big chances lost** - `big.chances.lost`
 
 A big chance is a clear-cut goal scoring opportunity where a possessing player is reasonably expected to score. These are usually one-on-one chances with the goalkeeper or very close range and generally unpressured shots.
 
@@ -670,41 +670,41 @@ Louisa Necib, the player in white, completes a corner kick to her teammate, Euge
 
 ![](http://i.imgur.com/A2nBPTX.png)
 
-**Big chances created** - `big.chances.created`, `bcc`
+**Big chances created** - `big.chances.created`
 To be noted for plays, usually via successful take ons or interceptions in dangerous areas, where a player creates a big chance by herself. Passes that create big chances should be separately logged as "key.passes."
 
-**Assists** - `assists`, `a`
+**Assists** - `assists`
 
-**Second assists** - `second.assists`, `sa`
+**Second assists** - `second.assists`
 
 A pass that wasn't an assist that was still instrumental in creating a scored big chance, such as a through ball to an player in the box who lays it off for the goalscorer to shoot.
 
-**Key passes** - `key.passes`, `kp`
+**Key passes** - `key.passes`
 
 A pass instrumental in creating a big chance, regardless of whether it was converted into a goal.
 
-**Ball goes out of bounds and possession is kept** - `out.of.bounds.keep.poss`, `kept.poss.out.of.bounds`, `kpob`
+**Ball goes out of bounds and possession is kept** - `out.of.bounds.keep.poss`
 
-**Ball goes out of bounds and possession is lost** - `out.of.bounds.lost.poss`, `kept.poss.out.of.bounds`, `lpob`
+**Ball goes out of bounds and possession is lost** - `out.of.bounds.lost.poss`
 
-**Errors leading to a goal for the opposition** - `errors.to.goals`, `etg`
+**Errors leading to a goal for the opposition** - `errors.to.goals`
 
-**Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`, `etbc`
+**Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`
 
 #Additional Defensive Player Notes
 Column name: `def.notes`
 
 Likewise for defending players, certain defensive actions will also need additional qualifiers, related to defensive accomplishments and mistakes, that don't fit in any of the other aforementioned columns and should instead be be logged in the `def.notes` column.
 
-**Big chances stopped** - `big.chances.stopped`, `bcc`
+**Big chances stopped** - `big.chances.stopped`
 
 When a defending player or a goalkeeper stops a possessing player's big chance from being scored or shot, such as with a block, tackle, or save.
 
-**Own goals allowed** - `own.goals`, `og`
+**Own goals allowed** - `own.goals`
 
-**Errors leading to a goal for the opposition** - `errors.to.goals`, `etg`
+**Errors leading to a goal for the opposition** - `errors.to.goals`
 
-**Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`, `etbc`
+**Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`
 
 #Location-based Notes
 Column names: `poss.location`, `poss.play.destination`, & `def.location`
