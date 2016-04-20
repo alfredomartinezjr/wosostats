@@ -352,19 +352,19 @@ while (e <= max(df$event)) {
 
 ##FILLS IN BLANK POSS.PLAY.DESTINATION CELLS--------
 #For when defensive action can be used to determine "poss.play.destination"
-df$poss.play.destination <- as.character(df$poss.action)
-e <- 1
-while (e <= length(unique(df$event))){
-  #check if is a nonblank poss action of a certain type with blank poss play dest. value
-  if (!is.na(df[df[,"event"]==e,"poss.action"][1]) & is.na(df[df[,"event"]==e,"poss.play.destination"][1])){
-    #check if any def actions are of a certain type
-    if(grepl("interception|blocks|clearances|ball.shield",
-             paste(unlist(strsplit(df[df[,"event"] == e,"def,action"], ","),
-                          recursive=TRUE), sep="", collapse=" "))) {
-      #if ball shield present, set this as the destination
-    }
-  }
-}
+#df$poss.play.destination <- as.character(df$poss.action)
+#e <- 1
+#while (e <= length(unique(df$event))){
+#  #check if is a nonblank poss action of a certain type with blank poss play dest. value
+#  if (!is.na(df[df[,"event"]==e,"poss.action"][1]) & is.na(df[df[,"event"]==e,"poss.play.destination"][1])){
+#    #check if any def actions are of a certain type
+#    if(grepl("interception|blocks|clearances|ball.shield",
+#             paste(unlist(strsplit(df[df[,"event"] == e,"def,action"], ","),
+#                          recursive=TRUE), sep="", collapse=" "))) {
+#      #if ball shield present, set this as the destination
+#    }
+#  }
+#}
 
 
 rm(opposites, awayplayers, homeplayers, deflocations, location, awayteam, hometeam, posslocations, teams)
