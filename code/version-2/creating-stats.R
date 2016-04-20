@@ -572,11 +572,11 @@ all <- merge(all, t5, by=1, all=TRUE)
 rm(t5)
 
 #GK BIG CHANCES SOG FACED----------
-t <- addMultiColumnsForQualifiers(patterns=c("BC.SOG.Faced"="big.chances.scored|big.chances.shot.on.goal","BC.Goals.Allowed"="big.chances.scored"),
-                                     pattern_locations = c("poss.notes", "poss.notes"),
+t <- addMultiColumnsForQualifiers(patterns=c("BC.SOG.Faced"="big.chances.scored|big.chances.shot.on.goal","BC.Goals.Allowed"="big.chances.scored","GK.Stop"="gk.s.o.g.stop"),
+                                     pattern_locations = c("poss.notes", "poss.notes","def.action"),
                                      ogdf = d, ndf = createDataFrame(c("gk.s.o.g.stop", "gk.s.o.g.def.stop","gk.s.o.g.scored"), "def.action", d))
 t <- addColumnForMultiQualifiers(newcol = "BC.Saves", df = t, exp = "AND", 
-                                    pattern = c("BC.SOG.Faced"="yes", "def.action"="gk.s.o.g.stop"))
+                                    pattern = c("BC.SOG.Faced"="yes", "GK.Stop"="yes"))
 #Shift def columns to be poss columns, to be readable by createTable function
 t <- t[grep("gk", t[,"def.action"]),c("event","time","def.position", "def.team", "def.player", "def.action",
                                       "def.location", "gk.ball.stop", "gk.s.o.g.attempt", "poss.player.disciplinary", 
