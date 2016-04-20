@@ -46,6 +46,7 @@ df[grepl(paste(paste0("^", homeplayers, "$"), collapse ="|"), df[,"poss.player"]
 df[grepl(paste(paste0("^", awayplayers, "$"), collapse ="|"), df[,"poss.player"]), "poss.team"] <- awayteam
 df[grepl(paste(paste0("^", homeplayers, "$"), collapse ="|"), df[,"def.player"]), "def.team"] <- hometeam 
 df[grepl(paste(paste0("^", awayplayers, "$"), collapse ="|"), df[,"def.player"]), "def.team"] <- awayteam
+### Creates data.frame with players and positions as the columns
 rm(ref)
 ## Create data frame with opposites of each location
 posslocations <- c("A6", "A18", "A3L", "A3C", "A3R", "AM3L", "AM3C", 
@@ -177,11 +178,17 @@ while (x <= nrow(df)) {
   if (grepl("^bs", df[x,"def.action"])) {
     df[x,"def.action"] <- "ball.shield"
   }
+  if (grepl("^dis", df[x,"def.action"])) {
+    df[x,"def.action"] <- "dispossessed"
+  }
   if (grepl("^ds", df[x,"def.action"])) {
     df[x,"def.action"] <- "dispossessed"
   }
   if (grepl("^dlt", df[x,"def.action"])) {
     df[x,"def.action"] <- "dispossessed"
+  }
+  if (grepl("^tb", df[x,"def.action"])) {
+    df[x,"def.action"] <- "tackles.ball"
   }
   if (grepl("^tba", df[x,"def.action"])) {
     df[x,"def.action"] <- "tackles.ball.away"
@@ -248,6 +255,7 @@ while (x <= nrow(df)) {
 
 ##FILLS IN BLANK DEF.LOCATION CELLS----------
 ## Goes down the entire data.frame, row by row, and fills in blank "def.location" cells
+cantDetermine <- c()
 x <- 1
 while (x <= nrow(df)) {
   ## checks if "def.location" is NA for actions that can have their location determined
@@ -280,11 +288,15 @@ while (x <= nrow(df)) {
     }
     ## Otherwise, NA values "def.location" can't be determined
     else {
-      print(paste0(x, "'s defensive location can't be determined. poss.location is NA"))
+      if(!is.na(df[x,"def.action"])){
+        cantDetermine <- c(cantDetermine, df[x,"event"])
+      }
     }
   }
   x <- x + 1
 }
+print("The following events have blank def.location")
+cantDetermine
 
 ##FILLS IN BLANK POSS.LOCATION CELLS----------
 df$poss.action <- as.character(df$poss.action)
@@ -338,4 +350,21 @@ while (e <= max(df$event)) {
   }
 }
 
-rm(opposites, awayplayers, homeplayers, deflocations, awayteam, hometeam, posslocations, teams)
+##FILLS IN BLANK POSS.PLAY.DESTINATION CELLS--------
+#For when defensive action can be used to determine "poss.play.destination"
+df$poss.play.destination <- as.character(df$poss.action)
+e <- 1
+while (e <= length(unique(df$event))){
+  #check if is a nonblank poss action of a certain type with blank poss play dest. value
+  if (!is.na(df[df[,"event"]==e,"poss.action"][1]) & is.na(df[df[,"event"]==e,"poss.play.destination"][1])){
+    #check if any def actions are of a certain type
+    if(grepl("interception|blocks|clearances|ball.shield",
+             paste(unlist(strsplit(df[df[,"event"] == e,"def,action"], ","),
+                          recursive=TRUE), sep="", collapse=" "))) {
+      #if ball shield present, set this as the destination
+    }
+  }
+}
+
+
+rm(opposites, awayplayers, homeplayers, deflocations, location, awayteam, hometeam, posslocations, teams)
