@@ -1,1 +1,0 @@
-*This is a glossary for stats shown in [the WoSo Stats Shiny app](https://amj2012.shinyapps.io/wosostats/) and in the GitHub repository. It is a work in progress and will change over time as more stats are added.*
