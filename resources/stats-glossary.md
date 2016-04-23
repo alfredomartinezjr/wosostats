@@ -43,106 +43,207 @@
 **Key Passes** - All passes instrumental in creating a clear goal-scoring opportunity (**Big Chance**), regardless of whether it was converted into a goal.
 
 KP to Goal** - All key passes 
+
 Key Assists
+
 Second Assists
+
 KP Goal
+
 Assists per 90
+
 Key Passes per 90
+
 Assists per Pass
+
 Key Passes per Pass
+
 Big Chances
+
 Big Chances per 90
+
 BC Scored
+
 BC to Goal
+
 BC SOG
+
 BC Shot Miss
+
 BC Dispossess
+
 BC Created
+
 BC Lost
+
 Pass Comp
+
 Pass Att
+
 Pass Comp Pct
+
 opPass Comp
+
 opPass Att
+
 opPass Comp Pct
+
 opPPass Comp
+
 opPPass Att
+
 opPPass Comp Pct
+
 Pct opPass Pressd
+
 rFreq Pass Fwd
+
 rFreq Pass Side
+
 rFreq Pass Back
+
 fwPass Comp
+
 fwPass Att
+
 fwPass Comp Pct
+
 sPass Comp
+
 sPass Att
+
 sPass Comp Pct
+
 bPass Comp
+
 bPass Att
+
 bPass Comp Pct
+
 Pass Comp D3toD3
+
 Pass Comp D3toM3
+
 Pass Comp D3toA3
+
 Pass Comp M3toD3
+
 Pass Comp M3toM3
+
 Pass Comp M3toA3
+
 Pass Comp A3toD3
+
 Pass Comp A3toM3
+
 Pass Comp A3toA3
+
 rFreq opPass Fwd
+
 rFreq opPass Side
+
 rFreq opPass Back
+
 fwopPass Comp
+
 fwopPass Att
+
 fwopPass Comp Pct
+
 sopPass Comp
+
 sopPass Att
+
 sopPass Comp Pct
+
 bopPass Comp
+
 bopPass Att
+
 bopPass Comp Pct
+
 Pct Pass Pressd
+
 PPass Comp
+
 PPass Att
+
 PPass Comp Pct
+
 rFreq PPass Fwd
+
 rFreq PPass Side
+
 rFreq PPass Back
+
 fwPPass Comp
+
 fwPPass Att
+
 fwPPass Comp Pct
+
 sPPass Comp
+
 sPPass Att
+
 sPPass Comp Pct
+
 bPPass Comp
+
 bPPass Att
+
 bPPass Comp Pct
+
 Cross Comp
+
 Cross Att
+
 Cross Att per 90
+
 Cross Att per Pass
+
 Cross Att per opPass
+
 Cross Comp Pct
+
 Corner Crosses
+
 Deep Crosses
+
 Launch Comp
+
 Launch Att
+
 Launch Att per 90
+
 Launch Att per Pass
+
 Launch Att per opPass
+
 Launch Comp Pct
+
 Through Comp
+
 Through Att
+
 Through Att per 90
+
 Through Att per Pass
+
 Through Att per opPass
+
 Through Comp Pct
+
 Throw In Comp
+
 Throw In Att
+
 Throw In Att per 90
+
 Throw In Att per Pass
+
 Throw In Comp Pct
+
 Corner Kicks Completed
 Corner Kicks Taken
 CK Effectiveness
