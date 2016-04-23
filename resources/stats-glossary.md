@@ -4,25 +4,44 @@
 
 *Send me a DM at @WoSoStats on Twitter if something needs fixing or further explanation.*
 
-*MP* - Minutes played
-*GS* - Games started
-*Goals* - All goals scored
-*Shots* - All shots taken and not blocked by a defender in a situation where the defender was the last defender preventing a goal. Simply put, shots that were missed or shot on goal.
-*Shots per 90* - Shots per 90 minutes. Calculated by dividing all *Shots* by *MP*, and multiplying the product by 90. Is meant to account for differences in playing time.
-*Shot Accuracy* - 
-Shot GK Stop
-Shot Def Stop
-Shot Miss
-Shot Pressd
-Pct Shots Pressd
-A6 Shots
-A18 Shots
-A3L Shots
-A3C Shots
-A3R Shots
-Far Shots
-Assists
-Key Passes
+**MP** - Minutes played
+
+**GS** - Games started
+
+**Goals** - All goals scored
+
+**Shots** - All shots taken and not blocked by a defender in a situation where the defender was the last defender preventing a goal. Simply put, shots that were missed or shot on goal.
+
+**Shots per 908* - Shots per 90 minutes. Calculated by dividing all *Shots* by *MP*, and multiplying the product by 90. Is meant to account for differences in playing time.
+
+**Shot Accuracy** - The percentage of all *Shots* that were shot on goal. Calculated by dividing all shots on goal (**Shot GK Stop** + **Shot Def Stop** + **Goals**) by all shots, excluding blocks (**Shot GK Stop** + **Shot Def Stop** + **Goals** + **Shot Miss**).
+
+**Shot GK Stop** - Shots on goal stopped by the goalkeeper.
+
+**Shot Def Stop** - Shots on goal stopped by the last defender to prevented what otherwise would have been a goal.
+
+**Shot Miss** - Shots that miss the goal or hit either the crossbar or post.
+
+**Shot Pressd** - Shots taken under pressure from a defender.
+
+**Pct Shots Pressd** - The percentage of all shots that were taken under pressure.
+
+**A6 Shots** - Shots taken from the 6-yard box.
+
+**A18 Shots** - Shots taken from the 18-yard box.
+
+**A3L Shots** - Shots taken from the left wing of the attacking 3rd.
+
+**A3C Shots** - Shots taken from the center of the attacking 3rd.
+
+**A3R Shots** - Shots taken from the right wing of the attacking 3rd.
+
+**Far Shots** - Shots taken from beyond the attacking 3rd.
+
+**Assists** - All completed passes made to the goalscorer, regardless of whether they were **Key Passes**.
+
+**Key Passes** - 
+
 KP to Goal
 Key Assists
 Second Assists
