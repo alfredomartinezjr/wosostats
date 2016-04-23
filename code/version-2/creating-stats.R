@@ -232,6 +232,56 @@ passdirection$rFreq.Pass.Back <- passdirection$bPass.Att/rowSums(passdirection[,
 all <- merge(all, passdirection, by="Player", all=TRUE)
 rm(directiondist, fwdtab,sidetab, backtab,passdirection)
 
+#COMPLETED PASSES BY ORIGIN & DESTINATION----------
+t <- addColumnForQualifier("completed", pattern="passes.*.c", patternLocation = "poss.action", ogdf = d, 
+                           ndf = createCleanDataFrame(c("passes.f.c", "passes.f", 
+                                                        "passes.s.c", "passes.s", "passes.b.c", "passes.b", "movement"), "poss.action", d))
+t <- t[t[,"completed"]=="yes",]
+x <- 1
+while (x <= nrow(t)){
+  #passes from defensive 3rd to defensive 3rd
+  if (grepl("D6|D18|D3",t[x,"poss.location"]) && grepl("D6|D18|D3",t[x,"poss.play.destination"])) {
+    t[x,"pass.range"] <- "Pass.Comp.D3toD3"
+  }
+  #passes from defensive 3rd to middle 3rd
+  if (grepl("D6|D18|D3",t[x,"poss.location"]) && grepl("M",t[x,"poss.play.destination"])) {
+    t[x,"pass.range"] <- "Pass.Comp.D3toM3"
+  }
+  #passes from defensive 3rd to attacking 3rd
+  if (grepl("D6|D18|D3",t[x,"poss.location"]) && grepl("A6|A18|A3",t[x,"poss.play.destination"])) {
+    t[x,"pass.range"] <- "Pass.Comp.D3toA3"
+  }
+  #passes from middle 3rd to defensive 3rd
+  if (grepl("M",t[x,"poss.location"]) && grepl("D6|D18|D3",t[x,"poss.play.destination"])) {
+    t[x,"pass.range"] <- "Pass.Comp.M3toD3"
+  }
+  #passes from middle 3rd to middle 3rd
+  if (grepl("M",t[x,"poss.location"]) && grepl("M",t[x,"poss.play.destination"])) {
+    t[x,"pass.range"] <- "Pass.Comp.M3toM3"
+  }
+  #passes from middle 3rd to attacking 3rd
+  if (grepl("M",t[x,"poss.location"]) && grepl("A6|A18|A3",t[x,"poss.play.destination"])) {
+    t[x,"pass.range"] <- "Pass.Comp.M3toA3"
+  }
+  #passes from attacking 3rd to defensive 3rd
+  if (grepl("A6|A18|A3",t[x,"poss.location"]) && grepl("D6|D18|D3",t[x,"poss.play.destination"])) {
+    t[x,"pass.range"] <- "Pass.Comp.A3toD3"
+  }
+  #passes from attacking 3rd to middle 3rd
+  if (grepl("A6|A18|A3",t[x,"poss.location"]) && grepl("M",t[x,"poss.play.destination"])) {
+    t[x,"pass.range"] <- "Pass.Comp.A3toM3"
+  }
+  #passes from attacking 3rd to attacking 3rd
+  if (grepl("A6|A18|A3",t[x,"poss.location"]) && grepl("A6|A18|A3",t[x,"poss.play.destination"])) {
+    t[x,"pass.range"] <- "Pass.Comp.A3toA3"
+  }
+  x <- x + 1
+}
+t2 <- createTable(c("Pass.Comp.D3toD3", "Pass.Comp.D3toM3", "Pass.Comp.D3toA3", "Pass.Comp.M3toD3", "Pass.Comp.M3toM3", 
+                    "Pass.Comp.M3toA3", "Pass.Comp.A3toD3", "Pass.Comp.A3toM3", "Pass.Comp.A3toA3"),"pass.range", t)
+all <- merge(all, t2, by="Player", all=TRUE)
+rm(t,t2)
+
 #OPEN PLAY PASSING BY DIRECTION----------
 #Passing stats, without dead ball scenarios (GKs, GK throws, GK drop kicks,FKs, CKs, throw ins)
 t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick", patternLocation = "play.type", ogdf = d, 
