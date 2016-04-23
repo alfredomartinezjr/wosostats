@@ -18,7 +18,7 @@
 
 **Shot GK Stop** - Shots on goal stopped by the goalkeeper.
 
-**Shot Def Stop** - Shots on goal stopped by the last defender to prevented what otherwise would have been a goal.
+**Shot Def Stop** - Shots on goal stopped by the last defender that prevented what otherwise would have been a goal.
 
 **Shot Miss** - Shots that miss the goal or hit either the crossbar or post.
 
@@ -40,9 +40,9 @@
 
 **Assists** - All completed passes made to the goalscorer, regardless of whether they were **Key Passes**.
 
-**Key Passes** - 
+**Key Passes** - All passes instrumental in creating a clear goal-scoring opportunity (**Big Chance**), regardless of whether it was converted into a goal.
 
-KP to Goal
+KP to Goal** - All key passes 
 Key Assists
 Second Assists
 KP Goal
