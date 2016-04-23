@@ -44,7 +44,7 @@ getTeamMatches <- function(team){
 }
 
 #Given a match_list list with all the matches, rbinds them
-cbindCompetitionMatches <- function(match_list) {
+rbindCompetitionMatches <- function(match_list) {
   #Creates a blank overall table
   d <- do.call("rbind", match_list)
   players <- unique(d[,c("Player", "Team")])
