@@ -142,29 +142,29 @@
 
 **D3Pass.Comp.Pct** - Percentage of all passes attempted from the defensive 3rd that were completed. Calculated by dividing **D3Pass Comp** by **D3Pass Att**.
 
-**rFreq A3 opPasses** - 
+**rFreq A3 opPasses** - Percentage of all open play passes that were attempted from the attacking 3rd.
 
-**rFreq M3 opPasses** - 
+**rFreq M3 opPasses** - Percentage of all open play passes that were attempted from the middle 3rd.
 
-**rFreq D3 opPasses** - 
+**rFreq D3 opPasses** - Percentage of all open play passes that were attempted from the defensive 3rd.
 
-**A3opPass.Comp** - 
+**A3opPass.Comp** - All completed open play passes that were attempted from the attacking 3rd.
 
-**A3opPass.Att** - 
+**A3opPass.Att** - All open play passes that were attempted from the attacking 3rd.
 
-**A3opPass.Comp.Pct** - 
+**A3opPass.Comp.Pct** - Percentage of all open play passes attempted from the attacking 3rd that were completed. Calculated by dividing **A3opPass Comp** by **A3opPass Att**.
 
-**M3opPass.Comp** - 
+**M3opPass.Comp** - All completed open play passes that were attempted from the middle 3rd.
 
-**M3opPass.Att** - 
+**M3opPass.Att** - All open play passes that were attempted from the middle 3rd.
 
-**M3opPass.Comp.Pct** - 
+**M3opPass.Comp.Pct** - Percentage of all open play passes attempted from the middle 3rd that were completed. Calculated by dividing **M3opPass Comp** by **M3opPass Att**.
 
-**D3opPass.Comp** - 
+**D3opPass.Comp** - All completed open play passes that were attempted from the defensive 3rd.
 
-**D3opPass.Att** - 
+**D3opPass.Att** - All open play passes that were attempted from the defensive 3rd.
 
-**D3opPass.Comp.Pct** - 
+**D3opPass.Comp.Pct** - Percentage of all open play passes attempted from the defensive 3rd that were completed. Calculated by dividing **D3opPass Comp** by **D3opPass Att**.
 
 **Pass Comp D3toD3** - All completed passes that occured within the defensive 3rd.
 
