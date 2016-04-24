@@ -233,78 +233,153 @@ Throw In Att per Pass
 Throw In Comp Pct
 
 Corner Kicks Completed
+
 Corner Kicks Taken
+
 CK Effectiveness
+
 CK Assist
+
 CK Key Pass
+
 FK Pass Comp
+
 FK Pass Att
+
 FK Pass Comp Pct
+
 FK Assist
+
 FK Key Pass
+
 FK Shot
+
 FK Scored
+
 Free Kicks Taken
+
 TO Won
+
 TO Win Pct
+
 Take Ons
+
 TO Lost
+
 Dispossessed
+
 Lost Touches
+
 AD Won
+
 AD Win Pct
+
 Aerial Duels
+
 AD Lost
+
 Tackles
+
 Dispossesses
+
 Dribbled
+
 Press Opp
+
 Challenge Opp
+
 Recoveries
+
 Def Recoveries
+
 Poss Recoveries
+
 Interceptions
+
 Int per 90
+
 Int per OP Pass
+
 Blocks
+
 Clearances
+
 Balls Shields
+
 Saves
+
 Goals Allowed
+
 SOG Faced
+
 GperSOG
+
 BC SOG Faced
+
 BC Saves
+
 BC Goals Allowed
+
 GperBCSOG
+
 High Balls
+
 HB Won
+
 HB Lost
+
 HB Caught
+
 HB Punched
+
 HB Parried
+
 HB Collected
+
 HB Fouls Won
+
 Crosses
+
 Crosses Won
+
 Crosses Lost
+
 Corner Kicks
+
 CKs Won
+
 CKs Lost
+
 Free Kicks
+
 FKs Won
+
 FKs Lost
+
 Smothers Won
+
 Smothers Lost
+
 All Pass Comp
+
 All Pass Att
+
 Distribution Success
+
 Throw Comp
+
 Throw Att
+
 Throw Comp Pct
+
 Drop Kick Comp
+
 Drop Kick Att
+
 Drop Kick Comp Pct
+
 GK+FK Comp
+
 GK+FK Att
+
 GK+FK Comp Pct
