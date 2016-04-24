@@ -42,23 +42,15 @@
 
 **Key Passes** - All passes instrumental in creating a clear goal-scoring opportunity (**Big Chance**), regardless of whether it was converted into a goal.
 
-KP to Goal** - All key passes 
+**Key Assists** - Assists that were also key passes, instrumental in creating the converted goal-scoring opportunity.
 
-Key Assists
+**Second Assists** - Passes that weren't the last pass to the goalscorer but were instrumental in creating the converted goal-scoring opportunity.
 
-Second Assists
+**Assists per 90** - Assists per 90 minutes. Calculated by dividing all *Assists* by *MP*, and multiplying the product by 90. Is meant to account for differences in playing time.
 
-KP Goal
+**Key Passes per 90** - Key passes per 90 minutes. Calculated by dividing all *Key Passes* by *MP*, and multiplying the product by 90. Is meant to account for differences in playing time.
 
-Assists per 90
-
-Key Passes per 90
-
-Assists per Pass
-
-Key Passes per Pass
-
-Big Chances
+**Big Chances** - 
 
 Big Chances per 90
 
