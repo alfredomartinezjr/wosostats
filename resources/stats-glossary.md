@@ -270,25 +270,25 @@
 
 **Lost Touches** - All instances of a player losing possession due to a bad touch.
 
-**Aerial Duels** 
+**Aerial Duels** - All instances of a player challenging an opposing player for a 50/50 ball in the air.
 
-**AD Won**
+**AD Won** - All instances of a player being the first player to touch the ball in an aerial duel.
 
-**AD Lost**
+**AD Lost** - All instances of the opposing player being the first to touch the ball in an aerial duel.
 
-**AD Win Pct**
+**AD Win Pct** - Percentage of all aerial duels that were won.
 
-Tackles
+**Tackles** - 
 
-Dispossesses
+**Dispossesses** - 
 
-Dribbled
+**Dribbled** - 
 
-Press Opp
+**Press Opp** - 
 
-Challenge Opp
+**Challenge Opp** - 
 
-Recoveries
+**Recoveries** - 
 
 Def Recoveries
 
