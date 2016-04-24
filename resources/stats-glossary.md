@@ -12,7 +12,7 @@
 
 **Shots** - All shots taken and not blocked by a defender in a situation where the defender was the last defender preventing a goal. Simply put, shots that were missed or shot on goal.
 
-**Shots per 908* - Shots per 90 minutes. Calculated by dividing all *Shots* by *MP*, and multiplying the product by 90. Is meant to account for differences in playing time.
+**Shots per 908** - Shots per 90 minutes. Calculated by dividing all *Shots* by *MP*, and multiplying the product by 90. Is meant to account for differences in playing time.
 
 **Shot Accuracy** - The percentage of all *Shots* that were shot on goal. Calculated by dividing all shots on goal (**Shot GK Stop** + **Shot Def Stop** + **Goals**) by all shots, excluding blocks (**Shot GK Stop** + **Shot Def Stop** + **Goals** + **Shot Miss**).
 
