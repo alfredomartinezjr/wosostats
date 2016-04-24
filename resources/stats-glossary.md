@@ -130,67 +130,67 @@
 
 **Pass Comp A3toA3** - All completed passes that occured within the attacking 3rd.
 
-rFreq opPass Fwd
+**rFreq opPass Fwd** - Percentage of all open play passes (excludes throw-ins, free kick passes, goal kicks, and corner kick passes) that were forward passes.
 
-rFreq opPass Side
+**rFreq opPass Side** - Percentage of all open play passes (excludes throw-ins, free kick passes, goal kicks, and corner kick passes) that were sideway passes.
 
-rFreq opPass Back
+**rFreq opPass Back** - Percentage of all open play passes (excludes throw-ins, free kick passes, goal kicks, and corner kick passes) that were backward passes.
 
-fwopPass Comp
+**fwopPass Comp** - All open play forward passes that were completed.
 
-fwopPass Att
+**fwopPass Att** - All open play forward passes that were attempted.
 
-fwopPass Comp Pct
+**fwopPass Comp Pct** - Percentage of all open play forward passes that were completed. Calculated by dividing **fwopPass Comp** by **fwopPass Att**.
 
-sopPass Comp
+**sopPass Comp** - All open play sideway passes that were completed.
 
-sopPass Att
+**sopPass Att** - All open play sideway passes that were attempted. 
 
-sopPass Comp Pct
+**sopPass Comp Pct** - Percentage of all open play sideway passes that were completed. Calculated by dividing **sopPass Comp** by **sopPass Att**.
 
-bopPass Comp
+**bopPass Comp** - All open play backward passes that were completed.
 
-bopPass Att
+**bopPass Att** - All open play backward passes that were attempted.
 
-bopPass Comp Pct
+**bopPass Comp Pct** - Percentage of all open play backward passes that were completed. Calculated by dividing **bopPass Comp** by **bopPass Att**.
 
-Pct Pass Pressd
+**Pct Pass Pressd** - Percentage of all passes that were taken under pressure.
 
-PPass Comp
+**PPass Comp** - All passes attempted under pressure that were completed.
 
-PPass Att
+**PPass Att** - All passes attempted under pressure.
 
-PPass Comp Pct
+**PPass Comp Pct** - Percentage of all passes attempted under pressure that were completed. Calculated by dividing **PPass Comp** by **PPass Att**.
 
-rFreq PPass Fwd
+**rFreq PPass Fwd** - Percentage of all passes attempted under pressure that were forward passes.
 
-rFreq PPass Side
+**rFreq PPass Side** - Percentage of all passes attempted under pressure that were sideway passes.
 
-rFreq PPass Back
+**rFreq PPass Back** - Percentage of all passes attempted under pressure that were backward passes.
 
-fwPPass Comp
+**fwPPass Comp** - Forward passes attempted under pressure that were completed.
 
-fwPPass Att
+**fwPPass Att** - Forward passes attempted under pressure.
 
-fwPPass Comp Pct
+**fwPPass Comp Pct** - Percentage of all forward passes attempted under pressure that were completed. Calculated by dividing **fwPPass Comp** by **fwPPass Att**.
 
-sPPass Comp
+**sPPass Comp** - Sideway passes attempted under pressure that were completed.
 
-sPPass Att
+**sPPass Att** - Sideway passes attempted under pressure.
 
-sPPass Comp Pct
+**sPPass Comp Pct** - Percentage of all sideway passes attempted under pressure that were completed. Calculated by dividing **sPPass Comp** by **sPPass Att**. 
 
-bPPass Comp
+**bPPass Comp** - Backward passes attempted under pressure that were completed.
 
-bPPass Att
+**bPPass Att** - Backward passes attempted under pressure.
 
-bPPass Comp Pct
+**bPPass Comp Pct** - Percentage of all backward passes attempted under pressure that were completed. Calculated by dividing **bPPass Comp** by **bPPass Att**. 
 
-Cross Comp
+**Cross Comp** - All cross attempts that were completed.
 
-Cross Att
+**Cross Att** - All cross attempts.
 
-Cross Att per 90
+**Cross Att per 90** - Crosses attempted per 90 minutes. Calculated by dividing **Cross Att** by **MP**, and multiplying the product by 90. Is meant to account for differences in playing time.
 
 Cross Att per Pass
 
