@@ -351,21 +351,21 @@
 
 **Crosses Faced** - When a goalkeeper goes up for a high ball that is also a cross.
 
-**Crosses Won** 
+**Crosses Won** - When a goalkeeper goes up for a high ball that is a cross and wins possession or clears it away.
 
-**Crosses Lost**
+**Crosses Lost** - When a goalkeeper goes up for a high ball that is a cross and misses the ball or mishandles it.
 
-**Corner Kicks Faced**
+**Corner Kicks Faced** - When a goalkeeper goes up for a high ball that is also a corner kick.
 
-**CKs Won**
+**CKs Won** - When a goalkeeper goes up for a high ball that is a corner kick and wins possession or clears it away.
 
-**CKs Lost**
+**CKs Lost** - When a goalkeeper goes up for a high ball that is a corner kick and misses the ball or mishandles it.
 
-**Free Kicks**
+**Free Kicks Faced** - When a goalkeeper goes up for a high ball that is also a free kick.
 
-**FKs Won**
+**FKs Won** - When a goalkeeper goes up for a high ball that is a free kick and wins possession or clears it away.
 
-**FKs Lost**
+**FKs Lost** - When a goalkeeper goes up for a high ball that is a free kick and misses the ball or mishandles it.
 
 **Smothers Won**
 
