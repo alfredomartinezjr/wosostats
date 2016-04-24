@@ -367,30 +367,30 @@
 
 **FKs Lost** - When a goalkeeper goes up for a high ball that is a free kick and misses the ball or mishandles it.
 
-**Smothers Won**
+**Smothers Won** - When a goalkeeper faces a take on by an opposing player in the box and wins it by successfully coming out to either claim the ball or clear it to safety.
 
-**Smothers Lost**
+**Smothers Lost** - When a goalkeeper faces a take on by an opposing player in the box and loses it by missing the ball, causing a foul, or mishandling the ball.
 
-All Pass Comp
+**GK Overall Pass Comp** - All passes attempted by the goalkeeper
 
-All Pass Att
+**GK Overall Pass Att** - All passes attempted by the goalkeeper
 
-Distribution Success
+**GK Overall Pass Comp Pct** - Percentage of all passes attempted by the goalkeeper that were completed
 
-Throw Comp
+**GK Throw Comp** - Thrown passes completed by the goalkeeper.
 
-Throw Att
+**GK Throw Att** - Thrown passes attempted by the goalkeeper.
 
-Throw Comp Pct
+**GK Throw Comp Pct** - Percentage of all thrown passes attempted by the goalkeeper that were completed.
 
-Drop Kick Comp
+**GK Drop Kick Comp** - Drop kick passes completed by the goalkeeper.
 
-Drop Kick Att
+**GK Drop Kick Att** - Drop kick passes attempted by the goalkeeper.
 
-Drop Kick Comp Pct
+**GK Drop Kick Comp Pct** - Percentage of all drop kick passes attempted by the goalkeeper that were completed.
 
-GK+FK Comp
+**GKFK Comp** - Goal kick and free kick passes completed by the goalkeeper.
 
-GK+FK Att
+**GKFK Att** - Goal kick and free kick passes attempted by the goalkeeper.
 
-GK+FK Comp Pct
+**GKFK Comp Pct** - Percentage of all Goal kick and free kick passes attempted by the goalkeeper that were completed.
