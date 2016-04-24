@@ -216,31 +216,31 @@
 
 **Through Att per 90** - Through balls attempted per 90 minutes. Calculated by dividing **Through Att** by **MP**, and multiplying the product by 90. Is meant to account for differences in playing time.
 
-**Through Att per Pass**
+**Through Att per Pass** - Percentage of all pass attempts that were through balls.
 
-**Through Att per opPass**
+**Through Att per opPass** - Percentage of all open play pass attempts that were through balls.
 
-**Through Comp Pct**
+**Through Comp Pct** - Percentage of all through ball attempts that were completed.
 
-**Throw In Comp**
+**Throw In Comp** - Throw ins that were completed.
 
-Throw In Att
+**Throw In Att** - Throw ins attempted.
 
-Throw In Att per 90
+**Throw In Att per 90** - Throw ins attempted per 90 minutes. Calculated by dividing **Throw In Att** by **MP**, and multiplying the product by 90. Is meant to account for differences in playing time.
 
-Throw In Att per Pass
+**Throw In Att per Pass** - Percentage of all pass attempts that were throw ins.
 
-Throw In Comp Pct
+**Throw In Comp Pct** - Percentage of all throw in attempts that were completed.
 
-Corner Kicks Completed
+**Corner Kicks Completed** - All corner kicks that connected with a teammate.
 
-Corner Kicks Taken
+**Corner Kicks Taken** - All corner kicks that were taken.
 
-CK Effectiveness
+**CK Effectiveness** - Percentage of all corner kicks that connected with a teammate.
 
-CK Assist
+**CK Assist** - All corner kicks that were assists.
 
-CK Key Pass
+**CK Key Pass** - All corner kicks that were key passes.
 
 FK Pass Comp
 
