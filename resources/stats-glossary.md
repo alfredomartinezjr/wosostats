@@ -333,43 +333,43 @@
 
 **GperBCSOG** - Percentage of all Big Chance shots on goal that resulted in goals.
 
-**High Balls Faced** - 
+**High Balls Faced** - When a goalkeeper goes up for a high ball, usually due to a cross, launched ball, corner kick, or free kick.
 
-HB Won
+**HB Won** - When a goalkeeper goes up for a high ball and wins possession or clears it away.
 
-HB Lost
+**HB Lost** - When a goalkeeper goes up for a high ball and misses the ball or mishandles it.
 
-HB Caught
+**HB Caught** - When a goalkeeper wins a high ball by cleanly catching it.
 
-HB Punched
+**HB Punched** - When a goalkeeper wins a high ball by punching it away.
 
-HB Parried
+**HB Parried** - When a goalkeeper wins a high ball by parrying it away.
 
-HB Collected
+**HB Collected** - When a goalkeeper wins a high ball by knocking it to the ground and catching it on the bounce or collapsing onto it.
 
-HB Fouls Won
+**HB Fouls Won** - When a goalkeeper wins a high ball by winning a foul.
 
-Crosses
+**Crosses Faced** - When a goalkeeper goes up for a high ball that is also a cross.
 
-Crosses Won
+**Crosses Won** 
 
-Crosses Lost
+**Crosses Lost**
 
-Corner Kicks
+**Corner Kicks Faced**
 
-CKs Won
+**CKs Won**
 
-CKs Lost
+**CKs Lost**
 
-Free Kicks
+**Free Kicks**
 
-FKs Won
+**FKs Won**
 
-FKs Lost
+**FKs Lost**
 
-Smothers Won
+**Smothers Won**
 
-Smothers Lost
+**Smothers Lost**
 
 All Pass Comp
 
