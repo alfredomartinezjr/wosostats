@@ -14,7 +14,7 @@
 
 **Shots per 908** - Shots per 90 minutes. Calculated by dividing all *Shots* by *MP*, and multiplying the product by 90. Is meant to account for differences in playing time.
 
-**Shot Accuracy** - The percentage of all *Shots* that were shot on goal. Calculated by dividing all shots on goal (**Shot GK Stop** + **Shot Def Stop** + **Goals**) by all shots, excluding blocks (**Shot GK Stop** + **Shot Def Stop** + **Goals** + **Shot Miss**).
+**Shot Accuracy** - The percentage of all **Shots** that were shot on goal. Calculated by dividing all shots on goal (**Shot GK Stop** + **Shot Def Stop** + **Goals**) by all shots, excluding blocks (**Shot GK Stop** + **Shot Def Stop** + **Goals** + **Shot Miss**).
 
 **Shot GK Stop** - Shots on goal stopped by the goalkeeper.
 
@@ -314,25 +314,26 @@
 
 **Clearances** - Intentionally kicking the ball away without an intended recipient.
 
-Balls Shields
+**Balls Shields** - Successfully shielding the ball from an opponent without touching the ball.
 
-Saves
+##Goalkeeper Stats
+**GK Saves** - Shots on goal stopped by the goalkeeper.
 
-Goals Allowed
+**Goals Allowed** - Goals conceded by the goalkeeper.
 
-SOG Faced
+**GK SOG Faced** - Shots on goal faced by the goalkeeper.
 
-GperSOG
+**GperSOG** - Percentage of all shots on goal that resulted in goals.
 
-BC SOG Faced
+**BC Saves** - Big Chance shots on goal stopped by the goalkeeper.
 
-BC Saves
+**BC Goals Allowed** - Big Chance goals conceded by the goalkeeper.
 
-BC Goals Allowed
+**BC SOG Faced** - Big Chance shots on goal faced by the goalkeeper.
 
-GperBCSOG
+**GperBCSOG** - Percentage of all Big Chance shots on goal that resulted in goals.
 
-High Balls
+**High Balls Faced** - 
 
 HB Won
 
