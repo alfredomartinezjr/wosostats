@@ -186,9 +186,9 @@
 
 **bPPass Comp Pct** - Percentage of all backward passes attempted under pressure that were completed. Calculated by dividing **bPPass Comp** by **bPPass Att**. 
 
-**Cross Comp** - All cross attempts that were completed.
+**Cross Comp** - Cross attempts that were completed.
 
-**Cross Att** - All cross attempts.
+**Cross Att** - Cross attempts.
 
 **Cross Att per 90** - Crosses attempted per 90 minutes. Calculated by dividing **Cross Att** by **MP**, and multiplying the product by 90. Is meant to account for differences in playing time.
 
@@ -196,13 +196,13 @@
 
 **Cross Comp Pct** - Percentage of all cross attempts that were completed.
 
-**Corner Crosses** - All cross attempts that were from the attacking 3rd.
+**Corner Crosses** - Cross attempts that were from the attacking 3rd.
 
-**Deep Crosses** - All cross attempts that were from beyond the attacking 3rd.
+**Deep Crosses** - Cross attempts that were from beyond the attacking 3rd.
 
-**Launch Comp** - All launched balls that were completed.
+**Launch Comp** - Launched balls that were completed.
 
-**Launch Att** - All launched balls that were attempted.
+**Launch Att** - Launched balls that were attempted.
 
 **Launch Att per 90** - Launch ball attempts per 90 minutes. Calculated by dividing **Launch Att** by **MP**, and multiplying the product by 90. Is meant to account for differences in playing time.
 
@@ -210,9 +210,9 @@
 
 **Launch Comp Pct** - Percentage of all launch ball attempts that were completed.
 
-**Through Comp** - All through balls that were completed.
+**Through Comp** - Through balls that were completed.
 
-**Through Att** - All through balls that were attempted.
+**Through Att** - Through balls that were attempted.
 
 **Through Att per 90** - Through balls attempted per 90 minutes. Calculated by dividing **Through Att** by **MP**, and multiplying the product by 90. Is meant to account for differences in playing time.
 
@@ -232,51 +232,51 @@
 
 **Throw In Comp Pct** - Percentage of all throw in attempts that were completed.
 
-**Corner Kicks Completed** - All corner kicks that connected with a teammate.
+**Corner Kicks Completed** - Corner kicks that connected with a teammate.
 
-**Corner Kicks Taken** - All corner kicks that were taken.
+**Corner Kicks Taken** - Corner kicks that were taken.
 
 **CK Effectiveness** - Percentage of all corner kicks that connected with a teammate.
 
-**CK Assist** - All corner kicks that were assists.
+**CK Assist** - Corner kicks that were assists.
 
-**CK Key Pass** - All corner kicks that were key passes.
+**CK Key Pass** - Corner kicks that were key passes.
 
-FK Pass Comp
+**Free Kicks Taken** - Free kicks taken.
 
-FK Pass Att
+**FK Pass Comp** - Free kicks that were pass attempts.
 
-FK Pass Comp Pct
+**FK Pass Att** - Free kicks that were completed passes.
 
-FK Assist
+**FK Pass Comp Pct** - Percentage of all free kick passes that were completed.
 
-FK Key Pass
+**FK Assist** - Free kicks that were assists.
 
-FK Shot
+**FK Key Pass** - Free kicks that were key passes.
 
-FK Scored
+**FK Shot** - Free kicks that were shots.
 
-Free Kicks Taken
+**FK Scored** - Free kicks that were directly scored.
 
-TO Won
+**Take Ons** - Intentional attempts by a player to get past her defender.
 
-TO Win Pct
+**TO Won** - Take ons that were successful.
 
-Take Ons
+**TO Lost** - Take ons that were not successful.
 
-TO Lost
+**TO Win Pct** - Percentage of all take ons that were successful.
 
-Dispossessed
+**Dispossessed** - All instances of a player getting intentionally dispossessed by a defender without having made a take on.
 
-Lost Touches
+**Lost Touches** - All instances of a player losing possession due to a bad touch.
 
-AD Won
+**Aerial Duels** 
 
-AD Win Pct
+**AD Won**
 
-Aerial Duels
+**AD Lost**
 
-AD Lost
+**AD Win Pct**
 
 Tackles
 
