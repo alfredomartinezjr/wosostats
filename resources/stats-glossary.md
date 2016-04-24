@@ -8,6 +8,8 @@
 
 **GS** - Games started
 
+##Shots & Goals Stats
+
 **Goals** - All goals scored
 
 **Shots** - All shots taken and not blocked by a defender in a situation where the defender was the last defender preventing a goal. Simply put, shots that were missed or shot on goal.
@@ -38,6 +40,8 @@
 
 **Far Shots** - Shots taken from beyond the attacking 3rd.
 
+##Key Passes & Big Chances Stats
+
 **Assists** - All completed passes made to the goalscorer, regardless of whether they were **Key Passes**.
 
 **Key Passes** - All passes instrumental in creating a clear goal-scoring opportunity (**Big Chance**), regardless of whether it was converted into a goal.
@@ -67,6 +71,8 @@
 **BC Created** - Instances where a possessing player creates a big chance for herself, such as via a take-on or interception.
 
 **BC Lost** -  Big chances that were lost due to a lost or missed touch.
+
+##Passing Stats
 
 **Pass Comp** - All completed passes.
 
@@ -260,6 +266,8 @@
 
 **Take Ons** - Intentional attempts by a player to get past her defender.
 
+##Possession Stats
+
 **TO Won** - Take ons that were successful.
 
 **TO Lost** - Take ons that were not successful.
@@ -270,6 +278,8 @@
 
 **Lost Touches** - All instances of a player losing possession due to a bad touch.
 
+**All Possessions Disrupted** - All instances when a player loses a take-on, has a lost touch, or is dispossessed. Calculated by adding **TO Lost**, **Dispossessed**, and **Lost Touches**.
+
 **Aerial Duels** - All instances of a player challenging an opposing player for a 50/50 ball in the air.
 
 **AD Won** - All instances of a player being the first player to touch the ball in an aerial duel.
@@ -277,6 +287,8 @@
 **AD Lost** - All instances of the opposing player being the first to touch the ball in an aerial duel.
 
 **AD Win Pct** - Percentage of all aerial duels that were won.
+
+##Defending Stats
 
 **Tackles** - When a player challenges an opponent in possession of the ball, connects with the ball while making contact and engaging with the player, and successfully dispossesses the possessing player of the ball.
 
