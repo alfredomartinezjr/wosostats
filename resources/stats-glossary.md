@@ -278,23 +278,23 @@
 
 **AD Win Pct** - Percentage of all aerial duels that were won.
 
-**Tackles** - 
+**Tackles** - When a player challenges an opponent in possession of the ball, connects with the ball while making contact and engaging with the player, and successfully dispossesses the possessing player of the ball.
 
-**Dispossesses** - 
+**Dispossesses** - When a player dispossesses the possessing player without the possessing player having had a chance to either take on the player or get rid of the ball.
 
-**Dribbled** - 
+**Dribbled** - When a player faces a successul take on from an opponent.
 
-**Press Opp** - 
+**Press Opp** - When a player pressure onto a possessing player's pass, shot, movement into another zone, ball shield, or recovery by stepping up, running at the player, or staying close in front of her, all with the intent of hurrying up the possessing player's play or impeding the possessing player's chance at making a play.
 
-**Challenge Opp** - 
+**Challenge Opp** - When a player applies pressure and makes contact with a possessing player as she attempts to make a play.
 
-**Recoveries** - 
+**Recoveries** - When a player wins possession of a loose ball, regardless of which team was the one to previously have possession of the ball.
 
-Def Recoveries
+**Def Recoveries** - When a player wins possession of a loose ball that was in possession of the opposing team.
 
-Poss Recoveries
+**Poss Recoveries** - When a player wins possession of a loose ball that was in possession of her team.
 
-Interceptions
+**Interceptions** - 
 
 Int per 90
 
