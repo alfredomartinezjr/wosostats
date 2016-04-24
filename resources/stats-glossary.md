@@ -118,29 +118,29 @@
 
 **bPass Comp Pct** - Percentage of all backward passes that were completed. Calculated by dividing **bPass Comp** by **bPass Att**.
 
-**rFreq A3 Passes** - 
+**rFreq A3 Passes** - Percentage of all passes that were attempted from the attacking 3rd.
 
-**rFreq M3 Passes** - 
+**rFreq M3 Passes** - Percentage of all passes that were attempted from the middle 3rd.
 
-**rFreq D3 Passes** - 
+**rFreq D3 Passes** - Percentage of all passes that were attempted from the defensive 3rd.
 
-**A3Pass.Comp** - 
+**A3Pass Comp** - All completed passes that were attempted from the attacking 3rd.
 
-**A3Pass.Att** - 
+**A3Pass Att** - All passes that were attempted from the attacking 3rd.
 
-**A3Pass.Comp.Pct** - 
+**A3Pass Comp Pct** - Percentage of all passes attempted from the attacking 3rd that were completed. Calculated by dividing **A3Pass Comp** by **A3Pass Att**.
 
-**M3Pass.Comp** - 
+**M3Pass.Comp** - All completed passes that were attempted from the middle 3rd.
 
-**M3Pass.Att** - 
+**M3Pass.Att** - All passes that were attempted from the middle 3rd.
 
-**M3Pass.Comp.Pct** - 
+**M3Pass.Comp.Pct** - Percentage of all passes attempted from the middle 3rd that were completed. Calculated by dividing **M3Pass Comp** by **M3Pass Att**.
 
-**D3Pass.Comp** - 
+**D3Pass.Comp** - All completed passes that were attempted from the defensive 3rd.
 
-**D3Pass.Att** - 
+**D3Pass.Att** - All passes that were attempted from the defensive 3rd.
 
-**D3Pass.Comp.Pct** - 
+**D3Pass.Comp.Pct** - Percentage of all passes attempted from the defensive 3rd that were completed. Calculated by dividing **D3Pass Comp** by **D3Pass Att**.
 
 **rFreq A3 opPasses** - 
 
