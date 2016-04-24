@@ -294,15 +294,25 @@
 
 **Poss Recoveries** - When a player wins possession of a loose ball that was in possession of her team.
 
-**Interceptions** - 
+**Interceptions** - Blocked passes or shots that prevented the intended recipient from getting the ball and clearly won possession of the ball. Recoveries of missed passes are not counted as interceptions.
 
-Int per 90
+**Int per 90** - Interceptions per 90 minutes. Calculated by dividing **Interceptions** by **MP**, and multiplying the product by 90. Is meant to account for differences in playing time.
 
-Int per OP Pass
+**Int per OP Pass** - Percentage of all opponent pass attempts that were intercepted.
 
-Blocks
+**Int in D3** - Interceptions in the defensive 3rd.
 
-Clearances
+**Int in M3** - Interceptions in the middle 3rd.
+
+**Int in A3** - Interceptions in the attacking 3rd.
+
+**Blocks** - Blocked passes or shots that resulted in a loose ball or ball going out of bounds.
+
+**Pass Blocks** - Blocked passes that resulted in a loose ball or ball going out of bounds.
+
+**Shot Blocks** - Blocked shots that resulted in a loose ball or ball going out of bounds.
+
+**Clearances** - Intentionally kicking the ball away without an intended recipient.
 
 Balls Shields
 
