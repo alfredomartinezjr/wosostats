@@ -118,6 +118,16 @@
 
 **bPass Comp Pct** - Percentage of all backward passes that were completed. Calculated by dividing **bPass Comp** by **bPass Att**.
 
+**rFreq A3 Passes** - 
+
+**rFreq M3 Passes** - 
+
+**rFreq D3 Passes** - 
+
+"A3Pass.Comp", "A3Pass.Att", "A3Pass.Comp.Pct"
+
+
+
 **Pass Comp D3toD3** - All completed passes that occured within the defensive 3rd.
 
 **Pass Comp D3toM3** - All completed passes that went from the defensive 3rd to the middle 3rd.
