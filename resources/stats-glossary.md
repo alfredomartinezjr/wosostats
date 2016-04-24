@@ -92,7 +92,7 @@
 
 **opPPass Comp Pct** - Percentage of all open play passes attempted under pressure (excludes throw-ins, free kick passes, goal kicks, and corner kick passes) that were completed. Calculated by dividing **opPPass Comp** by **opPPass Att**.
 
-**Pct opPass Pressd** - Percentage of all open play pass attempts that were taken under pressure.
+**Pct opPass Pressed** - Percentage of all open play pass attempts that were taken under pressure.
 
 **rFreq Pass Fwd** - Percentage of all passes that were forward passes.
 
