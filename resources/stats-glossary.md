@@ -124,9 +124,47 @@
 
 **rFreq D3 Passes** - 
 
-"A3Pass.Comp", "A3Pass.Att", "A3Pass.Comp.Pct"
+**A3Pass.Comp** - 
 
+**A3Pass.Att** - 
 
+**A3Pass.Comp.Pct** - 
+
+**M3Pass.Comp** - 
+
+**M3Pass.Att** - 
+
+**M3Pass.Comp.Pct** - 
+
+**D3Pass.Comp** - 
+
+**D3Pass.Att** - 
+
+**D3Pass.Comp.Pct** - 
+
+**rFreq A3 opPasses** - 
+
+**rFreq M3 opPasses** - 
+
+**rFreq D3 opPasses** - 
+
+**A3opPass.Comp** - 
+
+**A3opPass.Att** - 
+
+**A3opPass.Comp.Pct** - 
+
+**M3opPass.Comp** - 
+
+**M3opPass.Att** - 
+
+**M3opPass.Comp.Pct** - 
+
+**D3opPass.Comp** - 
+
+**D3opPass.Att** - 
+
+**D3opPass.Comp.Pct** - 
 
 **Pass Comp D3toD3** - All completed passes that occured within the defensive 3rd.
 
