@@ -88,47 +88,47 @@
 
 **Pct opPass Pressd** - Percentage of all open play pass attempts that were taken under pressure.
 
-rFreq Pass Fwd
+**rFreq Pass Fwd** - Percentage of all passes that were forward passes.
 
-rFreq Pass Side
+**rFreq Pass Side** - Percentage of all passes that were sideway passes.
 
-rFreq Pass Back
+**rFreq Pass Back** - Percentage of all passes that were backward passes.
 
-fwPass Comp
+**fwPass Comp** - All completed forward passes.
 
-fwPass Att
+**fwPass Att** - All attempted forward passes.
 
-fwPass Comp Pct
+**fwPass Comp Pct** - Percentage of all attempted forward passes that were completed. Calculated by dividing **fwPass Comp** by **fwPass Att**.
 
-sPass Comp
+**sPass Comp** - All completed sideway passes.
 
-sPass Att
+**sPass Att** - All attempted sideway passes.
 
-sPass Comp Pct
+**sPass Comp Pct** - Percentage of all sideway passes that were completed. Calculated by dividing **sPass Comp** by **sPass Att**.
 
-bPass Comp
+**bPass Comp** - All completed backward passes.
 
-bPass Att
+**bPass Att** - All attempted backward passes.
 
-bPass Comp Pct
+**bPass Comp Pct** - Percentage of all backward passes that were completed. Calculated by dividing **bPass Comp** by **bPass Att**.
 
-Pass Comp D3toD3
+**Pass Comp D3toD3** - All completed passes that occured within the defensive 3rd.
 
-Pass Comp D3toM3
+**Pass Comp D3toM3** - All completed passes that went from the defensive 3rd to the middle 3rd.
 
-Pass Comp D3toA3
+*8Pass Comp D3toA3** - All completed passes that went from the defensive 3rd to the attacking 3rd.
 
-Pass Comp M3toD3
+**Pass Comp M3toD3** - All completed passes that went from the middle 3rd to the defensive 3rd.
 
-Pass Comp M3toM3
+**Pass Comp M3toM3** - All completed passes that occured within the middle 3rd.
 
-Pass Comp M3toA3
+**Pass Comp M3toA3** - All completed passes that went from the middle 3rd to the attacking 3rd.
 
-Pass Comp A3toD3
+**Pass Comp A3toD3** - All completed passes that went from the attacking 3rd to the defensive 3rd.
 
-Pass Comp A3toM3
+**Pass Comp A3toM3** - All completed passes that went from the attacking 3rd to the middle 3rd.
 
-Pass Comp A3toA3
+**Pass Comp A3toA3** - All completed passes that occured within the attacking 3rd.
 
 rFreq opPass Fwd
 
