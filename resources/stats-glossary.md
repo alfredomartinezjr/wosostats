@@ -192,27 +192,23 @@
 
 **Cross Att per 90** - Crosses attempted per 90 minutes. Calculated by dividing **Cross Att** by **MP**, and multiplying the product by 90. Is meant to account for differences in playing time.
 
-Cross Att per Pass
+**Cross Att per opPass** - Percentage of all open play pass attempts that were crosses.
 
-Cross Att per opPass
+**Cross Comp Pct** - Percentage of all cross attempts that were completed.
 
-Cross Comp Pct
+**Corner Crosses** - All cross attempts that were from the attacking 3rd.
 
-Corner Crosses
+**Deep Crosses** - All cross attempts that were from beyond the attacking 3rd.
 
-Deep Crosses
+**Launch Comp** - All launched balls that were completed.
 
-Launch Comp
+**Launch Att** - All launched balls that were attempted.
 
-Launch Att
+**Launch Att per 90** - 
 
-Launch Att per 90
+**Launch Att per Pass** - 
 
-Launch Att per Pass
-
-Launch Att per opPass
-
-Launch Comp Pct
+**Launch Comp Pct** - 
 
 Through Comp
 
