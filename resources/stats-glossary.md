@@ -46,47 +46,47 @@
 
 **Second Assists** - Passes that weren't the last pass to the goalscorer but were instrumental in creating the converted goal-scoring opportunity.
 
-**Assists per 90** - Assists per 90 minutes. Calculated by dividing all *Assists* by *MP*, and multiplying the product by 90. Is meant to account for differences in playing time.
+**Assists per 90** - Assists per 90 minutes. Calculated by dividing all **Assists** by **MP**, and multiplying the product by 90. Is meant to account for differences in playing time.
 
-**Key Passes per 90** - Key passes per 90 minutes. Calculated by dividing all *Key Passes* by *MP*, and multiplying the product by 90. Is meant to account for differences in playing time.
+**Key Passes per 90** - Key passes per 90 minutes. Calculated by dividing all **Key Passes** by **MP**, and multiplying the product by 90. Is meant to account for differences in playing time.
 
-**Big Chances** - 
+**Big Chances** - Clear-cut goal scoring opportunities where the possessing player is reasonably expected to score.
 
-Big Chances per 90
+**Big Chances per 90** - Big chance per 90 minutes. Calculated by dividing all **Big Chances** by **MP**, and multiplying the product by 90. Is meant to account for differences in playing time.
 
-BC Scored
+**BC Scored** - Big chances that resulted in a goal.
 
-BC to Goal
+**BC Conversion Pct** - Percent of all big chances that resulted in a goal.
 
-BC SOG
+**BC SOG** - Big chances that resulted in a shot on goal.
 
-BC Shot Miss
+**BC Shot Miss** - Big chances that resulted in a missed shot.
 
-BC Dispossess
+**BC Dispossess** - Big chances that were dispossessed by a defending player.
 
-BC Created
+**BC Created** - Instances where a possessing player creates a big chance for herself, such as via a take-on or interception.
 
-BC Lost
+**BC Lost** -  Big chances that were lost due to a lost or missed touch.
 
-Pass Comp
+**Pass Comp** - All completed passes.
 
-Pass Att
+**Pass Att** - All attempted passes.
 
-Pass Comp Pct
+**Pass Comp Pct** - Percentage of all attempted passes that were completed. Calculated by dividing **Pass Comp** by **Pass Att**.
 
-opPass Comp
+**opPass Comp** - All open play passes that were completed. Excludes throw-ins, free kick passes, goal kicks, and corner kick passes.
 
-opPass Att
+**opPass Att** - All open play passes that were attempted. Excludes throw-ins, free kick passes, goal kicks, and corner kick passes.
 
-opPass Comp Pct
+**opPass Comp Pct** - Percentage of all attempted open play passes (excludes throw-ins, free kick passes, goal kicks, and corner kick passes) that were completed. Calculated by dividing **opPass Comp** by **opPass Att**.
 
-opPPass Comp
+**opPPass Comp** - All open play passes that were completed under pressure. Excludes throw-ins, free kick passes, goal kicks, and corner kick passes.
 
-opPPass Att
+**opPPass Att** - All open play passes that were attempted under pressure. Excludes throw-ins, free kick passes, goal kicks, and corner kick passes.
 
-opPPass Comp Pct
+**opPPass Comp Pct** - Percentage of all open play passes attempted under pressure (excludes throw-ins, free kick passes, goal kicks, and corner kick passes) that were completed. Calculated by dividing **opPPass Comp** by **opPPass Att**.
 
-Pct opPass Pressd
+**Pct opPass Pressd** - Percentage of all open play pass attempts that were taken under pressure.
 
 rFreq Pass Fwd
 
