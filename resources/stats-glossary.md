@@ -116,7 +116,7 @@
 
 **Pass Comp D3toM3** - All completed passes that went from the defensive 3rd to the middle 3rd.
 
-*8Pass Comp D3toA3** - All completed passes that went from the defensive 3rd to the attacking 3rd.
+**Pass Comp D3toA3** - All completed passes that went from the defensive 3rd to the attacking 3rd.
 
 **Pass Comp M3toD3** - All completed passes that went from the middle 3rd to the defensive 3rd.
 
