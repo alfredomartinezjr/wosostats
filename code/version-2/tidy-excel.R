@@ -126,7 +126,7 @@ while (x <= nrow(df)) {
     df[x,"poss.action"] <- "playcutoffbybroadcast"
   }
   ##Convert "play.type" shortcuts
-  if (grepl("^th", df[x,"play.type"])) {
+  if (grepl("^th ", df[x,"play.type"])) {
     df[x,"play.type"] <- "through"
   }
   if (grepl("^lay", df[x,"play.type"])) {
