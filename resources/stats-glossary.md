@@ -24,9 +24,9 @@
 
 **Shot Miss** - Shots that miss the goal or hit either the crossbar or post.
 
-**Shot Pressd** - Shots taken under pressure from a defender.
+**Shot Pressed** - Shots taken under pressure from a defender.
 
-**Pct Shots Pressd** - The percentage of all shots that were taken under pressure.
+**Pct Shots Pressed** - The percentage of all shots that were taken under pressure.
 
 **A6 Shots** - Shots taken from the 6-yard box.
 
