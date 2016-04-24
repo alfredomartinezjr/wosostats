@@ -208,7 +208,7 @@
 
 **bopPass Comp Pct** - Percentage of all open play backward passes that were completed. Calculated by dividing **bopPass Comp** by **bopPass Att**.
 
-**Pct Pass Pressd** - Percentage of all passes that were taken under pressure.
+**Pct Passes Pressed** - Percentage of all passes that were taken under pressure.
 
 **PPass Comp** - All passes attempted under pressure that were completed.
 
@@ -290,7 +290,7 @@
 
 **Corner Kicks Taken** - Corner kicks that were taken.
 
-**CK Effectiveness** - Percentage of all corner kicks that connected with a teammate.
+**CK Comp Pct** - Percentage of all corner kicks that connected with a teammate.
 
 **CK Assist** - Corner kicks that were assists.
 
@@ -312,9 +312,9 @@
 
 **FK Scored** - Free kicks that were directly scored.
 
-**Take Ons** - Intentional attempts by a player to get past her defender.
-
 ##Possession Stats
+
+**Take Ons** - Intentional attempts by a player to get past her defender.
 
 **TO Won** - Take ons that were successful.
 
@@ -374,7 +374,7 @@
 
 **Clearances** - Intentionally kicking the ball away without an intended recipient.
 
-**Balls Shields** - Successfully shielding the ball from an opponent without touching the ball.
+**Ball Shields** - Successfully shielding the ball from an opponent without touching the ball.
 
 ##Goalkeeper Stats
 **GK Saves** - Shots on goal stopped by the goalkeeper.
