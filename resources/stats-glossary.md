@@ -204,25 +204,25 @@
 
 **Launch Att** - All launched balls that were attempted.
 
-**Launch Att per 90** - 
+**Launch Att per 90** - Launch ball attempts per 90 minutes. Calculated by dividing **Launch Att** by **MP**, and multiplying the product by 90. Is meant to account for differences in playing time.
 
-**Launch Att per Pass** - 
+**Launch Att per Pass** - Percentage of all pass attempts that were launched balls.
 
-**Launch Comp Pct** - 
+**Launch Comp Pct** - Percentage of all launch ball attempts that were completed.
 
-Through Comp
+**Through Comp** - All through balls that were completed.
 
-Through Att
+**Through Att** - All through balls that were attempted.
 
-Through Att per 90
+**Through Att per 90** - Through balls attempted per 90 minutes. Calculated by dividing **Through Att** by **MP**, and multiplying the product by 90. Is meant to account for differences in playing time.
 
-Through Att per Pass
+**Through Att per Pass**
 
-Through Att per opPass
+**Through Att per opPass**
 
-Through Comp Pct
+**Through Comp Pct**
 
-Throw In Comp
+**Throw In Comp**
 
 Throw In Att
 
