@@ -158,6 +158,7 @@ Take Ons Lost,TO Lost,Possession,frequency
 Pct of all Take On Attempts that were Won,TO Win Pct,Possession,
 Dispossessed by Opp,Dispossessed,Possession,frequency
 Lost Touches,Lost Touches,Possession,frequency
+All Possessions Disrupted,All Possessions Disrupted,Possession,frequency
 Total Aerial Duels,Aerial Duels,Aerial Duels,frequency
 Aerial Duels Won,AD Won,Aerial Duels,frequency
 Aerial Duels Lost,AD Lost,Aerial Duels,frequency
@@ -171,18 +172,19 @@ Recoveries,Recoveries,Ball Defending,frequency
 Defensive Recoveries,Def Recoveries,Ball Defending,frequency
 Possessing Recoveries,Poss Recoveries,Ball Defending,frequency
 Interceptions,Interceptions,Ball Defending,frequency
+Interceptions per 90,Int per 90,Ball Defending,
 Blocks,Blocks,Ball Defending,frequency
 Clearances,Clearances,Ball Defending,frequency
 Balls Shielded,Balls Shields,Ball Defending,frequency
-Shots on Goal Faced by the GK,SOG Faced,GK Saves,frequency
-Shots on Goal Saved by the GK,Saves,GK Saves,frequency
+Shots on Goal Saved by the GK,GK Saves,GK Saves,frequency
 Goals Scored Against the GK,Goals Allowed,GK Saves,frequency
+Shots on Goal Faced by the GK,GK SOG Faced,GK Saves,frequency
 Goals per Shot on Goal Faced by the GK,GperSOG,GK Saves,
-Big Chance SOG Faced by the GK,BC SOG Faced,GK Saves,frequency
 Big Chances Saved by the GK,BC Saves,GK Saves,frequency
 Big Chances Scored Against the GK,BC Goals Allowed,GK Saves,frequency
+Big Chance SOG Faced by the GK,BC SOG Faced,GK Saves,frequency
 Goals per Big Chances SOG Against the GK,GperBCSOG,GK Saves,
-High Balls Faced,High Balls,GK High Balls,frequency
+High Balls Faced,High Balls Faced,GK High Balls,frequency
 High Balls Won,HB Won,GK High Balls,frequency
 High Balls Lost,HB Lost,GK High Balls,frequency
 High Balls Caught,HB Caught,GK High Balls,frequency
@@ -190,27 +192,27 @@ High Balls Punched Away,HB Punched,GK High Balls,frequency
 High Balls Parried,HB Parried,GK High Balls,frequency
 High Balls Collected,HB Collected,GK High Balls,frequency
 High Ball Fouls Won,HB Fouls Won,GK High Balls,frequency
-Crosses Faced,Crosses,GK Set Pieces,frequency
+Crosses Faced,Crosses Faced,GK Set Pieces,frequency
 Crosses Won,Crosses Won,GK Set Pieces,frequency
 Crosses Lost,Crosses Lost,GK Set Pieces,frequency
-Corner Kicks Faced,Corner Kicks,GK Set Pieces,frequency
+Corner Kicks Faced,Corner Kicks Faced,GK Set Pieces,frequency
 Corner Kicks Won,CKs Won,GK Set Pieces,frequency
 Corner Kicks Lost,CKs Lost,GK Set Pieces,frequency
-Free Kicks Faced,Free Kicks,GK Set Pieces,frequency
+Free Kicks Faced,Free Kicks Faced,GK Set Pieces,frequency
 Free Kicks Won,FKs Won,GK Set Pieces,frequency
 Free Kicks Lost,Fks Lost,GK Set Pieces,frequency
-All Pass Attempts by the GK,All Pass Att,GK Distribution,frequency
-All Passes Completed by the GK,All Pass Comp,GK Distribution,frequency
-Overall GK Distribution,Distribution Success,GK Distribution,
-GK Throws Completed,Throw Comp,GK Distribution,frequency
-GK Throw Attempts,Throw Att,GK Distribution,frequency
-GK Throw Comp Pct,Throw Comp Pct,GK Distribution,
-Drop Kicks Completed,Drop Kick Comp,GK Distribution,frequency
-Drop Kicks Attempted,Drop Kick Att,GK Distribution,frequency
-Drop Kick Comp Pct,Drop Kick Comp Pct,GK Distribution,
-Goal Kicks + Free Kicks Completed by the GK,GK+FK Comp,GK Distribution,frequency
-Goal Kicks + Free Kicks Taken by the GK,GK+FK Att,GK Distribution,frequency
-Goalkeeper Goal Kick + Free Kick Completion Pct,GK+FK Comp Pct,GK Distribution,
+All Passes Completed by the GK,GK Overall Pass Comp,GK Distribution,frequency
+All Pass Attempts by the GK,GK Overall Pass Att,GK Distribution,frequency
+Overall GK Distribution,GK Overall Pass Comp Pct,GK Distribution,
+GK Throws Completed,GK Throw Comp,GK Distribution,frequency
+GK Throw Attempts,GK Throw Att,GK Distribution,frequency
+GK Throw Comp Pct,GK Throw Comp Pct,GK Distribution,
+Drop Kicks Completed,GK Drop Kick Comp,GK Distribution,frequency
+Drop Kicks Attempted,GK Drop Kick Att,GK Distribution,frequency
+Drop Kick Comp Pct,GK Drop Kick Comp Pct,GK Distribution,
+Goal Kicks + Free Kicks Completed by the GK,GKFK Comp,GK Distribution,frequency
+Goal Kicks + Free Kicks Taken by the GK,GKFK Att,GK Distribution,frequency
+Goalkeeper Goal Kick + Free Kick Completion Pct,GKFK Comp Pct,GK Distribution,
 Smothers Won,Smothers Won,GK Smothers,frequency
 Smothers Lost,Smothers Lost,GK Smothers,frequency
 Offside Calls,Offsides,Disciplinary,frequency
