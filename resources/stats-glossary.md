@@ -377,7 +377,7 @@
 **Ball Shields** - Successfully shielding the ball from an opponent without touching the ball.
 
 ##Goalkeeper Stats
-**GK Saves** - Shots on goal stopped by the goalkeeper.
+**Saves** - Shots on goal stopped by the goalkeeper.
 
 **Goals Allowed** - Goals conceded by the goalkeeper.
 
