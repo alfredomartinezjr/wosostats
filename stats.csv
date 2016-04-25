@@ -176,7 +176,7 @@ Interceptions per 90,Int per 90,Ball Defending,
 Blocks,Blocks,Ball Defending,frequency
 Clearances,Clearances,Ball Defending,frequency
 Balls Shielded,Balls Shields,Ball Defending,frequency
-Shots on Goal Saved by the GK,GK Saves,GK Saves,frequency
+Shots on Goal Saved by the GK,Saves,GK Saves,frequency
 Goals Scored Against the GK,Goals Allowed,GK Saves,frequency
 Shots on Goal Faced by the GK,GK SOG Faced,GK Saves,frequency
 Goals per Shot on Goal Faced by the GK,GperSOG,GK Saves,
