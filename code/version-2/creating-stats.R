@@ -291,6 +291,7 @@ t <- addColumnForQualifier("completed", pattern="passes.*.c", patternLocation = 
                            ndf = createCleanDataFrame(c("passes.f.c", "passes.f", 
                                                         "passes.s.c", "passes.s", "passes.b.c", "passes.b", "movement"), "poss.action", d))
 t <- t[t[,"completed"]=="yes",]
+t[,"pass.range"] <- NA
 x <- 1
 while (x <= nrow(t)){
   #passes from defensive 3rd to defensive 3rd

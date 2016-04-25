@@ -12,7 +12,7 @@ stats_list <- vector("list", 0)
 #Returns a list of data.frames
 for (i in matches) {
   matchURL <- i
-  source("creating-stats.R")
+  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/creating-stats.R")
   stats_list[[i]] <- all
 }
 
