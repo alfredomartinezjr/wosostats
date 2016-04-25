@@ -126,12 +126,12 @@ rbindCompetitionMatches <- function(match_list) {
   overall[,"TO.Win.Pct"] <- overall[,"TO.Won"]/overall[,"Take.Ons"]
   overall[,"AD.Win.Pct"] <- overall[,"AD.Won"]/overall[,"Aerial.Duels"]
   overall[,"Int.per.90"] <- (overall[,"Interceptions"]/overall$MP)*90
-  overall[,"GperSOG"] <- overall[,"Goals.Allowed"]/overall[,"SOG.Faced"]
+  overall[,"GperSOG"] <- overall[,"Goals.Allowed"]/overall[,"GK.SOG.Faced"]
   overall[,"GperBCSOG"] <- overall[,"BC.Goals.Allowed"]/overall[,"BC.SOG.Faced"]
-  overall[,"GK.Overall.Pass.Comp.Pct"] <- overall[,"All.Pass.Comp"]/overall[,"All.Pass.Att"]
-  overall[,"GK.Throw.Comp.Pct"] <- overall[,"Throw.Comp"]/overall[,"Throw.Att"]
-  overall[,"GK.Drop.Kick.Comp.Pct"] <- overall[,"Drop.Kick.Comp"]/overall[,"Drop.Kick.Att"]
-  overall[,"GKFK.Comp.Pct"] <- overall[,"GK.FK.Comp"]/overall[,"GK.FK.Att"]
+  overall[,"GK.Overall.Pass.Comp.Pct"] <- overall[,"GK.Overall.Pass.Comp"]/overall[,"GK.Overall.Pass.Att"]
+  overall[,"GK.Throw.Comp.Pct"] <- overall[,"GK.Throw.Comp"]/overall[,"GK.Throw.Att"]
+  overall[,"GK.Drop.Kick.Comp.Pct"] <- overall[,"GK.Drop.Kick.Comp"]/overall[,"GK.Drop.Kick.Att"]
+  overall[,"GKFK.Comp.Pct"] <- overall[,"GKFK.Comp"]/overall[,"GKFK.Att"]
   overall
 }
 
