@@ -25,7 +25,7 @@ shinyUI(fluidPage(
     mainPanel(
       div(navbarPage(
         title = NULL,
-        header = p("There is a cap that shinyapps.io puts on how much total time this app can be used per month. Please, to save some headaches, if you don't need to use this app, close it! :) For a list of definitions, go", a("here", href="https://github.com/amj2012/wosostats/blob/master/resources/definitions.md")),
+        header = p("There is a cap that shinyapps.io puts on how much total time this app can be used per month. Please, to save some headaches, if you don't need to use this app, close it! :) For a glossary of each of these stats, go", a("here", href="https://github.com/amj2012/wosostats/blob/master/resources/stats-glossary.md")),
         tabPanel('Shots', dataTableOutput('shots')),
         tabPanel('Passing', dataTableOutput('passing')),
         tabPanel('Possession', dataTableOutput('possession')),

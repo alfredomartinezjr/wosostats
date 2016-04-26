@@ -68,7 +68,7 @@ shinyServer(function(input, output) {
       paste("match-stats.csv")
     },
     content = function(con) {
-      write.csv(dataInput()[[1]], con, row.names = FALSE)
+      write.csv(dataInput(), con, row.names = FALSE)
     }
   )
 })
