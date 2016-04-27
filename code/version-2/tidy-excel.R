@@ -26,8 +26,6 @@ df$play.type <- as.character(df[,"play.type"])
 df$def.action <- as.character(df[,"def.action"])
 df$poss.player.disciplinary <- as.character(df[,"poss.player.disciplinary"])
 df$poss.notes <- as.character(df[,"poss.notes"])
-df$xG <- as.numeric(df[,"xG"])
-
 df[(df) == "-"] <- NA
 df[(df) == ""] <- NA
 rm(start)
