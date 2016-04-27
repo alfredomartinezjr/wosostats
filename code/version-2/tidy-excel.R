@@ -26,6 +26,7 @@ df$play.type <- as.character(df[,"play.type"])
 df$def.action <- as.character(df[,"def.action"])
 df$poss.player.disciplinary <- as.character(df[,"poss.player.disciplinary"])
 df$poss.notes <- as.character(df[,"poss.notes"])
+df$def.player.disciplinary <- as.character(df[,"def.player.disciplinary"])
 df[(df) == "-"] <- NA
 df[(df) == ""] <- NA
 rm(start)
@@ -298,7 +299,7 @@ while (x <= nrow(df)) {
 print("The following events have blank def.location")
 cantDetermine
 
-##FILLS IN BLANK POSS.LOCATION CELLS----------
+##FILLS IN BLANK POSS.LOCATION CELLS & DETERMINE COMPLETED PASSES----------
 df$poss.action <- as.character(df$poss.action)
 e <- 1
 while (e <= max(df$event, na.rm = TRUE)) {
@@ -313,7 +314,8 @@ while (e <= max(df$event, na.rm = TRUE)) {
     grepl("pass", df[df[,"event"] == e,"poss.action"][1]) &&
     
     # checks if the "poss.play.destination" value is blank and needs to be filled
-    is.na(df[row,"poss.play.destination"]) &&
+    #don't remember why I put this in and don't think it's necessary
+    #is.na(df[row,"poss.play.destination"]) &&
     
     # checks if the next event isn't a stop in play or break in broadcast
     # these instances should have the "poss.play.destination" value filled in anyways
