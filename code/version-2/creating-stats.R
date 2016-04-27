@@ -24,7 +24,7 @@ while (x <= nrow(players)) {
     players[x,"GS"] <- 1
   } else if (nrow(substitutions[substitutions[,"poss.player"] %in% player,]) > 0) {
     #check if she was a starter, based on if she was only ever substituted on
-    if ((substitutions[substitutions[,"poss.player"] == player,"poss.action"] %in% "substitution.on") == FALSE) {
+    if (grepl("substitution.on", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==FALSE) {
       #if she was a starter who was subbed off, get the length of unique values for vector d[,"time] 
       #up to where she got subbed off
       e <- substitutions[substitutions[,"poss.player"] == player,"event"]
@@ -34,8 +34,8 @@ while (x <= nrow(players)) {
       players[x,"GS"] <- 1
     } else
       #if she wasn't a starter and got subbed on and wasn't also later subbed off
-      if ((substitutions[substitutions[,"poss.player"] == player,"poss.action"] %in% "substitution.on")
-          & !(substitutions[substitutions[,"poss.player"] == player,"poss.action"] %in% "substitution.off")){
+      if ((grepl("substitution.on", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==TRUE)
+          & (grepl("substitution.off", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==FALSE)) {
         #if she wasn't a starter, got subbed on, and was never subbed off, get the length of unique
         #values for vector d[,"time] from when she got subbed on to when she got subbed off
         e <- substitutions[substitutions[,"poss.player"] == player,"event"]
@@ -45,8 +45,8 @@ while (x <= nrow(players)) {
         players[x,"GS"] <- 0
       } else
         #if she wasn't a starter, got subbed on, and was later subbed off
-        if ((substitutions[substitutions[,"poss.player"] == player,"poss.action"] %in% "substitution.on")
-            & (substitutions[substitutions[,"poss.player"] == player,"poss.action"] %in% "substitution.off")) {
+        if ((grepl("substitution.on", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==TRUE)
+            & (grepl("substitution.off", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==TRUE)) {
           #if she wasn't a starter, got subbed on, and as later subbed off, get the length of unique
           #values for vector d[,"time] from when she got subbed on to when she got subbed off
           e <- substitutions[substitutions[,"poss.player"] == player,"event"]
