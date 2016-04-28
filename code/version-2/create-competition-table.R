@@ -7,11 +7,14 @@ database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
 
 #Set "competition" as the competition slug that is in the database
 #competition <- competitionsluggoeshere
-getCompetitionMatches <- function(competition.slug) {
+getCompetitionMatches <- function(competition.slug, round=NA) {
   if(competition.slug == "database"){
     matches <- database[!is.na(database[,"match.csv.link"]),"stats.csv.link"]
     names <- database[!is.na(database[,"match.csv.link"]),"matchup"]
   } else {
+    if (!is.na(round)){
+      database <- database[database[,"round"]==round,]
+    }
     matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"stats.csv.link"]
     names <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"matchup"]
   }
