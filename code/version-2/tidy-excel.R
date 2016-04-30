@@ -10,43 +10,89 @@ require(xlsx)
 ## The Excel file must be in the working directory
 df <- read.xlsx(match, sheetName = "match")
 
-##FINDS METADATA----------
-## Delete all rows before kickoff and saves them in a separate data frame "head"
-### Gets the row number where the match starts, stores it in x
-start <- grep("kickoff", df[,"poss.action"])
-### Creates a data frame of all columns from row 1 to row x, for reference
-ref <- df[1:(start-1),]
-### Then, deletes everything before kickoff from the df data.frame
-df <- df[start:nrow(df),]
-### Changes select column factors to integers
-df$event <- as.integer(as.character(df[,"event"]))
-### Changes select column factors to characters
+##CHANGE COLUMN CLASSES----------
+### Changes factors of select columns
+df$event <- as.numeric(as.character(df[,"event"]))
 df$poss.action <- as.character(df[,"poss.action"])
 df$play.type <- as.character(df[,"play.type"])
 df$def.action <- as.character(df[,"def.action"])
 df$poss.player.disciplinary <- as.character(df[,"poss.player.disciplinary"])
 df$poss.notes <- as.character(df[,"poss.notes"])
 df$def.player.disciplinary <- as.character(df[,"def.player.disciplinary"])
-df[(df) == "-"] <- NA
-df[(df) == ""] <- NA
-rm(start)
-## There are a lot of blank spaces where the team acronym should be. The code below fills them in
-### Creates a vector for the "home" team and the "away" team
+df$poss.player <- as.character(df$poss.player)
+df$def.player <- as.character(df$def.player)
+
+##CLEAN UP----------
+###Gets rid of NA columns
+df <- df[,!grepl("^NA",names(df))]
+
+###Gets rid of any blank rows after the match has ended
+df <- df[1:max(grep("end.of.match", df[,"poss.action"])),]
+
+###Fill in missing time data
+####This ASSUMES that, if there are blanks, then the first row
+####where a minute appears is the first event for that minute.
+x <- grep("kickoff", df[,"poss.action"])
+####in case there's more than one "kickoff" (incorrectly) logged
+if(length(x) > 1) (x <- x[1])
+while (x <= nrow(df)) {
+  #checks if time is blank
+  if (df[x,"time"] == "-" | is.na(df[x,"time"])) {
+    #if time is blank, set it as previous value
+    df[x,"time"] <- df[x-1, "time"]
+  }
+  x <- x + 1
+}
+
+###Re-calculates event values
+####convert all blanks and "-"s to NAs
+x <- 1
+while (x <= nrow(df)) {
+  if (df[x,"event"] == "-" | is.na(df[x,"event"]) | df[x,"event"] == " ") {
+    df[x,"event"] <- NA
+  }
+  x <- x + 1
+}
+
+####sets x as row below kickoff
+x <- grep("kickoff", df[,"poss.action"])
+if(length(x) > 1) (x <- x[1])
+x <- x + 1
+
+####checks if "poss.player" is NA, "-", or " " and sets appropriate event value
+while (x <= nrow(df)) {
+  if(df[x,"poss.player"] == "-" | is.na(df[x,"poss.player"]) | df[x,"poss.player"] == " "){
+    #sets event value as previous row's event value
+    df[x,"event"] <- df[x-1,"event"]
+  } else {
+    #sets event value as 1 plus previous row's event value
+    df[x,"event"] <- df[x-1,"event"]+1
+  }
+  x <- x + 1
+}
+
+###Gets rid of player numbers and leading/trailing whitespace in "poss.player" and "def.player" values
+x <- 1
+while (x <= nrow(df)) {
+  poss.string <- df[x,"poss.player"]
+  def.string <- df[x,"def.player"]
+  df[x,"poss.player"] <- trimws(strsplit(as.character(poss.string)," \\(")[[1]][1])
+  df[x,"def.player"] <- trimws(strsplit(as.character(def.string)," \\(")[[1]][1])
+  x <- x + 1
+}
+
+
+##METADATA----------
+### Creates a meta data frame of all columns from row 1 to row before kickoff
+ref <- df[1:(grep("kickoff", df[,"poss.action"])[1]-1),]
+### Creates a vector for the "home" team and the "away" team, excluding possible NA values
 teams <- as.character(unique(ref$poss.team))
+teams <- teams[!is.na(teams) & !(teams=="-") & !(teams==" ") & !(teams=="")]
 hometeam <- teams[1]
 awayteam <- teams[2]
-### Creates two different vectors from each team's list of players
-homeplayers <- as.character(ref[ref[,"poss.team"] == hometeam,"poss.player"])
-awayplayers <- as.character(ref[ref[,"poss.team"] == awayteam,"poss.player"])
-### Uses the above vectors & values to check df rows where "poss.team" and "def.team"
-### is blank, and fills in the appropriate value based on what the player name is in 
-### "poss.player" or "def.player"
-df[grepl(paste(paste0("^", homeplayers, "$"), collapse ="|"), df[,"poss.player"]), "poss.team"] <- hometeam 
-df[grepl(paste(paste0("^", awayplayers, "$"), collapse ="|"), df[,"poss.player"]), "poss.team"] <- awayteam
-df[grepl(paste(paste0("^", homeplayers, "$"), collapse ="|"), df[,"def.player"]), "def.team"] <- hometeam 
-df[grepl(paste(paste0("^", awayplayers, "$"), collapse ="|"), df[,"def.player"]), "def.team"] <- awayteam
-### Creates data.frame with players and positions as the columns
-rm(ref)
+### home team should always be listed first
+homedata <- ref[ref[,"poss.team"]==hometeam,c("poss.position","poss.team", "poss.player")]
+awaydata <- ref[ref[,"poss.team"]==awayteam,c("poss.position","poss.team", "poss.player")]
 ## Create data frame with opposites of each location
 posslocations <- c("A6", "A18", "A3L", "A3C", "A3R", "AM3L", "AM3C", 
                    "AM3R", "DM3L", "DM3C", "DM3R", "D3L", "D3C", "D3R", 
@@ -57,6 +103,60 @@ deflocations <- c("D6", "D18", "D3R", "D3C", "D3L", "DM3R", "DM3C",
                   "A18", "A6", "DR", "DC", "DL", "DMR", "DMC",
                   "DML", "AMR", "AMC", "AML", "AR", "AC", "AL")
 opposites <- data.frame(posslocations, deflocations)
+
+##CALCULATE MISSING PLAYER DATA---------
+### Deletes metadata from df & converts "-", " ", and blank values to NAs
+df <- df[grep("kickoff", df[,"poss.action"])[1]:nrow(df),]
+df[(df) == "-"] <- NA
+df[(df) == " "] <- NA
+df[(df) == ""] <- NA
+### Checks if a "poss.player" and "def.player" value is for a certain team, and then assigns the team value appropriately
+df[grepl(paste(paste0("^", homedata$poss.player, "$"), collapse ="|"), df[,"poss.player"]), "poss.team"] <- hometeam 
+df[grepl(paste(paste0("^", awaydata$poss.player, "$"), collapse ="|"), df[,"poss.player"]), "poss.team"] <- awayteam
+df[grepl(paste(paste0("^", homedata$poss.player, "$"), collapse ="|"), df[,"def.player"]), "def.team"] <- hometeam 
+df[grepl(paste(paste0("^", awaydata$poss.player, "$"), collapse ="|"), df[,"def.player"]), "def.team"] <- awayteam
+### Checks if a "poss.player" and "def.player" value is for a certain position, and then assigns the position value appropriately
+df[grepl(paste(paste0("^", ref[ref[,"poss.position"]=="GK","poss.player"], "$"), collapse ="|"), df[,"poss.player"]), "poss.position"] <- "GK" 
+df[grepl(paste(paste0("^", ref[ref[,"poss.position"]=="D","poss.player"], "$"), collapse ="|"), df[,"poss.player"]), "poss.position"] <- "D" 
+df[grepl(paste(paste0("^", ref[ref[,"poss.position"]=="M","poss.player"], "$"), collapse ="|"), df[,"poss.player"]), "poss.position"] <- "M" 
+df[grepl(paste(paste0("^", ref[ref[,"poss.position"]=="F","poss.player"], "$"), collapse ="|"), df[,"poss.player"]), "poss.position"] <- "F" 
+df[grepl(paste(paste0("^", ref[ref[,"def.position"]=="GK","def.player"], "$"), collapse ="|"), df[,"def.player"]), "def.position"] <- "GK" 
+df[grepl(paste(paste0("^", ref[ref[,"poss.position"]=="D","def.player"], "$"), collapse ="|"), df[,"def.player"]), "def.position"] <- "D" 
+df[grepl(paste(paste0("^", ref[ref[,"poss.position"]=="M","def.player"], "$"), collapse ="|"), df[,"def.player"]), "def.position"] <- "M" 
+df[grepl(paste(paste0("^", ref[ref[,"poss.position"]=="F","def.player"], "$"), collapse ="|"), df[,"def.player"]), "def.position"] <- "F"
+
+##CHECK FOR INCORRECT DATA--------
+###Checks if a player's name has certain letters in upper case (this messes with how stats are computed)
+x <- grep("kickoff", df[,"poss.action"])
+if(length(x) > 1) (x <- x[1])
+x <- x + 1
+####creates vector of players, excluding blanks
+players <- as.character(unique(ref$poss.player))
+players <- players[!is.na(players) & !(players=="-") & !(players==" ") & !(players=="")]
+while (x <= nrow(df)) {
+  #checks poss.player
+  if(!is.na(df[x,"poss.player"])){
+    y <- 1
+    while (y <= length(players)) {
+      if (((tolower(df[x,"poss.player"])==tolower(players[y]))) & (df[x,"poss.player"] != players[y])) {
+        df[x,"poss.player"] <- players[y]
+      }
+      y <- y + 1
+    }
+  }
+  #checks def.player
+  if(!is.na(df[x,"def.player"])){
+    z <- 1
+    while (z <= length(players)) {
+      if (((tolower(df[x,"def.player"])==tolower(players[z]))) & (df[x,"def.player"] != players[z])) {
+        df[x,"def.player"] <- players[z]
+      }
+      z <- z + 1
+    }
+  }
+  x <- x + 1
+}
+rm(ref)
 
 ##INVERTIBLE FUNCTION----------
 ##Function to determine if an action's location is invertible based on the
@@ -369,4 +469,4 @@ while (e <= max(df$event, na.rm = TRUE)) {
 #}
 
 
-rm(opposites, awayplayers, homeplayers, deflocations, location, awayteam, hometeam, posslocations, teams)
+rm(opposites, deflocations, location, awayteam, hometeam, posslocations, homedata, awaydata, teams)
