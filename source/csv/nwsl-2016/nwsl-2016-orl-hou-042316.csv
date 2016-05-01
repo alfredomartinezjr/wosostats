@@ -304,7 +304,8 @@
 286,"19","D","ORL","Alleway","dispossessed",NA,NA,NA,"F","HOU","Beckie","dispossessed",NA,NA,NA,NA,NA,NA,"errors.to.big.chances"
 287,"19","F","HOU","Beckie","movement",NA,NA,NA,"D","ORL","Belanger","pressured",NA,NA,NA,NA,NA,NA,NA
 288,"19","F","HOU","Beckie","shots.stopped.by.gk","A18","A6",NA,"GK","ORL","Harris","gk.s.o.g.stop","D18","punched.to.safety","stooping",NA,"out.of.bounds.lost.poss",NA,NA
-289,"19","M","HOU","Brian","passes.s.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,"big.chances.shot.missed",NA,NA
+288,"19",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"big.chances.shot.on.goal",NA,NA
+289,"19","M","HOU","Brian","passes.s.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 290,"20","M","HOU","Brooks","passes.f",NA,NA,NA,"D","ORL","Belanger","blocks",NA,NA,NA,NA,NA,NA,NA
 291,"20","M","HOU","Brian","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 292,"20","M","HOU","Brian","passes.s.c",NA,NA,"corner.crosses","D","ORL","Belanger","pressured",NA,NA,NA,NA,NA,NA,NA
@@ -466,7 +467,7 @@
 433,"31",NA,NA,NA,NA,NA,NA,NA,"F","ORL","Edmonds","pressured",NA,NA,NA,NA,NA,NA,NA
 434,"31","M","HOU","Brooks","passes.b.c",NA,NA,NA,"F","ORL","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA
 435,"31","D","HOU","Moros","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-436,"31","M","HOU","Brian","passes.f",NA,NA,"through","D","ORL","Alleway","interceptions",NA,NA,NA,NA,NA,NA,NA
+436,"31","M","HOU","Brian","passes.f",NA,NA,"through","D","ORL","Alleway","interceptions","A3C",NA,NA,NA,NA,NA,NA
 437,"31","D","ORL","Alleway","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 438,"32","D","ORL","Hickman Alves","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 439,"32","GK","ORL","Harris","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1264,7 +1265,7 @@
 1163,"86","M","HOU","Privett","passes.f.c",NA,NA,"through","F","ORL","Hagen","pressured",NA,NA,NA,NA,NA,NA,NA
 1164,"86","D","HOU","Poliana","take.on.lost",NA,NA,NA,"D","ORL","Catley","tackles.ball",NA,NA,NA,NA,NA,NA,NA
 1165,"86","D","HOU","Poliana","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1166,"86","D","HOU","Poliana","shots.stopped.by.gk",NA,NA,NA,"GK","ORL","Harris","gk.s.o.g.stopped",NA,"parried.to.danger","reaching",NA,NA,NA,NA
+1166,"86","D","HOU","Poliana","shots.stopped.by.gk",NA,NA,NA,"GK","ORL","Harris","gk.s.o.g.stop",NA,"parried.to.danger","reaching",NA,NA,NA,NA
 1167,"86","M","HOU","Andressa","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1168,"86","M","HOU","Andressa","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1169,"86","F","HOU","Daly","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1295,7 +1296,7 @@
 1192,"88","D","HOU","Chapman","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1193,"88","M","HOU","Andressa","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1194,"89","F","HOU","Daly","passes.f.c",NA,NA,"through","F","ORL","Spencer","pressured",NA,NA,NA,NA,"key.passes",NA,NA
-1195,"89","F","HOU","Ohai","shots.stopped.by.gk",NA,NA,NA,"GK","ORL","Harris","gk.s.o.g.stopped",NA,"parried.to.danger","diving",NA,"big.chances.shot.on.goal",NA,NA
+1195,"89","F","HOU","Ohai","shots.stopped.by.gk",NA,NA,NA,"GK","ORL","Harris","gk.s.o.g.stop",NA,"parried.to.danger","diving",NA,"big.chances.shot.on.goal",NA,NA
 1196,"89","F","HOU","Ohai","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1197,"89","F","HOU","Ohai","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1198,"89","M","HOU","Andressa","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
