@@ -39,7 +39,7 @@ while (x <= nrow(players)) {
         #if she wasn't a starter, got subbed on, and was never subbed off, get the length of unique
         #values for vector d[,"time] from when she got subbed on to when she got subbed off
         e <- substitutions[substitutions[,"poss.player"] == player,"event"]
-        firstminute <- grep(e, d[,"event"])
+        firstminute <- grep(e, d[,"event"])[1]
         minutesplayed <- length(unique(d[firstminute:nrow(d),"time"]))
         players[x,"MP"] <- minutesplayed
         players[x,"GS"] <- 0
@@ -130,7 +130,7 @@ t <- addColumnForMultiQualifiers(newcol="key.assists", pattern=c("assists"="yes"
 ##Create tables for each column (five different ones)
 t1 <- createTable(c("yes"),"assists",t)
 names(t1) <- c("Player", "Assists")
-t2 <- createTable(c("yes", "key.passes.to.goals"),"key.passes",t)
+t2 <- createTable(c("yes"),"key.passes",t)
 names(t2) <- c("Player", "Key Passes")
 t6 <- merge(t1, t2, by="Player", all=TRUE)
 t3 <- createTable(c("yes"),"key.assists",t)
