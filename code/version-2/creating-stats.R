@@ -88,6 +88,11 @@ all <- merge(players, t, by="Player", all=TRUE)
 all$`Shots per 90` <- (all$Shots/all$MP)*90
 rm(t, players)
 
+#EXPECTED GOALS (xG)----------
+t <- ddply(d[!is.na(d[,"xG"]),c("poss.player", "xG")], .(poss.player), summarise, xG=sum(xG))
+names(t) <- c("Player", "xG")
+all <- merge(all, t, by="Player", all=TRUE)
+
 #SHOTS UNDER PRESSURE---------------
 t <- addMultiColumnsForQualifiers(patterns = c("pressured"="pressure", "challenged"="challenge"), 
                                   pattern_locations = c("def.action", "def.action"), ogdf = d,
