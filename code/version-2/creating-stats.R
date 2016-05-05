@@ -605,6 +605,7 @@ while (x <= length(unique(t$event))) {
   }
   x <- x + 1
 }
+t <- t[t[,"poss.action"] != "playcutoffbybroadcast",]
 ##Create table for overall recoveries
 t2 <- data.frame(unclass(table(t$poss.player, t$poss.action)))
 t2 <- cbind(Player=rownames(t2), t2)
