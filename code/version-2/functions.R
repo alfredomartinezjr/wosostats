@@ -28,7 +28,6 @@ createTable <- function(pattern, col, df) {
   t <- data.frame(unclass(t))
   t <- cbind(Player=rownames(t),Team=NA, t)
   rownames(t) <- NULL
-  getTeam <- function(x) strsplit(as.character(t[x,"Player"]), " ")[[1]][1]
   t$Team <- sapply(t[,"Player"], function(x) strsplit(as.character(t[x,"Player"]), " ")[[1]][1])
   t$Player <- sapply(t[,"Player"], function(x) strsplit(as.character(t[x,"Player"]), " ")[[1]][-1])
   t
