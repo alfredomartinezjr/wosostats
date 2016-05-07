@@ -20,16 +20,11 @@ createTable <- function(pattern, col, df) {
   ### Set factors, in case all events specified in the pattern don't show up, so that they show up in the table
   d2[,col] <- factor(as.character(d2[,col]), levels=c(pattern))
   
-  ### Concatenate player and team columns, in case teams have players with same last name
-  d2$player.position.cat <- paste(d2$poss.team,d2$poss.player)
-  
   ## Create the table
-  t <- table(d2$player.position.cat, d2[,col])
+  t <- table(d2$poss.player, d2[,col])
   t <- data.frame(unclass(t))
-  t <- cbind(Player=rownames(t),Team=NA, t)
+  t <- cbind(Player=rownames(t), t)
   rownames(t) <- NULL
-  t$Team <- sapply(t[,"Player"], function(x) strsplit(as.character(t[x,"Player"]), " ")[[1]][1])
-  t$Player <- sapply(t[,"Player"], function(x) strsplit(as.character(t[x,"Player"]), " ")[[1]][-1])
   t
 }
 
@@ -183,9 +178,9 @@ createPassingTable <- function(df, extra=NA){
                              "passes.s.c", "passes.s", "passes.b.c", "passes.b")])
   s$pct <- s$completed/s$attempts
   if (is.na(extra[1])) {
-    s <- s[,c("Player", "Team","completed", "attempts", "pct")]
+    s <- s[,c("Player", "completed", "attempts", "pct")]
   } else {
-    s <- s[,c("Player", "Team","completed", "attempts", extra, "pct")]
+    s <- s[,c("Player", "completed", "attempts", extra, "pct")]
   }
   s
 }

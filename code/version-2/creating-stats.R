@@ -10,58 +10,46 @@ source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-
 
 #MINUTES PLAYED & META DATA----------
 ## Gets data frame that binds data frames of every player who shows up in "poss.player" and "def.player" column
-players <- rbind(data.frame(Player=unique(d[,c("poss.player", "poss.team")])[,1],Team=unique(d[,c("poss.player", "poss.team")])[,2], MP=NA,GS=NA),
-                 data.frame(Player=unique(d[,c("def.player", "def.team")])[,1],Team=unique(d[,c("def.player", "def.team")])[,2], MP=NA,GS=NA))
+players <- rbind(data.frame(Player=unique(d$poss.player), Team=NA, MP=NA,GS=NA),data.frame(Player=unique(d$def.player), Team=NA, MP=NA,GS=NA))
 players <- players[!is.na(players[,"Player"]),]
 players <- unique(players[,])
 matchlength <- length(unique(d$time))
 substitutions <- d[grepl("substitution",d[,"poss.action"]),]
-all.pairs <- paste(as.character(substitutions[,"poss.team"]), as.character(substitutions[,"poss.player"]))
-sub.on.pairs <- paste(as.character(substitutions[substitutions[,"poss.action"]=="substitution.on","poss.team"]), as.character(substitutions[substitutions[,"poss.action"]=="substitution.on","poss.player"]))
-sub.off.pairs <- paste(as.character(substitutions[substitutions[,"poss.action"]=="substitution.off","poss.team"]), as.character(substitutions[substitutions[,"poss.action"]=="substitution.off","poss.player"]))
 x <- 1
 while (x <= nrow(players)) {
-  name.team.pair <- paste(as.character(players[x,"Team"]),as.character(players[x,"Player"]))
-  # checks if TRUE that the player-team pair doesn't appear in the substitutions 
-  # data frame, which means the player played the entire match
-  if (!(name.team.pair %in% all.pairs)) {
+  player <- as.character(players[x,"Player"])
+  #if they don't appear in the substitutions data frame, the player played the entire match
+  if (nrow(substitutions[substitutions[,"poss.player"] %in% player,]) == 0) {
     players[x,"MP"] <- matchlength
     players[x,"GS"] <- 1
-  } else {
-    # check if TRUE that the player-team pair that started was subbed off
-    # checks if player-team pair is in sub.off.pairs but not in sub.on.pairs
-    if (name.team.pair %in% sub.off.pairs & !(name.team.pair %in% sub.on.pairs)) {
-      # if she was a starter who was subbed off, get the length of unique values 
-      # for vector d[,"time] up to where she got subbed off
-      player <- strsplit(name.team.pair, " ")[[1]][-1]
-      team <- strsplit(name.team.pair, " ")[[1]][1]
-      e <- substitutions[substitutions[,"poss.player"] == player & substitutions[,"poss.team"] == team,"event"]
+  } else if (nrow(substitutions[substitutions[,"poss.player"] %in% player,]) > 0) {
+    #check if she was a starter, based on if she was only ever substituted on
+    if (grepl("substitution.on", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==FALSE) {
+      #if she was a starter who was subbed off, get the length of unique values for vector d[,"time] 
+      #up to where she got subbed off
+      e <- substitutions[substitutions[,"poss.player"] == player,"event"]
       lastminute <- grep(e, d[,"event"])
       minutesplayed <- length(unique(d[1:lastminute,"time"]))
       players[x,"MP"] <- minutesplayed
       players[x,"GS"] <- 1
     } else
-      # check if TRUE that the player-team pair got subbed on, but wasn't also later subbed off
-      # checks if player-team pair is in sub.on.pairs but not in sub.off pairs
-      if (name.team.pair %in% sub.on.pairs & !(name.team.pair %in% sub.off.pairs)) {
+      #if she wasn't a starter and got subbed on and wasn't also later subbed off
+      if ((grepl("substitution.on", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==TRUE)
+          & (grepl("substitution.off", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==FALSE)) {
         #if she wasn't a starter, got subbed on, and was never subbed off, get the length of unique
         #values for vector d[,"time] from when she got subbed on to when she got subbed off
-        player <- strsplit(name.team.pair, " ")[[1]][-1]
-        team <- strsplit(name.team.pair, " ")[[1]][1]
-        e <- substitutions[substitutions[,"poss.player"] == player & substitutions[,"poss.team"] == team,"event"]
+        e <- substitutions[substitutions[,"poss.player"] == player,"event"]
         firstminute <- grep(e, d[,"event"])[1]
         minutesplayed <- length(unique(d[firstminute:nrow(d),"time"]))
         players[x,"MP"] <- minutesplayed
         players[x,"GS"] <- 0
       } else
-        # check if TRUE that the player-team pair got subbed on and was later subbed off
-        # checks if player-team pair is in sub.on.pairs and also in sub.off.pairs
-        if (name.team.pair %in% sub.on.pairs & name.team.pair %in% sub.off.pairs) {
+        #if she wasn't a starter, got subbed on, and was later subbed off
+        if ((grepl("substitution.on", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==TRUE)
+            & (grepl("substitution.off", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==TRUE)) {
           #if she wasn't a starter, got subbed on, and as later subbed off, get the length of unique
           #values for vector d[,"time] from when she got subbed on to when she got subbed off
-          player <- strsplit(name.team.pair, " ")[[1]][-1]
-          team <- strsplit(name.team.pair, " ")[[1]][1]
-          e <- substitutions[substitutions[,"poss.player"] == player & substitutions[,"poss.team"] == team,"event"]
+          e <- substitutions[substitutions[,"poss.player"] == player,"event"]
           firstminute <- grep(e[1], d[,"event"])
           lastminute <- grep(e[2], d[,"event"])
           minutesplayed <- length(unique(d[firstminute:lastminute,"time"]))
@@ -71,7 +59,19 @@ while (x <= nrow(players)) {
   }
   x <- x + 1
 }
-rm(firstminute, lastminute, minutesplayed, e, matchlength,player, x, all.pairs, sub.off.pairs, sub.on.pairs, team, name.team.pair)
+
+rm(firstminute, lastminute, minutesplayed)
+## Set team name
+x <- 1
+while (x <= nrow(players)) {
+  player <- as.character(players[x,"Player"])
+  playerteam <- unique(d[d[,"poss.player"] == player & !is.na(d[,"poss.player"]),"poss.team"])
+  if(length(playerteam) == 0) {
+    playerteam <- unique(d[d[,"def.player"] == player & !is.na(d[,"def.player"]),"def.team"])
+  }
+  players[x,"Team"] <- playerteam
+  x <- x + 1
+}
 
 #SHOTS---------------
 ## Creates table for players pased on types of shots.
@@ -82,17 +82,11 @@ t$shots <- t$shots.scored + t$shots.stopped.by.gk + t$shots.stopped.by.def + t$s
 t$accuracy <- (t$shots.scored + t$shots.stopped.by.gk + t$shots.stopped.by.def)/
   (t$shots.scored + t$shots.stopped.by.gk + t$shots.stopped.by.def + t$shots.missed)
 ## Change names to be more readable
-names(t) <- c("Player","Team","Goals","Shots","Shots per 90","Shot Accuracy","Shot GK Stop", "Shot Def Stop", "Shot Miss")
-all <- merge(players, t, by=c("Player","Team"), all=TRUE)
+names(t) <- c("Player","Goals","Shots","Shots per 90","Shot Accuracy","Shot GK Stop", "Shot Def Stop", "Shot Miss")
+all <- merge(players, t, by="Player", all=TRUE)
 ## Calculate "per 90" stats
 all$`Shots per 90` <- (all$Shots/all$MP)*90
 rm(t, players)
-
-#EXPECTED GOALS (xG)----------
-t <- ddply(d[!is.na(d[,"xG"]),c("poss.player", "xG")], .(poss.player), summarise, xG=sum(xG))
-names(t) <- c("Player","Team", "xG")
-all <- merge(all, t, by=c("Player","Team"), all=TRUE)
-rm(t)
 
 #SHOTS UNDER PRESSURE---------------
 t <- addMultiColumnsForQualifiers(patterns = c("pressured"="pressure", "challenged"="challenge"), 
@@ -107,9 +101,9 @@ t2 <- createTable(c("yes", "pct", "total", "no"), "pressed", t)
 t2$total <- t2$yes + t2$no
 t2$pct <- t2$yes/t2$total
 # rename
-t2 <- t2[,1:4]
-names(t2) <- c("Player","Team","Shot Pressed", "Pct Shots Pressed")
-all <- merge(all, t2, by=c("Player","Team"), all=TRUE)
+t2 <- t2[,1:3]
+names(t2) <- c("Player","Shot Pressed", "Pct Shots Pressed")
+all <- merge(all, t2, by="Player", all=TRUE)
 rm(t,t2)
 
 #SHOT LOCATION---------------
@@ -120,44 +114,36 @@ t2 <- createTable(c("A6", "A18", "A3L", "A3C", "A3R", "Beyond","AM3L", "AM3C",
                     "AM3R", "DM3L", "DM3C", "DM3R", "D3L", "D3C", "D3R", 
                     "D18", "D6"), "poss.location", t)
 ## Add everything beyond the attacking 3rd and put it in the "Beyond" column
-t2$Beyond <- rowSums(t2[,9:19])
+t2$beyond <- rowSums(t2[,8:18])
 ## Get rid of all columns after the "Beyond" column to save space
-t2 <- t2[,1:8]
-names(t2) <- c("Player","Team", "A6 Shots", "A18 Shots", "A3L Shots", "A3C Shots", "A3R Shots", "Far Shots")
-all <- merge(all, t2, by=c("Player","Team"), all=TRUE)
+t2 <- t2[,1:7]
+names(t2) <- c("Player", "A6 Shots", "A18 Shots", "A3L Shots", "A3C Shots", "A3R Shots", "Far Shots")
+all <- merge(all, t2, by="Player", all=TRUE)
 rm(t,t2)
 
 #ASSISTS---------------
-t <- addMultiColumnsForQualifiers(c("assists"="assist", "key.passes"="key.pass|^second.assist", "second.assists"="^second.assist"),
+t <- addMultiColumnsForQualifiers(c("assists"="^assist", "key.passes"="key.pass|^second.assist", "second.assists"="^second.assist"),
                                   pattern_locations = c("poss.notes", "poss.notes", "poss.notes"),
                                   ogdf = d, ndf = createDataFrame(c("passes.f.c", "passes.f", 
                                                                          "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", d))
 t <- addColumnForMultiQualifiers(newcol="key.assists", pattern=c("assists"="yes", "key.passes"="yes"), df = t, exp = "AND")
-## checks if a second assist has been counted as an assist
-x <- 1
-while (x <= nrow(t)) {
-  if(t[x,"assists"] == "yes" & t[x,"second.assists"] == "yes") {
-    t[x,"assists"] == "no"
-  }
-  x <- x + 1
-}
 ##Create tables for each column (five different ones)
-t1 <- createTable(c("yes","no"),"assists",t)[1:3]
-names(t1) <- c("Player", "Team","Assists")
-t2 <- createTable(c("yes","no"),"key.passes",t)[1:3]
-names(t2) <- c("Player","Team", "Key Passes")
-t3 <- createTable(c("yes","no"),"key.assists",t)[1:3]
-names(t3) <- c("Player", "Team", "Key Assists")
-t4 <- createTable(c("yes","no"),"second.assists",t)[1:3]
-names(t4) <- c("Player", "Team","Second Assists")
-## checks if a second assist has been counted as an assist
-t6 <- merge(t1, t2, by=c("Player","Team"), all=TRUE)
-t6 <- merge(t6, t3, by=c("Player","Team"), all=TRUE)
-t6 <- merge(t6, t4, by=c("Player","Team"), all=TRUE)
+t1 <- createTable(c("yes"),"assists",t)
+names(t1) <- c("Player", "Assists")
+t2 <- createTable(c("yes"),"key.passes",t)
+names(t2) <- c("Player", "Key Passes")
+t6 <- merge(t1, t2, by="Player", all=TRUE)
+t3 <- createTable(c("yes"),"key.assists",t)
+names(t3) <- c("Player", "Key Assists")
+t6 <- merge(t6, t3, by="Player", all=TRUE)
+t4 <- createTable(c("yes"),"second.assists",t)
+names(t4) <- c("Player", "Second Assists")
+t6 <- merge(t6, t4, by="Player", all=TRUE)
+##Sort by "assists" and "second.assists"
 t6[is.na(t6)] <- 0
 t6$`Assists per 90` <- numeric(nrow(t6))
 t6$`Key Passes per 90` <- numeric(nrow(t6))
-all <- merge(all, t6, by=c("Player","Team"), all=TRUE)
+all <- merge(all, t6, by="Player", all=TRUE)
 rm(t, t1, t2, t3, t4, t6)
 ##Calculate "per 90" fields
 all$`Assists per 90` <- (all$Assists/all$MP)*90
@@ -169,8 +155,8 @@ t <- createTable(c("big.chances", "big.chances.per.90", "big.chances.scored", "b
 t$big.chances <- t$big.chances.scored + t$big.chances.dispossessed + t$big.chances.shot.on.goal + t$big.chances.shot.missed + t$big.chances.lost
 t$big.chances.conversion <- t$big.chances.scored/t$big.chances
 ## Sort by "big.chances" and "big.chances.scored"
-names(t) <- c("Player","Team","Big Chances","Big Chances per 90", "BC Scored", "BC Conversion Pct","BC SOG", "BC Shot Miss", "BC Dispossess", "BC Created", "BC Lost")
-all <- merge(all, t, by=c("Player","Team"), all=TRUE)
+names(t) <- c("Player","Big Chances","Big Chances per 90", "BC Scored", "BC Conversion Pct","BC SOG", "BC Shot Miss", "BC Dispossess", "BC Created", "BC Lost")
+all <- merge(all, t, by="Player", all=TRUE)
 rm(t)
 #Calculate "per 90" fields
 all$`Big Chances per 90` <- (all$`Big Chances`/all$MP)*90
@@ -183,8 +169,8 @@ t <- addMultiColumnsForQualifiers(patterns=c("pressured"="pressured", "challenge
 t <- addColumnForMultiQualifiers(c("pressured"="yes","challenged"="yes"), newcol = "pressed",
                                  df = t, exp="OR")
 t2 <- createPassingTable(t)
-names(t2) <- c("Player","Team","Pass Comp", "Pass Att", "Pass Comp Pct")
-all <- merge(all, t2, by=c("Player","Team"), all=TRUE)
+names(t2) <- c("Player","Pass Comp", "Pass Att", "Pass Comp Pct")
+all <- merge(all, t2, by=1, all=TRUE)
 rm(t2)
 
 #OPEN PLAY PASSING----------
@@ -194,8 +180,8 @@ t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick", p
                            invert = TRUE)
 ##create open play passing table
 t <- createPassingTable(t[t[,"opPass"]=="yes",])
-names(t) <- c("Player","Team","opPass Comp", "opPass Att", "opPass Comp Pct")
-all <- merge(all, t, by=c("Player","Team"), all=TRUE)
+names(t) <- c("Player","opPass Comp", "opPass Att", "opPass Comp Pct")
+all <- merge(all, t, by=1, all=TRUE)
 rm(t)
 
 #OPEN PLAY PASSING UNDER PRESSURE----------
@@ -211,10 +197,10 @@ t <- addColumnForMultiQualifiers(newcol = "pressed", df = t, exp = "OR",
 ## Create table for open play passes under pressure
 t2 <- createTable(c("Pct of Passes", "yes", "no"), "pressed", t)
 t2[,"Pct.of.Passes"] <- t2$yes/(t2$yes + t2$no)
-t3 <- merge(createPassingTable(t[t[,"pressed"] == "yes",]), t2[1:3], by=c("Player","Team"), all=TRUE)
-names(t3) <- c("Player", "Team", "opPPass Comp", "opPPass Att", "opPPass Comp Pct", 
+t3 <- merge(createPassingTable(t[t[,"pressed"] == "yes",]), t2[1:2], by="Player", all=TRUE)
+names(t3) <- c("Player", "opPPass Comp", "opPPass Att", "opPPass Comp Pct", 
                "Pct opPass Pressed")
-all <- merge(all, t3, by=c("Player","Team"), all=TRUE)
+all <- merge(all, t3, by="Player", all=TRUE)
 rm(t, t2, t3)
 
 #OVERALL PASSING BY DIRECTION---------------
@@ -222,26 +208,25 @@ t <- addMultiColumnsForQualifiers(patterns = c("forward.pass"="^passes.f","sidew
                              pattern_locations = c("poss.action","poss.action","poss.action"),ogdf = d,
                              ndf = createCleanDataFrame(c("passes.f.c", "passes.f", "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", d))
 ##Creates blank table with columns for direction distribution
-directiondist <- createTable(c("rFreq Pass Fwd", "rFreq Pass Side", "rFreq Pass Back","yes","no"), "forward.pass", t)
-directiondist <- directiondist[1:5]
+directiondist <- createTable(c("rFreq Pass Fwd", "rFreq Pass Side", "rFreq Pass Back"), "forward.pass", t)
 ##Create a table for completions, attempts, and comp pct for FORWARD passes
 fwdtab <- createPassingTable(t[t[,"forward.pass"] == "yes",])
-names(fwdtab) <- c("Player","Team","fwPass.Comp", "fwPass.Att", "fwPass.Comp.Pct")
-passdirection <- merge(directiondist, fwdtab, by=c("Player","Team"), all=TRUE)
+names(fwdtab) <- c("Player","fwPass.Comp", "fwPass.Att", "fwPass.Comp.Pct")
+passdirection <- merge(directiondist, fwdtab, by="Player", all=TRUE)
 ##Create a table for completions, attempts, and comp pct for SIDEWAYS passes
 sidetab <- createPassingTable(t[t[,"sideways.pass"] == "yes",])
-names(sidetab) <- c("Player","Team","sPass.Comp", "sPass.Att", "sPass.Comp.Pct")
-passdirection <- merge(passdirection, sidetab, by=c("Player","Team"), all=TRUE)
+names(sidetab) <- c("Player","sPass.Comp", "sPass.Att", "sPass.Comp.Pct")
+passdirection <- merge(passdirection, sidetab, by="Player", all=TRUE)
 ##Create a table for completions, attempts, and comp pct for BACKWARDS passes
 backtab <- createPassingTable(t[t[,"backward.pass"] == "yes",])
-names(backtab) <- c("Player","Team","bPass.Comp", "bPass.Att", "bPass.Comp.Pct")
-passdirection <- merge(passdirection, backtab, by=c("Player","Team"), all=TRUE)
+names(backtab) <- c("Player","bPass.Comp", "bPass.Att", "bPass.Comp.Pct")
+passdirection <- merge(passdirection, backtab, by="Player", all=TRUE)
 ##Calculate direction distribution
 passdirection[is.na(passdirection)] <- 0
 passdirection$rFreq.Pass.Fwd <- passdirection$fwPass.Att/rowSums(passdirection[,c("fwPass.Att", "sPass.Att", "bPass.Att")])
 passdirection$rFreq.Pass.Side <- passdirection$sPass.Att/rowSums(passdirection[,c("fwPass.Att", "sPass.Att", "bPass.Att")])
 passdirection$rFreq.Pass.Back <- passdirection$bPass.Att/rowSums(passdirection[,c("fwPass.Att", "sPass.Att", "bPass.Att")])
-all <- merge(all, passdirection, by=c("Player","Team"), all=TRUE)
+all <- merge(all, passdirection, by="Player", all=TRUE)
 rm(directiondist, fwdtab,sidetab, backtab,passdirection)
 
 #OVERALL PASSING BY LOCATION---------
@@ -250,25 +235,25 @@ t <- addMultiColumnsForQualifiers(patterns = c("A3"="^A3|A18|A6","M3"="^AM|^DM",
                                   pattern_locations = c("poss.location","poss.location","poss.location"),ogdf = d,
                                   ndf = createCleanDataFrame(c("passes.f.c", "passes.f", "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", d))
 ##Creates blank table with columns for direction distribution
-locationdist <- createTable(c("rFreq A3 Passes", "rFreq M3 Passes", "rFreq D3 Passes",NA), "poss.location", t)
+locationdist <- createTable(c("rFreq A3 Passes", "rFreq M3 Passes", "rFreq D3 Passes"), "A3", t)
 ##Create a table for completions, attempts, and comp pct for A3 passes
 a3tab <- createPassingTable(t[t[,"A3"] == "yes",])
-names(a3tab) <- c("Player","Team","A3Pass.Comp", "A3Pass.Att", "A3Pass.Comp.Pct")
-passlocation <- merge(locationdist, a3tab, by=c("Player","Team"), all=TRUE)
+names(a3tab) <- c("Player","A3Pass.Comp", "A3Pass.Att", "A3Pass.Comp.Pct")
+passlocation <- merge(locationdist, a3tab, by="Player", all=TRUE)
 ##Create a table for completions, attempts, and comp pct for M3 passes
 m3tab <- createPassingTable(t[t[,"M3"] == "yes",])
-names(m3tab) <- c("Player","Team","M3Pass.Comp", "M3Pass.Att", "M3Pass.Comp.Pct")
-passlocation <- merge(passlocation, m3tab, by=c("Player","Team"), all=TRUE)
+names(m3tab) <- c("Player","M3Pass.Comp", "M3Pass.Att", "M3Pass.Comp.Pct")
+passlocation <- merge(passlocation, m3tab, by="Player", all=TRUE)
 ##Create a table for completions, attempts, and comp pct for D3 passes
 d3tab <- createPassingTable(t[t[,"D3"] == "yes",])
-names(d3tab) <- c("Player","Team","D3Pass.Comp", "D3Pass.Att", "D3Pass.Comp.Pct")
-passlocation <- merge(passlocation, d3tab, by=c("Player","Team"), all=TRUE)
+names(d3tab) <- c("Player","D3Pass.Comp", "D3Pass.Att", "D3Pass.Comp.Pct")
+passlocation <- merge(passlocation, d3tab, by="Player", all=TRUE)
 ##Calculate location distribution
 passlocation[is.na(passlocation)] <- 0
 passlocation$rFreq.A3.Passes <- passlocation$A3Pass.Att/rowSums(passlocation[,c("A3Pass.Att", "M3Pass.Att", "D3Pass.Att")])
 passlocation$rFreq.M3.Passes <- passlocation$M3Pass.Att/rowSums(passlocation[,c("A3Pass.Att", "M3Pass.Att", "D3Pass.Att")])
 passlocation$rFreq.D3.Passes <- passlocation$D3Pass.Att/rowSums(passlocation[,c("A3Pass.Att", "M3Pass.Att", "D3Pass.Att")])
-all <- merge(all, passlocation, by=c("Player","Team"), all=TRUE)
+all <- merge(all, passlocation, by="Player", all=TRUE)
 rm(locationdist, a3tab,m3tab, d3tab,passlocation)
 
 #OPEN PLAY PASSING BY LOCATION----------
@@ -283,16 +268,16 @@ t <- addMultiColumnsForQualifiers(patterns = c("A3"="^A3|A18|A6","M3"="^AM|^DM",
 locationdist <- createTable(c("rFreq A3 opPasses", "rFreq M3 opPasses", "rFreq D3 opPasses"), "A3", t)
 ##Create a table for completions, attempts, and comp pct for A3 passes
 a3tab <- createPassingTable(t[t[,"A3"] == "yes",])
-names(a3tab) <- c("Player","Team","A3opPass.Comp", "A3opPass.Att", "A3opPass.Comp.Pct")
-passlocation <- merge(locationdist, a3tab, by=c("Player","Team"), all=TRUE)
+names(a3tab) <- c("Player","A3opPass.Comp", "A3opPass.Att", "A3opPass.Comp.Pct")
+passlocation <- merge(locationdist, a3tab, by="Player", all=TRUE)
 ##Create a table for completions, attempts, and comp pct for M3 passes
 m3tab <- createPassingTable(t[t[,"M3"] == "yes",])
-names(m3tab) <- c("Player","Team","M3opPass.Comp", "M3opPass.Att", "M3opPass.Comp.Pct")
-passlocation <- merge(passlocation, m3tab, by=c("Player","Team"), all=TRUE)
+names(m3tab) <- c("Player","M3opPass.Comp", "M3opPass.Att", "M3opPass.Comp.Pct")
+passlocation <- merge(passlocation, m3tab, by="Player", all=TRUE)
 ##Create a table for completions, attempts, and comp pct for D3 passes
 d3tab <- createPassingTable(t[t[,"D3"] == "yes",])
-names(d3tab) <- c("Player","Team","D3opPass.Comp", "D3opPass.Att", "D3opPass.Comp.Pct")
-passlocation <- merge(passlocation, d3tab, by=c("Player","Team"), all=TRUE)
+names(d3tab) <- c("Player","D3opPass.Comp", "D3opPass.Att", "D3opPass.Comp.Pct")
+passlocation <- merge(passlocation, d3tab, by="Player", all=TRUE)
 ##Calculate location distribution
 passlocation[is.na(passlocation)] <- 0
 passlocation$rFreq.A3.opPasses <- passlocation$A3opPass.Att/rowSums(passlocation[,c("A3opPass.Att", "M3opPass.Att", "D3opPass.Att")])
@@ -370,15 +355,15 @@ t <- addColumnForMultiQualifiers(newcol = "pressed", df = t, exp = "OR",
 directiondist <- createTable(c("rFreq opPass Fwd", "rFreq opPass Side", "rFreq opPass Back", "yes", "no"), "pressed", t)[,1:4]
 ##Create a table for completions, attempts, and comp pct for FORWARD passes
 fwdtab <- createPassingTable(t[t[,"forward.pass"] == "yes",])
-names(fwdtab) <- c("Player", "Team","fwopPass.Comp", "fwopPass.Att", "fwopPass.Comp.Pct")
+names(fwdtab) <- c("Player", "fwopPass.Comp", "fwopPass.Att", "fwopPass.Comp.Pct")
 passdirection <- merge(directiondist, fwdtab, by="Player", all=TRUE)
 ##Create a table for completions, attempts, and comp pct for SIDEWAYS passes
 sidetab <- createPassingTable(t[t[,"sideways.pass"] == "yes",])
-names(sidetab) <- c("Player", "Team","sopPass.Comp", "sopPass.Att", "sopPass.Comp.Pct")
+names(sidetab) <- c("Player", "sopPass.Comp", "sopPass.Att", "sopPass.Comp.Pct")
 passdirection <- merge(passdirection, sidetab, by="Player", all=TRUE)
 ##Create a table for completions, attempts, and comp pct for BACKWARDS passes
 backtab <- createPassingTable(t[t[,"backward.pass"] == "yes",])
-names(backtab) <- c("Player", "Team","bopPass.Comp", "bopPass.Att", "bopPass.Comp.Pct")
+names(backtab) <- c("Player", "bopPass.Comp", "bopPass.Att", "bopPass.Comp.Pct")
 passdirection <- merge(passdirection, backtab, by="Player", all=TRUE)
 ##Calculate direction distribution
 passdirection[is.na(passdirection)] <- 0
@@ -397,7 +382,7 @@ t <- addMultiColumnsForQualifiers(patterns=c("pressured"="pressure", "challenged
 t <- addColumnForMultiQualifiers(newcol = "pressed", df = t, exp = "OR",
                                  pattern = c("pressured"="yes","challenged"="yes"))
 t2 <- createPassingTable(t[t[,"pressed"] == "yes",])
-names(t2) <- c("Player","Team","Completed", "Attempts", "Comp Pct")
+names(t2) <- c("Player","Completed", "Attempts", "Comp Pct")
 ## Create a table comparing how many passes were under pressure
 t3 <- createTable(c("Pct of Passes", "yes", "no"), "pressed", t)
 t3[,"Pct.of.Passes"] <- t3$yes/(t3$yes + t3$no)
@@ -405,7 +390,7 @@ t3[,"Pct.of.Passes"] <- t3$yes/(t3$yes + t3$no)
 t3 <- t3[t3[,"Pct.of.Passes"] != 0,]
 t4 <- merge(t2,t3, by="Player", all=TRUE)
 t4 <- t4[,c("Player","Pct.of.Passes", "Completed", "Attempts", "Comp Pct")]
-names(t4) <- c("Player", "Team","Pct Passes Pressed", "PPass Comp", "PPass Att", 
+names(t4) <- c("Player", "Pct Passes Pressed", "PPass Comp", "PPass Att", 
                "PPass Comp Pct")
 all <- merge(all, t4, by="Player", all=TRUE)
 rm(t, t2, t3, t4)
@@ -426,15 +411,15 @@ t <- addColumnForMultiQualifiers(newcol = "pressed", df = t, exp = "OR",
 directiondist <- createTable(c("rFreq PPass Fwd", "rFreq PPass Side", "rFreq PPass Back", "yes"), "pressed", t)[,1:4]
 ##Create a table for completions, attempts, and comp pct for FORWARD passes
 fwdtab <- createPassingTable(t[t[,"forward.pass"] == "yes" & t[,"pressed"] == "yes",])
-names(fwdtab) <- c("Player","Team","fwPPass.Comp", "fwPPass.Att", "fwPPass.Comp.Pct")
+names(fwdtab) <- c("Player","fwPPass.Comp", "fwPPass.Att", "fwPPass.Comp.Pct")
 passdirection <- merge(directiondist, fwdtab, by="Player", all=TRUE)
 ##Create a table for completions, attempts, and comp pct for SIDEWAYS passes
 sidetab <- createPassingTable(t[t[,"sideways.pass"] == "yes" & t[,"pressed"] == "yes",])
-names(sidetab) <- c("Player","Team","sPPass.Comp", "sPPass.Att", "sPPass.Comp.Pct")
+names(sidetab) <- c("Player", "sPPass.Comp", "sPPass.Att", "sPPass.Comp.Pct")
 passdirection <- merge(passdirection, sidetab, by="Player", all=TRUE)
 ##Create a table for completions, attempts, and comp pct for BACKWARDS passes
 backtab <- createPassingTable(t[t[,"backward.pass"] == "yes" & t[,"pressed"] == "yes",])
-names(backtab) <- c("Player", "Team","bPPass.Comp", "bPPass.Att", "bPPass.Comp.Pct")
+names(backtab) <- c("Player", "bPPass.Comp", "bPPass.Att", "bPPass.Comp.Pct")
 passdirection <- merge(passdirection, backtab, by="Player", all=TRUE)
 ##Calculate direction distribution
 passdirection[is.na(passdirection)] <- 0
@@ -458,7 +443,7 @@ t2 <- createPassingTable(t, extra = c("cross.att.per.90","cross.att.per.oppass")
 t3 <- createTable(c("corner.crosses", "deep.crosses"), "play.type", t)
 # Merge the two sets of columns
 t4 <- merge(t2, t3, by="Player", all=TRUE)
-names(t4) <- c("Player","Team","Cross Comp", "Cross Att", "Cross Att per 90", "Cross Att per opPass","Cross Comp Pct", "Corner Crosses", "Deep Crosses")
+names(t4) <- c("Player","Cross Comp", "Cross Att", "Cross Att per 90", "Cross Att per opPass","Cross Comp Pct", "Corner Crosses", "Deep Crosses")
 all <- merge(all, t4, by=1, all=TRUE)
 rm(t, t2, t3, t4)
 #Calculate "per 90" & "per pass" fields
@@ -472,7 +457,7 @@ t <- addColumnForQualifier(newcol="launch", pattern = "launch|gk.drop.kick", pat
 ##Keep only rows with "yes" in "launch" column
 t <- t[t[,"launch"]=="yes",]
 t2 <- createPassingTable(t, extra = c("launch.att.per.90", "launch.att.per.pass"))
-names(t2) <- c("Player","Team","Launch Comp", "Launch Att", "Launch Att per 90", "Launch Att per Pass", "Launch Comp Pct")
+names(t2) <- c("Player","Launch Comp", "Launch Att", "Launch Att per 90", "Launch Att per Pass", "Launch Comp Pct")
 all <- merge(all, t2, by=1, all=TRUE)
 rm(t, t2)
 #Calculate "per 90" columns
@@ -484,7 +469,7 @@ t <- createCleanDataFrame(c("through"), "play.type", createDataFrame(c("passes.f
                                                                        "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", d))
 ## Create table
 t2 <- createPassingTable(t, extra= c("through.att.per.90", "through.att.per.pass", "through.att.per.oppass"))
-names(t2) <- c("Player","Team","Through Comp", "Through Att", "Through Att per 90", "Through Att per Pass", "Through Att per opPass", "Through Comp Pct")
+names(t2) <- c("Player","Through Comp", "Through Att", "Through Att per 90", "Through Att per Pass", "Through Att per opPass", "Through Comp Pct")
 all <- merge(all, t2, by=1, all=TRUE)
 rm(t2, t)
 #Calculate "per 90" columns
@@ -500,7 +485,7 @@ t <- addColumnForQualifier(newcol = "throwin", pattern = c("throw.in"), patternL
 t2 <- t[t[,"throwin"]=="yes",]
 ## Create table
 t2 <- createPassingTable(t2, extra= c("throw.in.att.per.90", "throw.in.att.per.pass"))
-names(t2) <- c("Player", "Team","Throw In Comp", "Throw In Att", "Throw In Att per 90", "Throw In Att per Pass", "Throw In Comp Pct")
+names(t2) <- c("Player", "Throw In Comp", "Throw In Att", "Throw In Att per 90", "Throw In Att per Pass", "Throw In Comp Pct")
 all <- merge(all, t2, by=1, all=TRUE)
 rm(t2)
 #Calculate "per 90" columns
@@ -514,7 +499,7 @@ t <- addMultiColumnsForQualifiers(ogdf=d, ndf=createCleanDataFrame(c("passes.f.c
                                      pattern_locations = c("play.type", "poss.notes", "poss.notes"))
 t <- t[t[,"cornerkick"]=="yes",]
 t2 <- createPassingTable(t)
-names(t2) <- c("Player","Team","Corner Kicks Completed", "Corner Kicks Taken", "CK Comp Pct")
+names(t2) <- c("Player","Corner Kicks Completed", "Corner Kicks Taken", "CK Comp Pct")
 ## Create table for assists and key passes
 t3 <- createTable(c("yes"), "assist", t)
 names(t3)[2] <- "CK Assist"
