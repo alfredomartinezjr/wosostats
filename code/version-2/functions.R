@@ -31,6 +31,7 @@ createTable <- function(pattern, col, df) {
   getTeam <- function(x) strsplit(as.character(t[x,"Player"]), " ")[[1]][1]
   t$Team <- sapply(t[,"Player"], function(x) strsplit(as.character(t[x,"Player"]), " ")[[1]][1])
   t$Player <- sapply(t[,"Player"], function(x) strsplit(as.character(t[x,"Player"]), " ")[[1]][-1])
+  t
 }
 
 # 2.
@@ -183,9 +184,9 @@ createPassingTable <- function(df, extra=NA){
                              "passes.s.c", "passes.s", "passes.b.c", "passes.b")])
   s$pct <- s$completed/s$attempts
   if (is.na(extra[1])) {
-    s <- s[,c("Player", "completed", "attempts", "pct")]
+    s <- s[,c("Player", "Team","completed", "attempts", "pct")]
   } else {
-    s <- s[,c("Player", "completed", "attempts", extra, "pct")]
+    s <- s[,c("Player", "Team","completed", "attempts", extra, "pct")]
   }
   s
 }
