@@ -71,6 +71,10 @@ while (x <= nrow(df)) {
   x <- x + 1
 }
 
+##CHECKS SHARED LAST NAME PROBLEM----------
+###For pesky moments when at least two players on the field have the same last name (yuck!)
+###This ASSUMES that a match with at least two players with the same last name all have their
+###number logged with their name in the 
 ###Gets rid of player numbers and leading/trailing whitespace in "poss.player" and "def.player" values
 x <- 1
 while (x <= nrow(df)) {
