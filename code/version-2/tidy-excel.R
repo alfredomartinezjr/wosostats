@@ -71,10 +71,6 @@ while (x <= nrow(df)) {
   x <- x + 1
 }
 
-##CHECKS SHARED LAST NAME PROBLEM----------
-###For pesky moments when at least two players on the field have the same last name (yuck!)
-###This ASSUMES that a match with at least two players with the same last name all have their
-###number logged with their name in the 
 ###Gets rid of player numbers and leading/trailing whitespace in "poss.player" and "def.player" values
 x <- 1
 while (x <= nrow(df)) {
@@ -85,6 +81,10 @@ while (x <= nrow(df)) {
   x <- x + 1
 }
 
+###Creates missing columns
+####For spreadsheets that don't yet have "poss.number" or "def.number" columns
+if(!("poss.number" %in% colnames(df))) (df$poss.number <- NA)
+if(!("def.number" %in% colnames(df))) (df$def.number <- NA)
 
 ##METADATA----------
 ### Creates a meta data frame of all columns from row 1 to row before kickoff
@@ -95,8 +95,8 @@ teams <- teams[!is.na(teams) & !(teams=="-") & !(teams==" ") & !(teams=="")]
 hometeam <- teams[1]
 awayteam <- teams[2]
 ### home team should always be listed first
-homedata <- ref[ref[,"poss.team"]==hometeam,c("poss.position","poss.team", "poss.player")]
-awaydata <- ref[ref[,"poss.team"]==awayteam,c("poss.position","poss.team", "poss.player")]
+homedata <- ref[ref[,"poss.team"]==hometeam,c("poss.position","poss.team","poss.number", "poss.player")]
+awaydata <- ref[ref[,"poss.team"]==awayteam,c("poss.position","poss.team","poss.number" ,"poss.player")]
 ## Create data frame with opposites of each location
 posslocations <- c("A6", "A18", "A3L", "A3C", "A3R", "AM3L", "AM3C", 
                    "AM3R", "DM3L", "DM3C", "DM3R", "D3L", "D3C", "D3R", 
@@ -146,22 +146,26 @@ df <- df[grep("kickoff", df[,"poss.action"])[1]:nrow(df),]
 df[(df) == "-"] <- NA
 df[(df) == " "] <- NA
 df[(df) == ""] <- NA
-### Checks if a "poss.player" and "def.player" value is for a certain team, and then assigns the team value appropriately
-df[grepl(paste(paste0("^", homedata$poss.player, "$"), collapse ="|"), df[,"poss.player"]), "poss.team"] <- hometeam 
-df[grepl(paste(paste0("^", awaydata$poss.player, "$"), collapse ="|"), df[,"poss.player"]), "poss.team"] <- awayteam
-df[grepl(paste(paste0("^", homedata$poss.player, "$"), collapse ="|"), df[,"def.player"]), "def.team"] <- hometeam 
-df[grepl(paste(paste0("^", awaydata$poss.player, "$"), collapse ="|"), df[,"def.player"]), "def.team"] <- awayteam
-### Checks if a "poss.player" and "def.player" value is for a certain position, and then assigns the position value appropriately
-df[grepl(paste(paste0("^", ref[ref[,"poss.position"]=="GK","poss.player"], "$"), collapse ="|"), df[,"poss.player"]), "poss.position"] <- "GK" 
-df[grepl(paste(paste0("^", ref[ref[,"poss.position"]=="D","poss.player"], "$"), collapse ="|"), df[,"poss.player"]), "poss.position"] <- "D" 
-df[grepl(paste(paste0("^", ref[ref[,"poss.position"]=="M","poss.player"], "$"), collapse ="|"), df[,"poss.player"]), "poss.position"] <- "M" 
-df[grepl(paste(paste0("^", ref[ref[,"poss.position"]=="F","poss.player"], "$"), collapse ="|"), df[,"poss.player"]), "poss.position"] <- "F" 
-df[grepl(paste(paste0("^", ref[ref[,"def.position"]=="GK","def.player"], "$"), collapse ="|"), df[,"def.player"]), "def.position"] <- "GK" 
-df[grepl(paste(paste0("^", ref[ref[,"poss.position"]=="D","def.player"], "$"), collapse ="|"), df[,"def.player"]), "def.position"] <- "D" 
-df[grepl(paste(paste0("^", ref[ref[,"poss.position"]=="M","def.player"], "$"), collapse ="|"), df[,"def.player"]), "def.position"] <- "M" 
-df[grepl(paste(paste0("^", ref[ref[,"poss.position"]=="F","def.player"], "$"), collapse ="|"), df[,"def.player"]), "def.position"] <- "F"
-
-rm(ref)
+###Goes down df and pairs each number-name combination with the appropriate team value
+x <- 1
+while (x <= nrow(df)) {
+  poss.string <- paste(unlist(df[x,c("poss.number","poss.player")],recursive=TRUE), sep="", collapse=" ")
+  def.string <- paste(unlist(df[x,c("def.number","def.player")],recursive=TRUE), sep="", collapse=" ")
+  y <- 1
+  while (y <= nrow(ref)) {
+    if(poss.string == paste(unlist(ref[y,c("poss.number","poss.player")],recursive=TRUE), sep="", collapse=" ")) {
+      df[x,c("poss.team")] <- ref[y,"poss.team"]
+      df[x,c("poss.position")] <- ref[y,"poss.position"]
+    }
+    if(def.string == paste(unlist(ref[y,c("poss.number","poss.player")],recursive=TRUE), sep="", collapse=" ")) {
+      df[x,c("def.team")] <- ref[y,"poss.team"]
+      df[x,c("def.position")] <- ref[y,"poss.position"]
+    }
+    y <- y + 1
+  }
+  x <- x + 1
+}
+rm(x,y,poss.string,def.string,ref)
 
 ##INVERTIBLE FUNCTION----------
 ##Function to determine if an action's location is invertible based on the
