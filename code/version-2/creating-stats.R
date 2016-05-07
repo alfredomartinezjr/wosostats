@@ -10,7 +10,8 @@ source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-
 
 #MINUTES PLAYED & META DATA----------
 ## Gets data frame that binds data frames of every player who shows up in "poss.player" and "def.player" column
-players <- rbind(data.frame(Player=unique(d$poss.player), Team=NA, MP=NA,GS=NA),data.frame(Player=unique(d$def.player), Team=NA, MP=NA,GS=NA))
+players <- rbind(data.frame(Player=unique(d[,c("poss.player", "poss.team")])[,1],Team=unique(d[,c("poss.player", "poss.team")])[,2], MP=NA,GS=NA),
+                 data.frame(Player=unique(d[,c("def.player", "def.team")])[,1],Team=unique(d[,c("def.player", "def.team")])[,2], MP=NA,GS=NA))
 players <- players[!is.na(players[,"Player"]),]
 players <- unique(players[,])
 matchlength <- length(unique(d$time))
