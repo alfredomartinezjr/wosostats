@@ -60,19 +60,7 @@ while (x <= nrow(players)) {
   }
   x <- x + 1
 }
-
-rm(firstminute, lastminute, minutesplayed)
-## Set team name
-x <- 1
-while (x <= nrow(players)) {
-  player <- as.character(players[x,"Player"])
-  playerteam <- unique(d[d[,"poss.player"] == player & !is.na(d[,"poss.player"]),"poss.team"])
-  if(length(playerteam) == 0) {
-    playerteam <- unique(d[d[,"def.player"] == player & !is.na(d[,"def.player"]),"def.team"])
-  }
-  players[x,"Team"] <- playerteam
-  x <- x + 1
-}
+rm(firstminute, lastminute, minutesplayed, e, matchlength,player, x)
 
 #SHOTS---------------
 ## Creates table for players pased on types of shots.
