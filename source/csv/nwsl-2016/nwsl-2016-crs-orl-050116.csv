@@ -945,509 +945,509 @@
 844,"61",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Naughton","clearances","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 844,"61",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Mautz","clearances","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 845,"61","D","ORL","Hickmann Alves","recoveries","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-845,"61",NA,NA,NA,"passes.f","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-846,"61","D","ORL","Edmonds","passes.b.c","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-847,"61","D","ORL","Hickmann Alves","passes.f","DML","AMC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-848,"61","M","CRS","DiBernardo","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-849,"61","M","CRS","DiBernardo","passes.f.c","DMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-850,"61","M","CRS","Da Costa","passes.b.c","AMC","AMC",NA,"D","ORL","Evans","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-851,"61","M","CRS","DiBernardo","passes.f.c","AMC","AMC",NA,"D","ORL","Edmonds",NA,"DMC",NA,NA,NA,NA,"fouls.conceded",NA,NA,NA,NA
-852,"62","M","CRS","Colaprico","passes.s.c","AMC","AMR","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-853,"62","M","CRS","Mautz","passes.s.c","AMR","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-854,"62","M","CRS","DiBernardo","passes.s.c","AMC","AMC",NA,"M","ORL","Sanderson","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-855,"62","M","CRS","Colaprico","lost.touch","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-856,"62","D","ORL","Edmonds","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-857,"62","D","ORL","Edmonds","passes.f.c","DMC","AC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-858,"62","M","ORL","Morgan","take.on.won","AC",NA,NA,"D","CRS","Naughton","dribbled.tackles.missed","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-859,"62","M","ORL","Morgan","passes.f.c","AC","A18",NA,"D","CRS","Johnson","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-860,"62","F","ORL","Hagen","passes.s.c","A18","A18",NA,"D","CRS","Gilliland","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-861,"62","M","ORL","Morgan","lost.touch","A18",NA,NA,"D","CRS","Johnson","challenged","D18",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-862,"62","GK","CRS","Naeher","passes.f.c","D6","DC","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-863,"62","M","CRS","Colaprico","passes.f","DC","DC",NA,"D","ORL","Evans","blocks","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-864,"62","M","CRS","DiBernardo","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-865,"62","M","CRS","DiBernardo","passes.b.c","DC","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-866,"62","M","CRS","Colaprico","passes.f","DC","DR",NA,"M","ORL","Sanderson","pressured","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-866,"62",NA,NA,NA,NA,NA,NA,NA,"F","ORL","Hagen","pressured","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-866,"62",NA,NA,NA,NA,NA,NA,NA,"F","ORL","Belanger","interceptions","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-867,"62","F","ORL","Belanger","dispossessed","AC",NA,NA,"D","CRS","Short","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-867,"62",NA,NA,NA,NA,NA,NA,NA,"M","CRS","DiBernardo","tackles.ball","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-868,"62","F","ORL","Hagen","recoveries","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-869,"63","F","ORL","Hagen","take.on.won","AC",NA,NA,"M","CRS","DiBernardo","dribbled.tackles.missed","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-870,"63","F","ORL","Hagen","take.on.lost","AC",NA,NA,"M","CRS","Colaprico","tackles.ball","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-871,"63","D","CRS","Short","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-872,"63","D","CRS","Short","passes.f.c","DC","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-873,"63","M","CRS","DiBernardo","passes.f","DC","DMR",NA,"F","ORL","Belanger","pressured","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-873,"63",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Alleway","interceptions","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-874,"63","M","ORL","Alleway","passes.f.c","AMR","AR",NA,"M","CRS","Da Costa","challenged","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-875,"63","D","ORL","Evans","passes.f.c","AR","AR",NA,"D","CRS","Short","challenged","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-876,"63","M","ORL","Sanderson","passes.s.c","AR","AR","corner.crosses","D","CRS","Johnson","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-876,"63",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Gilliland","clearances","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
-876,"63",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Johnson","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-876,"63",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Short","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-877,"63","F","ORL","Belanger","recoveries","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-878,"63","F","ORL","Belanger","passes.s.c","AR","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-879,"63","D","ORL","Edmonds","passes.f","AC","A18","headed","M","CRS","Mautz","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-880,"63","GK","CRS","Naeher","recoveries","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-881,"63","GK","CRS","Naeher","passes.f","D18","AMC","gk.drop.kick","D","ORL","Hickmann Alves","clearances","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-881,"63",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-882,"63","F","ORL","Belanger","recoveries","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-883,"63","F","ORL","Belanger","passes.s.c","DMR","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-884,"63","M","ORL","Kyle","passes.s.c","DMC","DMR",NA,"M","CRS","Da Costa","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-885,"63","F","ORL","Belanger","passes.f.c","DMR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-886,"63","D","ORL","Evans","passes.b.c","DMR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-887,"63","F","ORL","Belanger","passes.f.c","DMR","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-888,"63","D","ORL","Evans","passes.f.c","AMR","AR","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-889,"63","F","ORL","Hagen","passes.s.c","AR","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-890,"63","M","ORL","Morgan","shots.blocked","A18",NA,NA,"D","CRS","Gilliland","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-891,"64","GK","CRS","Naeher","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-892,"64","GK","CRS","Naeher","passes.f.c","D18","DMC","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-893,"64","M","CRS","Colaprico","passes.f","DMC","DMC",NA,"D","ORL","Edmonds","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-893,"64",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Catley","blocks","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-894,"64","M","ORL","Kyle","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-895,"64","M","ORL","Kyle","passes.f.c","AMC","AC","through","M","CRS","Colaprico","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-896,"64","D","ORL","Edmonds","dispossessed","AC",NA,NA,"M","CRS","Colaprico","tackles.ball","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-897,"64","M","CRS","Da Costa","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-898,"64","M","CRS","Da Costa","passes.b.c","DC","DC",NA,"D","ORL","Edmonds","challenged","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-899,"64","M","CRS","DiBernardo","passes.f.c","DC","AMC",NA,"D","ORL","Edmonds","pressured","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-900,"64","F","CRS","Huerta","ball.shield","AMC",NA,NA,"F","ORL","Belanger","challenged","DMC",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
-901,"64","D","ORL","Evans","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-902,"64","D","ORL","Witteman","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-903,"64","M","CRS","Colaprico","passes.f.c","AMC","A18","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,"assists",NA,NA,NA,NA,NA
-903,"64",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-903,"64",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"big.chances.created",NA,NA,NA,NA,NA
-904,"64","M","CRS","Press","shots.scored","A18",NA,NA,"GK","ORL","Harris","gk.s.o.g.scored","D6","missed.the.ball","diving",NA,"big.chances.scored",NA,NA,NA,NA,NA
-904,"65",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-905,"65","D","ORL","Witteman","ball.shield","AMR",NA,NA,"M","CRS","Press","challenged","DML",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
-906,"65","M","ORL","Alleway","passes.f","AMR",NA,"free.kick","M","CRS","Mautz","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-906,"65",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-906,"65",NA,NA,NA,NA,NA,NA,NA,"F","CRS","Huerta","clearances","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-907,"66","M","ORL","Kyle","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-908,"66","M","ORL","Kyle","passes.b.c","DML","DML",NA,"F","CRS","Huerta","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-909,"66","D","ORL","Hickmann Alves","passes.b.c","DML","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-910,"66","M","ORL","Alleway","passes.s.c","DC","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-911,"66","D","ORL","Hickmann Alves","passes.f.c","DR","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-912,"66","M","ORL","Kyle","lost.touch","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-913,"66","M","ORL","Morgan","recoveries","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-914,"66","M","ORL","Morgan","passes.b.c","AML","DML",NA,"D","CRS","Naughton","challenged","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-915,"66","D","ORL","Catley","passes.f.c","DML","AC","launch","M","CRS","Mautz","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-916,"66","F","ORL","Hagen","shots.missed","AC",NA,NA,"GK","CRS","Naeher","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-916,"66",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Johnson","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-917,"66","GK","CRS","Naeher","passes.f","D6","DMC","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-917,"66",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-918,"66","M","CRS","Da Costa","aerial.lost","DMC",NA,NA,"M","ORL","Kyle","aerial.won","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-919,"66","M","CRS","DiBernardo","aerial.won","DMC",NA,NA,"M","ORL","Sanderson","aerial.lost","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-919,"66",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Catley",NA,"DML",NA,NA,NA,NA,"fouls.conceded",NA,NA,NA,NA
-920,"67","D","CRS","Naughton","passes.f.c","DMR","AMR","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-921,"67","M","CRS","Mautz","take.on.lost","AMR",NA,NA,"D","ORL","Catley","ball.shield","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-922,"67","D","ORL","Catley","recoveries","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-923,"67","D","ORL","Catley","passes.f.c","DL","DL",NA,"M","CRS","Mautz","challenged","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-924,"67","D","ORL","Edmonds","passes.b.c","DL","DL",NA,"M","CRS","Da Costa","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-925,"67","D","ORL","Hickmann Alves","passes.f.c","DL","DMC","launch","F","CRS","Huerta","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-926,"67","M","ORL","Morgan","passes.b","DMC","DMC","headed","M","CRS","DiBernardo","interceptions","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-927,"67","M","CRS","DiBernardo","passes.f","AMC","AR","launch","M","ORL","Sanderson","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-928,"67","M","CRS","Press","offside.calls","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-929,"67","GK","ORL","Harris","passes.s.c","DL","DL","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-930,"67","D","ORL","Hickmann Alves","movement","DL","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-931,"67","D","ORL","Hickmann Alves","passes.s.c","DML","DR","switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-932,"67","F","ORL","Belanger","passes.f.c","DR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-933,"67","D","ORL","Witteman","passes.f","DMR","AMR","launch","F","CRS","Huerta","pressured","AML",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-934,"68","D","CRS","Short","passes.f.c","DML","DML","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-935,"68","F","CRS","Huerta","passes.b.c","DML","DML",NA,"D","ORL","Witteman","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-936,"68","D","CRS","Short","passes.f.c","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-937,"68","M","CRS","DiBernardo","passes.f.c","DML","DML",NA,"D","ORL","Edmonds","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-938,"68","F","CRS","Huerta","lost.touch","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-939,"68","D","ORL","Witteman","passes.f.c","AMR","AMR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-940,"68","M","ORL","Sanderson","ball.shield","AMR",NA,NA,"M","CRS","Colaprico","challenged","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-940,"68",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-941,"68","GK","ORL","Harris","passes.f.c","DC","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-942,"68","D","ORL","Hickmann Alves","passes.f.c","DC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-943,"68","D","ORL","Catley","passes.b.c","DML","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-944,"68","D","ORL","Hickmann Alves","movement","DL","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-945,"68","D","ORL","Hickmann Alves","passes.f","DML","AC","launch","D","CRS","Johnson","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-946,"68","D","ORL","Edmonds","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-947,"68","D","ORL","Edmonds","take.on.won","AMC",NA,NA,"M","CRS","DiBernardo","dribbled.tackles.missed","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-948,"68","D","ORL","Edmonds","take.on.lost","AMC",NA,NA,"M","CRS","Colaprico","tackles.ball","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-949,"68","D","CRS","Gilliland","recoveries","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-950,"68","D","CRS","Gilliland","passes.s.c","DR","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-951,"68","M","CRS","Colaprico","passes.s.c","DC","DR",NA,"M","ORL","Morgan","pressured","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-952,"68","D","CRS","Gilliland","passes.f","DR","DR",NA,"D","ORL","Edmonds","interceptions","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-953,"68","D","ORL","Edmonds","passes.b","AL","AL",NA,"M","CRS","DiBernardo","blocks","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-954,"68","D","ORL","Catley","recoveries","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-955,"68","D","ORL","Catley","take.on.won","AL",NA,NA,"M","CRS","Colaprico","dribbled.tackles.missed","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-956,"68","D","ORL","Catley","movement","AL","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-957,"68","D","ORL","Catley","lost.touch","AC",NA,NA,"D","CRS","Johnson","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-957,"68",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-958,"69","M","CRS","Da Costa","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-959,"69","M","CRS","Da Costa","passes.b.c","DMC","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-960,"69","D","CRS","Johnson","passes.b.c","DL","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-961,"69","GK","CRS","Naeher","passes.f","D18","DL","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-962,"69","D","CRS","Short","aerial.lost","DL",NA,NA,"D","ORL","Witteman","aerial.won","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-963,"69","M","CRS","Colaprico","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-964,"69","M","CRS","Colaprico","clearances","DC","DML",NA,"M","ORL","Alleway","clearances","AMR",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-965,"69","D","CRS","Short","passes.s.c","DML","DML","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-966,"69","M","CRS","Da Costa","passes.s.c","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-967,"69","D","CRS","Short","passes.f","DML","AL","launch","M","ORL","Kyle","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-968,"69","D","ORL","Hickmann Alves","recoveries","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-969,"69","D","ORL","Hickmann Alves","passes.b.c","DR","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-970,"69","GK","ORL","Harris","passes.f","D18","DMC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-971,"69","M","CRS","DiBernardo","lost.touch","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-972,"69","M","CRS","Da Costa","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-973,"69","M","CRS","Da Costa","passes.b.c","AMC","AML",NA,"M","ORL","Sanderson","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-974,"69","D","CRS","Short","passes.f.c","AML","AL","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-975,"69","M","CRS","Press","passes.b.c","AL","AML",NA,"M","ORL","Alleway","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-976,"70","D","CRS","Short","passes.s.c","AML","AL",NA,"D","ORL","Witteman","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-977,"70","M","CRS","DiBernardo","take.on.won","AL",NA,NA,"M","ORL","Kyle","dribbled.tackles.missed","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-978,"70","M","CRS","DiBernardo","passes.s.c","AL","AL",NA,"D","ORL","Witteman","challenged","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-979,"70","M","CRS","Press","passes.s.c","AL","AR","switch","D","ORL","Witteman","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-980,"70","D","CRS","Gilliland","take.on.won","AR",NA,NA,"D","ORL","Edmonds","dribbled.turned","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-981,"70","D","CRS","Gilliland","movement","AR","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-982,"70","D","CRS","Gilliland","shots.stopped.by.gk","AC",NA,NA,"GK","ORL","Harris","gk.s.o.g.stop","D6","collected","stooping",NA,NA,NA,NA,NA,NA,NA
-983,"70","GK","ORL","Harris","passes.f.c","D18","DC","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-984,"70","D","ORL","Hickmann Alves","passes.s.c","DC","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-985,"70","M","ORL","Kyle","passes.f.c","DC","DMR","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-986,"70","D","ORL","Witteman","passes.f","DMR","AMR","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-986,"70",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-987,"70","D","CRS","Short","recoveries","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-988,"70","D","CRS","Short","passes.b.c","DML","DL",NA,"D","ORL","Witteman","challenged","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-989,"70","D","CRS","Johnson","passes.f","DL","DML",NA,"F","ORL","Hagen","blocks","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-990,"70","D","CRS","Johnson","recoveries","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-991,"70","D","CRS","Johnson","passes.f","DL","DML",NA,"M","ORL","Sanderson","blocks","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-992,"70","F","CRS","Huerta","recoveries","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-993,"70","F","CRS","Huerta","passes.b.c","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-994,"70","M","CRS","Colaprico","passes.f","DML","DMC",NA,"M","ORL","Morgan","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-995,"70","D","ORL","Catley","recoveries","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-996,"70","D","ORL","Catley","passes.s.c","AML","AML",NA,"M","CRS","Mautz","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-997,"70","D","ORL","Edmonds","passes.f.c","AML","AL","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-998,"71","D","ORL","Catley","passes.s.c","AL","A18","corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-999,"71","M","ORL","Morgan","aerial.won","A18",NA,NA,"D","CRS","Johnson","aerial.lost","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1000,"71","F","ORL","Hagen","lost.touch","A18",NA,NA,"D","CRS","Naughton","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1001,"71","M","ORL","Morgan","recoveries","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1002,"71","M","ORL","Morgan","take.on.lost","A18",NA,NA,"D","CRS","Johnson","tackles.ball","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1002,"71",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Mautz","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1003,"71","D","ORL","Hickmann Alves","recoveries","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1004,"71","D","ORL","Hickmann Alves","passes.f.c","AML","AML",NA,"M","CRS","Press","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1005,"71","D","ORL","Edmonds","passes.b.c","AML","AMC",NA,"M","CRS","Da Costa","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1006,"71","M","ORL","Kyle","passes.b.c","AMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1007,"71","M","ORL","Alleway","passes.s.c","AMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1008,"71","M","ORL","Kyle","dispossessed","AMC",NA,NA,"M","CRS","Press","tackles.ball","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1009,"71","M","CRS","Press","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1010,"71","M","CRS","Press","passes.s.c","DMC","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1011,"71","M","CRS","Mautz","passes.b.c","DMR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1012,"71","D","CRS","Gilliland","passes.f.c","DMR","AC","launch","D","ORL","Edmonds","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1013,"71","M","CRS","Press","dispossessed","AC",NA,NA,"M","ORL","Alleway","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1014,"71","D","ORL","Hickmann Alves","recoveries","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1015,"71","D","ORL","Hickmann Alves","passes.f","DL","AML","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1016,"72","M","ORL","Morgan","aerial.lost","AML",NA,NA,"D","CRS","Gilliland","aerial.lost","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1017,"72","D","CRS","Naughton","recoveries","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1018,"72","GK","CRS","Naeher","passes.f.c","DMR","AMR","launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1019,"72","M","CRS","Mautz","lost.touch","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1020,"72","D","ORL","Catley","passes.b.c","DML","DL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1021,"72","D","ORL","Hickmann Alves","passes.s.c","DL","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1022,"72","GK","ORL","Harris","passes.f.c","D18","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1023,"72","F","ORL","Belanger","passes.s.c","DR","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1024,"72","M","ORL","Alleway","passes.s.c","DR","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1025,"72","D","ORL","Hickmann Alves","movement","DC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1026,"72","D","ORL","Hickmann Alves","passes.f.c","DML","AMC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1027,"72","M","ORL","Sanderson","passes.b.c","AMC","AMC",NA,"D","CRS","Johnson","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1028,"72","F","ORL","Hagen","passes.f.c","AMC","AR",NA,"M","CRS","DiBernardo","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1029,"72","D","ORL","Witteman","take.on.won","AR",NA,NA,"F","CRS","Huerta","dribbled.turned","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1030,"72","D","ORL","Witteman","passes.f","AR","A18",NA,"D","CRS","Short","blocks","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1031,"72","M","CRS","DiBernardo","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1032,"72","M","CRS","DiBernardo","dispossessed","DMC",NA,NA,"M","ORL","Kyle","tackles.ball","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1033,"72","M","ORL","Alleway","recoveries","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1034,"72","M","ORL","Alleway","passes.f","AMR","AC","launch","D","CRS","Naughton","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1035,"72","D","ORL","Witteman","clearances","AMR",NA,NA,"M","CRS","DiBernardo","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1036,"73","D","CRS","Short","recoveries","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1037,"73","D","CRS","Short","passes.f.c","DL","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1038,"73","M","CRS","Press","lost.touch","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1039,"73","D","ORL","Hickmann Alves","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1040,"73","D","ORL","Hickmann Alves","passes.f.c","DMC","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1041,"73","D","ORL","Catley","passes.f","AML","AC","launch","D","CRS","Naughton","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1041,"73",NA,NA,NA,NA,NA,NA,NA,"M","CRS","DiBernardo","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1042,"73","M","CRS","Mautz","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1043,"73","M","CRS","Mautz","passes.f.c","DMC","DMC",NA,"D","ORL","Catley","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1044,"73","M","CRS","Press","passes.s.c","DMC","DMC","lay.off","D","ORL","Hickmann Alves","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1045,"73","M","CRS","Da Costa","passes.f","DMC","AML",NA,"M","ORL","Kyle","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1046,"73","F","ORL","Hagen","substitution.off",NA,NA,NA,"F","ORL","Belanger","clearances","DMR",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1047,"73","M","ORL","Spencer","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1048,"73","D","CRS","Short","passes.b.c","AML","AML","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1049,"73","M","CRS","Press","passes.b.c","AML","AMC",NA,"M","ORL","Sanderson","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1050,"74","M","CRS","Colaprico","passes.f.c","AMC","AMC",NA,"M","ORL","Spencer","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1051,"74","M","CRS","Mautz","passes.s","AMC","AMC",NA,"D","ORL","Catley","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1051,"74",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Edmonds","interceptions","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1052,"74","D","ORL","Edmonds","passes.b.c","DMC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1053,"74","D","ORL","Hickmann Alves","passes.f.c","DMC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1054,"74","D","ORL","Edmonds","passes.b.c","DMC","DMC",NA,"M","CRS","Da Costa","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1055,"74","D","ORL","Hickmann Alves","passes.f.c","DMC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1056,"74","M","ORL","Kyle","passes.b.c","DMC","DC",NA,"M","CRS","Press","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1057,"74","M","ORL","Alleway","passes.s.c","DC","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1058,"74","F","ORL","Belanger","passes.f.c","DR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1059,"74","D","ORL","Witteman","dispossessed","DMR",NA,NA,"F","CRS","Huerta","dispossessed","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1060,"74","F","CRS","Huerta","ball.shield","AML",NA,NA,"D","ORL","Witteman","challenged","DMR",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
-1061,"74","D","CRS","Short","passes.f","AML","AC","free.kick","M","ORL","Alleway","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1061,"74",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1062,"74","F","CRS","Huerta","recoveries","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1063,"74","F","CRS","Huerta","passes.s.c","AL","AL",NA,"M","ORL","Sanderson","challenged","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1064,"75","D","CRS","Short","take.on.won","AL",NA,NA,"D","ORL","Witteman","dribbled.out.run","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1065,"75","D","CRS","Short","passes.s","AL","A18","corner.crosses","D","ORL","Witteman","blocks","DR",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1066,"75","M","CRS","Colaprico","passes.s","AL","A6","corner.kick","GK","ORL","Harris","gk.high.balls.won","D6","caught","standing",NA,NA,NA,NA,NA,NA,NA
-1067,"75","GK","ORL","Harris","passes.f.c","D18","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1068,"75","M","ORL","Alleway","passes.f.c","DC","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1069,"75","M","ORL","Kyle","passes.f.c","DC","AML","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1070,"75","D","ORL","Catley","passes.f.c","AML","AL",NA,"D","CRS","Gilliland","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1071,"76","M","ORL","Morgan","dispossessed","AL",NA,NA,"D","CRS","Naughton","tackles.ball","DR",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1072,"76","D","ORL","Catley","passes.f.c","AL","AL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1073,"76","M","ORL","Morgan","lost.touch","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1074,"76","GK","CRS","Naeher","passes.f","D6","DMC","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1074,"76",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1075,"76","M","CRS","Mautz","aerial.lost","DMC",NA,NA,"M","ORL","Kyle","aerial.won","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1076,"76","D","ORL","Witteman","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1077,"76","D","ORL","Witteman","passes.b.c","DMC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1078,"76","D","ORL","Hickmann Alves","passes.s.c","DMC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1079,"76","D","ORL","Catley","passes.b.c","DML","DML",NA,"M","CRS","Mautz","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1080,"76","D","ORL","Hickmann Alves","passes.f.c","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1081,"76","D","ORL","Edmonds","passes.s.c","DML","AML",NA,"M","CRS","Press","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1082,"77","D","ORL","Hickmann Alves","passes.f.c","AML","AL","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1083,"77","M","ORL","Spencer","movement","AL","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1084,"77","M","ORL","Spencer","take.on.won","A18",NA,NA,"D","CRS","Johnson","dribbled.turned","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1085,"77","M","ORL","Spencer","shots.missed","A18",NA,NA,"GK","CRS","Naeher","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1085,"77",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Gilliland","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1086,"77","GK","CRS","Naeher","passes.f","D6","DMR","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1086,"77",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1087,"77","M","CRS","Da Costa","aerial.lost","DMR",NA,NA,"D","ORL","Catley","aerial.won","AML",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1088,"77","M","CRS","Mautz","passes.s.c","DMR","DMR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1089,"77","M","CRS","Colaprico","passes.s","DMR","DMR",NA,"M","ORL","Sanderson","pressured","AML",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1090,"77","D","ORL","Catley","passes.s.c","AML","AL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1090,"78",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1091,"78","M","ORL","Spencer","passes.s.c","AL","AL",NA,"M","CRS","Colaprico","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1092,"78","M","ORL","Sanderson","passes.f.c","AL","AL","through","M","CRS","Mautz","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1093,"78","D","ORL","Catley","passes.s","AL","A18","corner.crosses","D","CRS","Gilliland","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1093,"78",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Naughton","interceptions","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1094,"78","D","CRS","Naughton","passes.f.c","D18","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1095,"78","M","CRS","Mautz","passes.f.c","DR","DR",NA,"M","ORL","Sanderson","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1096,"78","M","CRS","Press","passes.f","DR","DMR",NA,"D","ORL","Hickmann Alves","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1096,"78",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Alleway","interceptions","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1097,"78","M","ORL","Alleway","passes.s.c","AML","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1098,"78","M","ORL","Kyle","lost.touch","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1099,"78","M","CRS","Mautz","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1100,"78","M","CRS","Mautz","passes.f.c","AMC","AML",NA,"M","ORL","Kyle","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1100,"78",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Edmonds","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1101,"78","M","CRS","Da Costa","passes.f.c","AML","A18","through","D","ORL","Edmonds","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1102,"78","F","CRS","Huerta","take.on.won","A18",NA,NA,"F","ORL","Belanger","dribbled.turned","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1103,"78","F","CRS","Huerta","shots.blocked","A18",NA,NA,"M","ORL","Kyle","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1103,"78",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Kyle","clearances","D18",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1104,"79","D","CRS","Short","passes.s.c","AL","AL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1105,"79","F","CRS","Huerta","passes.s.c","AL","AL",NA,"D","ORL","Witteman","challenged","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1106,"79","D","CRS","Short","take.on.won","AL",NA,NA,"D","ORL","Witteman","dribbled.tackles.missed","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1107,"79","D","CRS","Short","passes.s","AL","A18","corner.crosses","F","ORL","Belanger","blocks","DL",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1108,"79","M","CRS","Colaprico","passes.s.c","AL","A6","corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1109,"79","D","CRS","Short","shots.stopped.by.gk","A6",NA,NA,"GK","ORL","Harris","gk.s.o.g.stop","D6","parried.to.danger","diving",NA,NA,NA,NA,NA,NA,NA
-1110,"79","F","CRS","Huerta","recoveries","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1111,"79","F","CRS","Huerta","passes.b.c","A18","AC",NA,"D","ORL","Hickmann Alves","challenged","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1111,"79",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Spencer","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1112,"79","D","CRS","Naughton","recoveries","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1113,"79","D","CRS","Naughton","passes.b.c","AC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1114,"79","M","CRS","Press","passes.f","AMC","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1115,"79","M","CRS","DiBernardo","aerial.lost","A18",NA,NA,"M","ORL","Alleway","aerial.won","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1115,"79",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Witteman","clearances","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1116,"79","M","CRS","Colaprico","recoveries","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1117,"79","M","CRS","Colaprico","passes.b.c","AL","AL",NA,"D","ORL","Witteman","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1118,"79","M","CRS","Press","passes.f.c","AL","AL",NA,"D","ORL","Witteman","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1119,"80","F","CRS","Huerta","passes.b.c","AL","AL",NA,"F","ORL","Belanger","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1120,"80","M","CRS","Press","passes.b.c","AL","AML",NA,"M","ORL","Sanderson","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1121,"80","D","CRS","Johnson","passes.f.c","AML","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1122,"80","D","CRS","Short","passes.f.c","AML","AL",NA,"M","ORL","Sanderson","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1123,"80","M","CRS","DiBernardo","passes.s.c","AL","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1124,"80","F","CRS","Huerta","passes.b.c","AML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1125,"80","D","CRS","Johnson","passes.b.c","DML","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1126,"80","GK","CRS","Naeher","passes.f","DC","AC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1127,"80","GK","ORL","Harris","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1128,"80","GK","ORL","Harris","passes.s.c","DC","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1129,"80","D","ORL","Hickmann Alves","passes.f.c","DC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1129,"80",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1130,"80","D","ORL","Hickmann Alves","passes.f.c","DMC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1131,"80","D","ORL","Catley","passes.b.c","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1132,"81","D","ORL","Hickmann Alves","passes.s.c","DML","DMR","switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1133,"81","F","ORL","Belanger","passes.f","DMR","AMC","launch","D","CRS","Gilliland","interceptions","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1134,"81","D","CRS","Gilliland","movement","DMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1135,"81","D","CRS","Gilliland","movement","AMC","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1136,"81","D","CRS","Gilliland","passes.s.c","AR","AR",NA,"D","ORL","Catley","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1137,"81","M","CRS","Press","passes.b.c","AR","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1138,"81","M","CRS","Mautz","passes.s.c","AMR","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1139,"81","M","CRS","Colaprico","passes.f.c","AMR","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1140,"81","M","CRS","Da Costa","passes.b.c","AC","AMC",NA,"D","ORL","Edmonds","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1141,"81","M","CRS","Colaprico","passes.s.c","AMC","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1142,"81","M","CRS","Press","passes.f.c","AMR","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1143,"81","M","CRS","Da Costa","passes.s.c","AR","AMC",NA,"D","ORL","Hickmann Alves","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1144,"81","M","CRS","DiBernardo","passes.s.c","AMC","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1145,"81","D","CRS","Short","passes.f.c","AML","AC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1146,"81","M","CRS","Press","ball.shield","AC",NA,NA,"D","ORL","Catley","challenged","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1147,"81","M","CRS","Press","passes.s.c","AC","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1148,"81","D","CRS","Gilliland","passes.f.c","AMR","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1149,"81","M","CRS","Mautz","passes.s.c","AR","AR",NA,"D","ORL","Hickmann Alves","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1150,"81","M","CRS","Da Costa","passes.b.c","AR","AR",NA,"D","ORL","Catley","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1151,"81","M","CRS","Press","passes.f","AR","AR",NA,"M","ORL","Spencer","pressured","DL",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1152,"82","M","ORL","Sanderson","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1153,"82","M","ORL","Edwards","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1154,"82","D","ORL","Catley","passes.f.c","DL","DML","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1155,"82","M","ORL","Morgan","passes.b.c","DML","DL",NA,"M","CRS","Mautz","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1155,"82",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Gilliland","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1156,"82","D","ORL","Edmonds","passes.f","DL","AML","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1157,"82","M","ORL","Spencer","aerial.lost","AML",NA,NA,"D","CRS","Naughton","aerial.won","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1158,"82","M","ORL","Edwards","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1159,"82","M","ORL","Edwards","passes.f","DMC","AML","through",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1160,"82","M","CRS","Mautz","passes.s.c","DMR","DMR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1161,"82","M","CRS","Colaprico","passes.b.c","DMR","DC",NA,"D","ORL","Witteman","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1162,"82","D","CRS","Johnson","passes.f","DC","AMC",NA,"M","ORL","Alleway","clearances","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1163,"83","M","ORL","Kyle","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1164,"83","M","ORL","Kyle","passes.b.c","DMC","DMC",NA,"M","CRS","Da Costa","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1165,"83","M","ORL","Alleway","passes.f","DMC","AC","launch","D","CRS","Gilliland","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1166,"83","D","ORL","Hickmann Alves","aerial.won","DMC",NA,NA,"M","CRS","Press","aerial.lost","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1167,"83","M","ORL","Kyle","aerial.won","AMC",NA,NA,"M","CRS","Da Costa","aerial.lost","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1168,"83","D","ORL","Witteman","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1169,"83","D","ORL","Witteman","passes.f.c","AMC","AMC",NA,"M","CRS","Da Costa","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1169,"83",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Naughton","blocks","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1170,"83","D","ORL","Witteman","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1171,"83","D","ORL","Witteman","passes.s.c","AMC","AMC",NA,"M","CRS","Da Costa","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1172,"83","M","ORL","Edwards","passes.b.c","AMC","AMC",NA,"M","CRS","DiBernardo","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1173,"83","M","ORL","Kyle","passes.f.c","AMC","AC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1174,"83","M","ORL","Morgan","aerial.won","AC",NA,NA,"D","CRS","Gilliland","aerial.lost","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1175,"83","M","ORL","Morgan","passes.s.c","AC","AL","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1175,"83",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1176,"83","M","ORL","Spencer","passes.b.c","AL","AL",NA,"M","CRS","Mautz","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1177,"83","M","ORL","Spencer","recoveries","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1178,"83","M","ORL","Spencer","passes.b.c","AL","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1179,"83","M","ORL","Kyle","passes.f","AML","AL",NA,"M","CRS","Da Costa","blocks","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1180,"83","M","CRS","Mautz","recoveries","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1181,"83","M","CRS","Mautz","passes.b.c","DR","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1182,"83","D","CRS","Gilliland","passes.f","DR","DR",NA,"D","ORL","Catley","blocks","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1183,"83","D","CRS","Gilliland","ball.shield","DR",NA,NA,"D","ORL","Catley","challenged","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1184,"83","D","CRS","Gilliland","clearances","DR",NA,NA,"D","ORL","Catley","blocks","AL",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1184,"84",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1185,"84","D","ORL","Catley","passes.f.c","AL","AL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1186,"84","D","ORL","Witteman","passes.b.c","AL","AML",NA,"M","CRS","Colaprico","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1187,"84","D","ORL","Hickmann Alves","passes.s.c","AML","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1188,"84","M","ORL","Alleway","passes.f.c","AMC","AMC",NA,"M","CRS","Press","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1189,"84","M","ORL","Kyle","lost.touch","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1190,"84","M","CRS","Mautz","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1191,"84","M","CRS","Mautz","passes.f.c","DMC","AC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1192,"84","M","CRS","Press","passes.s.c","AC","AC","lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1193,"84","F","CRS","Huerta","movement","AC","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1194,"84","F","CRS","Huerta","take.on.lost","A18",NA,NA,"M","ORL","Alleway","tackles.ball","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1195,"84","GK","ORL","Harris","recoveries","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1196,"84","GK","ORL","Harris","passes.s.c","D18","D18","dkt",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1197,"84","D","ORL","Hickmann Alves","movement","D18","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1198,"84","D","ORL","Hickmann Alves","passes.f.c","DC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1199,"84","D","ORL","Witteman","passes.b.c","DML","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1199,"84",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1200,"85","M","ORL","Alleway","passes.s.c","DMC","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1201,"85","F","ORL","Belanger","passes.f.c","DMR","AMC",NA,"F","CRS","Huerta","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1202,"85","M","ORL","Edwards","passes.b","AMC","AMR",NA,"F","CRS","Huerta","blocks","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1203,"85","M","CRS","DiBernardo","recoveries","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1204,"85","M","CRS","DiBernardo","passes.f","DML","AMC","launch","F","ORL","Belanger","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1205,"85","D","ORL","Hickmann Alves","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1206,"85","D","ORL","Hickmann Alves","passes.s.c","DMC","DML",NA,"M","CRS","Press","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1207,"85","D","ORL","Catley","passes.f.c","DML","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1208,"85","M","ORL","Spencer","take.on.lost","AML",NA,NA,"D","CRS","Gilliland","tackles.ball","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1209,"85","M","ORL","Spencer","recoveries","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1210,"85","M","ORL","Spencer","passes.f","AML","AL","through","M","CRS","Mautz","pressured","DMR",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1211,"86","GK","CRS","Naeher","passes.f","D6","DMC","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1211,"86",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1212,"86","F","CRS","Huerta","aerial.lost","DMC",NA,NA,"M","ORL","Edwards","aerial.won","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1213,"86","D","ORL","Edmonds","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1214,"86","D","ORL","Edmonds","passes.s.c","AMC","AMC","headed","M","CRS","DiBernardo","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1215,"86","F","ORL","Belanger","passes.s.c","AMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1216,"86","M","ORL","Kyle","passes.f.c","AMC","AMC",NA,"M","CRS","Da Costa","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1217,"86","M","ORL","Edwards","lost.touch","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1218,"86","M","CRS","Colaprico","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1219,"86","M","CRS","Colaprico","passes.b.c","DMC","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1220,"86","D","CRS","Short","clearances","DL","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1221,"86","M","ORL","Alleway","recoveries","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1222,"86","M","ORL","Alleway","passes.f.c","AMR","AR",NA,"M","CRS","Press","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1223,"86","D","ORL","Edmonds","passes.s","AR","AR",NA,"F","CRS","Huerta","blocks","DL",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1224,"86","D","ORL","Edmonds","passes.s.c","AR","A18","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1225,"86","M","ORL","Morgan","take.on.won","A18",NA,NA,"M","CRS","DiBernardo","dribbled.turned","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1226,"86","M","ORL","Morgan","passes.s","A18","A18","corner.crosses","D","CRS","Johnson","blocks","D18",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1227,"87","D","ORL","Catley","passes.s","AR","A18","corner.kick","D","CRS","Naughton","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1227,"87",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Press","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1228,"87","GK","ORL","Harris","recoveries","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1229,"87","GK","ORL","Harris","clearances","DMR","AMR",NA,"M","CRS","Press","pressured","AMR",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1230,"87","D","CRS","Short","passes.b.c","AML","DML","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1231,"87","D","CRS","Johnson","passes.b.c","DML","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1232,"87","GK","CRS","Naeher","passes.f","DC","AML","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1233,"88","M","ORL","Alleway","recoveries","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1234,"88","M","ORL","Alleway","passes.s.c","DMR","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1235,"88","D","ORL","Hickmann Alves","passes.f.c","DMC","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1236,"88","D","ORL","Catley","passes.f.c","AML","AL",NA,"M","CRS","Mautz","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1237,"88","D","ORL","Edmonds","passes.f","AL","AL",NA,"M","CRS","Mautz","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1237,"88",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Gilliland","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1237,"88",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Colaprico","interceptions","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1238,"88","M","CRS","Colaprico","passes.f","DR","DR",NA,"D","ORL","Edmonds","blocks","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1239,"88","M","CRS","Mautz","recoveries","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1240,"88","M","CRS","Mautz","passes.b.c","DR","D18",NA,"D","ORL","Witteman","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1241,"88","D","CRS","Naughton","clearances","D18","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1242,"88","M","ORL","Alleway","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1243,"88","M","ORL","Alleway","passes.f.c","AMC","AL","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1244,"88","D","ORL","Edmonds","passes.b.c","AL","AL",NA,"D","CRS","Gilliland","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1245,"88","D","ORL","Catley","passes.s","AL","AC",NA,"M","CRS","DiBernardo","blocks","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1246,"88","M","ORL","Kyle","recoveries","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1247,"88","M","ORL","Kyle","passes.f.c","AC","AC",NA,"M","CRS","Press","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1248,"88","M","ORL","Edwards","dispossessed","AC",NA,NA,"M","CRS","DiBernardo","dispossessed","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1249,"88","M","CRS","DiBernardo","passes.b.c","DL","DL",NA,"M","ORL","Spencer","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1250,"88","D","CRS","Short","take.on.won","DL",NA,NA,"M","ORL","Spencer","dribbled.tackles.missed","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1251,"88","D","CRS","Short","clearances","DL","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1252,"88","D","ORL","Hickmann Alves","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1253,"89","D","ORL","Hickmann Alves","passes.f.c","AMC","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1254,"89","D","ORL","Edmonds","passes.f.c","AML","AL","through","M","CRS","Mautz","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1255,"89","D","ORL","Catley","passes.b.c","AL","AL",NA,"D","CRS","Gilliland","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1256,"89","D","ORL","Edmonds","passes.f","AL","A18","deep.crosses","D","CRS","Naughton","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1257,"89","M","ORL","Kyle","recoveries","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1258,"89","M","ORL","Kyle","passes.f.c","AC","A18","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1259,"89","M","ORL","Morgan","passes.b.c","A18","AL",NA,"D","CRS","Naughton","challenged","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1260,"89","D","ORL","Edmonds","passes.s","AL","A18",NA,"M","CRS","Colaprico","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1260,"89",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Colaprico","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1261,"89","D","ORL","Catley","recoveries","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1262,"89","D","ORL","Catley","passes.s","AL","AL",NA,"M","CRS","Press","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1262,"89",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Da Costa","interceptions","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1263,"89","M","CRS","Da Costa","take.on.won","DMC",NA,NA,"M","ORL","Kyle","dribbled.tackles.missed","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1264,"89","M","CRS","Da Costa","passes.f.c","DMC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1265,"89","F","CRS","Huerta","movement","DML","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1266,"89","F","CRS","Huerta","movement","AML","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1267,"89","F","CRS","Huerta","dispossessed","AL",NA,NA,"M","ORL","Edwards","tackles.ball","DR",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1268,"90","M","CRS","DiBernardo","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1269,"90","M","CRS","Comeau","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1270,"90","F","CRS","Huerta","passes.s.c","AL","AL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1271,"90","M","CRS","Press","passes.s","AL","A18","corner.crosses","M","ORL","Alleway","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1272,"90","D","ORL","Hickmann Alves","recoveries","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1273,"90","D","ORL","Hickmann Alves","movement","D18","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1274,"90","D","ORL","Hickmann Alves","passes.f","DR","DMR","launch","D","CRS","Short","blocks","AML",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1275,"90","D","ORL","Hickmann Alves","passes.f.c","DMR","DMR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1276,"90","M","ORL","Spencer","ball.shield","DMR",NA,NA,"F","CRS","Huerta","challenged","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1277,"90","M","ORL","Spencer","passes.b.c","DMR","DMR",NA,"F","CRS","Huerta","challenged","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1278,"90","D","ORL","Hickmann Alves","passes.f","DMR","AMC","launch","D","CRS","Naughton","clearances","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1279,"90","M","ORL","Edwards","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1280,"90","M","ORL","Edwards","passes.b.c","AMC","DMC",NA,"M","CRS","Comeau","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1281,"90+1","M","ORL","Alleway","passes.f.c","DMC","AMC",NA,"M","CRS","Press","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1282,"90+1","M","ORL","Kyle","passes.b.c","AMC","DMR",NA,"M","CRS","Da Costa","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1283,"90+1","D","ORL","Hickmann Alves","passes.f.c","DMR","AC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1284,"90+1","M","ORL","Morgan","passes.f.c","AC","AC","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1284,"90+1",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1285,"90+1","D","ORL","Edmonds","passes.f","AC","A18","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1286,"90+1","M","ORL","Spencer","offside.calls","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1287,"90+1","GK","CRS","Naeher","passes.f","D18","AMC","launch","M","ORL","Alleway","clearances","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1288,"90+1","M","CRS","Comeau","aerial.won","AMC",NA,NA,"M","ORL","Kyle","aerial.lost","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1289,"90+1","D","ORL","Hickmann Alves","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1290,"90+1","D","ORL","Hickmann Alves","movement","DC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1291,"90+1","D","ORL","Hickmann Alves","passes.f.c","DML","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1292,"90+2","D","ORL","Edmonds","passes.s.c","AML","AMC",NA,"M","CRS","Da Costa","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1293,"90+2","M","ORL","Kyle","passes.f.c","AMC","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1294,"90+2","D","ORL","Catley","passes.b.c","AL","AL",NA,"M","CRS","Mautz","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1295,"90+2","D","ORL","Edmonds","passes.s","AL","A18","deep.crosses","GK","CRS","Naeher","gk.high.balls.won","D6","caught","reaching",NA,NA,NA,NA,NA,NA,NA
-1296,"90+2","GK","CRS","Naeher","passes.f","D18","AMC","gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1297,"90+2","M","ORL","Alleway","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1298,"90+2","M","ORL","Alleway","passes.f.c","DMC","AR","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1299,"90+2","M","ORL","Spencer","movement","AR","AC",NA,"M","CRS","Comeau",NA,NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
-1300,"90+3","M","ORL","Alleway","shots.missed","AC",NA,"free.kick","GK","CRS","Naeher","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1301,"90+3","GK","CRS","Naeher","passes.f","D6","AMC","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1301,"90+3",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1301,"90+3",NA,NA,NA,"end.of.match",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+846,"61","D","ORL","Hickmann Alves","passes.f.c","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+847,"61","D","ORL","Edmonds","passes.b.c","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+848,"61","D","ORL","Hickmann Alves","passes.f","DML","AMC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+849,"61","M","CRS","DiBernardo","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+850,"61","M","CRS","DiBernardo","passes.f.c","DMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+851,"61","M","CRS","Da Costa","passes.b.c","AMC","AMC",NA,"D","ORL","Evans","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+852,"61","M","CRS","DiBernardo","passes.f.c","AMC","AMC",NA,"D","ORL","Edmonds",NA,"DMC",NA,NA,NA,NA,"fouls.conceded",NA,NA,NA,NA
+853,"62","M","CRS","Colaprico","passes.s.c","AMC","AMR","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+854,"62","M","CRS","Mautz","passes.s.c","AMR","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+855,"62","M","CRS","DiBernardo","passes.s.c","AMC","AMC",NA,"M","ORL","Sanderson","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+856,"62","M","CRS","Colaprico","lost.touch","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+857,"62","D","ORL","Edmonds","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+858,"62","D","ORL","Edmonds","passes.f.c","DMC","AC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+859,"62","M","ORL","Morgan","take.on.won","AC",NA,NA,"D","CRS","Naughton","dribbled.tackles.missed","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+860,"62","M","ORL","Morgan","passes.f.c","AC","A18",NA,"D","CRS","Johnson","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+861,"62","F","ORL","Hagen","passes.s.c","A18","A18",NA,"D","CRS","Gilliland","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+862,"62","M","ORL","Morgan","lost.touch","A18",NA,NA,"D","CRS","Johnson","challenged","D18",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+863,"62","GK","CRS","Naeher","passes.f.c","D6","DC","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+864,"62","M","CRS","Colaprico","passes.f","DC","DC",NA,"D","ORL","Evans","blocks","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+865,"62","M","CRS","DiBernardo","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+866,"62","M","CRS","DiBernardo","passes.b.c","DC","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+867,"62","M","CRS","Colaprico","passes.f","DC","DR",NA,"M","ORL","Sanderson","pressured","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+867,"62",NA,NA,NA,NA,NA,NA,NA,"F","ORL","Hagen","pressured","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+867,"62",NA,NA,NA,NA,NA,NA,NA,"F","ORL","Belanger","interceptions","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+868,"62","F","ORL","Belanger","dispossessed","AC",NA,NA,"D","CRS","Short","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+868,"62",NA,NA,NA,NA,NA,NA,NA,"M","CRS","DiBernardo","tackles.ball","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+869,"62","F","ORL","Hagen","recoveries","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+870,"63","F","ORL","Hagen","take.on.won","AC",NA,NA,"M","CRS","DiBernardo","dribbled.tackles.missed","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+871,"63","F","ORL","Hagen","take.on.lost","AC",NA,NA,"M","CRS","Colaprico","tackles.ball","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+872,"63","D","CRS","Short","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+873,"63","D","CRS","Short","passes.f.c","DC","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+874,"63","M","CRS","DiBernardo","passes.f","DC","DMR",NA,"F","ORL","Belanger","pressured","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+874,"63",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Alleway","interceptions","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+875,"63","M","ORL","Alleway","passes.f.c","AMR","AR",NA,"M","CRS","Da Costa","challenged","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+876,"63","D","ORL","Evans","passes.f.c","AR","AR",NA,"D","CRS","Short","challenged","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+877,"63","M","ORL","Sanderson","passes.s.c","AR","AR","corner.crosses","D","CRS","Johnson","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+877,"63",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Gilliland","clearances","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
+877,"63",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Johnson","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+877,"63",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Short","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+878,"63","F","ORL","Belanger","recoveries","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+879,"63","F","ORL","Belanger","passes.s.c","AR","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+880,"63","D","ORL","Edmonds","passes.f","AC","A18","headed","M","CRS","Mautz","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+881,"63","GK","CRS","Naeher","recoveries","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+882,"63","GK","CRS","Naeher","passes.f","D18","AMC","gk.drop.kick","D","ORL","Hickmann Alves","clearances","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+882,"63",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+883,"63","F","ORL","Belanger","recoveries","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+884,"63","F","ORL","Belanger","passes.s.c","DMR","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+885,"63","M","ORL","Kyle","passes.s.c","DMC","DMR",NA,"M","CRS","Da Costa","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+886,"63","F","ORL","Belanger","passes.f.c","DMR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+887,"63","D","ORL","Evans","passes.b.c","DMR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+888,"63","F","ORL","Belanger","passes.f.c","DMR","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+889,"63","D","ORL","Evans","passes.f.c","AMR","AR","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+890,"63","F","ORL","Hagen","passes.s.c","AR","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+891,"63","M","ORL","Morgan","shots.blocked","A18",NA,NA,"D","CRS","Gilliland","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+892,"64","GK","CRS","Naeher","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+893,"64","GK","CRS","Naeher","passes.f.c","D18","DMC","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+894,"64","M","CRS","Colaprico","passes.f","DMC","DMC",NA,"D","ORL","Edmonds","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+894,"64",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Catley","blocks","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+895,"64","M","ORL","Kyle","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+896,"64","M","ORL","Kyle","passes.f.c","AMC","AC","through","M","CRS","Colaprico","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+897,"64","D","ORL","Edmonds","dispossessed","AC",NA,NA,"M","CRS","Colaprico","tackles.ball","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+898,"64","M","CRS","Da Costa","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+899,"64","M","CRS","Da Costa","passes.b.c","DC","DC",NA,"D","ORL","Edmonds","challenged","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+900,"64","M","CRS","DiBernardo","passes.f.c","DC","AMC",NA,"D","ORL","Edmonds","pressured","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+901,"64","F","CRS","Huerta","ball.shield","AMC",NA,NA,"F","ORL","Belanger","challenged","DMC",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+902,"64","D","ORL","Evans","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+903,"64","D","ORL","Witteman","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+904,"64","M","CRS","Colaprico","passes.f.c","AMC","A18","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,"assists",NA,NA,NA,NA,NA
+904,"64",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+904,"64",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"big.chances.created",NA,NA,NA,NA,NA
+905,"64","M","CRS","Press","shots.scored","A18",NA,NA,"GK","ORL","Harris","gk.s.o.g.scored","D6","missed.the.ball","diving",NA,"big.chances.scored",NA,NA,NA,NA,NA
+905,"65",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+906,"65","D","ORL","Witteman","ball.shield","AMR",NA,NA,"M","CRS","Press","challenged","DML",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+907,"65","M","ORL","Alleway","passes.f","AMR",NA,"free.kick","M","CRS","Mautz","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+907,"65",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+907,"65",NA,NA,NA,NA,NA,NA,NA,"F","CRS","Huerta","clearances","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+908,"66","M","ORL","Kyle","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+909,"66","M","ORL","Kyle","passes.b.c","DML","DML",NA,"F","CRS","Huerta","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+910,"66","D","ORL","Hickmann Alves","passes.b.c","DML","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+911,"66","M","ORL","Alleway","passes.s.c","DC","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+912,"66","D","ORL","Hickmann Alves","passes.f.c","DR","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+913,"66","M","ORL","Kyle","lost.touch","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+914,"66","M","ORL","Morgan","recoveries","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+915,"66","M","ORL","Morgan","passes.b.c","AML","DML",NA,"D","CRS","Naughton","challenged","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+916,"66","D","ORL","Catley","passes.f.c","DML","AC","launch","M","CRS","Mautz","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+917,"66","F","ORL","Hagen","shots.missed","AC",NA,NA,"GK","CRS","Naeher","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+917,"66",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Johnson","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+918,"66","GK","CRS","Naeher","passes.f","D6","DMC","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+918,"66",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+919,"66","M","CRS","Da Costa","aerial.lost","DMC",NA,NA,"M","ORL","Kyle","aerial.won","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+920,"66","M","CRS","DiBernardo","aerial.won","DMC",NA,NA,"M","ORL","Sanderson","aerial.lost","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+920,"66",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Catley",NA,"DML",NA,NA,NA,NA,"fouls.conceded",NA,NA,NA,NA
+921,"67","D","CRS","Naughton","passes.f.c","DMR","AMR","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+922,"67","M","CRS","Mautz","take.on.lost","AMR",NA,NA,"D","ORL","Catley","ball.shield","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+923,"67","D","ORL","Catley","recoveries","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+924,"67","D","ORL","Catley","passes.f.c","DL","DL",NA,"M","CRS","Mautz","challenged","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+925,"67","D","ORL","Edmonds","passes.b.c","DL","DL",NA,"M","CRS","Da Costa","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+926,"67","D","ORL","Hickmann Alves","passes.f.c","DL","DMC","launch","F","CRS","Huerta","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+927,"67","M","ORL","Morgan","passes.b","DMC","DMC","headed","M","CRS","DiBernardo","interceptions","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+928,"67","M","CRS","DiBernardo","passes.f","AMC","AR","launch","M","ORL","Sanderson","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+929,"67","M","CRS","Press","offside.calls","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+930,"67","GK","ORL","Harris","passes.s.c","DL","DL","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+931,"67","D","ORL","Hickmann Alves","movement","DL","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+932,"67","D","ORL","Hickmann Alves","passes.s.c","DML","DR","switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+933,"67","F","ORL","Belanger","passes.f.c","DR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+934,"67","D","ORL","Witteman","passes.f","DMR","AMR","launch","F","CRS","Huerta","pressured","AML",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+935,"68","D","CRS","Short","passes.f.c","DML","DML","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+936,"68","F","CRS","Huerta","passes.b.c","DML","DML",NA,"D","ORL","Witteman","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+937,"68","D","CRS","Short","passes.f.c","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+938,"68","M","CRS","DiBernardo","passes.f.c","DML","DML",NA,"D","ORL","Edmonds","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+939,"68","F","CRS","Huerta","lost.touch","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+940,"68","D","ORL","Witteman","passes.f.c","AMR","AMR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+941,"68","M","ORL","Sanderson","ball.shield","AMR",NA,NA,"M","CRS","Colaprico","challenged","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+941,"68",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+942,"68","GK","ORL","Harris","passes.f.c","DC","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+943,"68","D","ORL","Hickmann Alves","passes.f.c","DC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+944,"68","D","ORL","Catley","passes.b.c","DML","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+945,"68","D","ORL","Hickmann Alves","movement","DL","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+946,"68","D","ORL","Hickmann Alves","passes.f","DML","AC","launch","D","CRS","Johnson","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+947,"68","D","ORL","Edmonds","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+948,"68","D","ORL","Edmonds","take.on.won","AMC",NA,NA,"M","CRS","DiBernardo","dribbled.tackles.missed","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+949,"68","D","ORL","Edmonds","take.on.lost","AMC",NA,NA,"M","CRS","Colaprico","tackles.ball","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+950,"68","D","CRS","Gilliland","recoveries","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+951,"68","D","CRS","Gilliland","passes.s.c","DR","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+952,"68","M","CRS","Colaprico","passes.s.c","DC","DR",NA,"M","ORL","Morgan","pressured","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+953,"68","D","CRS","Gilliland","passes.f","DR","DR",NA,"D","ORL","Edmonds","interceptions","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+954,"68","D","ORL","Edmonds","passes.b","AL","AL",NA,"M","CRS","DiBernardo","blocks","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+955,"68","D","ORL","Catley","recoveries","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+956,"68","D","ORL","Catley","take.on.won","AL",NA,NA,"M","CRS","Colaprico","dribbled.tackles.missed","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+957,"68","D","ORL","Catley","movement","AL","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+958,"68","D","ORL","Catley","lost.touch","AC",NA,NA,"D","CRS","Johnson","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+958,"68",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+959,"69","M","CRS","Da Costa","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+960,"69","M","CRS","Da Costa","passes.b.c","DMC","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+961,"69","D","CRS","Johnson","passes.b.c","DL","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+962,"69","GK","CRS","Naeher","passes.f","D18","DL","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+963,"69","D","CRS","Short","aerial.lost","DL",NA,NA,"D","ORL","Witteman","aerial.won","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+964,"69","M","CRS","Colaprico","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+965,"69","M","CRS","Colaprico","clearances","DC","DML",NA,"M","ORL","Alleway","clearances","AMR",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+966,"69","D","CRS","Short","passes.s.c","DML","DML","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+967,"69","M","CRS","Da Costa","passes.s.c","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+968,"69","D","CRS","Short","passes.f","DML","AL","launch","M","ORL","Kyle","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+969,"69","D","ORL","Hickmann Alves","recoveries","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+970,"69","D","ORL","Hickmann Alves","passes.b.c","DR","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+971,"69","GK","ORL","Harris","passes.f","D18","DMC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+972,"69","M","CRS","DiBernardo","lost.touch","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+973,"69","M","CRS","Da Costa","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+974,"69","M","CRS","Da Costa","passes.b.c","AMC","AML",NA,"M","ORL","Sanderson","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+975,"69","D","CRS","Short","passes.f.c","AML","AL","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+976,"69","M","CRS","Press","passes.b.c","AL","AML",NA,"M","ORL","Alleway","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+977,"70","D","CRS","Short","passes.s.c","AML","AL",NA,"D","ORL","Witteman","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+978,"70","M","CRS","DiBernardo","take.on.won","AL",NA,NA,"M","ORL","Kyle","dribbled.tackles.missed","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+979,"70","M","CRS","DiBernardo","passes.s.c","AL","AL",NA,"D","ORL","Witteman","challenged","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+980,"70","M","CRS","Press","passes.s.c","AL","AR","switch","D","ORL","Witteman","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+981,"70","D","CRS","Gilliland","take.on.won","AR",NA,NA,"D","ORL","Edmonds","dribbled.turned","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+982,"70","D","CRS","Gilliland","movement","AR","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+983,"70","D","CRS","Gilliland","shots.stopped.by.gk","AC",NA,NA,"GK","ORL","Harris","gk.s.o.g.stop","D6","collected","stooping",NA,NA,NA,NA,NA,NA,NA
+984,"70","GK","ORL","Harris","passes.f.c","D18","DC","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+985,"70","D","ORL","Hickmann Alves","passes.s.c","DC","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+986,"70","M","ORL","Kyle","passes.f.c","DC","DMR","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+987,"70","D","ORL","Witteman","passes.f","DMR","AMR","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+987,"70",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+988,"70","D","CRS","Short","recoveries","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+989,"70","D","CRS","Short","passes.b.c","DML","DL",NA,"D","ORL","Witteman","challenged","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+990,"70","D","CRS","Johnson","passes.f","DL","DML",NA,"F","ORL","Hagen","blocks","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+991,"70","D","CRS","Johnson","recoveries","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+992,"70","D","CRS","Johnson","passes.f","DL","DML",NA,"M","ORL","Sanderson","blocks","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+993,"70","F","CRS","Huerta","recoveries","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+994,"70","F","CRS","Huerta","passes.b.c","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+995,"70","M","CRS","Colaprico","passes.f","DML","DMC",NA,"M","ORL","Morgan","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+996,"70","D","ORL","Catley","recoveries","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+997,"70","D","ORL","Catley","passes.s.c","AML","AML",NA,"M","CRS","Mautz","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+998,"70","D","ORL","Edmonds","passes.f.c","AML","AL","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+999,"71","D","ORL","Catley","passes.s.c","AL","A18","corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1000,"71","M","ORL","Morgan","aerial.won","A18",NA,NA,"D","CRS","Johnson","aerial.lost","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1001,"71","F","ORL","Hagen","lost.touch","A18",NA,NA,"D","CRS","Naughton","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1002,"71","M","ORL","Morgan","recoveries","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1003,"71","M","ORL","Morgan","take.on.lost","A18",NA,NA,"D","CRS","Johnson","tackles.ball","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1003,"71",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Mautz","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1004,"71","D","ORL","Hickmann Alves","recoveries","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1005,"71","D","ORL","Hickmann Alves","passes.f.c","AML","AML",NA,"M","CRS","Press","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1006,"71","D","ORL","Edmonds","passes.b.c","AML","AMC",NA,"M","CRS","Da Costa","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1007,"71","M","ORL","Kyle","passes.b.c","AMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1008,"71","M","ORL","Alleway","passes.s.c","AMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1009,"71","M","ORL","Kyle","dispossessed","AMC",NA,NA,"M","CRS","Press","tackles.ball","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1010,"71","M","CRS","Press","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1011,"71","M","CRS","Press","passes.s.c","DMC","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1012,"71","M","CRS","Mautz","passes.b.c","DMR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1013,"71","D","CRS","Gilliland","passes.f.c","DMR","AC","launch","D","ORL","Edmonds","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1014,"71","M","CRS","Press","dispossessed","AC",NA,NA,"M","ORL","Alleway","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1015,"71","D","ORL","Hickmann Alves","recoveries","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1016,"71","D","ORL","Hickmann Alves","passes.f","DL","AML","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1017,"72","M","ORL","Morgan","aerial.lost","AML",NA,NA,"D","CRS","Gilliland","aerial.lost","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1018,"72","D","CRS","Naughton","recoveries","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1019,"72","GK","CRS","Naeher","passes.f.c","DMR","AMR","launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1020,"72","M","CRS","Mautz","lost.touch","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1021,"72","D","ORL","Catley","passes.b.c","DML","DL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1022,"72","D","ORL","Hickmann Alves","passes.s.c","DL","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1023,"72","GK","ORL","Harris","passes.f.c","D18","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1024,"72","F","ORL","Belanger","passes.s.c","DR","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1025,"72","M","ORL","Alleway","passes.s.c","DR","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1026,"72","D","ORL","Hickmann Alves","movement","DC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1027,"72","D","ORL","Hickmann Alves","passes.f.c","DML","AMC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1028,"72","M","ORL","Sanderson","passes.b.c","AMC","AMC",NA,"D","CRS","Johnson","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1029,"72","F","ORL","Hagen","passes.f.c","AMC","AR",NA,"M","CRS","DiBernardo","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1030,"72","D","ORL","Witteman","take.on.won","AR",NA,NA,"F","CRS","Huerta","dribbled.turned","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1031,"72","D","ORL","Witteman","passes.f","AR","A18",NA,"D","CRS","Short","blocks","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1032,"72","M","CRS","DiBernardo","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1033,"72","M","CRS","DiBernardo","dispossessed","DMC",NA,NA,"M","ORL","Kyle","tackles.ball","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1034,"72","M","ORL","Alleway","recoveries","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1035,"72","M","ORL","Alleway","passes.f","AMR","AC","launch","D","CRS","Naughton","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1036,"72","D","ORL","Witteman","clearances","AMR",NA,NA,"M","CRS","DiBernardo","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1037,"73","D","CRS","Short","recoveries","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1038,"73","D","CRS","Short","passes.f.c","DL","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1039,"73","M","CRS","Press","lost.touch","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1040,"73","D","ORL","Hickmann Alves","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1041,"73","D","ORL","Hickmann Alves","passes.f.c","DMC","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1042,"73","D","ORL","Catley","passes.f","AML","AC","launch","D","CRS","Naughton","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1042,"73",NA,NA,NA,NA,NA,NA,NA,"M","CRS","DiBernardo","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1043,"73","M","CRS","Mautz","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1044,"73","M","CRS","Mautz","passes.f.c","DMC","DMC",NA,"D","ORL","Catley","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1045,"73","M","CRS","Press","passes.s.c","DMC","DMC","lay.off","D","ORL","Hickmann Alves","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1046,"73","M","CRS","Da Costa","passes.f","DMC","AML",NA,"M","ORL","Kyle","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1047,"73","F","ORL","Hagen","substitution.off",NA,NA,NA,"F","ORL","Belanger","clearances","DMR",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1048,"73","M","ORL","Spencer","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1049,"73","D","CRS","Short","passes.b.c","AML","AML","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1050,"73","M","CRS","Press","passes.b.c","AML","AMC",NA,"M","ORL","Sanderson","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1051,"74","M","CRS","Colaprico","passes.f.c","AMC","AMC",NA,"M","ORL","Spencer","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1052,"74","M","CRS","Mautz","passes.s","AMC","AMC",NA,"D","ORL","Catley","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1052,"74",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Edmonds","interceptions","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1053,"74","D","ORL","Edmonds","passes.b.c","DMC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1054,"74","D","ORL","Hickmann Alves","passes.f.c","DMC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1055,"74","D","ORL","Edmonds","passes.b.c","DMC","DMC",NA,"M","CRS","Da Costa","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1056,"74","D","ORL","Hickmann Alves","passes.f.c","DMC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1057,"74","M","ORL","Kyle","passes.b.c","DMC","DC",NA,"M","CRS","Press","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1058,"74","M","ORL","Alleway","passes.s.c","DC","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1059,"74","F","ORL","Belanger","passes.f.c","DR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1060,"74","D","ORL","Witteman","dispossessed","DMR",NA,NA,"F","CRS","Huerta","dispossessed","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1061,"74","F","CRS","Huerta","ball.shield","AML",NA,NA,"D","ORL","Witteman","challenged","DMR",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+1062,"74","D","CRS","Short","passes.f","AML","AC","free.kick","M","ORL","Alleway","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1062,"74",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1063,"74","F","CRS","Huerta","recoveries","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1064,"74","F","CRS","Huerta","passes.s.c","AL","AL",NA,"M","ORL","Sanderson","challenged","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1065,"75","D","CRS","Short","take.on.won","AL",NA,NA,"D","ORL","Witteman","dribbled.out.run","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1066,"75","D","CRS","Short","passes.s","AL","A18","corner.crosses","D","ORL","Witteman","blocks","DR",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1067,"75","M","CRS","Colaprico","passes.s","AL","A6","corner.kick","GK","ORL","Harris","gk.high.balls.won","D6","caught","standing",NA,NA,NA,NA,NA,NA,NA
+1068,"75","GK","ORL","Harris","passes.f.c","D18","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1069,"75","M","ORL","Alleway","passes.f.c","DC","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1070,"75","M","ORL","Kyle","passes.f.c","DC","AML","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1071,"75","D","ORL","Catley","passes.f.c","AML","AL",NA,"D","CRS","Gilliland","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1072,"76","M","ORL","Morgan","dispossessed","AL",NA,NA,"D","CRS","Naughton","tackles.ball","DR",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1073,"76","D","ORL","Catley","passes.f.c","AL","AL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1074,"76","M","ORL","Morgan","lost.touch","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1075,"76","GK","CRS","Naeher","passes.f","D6","DMC","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1075,"76",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1076,"76","M","CRS","Mautz","aerial.lost","DMC",NA,NA,"M","ORL","Kyle","aerial.won","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1077,"76","D","ORL","Witteman","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1078,"76","D","ORL","Witteman","passes.b.c","DMC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1079,"76","D","ORL","Hickmann Alves","passes.s.c","DMC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1080,"76","D","ORL","Catley","passes.b.c","DML","DML",NA,"M","CRS","Mautz","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1081,"76","D","ORL","Hickmann Alves","passes.f.c","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1082,"76","D","ORL","Edmonds","passes.s.c","DML","AML",NA,"M","CRS","Press","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1083,"77","D","ORL","Hickmann Alves","passes.f.c","AML","AL","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1084,"77","M","ORL","Spencer","movement","AL","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1085,"77","M","ORL","Spencer","take.on.won","A18",NA,NA,"D","CRS","Johnson","dribbled.turned","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1086,"77","M","ORL","Spencer","shots.missed","A18",NA,NA,"GK","CRS","Naeher","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1086,"77",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Gilliland","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1087,"77","GK","CRS","Naeher","passes.f","D6","DMR","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1087,"77",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1088,"77","M","CRS","Da Costa","aerial.lost","DMR",NA,NA,"D","ORL","Catley","aerial.won","AML",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1089,"77","M","CRS","Mautz","passes.s.c","DMR","DMR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1090,"77","M","CRS","Colaprico","passes.s","DMR","DMR",NA,"M","ORL","Sanderson","pressured","AML",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1091,"77","D","ORL","Catley","passes.s.c","AML","AL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1091,"78",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1092,"78","M","ORL","Spencer","passes.s.c","AL","AL",NA,"M","CRS","Colaprico","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1093,"78","M","ORL","Sanderson","passes.f.c","AL","AL","through","M","CRS","Mautz","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1094,"78","D","ORL","Catley","passes.s","AL","A18","corner.crosses","D","CRS","Gilliland","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1094,"78",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Naughton","interceptions","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1095,"78","D","CRS","Naughton","passes.f.c","D18","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1096,"78","M","CRS","Mautz","passes.f.c","DR","DR",NA,"M","ORL","Sanderson","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1097,"78","M","CRS","Press","passes.f","DR","DMR",NA,"D","ORL","Hickmann Alves","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1097,"78",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Alleway","interceptions","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1098,"78","M","ORL","Alleway","passes.s.c","AML","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1099,"78","M","ORL","Kyle","lost.touch","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1100,"78","M","CRS","Mautz","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1101,"78","M","CRS","Mautz","passes.f.c","AMC","AML",NA,"M","ORL","Kyle","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1101,"78",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Edmonds","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1102,"78","M","CRS","Da Costa","passes.f.c","AML","A18","through","D","ORL","Edmonds","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1103,"78","F","CRS","Huerta","take.on.won","A18",NA,NA,"F","ORL","Belanger","dribbled.turned","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1104,"78","F","CRS","Huerta","shots.blocked","A18",NA,NA,"M","ORL","Kyle","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1104,"78",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Kyle","clearances","D18",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1105,"79","D","CRS","Short","passes.s.c","AL","AL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1106,"79","F","CRS","Huerta","passes.s.c","AL","AL",NA,"D","ORL","Witteman","challenged","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1107,"79","D","CRS","Short","take.on.won","AL",NA,NA,"D","ORL","Witteman","dribbled.tackles.missed","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1108,"79","D","CRS","Short","passes.s","AL","A18","corner.crosses","F","ORL","Belanger","blocks","DL",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1109,"79","M","CRS","Colaprico","passes.s.c","AL","A6","corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1110,"79","D","CRS","Short","shots.stopped.by.gk","A6",NA,NA,"GK","ORL","Harris","gk.s.o.g.stop","D6","parried.to.danger","diving",NA,NA,NA,NA,NA,NA,NA
+1111,"79","F","CRS","Huerta","recoveries","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1112,"79","F","CRS","Huerta","passes.b.c","A18","AC",NA,"D","ORL","Hickmann Alves","challenged","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1112,"79",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Spencer","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1113,"79","D","CRS","Naughton","recoveries","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1114,"79","D","CRS","Naughton","passes.b.c","AC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1115,"79","M","CRS","Press","passes.f","AMC","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1116,"79","M","CRS","DiBernardo","aerial.lost","A18",NA,NA,"M","ORL","Alleway","aerial.won","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1116,"79",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Witteman","clearances","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1117,"79","M","CRS","Colaprico","recoveries","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1118,"79","M","CRS","Colaprico","passes.b.c","AL","AL",NA,"D","ORL","Witteman","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1119,"79","M","CRS","Press","passes.f.c","AL","AL",NA,"D","ORL","Witteman","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1120,"80","F","CRS","Huerta","passes.b.c","AL","AL",NA,"F","ORL","Belanger","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1121,"80","M","CRS","Press","passes.b.c","AL","AML",NA,"M","ORL","Sanderson","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1122,"80","D","CRS","Johnson","passes.f.c","AML","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1123,"80","D","CRS","Short","passes.f.c","AML","AL",NA,"M","ORL","Sanderson","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1124,"80","M","CRS","DiBernardo","passes.s.c","AL","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1125,"80","F","CRS","Huerta","passes.b.c","AML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1126,"80","D","CRS","Johnson","passes.b.c","DML","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1127,"80","GK","CRS","Naeher","passes.f","DC","AC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1128,"80","GK","ORL","Harris","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1129,"80","GK","ORL","Harris","passes.s.c","DC","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1130,"80","D","ORL","Hickmann Alves","passes.f.c","DC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1130,"80",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1131,"80","D","ORL","Hickmann Alves","passes.f.c","DMC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1132,"80","D","ORL","Catley","passes.b.c","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1133,"81","D","ORL","Hickmann Alves","passes.s.c","DML","DMR","switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1134,"81","F","ORL","Belanger","passes.f","DMR","AMC","launch","D","CRS","Gilliland","interceptions","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1135,"81","D","CRS","Gilliland","movement","DMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1136,"81","D","CRS","Gilliland","movement","AMC","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1137,"81","D","CRS","Gilliland","passes.s.c","AR","AR",NA,"D","ORL","Catley","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1138,"81","M","CRS","Press","passes.b.c","AR","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1139,"81","M","CRS","Mautz","passes.s.c","AMR","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1140,"81","M","CRS","Colaprico","passes.f.c","AMR","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1141,"81","M","CRS","Da Costa","passes.b.c","AC","AMC",NA,"D","ORL","Edmonds","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1142,"81","M","CRS","Colaprico","passes.s.c","AMC","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1143,"81","M","CRS","Press","passes.f.c","AMR","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1144,"81","M","CRS","Da Costa","passes.s.c","AR","AMC",NA,"D","ORL","Hickmann Alves","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1145,"81","M","CRS","DiBernardo","passes.s.c","AMC","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1146,"81","D","CRS","Short","passes.f.c","AML","AC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1147,"81","M","CRS","Press","ball.shield","AC",NA,NA,"D","ORL","Catley","challenged","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1148,"81","M","CRS","Press","passes.s.c","AC","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1149,"81","D","CRS","Gilliland","passes.f.c","AMR","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1150,"81","M","CRS","Mautz","passes.s.c","AR","AR",NA,"D","ORL","Hickmann Alves","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1151,"81","M","CRS","Da Costa","passes.b.c","AR","AR",NA,"D","ORL","Catley","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1152,"81","M","CRS","Press","passes.f","AR","AR",NA,"M","ORL","Spencer","pressured","DL",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1153,"82","M","ORL","Sanderson","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1154,"82","M","ORL","Edwards","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1155,"82","D","ORL","Catley","passes.f.c","DL","DML","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1156,"82","M","ORL","Morgan","passes.b.c","DML","DL",NA,"M","CRS","Mautz","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1156,"82",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Gilliland","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1157,"82","D","ORL","Edmonds","passes.f","DL","AML","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1158,"82","M","ORL","Spencer","aerial.lost","AML",NA,NA,"D","CRS","Naughton","aerial.won","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1159,"82","M","ORL","Edwards","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1160,"82","M","ORL","Edwards","passes.f","DMC","AML","through",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1161,"82","M","CRS","Mautz","passes.s.c","DMR","DMR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1162,"82","M","CRS","Colaprico","passes.b.c","DMR","DC",NA,"D","ORL","Witteman","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1163,"82","D","CRS","Johnson","passes.f","DC","AMC",NA,"M","ORL","Alleway","clearances","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1164,"83","M","ORL","Kyle","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1165,"83","M","ORL","Kyle","passes.b.c","DMC","DMC",NA,"M","CRS","Da Costa","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1166,"83","M","ORL","Alleway","passes.f","DMC","AC","launch","D","CRS","Gilliland","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1167,"83","D","ORL","Hickmann Alves","aerial.won","DMC",NA,NA,"M","CRS","Press","aerial.lost","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1168,"83","M","ORL","Kyle","aerial.won","AMC",NA,NA,"M","CRS","Da Costa","aerial.lost","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1169,"83","D","ORL","Witteman","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1170,"83","D","ORL","Witteman","passes.f.c","AMC","AMC",NA,"M","CRS","Da Costa","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1170,"83",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Naughton","blocks","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1171,"83","D","ORL","Witteman","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1172,"83","D","ORL","Witteman","passes.s.c","AMC","AMC",NA,"M","CRS","Da Costa","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1173,"83","M","ORL","Edwards","passes.b.c","AMC","AMC",NA,"M","CRS","DiBernardo","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1174,"83","M","ORL","Kyle","passes.f.c","AMC","AC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1175,"83","M","ORL","Morgan","aerial.won","AC",NA,NA,"D","CRS","Gilliland","aerial.lost","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1176,"83","M","ORL","Morgan","passes.s.c","AC","AL","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1176,"83",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1177,"83","M","ORL","Spencer","passes.b.c","AL","AL",NA,"M","CRS","Mautz","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1178,"83","M","ORL","Spencer","recoveries","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1179,"83","M","ORL","Spencer","passes.b.c","AL","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1180,"83","M","ORL","Kyle","passes.f","AML","AL",NA,"M","CRS","Da Costa","blocks","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1181,"83","M","CRS","Mautz","recoveries","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1182,"83","M","CRS","Mautz","passes.b.c","DR","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1183,"83","D","CRS","Gilliland","passes.f","DR","DR",NA,"D","ORL","Catley","blocks","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1184,"83","D","CRS","Gilliland","ball.shield","DR",NA,NA,"D","ORL","Catley","challenged","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1185,"83","D","CRS","Gilliland","clearances","DR",NA,NA,"D","ORL","Catley","blocks","AL",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1185,"84",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1186,"84","D","ORL","Catley","passes.f.c","AL","AL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1187,"84","D","ORL","Witteman","passes.b.c","AL","AML",NA,"M","CRS","Colaprico","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1188,"84","D","ORL","Hickmann Alves","passes.s.c","AML","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1189,"84","M","ORL","Alleway","passes.f.c","AMC","AMC",NA,"M","CRS","Press","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1190,"84","M","ORL","Kyle","lost.touch","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1191,"84","M","CRS","Mautz","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1192,"84","M","CRS","Mautz","passes.f.c","DMC","AC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1193,"84","M","CRS","Press","passes.s.c","AC","AC","lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1194,"84","F","CRS","Huerta","movement","AC","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1195,"84","F","CRS","Huerta","take.on.lost","A18",NA,NA,"M","ORL","Alleway","tackles.ball","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1196,"84","GK","ORL","Harris","recoveries","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1197,"84","GK","ORL","Harris","passes.s.c","D18","D18","dkt",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1198,"84","D","ORL","Hickmann Alves","movement","D18","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1199,"84","D","ORL","Hickmann Alves","passes.f.c","DC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1200,"84","D","ORL","Witteman","passes.b.c","DML","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1200,"84",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1201,"85","M","ORL","Alleway","passes.s.c","DMC","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1202,"85","F","ORL","Belanger","passes.f.c","DMR","AMC",NA,"F","CRS","Huerta","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1203,"85","M","ORL","Edwards","passes.b","AMC","AMR",NA,"F","CRS","Huerta","blocks","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1204,"85","M","CRS","DiBernardo","recoveries","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1205,"85","M","CRS","DiBernardo","passes.f","DML","AMC","launch","F","ORL","Belanger","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1206,"85","D","ORL","Hickmann Alves","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1207,"85","D","ORL","Hickmann Alves","passes.s.c","DMC","DML",NA,"M","CRS","Press","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1208,"85","D","ORL","Catley","passes.f.c","DML","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1209,"85","M","ORL","Spencer","take.on.lost","AML",NA,NA,"D","CRS","Gilliland","tackles.ball","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1210,"85","M","ORL","Spencer","recoveries","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1211,"85","M","ORL","Spencer","passes.f","AML","AL","through","M","CRS","Mautz","pressured","DMR",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1212,"86","GK","CRS","Naeher","passes.f","D6","DMC","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1212,"86",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1213,"86","F","CRS","Huerta","aerial.lost","DMC",NA,NA,"M","ORL","Edwards","aerial.won","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1214,"86","D","ORL","Edmonds","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1215,"86","D","ORL","Edmonds","passes.s.c","AMC","AMC","headed","M","CRS","DiBernardo","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1216,"86","F","ORL","Belanger","passes.s.c","AMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1217,"86","M","ORL","Kyle","passes.f.c","AMC","AMC",NA,"M","CRS","Da Costa","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1218,"86","M","ORL","Edwards","lost.touch","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1219,"86","M","CRS","Colaprico","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1220,"86","M","CRS","Colaprico","passes.b.c","DMC","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1221,"86","D","CRS","Short","clearances","DL","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1222,"86","M","ORL","Alleway","recoveries","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1223,"86","M","ORL","Alleway","passes.f.c","AMR","AR",NA,"M","CRS","Press","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1224,"86","D","ORL","Edmonds","passes.s","AR","AR",NA,"F","CRS","Huerta","blocks","DL",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1225,"86","D","ORL","Edmonds","passes.s.c","AR","A18","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1226,"86","M","ORL","Morgan","take.on.won","A18",NA,NA,"M","CRS","DiBernardo","dribbled.turned","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1227,"86","M","ORL","Morgan","passes.s","A18","A18","corner.crosses","D","CRS","Johnson","blocks","D18",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1228,"87","D","ORL","Catley","passes.s","AR","A18","corner.kick","D","CRS","Naughton","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1228,"87",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Press","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1229,"87","GK","ORL","Harris","recoveries","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1230,"87","GK","ORL","Harris","clearances","DMR","AMR",NA,"M","CRS","Press","pressured","AMR",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1231,"87","D","CRS","Short","passes.b.c","AML","DML","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1232,"87","D","CRS","Johnson","passes.b.c","DML","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1233,"87","GK","CRS","Naeher","passes.f","DC","AML","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1234,"88","M","ORL","Alleway","recoveries","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1235,"88","M","ORL","Alleway","passes.s.c","DMR","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1236,"88","D","ORL","Hickmann Alves","passes.f.c","DMC","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1237,"88","D","ORL","Catley","passes.f.c","AML","AL",NA,"M","CRS","Mautz","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1238,"88","D","ORL","Edmonds","passes.f","AL","AL",NA,"M","CRS","Mautz","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1238,"88",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Gilliland","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1238,"88",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Colaprico","interceptions","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1239,"88","M","CRS","Colaprico","passes.f","DR","DR",NA,"D","ORL","Edmonds","blocks","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1240,"88","M","CRS","Mautz","recoveries","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1241,"88","M","CRS","Mautz","passes.b.c","DR","D18",NA,"D","ORL","Witteman","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1242,"88","D","CRS","Naughton","clearances","D18","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1243,"88","M","ORL","Alleway","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1244,"88","M","ORL","Alleway","passes.f.c","AMC","AL","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1245,"88","D","ORL","Edmonds","passes.b.c","AL","AL",NA,"D","CRS","Gilliland","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1246,"88","D","ORL","Catley","passes.s","AL","AC",NA,"M","CRS","DiBernardo","blocks","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1247,"88","M","ORL","Kyle","recoveries","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1248,"88","M","ORL","Kyle","passes.f.c","AC","AC",NA,"M","CRS","Press","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1249,"88","M","ORL","Edwards","dispossessed","AC",NA,NA,"M","CRS","DiBernardo","dispossessed","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1250,"88","M","CRS","DiBernardo","passes.b.c","DL","DL",NA,"M","ORL","Spencer","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1251,"88","D","CRS","Short","take.on.won","DL",NA,NA,"M","ORL","Spencer","dribbled.tackles.missed","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1252,"88","D","CRS","Short","clearances","DL","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1253,"88","D","ORL","Hickmann Alves","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1254,"89","D","ORL","Hickmann Alves","passes.f.c","AMC","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1255,"89","D","ORL","Edmonds","passes.f.c","AML","AL","through","M","CRS","Mautz","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1256,"89","D","ORL","Catley","passes.b.c","AL","AL",NA,"D","CRS","Gilliland","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1257,"89","D","ORL","Edmonds","passes.f","AL","A18","deep.crosses","D","CRS","Naughton","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1258,"89","M","ORL","Kyle","recoveries","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1259,"89","M","ORL","Kyle","passes.f.c","AC","A18","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1260,"89","M","ORL","Morgan","passes.b.c","A18","AL",NA,"D","CRS","Naughton","challenged","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1261,"89","D","ORL","Edmonds","passes.s","AL","A18",NA,"M","CRS","Colaprico","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1261,"89",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Colaprico","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1262,"89","D","ORL","Catley","recoveries","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1263,"89","D","ORL","Catley","passes.s","AL","AL",NA,"M","CRS","Press","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1263,"89",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Da Costa","interceptions","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1264,"89","M","CRS","Da Costa","take.on.won","DMC",NA,NA,"M","ORL","Kyle","dribbled.tackles.missed","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1265,"89","M","CRS","Da Costa","passes.f.c","DMC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1266,"89","F","CRS","Huerta","movement","DML","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1267,"89","F","CRS","Huerta","movement","AML","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1268,"89","F","CRS","Huerta","dispossessed","AL",NA,NA,"M","ORL","Edwards","tackles.ball","DR",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1269,"90","M","CRS","DiBernardo","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1270,"90","M","CRS","Comeau","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1271,"90","F","CRS","Huerta","passes.s.c","AL","AL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1272,"90","M","CRS","Press","passes.s","AL","A18","corner.crosses","M","ORL","Alleway","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1273,"90","D","ORL","Hickmann Alves","recoveries","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1274,"90","D","ORL","Hickmann Alves","movement","D18","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1275,"90","D","ORL","Hickmann Alves","passes.f","DR","DMR","launch","D","CRS","Short","blocks","AML",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1276,"90","D","ORL","Hickmann Alves","passes.f.c","DMR","DMR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1277,"90","M","ORL","Spencer","ball.shield","DMR",NA,NA,"F","CRS","Huerta","challenged","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1278,"90","M","ORL","Spencer","passes.b.c","DMR","DMR",NA,"F","CRS","Huerta","challenged","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1279,"90","D","ORL","Hickmann Alves","passes.f","DMR","AMC","launch","D","CRS","Naughton","clearances","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1280,"90","M","ORL","Edwards","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1281,"90","M","ORL","Edwards","passes.b.c","AMC","DMC",NA,"M","CRS","Comeau","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1282,"90+1","M","ORL","Alleway","passes.f.c","DMC","AMC",NA,"M","CRS","Press","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1283,"90+1","M","ORL","Kyle","passes.b.c","AMC","DMR",NA,"M","CRS","Da Costa","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1284,"90+1","D","ORL","Hickmann Alves","passes.f.c","DMR","AC","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1285,"90+1","M","ORL","Morgan","passes.f.c","AC","AC","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1285,"90+1",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1286,"90+1","D","ORL","Edmonds","passes.f","AC","A18","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1287,"90+1","M","ORL","Spencer","offside.calls","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1288,"90+1","GK","CRS","Naeher","passes.f","D18","AMC","launch","M","ORL","Alleway","clearances","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1289,"90+1","M","CRS","Comeau","aerial.won","AMC",NA,NA,"M","ORL","Kyle","aerial.lost","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1290,"90+1","D","ORL","Hickmann Alves","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1291,"90+1","D","ORL","Hickmann Alves","movement","DC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1292,"90+1","D","ORL","Hickmann Alves","passes.f.c","DML","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1293,"90+2","D","ORL","Edmonds","passes.s.c","AML","AMC",NA,"M","CRS","Da Costa","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1294,"90+2","M","ORL","Kyle","passes.f.c","AMC","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1295,"90+2","D","ORL","Catley","passes.b.c","AL","AL",NA,"M","CRS","Mautz","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1296,"90+2","D","ORL","Edmonds","passes.s","AL","A18","deep.crosses","GK","CRS","Naeher","gk.high.balls.won","D6","caught","reaching",NA,NA,NA,NA,NA,NA,NA
+1297,"90+2","GK","CRS","Naeher","passes.f","D18","AMC","gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1298,"90+2","M","ORL","Alleway","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1299,"90+2","M","ORL","Alleway","passes.f.c","DMC","AR","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1300,"90+2","M","ORL","Spencer","movement","AR","AC",NA,"M","CRS","Comeau",NA,NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+1301,"90+3","M","ORL","Alleway","shots.missed","AC",NA,"free.kick","GK","CRS","Naeher","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1302,"90+3","GK","CRS","Naeher","passes.f","D6","AMC","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1302,"90+3",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1302,"90+3",NA,NA,NA,"end.of.match",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
