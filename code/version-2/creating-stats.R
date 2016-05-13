@@ -9,6 +9,8 @@ d <- read.csv(textConnection(d), stringsAsFactors = FALSE)
 source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/functions.R")
 
 #MINUTES PLAYED & META DATA----------
+##Adds missing columns (if they're missing)
+if(!("xG" %in% colnames(d))) (d$xG <- NA)
 ## Gets data frame that binds data frames of every player who shows up in "poss.player" and "def.player" column
 players <- rbind(data.frame(Player=unique(d$poss.player), Team=NA, MP=NA,GS=NA),data.frame(Player=unique(d$def.player), Team=NA, MP=NA,GS=NA))
 players <- players[!is.na(players[,"Player"]),]
@@ -87,6 +89,12 @@ all <- merge(players, t, by="Player", all=TRUE)
 ## Calculate "per 90" stats
 all$`Shots per 90` <- (all$Shots/all$MP)*90
 rm(t, players)
+
+#EXPECTED GOALS (xG)----------
+t <- ddply(d[!is.na(d[,"xG"]),c("poss.player", "xG")], .(poss.player), summarise, xG=sum(xG))
+names(t) <- c("Player","xG")
+all <- merge(all, t, by=c("Player"), all=TRUE)
+rm(t)
 
 #SHOTS UNDER PRESSURE---------------
 t <- addMultiColumnsForQualifiers(patterns = c("pressured"="pressure", "challenged"="challenge"), 
@@ -587,6 +595,7 @@ rm(tackles)
 
 #RECOVERIES---------------
 t <- createDataFrame(c("recoveries"), "poss.action", d)
+t <- t[grep("recoveries",t[,"poss.action"]),]
 ##Create columns that will mark if an event is a defensive or possessing recovery
 t$def <- NA
 t$poss <- NA
@@ -637,7 +646,124 @@ all <- merge(all, t2, by=1, all=TRUE)
 rm(t2)
 all$`Int per 90` <- (all$Interceptions/all$MP)*90
 
-#ERRORS & BIG CHANCE STOPS
+#DISCIPLINARY---------
+#For disciplinary actions that show up the def.notes column
+t <- d[,c("event","time","def.position", "def.team", "def.player", "def.action",
+          "def.location", "gk.ball.stop", "gk.s.o.g.attempt", "poss.player.disciplinary", 
+          "poss.notes", "def.player.disciplinary", "def.notes" )]
+t <- addMultiColumnsForQualifiers(patterns=c("offside.calls"="offside.calls","fouls.won"="fouls.won", "fouls.conceded"="fouls.conceded","yellow.cards"="yellow.cards", 
+                                             "red.cards"="red.cards", "penalties.won"="penalties.won","penalties.conceded"="penalties.conceded"),
+                                  pattern_locations=c("def.action","def.player.disciplinary","def.player.disciplinary","def.player.disciplinary",
+                                                      "def.player.disciplinary","def.player.disciplinary","def.player.disciplinary"),
+                                  ogdf=d, ndf=t)
+names(t) <- c("event","time","position", "team", "poss.player", "def.action", 
+              "def.location", "gk.ball.stop", "gk.s.o.g.attempt", "poss.player.disciplinary", 
+              "poss.notes", "def.player.disciplinary", "def.notes", "offside.calls", "fouls.won",
+              "fouls.conceded",  "yellow.cards", "red.cards", "penalties.won", "penalties.conceded")
+t2 <- createTable(c("yes"),"offside.calls",t)
+names(t2) <- c("Player", "dOffsides")
+t3 <- createTable(c("yes"),"fouls.won",t)
+names(t3) <- c("Player", "dFouls Won")
+t4 <- createTable(c("yes"),"fouls.conceded",t)
+names(t4) <- c("Player", "dFouls Conceded")
+t5 <- createTable(c("yes"),"yellow.cards",t)
+names(t5) <- c("Player", "dYellow Cards")
+t6 <- createTable(c("yes"),"red.cards",t)
+names(t6) <- c("Player", "dRed Cards")
+t7 <- createTable(c("yes"),"penalties.won",t)
+names(t7) <- c("Player", "dPenalties Won")
+t8 <- createTable(c("yes"),"penalties.conceded",t)
+names(t8) <- c("Player", "dPenalties Conceded")
+def <- merge(t2, t3, by="Player", all=TRUE)
+def <- merge(def, t4, by="Player", all=TRUE)
+def <- merge(def, t5, by="Player", all=TRUE)
+def <- merge(def, t6, by="Player", all=TRUE)
+def <- merge(def, t7, by="Player", all=TRUE)
+def <- merge(def, t8, by="Player", all=TRUE)
+rm(t,t2,t3,t4,t5,t6,t7,t8)
+#For disciplinary actions that show up the poss.notes column
+t <- addMultiColumnsForQualifiers(patterns=c("offside.calls"="offside.calls","fouls.won"="fouls.won", "fouls.conceded"="fouls.conceded","yellow.cards"="yellow.cards", 
+                                             "red.cards"="red.cards", "penalties.won"="penalties.won","penalties.conceded"="penalties.conceded"),
+                                  pattern_locations=c("poss.action","poss.player.disciplinary","poss.player.disciplinary","poss.player.disciplinary",
+                                                      "poss.player.disciplinary","poss.player.disciplinary","poss.player.disciplinary"),
+                                  ogdf=d, ndf=d)
+t2 <- createTable(c("yes"),"offside.calls",t)
+names(t2) <- c("Player", "pOffsides")
+t3 <- createTable(c("yes"),"fouls.won",t)
+names(t3) <- c("Player", "pFouls Won")
+t4 <- createTable(c("yes"),"fouls.conceded",t)
+names(t4) <- c("Player", "pFouls Conceded")
+t5 <- createTable(c("yes"),"yellow.cards",t)
+names(t5) <- c("Player", "pYellow Cards")
+t6 <- createTable(c("yes"),"red.cards",t)
+names(t6) <- c("Player", "pRed Cards")
+t7 <- createTable(c("yes"),"penalties.won",t)
+names(t7) <- c("Player", "pPenalties Won")
+t8 <- createTable(c("yes"),"penalties.conceded",t)
+names(t8) <- c("Player", "pPenalties Conceded")
+poss <- merge(t2, t3, by="Player", all=TRUE)
+poss <- merge(poss, t4, by="Player", all=TRUE)
+poss <- merge(poss, t5, by="Player", all=TRUE)
+poss <- merge(poss, t6, by="Player", all=TRUE)
+poss <- merge(poss, t7, by="Player", all=TRUE)
+poss <- merge(poss, t8, by="Player", all=TRUE)
+rm(t,t2,t3,t4,t5,t6,t7,t8)
+#Sum common columns
+comb <- merge(poss,def, by="Player", all=TRUE)
+comb[,"Offsides"] <- rowSums(comb[,c("pOffsides","dOffsides")], na.rm = TRUE)
+comb[,"Fouls Won"] <- rowSums(comb[,c("pFouls Won","dFouls Won")], na.rm = TRUE)
+comb[,"Fouls Conceded"] <- rowSums(comb[,c("pFouls Conceded","dFouls Conceded")], na.rm = TRUE)
+comb[,"Yellow Cards"] <- rowSums(comb[,c("pYellow Cards","dYellow Cards")], na.rm = TRUE)
+comb[,"Red Cards"] <- rowSums(comb[,c("pRed Cards","dRed Cards")], na.rm = TRUE)
+comb[,"Penalties Won"] <- rowSums(comb[,c("pPenalties Won","dPenalties Won")], na.rm = TRUE)
+comb[,"Penalties Conceded"] <- rowSums(comb[,c("pPenalties Conceded","dPenalties Conceded")], na.rm = TRUE)
+comb <- comb[,c("Player", "Offsides", "Fouls Won", "Fouls Conceded",  "Yellow Cards", 
+                "Red Cards", "Penalties Won", "Penalties Conceded")]
+all <- merge(all, comb, by="Player", all=TRUE)
+rm(comb,def,poss)
+
+#ERRORS & BIG CHANCE STOPS----------
+#For errors and big stops that show up the def.notes column
+t <- d[,c("event","time","def.position", "def.team", "def.player", "def.action",
+                                      "def.location", "gk.ball.stop", "gk.s.o.g.attempt", "poss.player.disciplinary", 
+                                      "poss.notes", "def.player.disciplinary", "def.notes" )]
+t <- addMultiColumnsForQualifiers(patterns=c("e.to.goals"="errors.to.goals","og"="own.goals", "e.to.big.chances"="errors.to.big.chances","bc.stopped"="big.chances.stopped"),
+                                  pattern_locations=c("def.notes","def.notes","def.notes","def.notes"),
+                                  ogdf=d, ndf=t)
+names(t) <- c("event","time","position", "team", "poss.player", "def.action", 
+              "def.location", "gk.ball.stop", "gk.s.o.g.attempt", 
+              "poss.player.disciplinary", "poss.notes",
+              "def.player.disciplinary", "def.notes", "errors.to.goals","own.goals", "errors.to.big.chances",  "big.chances.stopped")
+t2 <- createTable(c("yes"),"errors.to.goals",t)
+names(t2) <- c("Player", "E to Goals")
+t3 <- createTable(c("yes"),"own.goals",t)
+names(t3) <- c("Player", "OG")
+t4 <- createTable(c("yes"),"errors.to.big.chances",t)
+names(t4) <- c("Player", "E to Big Chances")
+t5 <- createTable(c("yes"),"big.chances.stopped",t)
+names(t5) <- c("Player", "BC Stopped")
+def <- merge(t2, t3, by="Player", all=TRUE)
+def <- merge(def, t4, by="Player", all=TRUE)
+def <- merge(def, t5, by="Player", all=TRUE)
+rm(t,t2,t3,t4,t5)
+#For errors and big stops that show up the poss.notes column
+t <- addMultiColumnsForQualifiers(patterns=c("errors.to.goals"="errors.to.goals","og"="own.goals", "e.to.big.chances"="errors.to.big.chances","bc.stopped"="big.chances.stopped"),
+                                  pattern_locations=c("poss.notes","poss.notes","poss.notes","poss.notes"),
+                                  ogdf=d, ndf=d)
+t2 <- createTable(c("yes"),"errors.to.goals",t)
+names(t2) <- c("Player", "E to Goals")
+t3 <- createTable(c("yes"),"og",t)
+names(t3) <- c("Player", "OG")
+t4 <- createTable(c("yes"),"e.to.big.chances",t)
+names(t4) <- c("Player", "E to Big Chances")
+t5 <- createTable(c("yes"),"bc.stopped",t)
+names(t5) <- c("Player", "BC Stopped")
+poss <- merge(t2, t3, by="Player", all=TRUE)
+poss <- merge(poss, t4, by="Player", all=TRUE)
+poss <- merge(poss, t5, by="Player", all=TRUE)
+comb <- rbind(def,poss)
+all <- merge(all, comb, by="Player", all=TRUE)
+rm(def,poss,comb,t,t2,t3,t4,t5)
 
 #GK SHOTS ON GOAL FACED----------
 t <- createDataFrame(c("gk.s.o.g.stop", "gk.s.o.g.def.stop","gk.s.o.g.scored"), "def.action", d)
