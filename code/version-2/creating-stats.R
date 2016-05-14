@@ -134,10 +134,12 @@ all <- merge(all, t2, by="Player", all=TRUE)
 rm(t,t2)
 
 #ASSISTS---------------
-t <- addMultiColumnsForQualifiers(c("assists"="^assist", "key.passes"="key.pass|^second.assist", "second.assists"="^second.assist"),
+t <- addMultiColumnsForQualifiers(c("assists"="assist", "key.passes"="key.pass|second.assist", "second.assists"="second.assist"),
                                   pattern_locations = c("poss.notes", "poss.notes", "poss.notes"),
                                   ogdf = d, ndf = createDataFrame(c("passes.f.c", "passes.f", 
                                                                          "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", d))
+# accounts for second.assists being counted as assists
+t[t[,"assists"] == "yes" & t[,"second.assists"]=="yes","assists"] <- "no"
 t <- addColumnForMultiQualifiers(newcol="key.assists", pattern=c("assists"="yes", "key.passes"="yes"), df = t, exp = "AND")
 ##Create tables for each column (five different ones)
 t1 <- createTable(c("yes"),"assists",t)
