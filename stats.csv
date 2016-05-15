@@ -251,8 +251,8 @@ Fouls Won,Fouls Won,Disciplinary,frequency
 Fouls Conceded,Fouls Conceded,Disciplinary,frequency
 Yellow Cards,Yellow Cards,Disciplinary,frequency
 Red Cards,Red Cards,Disciplinary,frequency
-Penalty Kicks Won,PKs Won,Disciplinary,frequency
-Penalty Kicks Conceded,PKs Conceded,Disciplinary,frequency
+Penalty Kicks Won,Penalties Won,Disciplinary,frequency
+Penalty Kicks Conceded,Penalties Conceded,Disciplinary,frequency
 Errors to Goals,E to Goals,Errors & Big Chance Stops,frequency
 Own Goals,OG,Errors & Big Chance Stops,frequency
 Errors to Big Chances,E to Big Chances,Errors & Big Chance Stops,frequency
