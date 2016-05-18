@@ -6,6 +6,8 @@
 
 **MP** - Minutes played
 
+**GP** - Games played
+
 **GS** - Games started
 
 ##Shots & Goals Stats
