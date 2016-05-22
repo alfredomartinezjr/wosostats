@@ -579,7 +579,7 @@ t <- createTable(c("Take Ons", "take.ons.per.90", "take.on.won","take.on.lost", 
 t[,"Take.Ons"] <- t[,"take.on.won"] + t[,"take.on.lost"]
 t[,"Take.On.Win.Pct"] <- t[,"take.on.won"]/t[,"Take.Ons"]
 t[,"All.Possessions.Disrupted"] <- t[,"take.on.lost"] + t[,"dispossessed"] + t[,"lost.touch"]
-names(t) <- c("Player", "Take Ons","Take Ons per 90" , "TO Won", "TO Lost", "TO Win Pct", "Dispossessed", "Lost Touches", "All Possessions Disrupted")
+names(t) <- c("Player", "Take Ons","Take Ons per 90" , "TO Won", "TO Lost", "TO Win Pct", "Dispossessed", "Lost Touches", "All Possessions Disrupted", "Poss Disrupted per 90")
 all <- merge(all, t, by=1, all=TRUE)
 rm(t)
 all$`Take Ons per 90` <- (all$`Take Ons`/all$MP)*90
