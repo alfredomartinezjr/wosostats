@@ -373,12 +373,12 @@ while (x <= nrow(df)) {
   if (is.na(df[x,"def.location"])) {
     col <- "def.action"
     if (actionIsInvertible(x, col)) {
-      ## Check if "poss.location is filled in
-      if(!is.na(df[x, "poss.location"])) {
-        # find location of poss.player
-        location <- df[df[,"event"] == df[x,"event"],"poss.location"][1]
-        # assign the opposite as "def.location"
-        df[x,"def.location"] <- opposites[as.character(opposites[,"posslocations"]) == as.character(location),"deflocations"]
+      ## Check if "poss.location is filled in for event
+      ev <- df[x,"event"]
+      possloc <- df[df[,"event"]==ev,"poss.location"][1]
+      if(!is.na(possloc)) {
+        # assign the opposite of poss.loc "def.location"
+        df[x,"def.location"] <- opposites[as.character(opposites[,"posslocations"]) == as.character(possloc),"deflocations"]
       }
       ## if "poss.location" is an NA, we can't determine the blank "def.location" value
       else if (is.na(df[x, "poss.location"])) {
@@ -478,4 +478,4 @@ while (e <= max(df$event, na.rm = TRUE)) {
 #}
 
 
-rm(opposites, deflocations, location, awayteam, hometeam, posslocations, homedata, awaydata, teams)
+rm(opposites, deflocations, possloc, awayteam, hometeam, posslocations, homedata, awaydata, teams)
