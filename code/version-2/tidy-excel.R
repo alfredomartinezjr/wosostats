@@ -4,11 +4,11 @@
 ## Save the file into your working directory by running read.csv(df, file="filenamegoeshere.csv", row.names=FALSE)
 ##READING EXCEL FILE----------
 ## Install if necessary
-require(xlsx)
+require(readxl)
 ## IMPORTANT: "match" must be set as a string value, or this won't work
 ## Might take a while to create. Takes about two minutes. Hold tight.
 ## The Excel file must be in the working directory
-df <- read.xlsx(match, sheetName = "match")
+df <- read_excel(match)
 
 ##CHANGE COLUMN CLASSES----------
 ### Changes factors of select columns
