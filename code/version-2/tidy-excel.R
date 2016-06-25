@@ -378,7 +378,7 @@ while (x <= nrow(df)) {
       possloc <- df[df[,"event"]==ev,"poss.location"][1]
       if(!is.na(possloc)) {
         # assign the opposite of poss.loc "def.location"
-        df[x,"def.location"] <- opposites[as.character(opposites[,"posslocations"]) == as.character(possloc),"deflocations"]
+        df[x,"def.location"] <- as.character(opposites[as.character(opposites[,"posslocations"]) == as.character(possloc),"deflocations"])
       }
       ## if "poss.location" is an NA, we can't determine the blank "def.location" value
       else if (is.na(df[x, "poss.location"])) {
