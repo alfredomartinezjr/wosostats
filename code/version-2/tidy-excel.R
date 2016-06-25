@@ -5,10 +5,12 @@
 ##READING EXCEL FILE----------
 ## Install if necessary
 require(readxl)
+require(xlsx)
 ## IMPORTANT: "match" must be set as a string value, or this won't work
 ## Might take a while to create. Takes about two minutes. Hold tight.
 ## The Excel file must be in the working directory
 df <- read_excel(match)
+df <- as.data.frame(df)
 
 ##CHANGE COLUMN CLASSES----------
 ### Changes factors of select columns
