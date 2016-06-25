@@ -15,14 +15,6 @@ df <- as.data.frame(df)
 ##CHANGE COLUMN CLASSES----------
 ### Changes factors of select columns
 df$event <- as.numeric(as.character(df[,"event"]))
-df$poss.action <- as.character(df[,"poss.action"])
-df$play.type <- as.character(df[,"play.type"])
-df$def.action <- as.character(df[,"def.action"])
-df$poss.player.disciplinary <- as.character(df[,"poss.player.disciplinary"])
-df$poss.notes <- as.character(df[,"poss.notes"])
-df$def.player.disciplinary <- as.character(df[,"def.player.disciplinary"])
-df$poss.player <- as.character(df$poss.player)
-df$def.player <- as.character(df$def.player)
 
 ##CLEAN UP----------
 ###Gets rid of NA columns
