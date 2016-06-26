@@ -1,4 +1,4 @@
-So you want to log matches on your own? You’re amazing! Here are the steps you to take. If you have questions, send me a DM/mention at [@WoSoStats](https://twitter.com/wosostats) or email me at alfredom790@gmail.com.
+So you want to log matches on your own? You’re amazing! Here are the steps you to take. If you have questions, send me a DM/mention at [@WoSoStats](https://twitter.com/wosostats) or email me at wosostats.team@gmail.com.
 
 #Before you start logging the match stats
 1. Download the match-stats-template.xlsx Excel document from this link: https://github.com/amj2012/woso-stats/blob/master/resources/match-stats-template.xlsx?raw=true.  
@@ -182,13 +182,13 @@ For stoppage time, use a plus sign to denote how much stoppage time was added. F
 #What’s next
 1. Save the Excel file in the wo-so Github repository by doing one of the following:
   * IF you are comfortable with using GitHub, push the Excel file as an addition to the wo-so repository.
-  * OR if you are not comfortable with using GitHub or if your have no idea what that the above paragraph was about, just email me the raw Excel file at alfredom790@gmail.com.
+  * OR if you are not comfortable with using GitHub or if your have no idea what that the above paragraph was about, just email me the raw Excel file at wosostats.team@gmail.com.
 2. Turn the Excel file into the filled-in completed .csv file that will be used for the actual analyses, by doing one of the following:
   * IF you are comfortable with using R:
     * set the directory in which the Excel file is as the working directory
     * source the tidy-excel.R file in https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/tidy-excel.R. This should create a data frame named df in your working environment.
     * save the df data frame as a .csv file in either your working directory or anywhere else you’d like
-    * If you’re comfortable with GitHub, push the new .csv file as an addition to the appropriate folder in the wo-so depository. Otherwise, just email me the .csv file at alfredom790@gmail.com.
+    * If you’re comfortable with GitHub, push the new .csv file as an addition to the appropriate folder in the wo-so depository. Otherwise, just email me the .csv file at wosostats.team@gmail.com.
   * IF you are not comfortable with using R to create this .csv file yourself, just notify me via email and I’ll take care of it.
 3. You’re done! Please do celebrate, as this is great data that can be analyzed and it surely takes a lot of work for each match.
 4. See the match analysis for yourself by downloading the template.Rmd R Markdown file, and in the first chunk change *matchlocationgoeshere* to the file location of either the csv file in your computer (if you made the csv file yourself) or the raw URL of the csv file’s location in the GitHub repository. OR, I’ll just email you the match analysis myself as soon as I create it.
