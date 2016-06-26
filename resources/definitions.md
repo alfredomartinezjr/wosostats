@@ -1,6 +1,6 @@
 *This is a list of action definitions that are meant to inform how actions should be logged. It is meant to be used by people who are either logging stats on their own or would like to have a look at how they are being defined. If you would like to see definitions for stats that are calculated from these actions (such as in the Shiny app or on various R Markdown docs), you'll want to go to the stats-glossary.md page (coming soon)!*
 
-Below is a list of definitions for values to be used when logging match actions in the match-stats-template.xlsx Excel document. These values are player actions (such as passes and shots), qualifiers to player actions that further describe the action (such as the type of pass or if a big chance was stopped), and location data. When logging actions, refer to this document when in doubt about what a certain value means and when to log it. Feedback is welcome and should be sent to alfredom790@gmail or @WoSoStats on Twitter.
+Below is a list of definitions for values to be used when logging match actions in the match-stats-template.xlsx Excel document. These values are player actions (such as passes and shots), qualifiers to player actions that further describe the action (such as the type of pass or if a big chance was stopped), and location data. When logging actions, refer to this document when in doubt about what a certain value means and when to log it. Feedback is welcome and should be sent to wosostats.team@gmail or @WoSoStats on Twitter.
 
 #Table of Contents
 * Possessing Player Actions - `poss.action`
