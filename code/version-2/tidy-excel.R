@@ -1,45 +1,78 @@
-## Functions for reading and tidying up a raw Excel file of match stats
-## and turning it into a data.frame in your environment
+## Running this code takes an Excel file in your directory for a raw, unedited match actions 
+## spreadsheet and turns it into a data.frame that can be read by the creating-stats.R code
 ##
-## Save the file into your working directory by running read.csv(df, file="filenamegoeshere.csv", row.names=FALSE)
-##READING EXCEL FILE----------
+##
 ## Install if necessary
 require(readxl)
 require(xlsx)
-## IMPORTANT: "match" must be set as a string value, or this won't work
-## Might take a while to create. Takes about two minutes. Hold tight.
-## The Excel file must be in the working directory
-df <- read_excel(match)
+require(RCurl)
+##0. REFERENCE DATA TO SOURCE----------
+### ref.classes will be a data.frame of class data for columns in the spreadsheet.
+### Sourcing this data.frame and creating the col_types vector below will be
+### necessary due to how read_excel() requires the column class types to be in a
+### vector for every column in the spreadsheet in the precise order in which they appear.
+ref.classes <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/resources/spreadsheet-classes.csv")
+ref.classes <- read.csv(textConnection(ref.classes), stringsAsFactors = FALSE)
+working.names <- colnames(read_excel(match))
+#needs to return a col_types character that has ALL column classes for EXACTLY 
+#every column in the excel spreadsheet
+col_types <- character(length(working.names))
+x <- 1
+while (x <= length(working.names)){
+  #checks if the column name at working.names[x] is a column name with a preassigned class type
+  if(working.names[x] %in% ref.classes$col.name) {
+    #if TRUE, then gets the column's preassigned class type, and assigns that as an element in col_type
+    if(ref.classes[ref.classes[,"col.name"]==working.names[x],"col.class"] == "numeric" | 
+       ref.classes[ref.classes[,"col.name"]==working.names[x],"col.class"] == "integer") {
+      col_types[x] <- "numeric"
+    } else if (ref.classes[ref.classes[,"col.name"]==working.names[x],"col.class"] == "character") {
+      col_types[x] <- "text"
+    } else {
+      col_types[x] <- "blank"
+    }
+  } else {
+   col_types[x] <- "blank" 
+  }
+  x <- x + 1
+}
+rm(x)
+rm(working.names)
+###
+### rosters is a data.frame of player data. For now this is just 2016 NWSL player
+### data. This is to account for multiple teams with players with the same last name,
+### among other pesky scenarios
+rosters <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/rosters/nwsl-2016.csv")
+rosters <- read.csv(textConnection(rosters), stringsAsFactors = FALSE)
+##1. READING THE EXCEL FILE----------
+## "match" must be a string value and the Excel file must be in the working directory
+df <- read_excel(match, col_types = col_types)
 df <- as.data.frame(df)
 
-##CHANGE COLUMN CLASSES----------
-### Changes factors of select columns
-df$event <- as.numeric(as.character(df[,"event"]))
+##2. CHANGE COLUMN CLASSES----------
+### Changes class of select columns if necessary
+### Since this code moved on to using the readxl package instead of the
+### xlsx package, changing the column classes isn't necessary.
 
-##CLEAN UP----------
-###Gets rid of NA columns
+##3. CLEAN UP----------
+### Gets rid of NA columns
 df <- df[,!grepl("^NA",names(df))]
-
-###Gets rid of any blank rows after the match has ended
+### Gets rid of any blank rows after the match has ended (indicated by an end.of.match value)
 df <- df[1:max(grep("end.of.match", df[,"poss.action"])),]
-
-###Fill in missing time data
-####This ASSUMES that, if there are blanks, then the first row
-####where a minute appears is the first event for that minute.
+### Fills in missing time data. This assumes that, if there are blanks, the first row where 
+### a minute appears is the first event for that minute.
 x <- grep("kickoff", df[,"poss.action"])
-####in case there's more than one "kickoff" (incorrectly) logged
+#### in case there's more than one "kickoff" (incorrectly) logged, set x as the first kickoff
 if(length(x) > 1) (x <- x[1])
 while (x <= nrow(df)) {
   #checks if time is blank
   if (df[x,"time"] == "-" | is.na(df[x,"time"])) {
-    #if time is blank, set it as previous value
+    #if time is blank, set it as the previous value
     df[x,"time"] <- df[x-1, "time"]
   }
   x <- x + 1
 }
-
-###Re-calculates event values
-####convert all blanks and "-"s to NAs
+### Re-calculates event values, and convert all blanks & "-"s to NA values
+#### Assigns all "-"'s and blanks as NA values
 x <- 1
 while (x <= nrow(df)) {
   if (df[x,"event"] == "-" | is.na(df[x,"event"]) | df[x,"event"] == " ") {
@@ -47,13 +80,11 @@ while (x <= nrow(df)) {
   }
   x <- x + 1
 }
-
-####sets x as row below kickoff
+#### Sets x as row below kickoff
 x <- grep("kickoff", df[,"poss.action"])
 if(length(x) > 1) (x <- x[1])
 x <- x + 1
-
-####checks if "poss.player" is NA, "-", or " " and sets appropriate event value
+#### Checks if "poss.player" is NA, "-", or " " and sets appropriate event value
 while (x <= nrow(df)) {
   if(df[x,"poss.player"] == "-" | is.na(df[x,"poss.player"]) | df[x,"poss.player"] == " "){
     #sets event value as previous row's event value
@@ -64,7 +95,7 @@ while (x <= nrow(df)) {
   }
   x <- x + 1
 }
-
+#LAST LEFT OFF HERE (7/6 9:23PM)--------
 ###Gets rid of player numbers and leading/trailing whitespace in "poss.player" and "def.player" values
 x <- 1
 while (x <= nrow(df)) {
