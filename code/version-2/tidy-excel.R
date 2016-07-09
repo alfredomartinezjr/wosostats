@@ -6,6 +6,7 @@
 require(readxl)
 require(xlsx)
 require(RCurl)
+
 ##0. REFERENCE DATA TO SOURCE----------
 ### ref.classes will be a data.frame of class data for columns in the spreadsheet.
 ### Sourcing this data.frame and creating the col_types vector below will be
@@ -43,75 +44,104 @@ rm(working.names)
 ### among other pesky scenarios
 rosters <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/rosters/nwsl-2016.csv")
 rosters <- read.csv(textConnection(rosters), stringsAsFactors = FALSE)
+
 ##1. READING THE EXCEL FILE----------
 ## "match" must be a string value and the Excel file must be in the working directory
 df <- read_excel(match, col_types = col_types)
 df <- as.data.frame(df)
+rm(col_types, ref.classes)
 
 ##2. CHANGE COLUMN CLASSES----------
-### Changes class of select columns if necessary
-### Since this code moved on to using the readxl package instead of the
-### xlsx package, changing the column classes isn't necessary.
+## Changes class of select columns if necessary
+## Since this code moved on to using the readxl package instead of the
+## xlsx package, changing the column classes isn't necessary.
 
-##3. CLEAN UP----------
-### Gets rid of NA columns
+##3. DELETE EXCESS COLUMNS AND ROWS----------
+## Gets rid of NA columns
 df <- df[,!grepl("^NA",names(df))]
-### Gets rid of any blank rows after the match has ended (indicated by an end.of.match value)
+## Gets rid of any blank rows after the match has ended (indicated by an end.of.match value)
 df <- df[1:max(grep("end.of.match", df[,"poss.action"])),]
-### Fills in missing time data. This assumes that, if there are blanks, the first row where 
-### a minute appears is the first event for that minute.
-x <- grep("kickoff", df[,"poss.action"])
-#### in case there's more than one "kickoff" (incorrectly) logged, set x as the first kickoff
-if(length(x) > 1) (x <- x[1])
-while (x <= nrow(df)) {
-  #checks if time is blank
-  if (df[x,"time"] == "-" | is.na(df[x,"time"])) {
-    #if time is blank, set it as the previous value
-    df[x,"time"] <- df[x-1, "time"]
-  }
-  x <- x + 1
-}
-### Re-calculates event values, and convert all blanks & "-"s to NA values
-#### Assigns all "-"'s and blanks as NA values
-x <- 1
-while (x <= nrow(df)) {
-  if (df[x,"event"] == "-" | is.na(df[x,"event"]) | df[x,"event"] == " ") {
-    df[x,"event"] <- NA
-  }
-  x <- x + 1
-}
-#### Sets x as row below kickoff
-x <- grep("kickoff", df[,"poss.action"])
-if(length(x) > 1) (x <- x[1])
-x <- x + 1
-#### Checks if "poss.player" is NA, "-", or " " and sets appropriate event value
-while (x <= nrow(df)) {
-  if(df[x,"poss.player"] == "-" | is.na(df[x,"poss.player"]) | df[x,"poss.player"] == " "){
-    #sets event value as previous row's event value
-    df[x,"event"] <- df[x-1,"event"]
-  } else {
-    #sets event value as 1 plus previous row's event value
-    df[x,"event"] <- df[x-1,"event"]+1
-  }
-  x <- x + 1
-}
-#LAST LEFT OFF HERE (7/6 9:23PM)--------
-###Gets rid of player numbers and leading/trailing whitespace in "poss.player" and "def.player" values
-x <- 1
-while (x <= nrow(df)) {
-  poss.string <- df[x,"poss.player"]
-  def.string <- df[x,"def.player"]
-  df[x,"poss.player"] <- trimws(strsplit(as.character(poss.string)," \\(")[[1]][1])
-  df[x,"def.player"] <- trimws(strsplit(as.character(def.string)," \\(")[[1]][1])
-  x <- x + 1
-}
 
-###Creates missing columns
-####For spreadsheets that don't yet have "poss.number" or "def.number" columns
+##4. ADD COMMON MISSING COLUMNS----------
+### Creates missing columns that usually aren't included as they weren't
+### originally a part of the match template that volunteers use.
+if(!("xG" %in% colnames(df))) (df$xG <- NA)
 if(!("poss.number" %in% colnames(df))) (df$poss.number <- NA)
 if(!("def.number" %in% colnames(df))) (df$def.number <- NA)
 
-##METADATA----------
+##5. FILL IN MISSING TIME DATA---------
+## Fills in missing time data. This assumes that, if there are blanks, the first row where 
+## a minute appears is the first event for that minute.
+kickoff.row <- grep("kickoff", df[,"poss.action"])
+#### in case there's more than one "kickoff" (incorrectly) logged, set kickoff.row as the first kickoff
+if(length(kickoff.row) > 1) (kickoff.row <- kickoff.row[1])
+rownum <- kickoff.row
+rm(kickoff.row)
+#### Runs a while loop that checks if a given row has a missing time value
+#### ands adds the appropriate value
+while (rownum <= nrow(df)) {
+  #checks if time column is blank or is a "-"
+  if (df[rownum,"time"] == "-" | is.na(df[rownum,"time"])) {
+    #if time column is blank or a "-", set it as whatever the time is in the above row
+    df[rownum,"time"] <- df[rownum-1, "time"]
+  }
+  rownum <- rownum + 1
+}
+rm(rownum)
+
+##6. RECALCULATE VALUES IN "EVENT" COLUMN---------
+### Runs a while loop that looks for "-"'s and blank values in "event" column
+### and assigns them as NA values
+rownum <- 1
+while (rownum <= nrow(df)) {
+  if (df[rownum,"event"] == "-" | is.na(df[rownum,"event"]) | df[rownum,"event"] == " ") {
+    df[rownum,"event"] <- NA
+  }
+  rownum <- rownum + 1
+}
+rm(rownum)
+### Now, find the number of the row after kickoff
+kickoff.row <- grep("kickoff", df[,"poss.action"])
+### in case there's more than one "kickoff" (incorrectly) logged, set kickoff.row as the first kickoff
+if(length(kickoff.row) > 1) (kickoff.row <- kickoff.row[1])
+rownum <- kickoff.row
+rm(kickoff.row)
+rownum <- rownum + 1
+### Checks if "poss.player" is NA, "-", or " " and sets appropriate event value
+### The logic here is that if the "poss.player" column is blank, then whatever else
+### is in that row is part of the same event as the row above it (assuming it's all
+### been logged correctly).
+while (rownum <= nrow(df)) {
+  if(df[rownum,"poss.player"] == "-" | 
+     is.na(df[rownum,"poss.player"]) | 
+     df[rownum,"poss.player"] == " ") {
+    #sets event value as previous row's event value
+    df[rownum,"event"] <- df[rownum-1,"event"]
+  } else {
+    #sets event value as 1 plus previous row's event value
+    df[rownum,"event"] <- df[rownum-1,"event"] + 1
+  }
+  rownum <- rownum + 1
+}
+rm(rownum)
+
+##7. CLEAN UP PLAYER NUMBERS AND NAMES
+### Gets rid of player numbers and leading/trailing whitespace 
+### in "poss.player" and "def.player" values
+### NOTE: THIS WILL LIKELY NEED TO BE CHANGED (OR GOTTEN RID OF)
+### WHEN IT COMES TO ADDRESSING THE ISSUE OF HOW TO ACCOUNT FOR MATCHES
+### WITH PLAYERS THAT SHARE LAST NAMES
+rownum <- 1
+while (rownum <= nrow(df)) {
+  poss.string <- df[rownum,"poss.player"]
+  def.string <- df[rownum,"def.player"]
+  df[rownum,"poss.player"] <- trimws(strsplit(as.character(poss.string)," \\(")[[1]][1])
+  df[rownum,"def.player"] <- trimws(strsplit(as.character(def.string)," \\(")[[1]][1])
+  rownum <- rownum + 1
+}
+rm(rownum)
+
+##8. CREATE METADATA OBJECTS----------
 ### Creates a meta data frame of all columns from row 1 to row before kickoff
 ref <- df[1:(grep("kickoff", df[,"poss.action"])[1]-1),]
 ### Creates a vector for the "home" team and the "away" team, excluding possible NA values
@@ -133,39 +163,46 @@ deflocations <- c("D6", "D18", "D3R", "D3C", "D3L", "DM3R", "DM3C",
                   "DML", "AMR", "AMC", "AML", "AR", "AC", "AL")
 opposites <- data.frame(posslocations, deflocations)
 
-##CHECK FOR INCORRECT DATA--------
-###Checks if a player's name has certain letters in upper case (this messes with how stats are computed)
-x <- grep("kickoff", df[,"poss.action"])
-if(length(x) > 1) (x <- x[1])
-x <- x + 1
+##9. CLEANS UP UPPERCASE ERRORS IN PLAYER NAMES-------
+### Checks if a player's name has certain letters in upper case 
+### which messes with how creating-stats.R reads the final csv file
+kickoff.row <- grep("kickoff", df[,"poss.action"])
+### in case there's more than one "kickoff" (incorrectly) logged, set kickoff.row as the first kickoff
+if(length(kickoff.row) > 1) (kickoff.row <- kickoff.row[1])
+rownum <- kickoff.row
+rm(kickoff.row)
+rownum <- rownum + 1
 ####creates vector of players, excluding blanks
 players <- as.character(unique(ref$poss.player))
 players <- players[!is.na(players) & !(players=="-") & !(players==" ") & !(players=="")]
-while (x <= nrow(df)) {
-  #checks poss.player
-  if(!is.na(df[x,"poss.player"])){
+while (rownum <= nrow(df)) {
+  #checks if poss.player has a value in the column
+  if(!is.na(df[rownum,"poss.player"])){
     y <- 1
     while (y <= length(players)) {
-      if (((tolower(df[x,"poss.player"])==tolower(players[y]))) & (df[x,"poss.player"] != players[y])) {
-        df[x,"poss.player"] <- players[y]
+      if (((tolower(df[rownum,"poss.player"])==tolower(players[y]))) & 
+          (df[rownum,"poss.player"] != players[y])) {
+        df[rownum,"poss.player"] <- players[y]
       }
       y <- y + 1
     }
   }
-  #checks def.player
-  if(!is.na(df[x,"def.player"])){
+  #checks if def.player has a value in the column
+  if(!is.na(df[rownum,"def.player"])){
     z <- 1
     while (z <= length(players)) {
-      if (((tolower(df[x,"def.player"])==tolower(players[z]))) & (df[x,"def.player"] != players[z])) {
-        df[x,"def.player"] <- players[z]
+      if (((tolower(df[rownum,"def.player"])==tolower(players[z]))) & 
+          (df[rownum,"def.player"] != players[z])) {
+        df[rownum,"def.player"] <- players[z]
       }
       z <- z + 1
     }
   }
-  x <- x + 1
+  rownum <- rownum + 1
 }
+rm(x,y,z,rownum)
 
-##CALCULATE MISSING PLAYER DATA---------
+##10. CALCULATE MISSING TEAM & POSITION DATA FOR EACH PLAYER---------
 ### Deletes metadata from df & converts "-", " ", and blank values to NAs
 df <- df[grep("kickoff", df[,"poss.action"])[1]:nrow(df),]
 df[(df) == "-"] <- NA
@@ -192,14 +229,14 @@ while (x <= nrow(df)) {
 }
 rm(x,y,poss.string,def.string,ref)
 
-##INVERTIBLE FUNCTION----------
+##11. CREATES THE INVERTIBLE FUNCTION----------
 ##Function to determine if an action's location is invertible based on the
 ##location of certain opposing players' action
 actionIsInvertible <- function(action, col) {
   grepl("pressure|challenge|aerial|tackle|dispossess|dribble|pass|move|take|shots",df[action, col])
 }
 
-##CONVERT SHORTCUTS----------
+##12. EXPANDS SHORTCUT VALUES FOR MATCH ACTIONS----------
 x <- 1
 while (x <= nrow(df)) {
   ##Convert "poss.action" shortcuts
@@ -387,8 +424,9 @@ while (x <= nrow(df)) {
   }
   x <- x + 1
 }
+rm(x)
 
-##FILLS IN BLANK DEF.LOCATION CELLS----------
+##13. FILLS IN BLANK DEF.LOCATION CELLS----------
 ## Goes down the entire data.frame, row by row, and fills in blank "def.location" cells
 cantDetermine <- c()
 x <- 1
@@ -430,11 +468,12 @@ while (x <= nrow(df)) {
   }
   x <- x + 1
 }
+rm(x, e, ev, ne, possloc,col,location)
 print("The following events have blank def.location")
 cantDetermine
+rm(cantDetermine)
 
-##FILLS IN BLANK POSS.LOCATION CELLS & DETERMINE COMPLETED PASSES----------
-df$poss.action <- as.character(df$poss.action)
+##14. FILLS IN BLANK POSS.LOCATION CELLS & DETERMINE COMPLETED PASSES----------
 e <- 1
 while (e <= max(df$event, na.rm = TRUE)) {
   # get row for "poss.action" for "event"
@@ -485,8 +524,9 @@ while (e <= max(df$event, na.rm = TRUE)) {
     e <- e + 1
   }
 }
+rm(e, nextevent, nextrow, row, string)
 
-##FILLS IN BLANK POSS.PLAY.DESTINATION CELLS--------
+##15. [THIS CODE NOT IN NOT IN USE] FILLS IN BLANK POSS.PLAY.DESTINATION CELLS--------
 #For when defensive action can be used to determine "poss.play.destination"
 #df$poss.play.destination <- as.character(df$poss.action)
 #e <- 1
@@ -502,5 +542,5 @@ while (e <= max(df$event, na.rm = TRUE)) {
 #  }
 #}
 
-
-rm(opposites, deflocations, possloc, awayteam, hometeam, posslocations, homedata, awaydata, teams)
+rm(opposites, deflocations, awayteam, hometeam, posslocations, homedata, 
+   awaydata, teams, players, rosters, actionIsInvertible, match)
