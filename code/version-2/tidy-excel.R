@@ -7,6 +7,13 @@ require(readxl)
 require(xlsx)
 require(RCurl)
 
+## Internal files to include
+base_directory = "https://raw.githubusercontent.com/amj2012/wosostats/master/"
+code_directory = paste(base_directory, "code/version-2/", sep="")
+source(paste(code_directory, "abbreviations.R", sep=""))
+rm(base_directory, code_directory)
+
+
 ##0. REFERENCE DATA TO SOURCE----------
 ### ref.classes will be a data.frame of class data for columns in the spreadsheet.
 ### Sourcing this data.frame and creating the col_types vector below will be
@@ -236,195 +243,15 @@ actionIsInvertible <- function(action, col) {
   grepl("pressure|challenge|aerial|tackle|dispossess|dribble|pass|move|take|shots",df[action, col])
 }
 
+
 ##12. EXPANDS SHORTCUT VALUES FOR MATCH ACTIONS----------
-x <- 1
-while (x <= nrow(df)) {
-  ##Convert "poss.action" shortcuts
-  if (grepl("^sgk", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "shots.stopped.by.gk"
-  }
-  if (grepl("^sdef", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "shots.stopped.by.def"
-  }
-  if (grepl("^sb", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "shots.blocked"
-  }
-  if (grepl("^sc", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "shots.scored"
-  }
-  if (grepl("^sm", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "shots.missed"
-  }
-  if (grepl("^pf", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "passes.f"
-  }
-  if (grepl("^ps", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "passes.s"
-  }
-  if (grepl("^pb", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "passes.b"
-  }
-  if (grepl("^m", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "movement"
-  }
-  if (grepl("^tkw", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "take.on.won"
-  }
-  if (grepl("^tkl", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "take.on.lost"
-  }
-  if (grepl("^d", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "dispossessed"
-  }
-  if (grepl("^lt", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "lost.touch"
-  }
-  if (grepl("^aw", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "aerial.won"
-  }
-  if (grepl("^al", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "aerial.lost"
-  }
-  if (grepl("^r", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "recoveries"
-  }
-  if (grepl("^bs", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "ball.shield"
-  }
-  if (grepl("^cl", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "clearances"
-  }
-  if (grepl("^playcutoff", df[x,"poss.action"])) {
-    df[x,"poss.action"] <- "playcutoffbybroadcast"
-  }
-  ##Convert "play.type" shortcuts
-  if (grepl("^th ", df[x,"play.type"])) {
-    df[x,"play.type"] <- "through"
-  }
-  if (grepl("^lay", df[x,"play.type"])) {
-    df[x,"play.type"] <- "lay.off"
-  }
-  if (grepl("^cc", df[x,"play.type"])) {
-    df[x,"play.type"] <- "corner.crosses"
-  }
-  if (grepl("^dc", df[x,"play.type"])) {
-    df[x,"play.type"] <- "deep.crosses"
-  }
-  if (grepl("^s", df[x,"play.type"])) {
-    df[x,"play.type"] <- "switch"
-  }
-  if (grepl("^lay", df[x,"play.type"])) {
-    df[x,"play.type"] <- "lay.off"
-  }
-  if (grepl("^flick", df[x,"play.type"])) {
-    df[x,"play.type"] <- "flick.on"
-  }
-  if (grepl("^ti", df[x,"play.type"])) {
-    df[x,"play.type"] <- "throw.in"
-  }
-  if (grepl("^fk", df[x,"play.type"])) {
-    df[x,"play.type"] <- "free.kick"
-  }
-  if (grepl("^h", df[x,"play.type"])) {
-    df[x,"play.type"] <- "headed"
-  }
-  if (grepl("^ck", df[x,"play.type"])) {
-    df[x,"play.type"] <- "corner.kick"
-  }
-  if (grepl("^gk$|^gk ", df[x,"play.type"])) {
-    df[x,"play.type"] <- "goal.kick"
-  }
-  if (grepl("^gkt", df[x,"play.type"])) {
-    df[x,"play.type"] <- "gk.throws"
-  }
-  if (grepl("^gkdk", df[x,"play.type"])) {
-    df[x,"play.type"] <- "gk.drop.kick"
-  }
-  if (grepl("^pk", df[x,"play.type"])) {
-    df[x,"play.type"] <- "penalty.kick"
-  }
-  ##Convert "def.action" shortcuts
-  if (grepl("^dbs", df[x,"def.action"])) {
-    df[x,"def.action"] <- "ball.shield"
-  }
-  if (grepl("^bs", df[x,"def.action"])) {
-    df[x,"def.action"] <- "ball.shield"
-  }
-  if (grepl("^dis", df[x,"def.action"])) {
-    df[x,"def.action"] <- "dispossessed"
-  }
-  if (grepl("^ds", df[x,"def.action"])) {
-    df[x,"def.action"] <- "dispossessed"
-  }
-  if (grepl("^dlt", df[x,"def.action"])) {
-    df[x,"def.action"] <- "dispossessed"
-  }
-  if (grepl("^tb", df[x,"def.action"])) {
-    df[x,"def.action"] <- "tackles.ball"
-  }
-  if (grepl("^tba", df[x,"def.action"])) {
-    df[x,"def.action"] <- "tackles.ball.away"
-  }
-  if (grepl("^tbw", df[x,"def.action"])) {
-    df[x,"def.action"] <- "tackles.ball.won"
-  }
-  if (grepl("^dtm", df[x,"def.action"])) {
-    df[x,"def.action"] <- "dribbled.tackles.missed"
-  }
-  if (grepl("^dor", df[x,"def.action"])) {
-    df[x,"def.action"] <- "dribbled.out.run"
-  }
-  if (grepl("^dt", df[x,"def.action"])) {
-    df[x,"def.action"] <- "dribbled.turned"
-  }
-  if (grepl("^p", df[x,"def.action"])) {
-    df[x,"def.action"] <- "pressured"
-  }
-  if (grepl("^ch", df[x,"def.action"])) {
-    df[x,"def.action"] <- "challenged"
-  }
-  if (grepl("^bl", df[x,"def.action"])) {
-    df[x,"def.action"] <- "blocks"
-  }
-  if (grepl("^int", df[x,"def.action"])) {
-    df[x,"def.action"] <- "interceptions"
-  }
-  if (grepl("^bd", df[x,"def.action"])) {
-    df[x,"def.action"] <- "ball.shield"
-  }
-  if (grepl("^cl", df[x,"def.action"])) {
-    df[x,"def.action"] <- "clearances"
-  }
-  if (grepl("^aw", df[x,"def.action"])) {
-    df[x,"def.action"] <- "aerial.won"
-  }
-  if (grepl("^al", df[x,"def.action"])) {
-    df[x,"def.action"] <- "aerial.lost"
-  }
-  ##Convert "poss.player.disciplinary" shortcuts
-  if (grepl("^fw", df[x,"poss.player.disciplinary"])) {
-    df[x,"poss.player.disciplinary"] <- "fouls.won"
-  }
-  if (grepl("^fc", df[x,"poss.player.disciplinary"])) {
-    df[x,"poss.player.disciplinary"] <- "fouls.conceded"
-  }
-  ##Convert "poss.notes" shortcuts
-  if (grepl("^keep.poss|^kept.poss", df[x,"poss.notes"])) {
-    df[x,"poss.notes"] <- "out.of.bounds.keep.poss"
-  }
-  if (grepl("^lost.poss|^lose", df[x,"poss.notes"])) {
-    df[x,"poss.notes"] <- "out.of.bounds.lost.poss"
-  }
-  ##Convert "def.player.disciplinary" shortcuts
-  if (grepl("^fw", df[x,"def.player.disciplinary"])) {
-    df[x,"def.player.disciplinary"] <- "fouls.won"
-  }
-  if (grepl("^fc", df[x,"def.player.disciplinary"])) {
-    df[x,"def.player.disciplinary"] <- "fouls.conceded"
-  }
-  x <- x + 1
+abbreviation_processor = AbbreviationProcessor$new()
+for(i in 1:nrow(df))
+{
+  df[i,] = abbreviation_processor$process_row(df[i,])
 }
-rm(x)
+rm(abbreviation_processor)
+
 
 ##13. FILLS IN BLANK DEF.LOCATION CELLS----------
 ## Goes down the entire data.frame, row by row, and fills in blank "def.location" cells
