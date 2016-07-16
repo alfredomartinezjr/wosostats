@@ -1,6 +1,6 @@
-*This is a list of action definitions that are meant to inform how actions should be logged. It is meant to be used by people who are either logging stats on their own or would like to have a look at how they are being defined. If you would like to see definitions for stats that are calculated from these actions (such as in the Shiny app or on various R Markdown docs), you'll want to go to the stats-glossary.md page (coming soon)!*
+*This is a list of action definitions that are meant to inform how actions should be logged. It is meant to be used by people who are either logging stats on their own or would like to have a look at how they are being defined. If you would like to see definitions for stats that are calculated from these actions (such as in the Shiny app or on various R Markdown docs), you'll want to go to the [stats-glossary.md page](https://github.com/amj2012/wosostats/blob/master/resources/stats-glossary.md).*
 
-Below is a list of definitions for values to be used when logging match actions in the match-stats-template.xlsx Excel document. These values are player actions (such as passes and shots), qualifiers to player actions that further describe the action (such as the type of pass or if a big chance was stopped), and location data. When logging actions, refer to this document when in doubt about what a certain value means and when to log it. Feedback is welcome and should be sent to wosostats.team@gmail or @WoSoStats on Twitter.
+Below is a list of definitions for values to be used when logging match actions in the [match-actions-template.xlsx](https://github.com/amj2012/wosostats/blob/master/resources/match-actions-template.xlsx) Excel document. These values are player actions (such as passes and shots), qualifiers to player actions that further describe the action (such as the type of pass or if a big chance was stopped), and location data. When logging actions, refer to this document when in doubt about what a certain value means and when to log it. Feedback is welcome and should be sent to wosostats.team@gmail or @WoSoStats on Twitter.
 
 #Table of Contents
 * Possessing Player Actions - `poss.action`
@@ -18,7 +18,7 @@ A key part of this model is that during any given moment in a match there is a t
 
 Another key part of this model is that there are actions that can only be done by a team in possession of the ball, actions that can only be done by a team playing defense, and actions that denote a clear change in possession. The last point is crucial; there are certain defensive actions (such as an interception) that signal a clear change in possession to the defending team, certain possessive actions (such as a recovery by a team that was formerly defending that do the same, and certain actions in other columns (such as a ball that went out of bounds and goes to the other team) that also do the same. This "flow" to the game where one team is in possession of the ball, the other team is defending, and certain moments denote a change in possession are key to logging stats under this model.
 
-Logging location data is laborious and, unless requested or unless you really want to know it, it is only recommended that it be logged for shots. More on how to define the different locations of a soccer pitch will be covered in its section, "Location-based Notes".
+Logging location data is laborious and, unless requested or unless you really want to know it, it is not recommended that you log it. More on how to define the different locations of a soccer pitch will be covered in the "Location-based Notes" section.
 
 For each definition, the long name will be shown in **bold like this** and the different ways you can actually write it in the Excel spreadsheet will be shown in `code span like this`, separated by a comma. You are not to write out the long name in the Excel spreadsheet, and it is highly recommended you use the shortest version possible, as using shortcuts will save you a significant amount of time. Shortcuts specified below do not need to be searched and replaced after the fact with anything, as they will be correctly logged by the R code used by the Shiny App. However, while you are free to use any other shortcuts you like (such as nicknames for players), know that those will have to be searched and replaced in order to be readable by the R code that has been created.
 
@@ -305,11 +305,11 @@ Fara Williams, the player in red, receives a pass from her teammate Lucy Bronze 
 
 **Corner crosses** - `corner.crosses`, `cc`
 
-Crosses, a ball launched or driven from the left third or right third of the field into the box, that were also struck from within the attacking third.
+Crosses, a ball launched or driven from the left third or right third of the field into the box, that were also struck from within the attacking third. Log this in the play.type column for all types of corner crosses; that includes crosses from open play and set-pieces (free kicks, corner kicks, and throw-ins that are launched or driven into the box).
 
 **Deep crosses** - `deep.crosses`, `dc`
 
-Crosses, a ball launched or driven from the left third or right third of the field into the box, that were also struck from beyond the attacking third.
+Crosses, a ball launched or driven from the left third or right third of the field into the box, that were also struck from beyond the attacking third. Log this in the play.type column for all types of deep crosses; that includes crosses from open play and set-pieces (free kicks, corner kicks, and throw-ins that are launched or driven into the box).
 
 **Switch** - `switch`, `s`
 
@@ -318,6 +318,8 @@ A long, high ball to an intended recipient across the field.
 **Launch balls** - `launch`, `lau`
 
 Also sometimes known as "long balls." Long, high balls into open space, not clearly towards any one intended recipient, or into a crowded area, or into open space for a teammate to run into. If they come from the left or right thirds of the field, they should be logged as crosses and NOT as a launch ball.
+
+Log this in the play.type column for all types of launched balls; that includes crosses from open play and set-pieces (free kicks, corner kicks, and throw-ins that are launched or driven into the box).
 
 Example 1: [http://i.imgur.com/HgK2mXJ.gifv](http://i.imgur.com/HgK2mXJ.gifv)
 
