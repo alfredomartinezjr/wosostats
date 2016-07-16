@@ -554,11 +554,11 @@ When a goalkeeper faces a high ball, usually from a corner kick, cross, or launc
 
 **Smothers won by the goalkeeper** - `gk.smothers.won`
 
-When a goalkeeper faces a take on by an opposing player in the box and wins it by successfully coming out to either claim the ball or clear it to safety.
+When a goalkeeper faces a take on by an opposing player in the box, or a ball into the box that an an opposing player is about to meet at the end of her run, and wins it by successfully coming out to either claim the ball or clear it to safety.
 
 **Smothers lost by the goalkeeper** - `gk.smothers.lost`
 
-When a goalkeeper faces a take on by an opposing player in the box and loses it by missing the ball, causing a foul, or mishandling the ball.
+When a goalkeeper faces a take on by an opposing player in the box, or a ball into the box that an an opposing player is about to meet at the end of her run, and loses it by missing the ball, causing a foul, or mishandling the ball.
 
 **Loose balls claimed by the goalkeeper** - `gk.loose.balls.won`
 
