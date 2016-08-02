@@ -251,7 +251,9 @@ all$`bPass.Att.per.90` <- (all$`bPass.Att`/all$MP)*90
 
 #OVERALL PASSING BY LOCATION---------
 #creates column for each third (def, mid, attack)
-t <- addMultiColumnsForQualifiers(patterns = c("A3"="^A3|A18|A6","M3"="^AM|^DM","D3"="^D3|D18|D6"),
+t <- addMultiColumnsForQualifiers(patterns = c("A3"="A3L|AL|A3C|AC|A3R|AR|A18|A6",
+                                                "M3"="AM3L|AML|AM3C|AMC|AM3R|AMR|DM3L|DML|DM3C|DMC|DM3R|DMR",
+                                                "D3"="D3L|DL|D3C|DC|D3R|DR|D18|D6"),
                                   pattern_locations = c("poss.location","poss.location","poss.location"),ogdf = d,
                                   ndf = createCleanDataFrame(c("passes.f.c", "passes.f", "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", d))
 ##Creates blank table with columns for direction distribution
@@ -284,8 +286,12 @@ all$`D3Pass.Att.per.90` <- (all$`D3Pass.Att`/all$MP)*90
 t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick", patternLocation = "play.type", ogdf = d, invert = TRUE,
                            ndf = createCleanDataFrame(c("passes.f.c", "passes.f", 
                                                         "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", d))
+t <- t[t[,"opPass"]=="yes",]
 #creates column for each third (def, mid, attack)
-t <- addMultiColumnsForQualifiers(patterns = c("A3"="^A3|A18|A6","M3"="^AM|^DM","D3"="^D3|D18|D6"),ogdf = d,ndf = t,
+t <- addMultiColumnsForQualifiers(patterns = c("A3"="A3L|AL|A3C|AC|A3R|AR|A18|A6",
+                                               "M3"="AM3L|AML|AM3C|AMC|AM3R|AMR|DM3L|DML|DM3C|DMC|DM3R|DMR",
+                                               "D3"="D3L|DL|D3C|DC|D3R|DR|D18|D6"),
+                                  ogdf = d,ndf = t,
                                   pattern_locations = c("poss.location","poss.location","poss.location"))
 ##Creates blank table with columns for direction distribution
 locationdist <- createTable(c("rFreq A3 opPasses", "rFreq M3 opPasses", "rFreq D3 opPasses"), "A3", t)
@@ -365,7 +371,7 @@ rm(t,t2)
 
 #OPEN PLAY PASSING BY DIRECTION----------
 #Passing stats, without dead ball scenarios (GKs, GK throws, GK drop kicks,FKs, CKs, throw ins)
-t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick", patternLocation = "play.type", ogdf = d, 
+t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type", ogdf = d, 
                               ndf = createCleanDataFrame(c("passes.f.c", "passes.f", 
                                                       "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", d),
                               invert = TRUE)
@@ -462,8 +468,12 @@ all$`sPPass.Att.per.90` <- (all$`sPPass.Att`/all$MP)*90
 all$`bPPass.Att.per.90` <- (all$`bPPass.Att`/all$MP)*90
 
 #CROSSES---------------
+t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type", ogdf = d, invert = TRUE,
+                           ndf = createCleanDataFrame(c("passes.f.c", "passes.f", 
+                                                        "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", d))
+t <- t[t[,"opPass"]=="yes",]
 t <- createDataFrame(c("corner.crosses", "deep.crosses"), "play.type", createDataFrame(c("passes.f.c", "passes.f", 
-                                                                                         "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", d))
+                                                                                         "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", t))
 ## Fills in blanks with info from cell above it
 t <- fillBlanks(t)
 ## Then, exclude anything that marks a stoppage in time
