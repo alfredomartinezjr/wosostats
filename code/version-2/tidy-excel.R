@@ -21,7 +21,7 @@ rm(base_directory, code_directory)
 ### vector for every column in the spreadsheet in the precise order in which they appear.
 ref.classes <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/resources/spreadsheet-classes.csv")
 ref.classes <- read.csv(textConnection(ref.classes), stringsAsFactors = FALSE)
-working.names <- colnames(read_excel(match))
+working.names <- colnames(read_excel(match.file))
 #needs to return a col_types character that has ALL column classes for EXACTLY 
 #every column in the excel spreadsheet
 col_types <- character(length(working.names))
@@ -53,10 +53,10 @@ rosters <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/ro
 rosters <- read.csv(textConnection(rosters), stringsAsFactors = FALSE)
 
 ##1. READING THE EXCEL FILE----------
-## "match" must be a string value and the Excel file must be in the working directory
-df <- read_excel(match, col_types = col_types)
+## "match.file" must be a string value and the Excel file must be in the working directory
+df <- read_excel(match.file, col_types = col_types)
 df <- as.data.frame(df)
-rm(match, col_types, ref.classes)
+rm(match.file, col_types, ref.classes)
 
 ##2. CHANGE COLUMN CLASSES----------
 ## Changes class of select columns if necessary
