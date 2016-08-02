@@ -365,4 +365,7 @@ rm(eventnum, nexteventnum, nextrownum, rownum, string)
 
 ##16. DELETING VALUES
 rm(opposites, deflocations, awayteam, hometeam, posslocations, homedata, 
-   awaydata, teams, players, rosters, actionIsInvertible)
+   awaydata, teams, players, rosters, actionIsInvertible, AbbreviationConverter_Base, 
+   AbbreviationConverter_DefAction, AbbreviationConverter_DefPlayerDisciplinary, AbbreviationConverter_PlayType,
+   AbbreviationConverter_PossAction, AbbreviationConverter_PossAction, AbbreviationConverter_PossNotes, 
+   AbbreviationConverter_PossPlayerDisciplinary, AbbreviationProcessor)
