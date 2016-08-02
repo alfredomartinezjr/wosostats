@@ -56,7 +56,7 @@ rosters <- read.csv(textConnection(rosters), stringsAsFactors = FALSE)
 ## "match" must be a string value and the Excel file must be in the working directory
 df <- read_excel(match, col_types = col_types)
 df <- as.data.frame(df)
-rm(col_types, ref.classes)
+rm(match, col_types, ref.classes)
 
 ##2. CHANGE COLUMN CLASSES----------
 ## Changes class of select columns if necessary
@@ -119,9 +119,10 @@ rownum <- rownum + 1
 ### is in that row is part of the same event as the row above it (assuming it's all
 ### been logged correctly).
 while (rownum <= nrow(df)) {
-  if(df[rownum,"poss.player"] == "-" | 
+  if((df[rownum,"poss.player"] == "-" | 
      is.na(df[rownum,"poss.player"]) | 
-     df[rownum,"poss.player"] == " ") {
+     df[rownum,"poss.player"] == " ") &&
+     !grepl(("end.of.match|stoppage.in.play|halftime"),df[rownum,"poss.action"])) {
     #sets event value as previous row's event value
     df[rownum,"event"] <- df[rownum-1,"event"]
   } else {
@@ -132,7 +133,7 @@ while (rownum <= nrow(df)) {
 }
 rm(rownum)
 
-##7. CLEAN UP PLAYER NUMBERS AND NAMES
+##7. CLEAN UP PLAYER NUMBERS AND NAMES----------
 ### Gets rid of player numbers and leading/trailing whitespace 
 ### in "poss.player" and "def.player" values
 ### NOTE: THIS WILL LIKELY NEED TO BE CHANGED (OR GOTTEN RID OF)
@@ -146,7 +147,7 @@ while (rownum <= nrow(df)) {
   df[rownum,"def.player"] <- trimws(strsplit(as.character(def.string)," \\(")[[1]][1])
   rownum <- rownum + 1
 }
-rm(rownum)
+rm(def.string, poss.string,rownum)
 
 ##8. CREATE METADATA OBJECTS----------
 ### Creates a meta data frame of all columns from row 1 to row before kickoff
@@ -207,7 +208,7 @@ while (rownum <= nrow(df)) {
   }
   rownum <- rownum + 1
 }
-rm(x,y,z,rownum)
+rm(y,z,rownum)
 
 ##10. CALCULATE MISSING TEAM & POSITION DATA FOR EACH PLAYER---------
 ### Deletes metadata from df & converts "-", " ", and blank values to NAs
@@ -243,115 +244,108 @@ actionIsInvertible <- function(action, col) {
   grepl("pressure|challenge|aerial|tackle|dispossess|dribble|pass|move|take|shots",df[action, col])
 }
 
-
 ##12. EXPANDS SHORTCUT VALUES FOR MATCH ACTIONS----------
 abbreviation_processor = AbbreviationProcessor$new()
 for(i in 1:nrow(df))
 {
   df[i,] = abbreviation_processor$process_row(df[i,])
 }
-rm(abbreviation_processor)
-
+rm(i, abbreviation_processor)
 
 ##13. FILLS IN BLANK DEF.LOCATION CELLS----------
 ## Goes down the entire data.frame, row by row, and fills in blank "def.location" cells
 cantDetermine <- c()
-x <- 1
-while (x <= nrow(df)) {
+rownum <- 1
+while (rownum <= nrow(df)) {
   ## checks if "def.location" is NA for actions that can have their location determined
   ## based on the inverse of certain actions from opposing players
-  if (is.na(df[x,"def.location"])) {
+  if (is.na(df[rownum,"def.location"])) {
     col <- "def.action"
-    if (actionIsInvertible(x, col)) {
-      ## Check if "poss.location is filled in for event
-      ev <- df[x,"event"]
-      possloc <- df[df[,"event"]==ev,"poss.location"][1]
-      if(!is.na(possloc)) {
-        # assign the opposite of poss.loc "def.location"
-        df[x,"def.location"] <- as.character(opposites[as.character(opposites[,"posslocations"]) == as.character(possloc),"deflocations"])
+    if (actionIsInvertible(rownum, col)) {
+      ## Check if "poss.location" column is filled in for event
+      eventnum <- df[rownum,"event"]
+      eventpossloc <- df[df[,"event"]==eventnum,"poss.location"][1]
+      if(!is.na(eventpossloc)) {
+        # assign the opposite of eventpossloc to "def.location"
+        df[rownum,"def.location"] <- as.character(opposites[as.character(opposites[,"posslocations"]) == as.character(eventpossloc),"deflocations"])
       }
       ## if "poss.location" is an NA, we can't determine the blank "def.location" value
-      else if (is.na(df[x, "poss.location"])) {
-        paste(x, "has an NA poss.location value")
+      else if (is.na(df[rownum, "poss.location"])) {
+        paste(rownum, "has an NA poss.location value")
       }
     } 
     ## checks if "def.location" is blank for interceptions, which can have its location
     ## determined based on location of next action, which is by definition by the intercepting
     ## player at the location of the interception
-    else if (grepl("interceptions", df[x,"def.action"])) {
+    else if (grepl("interceptions", df[rownum,"def.action"])) {
       # find location of next poss.player
-      e <- df[x,"event"][1]
-      ne <- e + 1
-      location <- df[df[,"event"] == df[ne,"event"],"poss.location"][1]
+      eventnum <- df[rownum,"event"][1]
+      nexteventnum <- eventnum + 1
+      nexteventlocation <- df[df[,"event"] == df[nexteventnum,"event"],"poss.location"][1]
       # assign it as the "def.location"
-      df[x,"def.location"] <- location
+      df[rownum,"def.location"] <- nexteventlocation
     }
     ## Otherwise, NA values "def.location" can't be determined
     else {
-      if(!is.na(df[x,"def.action"])){
-        cantDetermine <- c(cantDetermine, df[x,"event"])
+      if(!is.na(df[rownum,"def.action"])){
+        cantDetermine <- c(cantDetermine, df[rownum,"event"])
       }
     }
   }
-  x <- x + 1
+  rownum <- rownum + 1
 }
-rm(x, e, ev, ne, possloc,col,location)
-print("The following events have blank def.location")
-cantDetermine
-rm(cantDetermine)
+print(paste("The following events have blank def.location: "))
+print(paste(as.character(cantDetermine)))
+rm(rownum, eventnum, nexteventnum, eventpossloc,col,nexteventlocation, cantDetermine)
 
 ##14. FILLS IN BLANK POSS.LOCATION CELLS & DETERMINE COMPLETED PASSES----------
-e <- 1
-while (e <= max(df$event, na.rm = TRUE)) {
+eventnum <- 1
+while (eventnum <= max(df$event, na.rm = TRUE)) {
   # get row for "poss.action" for "event"
-  row <- grep(e,df[,"event"])[1]
+  rownum <- grep(eventnum,df[,"event"])[1]
   # get event value and row for "poss.action" for next event
-  nextevent <- e + 1
-  nextrow <- grep(nextevent,df[,"event"])[1]
+  nexteventnum <- eventnum + 1
+  nextrownum <- grep(nexteventnum,df[,"event"])[1]
   # checks these conditions which must be fulfilled for the pass attempt to be a completed pass
   if(
     # checks if the event is a pass attempt
-    grepl("pass", df[df[,"event"] == e,"poss.action"][1]) &&
-    
-    # checks if the "poss.play.destination" value is blank and needs to be filled
-    #don't remember why I put this in and don't think it's necessary
-    #is.na(df[row,"poss.play.destination"]) &&
+    grepl("pass", df[df[,"event"] == eventnum,"poss.action"][1]) &&
     
     # checks if the next event isn't a stop in play or break in broadcast
     # these instances should have the "poss.play.destination" value filled in anyways
     !grepl("playcutoffbybroadcast|offside|stoppage|
-           substitution|halftime|fulltime|end.of", df[nextrow,"poss.action"]) &&
+           substitution|halftime|fulltime|end.of.match", df[nextrownum,"poss.action"]) &&
     
     # checks if next event isn't a lost aerial duel
-    !grepl("aerial.lost", df[nextrow, "poss.action"]) &&
+    !grepl("aerial.lost", df[nextrownum, "poss.action"]) &&
     
     # checks if next event, which shouldn't be a lost aerial duel, has the same team as the possessing team
-    df[row,"poss.team"] == df[nextrow,"poss.team"] &&
+    df[rownum,"poss.team"] == df[nextrownum,"poss.team"] &&
     
     # if the above conditions are satisfied, check "def.action" to make sure it does not
     # include defensive actions that would still indicate an unsuccessful pass attempt
-    !grepl("interceptions|blocks|clearances|shield|high.balls.won|smothers.won|loose.balls.won", df[df[,"event"] == e,"def.action"])
+    !grepl("interceptions|blocks|clearances|shield|high.balls.won|smothers.won|loose.balls.won", df[df[,"event"] == eventnum,"def.action"])
     )
     # if the previous test is passed, then it's a completed pass! Now, to determine the destination of the pass
     {
     # use location from the next event as
     # the poss.play.destination value
-    df[row,"poss.play.destination"] <- df[nextrow, "poss.location"]
+    df[rownum,"poss.play.destination"] <- df[nextrownum, "poss.location"]
     
     # one last thing, add a ".c" to the end of the "poss.action" value to signify that it's a completed pass
-    string <- df[row,"poss.action"]
-    df[row,"poss.action"] <- paste0(string, ".c")
+    string <- df[rownum,"poss.action"]
+    df[rownum,"poss.action"] <- paste0(string, ".c")
     
     # move on to the next event
-    e <- e + 1
+    eventnum <- eventnum + 1
   }
     # if the previous test is not passed, then the event is not a completed pass
     # move on to the next event
   else {
-    e <- e + 1
+    eventnum <- eventnum + 1
   }
 }
-rm(e, nextevent, nextrow, row, string)
+rm(eventnum, nexteventnum, nextrownum, rownum, string)
 
 ##15. [THIS CODE NOT IN NOT IN USE] FILLS IN BLANK POSS.PLAY.DESTINATION CELLS--------
 #For when defensive action can be used to determine "poss.play.destination"
@@ -369,5 +363,6 @@ rm(e, nextevent, nextrow, row, string)
 #  }
 #}
 
+##16. DELETING VALUES
 rm(opposites, deflocations, awayteam, hometeam, posslocations, homedata, 
-   awaydata, teams, players, rosters, actionIsInvertible, match)
+   awaydata, teams, players, rosters, actionIsInvertible)
