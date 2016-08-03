@@ -3,23 +3,29 @@ require(RCurl)
 require(plyr)
 require(dplyr)
 
-#Download the USA-FRA SheBelieves Cup 2016 Excel file at this link: https://github.com/amj2012/wosostats/blob/master/source/excel/shebelieves-cup-2016/shebelieves-cup-2016-usa-fra-030616.xlsx
-#Make sure the USA-FRA Excel file is in your working directory
+#You can either start from the very beginning and start with the Excel match 
+#spreadsheet.. or skip ahead to just sourcing the csv file that is created
+#anyways by tidying the Excel file.
 
 ##TIDY THE EXCEL FILE---------
+#Download the Excel file for the match you want from this folder in the WoSo Stats GitHub repo: httpshttps://github.com/amj2012/wosostats/tree/master/source/excel
+#Make sure the Excel file is in your working directory
 #Running the following runs the Excel file through the tidy-excel.R code
 #This code cleans up the match spreadsheet (it always looks ugly) and turns
 #it into something that can be read by the code below that generates the
 #location-based passing stats
-#Set match.file <- "shebelieves-cup-2016-usa-fra-030616.xlsx"
+#Assign the file name of the Excel file you want to tidy to "match.file"
 if (exists("match.file")) {
   source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/tidy-excel.R")
 }
 
 ##OR JUST SOURCE THE CSV FILE----------
+#Get the URL for the raw csv file for the match you want from this folder:https://github.com/amj2012/wosostats/tree/master/source/csv
+#Once you find your match, click on "Raw" to get the URL
+#
 #Running the following just sources the match spreadsheet in csv format directly
 #from the GitHub repo
-#set matchURL <- "https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/international-friendlies-2016/2016-international-friendly-usa-irl-012316.csv"
+#Assign the URL of the csv file as "matchURL"
 if (exists("matchURL")) {
   df <- getURL(matchURL)
   df <- read.csv(textConnection(df), stringsAsFactors = FALSE)
