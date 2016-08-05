@@ -4,8 +4,10 @@ library(dplyr)
 library(RCurl)
 #locationofmatchcsv is the location on your computer or URL for the csv file with the logged match actions
 #locationofmatchcsv must be a string
-d <- getURL(matchURL)
-d <- read.csv(textConnection(d), stringsAsFactors = FALSE)
+if(!exists("d")){
+  d <- getURL(matchURL)
+  d <- read.csv(textConnection(d), stringsAsFactors = FALSE)
+}
 source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/functions.R")
 
 #MINUTES PLAYED & META DATA----------
