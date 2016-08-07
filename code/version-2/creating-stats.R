@@ -952,5 +952,8 @@ rm(t, t2, t3, t4, t5, t6)
 all[is.na(all)] <- 0
 names(all) <- gsub(" ",".", names(all))
 rm(x)
-rm(d, substitutions, e, matchlength, playerteam, matchURL)
+rm(d, substitutions, e, matchlength, playerteam)
+if(exists("matchURL")){
+  rm(matchURL)
+}
 rm(addColumnForMultiQualifiers,addMultiColumnsForQualifiers,addColumnForQualifier, createCleanDataFrame, createDataFrame, createTable, fillBlanks, createPassingTable, player)
