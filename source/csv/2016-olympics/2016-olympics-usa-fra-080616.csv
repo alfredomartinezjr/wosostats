@@ -712,7 +712,7 @@
 652,"46","M","USA","Heath","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 653,"46","M","USA","Heath","movement",NA,NA,NA,"F","FRA","Diani","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 654,"46","M","USA","Heath","passes.f.c",NA,NA,NA,"F","FRA","Diani","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-654,"46",NA,NA,NA,NA,NA,NA,NA,"D","FRA","Houara","blocks",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA,NA
+654,"46",NA,NA,NA,NA,NA,NA,NA,"D","FRA","Houara","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 655,"46","M","USA","Heath","passes.s.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 655,"46",NA,NA,NA,NA,NA,NA,"corner.crosses","M","FRA","Cadamuro","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 656,"46","D","USA","Klingenberg","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -743,7 +743,7 @@
 681,"47","M","USA","Lloyd","passes.f.c",NA,NA,NA,"M","FRA","Bussaglia","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 682,"47","F","USA","Dunn","passes.f.c",NA,NA,NA,"D","FRA","Majri","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 683,"47","F","USA","Morgan","movement",NA,NA,NA,"M","FRA","Bussaglia","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-684,"47","F","USA","Morgan","dispossessed",NA,NA,NA,"D","FRA","Renard","tackles.ball",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA,NA
+684,"47","F","USA","Morgan","dispossessed",NA,NA,NA,"D","FRA","Renard","tackles.ball",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 685,"48","M","USA","Heath","passes.b.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 685,"48",NA,NA,NA,NA,NA,NA,"corner.crosses","D","FRA","Renard","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 686,"48","D","USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -752,13 +752,13 @@
 689,"48","D","USA","Klingenberg","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 690,"48","M","USA","Lloyd","aerial.lost",NA,NA,NA,"M","FRA","Henry","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 691,"48","D","FRA","Houara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-692,"48","D","FRA","Houara","clearances",NA,NA,NA,"M","USA","Brian",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA
+692,"48","D","FRA","Houara","clearances",NA,NA,NA,"M","USA","Brian",NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 693,"49","D","USA","Klingenberg","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 694,"49","M","USA","Long","passes.f",NA,NA,NA,"F","FRA","Diani","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 694,"49",NA,NA,NA,NA,NA,NA,NA,"M","FRA","Abily","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 694,"49",NA,NA,NA,NA,NA,NA,NA,"D","FRA","Houara","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 695,"49","F","FRA","Diani","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-696,"49","F","FRA","Diani","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA
+696,"49","F","FRA","Diani","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 697,"49","D","USA","Klingenberg","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 698,"49","M","USA","Heath","dispossessed",NA,NA,NA,"M","FRA","Henry","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 699,"49","F","FRA","Diani","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
