@@ -8,7 +8,17 @@ if(!exists("d")){
   d <- getURL(matchURL)
   d <- read.csv(textConnection(d), stringsAsFactors = FALSE)
 }
-source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/functions.R")
+## About offline mode:
+### Trying to do work on a plane & don't want to pay $8 for Wi-Fi? Stuck in a train tunnel?
+### Assign "offline" to  online_mode and, assuming you've got the GitHub repo duplicated in
+### your working directory, you can just read the files instead of going online.
+### Otherwise, if online_mode hasn't been created yet, you'll just source the "functions.R"
+### file from the GitHub site
+if(!exists("online_mode")){
+  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/functions.R")
+} else if(exists("online_mode") && online_mode == "offline"){
+  source("~/wosostats/code/version-2/functions.R")
+}
 
 #MINUTES PLAYED & META DATA----------
 ##Adds missing columns (if they're missing)
@@ -868,45 +878,48 @@ all <- merge(all, t2, by="Player", all=TRUE)
 rm(t, t2)
 
 #GK HIGH BALLS FACED----------
+t <- createDataFrame("GK", "def.position", d)
+#t <- createDataFrame(c("gk.high.balls.won","gk.high.balls.lost"), "def.action", d)
 t <- addMultiColumnsForQualifiers(patterns = c("hbwon"="gk.high.balls.won", "hblost"="gk.high.balls.lost", "cross"="cross",
-                                                  "corner.kick"="corner.kick","free.kick"="free.kick", "caught"="caught",
-                                                  "punched.away"="punched.to.safety", "parried.away"="parried.to.safety",
-                                                  "collected"="collected","foul.won"="fouls.won"),
-                                     pattern_locations = c("def.action", "def.action", "play.type","play.type",
-                                                           "play.type",  "gk.ball.stop", "gk.ball.stop", "gk.ball.stop",
-                                                           "gk.ball.stop", "gk.ball.stop"),
-                                     ogdf = d, ndf = createDataFrame(c("gk.high.balls.won","gk.high.balls.lost"), "def.action", d))
+                                               "corner.kick"="corner.kick","free.kick"="free.kick", "caught"="caught",
+                                               "punched.away"="punched.to.safety", "parried.away"="parried.to.safety",
+                                               "collected"="collected","foul.won"="fouls.won"),
+                                  pattern_locations = c("def.action", "def.action", "play.type","play.type",
+                                                        "play.type",  "gk.ball.stop", "gk.ball.stop", "gk.ball.stop",
+                                                        "gk.ball.stop", "gk.ball.stop"),
+                                  ogdf = t, ndf = t)
 
 ## Only goalkeepers
 t <- t[grep("[Gg][Kk]", t[,"def.position"]),]
 t$poss.player <- t$def.player
-## Create table
+## Create stats table for basic high balls stats
 t2 <- merge(cbind("Player"=character(0), "High Balls"=numeric(0)), createTable(c("gk.high.balls.won", "gk.high.balls.lost", "gk.high.ball.win.pct"), "def.action", t), by="Player", all=TRUE)
 names(t2) <- c("Player", "High Balls Faced", "HB Won", "HB Lost", "HB Win Pct")
 t2$`High Balls Faced` <- t2$`HB Won` + t2$`HB Lost`
 t2$`HB Win Pct` <- t2$`HB Won`/t2$`High Balls Faced`
+## Create more detailed stats for high balls
 t2 <- merge(t2, createTable(c("yes", "no"), "caught", t)[,c("Player", "yes")], by="Player", all=TRUE)
-names(t2)[5] <- "HB Caught"
+names(t2)[6] <- "HB Caught"
 t2 <- merge(t2, createTable(c("yes", "no"), "punched.away", t)[,c("Player", "yes")], by="Player", all=TRUE)
-names(t2)[6] <- "HB Punched"
+names(t2)[7] <- "HB Punched"
 t2 <- merge(t2, createTable(c("yes", "no"), "parried.away", t)[,c("Player", "yes")], by="Player", all=TRUE)
-names(t2)[7] <- "HB Parried"
+names(t2)[8] <- "HB Parried"
 t2 <- merge(t2, createTable(c("yes", "no"), "collected", t)[,c("Player", "yes")], by="Player", all=TRUE)
-names(t2)[8] <- "HB Collected"
+names(t2)[9] <- "HB Collected"
 t2 <- merge(t2, createTable(c("yes", "no"), "foul.won", t)[,c("Player", "yes")], by="Player", all=TRUE)
-names(t2)[9] <- "HB Fouls Won"
+names(t2)[10] <- "HB Fouls Won"
 t2 <- merge(t2, createTable(c("yes", "no"), "cross", t)[,c("Player", "yes")], by="Player", all=TRUE)
-names(t2)[10] <- "Crosses Faced"
+names(t2)[11] <- "Crosses Faced"
 t2 <- merge(t2, createTable(c("yes", "no"), "hbwon", t[t["cross"]=="yes",]), by="Player", all=TRUE)
-names(t2)[11:12] <- c("Crosses Won", "Crosses Lost")
+names(t2)[12:13] <- c("Crosses Won", "Crosses Lost")
 t2 <- merge(t2, createTable(c("yes", "no"), "corner.kick", t)[,c("Player", "yes")], by="Player", all=TRUE)
-names(t2)[13] <- "Corner Kicks Faced"
+names(t2)[14] <- "Corner Kicks Faced"
 t2 <- merge(t2, createTable(c("yes", "no"), "hbwon", t[t["corner.kick"]=="yes",]), by="Player", all=TRUE)
-names(t2)[14:15] <- c("CKs Won", "CKs Lost")
+names(t2)[15:16] <- c("CKs Won", "CKs Lost")
 t2 <- merge(t2, createTable(c("yes", "no"), "free.kick", t)[,c("Player", "yes")], by="Player", all=TRUE)
-names(t2)[16] <- "Free Kicks Faced"
+names(t2)[17] <- "Free Kicks Faced"
 t2 <- merge(t2, createTable(c("yes", "no"), "hbwon", t[t["free.kick"]=="yes",]), by="Player", all=TRUE)
-names(t2)[17:18] <- c("FKs Won", "FKs Lost")
+names(t2)[18:19] <- c("FKs Won", "FKs Lost")
 all <- merge(all, t2, by=1, all=TRUE)
 rm(t, t2)
 
