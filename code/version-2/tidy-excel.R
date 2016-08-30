@@ -7,11 +7,24 @@ require(readxl)
 require(xlsx)
 require(RCurl)
 
+##Offline Mode
+### Trying to do work on a plane & don't want to pay $8 for Wi-Fi? Stuck in a train tunnel?
+### Assign "offline" to  online_mode and, assuming you've got the GitHub repo duplicated in
+### your working directory, you can just read the files instead of going online.
+### Otherwise, if online_mode hasn't been created yet, "online" is assigned to online_mode
+if(!exists("online_mode")){
+  online_mode <- "online"
+}
+
 ## Internal files to include
-base_directory = "https://raw.githubusercontent.com/amj2012/wosostats/master/"
-code_directory = paste(base_directory, "code/version-2/", sep="")
-source(paste(code_directory, "abbreviations.R", sep=""))
-rm(base_directory, code_directory)
+if(online_mode == "online") {
+  base_directory = "https://raw.githubusercontent.com/amj2012/wosostats/master/"
+  code_directory = paste(base_directory, "code/version-2/", sep="")
+  source(paste(code_directory, "abbreviations.R", sep=""))
+  rm(base_directory, code_directory)
+} else if(online_mode == "offline") {
+  source("~/wosostats/code/version-2/abbreviations.R")
+}
 
 
 ##0. REFERENCE DATA TO SOURCE----------
@@ -19,8 +32,12 @@ rm(base_directory, code_directory)
 ### Sourcing this data.frame and creating the col_types vector below will be
 ### necessary due to how read_excel() requires the column class types to be in a
 ### vector for every column in the spreadsheet in the precise order in which they appear.
-ref.classes <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/resources/spreadsheet-classes.csv")
-ref.classes <- read.csv(textConnection(ref.classes), stringsAsFactors = FALSE)
+if (online_mode == "online"){
+  ref.classes <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/resources/spreadsheet-classes.csv")
+  ref.classes <- read.csv(textConnection(ref.classes), stringsAsFactors = FALSE)
+} else if(online_mode == "offline") {
+  ref.classes <- read.csv("~/wosostats/resources/spreadsheet-classes.csv")
+}
 working.names <- colnames(read_excel(match.file))
 #needs to return a col_types character that has ALL column classes for EXACTLY 
 #every column in the excel spreadsheet
@@ -49,8 +66,12 @@ rm(working.names)
 ### rosters is a data.frame of player data. For now this is just 2016 NWSL player
 ### data. This is to account for multiple teams with players with the same last name,
 ### among other pesky scenarios
-rosters <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/rosters/nwsl-2016.csv")
-rosters <- read.csv(textConnection(rosters), stringsAsFactors = FALSE)
+if(online_mode == "online"){
+  rosters <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/rosters/nwsl-2016.csv")
+  rosters <- read.csv(textConnection(rosters), stringsAsFactors = FALSE)
+} else if(online_mode == "offline") {
+  rosters <- read.csv("~/wosostats/rosters/nwsl-2016.csv")
+}
 
 ##1. READING THE EXCEL FILE----------
 ## "match.file" must be a string value and the Excel file must be in the working directory
