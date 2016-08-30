@@ -1,0 +1,1512 @@
+"event","time","poss.position","poss.team","poss.player","poss.action","poss.location","poss.play.destination","play.type","def.position","def.team","def.player","def.action","def.location","gk.ball.stop","gk.s.o.g.attempt","poss.player.disciplinary","poss.notes","def.player.disciplinary","def.notes","xG","poss.number","def.number"
+1,"1",NA,NA,NA,"kickoff",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2,"1","M","COL","Usme","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3,"1","M","COL","Santos","passes.s.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4,"1","F","COL","Andrade","passes.b.c",NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5,"1","D","COL","C. Arias","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+6,"1","D","COL","Clavijo","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+7,"1","D","COL","N. Arias","passes.f",NA,NA,"launch","F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+8,"1","D","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+9,"1","D","USA","Sauerbrunn","passes.f.c",NA,NA,"headed","M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+10,"1","D","USA","O'Hara","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+10,"1",NA,NA,NA,NA,NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+11,"1","M","USA","Rapinoe","passes.b.c",NA,NA,"lay.off","M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+11,"1",NA,NA,NA,NA,NA,NA,NA,"D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,"1","M","USA","Horan","passes.b.c",NA,NA,"flick.on","D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+13,"1","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+14,"1","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+15,"1","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+16,"1","D","USA","O'Hara","passes.b.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+17,"1","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18,"1","D","USA","Engen","passes.s.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+19,"1","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+20,"1","D","USA","O'Hara","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21,"1","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,"2","D","USA","Krieger","passes.f.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+23,"2","F","USA","Dunn","passes.s.c",NA,NA,NA,"D","COL","Velasquez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+24,"2","D","USA","Krieger","passes.b.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+25,"2","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+26,"2","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+27,"2","D","USA","O'Hara","passes.f.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+28,"2","M","USA","Brian","passes.f.c",NA,NA,NA,"M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+28,"2",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+28,"2",NA,NA,NA,NA,NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+29,"2","F","USA","Press","movement",NA,NA,NA,"D","COL","C. Arias","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+30,"2","F","USA","Press","passes.f.c",NA,NA,NA,"M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+30,"2",NA,NA,NA,NA,NA,NA,NA,"D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+30,"2",NA,NA,NA,NA,NA,NA,NA,"D","COL","N. Arias","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+30,"2",NA,NA,NA,NA,NA,NA,NA,"D","COL","Clavijo","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+31,"2","M","USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+32,"2","M","USA","Horan","passes.s.c",NA,NA,NA,"D","COL","Salazar","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+33,"2","M","USA","Rapinoe","passes.s",NA,NA,"corner.crosses","D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+34,"2","M","USA","Lloyd","aerial.lost",NA,NA,NA,"D","COL","Clavijo","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+35,"2","M","USA","Brian","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+36,"2","M","USA","Brian","passes.f.c",NA,NA,NA,"M","COL","Santos","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+37,"2","M","USA","Horan","dispossessed",NA,NA,NA,"M","COL","Santos","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+37,"2",NA,NA,NA,NA,NA,NA,NA,"M","COL","Gaitan","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+38,"2","D","USA","Engen","ball.shield",NA,NA,NA,"M","COL","Usme","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+39,"3","D","USA","Sauerbrunn","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+40,"3","M","USA","Rapinoe","passes.s",NA,NA,"corner.crosses","F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+41,"3","M","USA","Lloyd","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42,"3","GK","COL","Sepulveda","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42,"3",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+43,"3","M","COL","Gaitan","aerial.lost",NA,NA,NA,"M","USA","Brian","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+44,"3","F","USA","Dunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45,"3","F","USA","Dunn","passes.f.c",NA,NA,"through","F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46,"3","F","USA","Press","movement",NA,NA,NA,"D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47,"3","F","USA","Press","passes.b.c",NA,NA,NA,"D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47,"3",NA,NA,NA,NA,NA,NA,NA,"D","COL","N. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48,"3","M","USA","Horan","shots.blocked",NA,NA,NA,"D","COL","C. Arias","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48,"3",NA,NA,NA,NA,NA,NA,NA,"D","COL","C. Arias","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+49,"3","M","USA","Brian","lost.touch",NA,NA,NA,"M","COL","Santos","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+50,"4","D","USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51,"4","D","USA","Krieger","clearances",NA,NA,NA,"M","COL","Usme","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+51,"4",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+52,"4","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+53,"4","M","USA","Rapinoe","passes.b.c",NA,NA,NA,"D","COL","C. Arias","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+53,"4",NA,NA,NA,NA,NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+53,"4",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+54,"4","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+55,"4","D","USA","Krieger","passes.s.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+55,"4",NA,NA,NA,NA,NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+56,"4","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+57,"4","D","USA","O'Hara","passes.f",NA,NA,NA,"F","COL","Andrade","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+58,"4","D","USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+59,"4","D","USA","O'Hara","passes.b.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+60,"5","D","USA","Sauerbrunn","passes.f.c",NA,NA,"launch","M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+61,"5","F","USA","Dunn","dispossessed",NA,NA,NA,"D","COL","Velasquez","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+62,"5","D","USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+63,"5","D","USA","Krieger","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+64,"5","D","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+65,"5","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+66,"5","M","USA","Rapinoe","passes.f.c",NA,NA,"flick.on","D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+66,"5",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+67,"5","M","USA","Horan","passes.s.c",NA,NA,"corner.crosses","D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+68,"5","F","USA","Press","lost.touch",NA,NA,NA,"M","COL","Gaitan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+68,"5",NA,NA,NA,NA,NA,NA,NA,"M","COL","Gaitan","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+69,"5","D","USA","Sauerbrunn","recoveries",NA,NA,NA,"M","COL","Usme","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+70,"5","M","USA","Rapinoe","passes.b.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+71,"5","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+72,"5","D","USA","Krieger","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+73,"5","D","USA","Krieger","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+74,"5","M","USA","Rapinoe","passes.f",NA,NA,NA,"D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+75,"5","D","COL","C. Arias","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+76,"5","D","COL","C. Arias","movement",NA,NA,NA,"M","USA","Horan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+77,"5","D","COL","C. Arias","passes.b.c",NA,NA,NA,"M","USA","Horan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+78,"5","F","COL","Andrade","passes.s.c",NA,NA,NA,"M","USA","Rapinoe","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+79,"5","D","COL","Salazar","clearances",NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+79,"5",NA,NA,NA,NA,NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+80,"6","D","USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+81,"6","D","USA","O'Hara","passes.s",NA,NA,"corner.crosses","M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+82,"6","F","USA","Dunn","aerial.lost",NA,NA,NA,"D","COL","Clavijo","aerial.won",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+83,"6","M","USA","Rapinoe","passes.s",NA,NA,"corner.kick","M","COL","Usme","ball.shield",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+84,"7","GK","COL","Sepulveda","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+84,"7",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+85,"7","D","COL","Salazar","aerial.lost",NA,NA,NA,"M","USA","Brian","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+86,"7","M","COL","Gaitan","aerial.won",NA,NA,NA,"M","USA","Lloyd","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+87,"7","M","USA","Horan","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+88,"7","M","COL","Gaitan","recoveries",NA,NA,NA,"M","USA","Horan","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+89,"7","D","COL","Clavijo","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+90,"7","M","COL","Santos","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+91,"7","D","COL","N. Arias","passes.s.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+92,"7","D","COL","C. Arias","lost.touch",NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+93,"7","D","USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+94,"7","D","USA","O'Hara","passes.b.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+95,"7","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+96,"7","D","USA","Engen","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+97,"7","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+98,"7","D","USA","O'Hara","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+99,"7","M","USA","Horan","passes.b.c",NA,NA,"lay.off","D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+100,"7","D","USA","O'Hara","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+101,"8","F","USA","Press","passes.b.c",NA,NA,"lay.off","D","COL","N. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+101,"8",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+102,"8","D","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+103,"8","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+104,"8","D","USA","O'Hara","passes.f.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+105,"8","M","USA","Rapinoe","passes.f.c",NA,NA,"through","D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+105,"8",NA,NA,NA,NA,NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+106,"8","F","USA","Press","passes.b.c",NA,NA,"lay.off","D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+107,"8","M","USA","Horan","passes.s.c",NA,NA,NA,"D","COL","N. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+107,"8",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+108,"8","M","USA","Lloyd","dispossessed",NA,NA,NA,"M","COL","Gaitan","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+108,"8",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+109,"8","M","USA","Horan","recoveries",NA,NA,NA,"M","COL","Gaitan","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+110,"9","M","USA","Rapinoe","shots.missed",NA,NA,"free.kick","GK","COL","Sepulveda","gk.shot.miss",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+111,"9","GK","COL","Sepulveda","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+111,"9",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+112,"9","D","COL","Salazar","aerial.lost",NA,NA,NA,"M","USA","Horan","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+113,"9","D","COL","C. Arias","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+114,"9","D","COL","C. Arias","take.on.won",NA,NA,NA,"F","USA","Press","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+115,"9","D","COL","C. Arias","dispossessed",NA,NA,NA,"M","USA","Lloyd","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+116,"9","D","COL","C. Arias","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+117,"9","D","COL","C. Arias","clearances",NA,NA,NA,"M","USA","Lloyd","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+118,"9","D","USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+119,"9","D","USA","O'Hara","passes.f.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+120,"9","M","USA","Horan","lost.touch",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+121,"9","D","COL","Salazar","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+122,"9","D","COL","Salazar","passes.s.c",NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+122,"9",NA,NA,NA,NA,NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+123,"9","M","COL","Santos","passes.s.c",NA,NA,"lay.off","M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+124,"10","F","COL","Andrade","passes.b.c",NA,NA,NA,"D","USA","O'Hara","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+124,"10",NA,NA,NA,NA,NA,NA,NA,"M","USA","Rapinoe","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+125,"10","D","COL","C. Arias","passes.b",NA,NA,NA,"M","USA","Rapinoe","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+125,"10",NA,NA,NA,NA,NA,NA,NA,"F","USA","Press","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+126,"10","F","USA","Press","take.on.won",NA,NA,NA,"D","COL","N. Arias","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+127,"10","F","USA","Press","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+128,"10","F","USA","Press","passes.b",NA,NA,NA,"M","COL","Gaitan","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+129,"11","M","USA","Rapinoe","passes.s",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+129,"11",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+130,"11","M","USA","Brian","aerial.lost",NA,NA,NA,"F","COL","Andrade","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+130,"11",NA,NA,NA,NA,NA,NA,NA,"F","COL","Andrade","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+131,"11","D","USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+132,"11","D","USA","O'Hara","passes.s.c",NA,NA,"headed","F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+132,"11",NA,NA,NA,NA,NA,NA,NA,"D","COL","Clavijo","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+132,"11",NA,NA,NA,NA,NA,NA,NA,"M","COL","Usme","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+133,"11","D","USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+134,"11","D","USA","Krieger","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+135,"11","M","USA","Lloyd","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+136,"11","M","USA","Lloyd","take.on.lost",NA,NA,NA,"M","COL","Gaitan","ball.shield",NA,NA,NA,"fouls.conceded",NA,"fouls.won",NA,NA,NA,NA
+137,"11","GK","COL","Sepulveda","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+137,"11",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+138,"11","M","COL","Usme","aerial.lost",NA,NA,NA,"D","USA","Krieger","aerial.won",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+139,"11","D","USA","Krieger","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+140,"11","D","USA","Engen","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+141,"12","D","USA","Engen","passes.f.c",NA,NA,NA,"D","COL","Salazar","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+142,"12","F","USA","Dunn","passes.b.c",NA,NA,NA,"D","COL","Velasquez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+143,"12","D","USA","Krieger","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+144,"12","F","USA","Press","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+145,"12","GK","COL","Sepulveda","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+145,"12",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+146,"12","D","COL","Salazar","aerial.lost",NA,NA,NA,"M","USA","Horan","aerial.won",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+147,"12","D","COL","Velasquez","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+148,"12","M","COL","Usme","take.on.lost",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+148,"12",NA,NA,NA,NA,NA,NA,NA,"M","USA","Brian","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+149,"12","M","USA","Brian","passes.f.c",NA,NA,"through","M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+149,"12",NA,NA,NA,NA,NA,NA,NA,"D","COL","Velasquez","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+150,"12","F","USA","Dunn","passes.s.c",NA,NA,"corner.crosses","M","COL","Usme","pressured",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+150,"12",NA,NA,NA,NA,NA,NA,NA,"D","COL","Clavijo","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+151,"13","M","USA","Rapinoe","passes.s.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+151,"13",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+152,"13","F","USA","Press","shots.missed",NA,NA,NA,"D","COL","Velasquez","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+152,"13",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Sepulveda","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+153,"13","GK","COL","Sepulveda","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+153,"13",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+154,"14","M","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+155,"14","M","USA","Rapinoe","passes.f",NA,NA,"headed","M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+155,"14",NA,NA,NA,NA,NA,NA,NA,"D","COL","N. Arias","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+156,"14","D","COL","N. Arias","passes.f.c",NA,NA,NA,"M","USA","Lloyd","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+157,"14","D","COL","Salazar","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+157,"14",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+158,"14","M","USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+159,"14","M","USA","Horan","passes.s.c",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+160,"14","M","USA","Brian","passes.b.c",NA,NA,NA,"M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+161,"14","D","USA","Engen","passes.f.c",NA,NA,"launch","F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+161,"14",NA,NA,NA,NA,NA,NA,"through","D","COL","C. Arias","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+162,"14","M","USA","Lloyd","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+163,"14","M","USA","Lloyd","passes.s.c",NA,NA,NA,"D","COL","N. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+163,"14",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+164,"14","F","USA","Press","passes.b.c",NA,NA,NA,"D","COL","Velasquez","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+164,"14",NA,NA,NA,NA,NA,NA,NA,"D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+165,"14","M","USA","Horan","passes.s.c",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+165,"14",NA,NA,NA,NA,NA,NA,NA,"M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+165,"14",NA,NA,NA,NA,NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+166,"14","D","USA","Krieger","passes.f.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+167,"14","F","USA","Dunn","take.on.won",NA,NA,NA,"D","COL","Velasquez","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+168,"14","F","USA","Dunn","passes.s",NA,NA,NA,"D","COL","Clavijo","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+169,"14","F","USA","Press","aerial.lost",NA,NA,NA,"M","COL","Gaitan","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+170,"14","D","COL","Velasquez","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+171,"14","D","COL","Velasquez","movement",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+172,"14","D","COL","Velasquez","clearances",NA,NA,NA,"F","USA","Dunn","challenged",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+173,"14","D","USA","Krieger","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+174,"14","F","USA","Dunn","take.on.won",NA,NA,NA,"D","COL","Velasquez","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+175,"14","F","USA","Dunn","passes.f",NA,NA,"through","M","COL","Gaitan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+175,"14",NA,NA,NA,NA,NA,NA,NA,"D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+175,"14",NA,NA,NA,NA,NA,NA,NA,"F","COL","Ariza","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+176,"14","F","COL","Ariza","passes.f.c",NA,NA,NA,"D","USA","Krieger","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+176,"14",NA,NA,NA,NA,NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+177,"14","D","COL","Clavijo","passes.s.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+177,"14",NA,NA,NA,NA,NA,NA,NA,"D","USA","Krieger","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+177,"14",NA,NA,NA,NA,NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+178,"14","D","COL","Velasquez","passes.f.c",NA,NA,NA,"D","USA","Krieger","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+179,"14","F","COL","Andrade","passes.f",NA,NA,"flick.on","D","USA","Engen","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+179,"14",NA,NA,NA,NA,NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+180,"14","D","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+181,"14","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+182,"14","M","USA","Horan","passes.f",NA,NA,"launch","GK","COL","Sepulveda","gk.loose.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,NA
+182,"14",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+182,"15",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+183,"15","D","COL","Clavijo","passes.f",NA,NA,"launch","F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+183,"15",NA,NA,NA,NA,NA,NA,NA,"D","USA","O'Hara","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+184,"15","D","USA","O'Hara","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+185,"15","M","USA","Rapinoe","passes.s.c",NA,NA,"lay.off","D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+186,"15","M","USA","Horan","passes.b.c",NA,NA,NA,"D","COL","Salazar","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+187,"15","D","USA","O'Hara","dispossessed",NA,NA,NA,"M","COL","Usme","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+188,"15","F","COL","Andrade","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+189,"15","F","COL","Andrade","movement",NA,NA,NA,"D","USA","Sauerbrunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+190,"15","F","COL","Andrade","dispossessed",NA,NA,NA,"D","USA","O'Hara","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+191,"15","M","USA","Brian","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+192,"15","M","USA","Brian","passes.b.c",NA,NA,NA,"F","COL","Andrade","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+193,"15","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,"F","COL","Andrade","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+193,"15",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+194,"15","M","USA","Rapinoe","passes.b.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+195,"15","M","USA","Brian","passes.b.c",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+196,"15","D","USA","O'Hara","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+197,"15","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+198,"15","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+199,"15","D","USA","Krieger","passes.s.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+200,"15","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+201,"16","D","USA","O'Hara","passes.b.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+202,"16","D","USA","Engen","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+203,"16","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+204,"16","M","USA","Lloyd","passes.s.c",NA,NA,"lay.off","M","COL","Gaitan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+205,"16","M","USA","Brian","movement",NA,NA,NA,"D","COL","Salazar","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+206,"16","M","USA","Brian","movement",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+207,"16","M","USA","Brian","passes.b.c",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+208,"16","D","USA","O'Hara","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+209,"16","M","USA","Brian","passes.f.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+210,"16","M","USA","Horan","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+211,"16","M","USA","Horan","passes.s.c",NA,NA,NA,"D","COL","C. Arias","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+212,"16","M","USA","Rapinoe","passes.s.c",NA,NA,"corner.crosses","D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+212,"16",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Sepulveda","gk.loose.balls.lost",NA,"dropped",NA,NA,NA,NA,NA,NA,NA,NA
+213,"16","M","USA","Lloyd","fouls.conceded",NA,NA,NA,"D","COL","Velasquez","challenged",NA,NA,NA,"fouls.conceded",NA,"fouls.won",NA,NA,NA,NA
+214,"16","GK","COL","Sepulveda","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+214,"16",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+215,"16","M","COL","Santos","aerial.lost",NA,NA,NA,"M","USA","Brian","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+216,"17","D","USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+217,"17","D","USA","Krieger","passes.f",NA,NA,"headed","F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+218,"17","M","COL","Santos","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+219,"17","M","COL","Santos","passes.b.c",NA,NA,NA,"F","USA","Dunn","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+219,"17",NA,NA,NA,NA,NA,NA,NA,"M","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+220,"17","D","COL","Velasquez","passes.f",NA,NA,NA,"F","USA","Dunn","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+221,"17","D","USA","Engen","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+222,"17","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+223,"17","GK","USA","Solo","passes.s.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+224,"17","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+225,"17","D","USA","Sauerbrunn","take.on.won",NA,NA,NA,"F","COL","Andrade","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+226,"17","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+227,"17","D","USA","Engen","passes.s",NA,NA,"switch","M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+228,"17","D","USA","O'Hara","aerial.lost",NA,NA,NA,"F","COL","Andrade","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+229,"17","F","COL","Andrade","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+230,"17","F","COL","Andrade","passes.s.c",NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+231,"17","D","COL","C. Arias","passes.s",NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+231,"17",NA,NA,NA,NA,NA,NA,NA,"F","USA","Press","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+232,"17","F","USA","Press","passes.b.c",NA,NA,NA,"D","COL","Salazar","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+233,"17","M","USA","Horan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+234,"17","D","USA","Engen","passes.s.c",NA,NA,"lay.off","F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+235,"17","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+236,"17","D","USA","O'Hara","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+237,"17","D","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+238,"17","D","USA","Sauerbrunn","movement",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+239,"17","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+240,"17","D","USA","O'Hara","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+241,"18","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+242,"18","D","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+243,"18","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+244,"18","D","USA","O'Hara","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+245,"18","M","USA","Brian","passes.b.c",NA,NA,"lay.off","M","COL","Santos","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+246,"18","D","USA","O'Hara","passes.f.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+247,"18","M","USA","Rapinoe","passes.b.c",NA,NA,"lay.off","D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+247,"18",NA,NA,NA,NA,NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+248,"18","D","USA","O'Hara","passes.f.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+249,"18","M","USA","Lloyd","dispossessed",NA,NA,NA,"M","COL","Gaitan","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+250,"18","D","USA","Engen","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+251,"18","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+252,"18","M","USA","Rapinoe","passes.b.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+253,"18","M","USA","Lloyd","passes.f.c",NA,NA,NA,"M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+254,"18","F","USA","Dunn","take.on.won",NA,NA,NA,"D","COL","Velasquez","dribbled.out.run",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+255,"18","F","USA","Dunn","movement",NA,NA,NA,"D","COL","Velasquez","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+256,"18","F","USA","Dunn","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+257,"19","GK","COL","Sepulveda","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+257,"19",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+258,"19","M","COL","Gaitan","aerial.lost",NA,NA,NA,"M","USA","Brian","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+259,"19","D","COL","Salazar","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+260,"19","D","COL","Salazar","passes.b.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+260,"19",NA,NA,NA,NA,NA,NA,NA,"M","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+261,"19","GK","COL","Sepulveda","clearances",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+262,"19","D","COL","Velasquez","aerial.won",NA,NA,NA,"F","USA","Dunn","aerial.lost",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+263,"19","D","USA","Krieger","passes.f",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+264,"19","M","USA","Lloyd","aerial.lost",NA,NA,NA,"D","COL","Clavijo","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+265,"19","D","USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+266,"19","D","USA","Krieger","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+267,"19","M","USA","Lloyd","take.on.lost",NA,NA,NA,"M","COL","Gaitan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+267,"19",NA,NA,NA,NA,NA,NA,NA,"D","COL","Clavijo","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+268,"19","D","COL","Clavijo","passes.f",NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+268,"19",NA,NA,NA,NA,NA,NA,NA,"M","USA","Horan","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+269,"19","M","USA","Horan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+270,"19","F","USA","Dunn","passes.f.c",NA,NA,NA,"M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+270,"19",NA,NA,NA,NA,NA,NA,NA,"D","COL","Velasquez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+271,"19","M","USA","Lloyd","dispossessed",NA,NA,NA,"D","COL","Clavijo","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+272,"19","D","COL","Clavijo","passes.s.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+273,"19","M","COL","Santos","passes.f",NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+273,"19",NA,NA,NA,NA,NA,NA,NA,"M","USA","Rapinoe","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+274,"19","M","USA","Rapinoe","passes.f.c",NA,NA,"headed","D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+275,"19","M","USA","Brian","passes.s.c",NA,NA,"flick.on","M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+276,"19","F","USA","Press","passes.s.c",NA,NA,"lay.off","D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+276,"19",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+277,"19","M","USA","Brian","movement",NA,NA,NA,"D","COL","N. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+278,"19","M","USA","Brian","take.on.lost",NA,NA,NA,"D","COL","N. Arias","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+279,"19","D","COL","N. Arias","dispossessed",NA,NA,NA,"M","USA","Rapinoe","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+280,"20","M","USA","Rapinoe","passes.s.c",NA,NA,NA,"D","COL","N. Arias","challenged",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+280,"20",NA,NA,NA,NA,NA,NA,NA,"D","COL","C. Arias","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+281,"20","M","USA","Rapinoe","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+282,"20","F","USA","Press","passes.b.c",NA,NA,"lay.off","M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+283,"20","M","USA","Brian","movement",NA,NA,NA,"M","COL","Santos","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+284,"20","M","USA","Brian","shots.stopped.by.gk",NA,NA,NA,"D","COL","Clavijo","challenged",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+284,"20",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Sepulveda","gk.s.o.g.stop",NA,"parried.to.safety","diving",NA,NA,NA,NA,NA,NA,NA
+285,"20","M","USA","Rapinoe","passes.s",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+285,"20",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+286,"21","D","COL","Velasquez","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+287,"21","M","COL","Usme","passes.b.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+288,"21","D","COL","Velasquez","clearances",NA,NA,NA,"M","USA","Lloyd","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+289,"21","D","USA","Krieger","passes.s",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+290,"21","M","USA","Lloyd","aerial.lost",NA,NA,NA,"D","COL","Clavijo","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+291,"21","M","COL","Usme","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+292,"21","M","COL","Usme","clearances",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+293,"21","D","USA","Engen","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+294,"21","D","USA","Engen","passes.f.c",NA,NA,"headed","F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+294,"21",NA,NA,NA,NA,NA,NA,NA,"D","COL","Clavijo","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+295,"21","M","USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+296,"21","M","USA","Horan","dispossessed",NA,NA,NA,"M","COL","Santos","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+297,"21","M","COL","Santos","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+298,"21","M","COL","Santos","passes.s.c",NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+299,"21","D","COL","Salazar","passes.s.c",NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+299,"21",NA,NA,NA,NA,NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+300,"21","D","COL","C. Arias","passes.b.c",NA,NA,NA,"M","USA","Rapinoe","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+301,"21","D","COL","N. Arias","passes.f",NA,NA,"launch","M","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+302,"22","F","COL","Ariza","aerial.lost",NA,NA,NA,"D","USA","O'Hara","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+303,"22","F","COL","Andrade","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+304,"22","F","COL","Andrade","passes.b",NA,NA,"flick.on","M","USA","Rapinoe","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+305,"22","D","COL","C. Arias","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+306,"22","D","COL","C. Arias","passes.s.c",NA,NA,NA,"F","USA","Press","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+307,"22","F","COL","Andrade","ball.shield",NA,NA,NA,"M","USA","Rapinoe","tackles.ball",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+308,"22","D","COL","C. Arias","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+309,"22","F","COL","Ariza","lost.touch",NA,NA,NA,"M","USA","Rapinoe","ball.shield",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+310,"22","M","USA","Rapinoe","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+311,"22","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+312,"22","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+313,"22","F","USA","Dunn","passes.b.c",NA,NA,"lay.off","M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+314,"22","D","USA","Engen","passes.s.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+315,"22","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+316,"22","D","USA","O'Hara","passes.f.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+317,"22","M","USA","Horan","fouls.won",NA,NA,NA,"D","COL","Salazar","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+318,"23","D","USA","Sauerbrunn","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+318,"23",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+319,"23","M","USA","Lloyd","aerial.won",NA,NA,NA,"D","COL","Velasquez","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+320,"23","F","USA","Dunn","aerial.won",NA,NA,NA,"M","COL","Usme","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+321,"23","D","COL","Velasquez","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+322,"23","D","COL","Velasquez","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+323,"23","D","USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+324,"23","D","USA","Krieger","movement",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+325,"23","D","USA","Krieger","passes.s.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+326,"23","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+327,"23","M","USA","Brian","passes.f",NA,NA,"launch","F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+328,"23","D","COL","C. Arias","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+329,"23","D","COL","C. Arias","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+330,"23","D","COL","Salazar","passes.f.c",NA,NA,NA,"M","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+331,"23","M","COL","Gaitan","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+332,"23","M","COL","Usme","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+333,"23","M","COL","Usme","passes.b.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+334,"23","D","COL","Salazar","passes.b.c",NA,NA,NA,"M","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+335,"23","D","COL","Clavijo","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+336,"24","D","COL","N. Arias","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+337,"24","D","COL","Clavijo","take.on.won",NA,NA,NA,"M","USA","Lloyd","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+338,"24","D","COL","Clavijo","passes.s.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+339,"24","D","COL","Salazar","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+340,"24","D","COL","C. Arias","passes.f.c",NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+341,"24","F","COL","Andrade","movement",NA,NA,NA,"D","USA","O'Hara","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+342,"24","F","COL","Andrade","passes.b.c",NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+343,"24","D","COL","N. Arias","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+344,"24","D","COL","Clavijo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+345,"24","D","COL","Velasquez","passes.f.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+346,"24","M","COL","Santos","passes.b.c",NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+347,"24","D","COL","Clavijo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+348,"24","M","COL","Santos","passes.s.c",NA,NA,NA,"M","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+349,"24","D","COL","N. Arias","passes.f.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+350,"24","D","COL","C. Arias","passes.f.c",NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+351,"24","F","COL","Andrade","passes.b.c",NA,NA,"lay.off","D","USA","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+352,"24","D","COL","C. Arias","passes.f",NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+352,"24",NA,NA,NA,NA,NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+353,"24","D","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+354,"25","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,"M","COL","Gaitan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+355,"25","GK","USA","Solo","passes.f",NA,NA,"launch","F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+356,"25","M","COL","Usme","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+357,"25","M","COL","Usme","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+358,"25","M","COL","Usme","shots.blocked",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+358,"25",NA,NA,NA,NA,NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+358,"25",NA,NA,NA,NA,NA,NA,NA,"D","USA","Engen","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+358,"25",NA,NA,NA,NA,NA,NA,NA,"D","USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+359,"25","M","USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+360,"25","M","USA","Horan","passes.b.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+361,"25","D","USA","O'Hara","clearances",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+362,"25","M","COL","Santos","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+363,"25","D","COL","Salazar","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+364,"25","D","COL","Salazar","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+365,"25","D","COL","Salazar","passes.f.c",NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+366,"25","M","COL","Gaitan","passes.f.c",NA,NA,"flick.on","M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+367,"25","D","COL","Salazar","fouls.won",NA,NA,NA,"M","USA","Rapinoe","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+368,"26","M","COL","Usme","shots.scored",NA,NA,"free.kick","GK","USA","Solo","gk.s.o.g.scored",NA,"missed.the.ball","stooping",NA,NA,NA,"errors.to.goals",NA,NA,NA
+368,"27",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+369,"27","F","USA","Press","passes.s",NA,NA,NA,"D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+369,"27",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+370,"27","D","COL","C. Arias","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+371,"27","D","COL","C. Arias","passes.f.c",NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+372,"27","F","COL","Andrade","passes.b.c",NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+372,"27",NA,NA,NA,NA,NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+373,"27","D","COL","C. Arias","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+374,"27","D","COL","N. Arias","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+375,"27","D","COL","Clavijo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+376,"27","D","COL","Velasquez","passes.b.c",NA,NA,"lay.off","F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+377,"27","D","COL","Clavijo","take.on.won",NA,NA,NA,"M","USA","Lloyd","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+378,"28","D","COL","Clavijo","passes.b.c",NA,NA,NA,"M","USA","Lloyd","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+379,"28","M","COL","Gaitan","clearances",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+379,"28",NA,NA,NA,NA,NA,NA,NA,"M","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+379,"28",NA,NA,NA,NA,NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+380,"28","D","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+381,"28","D","USA","Sauerbrunn","clearances",NA,NA,"headed","M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+382,"28","F","COL","Andrade","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+383,"28","F","COL","Andrade","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+384,"28","D","COL","Salazar","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+385,"28","D","COL","C. Arias","passes.f",NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+385,"28",NA,NA,NA,NA,NA,NA,NA,"M","USA","Brian","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+386,"28","M","USA","Brian","passes.s.c",NA,NA,"lay.off","M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+386,"28",NA,NA,NA,NA,NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+387,"28","M","USA","Horan","passes.f.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+388,"28","F","USA","Press","passes.b.c",NA,NA,"lay.off","D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+389,"28","M","USA","Brian","passes.f",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+389,"28",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+390,"28","D","COL","Salazar","movement",NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+391,"28","D","COL","Salazar","passes.b.c",NA,NA,NA,"M","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+392,"28","M","COL","Gaitan","passes.s.c",NA,NA,NA,"M","USA","Lloyd","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+393,"28","D","COL","C. Arias","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+394,"28","M","COL","Gaitan","passes.f.c",NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+394,"28",NA,NA,NA,NA,NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+395,"28","M","COL","Usme","passes.s.c",NA,NA,"lay.off","D","USA","Sauerbrunn","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+396,"28","M","COL","Gaitan","passes.f",NA,NA,NA,"F","USA","Dunn","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+397,"28","D","USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+398,"28","D","USA","Krieger","passes.f.c",NA,NA,NA,"D","COL","Velasquez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+399,"28","M","USA","Brian","passes.b.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+400,"28","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+401,"28","D","USA","Krieger","passes.f.c",NA,NA,NA,"D","COL","Velasquez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+402,"28","F","USA","Dunn","dispossessed",NA,NA,NA,"D","COL","Clavijo","tackles.ball",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+403,"28","D","USA","Krieger","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+404,"28","D","USA","Engen","passes.s.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+405,"28","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+406,"29","D","USA","O'Hara","passes.f",NA,NA,"launch","F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+407,"29","M","USA","Horan","aerial.lost",NA,NA,NA,"D","COL","Salazar","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+408,"29","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+409,"29","F","USA","Press","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+410,"29","F","USA","Press","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+411,"29","D","USA","O'Hara","passes.f.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+412,"29","M","USA","Rapinoe","passes.s.c",NA,NA,NA,"D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+412,"29",NA,NA,NA,NA,NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+413,"29","M","USA","Horan","passes.b.c",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+413,"29",NA,NA,NA,NA,NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+414,"29","D","USA","O'Hara","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+415,"29","D","USA","Engen","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+416,"29","D","USA","Engen","passes.f.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+417,"29","M","USA","Lloyd","movement",NA,NA,NA,"M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+417,"29",NA,NA,NA,NA,NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+418,"29","M","USA","Lloyd","movement",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+419,"29","M","USA","Lloyd","passes.s.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+420,"29","M","USA","Rapinoe","take.on.lost",NA,NA,NA,"D","COL","C. Arias","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+421,"29","D","COL","C. Arias","passes.f.c",NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+422,"29","F","COL","Andrade","dispossessed",NA,NA,NA,"D","USA","O'Hara","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+422,"29",NA,NA,NA,NA,NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+423,"29","D","COL","C. Arias","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+424,"29","D","COL","C. Arias","passes.s.c",NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+425,"29","M","COL","Santos","passes.f.c",NA,NA,"launch","M","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+425,"29",NA,NA,NA,NA,NA,NA,"through","D","USA","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+426,"29","F","COL","Ariza","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+427,"29","F","COL","Ariza","passes.b.c",NA,NA,NA,"D","USA","Sauerbrunn","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+427,"29",NA,NA,NA,NA,NA,NA,NA,"D","USA","O'Hara","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+428,"29","D","COL","C. Arias","passes.b.c",NA,NA,NA,"M","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+429,"29","D","COL","Salazar","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+430,"29","D","COL","N. Arias","passes.s.c",NA,NA,NA,"M","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+431,"29","D","COL","Velasquez","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+431,"30",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+432,"30","M","USA","Horan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+433,"30","F","USA","Press","passes.f.c",NA,NA,"through","D","COL","Clavijo","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+433,"30",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+434,"30","F","USA","Dunn","passes.s",NA,NA,"corner.crosses","D","COL","Velasquez","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+435,"31",NA,NA,NA,"stoppage.in.play",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+436,"32","M","USA","Rapinoe","passes.s",NA,NA,"corner.kick","M","COL","Santos","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+436,"32",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+437,"32","D","USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+438,"32","D","USA","Krieger","passes.f",NA,NA,NA,"M","COL","Santos","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+439,"32","M","COL","Santos","passes.f",NA,NA,"launch","D","USA","Krieger","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+440,"32","D","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+441,"32","D","USA","Sauerbrunn","passes.f",NA,NA,"launch","F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+442,"32","M","USA","Rapinoe","aerial.lost",NA,NA,NA,"M","COL","Santos","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+443,"32","D","USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+444,"32","D","USA","Krieger","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+445,"32","M","USA","Rapinoe","passes.f.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+445,"32",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+446,"32","D","USA","Engen","passes.s.c",NA,NA,"flick.on","D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+446,"32",NA,NA,NA,NA,NA,NA,NA,"D","COL","N. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+447,"32","M","USA","Horan","passes.b.c",NA,NA,NA,"D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+447,"32",NA,NA,NA,NA,NA,NA,NA,"D","COL","N. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+447,"32",NA,NA,NA,NA,NA,NA,NA,"D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+448,"32","D","USA","Engen","passes.s",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+448,"32",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+449,"32","M","COL","Usme","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+450,"32","M","COL","Usme","movement",NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+451,"32","M","COL","Usme","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+452,"33","M","USA","Rapinoe","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+453,"33","M","USA","Pugh","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+454,"33","D","USA","O'Hara","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+455,"33","D","USA","Sauerbrunn","passes.s.c",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+456,"33","D","USA","Krieger","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+457,"33","F","COL","Ariza","recoveries",NA,NA,NA,"D","USA","Krieger","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+458,"34","D","COL","Clavijo","passes.f",NA,NA,"free.kick","D","USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+458,"34",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+459,"34","M","COL","Gaitan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+460,"34","M","COL","Gaitan","passes.s.c",NA,NA,"headed","F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+461,"34","F","COL","Ariza","passes.b.c",NA,NA,NA,"D","USA","Krieger","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+461,"34",NA,NA,NA,NA,NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+462,"34","M","COL","Gaitan","passes.f.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+463,"34","F","COL","Ariza","passes.s.c",NA,NA,"lay.off","D","USA","Krieger","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+464,"34","M","COL","Gaitan","dispossessed",NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+464,"34",NA,NA,NA,NA,NA,NA,NA,"F","USA","Dunn","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+464,"34",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Solo","gk.loose.balls.won",NA,"collected",NA,NA,NA,NA,NA,NA,NA,NA
+465,"34","GK","USA","Solo","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+466,"34","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+467,"34","D","USA","Sauerbrunn","passes.s.c",NA,NA,"lay.off","F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+468,"34","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+469,"34","M","USA","Brian","passes.s.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+470,"34","D","USA","O'Hara","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+470,"34",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+471,"35","GK","COL","Sepulveda","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+471,"35",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+472,"35","M","COL","Gaitan","aerial.lost",NA,NA,NA,"M","USA","Horan","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+473,"35","D","COL","Salazar","aerial.won",NA,NA,NA,"F","USA","Press","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+474,"35","D","COL","C. Arias","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+475,"35","D","COL","C. Arias","passes.f",NA,NA,"launch","M","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+476,"35","D","USA","Engen","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+477,"35","D","USA","Engen","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+478,"35","D","COL","Salazar","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+479,"35","D","COL","Salazar","passes.f.c",NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+480,"35","M","COL","Usme","passes.b.c",NA,NA,"lay.off","M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+481,"35","M","COL","Santos","take.on.won",NA,NA,NA,"M","USA","Lloyd","dribbled.out.run",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+481,"35",NA,NA,NA,NA,NA,NA,NA,"F","USA","Dunn","dribbled.out.run",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+482,"35","M","COL","Santos","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+483,"35","M","COL","Santos","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+484,"35","D","COL","C. Arias","fouls.won",NA,NA,NA,"M","USA","Pugh","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+485,"36","F","COL","Andrade","passes.b.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+486,"36","D","COL","C. Arias","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+487,"36","D","COL","N. Arias","passes.s.c",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+488,"36","D","COL","Clavijo","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+488,"36",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+489,"36","M","USA","Lloyd","aerial.lost",NA,NA,NA,"D","COL","Clavijo","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+490,"36","D","COL","Salazar","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+491,"36","D","COL","Salazar","take.on.won",NA,NA,NA,"M","USA","Lloyd","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+492,"36","D","COL","Salazar","passes.s.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+493,"36","D","COL","Velasquez","passes.f.c",NA,NA,"launch","F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+493,"36",NA,NA,NA,NA,NA,NA,NA,"D","USA","Engen","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+494,"36","F","COL","Ariza","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+495,"36","F","USA","Dunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+496,"36","F","USA","Dunn","passes.b.c",NA,NA,"headed","F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+497,"36","D","USA","Krieger","passes.s.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+497,"36",NA,NA,NA,NA,NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+498,"36","M","USA","Brian","passes.b.c",NA,NA,NA,"M","COL","Usme","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+499,"36","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+500,"36","D","USA","O'Hara","passes.f.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+501,"36","M","USA","Pugh","lost.touch",NA,NA,NA,"D","COL","C. Arias","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+502,"37","D","COL","C. Arias","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+502,"37",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+503,"37","M","USA","Horan","passes.b.c",NA,NA,NA,"D","COL","Salazar","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+503,"37",NA,NA,NA,NA,NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+503,"37",NA,NA,NA,NA,NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+504,"37","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+505,"37","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+506,"37","M","USA","Brian","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+507,"37","M","USA","Pugh","passes.b.c",NA,NA,"lay.off","D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+507,"37",NA,NA,NA,NA,NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+508,"37","D","USA","O'Hara","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+509,"37","M","USA","Lloyd","passes.f.c",NA,NA,NA,"M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+510,"37","M","USA","Horan","take.on.won",NA,NA,NA,"D","COL","N. Arias","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+511,"37","M","USA","Horan","passes.b.c",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+512,"37","M","USA","Brian","passes.s.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+513,"37","D","USA","O'Hara","passes.s.c",NA,NA,"corner.crosses","F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+514,"37","F","USA","Dunn","shots.missed",NA,NA,"headed","D","COL","Velasquez","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+514,"37",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Sepulveda","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+515,"38","GK","COL","Sepulveda","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+515,"38",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+516,"38","M","COL","Usme","aerial.lost",NA,NA,NA,"M","USA","Brian","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+517,"38","D","USA","Engen","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+518,"38","D","USA","Engen","passes.f.c",NA,NA,"headed","M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+519,"38","M","USA","Brian","passes.b.c",NA,NA,"lay.off","M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+519,"38",NA,NA,NA,NA,NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+520,"38","D","USA","Krieger","passes.b.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+521,"38","GK","USA","Solo","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+522,"38","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+523,"38","D","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+524,"38","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+525,"38","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+526,"38","M","USA","Lloyd","take.on.won",NA,NA,NA,"M","COL","Usme","dribbled.out.run",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+527,"38","M","USA","Lloyd","movement",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+528,"38","M","USA","Lloyd","movement",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+529,"38","M","USA","Lloyd","passes.s.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+530,"38","M","USA","Horan","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+531,"38","D","COL","C. Arias","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+532,"38","M","COL","Usme","dispossessed",NA,NA,NA,"D","USA","O'Hara","challenged",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+532,"38",NA,NA,NA,NA,NA,NA,NA,"M","USA","Pugh","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+533,"39","D","COL","C. Arias","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+534,"39","M","COL","Usme","passes.s",NA,NA,NA,"M","USA","Pugh","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+535,"39","M","USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+536,"39","M","USA","Horan","passes.b.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+537,"39","D","USA","O'Hara","passes.s.c",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+538,"39","D","USA","Krieger","dispossessed",NA,NA,NA,"D","COL","Velasquez","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+539,"39","D","USA","Engen","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+540,"39","D","USA","Engen","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+541,"39","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+542,"39","F","USA","Press","take.on.won",NA,NA,NA,"D","COL","N. Arias","dribbled.out.run",NA,NA,NA,NA,"big.chances.created",NA,NA,NA,NA,NA
+543,"39","F","USA","Press","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+544,"39","F","USA","Press","shots.stopped.by.gk",NA,NA,NA,"GK","COL","Sepulveda","gk.s.o.g.stop",NA,"collected","standing",NA,"big.chances.shot.on.goal",NA,"big.chances.stopped",NA,NA,NA
+544,"39",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+545,"40","D","USA","O'Hara","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+546,"40","M","USA","Brian","passes.s.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+547,"40","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+548,"40","M","USA","Brian","passes.s.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+548,"40",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+549,"40","D","USA","O'Hara","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+550,"40","D","USA","O'Hara","passes.s",NA,NA,NA,"D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+550,"40",NA,NA,NA,NA,NA,NA,NA,"M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+550,"40",NA,NA,NA,NA,NA,NA,NA,"M","COL","Santos","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+551,"40","M","COL","Santos","movement",NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+552,"40","M","COL","Santos","clearances",NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+553,"40","D","USA","Krieger","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+554,"40","F","USA","Dunn","take.on.won",NA,NA,NA,"D","COL","Velasquez","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+555,"40","F","USA","Dunn","movement",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+556,"40","F","USA","Dunn","passes.s",NA,NA,NA,"F","COL","Ariza","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+557,"40","D","COL","Clavijo","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+558,"40","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+559,"40","F","USA","Press","passes.s.c",NA,NA,NA,"D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+559,"40",NA,NA,NA,NA,NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+559,"40",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+560,"40","D","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+561,"40","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+562,"40","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+563,"40","D","USA","O'Hara","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+564,"40","M","USA","Lloyd","passes.f",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+564,"40",NA,NA,NA,NA,NA,NA,NA,"D","COL","N. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+564,"40",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+565,"40","M","USA","Horan","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+566,"41","GK","COL","Sepulveda","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+566,"41",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+567,"41","F","USA","Dunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+568,"41","F","USA","Dunn","passes.f",NA,NA,"headed","D","COL","Clavijo","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+569,"41","D","USA","Engen","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+570,"41","D","USA","Engen","passes.f.c",NA,NA,"headed","M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+571,"41","F","USA","Press","passes.f.c",NA,NA,"through","D","COL","Salazar","pressured",NA,NA,NA,NA,"key.passes",NA,NA,NA,NA,NA
+571,"41",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+572,"41","M","USA","Lloyd","shots.stopped.by.gk",NA,NA,NA,"GK","COL","Sepulveda","gk.s.o.g.stop",NA,"parried.to.danger","diving",NA,"big.chances.shot.on.goal",NA,"big.chances.stopped",NA,NA,NA
+572,"41",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"assists",NA,NA,NA,NA,NA
+573,"41","F","USA","Dunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+574,"41","F","USA","Dunn","shots.scored",NA,NA,NA,"D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+574,"41",NA,NA,NA,NA,NA,NA,NA,"D","COL","N. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+574,"41",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Sepulveda","gk.s.o.g.scored",NA,"missed.the.ball","diving",NA,NA,NA,NA,NA,NA,NA
+574,"42",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+575,"43","D","COL","Velasquez","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+576,"43","M","COL","Santos","passes.b.c",NA,NA,NA,"D","USA","Krieger","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+576,"43",NA,NA,NA,NA,NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+576,"43",NA,NA,NA,NA,NA,NA,NA,"M","USA","Brian","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+577,"43","D","COL","Velasquez","passes.s.c",NA,NA,NA,"M","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+577,"43",NA,NA,NA,NA,NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+578,"43","F","COL","Ariza","passes.b.c",NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+579,"43","M","COL","Gaitan","passes.s.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+580,"43","D","COL","C. Arias","passes.b.c",NA,NA,NA,"M","USA","Pugh","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+581,"43","D","COL","N. Arias","passes.s.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+582,"43","D","COL","Clavijo","passes.f.c",NA,NA,NA,"M","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+583,"43","M","COL","Usme","passes.f.c",NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+584,"43","M","COL","Santos","passes.f",NA,NA,NA,"M","USA","Horan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+585,"43","M","USA","Brian","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+586,"43","M","USA","Brian","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+586,"43",NA,NA,NA,NA,NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+587,"43","M","USA","Horan","passes.f.c",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+588,"43","F","USA","Press","passes.b.c",NA,NA,"lay.off","M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+589,"43","M","USA","Horan","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+590,"43","D","USA","O'Hara","passes.s.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+591,"43","D","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+592,"43","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+593,"43","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+594,"43","M","USA","Brian","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+595,"43","M","USA","Brian","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+596,"43","M","USA","Brian","passes.s.c",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+597,"43","D","USA","O'Hara","passes.s.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+598,"43","M","USA","Brian","passes.f.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+599,"44","M","USA","Horan","passes.b.c",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+600,"44","M","USA","Brian","passes.f.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+600,"44",NA,NA,NA,NA,NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+601,"44","M","USA","Pugh","take.on.lost",NA,NA,NA,"D","COL","C. Arias","tackles.ball",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+602,"44","M","USA","Pugh","passes.b.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+603,"44","D","USA","O'Hara","passes.s.c",NA,NA,"corner.crosses","M","COL","Santos","pressured",NA,NA,NA,NA,"key.passes",NA,NA,NA,NA,NA
+604,"44","M","USA","Horan","shots.missed",NA,NA,"headed","GK","COL","Sepulveda","gk.shot.miss",NA,NA,NA,NA,"big.chances.shot.missed",NA,NA,NA,NA,NA
+604,"44",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+605,"45","GK","COL","Sepulveda","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+605,"45",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+606,"45","D","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+607,"45","D","USA","Sauerbrunn","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+608,"45","F","USA","Press","aerial.won",NA,NA,NA,"D","COL","N. Arias","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+609,"45","F","USA","Dunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+610,"45","F","USA","Dunn","take.on.won",NA,NA,NA,"M","COL","Gaitan","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+611,"45","F","USA","Dunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+612,"45","F","USA","Dunn","take.on.won",NA,NA,NA,"D","COL","Velasquez","dribbled.out.run",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+613,"45","F","USA","Dunn","shots.stopped.by.gk",NA,NA,NA,"D","COL","Salazar","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+613,"45",NA,NA,NA,NA,NA,NA,NA,"D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+613,"45",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Sepulveda","gk.s.o.g.stop",NA,"collected","standing",NA,NA,NA,NA,NA,NA,NA
+614,"45","GK","COL","Sepulveda","passes.f",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+615,"45","D","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+616,"45","D","USA","Sauerbrunn","passes.f",NA,NA,"headed","M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+617,"45+1","F","COL","Ariza","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+618,"45+1","F","COL","Ariza","passes.f.c",NA,NA,NA,"M","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+619,"45+1","M","COL","Santos","passes.b.c",NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+620,"45+1","D","COL","Salazar","passes.s.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+621,"45+1","D","COL","C. Arias","passes.f",NA,NA,NA,"M","USA","Pugh","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+622,"45+1","M","USA","Brian","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+623,"45+1","M","USA","Brian","passes.f.c",NA,NA,"headed","D","COL","Salazar","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+624,"45+1","M","USA","Lloyd","passes.s.c",NA,NA,"headed","D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+625,"45+1","M","USA","Pugh","passes.b.c",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+626,"45+1","D","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+627,"45+1","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+628,"45+1","D","USA","Krieger","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+629,"45+1","D","USA","Krieger","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+630,"45+1","M","USA","Brian","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+631,"45+1","M","USA","Pugh","lost.touch",NA,NA,NA,"D","COL","C. Arias","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+632,"45+1","D","COL","C. Arias","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+633,"45+1","M","COL","Santos","dispossessed",NA,NA,NA,"M","USA","Pugh","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+633,"45+1",NA,NA,NA,NA,NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+633,"45+1",NA,NA,NA,NA,NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+634,"45+1","M","USA","Brian","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+635,"45+1","M","USA","Brian","passes.s.c",NA,NA,NA,"M","COL","Santos","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+635,"45+1",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+636,"45+1","D","USA","Krieger","passes.b.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+637,"45+2","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+638,"45+2","M","USA","Brian","passes.s.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+638,"45+2",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+639,"45+2","M","USA","Pugh","passes.s",NA,NA,"corner.crosses","F","COL","Ariza","challenged",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+639,"45+2",NA,NA,NA,NA,NA,NA,NA,"D","COL","C. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+640,"45+2","GK","COL","Sepulveda","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+640,"45+2",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+641,"45+2","M","COL","Gaitan","aerial.lost",NA,NA,NA,"M","USA","Brian","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+642,"45+2","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+643,"45+2","F","USA","Press","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+644,"45+2","F","USA","Press","passes.f",NA,NA,"through","D","COL","Salazar","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+644,"45+2",NA,NA,NA,NA,NA,NA,NA,"D","COL","Velasquez","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+645,"45+2","D","COL","Clavijo","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+646,"45+2","D","COL","Clavijo","clearances",NA,NA,NA,"F","USA","Dunn","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+647,"45+2","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+648,"45+2","F","USA","Press","shots.blocked",NA,NA,NA,"D","COL","Clavijo","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+649,"45+3","M","USA","Pugh","passes.s",NA,NA,"corner.kick","M","COL","Usme","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+649,"45+3",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+650,"45+3","D","USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+651,"45+3","D","USA","O'Hara","movement",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+652,"45+3","D","USA","O'Hara","passes.s.c.c",NA,NA,NA,"D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+652,"45+3",NA,NA,NA,NA,NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+652,"45+3",NA,NA,NA,NA,NA,NA,NA,"D","COL","Velasquez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+653,"45+3","M","USA","Lloyd","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+654,"45+3","D","COL","Velasquez","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+655,"45+3",NA,NA,NA,"halftime",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+656,"46","F","USA","Morgan","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+657,"46","D","COL","Echeverri","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+658,"46","F","USA","Morgan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+659,"46","M","USA","Brian","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+660,"46","D","USA","O'Hara","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+661,"46","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+662,"46","D","USA","Krieger","passes.f",NA,NA,"deep.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+663,"46","F","USA","Morgan","aerial.lost",NA,NA,NA,"D","COL","N. Arias","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+664,"46","D","COL","N. Arias","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+665,"46","D","COL","N. Arias","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+666,"46","D","USA","O'Hara","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+666,"46",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+667,"46","F","USA","Morgan","passes.b.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+668,"46","D","USA","O'Hara","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+669,"46","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+670,"46","D","USA","Krieger","passes.f.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+671,"46","F","USA","Press","passes.f",NA,NA,NA,"M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+671,"46",NA,NA,NA,NA,NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+671,"46",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+671,"46",NA,NA,NA,NA,NA,NA,NA,"D","COL","Echeverri","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+672,"46","M","COL","Santos","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+673,"46","M","COL","Santos","clearances",NA,NA,NA,"F","USA","Press","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+674,"46","D","USA","Engen","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+675,"46","D","USA","Engen","lost.touch",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+676,"46","M","COL","Usme","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+677,"46","M","COL","Usme","passes.b.c",NA,NA,NA,"D","USA","Engen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+678,"46","M","COL","Gaitan","passes.f",NA,NA,"launch","GK","USA","Solo","gk.loose.balls.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+679,"47","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+680,"47","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+681,"47","D","USA","O'Hara","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+682,"47","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+683,"47","D","USA","Krieger","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+684,"47","D","USA","Sauerbrunn","passes.f",NA,NA,"launch","D","COL","Clavijo","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+685,"47","M","USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+686,"47","M","USA","Horan","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+687,"47","D","COL","Clavijo","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+688,"47","D","COL","Clavijo","clearances",NA,NA,NA,"M","USA","Pugh","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+689,"47","D","COL","Clavijo","passes.f",NA,NA,"throw.in","D","USA","Sauerbrunn","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+690,"47","M","COL","Santos","aerial.lost",NA,NA,NA,"M","USA","Horan","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+691,"47","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+692,"47","F","USA","Press","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+693,"47","F","USA","Morgan","passes.f.c",NA,NA,NA,"D","COL","Echeverri","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+694,"47","F","USA","Press","passes.f.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+694,"47",NA,NA,NA,NA,NA,NA,NA,"F","COL","Ariza","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+695,"48","D","USA","O'Hara","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+696,"48","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+697,"48","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+698,"48","M","USA","Brian","passes.f.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+699,"48","M","USA","Horan","passes.b",NA,NA,NA,"D","COL","Salazar","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+699,"48",NA,NA,NA,NA,NA,NA,NA,"M","COL","Santos","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+700,"48","M","COL","Santos","passes.f.c",NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+700,"48",NA,NA,NA,NA,NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+701,"48","F","COL","Ariza","passes.f",NA,NA,"th","D","USA","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+702,"48","D","USA","Engen","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+703,"48","D","USA","Engen","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+704,"48","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+705,"48","M","USA","Brian","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+706,"48","D","USA","O'Hara","passes.b.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+707,"48","D","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+708,"48","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+709,"48","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+710,"48","D","USA","Krieger","passes.b.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+711,"48","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+712,"48","D","USA","O'Hara","passes.b.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+713,"48","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+714,"48","D","USA","Engen","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+715,"49","M","USA","Pugh","passes.b",NA,NA,NA,"D","COL","Clavijo","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+716,"49","M","USA","Pugh","passes.s",NA,NA,"corner.kick","M","COL","Usme","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+717,"49","F","COL","Andrade","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+718,"49","F","COL","Andrade","passes.f",NA,NA,NA,"M","USA","Brian","blocks",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+719,"50","D","USA","Sauerbrunn","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+720,"50","M","USA","Horan","aerial.won",NA,NA,NA,"D","COL","Echeverri","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+721,"50","D","USA","O'Hara","aerial.lost",NA,NA,NA,"M","COL","Santos","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+722,"50","M","COL","Santos","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+723,"50","M","COL","Santos","dispossessed",NA,NA,NA,"M","USA","Pugh","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+724,"50","D","COL","N. Arias","passes.s.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+725,"50","D","COL","Echeverri","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+726,"50","D","COL","C. Arias","passes.b.c",NA,NA,"lay.off","F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+727,"50","D","COL","Echeverri","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+728,"50","D","COL","N. Arias","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+729,"50","D","COL","Clavijo","passes.f.c",NA,NA,NA,"M","USA","Pugh","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+730,"50","F","COL","Ariza","passes.f",NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+731,"50","D","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+732,"50","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+733,"50","M","USA","Brian","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+734,"51","F","USA","Morgan","aerial.won",NA,NA,NA,"D","COL","N. Arias","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+735,"51","D","COL","Clavijo","passes.f.c",NA,NA,NA,"D","USA","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+736,"51","M","COL","Santos","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+737,"51","M","COL","Santos","passes.f",NA,NA,NA,"D","USA","Engen","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+738,"51","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+739,"51","M","USA","Brian","passes.f.c",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+739,"51",NA,NA,NA,NA,NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+740,"51","M","USA","Horan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+741,"51","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+742,"51","D","USA","O'Hara","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+743,"51","M","USA","Horan","passes.b.c",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+744,"51","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+745,"51","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+746,"51","D","USA","Krieger","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+747,"51","M","USA","Brian","take.on.won",NA,NA,NA,"M","COL","Usme","dribbled.out.run",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+748,"51","M","USA","Brian","take.on.won",NA,NA,NA,"D","COL","Echeverri","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+749,"51","M","USA","Brian","take.on.won",NA,NA,NA,"D","COL","Salazar","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+750,"51","M","USA","Brian","passes.s.c",NA,"A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+751,"51","M","USA","Horan","shots.stopped.by.gk","A3C","A6",NA,"GK","COL","Sepulveda","gk.s.o.g.stop","D6","punched.to.safety","reaching",NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+752,"52","M","USA","Pugh","passes.s.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+752,"52",NA,NA,NA,NA,NA,NA,"launch","D","COL","Echeverri","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+753,"52","D","USA","O'Hara","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+754,"52","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+755,"52","M","USA","Brian","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+756,"52","D","USA","O'Hara","passes.f",NA,NA,NA,"D","COL","Salazar","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+757,"52","D","COL","Salazar","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+758,"52","F","COL","Andrade","passes.f.c",NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+759,"52","D","COL","Salazar","passes.f.c",NA,NA,NA,"D","USA","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+759,"52",NA,NA,NA,NA,NA,NA,NA,"M","USA","Horan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+760,"52","F","COL","Andrade","dispossessed",NA,NA,NA,"D","USA","O'Hara","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+760,"52",NA,NA,NA,NA,NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+761,"52","F","COL","Andrade","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+762,"52","F","COL","Andrade","movement",NA,NA,NA,"M","USA","Brian","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+763,"53","F","COL","Andrade","passes.b.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+764,"53","D","COL","Salazar","passes.s.c",NA,NA,NA,"F","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+765,"53","M","COL","Gaitan","passes.f.c",NA,NA,NA,"M","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+766,"53","M","COL","Santos","passes.b.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+767,"53","D","COL","C. Arias","passes.f.c",NA,NA,NA,"M","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+768,"53","M","COL","Santos","passes.f.c",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+769,"53","F","COL","Ariza","dispossessed",NA,NA,NA,"D","USA","Krieger","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+769,"53",NA,NA,NA,NA,NA,NA,NA,"D","USA","Sauerbrunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+770,"53","D","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+771,"53","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+772,"53","D","USA","Krieger","passes.f",NA,NA,NA,"D","COL","C. Arias","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+773,"53","D","USA","Krieger","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+774,"53","M","USA","Pugh","aerial.won",NA,NA,NA,"M","COL","Gaitan","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+775,"53","M","COL","Santos","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+776,"53","M","COL","Santos","passes.b.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+777,"53","D","COL","C. Arias","passes.f.c",NA,NA,NA,"F","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+777,"53",NA,NA,NA,NA,NA,NA,NA,"M","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+778,"53","M","COL","Usme","passes.f",NA,NA,NA,"M","USA","Pugh","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+778,"53",NA,NA,NA,NA,NA,NA,NA,"D","USA","Krieger","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+779,"53","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+780,"53","F","USA","Press","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+781,"54","F","COL","Ariza","passes.f",NA,NA,NA,"D","USA","Krieger","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+782,"54","M","USA","Pugh","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+783,"54","M","USA","Pugh","passes.b.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+784,"54","D","USA","Engen","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+785,"54","D","COL","Echeverri","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+786,"54","D","COL","Echeverri","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+787,"54","D","COL","Salazar","passes.s.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+788,"54","D","COL","Clavijo","movement",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+789,"54","D","COL","Clavijo","passes.f",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+789,"54",NA,NA,NA,NA,NA,NA,NA,"M","USA","Horan","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+790,"54","M","USA","Horan","lost.touch",NA,NA,NA,"M","COL","Santos","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+791,"54","F","USA","Dunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+792,"54","F","USA","Dunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+793,"54","F","USA","Press","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+794,"54","F","USA","Press","passes.f.c",NA,"A3C","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+795,"54","F","USA","Morgan","shots.missed","A3C","A6",NA,"GK","COL","Sepulveda","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+796,"55","GK","COL","Sepulveda","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+796,"55",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+797,"55","M","COL","Gaitan","aerial.won",NA,NA,NA,"M","USA","Pugh","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+798,"55","D","USA","Engen","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+799,"55","D","USA","Engen","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+800,"55","D","USA","Krieger","passes.f",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+800,"55",NA,NA,NA,NA,NA,NA,NA,"D","COL","C. Arias","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+801,"55","D","COL","C. Arias","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+802,"55","M","USA","Pugh","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+803,"55","M","USA","Pugh","passes.f",NA,NA,NA,"D","COL","C. Arias","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+804,"55","M","COL","Gaitan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+805,"55","M","COL","Gaitan","clearances",NA,NA,NA,"M","USA","Pugh","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+806,"55","D","USA","Engen","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+807,"55","D","USA","Engen","passes.f.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+808,"55","M","USA","Brian","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+809,"55","D","USA","Krieger","passes.b.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+810,"55","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+811,"55","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+812,"55","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+813,"55","D","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+814,"55","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+815,"55","D","USA","O'Hara","passes.b.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+816,"55","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+817,"55","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+818,"55","D","USA","Krieger","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+819,"55","D","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+820,"55","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+821,"55","D","USA","O'Hara","passes.b.c",NA,NA,NA,"F","COL","Andrade","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+822,"56","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+823,"56","D","USA","Krieger","passes.b.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+824,"56","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+825,"56","D","USA","O'Hara","passes.f.c",NA,NA,NA,"F","COL","Andrade","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+825,"56",NA,NA,NA,NA,NA,NA,NA,"F","COL","Andrade","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+826,"56","D","USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+827,"56","D","USA","O'Hara","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+828,"56","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+829,"56","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+830,"56","D","USA","O'Hara","passes.f",NA,NA,"deep.crosses","D","COL","C. Arias","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+831,"56","M","COL","Usme","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+832,"56","M","COL","Usme","passes.b.c",NA,NA,NA,"D","USA","Krieger","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+833,"56","D","COL","Echeverri","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+834,"56","M","COL","Santos","passes.b.c",NA,NA,NA,"F","USA","Press","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+834,"56",NA,NA,NA,NA,NA,NA,NA,"F","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+835,"56","D","COL","Echeverri","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+836,"56","M","COL","Santos","passes.b.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+837,"56","D","COL","N. Arias","passes.f.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+838,"56","D","COL","Clavijo","dispossessed",NA,NA,NA,"D","USA","O'Hara","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+839,"56","D","USA","O'Hara","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+840,"57","D","COL","Clavijo","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+841,"57","D","COL","Salazar","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+842,"57","M","USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+843,"57","M","USA","Horan","passes.f.c",NA,NA,NA,"D","COL","Salazar","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+844,"57","M","USA","Brian","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+845,"57","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+846,"57","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+847,"57","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+848,"57","M","USA","Brian","passes.b.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+849,"57","D","USA","O'Hara","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+850,"57","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+851,"57","D","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+852,"57","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+853,"57","D","USA","O'Hara","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+854,"57","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+855,"57","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+856,"57","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+857,"57","D","USA","O'Hara","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+858,"57","F","USA","Press","passes.b",NA,NA,NA,"D","COL","N. Arias","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+859,"57","D","COL","N. Arias","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+860,"57","D","COL","N. Arias","lost.touch",NA,NA,NA,"D","USA","O'Hara","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+861,"57","F","USA","Dunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+862,"58","F","USA","Dunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+863,"58","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+864,"58","M","USA","Brian","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+865,"58","D","USA","Krieger","passes.b.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+866,"58","D","USA","Engen","passes.f",NA,NA,"launch","D","COL","Clavijo","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+867,"58","D","USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+868,"58","D","USA","O'Hara","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+869,"58","D","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+870,"58","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+871,"58","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+872,"58","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+873,"58","D","USA","Engen","passes.f.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+874,"58","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+875,"58","D","USA","O'Hara","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+876,"58","D","USA","Engen","passes.s",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+876,"58",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+877,"58","M","COL","Gaitan","passes.f",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+878,"59","D","USA","Krieger","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+879,"59","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+880,"59","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+880,"59",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+881,"59","D","USA","Krieger","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+882,"59","F","USA","Press","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+883,"59","D","USA","Krieger","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+884,"59","M","USA","Pugh","dispossessed",NA,NA,NA,"D","COL","C. Arias","tackles.ball",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+885,"59","M","USA","Pugh","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+886,"59","D","USA","Krieger","passes.b.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+887,"59","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+888,"59","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+889,"59","M","USA","Horan","passes.f.c",NA,NA,NA,"D","COL","Echeverri","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+890,"59","F","USA","Dunn","passes.s.c",NA,NA,NA,"D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+891,"59","M","USA","Pugh","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+892,"59","M","USA","Pugh","shots.scored","A18","A6",NA,"M","COL","Gaitan","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+892,"59",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","challenged","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+892,"59",NA,NA,NA,NA,NA,NA,NA,"D","COL","Clavijo","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+892,"59",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Sepulveda","gk.s.o.g.scored","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
+892,"60",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+893,"60","D","COL","Clavijo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+894,"60","M","COL","Gaitan","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+895,"60","D","COL","Echeverri","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+896,"60","D","USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+897,"60","D","USA","Krieger","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+898,"60","M","USA","Brian","passes.b.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+899,"61","D","USA","Krieger","passes.b.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+900,"61","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+901,"61","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+902,"61","D","USA","O'Hara","passes.b.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+903,"61","D","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+904,"61","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+905,"61","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+906,"61","D","USA","O'Hara","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+907,"61","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+908,"61","M","USA","Brian","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+909,"61","F","USA","Press","passes.b.c",NA,NA,"lay.off","D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+910,"61","M","USA","Brian","passes.f",NA,NA,NA,"D","COL","Salazar","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+911,"61","M","COL","Santos","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+912,"61","M","COL","Santos","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+913,"61","F","COL","Andrade","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+914,"61","M","COL","Santos","passes.f",NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+914,"61",NA,NA,NA,NA,NA,NA,NA,"D","USA","Krieger","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+915,"61","M","USA","Brian","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+916,"61","M","USA","Brian","dispossessed",NA,NA,NA,"M","COL","Santos","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+917,"61","M","COL","Usme","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+918,"61","M","COL","Usme","passes.b.c",NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+919,"61","M","COL","Gaitan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+920,"61","D","COL","Clavijo","passes.b.c",NA,NA,NA,"M","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+921,"61","M","COL","Gaitan","passes.b.c",NA,NA,NA,"F","USA","Morgan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+922,"61","D","COL","N. Arias","clearances",NA,NA,NA,"F","USA","Morgan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+923,"61","M","USA","Pugh","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+924,"61","M","USA","Pugh","take.on.won",NA,NA,NA,"D","COL","Clavijo","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+925,"61","M","USA","Pugh","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+926,"61","F","USA","Press","passes.f",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+927,"61","M","USA","Pugh","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+928,"62","F","COL","Andrade","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+929,"62","M","COL","Ospina","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+930,"62","GK","COL","Sepulveda","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+930,"62",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+931,"62","M","COL","Usme","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+932,"62","D","USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+933,"62","D","USA","Krieger","passes.b.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+934,"62","GK","USA","Solo","clearances",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+935,"62","F","USA","Press","aerial.lost",NA,NA,NA,"D","COL","Echeverri","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+936,"62","F","COL","Ariza","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+937,"62","F","COL","Ariza","lost.touch",NA,NA,NA,"M","USA","Horan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+938,"62","M","USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+939,"62","M","USA","Horan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+940,"63","F","USA","Dunn","take.on.won",NA,NA,NA,"D","COL","C. Arias","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+941,"63","F","USA","Dunn","lost.touch",NA,NA,NA,"M","COL","Ospina","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+942,"63","D","USA","Krieger","passes.f.c",NA,"A18","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+943,"63","M","USA","Horan","shots.stopped.by.gk","A18","A6","headed","D","COL","Clavijo","challenged","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+943,"63",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Sepulveda","gk.s.o.g.stop","D6","punched.to.safety",NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+944,"64","M","USA","Pugh","passes.b.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+945,"64","D","USA","O'Hara","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+946,"64","F","USA","Press","passes.b.c",NA,NA,NA,"M","COL","Ospina","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+947,"64","D","USA","Krieger","passes.f.c",NA,"A18","corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+948,"64","M","USA","Pugh","shots.missed","A18","A6",NA,"GK","COL","Sepulveda","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+949,"64","GK","COL","Sepulveda","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+949,"64",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+950,"64","M","COL","Usme","aerial.lost",NA,NA,NA,"M","USA","Horan","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+951,"64","D","USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+952,"64","D","USA","Krieger","passes.f",NA,NA,"headed","M","COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+953,"64","D","COL","Echeverri","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+954,"64","D","COL","Echeverri","clearances",NA,NA,NA,"GK","USA","Solo","gk.loose.balls.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+955,"65","GK","USA","Solo","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+956,"65","D","USA","O'Hara","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+957,"65","GK","USA","Solo","passes.f",NA,NA,"launch","M","COL","Gaitan","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+958,"65","M","USA","Horan","aerial.lost",NA,NA,NA,"M","COL","Usme","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+959,"65","D","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+960,"65","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+961,"65","M","USA","Brian","passes.f",NA,NA,NA,"M","COL","Gaitan","blocks",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+962,"65","M","USA","Brian","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+963,"65","M","USA","Long","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+964,"65","D","USA","Engen","passes.s.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+965,"66","D","USA","Sauerbrunn","passes.s.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+966,"66","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+967,"66","D","USA","Krieger","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+968,"66","F","USA","Press","passes.f.c",NA,NA,NA,"M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+969,"66","F","USA","Dunn","take.on.lost",NA,NA,NA,"D","COL","C. Arias","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+970,"66","D","COL","C. Arias","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+971,"66","D","COL","C. Arias","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+972,"66","M","COL","Santos","passes.b.c",NA,NA,NA,"M","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+973,"66","M","COL","Ospina","passes.f.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+974,"66","M","COL","Santos","passes.b",NA,NA,NA,"F","USA","Morgan","blocks",NA,NA,NA,NA,NA,"fouls.conceded",NA,NA,NA,NA
+975,"66","D","COL","Echeverri","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+976,"66","D","COL","C. Arias","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+977,"66","M","COL","Ospina","passes.s.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+978,"66","D","COL","C. Arias","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+979,"66","D","COL","Salazar","passes.f",NA,NA,NA,"F","USA","Press","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+980,"66","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+981,"66","F","USA","Press","passes.f.c",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+982,"66","F","USA","Dunn","passes.f",NA,NA,NA,"M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+983,"66","D","COL","Echeverri","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+984,"66","D","COL","Echeverri","passes.f.c",NA,NA,NA,"F","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+985,"66","D","COL","Salazar","passes.b.c",NA,NA,NA,"F","USA","Press","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+986,"67","M","COL","Gaitan","passes.b.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+987,"67","D","COL","Clavijo","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+987,"67",NA,NA,NA,NA,NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+988,"67","D","USA","Krieger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+989,"67","D","USA","Krieger","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+990,"67","M","USA","Horan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+991,"67","M","USA","Long","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+992,"67","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+993,"67","D","USA","O'Hara","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+994,"67","GK","USA","Solo","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+995,"67","F","USA","Press","aerial.lost",NA,NA,NA,"D","COL","C. Arias","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+996,"67","M","COL","Gaitan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+997,"67","M","COL","Gaitan","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+998,"67","M","USA","Long","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+999,"67","M","USA","Long","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1000,"67","F","USA","Morgan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1001,"67","F","USA","Dunn","dispossessed",NA,NA,NA,"D","COL","Echeverri","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1002,"67","F","USA","Morgan","lost.touch",NA,NA,NA,"M","COL","Santos","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1003,"67","D","USA","Engen","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1004,"67","D","USA","Engen","lost.touch",NA,NA,NA,"M","COL","Ospina","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1004,"67",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Solo","gk.loose.balls.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1005,"68","GK","USA","Solo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1006,"68","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1007,"68","M","USA","Horan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1008,"68","D","USA","Engen","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1009,"68","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1010,"68","M","USA","Long","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1011,"68","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1012,"68","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1013,"68","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1014,"68","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1015,"68","M","USA","Horan","passes.b.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1016,"68","D","USA","Engen","movement",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1017,"68","D","USA","Engen","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1018,"68","M","USA","Horan","passes.f",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1019,"68","D","COL","Clavijo","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1020,"68","D","COL","Clavijo","passes.f.c",NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1021,"68","M","COL","Santos","dispossessed",NA,NA,NA,"M","USA","Pugh","tackles.ball",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1022,"69","M","USA","Pugh","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1023,"69","M","USA","Horan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1024,"69","M","USA","Long","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1025,"69","F","USA","Press","dispossessed",NA,NA,NA,"D","COL","C. Arias","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1026,"69","M","COL","Gaitan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1027,"69","M","COL","Gaitan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1028,"69","M","COL","Usme","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1029,"69","D","COL","Salazar","passes.f.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1030,"69","D","COL","Clavijo","take.on.won",NA,NA,NA,"F","USA","Dunn","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1031,"69","D","COL","Clavijo","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1032,"69","D","COL","Echeverri","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1033,"69","D","COL","Clavijo","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1034,"69","D","COL","Clavijo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1035,"69","F","COL","Ariza","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1036,"69","M","COL","Santos","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1037,"69","M","COL","Santos","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1038,"69","F","COL","Ariza","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1039,"69","F","COL","Ariza","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1040,"69","D","COL","Salazar","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1041,"69","M","COL","Gaitan","passes.f.c",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1042,"69","M","COL","Ospina","take.on.won",NA,NA,NA,"F","USA","Press","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1043,"69","M","COL","Ospina","shots.blocked",NA,NA,NA,"M","USA","Long","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1044,"69","M","COL","Usme","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1045,"70","M","COL","Usme","take.on.lost",NA,NA,NA,"D","USA","Krieger","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1046,"70","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1047,"70","F","USA","Press","passes.f",NA,NA,NA,"D","COL","C. Arias","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1048,"70","D","USA","Krieger","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1049,"70","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1050,"70","D","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1051,"70","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1052,"70","D","USA","O'Hara","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1053,"70","M","USA","Horan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1054,"70","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1055,"70","M","USA","Long","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1056,"70","D","USA","Krieger","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1057,"70","M","USA","Long","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1058,"70","M","USA","Horan","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1059,"70","D","USA","Krieger","passes.b.c",NA,NA,NA,"M","COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1060,"70","M","USA","Long","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1061,"70","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1062,"70","F","USA","Press","passes.b.c",NA,NA,NA,"M","COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1063,"71","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1064,"71","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1065,"71","M","USA","Horan","dispossessed",NA,NA,NA,"M","COL","Santos","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1066,"71","M","COL","Santos","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1067,"71","M","COL","Usme","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1068,"71","D","COL","Salazar","passes.f.c",NA,NA,NA,"F","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1069,"71","F","COL","Ariza","passes.b.c",NA,NA,NA,"M","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1070,"71","M","COL","Usme","passes.f.c",NA,NA,"switch","F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1071,"71","M","COL","Ospina","passes.b.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1072,"71","M","COL","Gaitan","passes.f",NA,NA,NA,"D","USA","Krieger","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1073,"71","D","USA","Krieger","passes.f.c",NA,NA,NA,"M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1074,"71","F","USA","Dunn","passes.f.c",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1075,"71","F","USA","Morgan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1076,"71","M","USA","Pugh","lost.touch",NA,NA,NA,"D","COL","Echeverri","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1077,"72","GK","COL","Sepulveda","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1078,"72","D","COL","C. Arias","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1079,"72","D","COL","Echeverri","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1080,"72","D","COL","Clavijo","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1081,"72","D","COL","Echeverri","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1082,"72","D","COL","C. Arias","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1083,"72","D","COL","C. Arias","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1084,"72","D","COL","Salazar","movement",NA,NA,NA,"M","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1085,"72","D","COL","Salazar","dispossessed",NA,NA,NA,"M","USA","Long","challenged",NA,NA,NA,"fouls.conceded",NA,"fouls.won",NA,NA,NA,NA
+1085,"72",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA,NA,NA
+1085,"73",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1086,"73","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1087,"73","D","USA","Engen","passes.b.c",NA,NA,NA,"M","COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1088,"73","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1089,"73","M","USA","Long","passes.b.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1090,"73","D","USA","O'Hara","passes.f.c",NA,NA,NA,"F","COL","Ariza","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1091,"73","M","USA","Pugh","passes.f",NA,NA,NA,"F","COL","Ariza","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1092,"73","D","USA","O'Hara","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1093,"73","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1094,"73","D","USA","Engen","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1095,"73","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1096,"74","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,"M","COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1097,"74","D","USA","Engen","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1098,"74","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1099,"74","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1100,"74","D","USA","Krieger","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1101,"74","F","USA","Press","passes.b.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1102,"74","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1103,"74","M","USA","Long","passes.b.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1104,"74","D","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1105,"74","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1106,"74","D","USA","Krieger","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1107,"74","D","USA","Krieger","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1108,"74","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,"M","COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1109,"74","M","USA","Pugh","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1110,"74","M","USA","Pugh","take.on.won",NA,NA,NA,"D","COL","Clavijo","dribbled.out.run",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1111,"75","M","USA","Pugh","passes.b.c",NA,NA,NA,"D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1112,"75","M","USA","Long","shots.blocked",NA,NA,NA,"M","COL","Gaitan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1112,"75",NA,NA,NA,NA,NA,NA,NA,"D","COL","Echeverri","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1113,"75","M","USA","Pugh","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1114,"75","GK","COL","Sepulveda","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1115,"75","D","USA","O'Hara","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1116,"75","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1117,"76","D","USA","Krieger","passes.b.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1118,"76","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1119,"76","M","USA","Long","passes.b.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1120,"76","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1121,"76","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,"M","COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1121,"76",NA,NA,NA,NA,NA,NA,NA,"F","COL","Ariza","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1122,"76","D","USA","O'Hara","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1123,"76","F","USA","Morgan","aerial.won",NA,NA,NA,"D","COL","Clavijo","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1124,"76","M","COL","Gaitan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1125,"76","M","COL","Gaitan","clearances",NA,NA,NA,"M","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1126,"76","D","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1127,"76","D","USA","Sauerbrunn","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1128,"76","M","COL","Ospina","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1129,"76","M","COL","Ospina","lost.touch",NA,NA,NA,"D","USA","Sauerbrunn","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+1130,"77","M","COL","Usme","shots.missed","AM3R","A6","free.kick","GK","USA","Solo","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1131,"78","GK","USA","Solo","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1131,"78",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1132,"78","F","USA","Morgan","aerial.lost",NA,NA,NA,"M","COL","Usme","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1133,"78","D","COL","Echeverri","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1134,"78","D","COL","Echeverri","passes.f.c",NA,NA,"headed","F","USA","Dunn","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+1135,"78","D","COL","N. Arias","passes.s.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1136,"78","D","COL","Salazar","passes.f.c",NA,NA,NA,"F","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1137,"78","D","COL","Clavijo","passes.s.c",NA,NA,NA,"M","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1138,"78","M","COL","Ospina","passes.f.c",NA,NA,NA,"M","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1139,"78","M","COL","Santos","passes.f",NA,NA,NA,"D","USA","O'Hara","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1140,"79","M","COL","Ospina","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1141,"79","M","COL","Santos","passes.b.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1142,"79","D","COL","Salazar","passes.b.c",NA,NA,NA,"M","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1143,"79","M","COL","Gaitan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1144,"79","D","COL","C. Arias","passes.f.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1145,"79","F","COL","Ariza","dispossessed",NA,NA,NA,"D","USA","Krieger","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1145,"79",NA,NA,NA,NA,NA,NA,NA,"M","USA","Long","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1146,"79","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1147,"79","F","USA","Press","passes.f.c",NA,NA,NA,"F","COL","Ariza","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1148,"79","M","USA","Horan","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1149,"79","M","USA","Pugh","take.on.won",NA,NA,NA,"M","COL","Ospina","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1150,"79","M","USA","Pugh","passes.s",NA,NA,NA,"D","COL","C. Arias","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1151,"79","M","COL","Santos","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1152,"79","M","COL","Santos","dispossessed",NA,NA,NA,"M","USA","Pugh","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1153,"79","M","COL","Usme","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1154,"79","M","COL","Usme","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1155,"79","D","COL","C. Arias","passes.b.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1156,"79","D","COL","Salazar","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1157,"79","M","COL","Usme","dispossessed",NA,NA,NA,"M","USA","Long","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1158,"79","F","USA","Dunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1159,"79","F","USA","Dunn","take.on.won",NA,NA,NA,"D","COL","Salazar","dribbled.out.run",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1160,"79","F","USA","Dunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1161,"80","F","USA","Dunn","take.on.lost",NA,NA,NA,"D","COL","Clavijo","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1162,"80","M","COL","Ospina","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1163,"80","M","COL","Ospina","clearances",NA,NA,NA,"M","USA","Pugh","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1164,"80","F","COL","Ariza","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1165,"80","F","COL","Vidal","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1166,"80","D","USA","O'Hara","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1167,"80","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,"F","COL","Vidal","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1168,"80","D","USA","Engen","passes.f.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1169,"80","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,"F","COL","Vidal","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1170,"80","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1171,"80","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1172,"80","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1173,"80","M","USA","Long","passes.b.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1174,"80","D","USA","Engen","passes.f.c",NA,NA,NA,"F","COL","Vidal","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1175,"80","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1176,"81","M","USA","Horan","passes.b.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1177,"81","D","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1178,"81","D","USA","Sauerbrunn","passes.f",NA,NA,NA,"GK","COL","Sepulveda","gk.loose.balls.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1179,"81","GK","COL","Sepulveda","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1180,"81","D","COL","C. Arias","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1181,"81","D","COL","Echeverri","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1182,"81","D","COL","N. Arias","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1183,"81","D","COL","Salazar","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1184,"81","D","COL","C. Arias","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1185,"81","D","COL","Salazar","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1186,"81","D","COL","N. Arias","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1187,"81","D","COL","N. Arias","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1188,"81","D","COL","Clavijo","passes.f",NA,NA,NA,"M","USA","Pugh","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1189,"82","D","USA","O'Hara","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1190,"82","F","USA","Morgan","dispossessed",NA,NA,NA,"D","COL","Clavijo","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+1191,"82","D","USA","O'Hara","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1192,"82","F","USA","Dunn","passes.f.c",NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1193,"82","M","USA","Pugh","passes.s",NA,NA,NA,"M","COL","Santos","blocks",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1193,"82",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1194,"83","M","COL","Gaitan","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1195,"83","D","COL","N. Arias","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1196,"83","D","COL","Clavijo","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1197,"83","D","COL","N. Arias","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1198,"83","M","COL","Gaitan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1199,"83","D","COL","Echeverri","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1200,"83","M","COL","Gaitan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1201,"83","D","COL","N. Arias","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1202,"83","D","COL","Clavijo","passes.b.c",NA,NA,NA,"M","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1203,"83","D","COL","N. Arias","passes.f",NA,NA,NA,"M","USA","Pugh","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1204,"83","D","COL","Salazar","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1205,"83","D","COL","Salazar","dispossessed",NA,NA,NA,"M","USA","Long","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+1206,"83","M","COL","Santos","passes.s.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1207,"84","D","COL","C. Arias","passes.f",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1207,"84",NA,NA,NA,NA,NA,NA,NA,"M","USA","Long","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1208,"84","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1209,"84","F","USA","Press","passes.f.c",NA,NA,NA,"D","COL","C. Arias","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1210,"84","F","USA","Morgan","passes.s.c",NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1211,"84","M","USA","Pugh","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1212,"84","M","USA","Horan","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1213,"84","D","USA","Engen","passes.f.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1214,"84","M","USA","Horan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1215,"84","D","USA","Engen","passes.s.c",NA,NA,NA,"F","COL","Vidal","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1216,"84","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1217,"84","D","USA","Engen","passes.f",NA,NA,NA,"F","COL","Vidal","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1218,"84","F","COL","Vidal","passes.b.c",NA,NA,NA,"D","USA","Engen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1219,"84","M","COL","Santos","passes.f.c",NA,NA,NA,"M","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1220,"84","F","COL","Vidal","passes.b.c",NA,NA,NA,"M","USA","Horan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1221,"84","M","COL","Gaitan","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1222,"84","D","COL","C. Arias","movement",NA,NA,NA,"F","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1223,"84","D","COL","C. Arias","passes.f.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1223,"84",NA,NA,NA,NA,NA,NA,NA,"D","USA","Krieger","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1224,"84","D","COL","C. Arias","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1225,"84","D","COL","C. Arias","lost.touch",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1226,"84","M","USA","Long","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1227,"84","M","USA","Long","dispossessed",NA,NA,NA,"D","COL","C. Arias","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+1228,"85","D","USA","Krieger","passes.b.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1229,"85","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1230,"85","D","USA","O'Hara","passes.b.c",NA,NA,NA,"M","COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1231,"85","GK","USA","Solo","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1232,"85","M","USA","Pugh","aerial.lost",NA,NA,NA,"D","COL","Clavijo","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1233,"85","M","USA","Pugh","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1234,"85","M","USA","Pugh","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1235,"85","M","USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1236,"85","M","USA","Horan","passes.b.c",NA,NA,NA,"M","COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1237,"85","D","USA","O'Hara","passes.f.c",NA,NA,NA,"M","COL","Santos","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1238,"85","M","USA","Pugh","passes.f.c",NA,NA,"flick.on","D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1239,"85","M","USA","Horan","passes.b.c",NA,NA,NA,"D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1239,"85",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1240,"85","D","USA","O'Hara","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1241,"85","F","USA","Dunn","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1242,"85","F","COL","Vidal","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1243,"85","F","COL","Vidal","lost.touch",NA,NA,NA,"F","USA","Dunn","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1244,"85","M","COL","Santos","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1245,"85","M","COL","Santos","passes.b.c",NA,NA,NA,"M","USA","Long","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1246,"85","M","COL","Gaitan","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1247,"86","M","COL","Usme","passes.f.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1248,"86","M","COL","Santos","passes.b.c",NA,NA,NA,"M","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1249,"86","M","COL","Usme","dispossessed",NA,NA,NA,"M","USA","Long","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1250,"86","M","USA","Long","passes.f.c",NA,NA,NA,"M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1251,"86","F","USA","Dunn","take.on.won",NA,NA,NA,"D","COL","C. Arias","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1252,"86","F","USA","Dunn","take.on.lost",NA,NA,NA,"M","COL","Usme","tackles.ball",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1253,"86","D","USA","Krieger",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA,NA,NA
+1254,"87","D","USA","Krieger","passes.f",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1255,"87","F","USA","Press","aerial.lost",NA,NA,NA,"M","COL","Usme","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1256,"87","M","COL","Santos","passes.f.c",NA,NA,NA,"M","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1256,"87",NA,NA,NA,NA,NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1257,"87","M","COL","Usme","passes.b",NA,NA,NA,"F","USA","Press","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1258,"87","D","COL","C. Arias","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1259,"87","M","COL","Usme","passes.b.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1260,"87","D","COL","C. Arias","passes.b.c",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1261,"87","D","COL","Clavijo","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1262,"87","D","COL","Clavijo","passes.f",NA,NA,"launch","M","USA","Long","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1263,"87","M","USA","Pugh","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1264,"87","M","USA","Pugh","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1265,"87","D","USA","O'Hara","passes.f",NA,NA,"launch","F","COL","Vidal","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1266,"87","D","COL","N. Arias","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1267,"87","D","COL","N. Arias","passes.f",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1268,"87","D","USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1269,"87","D","USA","O'Hara","passes.f.c",NA,NA,NA,"M","COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1270,"87","M","USA","Pugh","passes.s",NA,NA,NA,"M","COL","Ospina","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1270,"87",NA,NA,NA,NA,NA,NA,NA,"D","COL","Salazar","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1271,"87","D","COL","Salazar","take.on.won",NA,NA,NA,"M","USA","Horan","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1272,"87","D","COL","Salazar","dispossessed",NA,NA,NA,"M","USA","Horan","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1272,"87",NA,NA,NA,NA,NA,NA,NA,"M","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1273,"87","M","USA","Horan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1274,"87","F","USA","Dunn","passes.f.c",NA,NA,"flick.on","M","COL","Gaitan","challenged",NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA
+1275,"88","M","USA","Pugh","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1276,"88","M","USA","Pugh","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1277,"88","M","USA","Pugh","passes.f.c",NA,NA,NA,"D","COL","Clavijo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1278,"88","F","USA","Morgan","dispossessed",NA,NA,NA,"D","COL","Clavijo","tackles.ball",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1279,"88","D","USA","O'Hara","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1280,"88","M","USA","Horan","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1281,"88","M","USA","Long","passes.b.c",NA,NA,NA,"F","COL","Vidal","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1282,"88","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1283,"88","D","USA","Sauerbrunn","passes.b.c",NA,NA,NA,"F","COL","Vidal","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1284,"88","D","USA","O'Hara","passes.b.c",NA,NA,NA,"F","COL","Vidal","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1285,"89","D","USA","Engen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1286,"89","D","USA","Krieger","passes.f",NA,NA,"through","M","COL","Usme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1286,"89",NA,NA,NA,NA,NA,NA,NA,"GK","COL","Sepulveda","gk.loose.balls.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1287,"89","GK","COL","Sepulveda","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1288,"89","D","COL","C. Arias","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1289,"89","D","COL","Echeverri","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1290,"89","F","COL","Vidal","aerial.lost",NA,NA,NA,"D","USA","Krieger","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1291,"89","M","USA","Long","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1292,"89","M","USA","Long","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1293,"89","F","COL","Vidal","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1294,"89","F","COL","Vidal","passes.b.c",NA,NA,NA,"M","USA","Long","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1295,"89","D","COL","Salazar","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1296,"89","M","COL","Gaitan","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1297,"89","D","COL","Clavijo","movement",NA,NA,NA,"M","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1298,"89","D","COL","Clavijo","lost.touch",NA,NA,NA,"D","USA","O'Hara","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+1299,"90","M","COL","Usme","shots.scored","A3R","A6","free.kick","GK","USA","Solo","gk.s.o.g.scored","D6",NA,"reaching",NA,NA,NA,NA,NA,NA,NA
+1300,"92","F","USA","Morgan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1301,"92","M","USA","Long","passes.s.c",NA,NA,NA,"F","COL","Vidal","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1302,"92","D","USA","Krieger","passes.f",NA,NA,"launch","D","COL","N. Arias","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1303,"92","M","USA","Pugh","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1304,"92","M","USA","Pugh","dispossessed",NA,NA,NA,"M","COL","Ospina","tackles.ball",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1305,"92","D","USA","O'Hara","passes.f",NA,NA,"throw.in","D","COL","Clavijo","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1306,"92","D","USA","O'Hara","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1307,"92","F","USA","Morgan","dispossessed",NA,NA,NA,"M","COL","Ospina","tackles.ball",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1308,"93","D","USA","O'Hara","passes.s.c",NA,NA,"throw.in","M","COL","Santos",NA,NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1309,"93","M","USA","Pugh","passes.b.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1310,"93","F","USA","Morgan","dispossessed",NA,NA,NA,"M","COL","Ospina","tackles.ball",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1311,"93","D","USA","O'Hara","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1312,"93","F","USA","Dunn","passes.s",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1313,"94","D","COL","Clavijo","passes.f",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1314,"94",NA,NA,NA,"end.of.match",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
