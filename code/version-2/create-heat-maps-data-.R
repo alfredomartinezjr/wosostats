@@ -3,17 +3,29 @@ require(RCurl)
 require(plyr)
 require(dplyr)
 
+#Gets database of matches from GitHub
 database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
 database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
 
-#Create function to get certain subset of match csv files
-getMatchCsvFiles <- function(competition.slug, round=NA) {
+#Create function to get certain subset of match csv files from database. Can set a specific "round" or month
+#where "month" must be in "M_YYYY" format. Or multi-round can be set as a vector of different "rounds" you want
+#such as c("Week-1","Week-2", "Week-3")
+getMatchCsvFiles <- function(competition.slug, round=NA, multi_round=NA, month_year=NA, team=NA) {
   if(competition.slug == "database"){
     matches <- database[!is.na(database[,"match.csv.link"]),"match.csv.link"]
     names <- database[!is.na(database[,"match.csv.link"]),"matchup"]
   } else {
     if (!is.na(round)){
       database <- database[database[,"round"]==round,]
+    } else if(!is.na(month_year)) {
+      month <- strsplit(month_year, "_")[[1]][1]
+      year <- strsplit(month_year,"_")[[1]][2]
+      database <- database[database[,"month"]==month & database[,"year"]==year,]
+    } else if(length(multi_round) > 1) {
+      database <- database[database[,"round"] %in% multi_round,]
+    }
+    if(!is.na(team)){
+      database <- database[database[,"home.team"] %in% team | database[,"away.team"] %in% team,]
     }
     matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"match.csv.link"]
     names <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"matchup"]
@@ -28,10 +40,6 @@ getMatchCsvFiles <- function(competition.slug, round=NA) {
   }
   match_list
 }
-
-#Get list of match csv files for Week 1
-match_list <- getMatchCsvFiles("nwsl-2016", round="week-1")
-match_names <- database[!is.na(database[,"match.csv.link"]) & database[,"round"]=="week-1","matchup"]
 
 #Create heat maps for these specific stats:
 # 1. Attempted pases (attempted-passes)
@@ -51,14 +59,16 @@ match_names <- database[!is.na(database[,"match.csv.link"]) & database[,"round"]
 #the parentheses, and it MUST be one of the eight stats listed.
 #For now, haven't yet figured out how to create heat maps for
 #other stats.
-match_stat <- "everything"
 
 #For every match csv file in match_list, create a stats table
-stats_list <- vector("list", 0)
-for (i in match_list){
-  df <- i
-  source("/Users/alfredo/wosostats/code/version-2/create-location-stats-table.R")
-  stats_list[[length(stats_list)+1]] <- stats
+createStatsTables <- function(){
+  stats_list <- vector("list", 0)
+  for (i in match_list){
+    df <- i
+    source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/create-location-stats-table.R")
+    stats_list[[length(stats_list)+1]] <- stats
+  }
+  stats_list
 }
 
 ##CREATES CSV FILE FOR STATS TABLE
