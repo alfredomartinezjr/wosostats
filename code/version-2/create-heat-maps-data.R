@@ -41,36 +41,6 @@ getMatchCsvFiles <- function(competition.slug, round=NA, multi_round=NA, month_y
   match_list
 }
 
-#Create heat maps for these specific stats:
-# 1. Attempted pases (attempted-passes)
-# 2. Completed passes (completed-passes)
-# 3. Passing completion percentage (pass-comp-pct)
-# 4. Interceptions (interceptions)
-# 5. Take ons won (take-ons-won)
-# 6. Take ons lost (take-ons-lost)
-# 7. Aerial duels won (aerial_duels-won)
-# 8. Aerial duels lost (aerial-duels-lost)
-# 9. Tackles (tackles)
-# 10. Pressure/Challenges (pressure)
-# 11. Recoveries (recoveries)
-
-#Set the stat you want as "match_stat."
-#"match_stat" MUST be written exactly as in the list above in
-#the parentheses, and it MUST be one of the eight stats listed.
-#For now, haven't yet figured out how to create heat maps for
-#other stats.
-
-#For every match csv file in match_list, create a stats table
-createStatsTables <- function(){
-  stats_list <- vector("list", 0)
-  for (i in match_list){
-    df <- i
-    source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/create-location-stats-table.R")
-    stats_list[[length(stats_list)+1]] <- stats
-  }
-  stats_list
-}
-
 ##CREATES CSV FILE FOR STATS TABLE
 createcsv <- function(name) {
   for (i in 1:length(stats_list)) {

@@ -2,6 +2,25 @@
 # given as "match_stat", broken up into each location zone.
 source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/functions.R")
 
+#Create heat maps for these specific stats:
+# 1. Attempted pases (attempted-passes)
+# 2. Completed passes (completed-passes)
+# 3. Passing completion percentage (pass-comp-pct)
+# 4. Interceptions (interceptions)
+# 5. Take ons won (take-ons-won)
+# 6. Take ons lost (take-ons-lost)
+# 7. Aerial duels won (aerial_duels-won)
+# 8. Aerial duels lost (aerial-duels-lost)
+# 9. Tackles (tackles)
+# 10. Pressure/Challenges (pressure)
+# 11. Recoveries (recoveries)
+
+#Set the stat you want as "match_stat."
+#"match_stat" MUST be written exactly as in the list above in
+#the parentheses, and it MUST be one of the eight stats listed.
+#For now, haven't yet figured out how to create heat maps for
+#other stats.
+
 ##CREATE STATS TABLE WITH PLAYER INFO---------
 #Here, we create a data frame for the "poss.player" column, and another for the
 #"def.player" column. Then, we merge them into one, which is the beginning of the
