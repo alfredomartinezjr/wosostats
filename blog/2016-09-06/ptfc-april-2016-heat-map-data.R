@@ -20,24 +20,5 @@ for (matchSheet in match_list){
   rm(i, stats, df, matchSheet)
 }
 
-
-#Creates a blank overall table
-d <- do.call("rbind", stats_list)
-d <- d[d[,"Team"]=="PTFC",]
-players <- unique(d[,c("Player", "Team")])
-stats <- as.data.frame(matrix(rep(0, length(names(d))), nrow = 1))
-stats <- stats[-1,]
-names(stats) <- names(d)
-stats$Player <- as.character(stats$Player)
-stats$Team <- as.character(stats$Team)
-overall <- merge(players, stats, by=c("Player", "Team"), all=TRUE)
-#for each row in "overall", gets each column's colSums for that row's "Player"-"Team" combo in d
-x <- 1
-while(x <= nrow(overall)) {
-  sub <- d[d[,"Player"] == overall[x,"Player"] & d[,"Team"] == overall[x,"Team"],]
-  overall[x,3:ncol(overall)] <- colSums(sub[,3:ncol(sub)])
-  x <- x + 1
-}
-
 #Write csv files into your directory
 createcsv()
