@@ -389,4 +389,4 @@ rm(opposites, deflocations, awayteam, hometeam, posslocations, homedata,
    awaydata, teams, players, rosters, actionIsInvertible, AbbreviationConverter_Base, 
    AbbreviationConverter_DefAction, AbbreviationConverter_DefPlayerDisciplinary, AbbreviationConverter_PlayType,
    AbbreviationConverter_PossAction, AbbreviationConverter_PossAction, AbbreviationConverter_PossNotes, 
-   AbbreviationConverter_PossPlayerDisciplinary, AbbreviationProcessor)
+   AbbreviationConverter_PossPlayerDisciplinary, AbbreviationProcessor, online_mode)
