@@ -12,8 +12,8 @@ database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
 #such as c("Week-1","Week-2", "Week-3")
 getMatchCsvFiles <- function(competition.slug, round=NA, multi_round=NA, month_year=NA, team=NA) {
   if(competition.slug == "database"){
-    matches <- database[!is.na(database[,"match.csv.link"]),"match.csv.link"]
-    names <- database[!is.na(database[,"match.csv.link"]),"matchup"]
+    matches <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","match.csv.link"]
+    names <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","matchup"]
   } else {
     if (!is.na(round)){
       database <- database[database[,"round"]==round,]
@@ -39,6 +39,10 @@ getMatchCsvFiles <- function(competition.slug, round=NA, multi_round=NA, month_y
     x <- x + 1
   }
   match_list
+}
+
+getMatchNames <- function() {
+  
 }
 
 ##CREATES CSV FILE FOR STATS TABLE
