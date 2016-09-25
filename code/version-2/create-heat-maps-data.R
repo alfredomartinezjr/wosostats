@@ -38,7 +38,8 @@ getMatchCsvFiles <- function(competition.slug, round=NA, multi_round=NA, month_y
     match_list[[x]] <- d
     x <- x + 1
   }
-  match_list
+  assign("match_list",match_list, pos=1)
+  assign("match_names", names, pos=1)
 }
 
 getMatchNames <- function() {
