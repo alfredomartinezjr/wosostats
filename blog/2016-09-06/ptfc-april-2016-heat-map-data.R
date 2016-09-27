@@ -3,11 +3,7 @@
 source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/create-heat-maps-data.R")
 
 #Get list of match csv files for PTFC from Week 1-3
-match_list <- getMatchCsvFiles("nwsl-2016", multi_round = c("week-1", "week-2", "week-3"), team = "PTFC")
-match_names <- database[!is.na(database[,"match.csv.link"]) & 
-                          database[,"round"] %in% c("week-1", "week-2", "week-3") & 
-                          (database[,"home.team"] == "PTFC"|database[,"away.team"] == "PTFC"),"matchup"]
-
+getMatchCsvFiles("nwsl-2016", multi_round = c("week-1", "week-2", "week-3"), team = "PTFC")
 
 #Create stats table for each match
 match_stat <- "everything"

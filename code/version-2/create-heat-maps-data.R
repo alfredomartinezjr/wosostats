@@ -42,8 +42,16 @@ getMatchCsvFiles <- function(competition.slug, round=NA, multi_round=NA, month_y
   assign("match_names", names, pos=1)
 }
 
-getMatchNames <- function() {
-  
+createMatchStatsTables <- function(match_stat, match_list) {
+  stats_list <- vector("list", 0)
+  #For every match csv file in match_list, create a stats table
+  for (matchSheet in match_list){
+    df <- matchSheet
+    source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/create-location-stats-table.R")
+    stats_list[[length(stats_list)+1]] <- stats
+    rm(i, stats, df, matchSheet)
+  }
+  assign("stats_list", stats_list, pos=1)
 }
 
 ##CREATES CSV FILE FOR STATS TABLE
