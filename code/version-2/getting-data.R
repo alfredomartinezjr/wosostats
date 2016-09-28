@@ -10,10 +10,15 @@ database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
 #Create function to get certain subset of match csv files from database. Can set a specific "round" or month
 #where "month" must be in "M_YYYY" format. Or multi-round can be set as a vector of different "rounds" you want
 #such as c("Week-1","Week-2", "Week-3")
-getMatchCsvFiles <- function(competition.slug, round=NA, multi_round=NA, month_year=NA, team=NA) {
+getMatchCsvFiles <- function(competition.slug, round=NA, multi_round=NA, month_year=NA, team=NA, location_complete=FALSE) {
   if(competition.slug == "database"){
-    matches <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","match.csv.link"]
-    names <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","matchup"]
+    if(location_complete == TRUE){
+      matches <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","match.csv.link"]
+      names <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","matchup"]
+    } else {
+      matches <- database[!is.na(database[,"match.csv.link"]),"match.csv.link"]
+      names <- database[!is.na(database[,"match.csv.link"]),"matchup"]
+    }
   } else {
     if (!is.na(round)){
       database <- database[database[,"round"]==round,]
@@ -27,8 +32,13 @@ getMatchCsvFiles <- function(competition.slug, round=NA, multi_round=NA, month_y
     if(!is.na(team)){
       database <- database[database[,"home.team"] %in% team | database[,"away.team"] %in% team,]
     }
-    matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"match.csv.link"]
-    names <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"matchup"]
+    if(location_complete == TRUE) {
+      matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","match.csv.link"]
+      names <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","matchup"]
+    } else {
+      matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"match.csv.link"]
+      names <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"matchup"]
+    }
   }
   match_list <- vector("list", 0)
   x <- 1
@@ -40,24 +50,4 @@ getMatchCsvFiles <- function(competition.slug, round=NA, multi_round=NA, month_y
   }
   assign("match_list",match_list, pos=1)
   assign("match_names", names, pos=1)
-}
-
-createMatchStatsTables <- function(match_stat, match_list) {
-  stats_list <- vector("list", 0)
-  #For every match csv file in match_list, create a stats table
-  for (matchSheet in match_list){
-    df <- matchSheet
-    source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/create-location-stats-table.R")
-    stats_list[[length(stats_list)+1]] <- stats
-    rm(i, stats, df, matchSheet)
-  }
-  assign("stats_list", stats_list, pos=1)
-}
-
-##CREATES CSV FILE FOR STATS TABLE
-createcsv <- function(name) {
-  for (i in 1:length(stats_list)) {
-    file_name <- paste0(match_names[i],"-",match_stat,".csv")
-    write.csv(stats_list[[i]], file=file_name, row.names = FALSE)
-  }
 }

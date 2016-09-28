@@ -21,93 +21,158 @@ source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-
 #For now, haven't yet figured out how to create heat maps for
 #other stats.
 
-##CREATE STATS TABLE WITH PLAYER INFO---------
+##FUNCTION TO CREATE STATS TABLE FOR ONE MATCH----------
+createLocationStatsTable <- function(match_stat, match_df){
+  players <- getPlayers(match_df)
+  if(match_stat == "everything") {
+    stats_tab <- merge(players, getPassAtt(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getPassComp(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getPassPct(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getInterceptions(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getTakeOnsWon(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getTakeOnsLost(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getAerialsWon(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getAerialsLost(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getTackles(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getPressures(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getRecoveries(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "attempted-passes") {
+    stats_tab <- merge(players, getPassAtt(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "completed-passes") {
+    stats_tab <- merge(players, getPassComp(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "pass-comp-pct") {
+    stats_tab <- merge(players, getPassPct(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "interceptions") {
+    stats_tab <- merge(players, getInterceptions(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "take-ons-won") {
+    stats_tab <- merge(players, getTakeOnsWon(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "take-ons-lost") {
+    stats_tab <- merge(players, getTakeOnsLost(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "aerial-duels-won") {
+    stats_tab <- merge(players, getAerialsWon(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "aerial-duels-lost") {
+    stats_tab <- merge(players, getAerialsLost(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "tackles") {
+    stats_tab <- merge(players, getTackles(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "pressure") {
+    stats_tab <- merge(players, getPressures(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "recoveries") {
+    stats_tab <- merge(players, getRecoveries(match_df), by="Player", all=TRUE)
+  }
+  stats_tab[is.na(stats_tab)] <- 0
+  names(stats_tab) <- gsub(" ",".", names(stats_tab))
+  stats_tab
+}
+
+##FUNCTION TO CREATE MULTIPLE STATS TABLES FOR VARIOUS MATCHES---------
+createMultiLocStatsTabs <- function(match_list, match_stat) {
+  stats_list <- vector("list", 0)
+  #For every match csv file in match_list, create a stats table
+  for (matchSheet in match_list){
+    stats_tab <- createLocationStatsTable(match_stat, matchSheet)
+    stats_list[[length(stats_list)+1]] <- stats_tab
+  }
+  stats_list
+}
+
+##CREATES CSV FILE FOR STATS TABLE---------
+writeFiles <- function(stats_list, match_names, match_stat) {
+  for (i in 1:length(stats_list)) {
+    file_name <- paste0(match_names[i],"-",match_stat,".csv")
+    write.csv(stats_list[[i]], file=file_name, row.names = FALSE)
+  }
+}
+
+##CREATE COLUMNS WITH PLAYER INFO---------
 #Here, we create a data frame for the "poss.player" column, and another for the
 #"def.player" column. Then, we merge them into one, which is the beginning of the
 #stats table, which for now will just be called "players"
-players <- rbind(data.frame(Player=unique(df$poss.player), Team=NA, GP=NA, MP=NA, GS=NA),
-                 data.frame(Player=unique(df$def.player), Team=NA, GP=NA, MP=NA, GS=NA))
-players <- players[!is.na(players[,"Player"]),]
-players <- unique(players[,])
-#Here, we use the df data frame (this is the larger match spreadsheet you created with
-#tidy-excel.R) to fill data in the "players" data frame such as each player's team
-#and how many minutes they played.
-matchlength <- length(unique(df$time))
-substitutions <- df[grepl("substitution",df[,"poss.action"]),]
-stats.tab.row <- 1
-while (stats.tab.row <= nrow(players)) {
-  player <- as.character(players[stats.tab.row,"Player"])
-  #if they don't appear in the substitutions data frame, the player played the entire match
-  if (nrow(substitutions[substitutions[,"poss.player"] %in% player,]) == 0) {
-    players[stats.tab.row,"GP"] <- 1
-    players[stats.tab.row,"MP"] <- matchlength
-    players[stats.tab.row,"GS"] <- 1
-  } else if (nrow(substitutions[substitutions[,"poss.player"] %in% player,]) > 0) {
-    #check if she was a starter, based on if she was only ever substituted on
-    if (grepl("substitution.on", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==FALSE) {
-      #if she was a starter who was subbed off, get the length of unique values for vector df[,"time] 
-      #up to where she got subbed off
-      eventnum <- substitutions[substitutions[,"poss.player"] == player,"event"]
-      lastminute <- grep(eventnum, df[,"event"])
-      minutesplayed <- length(unique(df[1:lastminute,"time"]))
+getPlayers <- function(match_df) {
+  players <- rbind(data.frame(Player=unique(match_df$poss.player), Team=NA, GP=NA, MP=NA, GS=NA),
+                   data.frame(Player=unique(match_df$def.player), Team=NA, GP=NA, MP=NA, GS=NA))
+  players <- players[!is.na(players[,"Player"]),]
+  players <- unique(players[,])
+  #Here, we use the match_df data frame (this is the larger match spreadsheet you created with
+  #tidy-excel.R) to fill data in the "players" data frame such as each player's team
+  #and how many minutes they played.
+  matchlength <- length(unique(match_df$time))
+  substitutions <- match_df[grepl("substitution",match_df[,"poss.action"]),]
+  stats.tab.row <- 1
+  while (stats.tab.row <= nrow(players)) {
+    player <- as.character(players[stats.tab.row,"Player"])
+    #if they don't appear in the substitutions data frame, the player played the entire match
+    if (nrow(substitutions[substitutions[,"poss.player"] %in% player,]) == 0) {
       players[stats.tab.row,"GP"] <- 1
-      players[stats.tab.row,"MP"] <- minutesplayed
+      players[stats.tab.row,"MP"] <- matchlength
       players[stats.tab.row,"GS"] <- 1
-    } else
-      #if she wasn't a starter and got subbed on and wasn't also later subbed off
-      if ((grepl("substitution.on", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==TRUE)
-          & (grepl("substitution.off", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==FALSE)) {
-        #if she wasn't a starter, got subbed on, and was never subbed off, get the length of unique
-        #values for vector df[,"time] from when she got subbed on to when she got subbed off
+    } else if (nrow(substitutions[substitutions[,"poss.player"] %in% player,]) > 0) {
+      #check if she was a starter, based on if she was only ever substituted on
+      if (grepl("substitution.on", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==FALSE) {
+        #if she was a starter who was subbed off, get the length of unique values for vector match_df[,"time] 
+        #up to where she got subbed off
         eventnum <- substitutions[substitutions[,"poss.player"] == player,"event"]
-        firstminute <- grep(eventnum, df[,"event"])[1]
-        minutesplayed <- length(unique(df[firstminute:nrow(df),"time"]))
+        lastminute <- grep(eventnum, match_df[,"event"])
+        minutesplayed <- length(unique(match_df[1:lastminute,"time"]))
         players[stats.tab.row,"GP"] <- 1
         players[stats.tab.row,"MP"] <- minutesplayed
-        players[stats.tab.row,"GS"] <- 0
+        players[stats.tab.row,"GS"] <- 1
       } else
-        #if she wasn't a starter, got subbed on, and was later subbed off
+        #if she wasn't a starter and got subbed on and wasn't also later subbed off
         if ((grepl("substitution.on", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==TRUE)
-            & (grepl("substitution.off", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==TRUE)) {
-          #if she wasn't a starter, got subbed on, and as later subbed off, get the length of unique
-          #values for vector df[,"time] from when she got subbed on to when she got subbed off
+            & (grepl("substitution.off", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==FALSE)) {
+          #if she wasn't a starter, got subbed on, and was never subbed off, get the length of unique
+          #values for vector match_df[,"time] from when she got subbed on to when she got subbed off
           eventnum <- substitutions[substitutions[,"poss.player"] == player,"event"]
-          firstminute <- grep(eventnum[1], df[,"event"])
-          lastminute <- grep(eventnum[2], df[,"event"])
-          minutesplayed <- length(unique(df[firstminute:lastminute,"time"]))
+          firstminute <- grep(eventnum, match_df[,"event"])[1]
+          minutesplayed <- length(unique(match_df[firstminute:nrow(match_df),"time"]))
           players[stats.tab.row,"GP"] <- 1
           players[stats.tab.row,"MP"] <- minutesplayed
           players[stats.tab.row,"GS"] <- 0
-        }
+        } else
+          #if she wasn't a starter, got subbed on, and was later subbed off
+          if ((grepl("substitution.on", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==TRUE)
+              & (grepl("substitution.off", paste(substitutions[substitutions[,"poss.player"] == player,"poss.action"],collapse="|"))==TRUE)) {
+            #if she wasn't a starter, got subbed on, and as later subbed off, get the length of unique
+            #values for vector match_df[,"time] from when she got subbed on to when she got subbed off
+            eventnum <- substitutions[substitutions[,"poss.player"] == player,"event"]
+            firstminute <- grep(eventnum[1], match_df[,"event"])
+            lastminute <- grep(eventnum[2], match_df[,"event"])
+            minutesplayed <- length(unique(match_df[firstminute:lastminute,"time"]))
+            players[stats.tab.row,"GP"] <- 1
+            players[stats.tab.row,"MP"] <- minutesplayed
+            players[stats.tab.row,"GS"] <- 0
+          }
+    }
+    stats.tab.row <- stats.tab.row + 1
   }
-  stats.tab.row <- stats.tab.row + 1
-}
-stats.tab.row <- 1
-while (stats.tab.row <= nrow(players)) {
-  player <- as.character(players[stats.tab.row,"Player"])
-  playerteam <- unique(df[df[,"poss.player"] == player & !is.na(df[,"poss.player"]),"poss.team"])
-  if(length(playerteam) == 0) {
-    playerteam <- unique(df[df[,"def.player"] == player & !is.na(df[,"def.player"]),"def.team"])
+  stats.tab.row <- 1
+  while (stats.tab.row <= nrow(players)) {
+    player <- as.character(players[stats.tab.row,"Player"])
+    playerteam <- unique(match_df[match_df[,"poss.player"] == player & !is.na(match_df[,"poss.player"]),"poss.team"])
+    if(length(playerteam) == 0) {
+      playerteam <- unique(match_df[match_df[,"def.player"] == player & !is.na(match_df[,"def.player"]),"def.team"])
+    }
+    players[stats.tab.row,"Team"] <- playerteam
+    stats.tab.row <- stats.tab.row + 1
   }
-  players[stats.tab.row,"Team"] <- playerteam
-  stats.tab.row <- stats.tab.row + 1
+  rm(eventnum,matchlength,player, playerteam, stats.tab.row, firstminute, 
+     lastminute, minutesplayed, substitutions)
+  players
 }
-rm(eventnum,matchlength,player, playerteam, stats.tab.row, firstminute, 
-   lastminute, minutesplayed, substitutions)
 
 ##CREATE COLUMNS FOR ATTEMPTED OPEN PLAY PASSES BY ZONE--------
-if(match_stat == "attempted-passes" | match_stat == "everything") {
+getPassAtt <- function(match_df){
   #Passing stats, without dead ball scenarios (GKs, GK throws, GK drop kicks,FKs, CKs, throw ins)
-  t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type", ogdf = df, invert = TRUE,
+  t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type", ogdf = match_df, invert = TRUE,
                              ndf = createCleanDataFrame(c("passes.f.c", "passes.f", 
-                                                          "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", df))
+                                                          "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", match_df))
   t <- t[t[,"opPass"]=="yes",]
   #creates column for each zone
   t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
                                                  "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
                                                  "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
                                                  "A18"="A18", "A6"="A6"),
-                                    ogdf = df,ndf = t,
+                                    ogdf = match_df,ndf = t,
                                     pattern_locations = c("poss.location","poss.location","poss.location","poss.location",
                                                           "poss.location","poss.location","poss.location", "poss.location",
                                                           "poss.location","poss.location","poss.location","poss.location",
@@ -125,27 +190,23 @@ if(match_stat == "attempted-passes" | match_stat == "everything") {
       passAttLocation <- tab
     }
   }
-  if (exists("stats")) {
-    stats <- merge(stats, passAttLocation, by="Player", all=TRUE)
-  } else {
-    stats <- merge(players, passAttLocation, by="Player", all=TRUE)
-  }
-  rm(t, tab ,passAttLocation, zones)
+  passAttLocation
+  #rm(t, tab, zones, passAttLocation)
 }
 
 ##CREATE COLUMNS FOR COMPLETED OPEN PLAY PASSES BY ZONE--------
-if(match_stat == "completed-passes" | match_stat == "everything") {
+getPassComp <- function(match_df) {
   #Passing stats, without dead ball scenarios (GKs, GK throws, GK drop kicks,FKs, CKs, throw ins)
-  t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type", ogdf = df, invert = TRUE,
+  t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type", ogdf = match_df, invert = TRUE,
                              ndf = createCleanDataFrame(c("passes.f.c", "passes.f", 
-                                                          "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", df))
+                                                          "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", match_df))
   t <- t[t[,"opPass"]=="yes",]
   #creates column for each zone
   t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
                                                  "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
                                                  "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
                                                  "A18"="A18", "A6"="A6"),
-                                    ogdf = df,ndf = t,
+                                    ogdf = match_df,ndf = t,
                                     pattern_locations = c("poss.location","poss.location","poss.location","poss.location",
                                                           "poss.location","poss.location","poss.location", "poss.location",
                                                           "poss.location","poss.location","poss.location","poss.location",
@@ -164,27 +225,22 @@ if(match_stat == "completed-passes" | match_stat == "everything") {
       passCompLocation <- tab
     }
   }
-  if(exists("stats")) {
-    stats <- merge(stats, passCompLocation, by ="Player", all=TRUE)
-  } else {
-    stats <- merge(players, passCompLocation, by="Player", all=TRUE)
-  }
-  rm(t, tab ,passCompLocation, zones)
+  passCompLocation
 }
 
 ##CREATE COLUMNS FOR OPEN PLAY PASSING COMP PCT BY ZONE--------
-if(match_stat == "pass-comp-pct" | match_stat == "everything") {
+getPassPct <- function(match_df) {
   #Passing stats, without dead ball scenarios (GKs, GK throws, GK drop kicks,FKs, CKs, throw ins)
-  t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type", ogdf = df, invert = TRUE,
+  t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type", ogdf = match_df, invert = TRUE,
                              ndf = createCleanDataFrame(c("passes.f.c", "passes.f", 
-                                                          "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", df))
+                                                          "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", match_df))
   t <- t[t[,"opPass"]=="yes",]
   #creates column for each zone
   t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
                                                  "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
                                                  "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
                                                  "A18"="A18", "A6"="A6"),
-                                    ogdf = df,ndf = t,
+                                    ogdf = match_df,ndf = t,
                                     pattern_locations = c("poss.location","poss.location","poss.location","poss.location",
                                                           "poss.location","poss.location","poss.location", "poss.location",
                                                           "poss.location","poss.location","poss.location","poss.location",
@@ -203,17 +259,13 @@ if(match_stat == "pass-comp-pct" | match_stat == "everything") {
       passPctLocation <- tab
     }
   }
-  if(exists("stats")){
-    stats <- merge(stats, passPctLocation, by="Player", all=TRUE)
-  } else {
-    stats <- merge(players, passPctLocation, by="Player", all=TRUE)
-  }
-  rm(t, tab ,passPctLocation, zones)
+  passPctLocation
 }
+  
 
 ##CREATE COLUMNS FOR INTERCEPTIONS BY ZONE--------
-if(match_stat == "interceptions" | match_stat == "everything"){
-  t <- createDataFrame(c("interceptions"), "def.action", df)
+getInterceptions <- function(match_df) {
+  t <- createDataFrame(c("interceptions"), "def.action", match_df)
   t <- t[,c("event","time", "def.position","def.team","def.player","def.action","def.location", "def.player.disciplinary","def.notes")]
   names(t) <- c("event", "time", "position","team", "poss.player", "player.event", "location", 
                 "def.player.disciplinary", "def.notes")
@@ -239,22 +291,17 @@ if(match_stat == "interceptions" | match_stat == "everything"){
       intLocation <- tab
     }
   }
-  if(exists("stats")){
-    stats <- merge(stats, intLocation, by="Player", all=TRUE)
-  } else {
-    stats <- merge(players, intLocation, by="Player", all=TRUE)
-  }
-  rm(t, tab ,intLocation, zones)
+  intLocation
 }
 
 ##CREATE COLUMNS FOR TAKE ONS WON BY ZONE--------
-if(match_stat == "take-ons-won" | match_stat == "everything"){
-  t <- createCleanDataFrame(c("take.on.won"),"poss.action", df)
+getTakeOnsWon <- function(match_df) {
+  t <- createCleanDataFrame(c("take.on.won"),"poss.action", match_df)
   t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
                                                  "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
                                                  "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
                                                  "A18"="A18", "A6"="A6"),
-                                    ogdf = df,ndf = t,
+                                    ogdf = match_df,ndf = t,
                                     pattern_locations = c("poss.location","poss.location","poss.location","poss.location",
                                                           "poss.location","poss.location","poss.location", "poss.location",
                                                           "poss.location","poss.location","poss.location","poss.location",
@@ -270,22 +317,17 @@ if(match_stat == "take-ons-won" | match_stat == "everything"){
       takeOnWonLocation <- tab
     }
   }
-  if(exists("stats")) {
-    stats <- merge(stats, takeOnWonLocation, by="Player", all=TRUE)
-  } else {
-    stats <- merge(players, takeOnWonLocation, by="Player", all=TRUE)
-  }
-  rm(t, tab ,takeOnWonLocation, zones)
+  takeOnWonLocation
 }
 
 ##CREATE COLUMNS FOR TAKE ONS LOST BY ZONE--------
-if(match_stat == "take-ons-lost" | match_stat == "everything"){
-  t <- createCleanDataFrame(c("take.on.lost"),"poss.action", df)
+getTakeOnsLost <- function(match_df) {
+  t <- createCleanDataFrame(c("take.on.lost"),"poss.action", match_df)
   t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
                                                  "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
                                                  "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
                                                  "A18"="A18", "A6"="A6"),
-                                    ogdf = df,ndf = t,
+                                    ogdf = match_df,ndf = t,
                                     pattern_locations = c("poss.location","poss.location","poss.location","poss.location",
                                                           "poss.location","poss.location","poss.location", "poss.location",
                                                           "poss.location","poss.location","poss.location","poss.location",
@@ -301,17 +343,12 @@ if(match_stat == "take-ons-lost" | match_stat == "everything"){
       takeOnLostLocation <- tab
     }
   }
-  if(exists("stats")) {
-    stats <- merge(stats, takeOnLostLocation, by="Player", all=TRUE)
-  } else {
-    stats <- merge(players, takeOnLostLocation, by="Player", all=TRUE)
-  }
-  rm(t, tab ,takeOnLostLocation, zones)
+  takeOnLostLocation
 }
 
 ##CREATE COLUMNS FOR AERIAL DUELS WON BY ZONE--------
-if(match_stat == "aerial-duels-won" | match_stat == "everything"){
-  t <- createDataFrame(c("aerial.won", "aerial.lost"), "poss.action", df)
+getAerialsWon <- function(match_df) {
+  t <- createDataFrame(c("aerial.won", "aerial.lost"), "poss.action", match_df)
   t2 <- t[,c("event", "time", "poss.position", "poss.team", "poss.player", "poss.action", "poss.location")]
   names(t2) <- c("event", "time", "position", "team", "poss.player", "player.event", "location")
   t3 <- t[,c("event", "time","def.position", "def.team", "def.player", "def.action", "def.location")]
@@ -338,17 +375,12 @@ if(match_stat == "aerial-duels-won" | match_stat == "everything"){
       aerialWonLocation <- tab
     }
   }
-  if(exists("stats")){
-    stats <- merge(stats, aerialWonLocation, by ="Player", all=TRUE)
-  } else {
-    stats <- merge(players, aerialWonLocation, by="Player", all=TRUE)
-  }
-  rm(t, t2, t3, t4, tab ,aerialWonLocation, zones)
+  aerialWonLocation
 }
 
 ##CREATE COLUMNS FOR AERIAL DUELS LOST BY ZONE--------
-if(match_stat == "aerial-duels-lost" | match_stat == "everything"){
-  t <- createDataFrame(c("aerial.won", "aerial.lost"), "poss.action", df)
+getAerialsLost <- function(match_df) {
+  t <- createDataFrame(c("aerial.won", "aerial.lost"), "poss.action", match_df)
   t2 <- t[,c("event", "time", "poss.position", "poss.team", "poss.player", "poss.action", "poss.location")]
   names(t2) <- c("event", "time", "position", "team", "poss.player", "player.event", "location")
   t3 <- t[,c("event", "time","def.position", "def.team", "def.player", "def.action", "def.location")]
@@ -375,17 +407,12 @@ if(match_stat == "aerial-duels-lost" | match_stat == "everything"){
       aerialLostLocation <- tab
     }
   }
-  if(exists("stats")) {
-    stats <- merge(stats, aerialLostLocation, by="Player", all=TRUE)
-  } else {
-    stats <- merge(players, aerialLostLocation, by="Player", all=TRUE)
-  }
-  rm(t, t2, t3, t4, tab ,aerialLostLocation, zones)
+  aerialLostLocation
 }
 
 ##CREATE COLUMNS FOR TACKLES BY ZONE--------
-if(match_stat == "tackles" | match_stat == "everything"){
-  t <- createDataFrame(c("tackles.ball.away", "tackles.ball.won", "tackles.ball"), "def.action", df)
+getTackles <- function(match_df) {
+  t <- createDataFrame(c("tackles.ball.away", "tackles.ball.won", "tackles.ball"), "def.action", match_df)
   t <- t[,c("event","time","def.position","def.team","def.player","def.action","def.location","def.player.disciplinary","def.notes")]
   names(t) <- c("event", "time", "position" ,"team", "poss.player", "player.event", "location", 
                 "def.player.disciplinary", "def.notes")
@@ -413,17 +440,12 @@ if(match_stat == "tackles" | match_stat == "everything"){
       tackleLocation <- tab
     }
   }
-  if(exists("stats")){
-    stats <- merge(stats, tackleLocation, by="Player", all=TRUE)
-  } else {
-    stats <- merge(players, tackleLocation, by="Player", all=TRUE)
-  }
-  rm(t, tab ,tackleLocation, zones)
+  tackleLocation
 }
 
 ##CREATE COLUMNS FOR PRESSURE BY ZONE--------
-if(match_stat == "pressure" | match_stat == "everything"){
-  t <- createDataFrame(c("pressured", "challenged"), "def.action", df)
+getPressures <- function(match_df) {
+  t <- createDataFrame(c("pressured", "challenged"), "def.action", match_df)
   t <- t[,c("event","time","def.position","def.team","def.player","def.action","def.location","def.player.disciplinary","def.notes")]
   names(t) <- c("event", "time", "position" ,"team", "poss.player", "player.event", "location", 
                 "def.player.disciplinary", "def.notes")
@@ -451,22 +473,17 @@ if(match_stat == "pressure" | match_stat == "everything"){
       pressureLocation <- tab
     }
   }
-  if(exists("stats")) {
-    stats <- merge(stats, pressureLocation, by="Player", all=TRUE)
-  } else {
-    stats <- merge(players, pressureLocation, by="Player", all=TRUE)
-  }
-  rm(t, tab ,pressureLocation, zones)
+  pressureLocation
 }
 
 ##CREATE COLUMNS FOR RECOVERIES BY ZONE--------
-if(match_stat == "recoveries" | match_stat == "everything"){
-  t <- createCleanDataFrame(c("recoveries"),"poss.action", df)
+getRecoveries <- function(match_df) {
+  t <- createCleanDataFrame(c("recoveries"),"poss.action", match_df)
   t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
                                                  "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
                                                  "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
                                                  "A18"="A18", "A6"="A6"),
-                                    ogdf = df,ndf = t,
+                                    ogdf = match_df,ndf = t,
                                     pattern_locations = c("poss.location","poss.location","poss.location","poss.location",
                                                           "poss.location","poss.location","poss.location", "poss.location",
                                                           "poss.location","poss.location","poss.location","poss.location",
@@ -482,15 +499,5 @@ if(match_stat == "recoveries" | match_stat == "everything"){
       recoveryLocation <- tab
     }
   }
-  if(exists("stats")) {
-    stats <- merge(stats, recoveryLocation, by="Player", all=TRUE)
-  } else {
-    stats <- merge(players, recoveryLocation, by="Player", all=TRUE)
-  }
-  rm(t, tab ,recoveryLocation, zones)
+  recoveryLocation
 }
-
-#CLEAN UP VARIABLES & TABLE-------
-rm(players)
-stats[is.na(stats)] <- 0
-names(stats) <- gsub(" ",".", names(stats))
