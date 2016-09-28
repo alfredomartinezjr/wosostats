@@ -7,7 +7,7 @@ source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-
 getMatchCsvFiles("nwsl-2016", multi_round = c("week-1", "week-2", "week-3"), team = "PTFC", location_complete = TRUE)
 
 #Create stats table for each match
-stats_list <- createMultiLocStatsTabs(match_list, "everything")
+stats_list <- createMultiLocStatsTabs(match_list, match_stat = "everything")
 
 #Write csv files into your directory
 writeFiles(stats_list, match_names = match_names, match_stat = "everything")
