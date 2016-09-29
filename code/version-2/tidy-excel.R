@@ -284,6 +284,9 @@ rm(i, abbreviation_processor)
 
 ##13. FILLS IN BLANK DEF.LOCATION CELLS----------
 ## Goes down the entire data.frame, row by row, and fills in blank "def.location" cells
+df$poss.location <- toupper(df$poss.location)
+df$poss.play.destination <- toupper(df$poss.play.destination)
+df$def.location <- toupper(df$def.location)
 cantDetermine <- c()
 rownum <- 1
 while (rownum <= nrow(df)) {
