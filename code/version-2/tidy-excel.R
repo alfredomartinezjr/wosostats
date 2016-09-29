@@ -266,6 +266,15 @@ actionIsInvertible <- function(action, col) {
 }
 
 ##12. EXPANDS SHORTCUT VALUES FOR MATCH ACTIONS----------
+df$poss.action <- tolower(df$poss.action)
+df$play.type <- tolower(df$play.type)
+df$def.action <- tolower(df$def.action)
+df$gk.ball.stop <- tolower(df$gk.ball.stop)
+df$gk.s.o.g.attempt <- tolower(df$gk.s.o.g.attempt)
+df$poss.player.disciplinary <- tolower(df$poss.player.disciplinary)
+df$poss.notes <- tolower(df$poss.notes)
+df$def.player.disciplinary <- tolower(df$def.player.disciplinary)
+df$def.notes <- tolower(df$def.player.disciplinary)
 abbreviation_processor = AbbreviationProcessor$new()
 for(i in 1:nrow(df))
 {
