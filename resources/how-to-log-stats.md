@@ -1,5 +1,9 @@
 So you want to log matches on your own? You’re amazing! Here are the steps you to take. If you have questions, send me a DM/mention at [@WoSoStats](https://twitter.com/wosostats) or email me at wosostats.team@gmail.com.
 
+#Requirements
+1. A thorough understanding of [the definitions.md document](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md).
+2. Access to Excel
+
 #Before you start logging the match stats
 1. Download the match-stats-template.xlsx Excel document from this link: https://github.com/amj2012/wosostats/blob/master/resources/match-actions-template.xlsx.  
   * Using Excel is highly recommended as the ability to format, auto-fill, auto-complete, and utilize formulas makes the job of logging stats way easier and faster.
