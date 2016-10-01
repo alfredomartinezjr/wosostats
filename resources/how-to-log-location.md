@@ -17,18 +17,18 @@ Read through the [definitions.md document](https://github.com/amj2012/wosostats/
 For location data, you will log one of the following acronyms, depending on the player's position, relative to which direction her team is going, on [a field split up like this.](http://i.imgur.com/EQLmpYp.png)
   * **Opponent’s 6-yard box** - `A6`
   * **Opponent’s 18-yard box** - `A18`
-  * **Attacking third, left wing** - `A3L`
-  * **Attacking third, center field** - `A3C`
-  * **Attacking third, right wing** - `A3R`
-  * **Opponent’s half of middle third, left wing** - `AM3L`
-  * **Opponent’s half of middle third, center field** - `AM3C`
-  * **Opponent’s half of middle third, right wing** - `AM3R`
-  * **Own half of middle third, left wing** - `DM3L`
-  * **Own half of middle third, center field** - `DM3C`
-  * **Own half of middle third, right wing** - `DM3R`
-  * **Defensive third, left wing** - `D3L`
-  * **Defensive third, center field** - `D3C`
-  * **Defensive third, right wing** - `D3R`
+  * **Attacking third, left wing** - `AL`
+  * **Attacking third, center field** - `AC`
+  * **Attacking third, right wing** - `AR`
+  * **Opponent’s half of middle third, left wing** - `AML`
+  * **Opponent’s half of middle third, center field** - `AMC`
+  * **Opponent’s half of middle third, right wing** - `AMR`
+  * **Own half of middle third, left wing** - `DML`
+  * **Own half of middle third, center field** - `DMC`
+  * **Own half of middle third, right wing** - `DMR`
+  * **Defensive third, left wing** - `DL`
+  * **Defensive third, center field** - `DC`
+  * **Defensive third, right wing** - `DR`
   * **Own 18-yard box** - `D18`
   * **Own 6-yard box** - `D6`
 
