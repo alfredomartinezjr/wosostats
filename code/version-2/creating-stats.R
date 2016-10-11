@@ -1,6 +1,5 @@
 #SOURCING---------------
-library(plyr)
-library(dplyr)
+library(plyr); library(dplyr)
 library(RCurl)
 #locationofmatchcsv is the location on your computer or URL for the csv file with the logged match actions
 #locationofmatchcsv must be a string
