@@ -4,7 +4,6 @@
 ##
 ## Install if necessary
 require(readxl)
-require(xlsx)
 require(RCurl)
 
 ##Offline Mode
