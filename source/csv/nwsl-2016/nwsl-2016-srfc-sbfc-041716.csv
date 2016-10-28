@@ -142,7 +142,7 @@
 119,"7","D","SRFC","Fletcher","passes.f.c","DM3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 120,"7","M","SRFC","Fishlock","passes.b.c","DM3R","DM3R","lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 121,"7","D","SRFC","Fletcher","passes.f.c","DM3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-122,"7","M","SRFC","Fishlock","take.on.won","DM3R",NA,NA,"M","SBFC","Conheeney","challenged","AM3L",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+122,"7","M","SRFC","Fishlock","take.on.won","DM3R",NA,NA,"M","SBFC","Conheeney","challenged","AM3L",NA,NA,"fouls.won",NA,"fouls.conceded","fouls.conceded",NA,NA,NA
 123,"7","M","SRFC","Fishlock","passes.s.c","DM3R","A3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 123,"7",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 124,"7","D","SRFC","Pickett","passes.s","A3L",NA,NA,"D","SBFC","Simon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -197,7 +197,7 @@
 167,"10","D","SBFC","O'Hara","take.on.won","DM3L",NA,NA,"F","SRFC","Melis","dribbled.out.run","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 168,"10","D","SBFC","O'Hara","passes.f.c","DM3L","DM3L",NA,"M","SRFC","Fishlock","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 169,"10","M","SBFC","Conheeney","passes.s.c","DM3L","DM3L","lay.off","M","SRFC","Winters","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-170,"10","D","SBFC","O'Hara","take.on.lost","DM3L",NA,NA,"M","SRFC","Fishlock","challenged","AM3R",NA,NA,"fouls.conceded",NA,"fouls.won",NA,NA,NA,NA
+170,"10","D","SBFC","O'Hara","take.on.lost","DM3L",NA,NA,"M","SRFC","Fishlock","challenged","AM3R",NA,NA,"fouls.conceded",NA,"fouls.won","fouls.won",NA,NA,NA
 170,"10",NA,NA,NA,NA,NA,NA,NA,"M","SRFC","Winters","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 171,"10","M","SRFC","Fishlock","passes.f.c","AM3R","AM3R","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 172,"10","F","SRFC","Melis","passes.b.c","AM3R","AM3R","lay.off","M","SBFC","Gordon","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -254,7 +254,7 @@
 218,"12","D","SBFC","O'Hara","passes.f.c","D3L","DM3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 219,"12","M","SBFC","Rodriguez","ball.shield","DM3L",NA,NA,"M","SRFC","Little","challenged","AM3R",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 220,"13","D","SBFC","O'Hara","passes.f.c","DM3L","DM3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-221,"13","M","SBFC","Rodriguez","take.on.won","DM3L",NA,NA,"M","SRFC","Fishlock","challenged","AM3R",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+221,"13","M","SBFC","Rodriguez","take.on.won","DM3L",NA,NA,"M","SRFC","Fishlock","challenged","AM3R",NA,NA,"fouls.won",NA,"fouls.conceded","fouls.conceded",NA,NA,NA
 222,"13","D","SBFC","O'Hara","passes.f.c","DM3L","AM3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 223,"13","M","SBFC","Rodriguez","passes.s.c","AM3L","AM3L",NA,"M","SRFC","Fishlock","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 223,"13",NA,NA,NA,NA,NA,NA,NA,"F","SRFC","Melis","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -278,7 +278,7 @@
 237,"14","D","SRFC","Pickett","passes.s.c","DM3L","DM3C",NA,"M","SBFC","Lytle","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 238,"14","M","SRFC","Fishlock","passes.f","DM3C",NA,NA,"M","SBFC","Killion","blocks","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 239,"14","M","SBFC","Rodriguez","recoveries","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-240,"14","M","SBFC","Rodriguez","take.on.won","DM3C",NA,NA,"M","SRFC","Fishlock","challenged","AM3C",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+240,"14","M","SBFC","Rodriguez","take.on.won","DM3C",NA,NA,"M","SRFC","Fishlock","challenged","AM3C",NA,NA,"fouls.won",NA,"fouls.conceded","fouls.conceded",NA,NA,NA
 241,"14","D","SBFC","Rampone","passes.f.c.c","DM3C","AM3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 241,"14",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 242,"14","F","SBFC","Kai","passes.s","AM3C",NA,NA,"M","SRFC","Winters","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -318,7 +318,7 @@
 272,"15","D","SBFC","O'Hara","movement","A3L","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 273,"15","D","SBFC","O'Hara","passes.s.c","A18","A18","corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA,NA,NA,NA
 273,"15",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"assists",NA,NA,NA,NA,NA
-274,"15","F","SBFC","Kai","shots.scored","A18",NA,"headed","GK","SRFC","Solo","gk.s.o.g.scored",NA,"missed.the.ball","standing",NA,"big.chances.scored",NA,NA,0.181266150540955,NA,NA
+274,"15","F","SBFC","Kai","shots.scored","A18",NA,"headed","GK","SRFC","Solo","gk.s.o.g.scored","D6","missed.the.ball","standing",NA,"big.chances.scored",NA,NA,0.181266150540955,NA,NA
 275,"16","M","SRFC","Little","passes.b.c","DM3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 276,"16","F","SRFC","Mathias","passes.b.c","DM3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 277,"16","D","SRFC","Barnes","passes.f.c","DM3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -397,7 +397,7 @@
 341,"20","F","SRFC","Mathias","movement","DM3C","DM3L",NA,"D","SBFC","Rampone","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 342,"20","F","SRFC","Mathias","movement","DM3L","AM3L",NA,"D","SBFC","Rampone","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 343,"20","F","SRFC","Mathias","movement","AM3L","A3L",NA,"D","SBFC","Rampone","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-344,"20","F","SRFC","Mathias","take.on.lost","A3L",NA,NA,"D","SBFC","Rampone","ball.shield","D3R",NA,NA,"fouls.conceded",NA,"fouls.won",NA,NA,NA,NA
+344,"20","F","SRFC","Mathias","take.on.lost","A3L",NA,NA,"D","SBFC","Rampone","ball.shield","D3R",NA,NA,"fouls.conceded",NA,"fouls.won","fouls.won",NA,NA,NA
 344,"20",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 345,"20","M","SBFC","Killion","passes.f","DM3L",NA,NA,"M","SRFC","Little","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 345,"20",NA,NA,NA,NA,NA,NA,NA,"D","SRFC","Reed","interceptions","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -451,7 +451,7 @@
 387,"23","F","SRFC","Melis","movement","A3R","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 388,"23","F","SRFC","Melis","take.on.won","A18",NA,NA,"D","SBFC","Skroski","dribbled.turned","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 389,"23","F","SRFC","Melis","movement","A18","A6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-390,"23","F","SRFC","Melis","shots.stopped.by.gk","A6",NA,NA,"GK","SBFC","Casey","gk.s.o.g.stop","D6","deflected.to.safety","standing",NA,"big.chances.shot.on.goal",NA,"big.chances.stopped",0.272752819793939,NA,NA
+390,"23","F","SRFC","Melis","shots.stopped.by.gk","A6",NA,NA,"GK","SBFC","Casey","gk.s.o.g.stop","D6","deflected.to.safety","standing",NA,"big.chances.shot.on.goal",NA,NA,0.272752819793939,NA,NA
 390,"23",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","O'Hara","clearances","D3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 390,"23",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 391,"23","D","SBFC","O'Hara","take.on.lost","D3L",NA,NA,"M","SRFC","Little","tackles.ball","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -492,7 +492,7 @@
 420,"25","D","SRFC","Pickett","passes.f.c","D3C","DM3C",NA,"M","SBFC","Lytle","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 421,"25","M","SRFC","Fishlock","passes.s.c","DM3C","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 422,"25","D","SRFC","Pickett","passes.f.c","DM3L","AM3L",NA,"M","SBFC","Lytle","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-423,"25","F","SRFC","Yanez","take.on.won","AM3L",NA,NA,"D","SBFC","Simon","challenged","DM3R",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+423,"25","F","SRFC","Yanez","take.on.won","AM3L",NA,NA,"D","SBFC","Simon","challenged","DM3R",NA,NA,"fouls.won",NA,"fouls.conceded","fouls.conceded",NA,NA,NA
 424,"25","D","SRFC","Pickett","passes.b.c","AM3L","DM3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 424,"25",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 425,"25","D","SRFC","Barnes","passes.f.c","DM3L","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -516,7 +516,7 @@
 442,"26","M","SBFC","Conheeney","shots.missed","A18",NA,NA,"D","SRFC","Barnes","pressured","D18",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,0.290997967960409,NA,NA
 442,"27",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 443,"27","F","SRFC","Melis","passes.s","A3R",NA,"corner.crosses","D","SBFC","Skroski","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-444,"27","F","SRFC","Mathias","aerial.lost","A18",NA,NA,"D","SBFC","Rampone","aerial.won","D18",NA,NA,"fouls.conceded",NA,"fouls.won",NA,NA,NA,NA
+444,"27","F","SRFC","Mathias","aerial.lost","A18",NA,NA,"D","SBFC","Rampone","aerial.won","D18",NA,NA,"fouls.conceded",NA,"fouls.won","fouls.won",NA,NA,NA
 445,"27","GK","SBFC","Casey","passes.f.c","D18","AM3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 445,"27",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 446,"27","M","SBFC","Conheeney","passes.f","AM3L",NA,"headed","M","SRFC","Fishlock","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -583,7 +583,7 @@
 501,"30","M","SBFC","Gordon","passes.b.c","DM3C","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 502,"30","D","SBFC","Skroski","passes.b.c","D3C","D18",NA,"M","SRFC","Little","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 503,"31","GK","SBFC","Casey","passes.f","D18",NA,"launch","M","SRFC","Little","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-504,"31","F","SBFC","Kai","aerial.lost","AM3C",NA,NA,"D","SRFC","Fletcher","aerial.won","DM3C",NA,NA,"fouls.conceded",NA,"fouls.won",NA,NA,NA,NA
+504,"31","F","SBFC","Kai","aerial.lost","AM3C",NA,NA,"D","SRFC","Fletcher","aerial.won","DM3C",NA,NA,"fouls.conceded",NA,"fouls.won","fouls.won",NA,NA,NA
 505,"31","M","SRFC","Fishlock","passes.b.c","DM3C","DM3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 506,"31","D","SRFC","Barnes","passes.s.c","DM3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 506,"31",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -605,13 +605,13 @@
 519,"32",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Rampone","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 520,"32","M","SRFC","Little","passes.s.c","A3L","A6","corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 521,"32","F","SRFC","Yanez","aerial.won","A6",NA,NA,"D","SBFC","Skroski","aerial.won","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
-522,"32","F","SRFC","Mathias","aerial.lost","A6",NA,NA,"F","SBFC","Kai","aerial.won","D6",NA,NA,"fouls.conceded",NA,"fouls.won",NA,NA,NA,NA
+522,"32","F","SRFC","Mathias","aerial.lost","A6",NA,NA,"F","SBFC","Kai","aerial.won","D6",NA,NA,"fouls.conceded",NA,"fouls.won","fouls.won",NA,NA,NA
 523,"33","GK","SBFC","Casey","passes.f","D6",NA,"free.kick","D","SRFC","Fletcher","clearances","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 523,"33",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 524,"33","D","SBFC","Simon","aerial.lost","DM3R",NA,NA,"F","SRFC","Yanez","aerial.won","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 525,"33","M","SBFC","Rodriguez","recoveries","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 526,"33","M","SBFC","Rodriguez","dispossessed","DM3R",NA,NA,"F","SRFC","Yanez","challenged","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-526,"33",NA,NA,NA,NA,NA,NA,NA,"M","SRFC","Little","ball.shield",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+526,"33",NA,NA,NA,NA,NA,NA,NA,"M","SRFC","Little","ball.shield","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 526,"33",NA,NA,NA,NA,NA,NA,NA,"M","SRFC","Fishlock","dispossessed","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 527,"33","M","SRFC","Fishlock","passes.f","AM3C",NA,"through","GK","SBFC","Casey","gk.loose.balls.won","D18","caught",NA,NA,NA,NA,NA,NA,NA,NA
 527,"33",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -647,12 +647,12 @@
 556,"34","D","SBFC","Rampone","passes.s.c","D3C","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 557,"34","D","SBFC","Skroski","passes.s.c","D3C","D3R",NA,"F","SRFC","Melis","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 558,"35","D","SBFC","Rampone","passes.f.c","D3R","AM3C","launch","F","SRFC","Melis","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-559,"35","F","SBFC","Kai","aerial.won","AM3C",NA,NA,"D","SRFC","Fletcher","aerial.lost","DM3C",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+559,"35","F","SBFC","Kai","aerial.won","AM3C",NA,NA,"D","SRFC","Fletcher","aerial.lost","DM3C",NA,NA,"fouls.won",NA,"fouls.conceded","fouls.conceded",NA,NA,NA
 560,"35","D","SBFC","Rampone","passes.f.c","AM3C","A18","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 560,"35",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 561,"35","D","SBFC","O'Hara","recoveries","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-562,"35","D","SBFC","O'Hara","take.on.won","A18",NA,NA,"F","SRFC","Mathias","challenged","D18",NA,NA,"penalties.won",NA,"penalties.conceded",NA,NA,NA,NA
-562,"36",NA,NA,NA,NA,NA,NA,NA,"GK","SRFC","Solo",NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA
+562,"35","D","SBFC","O'Hara","take.on.won","A18",NA,NA,"F","SRFC","Mathias","challenged","D18",NA,NA,"penalties.won",NA,"penalties.conceded","penalties.conceded",NA,NA,NA
+562,"36",NA,NA,NA,NA,NA,NA,NA,"GK","SRFC","Solo",NA,NA,NA,NA,NA,NA,"yellow.cards","yellow.cards",NA,NA,NA
 563,"37","M","SBFC","Killion","shots.stopped.by.gk","A18",NA,"penalty.kick","GK","SRFC","Solo","gk.s.o.g.stop","D6","parried.to.danger","diving",NA,NA,NA,NA,NA,NA,NA
 564,"37","D","SBFC","O'Hara","shots.missed","A18",NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,0.113400727314982,NA,NA
 564,"37",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"big.chances.shot.missed",NA,NA,NA,NA,NA
@@ -762,7 +762,7 @@
 655,"41","F","SRFC","Yanez","passes.f.c","AM3L","A3L",NA,"M","SBFC","Gordon","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 656,"41","D","SRFC","Pickett","passes.s","A3L",NA,NA,"D","SBFC","Simon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 657,"41","M","SBFC","Killion","recoveries","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-658,"41","M","SBFC","Killion","lost.touch","D18",NA,NA,"F","SRFC","Mathias","challenged","A18",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+658,"41","M","SBFC","Killion","lost.touch","D18",NA,NA,"F","SRFC","Mathias","challenged","A18",NA,NA,"fouls.won",NA,"fouls.conceded","fouls.conceded",NA,NA,NA
 658,"42",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 659,"42","F","SRFC","Melis","passes.b.c","DM3R","DM3R",NA,"M","SBFC","Lytle","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 660,"42","D","SRFC","Reed","passes.f.c","DM3R","DM3C","lay.off","F","SBFC","Kai","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -777,7 +777,7 @@
 667,"42","D","SBFC","O'Hara","recoveries","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 668,"42","D","SBFC","O'Hara","take.on.won","D3L",NA,NA,"F","SRFC","Melis","dribbled.tackles.missed","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 669,"42","D","SBFC","O'Hara","passes.f.c","D3L","DM3L",NA,"M","SRFC","Fishlock","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-670,"42","M","SBFC","Rodriguez","passes.f","DM3L",NA,NA,"M","SRFC","Winters","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+670,"42","M","SBFC","Rodriguez","passes.f","DM3L",NA,NA,"M","SRFC","Winters","blocks","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 671,"42","D","SRFC","Barnes","recoveries","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 672,"42","D","SRFC","Barnes","passes.b.c","DM3R","M3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 673,"42","D","SRFC","Fletcher","passes.f.c","M3R","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -963,7 +963,7 @@
 828,"51","D","SBFC","Skroski","passes.s.c","D3C","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 829,"51","D","SBFC","Rampone","passes.s.c","D3C","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 830,"51","D","SBFC","Skroski","passes.f.c","D3C","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-831,"51","D","SBFC","Rampone","passes.f","DM3R",NA,NA,"F","SRFC","Mathias","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+831,"51","D","SBFC","Rampone","passes.f","DM3R",NA,NA,"F","SRFC","Mathias","blocks","AML",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 832,"51","D","SBFC","Simon","passes.f.c","DM3R","AM3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 833,"51","F","SBFC","Kai","aerial.won","AM3R",NA,NA,"M","SRFC","Fishlock","aerial.lost","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 834,"51","M","SBFC","Lytle","aerial.won","AM3R",NA,NA,"F","SRFC","Mathias","aerial.lost","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1005,7 +1005,7 @@
 869,"53","M","SBFC","Rodriguez","passes.f.c","DM3C","DM3R",NA,"M","SRFC","Little","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 870,"53","GK","SBFC","Casey","passes.f.c","DM3R","AM3R",NA,"M","SRFC","Winters","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 871,"53","D","SBFC","Simon","passes.f.c","AM3R","A3R","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-872,"53","M","SBFC","Conheeney","fouls.won","A3R",NA,NA,"D","SRFC","Fletcher","fouls.conceded","D3L",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+872,"53","M","SBFC","Conheeney","fouls.won","A3R",NA,NA,"D","SRFC","Fletcher","fouls.conceded","D3L",NA,NA,"fouls.won",NA,"fouls.conceded","fc",NA,NA,NA
 873,"53","D","SBFC","O'Hara","passes.f.c","A3R","A18","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 874,"53","M","SBFC","Killion","dispossessed","A18",NA,NA,"D","SRFC","Fletcher","tackles.ball","D18",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 875,"54","D","SBFC","O'Hara","passes.s","A3R",NA,"corner.kick","GK","SRFC","Solo","gk.high.balls.won","A6","punched.to.safety",NA,NA,NA,NA,NA,NA,NA,NA
@@ -1016,7 +1016,7 @@
 880,"54","F","SRFC","Mathias","passes.f.c","AM3R","A3L",NA,"M","SBFC","Rodriguez","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 880,"54",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Conheeney","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 881,"54","M","SRFC","Little","passes.f.c","A3L","A18","th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-882,"54","F","SRFC","Yanez","SGk (shots.stopped.by.gk)","A18",NA,NA,"D","SBFC","Skroski","pressured","D18",NA,NA,NA,NA,NA,NA,0.066538768232752,NA,NA
+882,"54","F","SRFC","Yanez","shots.stopped.by.gk","A18",NA,NA,"D","SBFC","Skroski","pressured","D18",NA,NA,NA,NA,NA,NA,0.066538768232752,NA,NA
 882,"54",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Casey","gk.s.o.g.stop","D6","parried.to.danger","stooping",NA,NA,NA,NA,NA,NA,NA
 882,"54",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Rampone","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 882,"54",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Simon","clearances","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1043,7 +1043,7 @@
 901,"56","D","SBFC","Simon","passes.b.c","DM3R","DM3R",NA,"F","SRFC","Mathias","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 902,"56","D","SBFC","Rampone","passes.s.c","DM3R","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 903,"56","D","SBFC","Skroski","passes.f.c","D3C","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-904,"56","M","SBFC","Killion","passes.f","DM3L",NA,NA,"D","SRFC","Reed","r",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+904,"56","M","SBFC","Killion","passes.f","DM3L",NA,NA,"D","SRFC","Reed","interceptions","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 905,"56","D","SRFC","Reed","passes.f","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 906,"56","D","SBFC","O'Hara","passes.s.c","AM3L","AM3C","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 907,"56","M","SBFC","Rodriguez","passes.f.c","AM3C","A3R","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1252,10 +1252,10 @@
 1084,"70","D","SRFC","Reed","passes.f.c","AM3C","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1085,"71","F","SRFC","Dallstream","passes.s.c","A3R","A18","corner.crosses","M","SBFC","Gordon","pressured","D3L",NA,NA,NA,"key.passes",NA,NA,NA,NA,NA
 1086,"71","M","SRFC","Fishlock","shots.missed","A18",NA,"headed","D","SBFC","Rampone","pressured","D18",NA,NA,NA,"big.chances.shot.missed",NA,NA,0.155966289,NA,NA
-1086,"71",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Casey","gk.shot.miss",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1086,"71",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Casey","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 1087,"71","GK","SBFC","Casey","passes.f.c","D6","DM3C","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1087,"71",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1088,"71","M","SBFC","Rodriguez","aerial.won","DM3C",NA,NA,"M","SRFC","Winters","aerial.lost","AM3C",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+1088,"71","M","SBFC","Rodriguez","aerial.won","DM3C",NA,NA,"M","SRFC","Winters","aerial.lost","AM3C",NA,NA,"fouls.won",NA,"fouls.conceded","fc",NA,NA,NA
 1089,"71","D","SBFC","Rampone","passes.s.c","DM3C","DM3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1090,"71","D","SBFC","Skroski","passes.s","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1090,"71",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1292,7 +1292,7 @@
 1118,"73","F","SRFC","Yanez","passes.s.c","A3C","A3C",NA,"D","SBFC","Rampone","challenged","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1119,"73","M","SRFC","Fishlock","passes.f.c","A3C","A18","th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1120,"73","F","SRFC","Melis","shots.missed","A18",NA,NA,"D","SBFC","Skroski","challenged","D18",NA,NA,NA,NA,NA,NA,0.245636423542886,NA,NA
-1120,"73",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Casey","gk.shot.miss",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1120,"73",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Casey","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 1121,"73","M","SBFC","Rodriguez","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1122,"74","M","SBFC","Nick","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1123,"74","GK","SBFC","Casey","passes.f","D6",NA,"goal.kick","D","SRFC","Pickett","clearances","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1310,7 +1310,7 @@
 1134,"74","D","SRFC","Fletcher","passes.s.c","D3R","DM3L","switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1135,"74","D","SRFC","Barnes","passes.s.c","DM3L","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1136,"74","D","SRFC","Fletcher","passes.f.c","DM3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1137,"75","M","SRFC","Little","take.on.won","DM3C",NA,NA,"M","SBFC","Conheeney","dribbled.tackles.missed","AM3C",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+1137,"75","M","SRFC","Little","take.on.won","DM3C",NA,NA,"M","SBFC","Conheeney","dribbled.tackles.missed","AM3C",NA,NA,"fouls.won",NA,"fouls.conceded","fc",NA,NA,NA
 1138,"75","F","SRFC","Melis","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1139,"75","D","SRFC","Corsie","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1140,"75","D","SRFC","Pickett","passes.b.c","D3L","D18","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1339,7 +1339,7 @@
 1161,"77",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Killion","interceptions","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1162,"77","M","SBFC","Killion","passes.f.c","DM3L","DM3L",NA,"M","SRFC","Winters","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1163,"77","M","SBFC","Gordon","passes.s.c","DM3L","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1164,"77","M","SBFC","Nick","take.on.won","DM3L",NA,NA,"D","SRFC","Corsie",NA,NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+1164,"77","M","SBFC","Nick","take.on.won","DM3L",NA,NA,"D","SRFC","Corsie",NA,NA,NA,NA,"fouls.won",NA,"fouls.conceded","fc",NA,NA,NA
 1165,"77","D","SBFC","Skroski","passes.f.c","DM3L","DM3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1166,"77","D","SBFC","O'Hara","passes.f.c","DM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1167,"77","M","SBFC","Gordon","passes.f","AM3L",NA,"flick.on","D","SRFC","Corsie","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1412,8 +1412,8 @@
 1229,"80","D","SBFC","O'Hara","recoveries","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1230,"80","D","SBFC","O'Hara","passes.s.c","AM3L","AM3L",NA,"D","SRFC","Corsie","challenged","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1231,"80","M","SBFC","Conheeney","passes.f.c","AM3L","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1232,"80","D","SBFC","O'Hara","take.on.won","A3L",NA,NA,"D","SRFC","Corsie","dribbled.tackles.missed","D3R",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
-1232,"80",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA
+1232,"80","D","SBFC","O'Hara","take.on.won","A3L",NA,NA,"D","SRFC","Corsie","dribbled.tackles.missed","D3R",NA,NA,"fouls.won",NA,"fouls.conceded","fc",NA,NA,NA
+1232,"80",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"yellow.cards","yellow.cards",NA,NA,NA
 1233,"81","D","SBFC","O'Hara","passes.f.c","A3L","A18","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1233,"81",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1234,"81","F","SBFC","DeCesare","aerial.won","A18",NA,NA,"D","SRFC","Fletcher","aerial.lost","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1424,7 +1424,7 @@
 1238,"81","M","SBFC","Conheeney","passes.f.c","A3C","A3L",NA,"D","SRFC","Corsie","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1239,"81","D","SBFC","O'Hara","passes.s.c","A3L","A18","corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1240,"81","F","SBFC","DeCesare","shots.missed","A18",NA,NA,"D","SRFC","Fletcher","challenged","D18",NA,NA,NA,NA,NA,NA,0.276290397645262,NA,NA
-1240,"81",NA,NA,NA,NA,NA,NA,NA,"GK","SRFC","Solo","gk.shot.miss",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1240,"81",NA,NA,NA,NA,NA,NA,NA,"GK","SRFC","Solo","gk.shot.miss","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 1241,"81","GK","SRFC","Solo","passes.f.c","D6","D3L","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1242,"81","D","SRFC","Barnes","passes.f.c","D3L","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1243,"81","D","SRFC","Pickett","passes.f.c","DM3L","A3L",NA,"M","SBFC","Lytle","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1434,7 +1434,7 @@
 1246,"82","F","SRFC","Yanez","lost.touch","A3L",NA,NA,"D","SBFC","Simon","challenged","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1246,"82",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Killion","dispossessed","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1247,"82","M","SBFC","Killion","passes.f.c","D3R","DM3R",NA,"F","SRFC","Yanez","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1248,"82","M","SBFC","Lytle","fouls.won","DM3R",NA,NA,"D","SRFC","Pickett","fouls.conceded",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+1248,"82","M","SBFC","Lytle","fouls.won","DM3R",NA,NA,"D","SRFC","Pickett","fouls.conceded","AML",NA,NA,"fouls.won",NA,"fouls.conceded","fc",NA,NA,NA
 1249,"82","D","SBFC","Rampone","passes.s.c","DM3R","DM3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1249,"82",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1250,"82","D","SBFC","Skroski","passes.f.c","DM3C","AM3R","launch","F","SRFC","Dallstream","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
