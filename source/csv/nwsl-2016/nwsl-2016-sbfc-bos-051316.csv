@@ -857,47 +857,49 @@
 798,"46","D","SBFC","O'Hara","passes.f","A3R",NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 799,"46","D","BOS","Kallman","clearances","D18",NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 800,"47","D","SBFC","O'Hara","passes.s","A3R",NA,"corner.kick","M","BOS","Zerboni","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+800,"47",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 801,"47","M","SBFC","Hayes","recoveries","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 802,"47","M","SBFC","Hayes","passes.f.c","A3R","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 803,"47","D","SBFC","O'Hara","passes.f","A3R",NA,"corner.crosses","D","BOS","Pathman","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 804,"47","M","BOS","Salem","recoveries","D3L",NA,NA,"D","SBFC","Rampone","challenged","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 805,"47","M","BOS","Salem","passes.f.c","D3L","D3L",NA,"D","SBFC","Rampone","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 806,"47","F","BOS","K. Simon","passes.b","D3L",NA,"lay.off","M","SBFC","Hayes","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-807,"47","D","SBFC","Skroski","recoveries","A3C",NA,NA,"M","BOS","Salem","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-808,"47","D","SBFC","Skroski","dispossessed","A3C",NA,NA,"M","BOS","Salem","dispossessed","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-809,"47","M","BOS","Mewis","recoveries","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-810,"47","M","BOS","Mewis","passes.f.c","DM3C","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-811,"47","F","BOS","McCaffrey","movement","A3L","A8",NA,"D","SBFC","E. Simon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-812,"47","F","BOS","McCaffrey","take.on.won","A18",NA,NA,"D","SBFC","E. Simon","dribbled.out.run","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-813,"47","F","BOS","McCaffrey","shots.stopped.by.gk","A18",NA,NA,"D","SBFC","E. Simon","pressured","D18",NA,NA,NA,"big.chances.shot.on.goal",NA,NA,NA,NA,NA
-813,"47",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.s.o.g.stop","D6","caught","diving",NA,NA,NA,NA,NA,NA,NA
-813,"47",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-814,"47","D","SBFC","O'Hara","passes.f.c","AM3R","AM3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-815,"47","F","SBFC","Kai","passes.f.c","AM3R","A3R","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-816,"47","M","SBFC","Hayes","passes.f","A3R",NA,"headed","M","BOS","Zerboni","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-817,"48","D","BOS","Kallman","recoveries","D3L",NA,NA,"M","SBFC","Conheeney","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-818,"48","D","BOS","Kallman","lost.touch","D3L",NA,NA,"M","SBFC","Hayes","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-819,"48","M","SBFC","Hayes","recoveries","A3R",NA,NA,"D","BOS","Kallman","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-820,"48","M","SBFC","Hayes","passes.f","A3R",NA,NA,"D","BOS","Kallman","pressured","D3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-821,"48","GK","BOS","Stout","passes.f.c","D6","D3R","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-822,"48","D","BOS","Engen","passes.f.c","D3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-823,"48","D","BOS","King","passes.b.c","DM3R","D3R","lay.off","M","SBFC","Lytle","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-824,"48","D","BOS","Engen","passes.b.c","D3R","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-825,"48","D","BOS","Kallman","passes.f.c","D3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-826,"48","M","BOS","Salem","passes.b.c","DM3C","D3C","lay.off","M","SBFC","Conheeney","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-827,"48","D","BOS","Kallman","movement","D3C","DM3C",NA,"M","SBFC","Conheeney","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-828,"48","D","BOS","Kallman","passes.f.c","DM3C","AM3L",NA,"M","SBFC","Conheeney","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-829,"48","F","BOS","McCaffrey","passes.f.c","AM3L","AM3L",NA,"D","SBFC","O'Hara","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-830,"48","F","BOS","K. Simon","passes.s.c","AM3L","A3L",NA,"M","SBFC","Hayes","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-831,"48","M","BOS","Schillgard","passes.f.c","A3L","A3L",NA,"M","SBFC","Killion","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-832,"48","F","BOS","McCaffrey","passes.f.c","A3L","A3C","corner.crosses","D","SBFC","O'Hara","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-832,"48",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-832,"48",NA,NA,NA,NA,NA,NA,NA,"F","SBFC","Rodriguez","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-833,"48","M","BOS","Salem","recoveries","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-834,"48","M","BOS","Salem","passes.f.c","A3C","A3C",NA,"F","SBFC","Kai","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-835,"49","M","BOS","Zerboni","movement","A3C","A3R",NA,"M","SBFC","Conheeney","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-836,"49","M","BOS","Zerboni","lost.touch","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-836,"49",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","E. Simon","clearances","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+806,"47",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","interceptions","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+807,"47","D","SBFC","Skroski","dispossessed","A3C",NA,NA,"M","BOS","Salem","dispossessed","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+808,"47","M","BOS","Mewis","recoveries","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+809,"47","M","BOS","Mewis","passes.f.c","DM3C","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+810,"47","F","BOS","McCaffrey","movement","A3L","A8",NA,"D","SBFC","E. Simon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+811,"47","F","BOS","McCaffrey","take.on.won","A18",NA,NA,"D","SBFC","E. Simon","dribbled.out.run","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+812,"47","F","BOS","McCaffrey","shots.stopped.by.gk","A18",NA,NA,"D","SBFC","E. Simon","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+812,"47",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.s.o.g.stop","D6","caught","diving",NA,NA,NA,NA,NA,NA,NA
+812,"47",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+813,"47","D","SBFC","O'Hara","passes.f.c","AM3R","AM3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+814,"47","F","SBFC","Kai","passes.f.c","AM3R","A3R","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+815,"47","M","SBFC","Hayes","passes.f","A3R",NA,"headed","M","BOS","Zerboni","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+816,"48","D","BOS","Kallman","recoveries","D3L",NA,NA,"M","SBFC","Conheeney","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+817,"48","D","BOS","Kallman","lost.touch","D3L",NA,NA,"M","SBFC","Hayes","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+818,"48","M","SBFC","Hayes","recoveries","A3R",NA,NA,"D","BOS","Kallman","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+819,"48","M","SBFC","Hayes","passes.f","A3R",NA,NA,"D","BOS","Kallman","pressured","D3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+820,"48","GK","BOS","Stout","passes.f.c","D6","D3R","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+821,"48","D","BOS","Engen","passes.f.c","D3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+822,"48","D","BOS","King","passes.b.c","DM3R","D3R","lay.off","M","SBFC","Lytle","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+823,"48","D","BOS","Engen","passes.b.c","D3R","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+824,"48","D","BOS","Kallman","passes.f.c","D3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+825,"48","M","BOS","Salem","passes.b.c","DM3C","D3C","lay.off","M","SBFC","Conheeney","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+826,"48","D","BOS","Kallman","movement","D3C","DM3C",NA,"M","SBFC","Conheeney","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+827,"48","D","BOS","Kallman","passes.f.c","DM3C","AM3L",NA,"M","SBFC","Conheeney","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+828,"48","F","BOS","McCaffrey","passes.f.c","AM3L","AM3L",NA,"D","SBFC","O'Hara","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+829,"48","F","BOS","K. Simon","passes.s.c","AM3L","A3L",NA,"M","SBFC","Hayes","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+830,"48","M","BOS","Schillgard","passes.f.c","A3L","A3L",NA,"M","SBFC","Killion","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+831,"48","F","BOS","McCaffrey","passes.f.c","A3L","A3C","corner.crosses","D","SBFC","O'Hara","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+831,"48",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+831,"48",NA,NA,NA,NA,NA,NA,NA,"F","SBFC","Rodriguez","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+832,"48","M","BOS","Salem","recoveries","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+833,"48","M","BOS","Salem","passes.f.c","A3C","A3C",NA,"F","SBFC","Kai","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+834,"49","M","BOS","Zerboni","movement","A3C","A3R",NA,"M","SBFC","Conheeney","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+835,"49","M","BOS","Zerboni","take.on.lost","A3R",NA,NA,"D","SBFC","E. Simon","dispossessed","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+835,"49",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Conheeney","challenged","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+836,"49","D","SBFC","E. Simon","clearances","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 837,"49","F","BOS","K. Simon","recoveries","A3C",NA,NA,"D","SBFC","Rampone","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 838,"49","F","BOS","K. Simon","movement","A3C","A3R",NA,"F","SBFC","Rodriguez","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 839,"49","F","BOS","K. Simon","passes.f.c","A3R","A3R",NA,"F","SBFC","Rodriguez","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -948,7 +950,7 @@
 878,"52","F","SBFC","Kai","recoveries","AM3L",NA,NA,"D","BOS","King","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 879,"52","F","SBFC","Kai","passes.b.c","AM3L","DM3L",NA,"D","BOS","King","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 880,"52","M","SBFC","Lytle","passes.f.c","DM3L","A3C","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-881,"52","M","SBFC","Hayes","passes.f.c","A3C","A18",NA,"D","BOS","Pathman","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+881,"52","M","SBFC","Hayes","passes.f.c","A3C","A18","th","D","BOS","Pathman","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 882,"52","D","SBFC","O'Hara","shots.missed","A18",NA,NA,"D","BOS","Pathman","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 882,"52",NA,NA,NA,NA,NA,NA,NA,"GK","BOS","Stout","gk.shot.miss","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
 882,"52",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1002,11 +1004,11 @@
 928,"56","D","SBFC","O'Hara","passes.f.c","AM3R","AM3R",NA,"F","BOS","K. Simon","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 929,"56","M","SBFC","Hayes","passes.b.c","AM3R","DM3R","lay.off","M","BOS","Salem","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 930,"56","D","SBFC","Rampone","movement","DM3R","AM3R",NA,"F","BOS","McCaffrey","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-931,"56","D","SBFC","Rampone","passes.f","AM3R",NA,NA,"D","BOS","Pathman",NA,"DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+931,"56","D","SBFC","Rampone","passes.f","AM3R",NA,NA,"D","BOS","Pathman","interceptions","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 932,"56","D","BOS","Pathman","passes.s.c","DM3L","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 933,"56","D","BOS","Engen","passes.f.c","DM3C","A3L","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 934,"56","F","BOS","K. Simon","shots.missed","A3L",NA,NA,"M","SBFC","Killion","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-934,"56",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.shot.miss","D6",NA,NA,NA,"big.chances.shot.missed",NA,NA,NA,NA,NA
+934,"56",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.shot.miss","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
 935,"57","GK","SBFC","Stanley","passes.f","D6",NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 936,"57","M","SBFC","Killion","aerial.lost","DM3L",NA,NA,"M","BOS","Schillgard","aerial.won","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 937,"57","D","SBFC","E. Simon","recoveries","DM3L",NA,NA,"M","BOS","Mewis","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1015,164 +1017,168 @@
 940,"57","M","BOS","Mewis","movement","AM3R","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 941,"57","M","BOS","Mewis","passes.f","A3R",NA,NA,"D","SBFC","E. Simon","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 942,"57","F","BOS","McCaffrey","offside.calls","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-943,"57","D","SBFC","Skroski","passes.f.c","D3L","DM3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-944,"57","F","SBFC","Rodriguez","passes.f.c","DM3L","A3L",NA,"M","BOS","Mewis","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-944,"57",NA,NA,NA,NA,NA,NA,NA,"D","BOS","Engen","clearances","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-945,"58","M","SBFC","Lytle","passes.b.c","A3L","A3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-946,"58","M","SBFC","Conheeney","passes.s","A3L",NA,NA,"M","BOS","Salem","pressured","D3R",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-947,"58","D","BOS","King","passes.b.c","D3R","D3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-948,"58","D","BOS","Engen","passes.f.c","D3R","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-949,"58","D","BOS","King","passes.b.c","D3R","D3R",NA,"M","SBFC","Lytle","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-950,"58","D","BOS","Engen","passes.f","D3R",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-951,"58","M","SBFC","Killion","recoveries","AM3R",NA,NA,"M","BOS","Schillgard","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-952,"58","M","SBFC","Killion","passes.f.c","AM3R","AM3R",NA,"M","BOS","Schillgard","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-953,"58","F","SBFC","Rodriguez","passes.b.c","AM3R","AM3C",NA,"M","BOS","Zerboni","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-954,"58","D","SBFC","O'Hara","passes.f","AM3C",NA,NA,"F","BOS","K. Simon","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-955,"58","D","BOS","Kallman","recoveries","D3C",NA,NA,"M","SBFC","Hayes","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+943,"57","D","SBFC","Skroski","passes.f.c","D3L","DML","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+944,"57","F","SBFC","Rodriguez","take.on.won","DML",NA,NA,"M","BOS","Mewis","dribbled.turned","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+945,"57","F","SBFC","Rodriguez","passes.f.c","DM3L","A3L",NA,"M","BOS","Mewis","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+945,"57",NA,NA,NA,NA,NA,NA,NA,"D","BOS","Engen","clearances","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+946,"58","M","SBFC","Lytle","passes.b.c","A3L","A3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+947,"58","M","SBFC","Conheeney","passes.s.c","A3L","AL",NA,"M","BOS","Salem","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+948,"58","D","SBFC","E. Simon","lost.touch","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+949,"58","D","BOS","King","passes.b.c","D3R","D3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+950,"58","D","BOS","Engen","passes.f.c","D3R","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+951,"58","D","BOS","King","passes.b.c","D3R","D3R",NA,"M","SBFC","Lytle","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+952,"58","D","BOS","Engen","passes.f","D3R",NA,"launch","M","SBFC","Killion","interceptions","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+953,"58","M","SBFC","Killion","passes.f.c","AM3R","AM3R",NA,"M","BOS","Schillgard","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+954,"58","F","SBFC","Rodriguez","passes.b.c","AM3R","AM3C",NA,"M","BOS","Zerboni","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+955,"58","D","SBFC","O'Hara","passes.f","AM3C",NA,NA,"F","BOS","K. Simon","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+955,"58",NA,NA,NA,NA,NA,NA,NA,"D","BOS","Kallman","interceptions","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 956,"58","D","BOS","Kallman","passes.f.c","D3C","D3C",NA,"F","SBFC","Kai","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 957,"58","M","BOS","Salem","passes.f.c","D3C","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-958,"58","M","BOS","Schillgard","passes.f","DM3R",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-959,"58","D","SBFC","Skroski","recoveries","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-960,"58","D","SBFC","Skroski","passes.f.c","DM3L","DM3C",NA,"M","BOS","Schillgard","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-961,"58","F","SBFC","Rodriguez","dispossessed","DM3C",NA,NA,"M","BOS","Zerboni","dispossessed","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-962,"58","M","BOS","Zerboni","movement","AM3C","A3C",NA,"F","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-963,"58","M","BOS","Zerboni","passes.f.c","A3C","A3L","th","F","SBFC","Rodriguez","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-964,"58","F","BOS","K. Simon","take.on.won","A3L",NA,NA,"D","SBFC","O'Hara","dribbled.out.run","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-965,"58","F","BOS","K. Simon","movement","A3L","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-966,"58","F","BOS","K. Simon","shots.missed","A18",NA,NA,"GK","SBFC","Stanley","gk.shot.miss","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
-967,"59","GK","SBFC","Stanley","passes.f","D6",NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-968,"59","F","SBFC","Kai","aerial.lost","DM3C",NA,NA,"M","BOS","Zerboni","aerial.won","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-969,"59","F","BOS","K. Simon","recoveries","AM3C",NA,NA,"M","SBFC","Killion","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-970,"59","F","BOS","K. Simon","passes.f","AM3C",NA,"launch","M","SBFC","Killion","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-971,"59","D","SBFC","Rampone","recoveries","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-972,"59","D","SBFC","Rampone","passes.f.c","D3C","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-973,"59","D","SBFC","O'Hara","passes.f","DM3R",NA,"launch","D","BOS","Kallman","blocks","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-974,"59","M","BOS","Salem","recoveries","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-975,"59","M","BOS","Salem","passes.f.c","DM3C","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-976,"59","M","BOS","Schillgard","movement","AM3C","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-977,"59","M","BOS","Schillgard","passes.b.c","AM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-978,"59","F","BOS","K. Simon","passes.f","AM3L",NA,"lay.off","D","SBFC","Rampone","blocks","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-978,"59",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-979,"59","D","SBFC","O'Hara","recoveries","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-980,"59","D","SBFC","O'Hara","passes.f.c","D3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-981,"59","M","SBFC","Hayes","passes.b.c","DM3R","D3R","lay.off","D","BOS","Pathman","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-982,"59","D","SBFC","O'Hara","passes.f.c","D3R","DM3R","launch","D","BOS","Pathman","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-983,"60","M","SBFC","Conheeney","passes.s.c","DM3R","DM3R",NA,"F","BOS","K. Simon","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-983,"60",NA,NA,NA,NA,NA,NA,NA,"M","BOS","Salem","blocks","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-984,"60","M","SBFC","Hayes","recoveries","DM3R",NA,NA,"M","BOS","Salem","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-985,"60","M","SBFC","Hayes","passes.f.c","DM3R","DM3R",NA,"M","BOS","Salem","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-986,"60","D","SBFC","O'Hara","passes.s.c","DM3R","DM3C",NA,"D","BOS","Pathman","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-987,"60","D","SBFC","Rampone","passes.f.c","DM3C","DM3C",NA,"F","BOS","McCaffrey","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-988,"60","F","SBFC","Rodriguez","passes.f.c","DM3C","AM3L",NA,"M","BOS","Mewis","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-989,"60","D","SBFC","E. Simon","passes.f","AM3L",NA,NA,"D","BOS","King","challenged","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-990,"60","D","BOS","Kallman","ball.shield","D3C",NA,NA,"F","SBFC","Kai","fouls.conceded","AC",NA,NA,"fouls.won",NA,"yellow.cards","yellow.cards",NA,NA,NA
-990,"60",NA,NA,NA,NA,NA,NA,NA,"GK","BOS","Stout","gk.loose.balls.won","D18","collected",NA,NA,NA,NA,NA,NA,NA,NA
-990,"60",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-991,"60","M","BOS","Schillgard","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-992,"60","M","BOS","Schoepfer","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-993,"61","GK","BOS","Stout","passes.f.c","D3C","D3R","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-994,"61","D","BOS","Engen","passes.s.c","D3R","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-995,"61","D","BOS","Kallman","passes.f.c","DM3C","DM3L",NA,"M","SBFC","Conheeney","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-996,"61","D","BOS","Pathman","passes.b.c","DM3L","DM3L",NA,"M","SBFC","Hayes","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-997,"61","D","BOS","Kallman","passes.s.c","DM3L","DM3C",NA,"M","SBFC","Conheeney","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-998,"61","D","BOS","Engen","passes.f.c","DM3C","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-999,"61","M","BOS","Salem","passes.f.c","DM3R","AM3R",NA,"F","SBFC","Kai","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1000,"61","D","BOS","King","dispossessed","AM3R",NA,NA,"M","SBFC","Lytle","dispossessed","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1001,"61","F","SBFC","Rodriguez","recoveries","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1002,"61","F","SBFC","Rodriguez","passes.f.c","DM3L","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1003,"61","M","SBFC","Conheeney","passes.b.c","AM3C","DM3C","lay.off","M","BOS","Zerboni","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1004,"61","M","SBFC","Conheeney","movement","DM3C","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1005,"61","M","SBFC","Killion","passes.b.c","DM3R","DM3R",NA,"F","BOS","K. Simon","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1006,"61","D","SBFC","Rampone","passes.f.c","DM3R","DM3R",NA,"F","BOS","K. Simon","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1006,"61",NA,NA,NA,NA,NA,NA,NA,"D","BOS","Pathman","blocks","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1007,"61","D","SBFC","Skroski","recoveries","DM3R",NA,NA,"M","BOS","Schoepfer","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1008,"61","D","SBFC","Skroski","passes.f","DM3R",NA,NA,"M","BOS","Schoepfer","challenged","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1009,"61","D","BOS","Pathman","recoveries","AM3L",NA,NA,"D","SBFC","O'Hara","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1010,"61","D","BOS","Pathman","passes.s.c","AM3L","AM3L",NA,"D","SBFC","O'Hara","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1011,"61","M","BOS","Zerboni","passes.b.c","AM3L","DM3L",NA,"M","SBFC","Conheeney","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1012,"61","D","BOS","Pathman","passes.b.c","DM3L","DM3L",NA,"M","SBFC","Conheeney","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1013,"61","D","BOS","Kallman","passes.f.c","DM3L","DM3L",NA,"M","SBFC","Hayes","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1014,"61","M","BOS","Salem","passes.f.c","DM3L","AM3L",NA,"F","SBFC","Rodriguez","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1015,"62","D","BOS","Pathman","passes.f.c","AM3L","A3L",NA,"M","SBFC","Hayes","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1016,"62","F","BOS","K. Simon","passes.b.c","A3L","AM3L",NA,"M","SBFC","Killion","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1017,"62","M","BOS","Schoepfer","passes.f.c","AM3L","A3R","switch","F","SBFC","Rodriguez","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1018,"62","F","BOS","McCaffrey","movement","A3R","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1019,"62","F","BOS","McCaffrey","dispossessed","A18",NA,NA,"D","SBFC","E. Simon","dispossessed","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1019,"62",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","E. Simon","clearances","D3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1019,"62",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1020,"62","M","BOS","Salem","passes.f.c","A3R","A3R",NA,"F","SBFC","Rodriguez","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1021,"62","D","BOS","King","passes.b.c","A3R","A3R",NA,"M","SBFC","Lytle","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1022,"62","M","BOS","Salem","passes.b.c","A3R","AM3R",NA,"F","SBFC","Rodriguez","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1023,"62","M","BOS","Zerboni","passes.b","AM3R",NA,NA,"M","SBFC","Conheeney","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1023,"62",NA,NA,NA,NA,NA,NA,NA,"F","SBFC","Kai","interceptions","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1024,"62","F","SBFC","Kai","passes.b.c","DM3L","D3L",NA,"M","BOS","Zerboni","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1025,"62","F","SBFC","Rodriguez","passes.f.c","D3L","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1026,"62","M","SBFC","Killion","passes.f.c","DM3C","A3R",NA,"M","BOS","Zerboni","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1027,"62","M","SBFC","Hayes","movement","A3R","A18",NA,"D","BOS","Pathman","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1028,"62","M","SBFC","Hayes","lost.touch","A18",NA,NA,"D","BOS","Kallman","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1029,"63","D","SBFC","O'Hara","passes.s","A3R",NA,"corner.kick","GK","BOS","Stout","gk.loose.balls.won","D6","caught",NA,NA,NA,NA,NA,NA,NA,NA
-1030,"63","GK","BOS","Stout","passes.f.c","D18","D3L","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1031,"63","D","BOS","Kallman","passes.f","D3L",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1032,"63","M","SBFC","Hayes","recoveries","DM3R",NA,NA,"M","BOS","Mewis","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1033,"63","M","SBFC","Hayes","passes.f.c","DM3R","DM3R","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1034,"63","M","SBFC","Killion","passes.b.c","DM3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1035,"63","D","SBFC","O'Hara","passes.f.c","DM3R","DM3R",NA,"M","BOS","Mewis","challenged","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1036,"63","M","SBFC","Killion","movement","DM3R","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1037,"63","M","SBFC","Killion","passes.f.c","AM3R","AM3R",NA,"M","BOS","Zerboni","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1038,"63","M","SBFC","Conheeney","passes.b","AM3R",NA,"lay.off","D","BOS","Kallman","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1039,"63","M","BOS","Salem","recoveries","DM3L",NA,NA,"M","SBFC","Killion","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1040,"63","M","BOS","Salem","passes.f.c","DM3L","DM3L",NA,"M","SBFC","Killion","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1041,"63","M","BOS","Zerboni","passes.f.c","DM3L","AM3C",NA,"M","SBFC","Conheeney","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1042,"63","M","BOS","Schoepfer","passes.f.c","AM3C","A3R","th","F","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1043,"63","F","BOS","McCaffrey","lost.touch","A3R",NA,NA,"D","SBFC","Skroski","pressured","D3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1043,"63",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1044,"64","D","SBFC","Skroski","passes.f.c","D3L","D3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1045,"64","M","SBFC","Lytle","dispossessed","D3L",NA,NA,"D","BOS","King","dispossessed","A3R",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1046,"64","D","SBFC","Skroski","passes.f.c","D3L","DM3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1047,"64","F","SBFC","Kai","dispossessed","DM3L",NA,NA,"D","BOS","Engen","dispossessed","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1048,"64","D","BOS","Engen","passes.f.c","AM3R","AM3R",NA,"M","SBFC","Conheeney","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1049,"64","M","BOS","Zerboni","dispossessed","AM3R",NA,NA,"M","SBFC","Killion","dispossessed","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1050,"64","M","SBFC","Lytle","recoveries","D3L",NA,NA,"M","BOS","Salem","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1051,"64","M","SBFC","Lytle","passes.b.c","D3L","D3L",NA,"M","BOS","Salem","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1052,"64","F","SBFC","Rodriguez","passes.f.c","D3L","D3L","lay.off","M","BOS","Zerboni","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1053,"64","M","SBFC","Killion","dispossessed","D3L",NA,NA,"M","BOS","Salem","dispossessed","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1054,"64","M","BOS","Salem","recoveries","A3R",NA,NA,"F","SBFC","Rodriguez","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1055,"64","M","BOS","Salem","passes.f","A3R",NA,"th","F","SBFC","Rodriguez","pressured","D3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1056,"64","GK","SBFC","Stanley","passes.f.c","D6","DM3L","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1057,"64","F","SBFC","Kai","passes.f","DM3L",NA,"headed","D","BOS","King","clearances","DM3R",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1058,"65","D","SBFC","E. Simon","passes.f","D3L",NA,"throw.in","D","BOS","King","clearances","AM3R",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1059,"65","D","SBFC","E. Simon","passes.f","D3L",NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1060,"65","F","SBFC","Kai","aerial.lost","D3L",NA,NA,"D","BOS","King","aerial.won","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1061,"65","M","BOS","Salem","passes.f.c","A3R","A3R","headed","F","SBFC","Rodriguez","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1062,"65","M","BOS","Mewis","fw","A3R",NA,NA,"M","SBFC","Killion","challenged","D3L",NA,NA,"fouls.won",NA,"fouls.conceded","fc",NA,NA,NA
-1062,"65",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1063,"65","F","BOS","McCaffrey","movement","A3R","A18",NA,"D","SBFC","E. Simon","challenged","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1064,"65","F","BOS","McCaffrey","dispossessed","A18",NA,NA,"D","SBFC","E. Simon","dispossessed","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1065,"65","M","SBFC","Killion","recoveries","D18",NA,NA,"F","BOS","McCaffrey","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1066,"65","M","SBFC","Killion","passes.f.c","D18","D3L",NA,"F","BOS","McCaffrey","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1067,"65","M","SBFC","Lytle","passes.f","D3L",NA,"launch","D","BOS","Pathman","interceptions","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1068,"65","D","BOS","Pathman","movement","DM3C","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1069,"65","D","BOS","Pathman","passes.f.c","AM3C","AM3C",NA,"M","SBFC","Hayes","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1070,"65","M","BOS","Zerboni","passes.b.c","AM3C","DM3C",NA,"F","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1071,"66","D","BOS","Engen","passes.s.c","DM3C","DM3C",NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1072,"66","D","BOS","Kallman","passes.f.c","DM3C","AM3C",NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1073,"66","F","BOS","K. Simon","movement","AM3C","AM3L",NA,"F","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1074,"66","F","BOS","K. Simon","passes.b.c","AM3L","AM3L",NA,"F","SBFC","Rodriguez","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1075,"66","D","BOS","Kallman","passes.f.c","AM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1076,"66","F","BOS","K. Simon","passes.b.c","AM3L","AM3L","lay.off","M","SBFC","Conheeney","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1077,"66","D","BOS","Kallman","movement","AM3L","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1078,"66","D","BOS","Kallman","passes.b.c","DM3C","DM3C",NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1079,"66","D","BOS","Engen","passes.f.c","DM3C","DM3C","lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1080,"66","D","BOS","Kallman","passes.f.c","DM3C","AM3C",NA,"M","SBFC","Conheeney","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1081,"66","M","BOS","Salem","passes.b.c","AM3C","DM3C","lay.off","F","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1082,"66","D","BOS","Kallman","passes.b.c","DM3C","DM3C",NA,"M","SBFC","Conheeney","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1083,"66","D","BOS","Engen","passes.f.c","DM3C","AM3R",NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1084,"66","M","BOS","Zerboni","passes.b.c","AM3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1085,"66","D","BOS","Engen","movement","DM3R","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1086,"66","D","BOS","Engen","passes.f.c","AM3R","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1087,"66","D","BOS","King","passes.f","A3R",NA,"corner.crosses","M","SBFC","Lytle","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1087,"66",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","clearances","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1088,"66","M","SBFC","Killion","passes.f","D3L",NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+958,"58","M","BOS","Schillgard","passes.f","DM3R",NA,"launch","D","SBFC","Skroski","interceptions","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+959,"58","D","SBFC","Skroski","passes.f.c","DM3L","DM3C",NA,"M","BOS","Schillgard","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+960,"58","F","SBFC","Rodriguez","dispossessed","DM3C",NA,NA,"M","BOS","Zerboni","dispossessed","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+961,"58","M","BOS","Zerboni","movement","AM3C","A3C",NA,"F","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+962,"58","M","BOS","Zerboni","passes.f.c","A3C","A3L","th","F","SBFC","Rodriguez","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+963,"58","F","BOS","K. Simon","take.on.won","A3L",NA,NA,"D","SBFC","O'Hara","dribbled.out.run","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+964,"58","F","BOS","K. Simon","movement","A3L","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+965,"58","F","BOS","K. Simon","shots.missed","A18",NA,NA,"GK","SBFC","Stanley","gk.shot.miss","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
+966,"59","GK","SBFC","Stanley","passes.f","D6",NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+967,"59","F","SBFC","Kai","aerial.lost","DM3C",NA,NA,"M","BOS","Zerboni","aerial.won","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+968,"59","F","BOS","K. Simon","recoveries","AM3C",NA,NA,"M","SBFC","Killion","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+969,"59","F","BOS","K. Simon","passes.f","AM3C",NA,"launch","M","SBFC","Killion","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+970,"59","D","SBFC","Rampone","recoveries","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+971,"59","D","SBFC","Rampone","passes.f.c","D3C","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+972,"59","D","SBFC","O'Hara","passes.f","DM3R",NA,"launch","D","BOS","Kallman","blocks","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+973,"59","M","BOS","Salem","recoveries","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+974,"59","M","BOS","Salem","passes.f.c","DM3C","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+975,"59","M","BOS","Schillgard","movement","AM3C","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+976,"59","M","BOS","Schillgard","passes.b.c","AM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+977,"59","F","BOS","K. Simon","passes.f","AM3L",NA,"lay.off","D","SBFC","Rampone","blocks","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+977,"59",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+978,"59","D","SBFC","O'Hara","recoveries","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+979,"59","D","SBFC","O'Hara","passes.f.c","D3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+980,"59","M","SBFC","Hayes","passes.b.c","DM3R","D3R","lay.off","D","BOS","Pathman","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+981,"59","D","SBFC","O'Hara","passes.f.c","D3R","DM3R","launch","D","BOS","Pathman","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+982,"60","M","SBFC","Conheeney","passes.s.c","DM3R","DM3R",NA,"F","BOS","K. Simon","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+982,"60",NA,NA,NA,NA,NA,NA,NA,"M","BOS","Salem","blocks","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+983,"60","M","SBFC","Hayes","recoveries","DM3R",NA,NA,"M","BOS","Salem","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+984,"60","M","SBFC","Hayes","passes.f.c","DM3R","DM3R",NA,"M","BOS","Salem","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+985,"60","D","SBFC","O'Hara","passes.s.c","DM3R","DM3C",NA,"D","BOS","Pathman","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+986,"60","D","SBFC","Rampone","passes.f.c","DM3C","DM3C",NA,"F","BOS","McCaffrey","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+987,"60","F","SBFC","Rodriguez","passes.f.c","DM3C","AM3L",NA,"M","BOS","Mewis","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+988,"60","D","SBFC","E. Simon","passes.f","AM3L",NA,NA,"D","BOS","King","challenged","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+989,"60","D","BOS","Kallman","ball.shield","D3C",NA,NA,"F","SBFC","Kai","fouls.conceded","AC",NA,NA,"fouls.won",NA,"yellow.cards","yellow.cards",NA,NA,NA
+989,"60",NA,NA,NA,NA,NA,NA,NA,"GK","BOS","Stout","gk.loose.balls.won","D18","collected",NA,NA,NA,NA,NA,NA,NA,NA
+989,"60",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+990,"60","M","BOS","Schillgard","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+991,"60","M","BOS","Schoepfer","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+992,"61","GK","BOS","Stout","passes.f.c","D3C","D3R","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+993,"61","D","BOS","Engen","passes.s.c","D3R","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+994,"61","D","BOS","Kallman","passes.f.c","DM3C","DM3L",NA,"M","SBFC","Conheeney","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+995,"61","D","BOS","Pathman","passes.b.c","DM3L","DM3L",NA,"M","SBFC","Hayes","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+996,"61","D","BOS","Kallman","passes.s.c","DM3L","DM3C",NA,"M","SBFC","Conheeney","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+997,"61","D","BOS","Engen","passes.f.c","DM3C","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+998,"61","M","BOS","Salem","passes.f.c","DM3R","AM3R",NA,"F","SBFC","Kai","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+999,"61","D","BOS","King","dispossessed","AM3R",NA,NA,"M","SBFC","Lytle","dispossessed","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1000,"61","F","SBFC","Rodriguez","recoveries","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1001,"61","F","SBFC","Rodriguez","passes.f.c","DM3L","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1002,"61","M","SBFC","Conheeney","passes.b.c","AM3C","DM3C","lay.off","M","BOS","Zerboni","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1003,"61","M","SBFC","Conheeney","movement","DM3C","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1004,"61","M","SBFC","Killion","passes.b.c","DM3R","DM3R",NA,"F","BOS","K. Simon","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1005,"61","D","SBFC","Rampone","passes.f.c","DM3R","DM3R",NA,"F","BOS","K. Simon","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1005,"61",NA,NA,NA,NA,NA,NA,NA,"D","BOS","Pathman","blocks","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1006,"61","D","SBFC","Skroski","recoveries","DM3R",NA,NA,"M","BOS","Schoepfer","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1007,"61","D","SBFC","Skroski","passes.f","DM3R",NA,NA,"M","BOS","Schoepfer","challenged","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1008,"61","D","BOS","Pathman","recoveries","AM3L",NA,NA,"D","SBFC","O'Hara","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1009,"61","D","BOS","Pathman","passes.s.c","AM3L","AM3L",NA,"D","SBFC","O'Hara","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1010,"61","M","BOS","Zerboni","passes.b.c","AM3L","DM3L",NA,"M","SBFC","Conheeney","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1011,"61","D","BOS","Pathman","passes.b.c","DM3L","DM3L",NA,"M","SBFC","Conheeney","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1012,"61","D","BOS","Kallman","passes.f.c","DM3L","DM3L",NA,"M","SBFC","Hayes","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1013,"61","M","BOS","Salem","passes.f.c","DM3L","AM3L",NA,"F","SBFC","Rodriguez","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1014,"62","D","BOS","Pathman","passes.f.c","AM3L","A3L",NA,"M","SBFC","Hayes","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1015,"62","F","BOS","K. Simon","passes.b.c","A3L","AM3L",NA,"M","SBFC","Killion","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1016,"62","M","BOS","Schoepfer","passes.f.c","AM3L","A3R","switch","F","SBFC","Rodriguez","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1017,"62","F","BOS","McCaffrey","movement","A3R","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1018,"62","F","BOS","McCaffrey","dispossessed","A18",NA,NA,"D","SBFC","E. Simon","dispossessed","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1018,"62",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","E. Simon","clearances","D3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1018,"62",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1019,"62","M","BOS","Salem","passes.f.c","A3R","A3R",NA,"F","SBFC","Rodriguez","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1020,"62","D","BOS","King","passes.b.c","A3R","A3R",NA,"M","SBFC","Lytle","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1021,"62","M","BOS","Salem","passes.b.c","A3R","AM3R",NA,"F","SBFC","Rodriguez","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1022,"62","M","BOS","Zerboni","passes.b","AM3R",NA,NA,"M","SBFC","Conheeney","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1022,"62",NA,NA,NA,NA,NA,NA,NA,"F","SBFC","Kai","interceptions","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1023,"62","F","SBFC","Kai","passes.b.c","DM3L","D3L",NA,"M","BOS","Zerboni","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1024,"62","F","SBFC","Rodriguez","passes.f.c","D3L","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1025,"62","M","SBFC","Killion","passes.f.c","DM3C","A3R",NA,"M","BOS","Zerboni","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1026,"62","M","SBFC","Hayes","movement","A3R","A18",NA,"D","BOS","Pathman","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1027,"62","M","SBFC","Hayes","lost.touch","A18",NA,NA,"D","BOS","Kallman","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1028,"63","D","SBFC","O'Hara","passes.s","A3R",NA,"corner.kick","GK","BOS","Stout","gk.loose.balls.won","D6","caught",NA,NA,NA,NA,NA,NA,NA,NA
+1028,"63",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1029,"63","GK","BOS","Stout","passes.f.c","D18","D3L","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1030,"63","D","BOS","Kallman","passes.f","D3L",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1031,"63","M","SBFC","Hayes","recoveries","DM3R",NA,NA,"M","BOS","Mewis","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1032,"63","M","SBFC","Hayes","passes.f.c","DM3R","DM3R","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1033,"63","M","SBFC","Killion","passes.b.c","DM3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1034,"63","D","SBFC","O'Hara","passes.f.c","DM3R","DM3R",NA,"M","BOS","Mewis","challenged","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1035,"63","M","SBFC","Killion","movement","DM3R","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1036,"63","M","SBFC","Killion","passes.f.c","AM3R","AM3R",NA,"M","BOS","Zerboni","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1037,"63","M","SBFC","Conheeney","passes.b","AM3R",NA,"lay.off","D","BOS","Kallman","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1037,"63",NA,NA,NA,NA,NA,NA,NA,"M","BOS","Salem","interceptions","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1038,"63","M","BOS","Salem","passes.f.c","DM3L","DM3L",NA,"M","SBFC","Killion","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1039,"63","M","BOS","Zerboni","passes.f.c","DM3L","AM3C",NA,"M","SBFC","Conheeney","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1040,"63","M","BOS","Schoepfer","passes.f.c","AM3C","A3R","th","F","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1041,"63","F","BOS","McCaffrey","lost.touch","A3R",NA,NA,"D","SBFC","Skroski","pressured","D3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1041,"63",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1042,"64","D","SBFC","Skroski","passes.f.c","D3L","D3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1043,"64","M","SBFC","Lytle","dispossessed","D3L",NA,NA,"D","BOS","King","dispossessed","A3R",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1044,"64","D","SBFC","Skroski","passes.f.c","D3L","DM3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1045,"64","F","SBFC","Kai","dispossessed","DM3L",NA,NA,"D","BOS","Engen","dispossessed","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1046,"64","D","BOS","Engen","passes.f.c","AM3R","AM3R",NA,"M","SBFC","Conheeney","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1047,"64","M","BOS","Zerboni","dispossessed","AM3R",NA,NA,"M","SBFC","Killion","dispossessed","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1048,"64","M","SBFC","Lytle","recoveries","D3L",NA,NA,"M","BOS","Salem","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1049,"64","M","SBFC","Lytle","passes.b.c","D3L","D3L",NA,"M","BOS","Salem","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1050,"64","F","SBFC","Rodriguez","passes.f.c","D3L","D3L","lay.off","M","BOS","Zerboni","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1051,"64","M","SBFC","Killion","dispossessed","D3L",NA,NA,"M","BOS","Salem","dispossessed","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1052,"64","M","BOS","Salem","recoveries","A3R",NA,NA,"F","SBFC","Rodriguez","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1053,"64","M","BOS","Salem","passes.f","A3R",NA,"th","F","SBFC","Rodriguez","pressured","D3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1054,"64","GK","SBFC","Stanley","passes.f.c","D6","DM3L","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1054,"64",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1055,"64","F","SBFC","Kai","passes.f","DM3L",NA,"headed","D","BOS","King","clearances","DM3R",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1056,"65","D","SBFC","E. Simon","passes.f","D3L",NA,"throw.in","D","BOS","King","clearances","AM3R",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1057,"65","D","SBFC","E. Simon","passes.f","D3L",NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1058,"65","F","SBFC","Kai","aerial.lost","D3L",NA,NA,"D","BOS","King","aerial.won","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1059,"65","M","BOS","Salem","recoveries","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1060,"65","M","BOS","Salem","passes.f.c","A3R","A3R","headed","F","SBFC","Rodriguez","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1061,"65","M","BOS","Mewis","fw","A3R",NA,NA,"M","SBFC","Killion","challenged","D3L",NA,NA,"fouls.won",NA,"fouls.conceded","fc",NA,NA,NA
+1061,"65",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1062,"65","F","BOS","McCaffrey","movement","A3R","A18",NA,"D","SBFC","E. Simon","challenged","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1063,"65","F","BOS","McCaffrey","dispossessed","A18",NA,NA,"D","SBFC","E. Simon","dispossessed","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1064,"65","M","SBFC","Killion","recoveries","D18",NA,NA,"F","BOS","McCaffrey","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1065,"65","M","SBFC","Killion","passes.f.c","D18","D3L",NA,"F","BOS","McCaffrey","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1066,"65","M","SBFC","Lytle","passes.f","D3L",NA,"launch","D","BOS","Pathman","interceptions","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1067,"65","D","BOS","Pathman","movement","DM3C","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1068,"65","D","BOS","Pathman","passes.f.c","AM3C","AM3C",NA,"M","SBFC","Hayes","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1069,"65","M","BOS","Zerboni","passes.b.c","AM3C","DM3C",NA,"F","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1070,"66","D","BOS","Engen","passes.s.c","DM3C","DM3C",NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1071,"66","D","BOS","Kallman","passes.f.c","DM3C","AM3C",NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1072,"66","F","BOS","K. Simon","movement","AM3C","AM3L",NA,"F","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1073,"66","F","BOS","K. Simon","passes.b.c","AM3L","AM3L",NA,"F","SBFC","Rodriguez","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1074,"66","D","BOS","Kallman","passes.f.c","AM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1075,"66","F","BOS","K. Simon","passes.b.c","AM3L","AM3L","lay.off","M","SBFC","Conheeney","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1076,"66","D","BOS","Kallman","movement","AM3L","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1077,"66","D","BOS","Kallman","passes.b.c","DM3C","DM3C",NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1078,"66","D","BOS","Engen","passes.f.c","DM3C","DM3C","lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1079,"66","D","BOS","Kallman","passes.f.c","DM3C","AM3C",NA,"M","SBFC","Conheeney","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1080,"66","M","BOS","Salem","passes.b.c","AM3C","DM3C","lay.off","F","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1081,"66","D","BOS","Kallman","passes.b.c","DM3C","DM3C",NA,"M","SBFC","Conheeney","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1082,"66","D","BOS","Engen","passes.f.c","DM3C","AM3R",NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1083,"66","M","BOS","Zerboni","passes.b.c","AM3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1084,"66","D","BOS","Engen","movement","DM3R","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1085,"66","D","BOS","Engen","passes.f.c","AM3R","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1086,"66","D","BOS","King","passes.f","A3R",NA,"corner.crosses","M","SBFC","Lytle","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1086,"66",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","clearances","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1087,"66","M","SBFC","Killion","recoveries","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1088,"66","M","SBFC","Killion","passes.f","D3L",NA,"switch","F","BOS","McCaffrey","blocks","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1089,"66","F","BOS","McCaffrey","recoveries","AM3L",NA,NA,"D","SBFC","O'Hara","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1090,"66","F","BOS","McCaffrey","passes.f","AM3L",NA,NA,"D","SBFC","O'Hara","blocks","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1091,"66","F","BOS","McCaffrey","passes.f.c","AM3L","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1212,6 +1218,7 @@
 1121,"68","D","BOS","King","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1122,"68","D","BOS","Westphal","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1123,"68","GK","SBFC","Stanley","passes.f","D6",NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1123,"68",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1124,"68","M","SBFC","Killion","aerial.lost","DM3L",NA,NA,"M","BOS","Zerboni","aerial.won","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1125,"68","D","SBFC","E. Simon","passes.f.c","DM3L","A3L","launch","F","BOS","McCaffrey","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1126,"68","F","SBFC","Kai","passes.b.c","A3L","A3L",NA,"D","BOS","Westphal","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1237,7 +1244,8 @@
 1143,"69","M","BOS","Salem","passes.f.c","A3L","A18",NA,"M","SBFC","Conheeney","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1144,"69","M","BOS","Schoepfer","shots.stopped.by.gk","A18",NA,NA,"D","SBFC","O'Hara","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1144,"69",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.s.o.g.stop","D6","deflected.to.safety","diving",NA,NA,NA,NA,NA,NA,NA
-1145,"70","M","BOS","Mewis","passes.s.c","A3R","A6","corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1145,"70","M","BOS","Mewis","passes.s.c","A3R","A6","corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA,NA,NA,NA
+1145,"70",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1146,"70","F","BOS","K. Simon","shots.stopped.by.def","A6",NA,"headed","D","SBFC","E. Simon","blocks","D6",NA,NA,NA,"big.chances.shot.on.goal",NA,NA,NA,NA,NA
 1146,"70",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.s.o.g.def.stop","D6","deflected.to.danger",NA,NA,NA,NA,NA,NA,NA,NA
 1146,"70",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.loose.balls.won","D6","collected",NA,NA,NA,NA,NA,NA,NA,NA
@@ -1254,6 +1262,7 @@
 1155,"71","M","SBFC","Conheeney","shots.stopped.by.gk","A18",NA,NA,"D","BOS","Engen","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1155,"71",NA,NA,NA,NA,NA,NA,NA,"GK","BOS","Stout","gk.s.o.g.stop","D6","deflected.to.safety","diving",NA,NA,NA,NA,NA,NA,NA
 1156,"71","D","SBFC","O'Hara","passes.s.c","A3L","A6","corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1156,"71",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1157,"71","D","SBFC","Skroski","shots.stopped.by.gk","A6",NA,"headed","D","BOS","Westphal","pressured","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1157,"71",NA,NA,NA,NA,NA,NA,NA,"GK","BOS","Stout","gk.s.o.g.stop","D6","collected","standing",NA,NA,NA,NA,NA,NA,NA
 1158,"72","GK","BOS","Stout","passes.f.c","D18","D3L","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1289,284 +1298,286 @@
 1187,"74","M","SBFC","Killion","passes.f.c","A3C","A3L","th","M","BOS","Zerboni","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1188,"74","M","SBFC","Lytle","passes.f.c","A3L","A3L",NA,"D","BOS","Westphal","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 1189,"74","D","SBFC","E. Simon","passes.f.c","A3L","A18","corner.crosses","D","BOS","Westphal","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1190,"74","F","SBFC","Kai","shots.missed","A18",NA,NA,"M","BOS","Salem","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1190,"74",NA,NA,NA,NA,NA,NA,NA,"GK","BOS","Stout","gk.shot.miss","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1190,"74",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1191,"75","D","BOS","Kallman","passes.f.c","DM3C","DM3L",NA,"F","SBFC","Rodriguez","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1192,"75","M","BOS","Salem","passes.f","DM3L",NA,"launch","F","SBFC","Rodriguez","pressured","AM3R",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1193,"75","D","SBFC","O'Hara","passes.f.c","DM3R","AM3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1194,"75","M","SBFC","Hayes","aerial.won","AM3R",NA,NA,"D","BOS","Pathman","aerial.lost","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1195,"75","D","BOS","Pathman","recoveries","DM3L",NA,NA,"M","SBFC","Stanton","challenged","AM3R",NA,NA,"fouls.won",NA,"yellow.cards","yellow.cards",NA,NA,NA
-1196,"76","D","BOS","Kallman","passes.f","DM3L",NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1197,"76","M","BOS","Mewis","aerial.lost","A3L",NA,NA,"M","SBFC","Stanton","aerial.won","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1198,"76","M","SBFC","Hayes","recoveries","DM3R",NA,NA,"D","BOS","Pathman","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1199,"76","M","SBFC","Hayes","passes.f.c","DM3R","DM3C",NA,"D","BOS","Pathman","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1200,"76","F","SBFC","Kai","passes.b.c","DM3C","DM3C",NA,"M","BOS","Zerboni","challenged","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1201,"76","M","SBFC","Killion","passes.f.c","DM3C","AM3L",NA,"M","BOS","Zerboni","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1202,"76","D","SBFC","E. Simon","passes.f","AM3L",NA,NA,"D","BOS","Westphal","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1203,"76","D","BOS","Engen","recoveries","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1204,"76","D","BOS","Engen","passes.f","D3R",NA,"launch","M","SBFC","Killion","interceptions","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1205,"76","M","SBFC","Killion","dispossessed",NA,NA,NA,"M","BOS","Mewis","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1206,"76","M","BOS","Mewis","movement","DM3R","AM3C",NA,"M","SBFC","Lytle","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1207,"76","M","BOS","Mewis","passes.f.c","AM3C","AM3L",NA,"M","SBFC","Lytle","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1208,"76","D","BOS","Pathman","passes.b.c","AM3L","AM3L",NA,"M","SBFC","Hayes","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1209,"76","M","BOS","Salem","passes.f","AM3L",NA,"launch","F","SBFC","Rodriguez","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1210,"77","D","SBFC","Rampone","recoveries","D3R",NA,NA,"M","BOS","Schoepfer","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1211,"77","D","SBFC","Rampone","passes.f","D3R",NA,NA,"M","BOS","Schoepfer","pressured","A3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1212,"77","D","BOS","Pathman","passes.f.c","A3L","A3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1213,"77","M","BOS","Salem","passes.b.c","A3L","A3L","lay.off","F","SBFC","Rodriguez","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1214,"77","D","BOS","Pathman","passes.b.c","A3L","AM3L",NA,"F","SBFC","Rodriguez","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1215,"77","D","BOS","Kallman","passes.b.c","AM3L","AM3C",NA,"F","SBFC","Rodriguez","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1216,"77","D","BOS","Engen","passes.b.c","AM3C","AM3L",NA,"F","SBFC","Kai","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1217,"77","D","BOS","Kallman","passes.f.c","AM3L","AM3C",NA,"F","SBFC","Kai","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1218,"77","F","BOS","K. Simon","movement","AM3C","A3C",NA,"F","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1219,"77","F","BOS","K. Simon","passes.f","A3C",NA,NA,"D","SBFC","Rampone","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1220,"77","M","BOS","Schoepfer","recoveries","A18",NA,NA,"D","SBFC","O'Hara","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1221,"77","M","BOS","Schoepfer","shots.stopped.by.gk","A18",NA,NA,"D","SBFC","O'Hara","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1221,"77",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.s.o.g.stop","D6","caught","standing",NA,NA,NA,NA,NA,NA,NA
-1222,"77","GK","SBFC","Stanley","passes.f.c","D18","DM3R","gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1223,"77","M","SBFC","Hayes","lost.touch","DM3R",NA,NA,"M","BOS","Salem","pressured","AM3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1224,"78","M","SBFC","Hayes","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1225,"78","M","SBFC","Gordon","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1226,"78","D","BOS","Pathman","passes.f.c","DM3L","AM3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1227,"78","M","BOS","Mewis","passes.b.c","AM3L","DM3C",NA,"M","SBFC","Stanton","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1228,"78","D","BOS","Engen","passes.f.c","DM3C","DM3L",NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1229,"78","D","BOS","Kallman","passes.s.c","DM3L","AM3R",NA,"F","SBFC","Rodriguez","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1229,"78",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1230,"79","M","BOS","Zerboni","passes.f.c","AM3R","AM3R",NA,"F","SBFC","Rodriguez","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1230,"79",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","E. Simon","clearances","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1231,"79","D","BOS","Westphal","passes.b.c","AM3R","AM3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1232,"79","D","BOS","Engen","passes.b.c","AM3R","DM3C",NA,"F","SBFC","Kai","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1233,"79","D","BOS","Kallman","passes.f.c","DM3C","AM3C",NA,"F","SBFC","Rodriguez","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1234,"79","F","BOS","K. Simon","movement","AM3C","DM3C",NA,"F","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1235,"79","F","BOS","K. Simon","passes.b.c","DM3C","DM3R",NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1236,"79","D","BOS","Engen","passes.s.c","DM3R","DM3R",NA,"F","SBFC","Kai","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1237,"79","F","BOS","K. Simon","movement","DM3R","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1238,"79","F","BOS","K. Simon","passes.f.c","DM3C","AM3L",NA,"F","SBFC","Rodriguez","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1239,"79","D","BOS","Kallman","passes.f.c","AM3L","A3L",NA,"F","SBFC","Rodriguez","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1240,"79","D","BOS","Pathman","passes.f.c","A3L","A18","corner.crosses","M","SBFC","Gordon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1240,"79",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1241,"79","M","BOS","Zerboni","dispossessed","A18",NA,NA,"D","SBFC","E. Simon","tackles.ball","D18",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1241,"79",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1242,"80","F","BOS","K. Simon","passes.f","A3R",NA,"free.kick","D","SBFC","Skroski","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1243,"80","F","BOS","K. Simon","recoveries","AM3R",NA,NA,"M","SBFC","Lytle","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1244,"80","F","BOS","K. Simon","passes.b.c","AM3R","DM3R",NA,"M","SBFC","Lytle","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1245,"80","D","BOS","Engen","passes.b.c","DM3R","DM3L",NA,"F","SBFC","Rodriguez","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1246,"80","D","BOS","Pathman","passes.f.c","DM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1247,"81","D","BOS","Kallman","passes.b.c","AM3L","AM3L",NA,"M","SBFC","Gordon","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1248,"81","D","BOS","Pathman","passes.b.c","AM3L","AM3C",NA,"F","SBFC","Rodriguez","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1249,"81","D","BOS","Engen","passes.f.c","AM3C","AM3L",NA,"F","SBFC","Kai","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1250,"81","D","BOS","Kallman","movement","AM3L","A3L",NA,"M","SBFC","Gordon","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1251,"81","D","BOS","Kallman","take.on.won","A3L",NA,NA,"M","SBFC","Gordon","dribbled.out.run","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1252,"81","D","BOS","Kallman","passes.b.c","A3L","A3L",NA,"D","SBFC","O'Hara","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1253,"81","M","BOS","Mewis","passes.f.c","A3L","A3L","th","M","SBFC","Killion","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1254,"81","D","BOS","Kallman","passes.f.c","A3L","A18","th","D","SBFC","O'Hara","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1255,"81","M","BOS","Mewis","passes.s","A18",NA,"corner.crosses","M","SBFC","Killion","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1255,"81",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","clearances","D8",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1256,"81","M","SBFC","Gordon","recoveries","D3R",NA,NA,"D","BOS","Kallman","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1257,"81","M","SBFC","Gordon","passes.f.c","D3R","D3C",NA,"D","BOS","Kallman","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1258,"81","F","SBFC","Rodriguez","passes.f.c","D3C","DM3C",NA,"M","BOS","Salem","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1259,"81","M","SBFC","Lytle","passes.f","DM3C",NA,"th","D","BOS","Westphal","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1260,"81","D","BOS","Pathman","recoveries","D3L",NA,NA,"M","SBFC","Gordon","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1261,"81","D","BOS","Pathman","passes.b.c","D3L","D18",NA,"M","SBFC","Gordon","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1262,"81","GK","BOS","Stout","passes.f.c","D18","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1263,"81","D","BOS","Engen","passes.f.c","D3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1264,"81","D","BOS","Westphal","passes.b.c","DM3R","D3R","lay.off","M","SBFC","Lytle","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1265,"81","D","BOS","Engen","passes.s.c","D3R","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1266,"81","D","BOS","Kallman","passes.f.c","DM3C","DM3R",NA,"F","SBFC","Rodriguez","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1267,"82","D","BOS","Engen","passes.f.c","DM3R","A3L","launch","F","SBFC","Kai","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1267,"82",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","O'Hara","clearances","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1268,"82","F","BOS","K. Simon","recoveries","A3L",NA,NA,"M","SBFC","Stanton","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1269,"82","F","BOS","K. Simon","passes.f.c","A3L","A3L",NA,"M","SBFC","Stanton","challenged","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1270,"82","M","BOS","Mewis","passes.b.c","A3L","A3C",NA,"M","SBFC","Gordon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1271,"82","F","BOS","K. Simon","passes.f.c","A3C","A3C",NA,"M","SBFC","Killion","challenged","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1272,"82","M","BOS","Zerboni","dispossessed","A3C",NA,NA,"D","SBFC","E. Simon","dispossessed","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1273,"82","D","BOS","Westphal","recoveries","A3R",NA,NA,"M","SBFC","Lytle","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1274,"82","D","BOS","Westphal","passes.f.c","A3R","A3R",NA,"M","SBFC","Lytle","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1275,"82","F","BOS","McCaffrey","take.on.won","A3R",NA,NA,"D","SBFC","E. Simon","dribbled.out.run","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1276,"82","F","BOS","McCaffrey","passes.s.c","A3R","A3C","corner.crosses","D","SBFC","E. Simon","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1276,"82",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1277,"82","F","BOS","K. Simon","recoveries","A3C",NA,NA,"M","SBFC","Gordon","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1278,"82","F","BOS","K. Simon","passes.f.c","A3C","A3L",NA,"M","SBFC","Gordon","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1279,"82","D","BOS","Pathman","passes.s.c","A3L","A18","corner.crosses","D","SBFC","O'Hara","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1280,"82","F","BOS","K. Simon","aerial.won","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1281,"82","M","BOS","Schoepfer","shots.missed","A18",NA,NA,"D","SBFC","Skroski","pressured","D18",NA,NA,NA,"big.chances.shot.missed",NA,NA,NA,NA,NA
-1281,"82",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.shot.miss","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1282,"83","M","BOS","Zerboni","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1283,"83","M","BOS","Verdoia","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1284,"83","F","SBFC","Rodriguez","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1285,"83","D","SBFC","Grubka","substituion.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1286,"83","GK","SBFC","Stanley","passes.f","D6",NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1287,"83","F","SBFC","Kai","aerial.lost","DM3C",NA,NA,"M","BOS","Verdoia","aerial.won","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1287,"83",NA,NA,NA,NA,NA,NA,NA,"D","BOS","Engen","clearances","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1288,"83","D","SBFC","Skroski","passes.f.c","D3L","D3L","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1289,"83","M","SBFC","Lytle","recoveries","D3L",NA,NA,"M","BOS","Verdoia","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1290,"83","M","SBFC","Lytle","passes.b.c","D3L","D3L",NA,"M","BOS","Verdoia","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1291,"83","M","SBFC","Killion","lost.touch","D3L",NA,NA,"M","BOS","Verdoia","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1292,"83","M","BOS","Verdoia","recoveries","A3R",NA,NA,"M","SBFC","Killion","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1293,"83","M","BOS","Verdoia","passes.f.c","A3R","A3R",NA,"M","SBFC","Killion","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1294,"83","F","BOS","McCaffrey","passes.s","A3R",NA,"corner.crosses","D","SBFC","E. Simon","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1294,"84",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Rampone","clearances","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1295,"84","M","SBFC","Lytle","recoveries","D3L",NA,NA,"M","BOS","Verdoia","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1296,"84","M","SBFC","Lytle","passes.b.c","D3L","D3L",NA,"M","BOS","Verdoia","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1297,"84","M","SBFC","Killion","lost.touch","D3L",NA,NA,"M","BOS","Verdoia","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1298,"84","M","BOS","Verdoia","recoveries","A3R",NA,NA,"M","SBFC","Killion","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1299,"84","M","BOS","Verdoia","passes.s","A3R",NA,"corner.crosses","D","SBFC","E. Simon","blocks","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1300,"84","F","BOS","McCaffrey","recoveries","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1301,"84","F","BOS","McCaffrey","passes.s.c","A3R","A3R","corner.crosses","D","SBFC","E. Simon","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1301,"84",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1301,"84",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Stanton","clearances","D3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1302,"84","D","BOS","Westphal","passes.b.c","A3R","AM3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1303,"84","D","BOS","Engen","passes.b.c","AM3R","AM3C",NA,"F","SBFC","Kai","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1304,"84","D","BOS","Kallman","passes.f.c","AM3C","AM3C",NA,"D","SBFC","Grubka","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1305,"84","M","BOS","Mewis","passes.f.c","AM3C","AM3L",NA,"D","SBFC","Grubka","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1305,"84",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Rampone","clearances","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1306,"84","M","BOS","Mewis","recoveries","AM3L",NA,NA,"D","SBFC","Grubka","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1307,"84","M","BOS","Mewis","passes.f.c","AM3L","A3L",NA,"D","SBFC","Grubka","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1308,"84","D","BOS","Pathman","passes.f.c","A3L","A18","corner.crosses","M","SBFC","Gordon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1309,"84","M","BOS","Schoepfer","shots.stopped.by.gk","A18",NA,"headed","GK","SBFC","Stanley","gk.s.o.g.stop","D6","caught","diving",NA,NA,NA,NA,NA,NA,NA
-1309,"84",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1310,"85","M","BOS","Verdoia","passes.f","AM3R",NA,NA,"M","SBFC","Lytle","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1310,"85",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","interceptions","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1311,"85","D","SBFC","Skroski","passes.f.c","D3C","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1312,"85","M","SBFC","Gordon","passes.b.c","DM3R","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1313,"85","D","SBFC","Rampone","passes.f.c","D3R","AM3R","launch","F","BOS","K. Simon","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1314,"85","D","SBFC","O'Hara","passes.f","AM3R",NA,"th","D","BOS","Kallman","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1315,"85","D","BOS","Engen","recoveries","DM3C",NA,NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1316,"85","D","BOS","Engen","passes.f.c","DM3C","DM3C",NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1317,"85","M","BOS","Salem","passes.f.c","DM3C","AM3C",NA,"D","SBFC","Grubka","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1318,"85","F","BOS","K. Simon","passes.f.c","AM3C","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1319,"85","F","BOS","McCaffrey","passes.s.c","AM3C","A3C","lay.off","D","SBFC","E. Simon","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1320,"85","F","BOS","K. Simon","passes.f","A3C",NA,"th","M","SBFC","Killion","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1321,"85","M","BOS","Schoepfer","offside.calls","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1322,"86","GK","SBFC","Stanley","passes.f","D3R",NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1323,"86","D","SBFC","Grubka","aerial.lost","AM3R",NA,NA,"D","BOS","Kallman","aerial.won","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1324,"86","M","BOS","Mewis","recoveries","DM3L",NA,NA,"M","SBFC","Stanton","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1325,"86","M","BOS","Mewis","passes.b.c","DM3L","DM3C",NA,"M","SBFC","Stanton","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1326,"86","M","BOS","Salem","lost.touch","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1327,"86","F","SBFC","Kai","recoveries","AM3C",NA,NA,"M","BOS","Verdoia","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1328,"86","F","SBFC","Kai","movement","AM3C","AM3R",NA,"M","BOS","Salem","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1329,"86","F","SBFC","Kai","passes.b.c","AM3R","AM3R",NA,"M","BOS","Salem","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1330,"86","D","SBFC","O'Hara","passes.f.c","AM3R","A3R",NA,"M","BOS","Salem","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1331,"86","M","SBFC","Lytle","lost.touch","A3R",NA,NA,"D","BOS","Engen","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1332,"86","D","BOS","Kallman","recoveries","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1333,"86","D","BOS","Kallman","passes.f.c","D3L","DM3C",NA,"M","SBFC","Lytle","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1334,"86","M","BOS","Verdoia","passes.f.c","DM3C","DM3L","th","M","SBFC","Stanton","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1335,"86","M","BOS","Mewis","movement","DM3L","DM3C",NA,"D","SBFC","O'Hara","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1336,"86","M","BOS","Mewis","passes.f.c","DM3C","AM3C",NA,"M","SBFC","Gordon","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1337,"86","F","BOS","McCaffrey","dispossessed","AM3C",NA,NA,"M","SBFC","Killion","dispossessed","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1338,"86","M","SBFC","Killion","recoveries","DM3C",NA,NA,"F","BOS","McCaffrey","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1339,"86","M","SBFC","Killion","passes.f.c","DM3C","DM3C",NA,"F","BOS","McCaffrey","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1340,"86","M","SBFC","Lytle","passes.b.c","DM3C","DM3L",NA,"F","BOS","McCaffrey","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1341,"86","M","SBFC","Killion","passes.f","DM3L",NA,NA,"F","BOS","McCaffrey","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1342,"87","D","SBFC","Grubka","offside.calls","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1343,"87","D","BOS","Engen","passes.f.c","DM3R","DM3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1344,"87","M","BOS","Salem","passes.f.c","DM3C","AM3R",NA,"D","SBFC","Grubka","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1345,"87","M","BOS","Verdoia","passes.b.c","AM3R","DM3R",NA,"M","SBFC","Lytle","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1346,"87","D","BOS","Westphal","passes.f.c","DM3R","AM3R",NA,"M","SBFC","Lytle","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1347,"87","F","BOS","McCaffrey","movement","AM3R","A3R",NA,"D","SBFC","E. Simon","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1348,"87","F","BOS","McCaffrey","dispossessed","A3R",NA,NA,"D","SBFC","E. Simon","dispossessed","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1349,"87","D","SBFC","E. Simon","lost.touch","D3L",NA,NA,"F","BOS","McCaffrey","pressured","A3R",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1350,"87","D","BOS","Westphal","passes.b.c","A3R","A3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1351,"87","M","BOS","Salem","passes.f.c","A3R","A3R","th","F","SBFC","Kai","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1352,"87","F","BOS","K. Simon","passes.f.c","A3R","A3R",NA,"M","SBFC","Killion","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1353,"87","F","BOS","McCaffrey","passes.f.c","A3R","A3R",NA,"M","SBFC","Killion","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1354,"87","F","BOS","K. Simon","passes.s","A3R",NA,"corner.crosses","M","SBFC","Killion","blocks","D3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1355,"87","D","BOS","Westphal","passes.f.c","A3R","A3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1356,"87","F","BOS","K. Simon","passes.f.c","A3R","A3R",NA,"D","SBFC","E. Simon","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1356,"87",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Killion","interceptions","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1357,"87","D","BOS","Westphal","recoveries","A3R",NA,NA,"M","SBFC","Lytle","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1358,"87","D","BOS","Westphal","dispossessed","A3R",NA,NA,"F","SBFC","Kai","dispossessed","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1359,"87","M","BOS","Verdoia","recoveries","A18",NA,NA,"D","SBFC","Skroski","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1360,"87","M","BOS","Verdoia","passes.s","A18","A6","corner.crosses","D","SBFC","Skroski","pressured","D18",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1361,"88","GK","SBFC","Stanley","passes.f","D6",NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1362,"88","D","SBFC","Grubka","aerial.lost","DM3C",NA,NA,"M","BOS","Salem","aerial.won","AM3C",NA,NA,"fouls.won",NA,"fouls.conceded","fc",NA,NA,NA
-1363,"88","D","SBFC","Rampone","passes.f.c","DM3C","AM3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1364,"88","F","SBFC","Kai","aerial.won","AM3L",NA,NA,"D","BOS","Westphal","aerial.lost","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1365,"88","M","SBFC","Killion","recoveries","AM3L",NA,NA,"M","BOS","Verdoia","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1366,"88","M","SBFC","Killion","passes.f.c","AM3L","A3L",NA,"M","BOS","Verdoia","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1367,"88","M","SBFC","Lytle","passes.b.c","A3L","A3L",NA,"D","BOS","Westphal","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1368,"88","F","SBFC","Kai","passes.b.c","A3L","A3C",NA,"M","BOS","Verdoia","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1369,"88","M","SBFC","Killion","passes.f.c","A3C","A3R","switch","M","BOS","Verdoia","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1370,"89","D","SBFC","O'Hara","ball.shield","A3R",NA,NA,"D","BOS","Pathman","challenged","D3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1371,"89","D","SBFC","O'Hara","passes.s","A3R",NA,"throw.in","D","BOS","Kallman","clearances","D3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1372,"89","D","SBFC","O'Hara","passes.f.c","A3R","A3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1373,"89","D","SBFC","Grubka","passes.b.c","A3R","A3R",NA,"D","BOS","Pathman","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1374,"89","D","SBFC","O'Hara","ball.shield","A3R",NA,NA,"M","BOS","Schoepfer","challenged","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1375,"89","D","SBFC","O'Hara","dispossessed","A3R",NA,NA,"M","BOS","Schoepfer","dispossessed","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1376,"89","M","BOS","Schoepfer","lost.touch","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1377,"89","D","SBFC","Grubka","recoveries","A3R",NA,NA,"M","BOS","Schoepfer","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1378,"89","D","SBFC","Grubka","dispossessed","A3R",NA,NA,"D","BOS","Pathman","dispossessed","D3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1379,"89","D","SBFC","O'Hara","passes.f","A3R",NA,"throw.in","D","BOS","Pathman","blocks","D3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1380,"90","D","SBFC","O'Hara","passes.f.c","A3R","A3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1381,"90","F","SBFC","Kai","passes.f","A3R",NA,NA,"D","BOS","Pathman","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1382,"90","D","SBFC","Grubka","offside.calls","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1383,"90","GK","BOS","Stout","passes.f","D3L",NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1384,"90","M","BOS","Salem","aerial.lost","DM3L",NA,NA,"F","SBFC","Kai","aerial.won","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1385,"90","M","SBFC","Lytle","recoveries","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1386,"90","M","SBFC","Lytle","passes.s.c","AM3C","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1387,"90","M","SBFC","Gordon","passes.b.c","AM3R","AM3R",NA,"M","BOS","Salem","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1388,"90","F","SBFC","Kai","passes.b.c","AM3R","DM3R",NA,"M","BOS","Salem","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1389,"90","D","SBFC","Rampone","passes.f","DM3R",NA,"launch","F","BOS","K. Simon","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1390,"90","D","SBFC","O'Hara","offside.calls","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1391,"90+1","D","BOS","Engen","passes.f.c","D3L","A3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1391,"90+1",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1392,"90+1","M","BOS","Mewis","aerial.won","A3L",NA,NA,"M","SBFC","Killion","aerial.lost","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1393,"90+1","M","BOS","Mewis","passes.f",NA,NA,NA,"D","SBFC","Skroski","blocks","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1393,"90+1",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Killion","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1394,"90+1","D","SBFC","Rampone","recoveries","D3R",NA,NA,"M","BOS","Mewis","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1395,"90+1","D","SBFC","Rampone","passes.f.c","D3R","DM3R",NA,"M","BOS","Mewis","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1396,"90+1","M","SBFC","Gordon","passes.f.c","DM3R","DM3R",NA,"M","BOS","Schoepfer","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1397,"90+1","M","SBFC","Killion","passes.f","DM3R",NA,NA,"M","BOS","Salem","blocks","AM3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-1398,"90+1","D","SBFC","O'Hara","passes.f","DM3R",NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1399,"90+1","F","SBFC","Kai","aerial.lost","AM3R",NA,NA,"D","BOS","Kallman","aerial.won","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1400,"90+1","M","BOS","Salem","recoveries","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1401,"90+1","M","BOS","Salem","passes.f","AM3L",NA,NA,"M","SBFC","Gordon","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1401,"90+1",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","O'Hara","interceptions","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1402,"90+1","D","SBFC","O'Hara","passes.f.c","DM3R","DM3C",NA,"F","BOS","K. Simon","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1403,"90+1","M","SBFC","Lytle","passes.f","DM3C",NA,"launch","M","BOS","Verdoia","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1404,"90+1","D","BOS","Kallman","recoveries","D3L",NA,NA,"F","SBFC","Kai","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1405,"90+1","D","BOS","Kallman","passes.b.c","D3L","D18",NA,"F","SBFC","Kai","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1406,"90+1","GK","BOS","Stout","passes.f","D18",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1407,"90+1","M","BOS","Salem","aerial.lost","DM3L",NA,NA,"M","SBFC","Killion","aerial.won","AM3R",NA,NA,"fouls.won",NA,"fouls.conceded","fc",NA,NA,NA
-1408,"90+2","D","BOS","Kallman","passes.f.c","DM3L","A3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1409,"90+2","D","BOS","Engen","passes.f","A3L",NA,"headed","M","SBFC","Killion","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1409,"90+2",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","O'Hara","clearances","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1410,"90+2","M","SBFC","Gordon","recoveries","D3R",NA,NA,"D","BOS","Engen","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1411,"90+2","M","SBFC","Gordon","passes.f.c","D3R","D3R",NA,"D","BOS","Engen","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1412,"90+2","M","SBFC","Killion","movement","D3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1413,"90+2","M","SBFC","Killion","passes.f.c","DM3R","DM3R",NA,"D","BOS","Engen","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1414,"90+2","D","SBFC","Grubka","passes.f","DM3R",NA,"launch","D","BOS","Kallman","pressured","AM3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1415,"90+2","D","BOS","Pathman","passes.b.c","DM3L","D3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1416,"90+2","D","BOS","Kallman","passes.b.c","D3L","D3C",NA,"D","SBFC","Grubka","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1417,"90+2","GK","BOS","Stout","passes.f.c","D3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1418,"90+2","D","BOS","Engen","passes.f.c","DM3C","AM3C","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1419,"90+2","M","BOS","Schoepfer","passes.f","AM3C",NA,"headed","D","SBFC","O'Hara","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1420,"90+2","D","BOS","Pathman","recoveries","A3L",NA,NA,"M","SBFC","Gordon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1421,"90+2","D","BOS","Pathman","passes.f.c","A3L","A3L",NA,"M","SBFC","Gordon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1421,"90+2",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Killion","blocks","D3R",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-1422,"90+3","D","BOS","Pathman","passes.b.c","A3L","A3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1423,"90+3","M","BOS","Verdoia","passes.f.c","A3L","A3L",NA,"M","SBFC","Gordon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1424,"90+3","D","BOS","Pathman","passes.f","A3L",NA,"corner.crosses","D","SBFC","Skroski","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1425,"90+3","M","BOS","Verdoia","aerial.lost","A3L",NA,NA,"F","SBFC","Kai","aerial.won","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1426,"90+3","M","SBFC","Gordon","recoveries","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1427,"90+3","M","SBFC","Gordon","passes.f","D3R",NA,"launch","D","BOS","Pathman","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1428,"90+3","D","BOS","Kallman","recoveries","DM3L",NA,NA,"D","SBFC","Grubka","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1429,"90+3","D","BOS","Kallman","passes.b.c","DM3L","D3L",NA,"D","SBFC","Grubka","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1430,"90+3","GK","BOS","Stout","passes.f.c","D3L","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1431,"90+3","D","BOS","Engen","passes.f.c","DM3C","A3C","launch","M","SBFC","Lytle","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1432,"90+3","M","BOS","Schoepfer","aerial.won","A3C",NA,NA,"D","SBFC","Rampone","aerial.lost","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1433,"90+3","D","SBFC","O'Hara","recoveries","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1434,"90+3","D","SBFC","O'Hara","passes.f","D3R",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1435,"90+3","GK","BOS","Stout","recoveries","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1436,"90+3","GK","BOS","Stout","passes.f.c","D3C","A3C","launch","F","SBFC","Kai","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1436,"90+3",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Stanton","blocks","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1437,"90+3","F","BOS","K. Simon","passes.f.c","A3C","A3C",NA,"M","SBFC","Stanton","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1437,"90+3",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","O'Hara","blocks","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1437,"90+3",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","clearances","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1438,"90+3","M","BOS","Schoepfer","aerial.won","A3C",NA,NA,"M","SBFC","Stanton","aerial.lost","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1439,"90+3","F","BOS","K. Simon","passes.f.c","A3C","A18",NA,"M","SBFC","Killion","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1440,"90+3","M","BOS","Mewis","dispossessed","A18",NA,NA,"D","SBFC","Skroski","dispossessed","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-1440,"90+4",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.loose.balls.won","D18","collected",NA,NA,NA,NA,NA,NA,NA,NA
-1440,"90+4",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1441,"90+4",NA,NA,NA,"end.of.match",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1190,"74","F","SBFC","Kai","aerial.won","A18",NA,NA,"M","BOS","Salem","aerial.lost","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1191,"74","F","SBFC","Kai","shots.missed","A18",NA,"headed","M","BOS","Salem","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1191,"74",NA,NA,NA,NA,NA,NA,NA,"GK","BOS","Stout","gk.shot.miss","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1191,"74",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1192,"75","D","BOS","Kallman","passes.f.c","DM3C","DM3L",NA,"F","SBFC","Rodriguez","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1193,"75","M","BOS","Salem","passes.f","DM3L",NA,"launch","F","SBFC","Rodriguez","pressured","AM3R",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1194,"75","D","SBFC","O'Hara","passes.f.c","DM3R","AM3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1195,"75","M","SBFC","Hayes","aerial.won","AM3R",NA,NA,"D","BOS","Pathman","aerial.lost","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1196,"75","D","BOS","Pathman","recoveries","DM3L",NA,NA,"M","SBFC","Stanton","challenged","AM3R",NA,NA,"fouls.won",NA,"yellow.cards","yellow.cards",NA,NA,NA
+1197,"76","D","BOS","Kallman","passes.f","DM3L",NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1198,"76","M","BOS","Mewis","aerial.lost","A3L",NA,NA,"M","SBFC","Stanton","aerial.won","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1199,"76","M","SBFC","Hayes","recoveries","DM3R",NA,NA,"D","BOS","Pathman","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1200,"76","M","SBFC","Hayes","passes.f.c","DM3R","DM3C",NA,"D","BOS","Pathman","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1201,"76","F","SBFC","Kai","passes.b.c","DM3C","DM3C",NA,"M","BOS","Zerboni","challenged","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1202,"76","M","SBFC","Killion","passes.f.c","DM3C","AM3L",NA,"M","BOS","Zerboni","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1203,"76","D","SBFC","E. Simon","passes.f","AM3L",NA,NA,"D","BOS","Westphal","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1204,"76","D","BOS","Engen","recoveries","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1205,"76","D","BOS","Engen","passes.f","D3R",NA,"launch","M","SBFC","Killion","interceptions","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1206,"76","M","SBFC","Killion","dispossessed",NA,NA,NA,"M","BOS","Mewis","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1207,"76","M","BOS","Mewis","movement","DM3R","AM3C",NA,"M","SBFC","Lytle","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1208,"76","M","BOS","Mewis","passes.f.c","AM3C","AM3L",NA,"M","SBFC","Lytle","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1209,"76","D","BOS","Pathman","passes.b.c","AM3L","AM3L",NA,"M","SBFC","Hayes","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1210,"76","M","BOS","Salem","passes.f","AM3L",NA,"launch","F","SBFC","Rodriguez","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1211,"77","D","SBFC","Rampone","recoveries","D3R",NA,NA,"M","BOS","Schoepfer","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1212,"77","D","SBFC","Rampone","passes.f","D3R",NA,NA,"M","BOS","Schoepfer","pressured","A3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1213,"77","D","BOS","Pathman","passes.f.c","A3L","A3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1214,"77","M","BOS","Salem","passes.b.c","A3L","A3L","lay.off","F","SBFC","Rodriguez","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1215,"77","D","BOS","Pathman","passes.b.c","A3L","AM3L",NA,"F","SBFC","Rodriguez","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1216,"77","D","BOS","Kallman","passes.b.c","AM3L","AM3C",NA,"F","SBFC","Rodriguez","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1217,"77","D","BOS","Engen","passes.b.c","AM3C","AM3L",NA,"F","SBFC","Kai","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1218,"77","D","BOS","Kallman","passes.f.c","AM3L","AM3C",NA,"F","SBFC","Kai","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1219,"77","F","BOS","K. Simon","movement","AM3C","A3C",NA,"F","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1220,"77","F","BOS","K. Simon","passes.f","A3C",NA,NA,"D","SBFC","Rampone","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1221,"77","M","BOS","Schoepfer","recoveries","A18",NA,NA,"D","SBFC","O'Hara","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1222,"77","M","BOS","Schoepfer","shots.stopped.by.gk","A18",NA,NA,"D","SBFC","O'Hara","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1222,"77",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.s.o.g.stop","D6","caught","standing",NA,NA,NA,NA,NA,NA,NA
+1223,"77","GK","SBFC","Stanley","passes.f.c","D18","DM3R","gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1224,"77","M","SBFC","Hayes","lost.touch","DM3R",NA,NA,"M","BOS","Salem","pressured","AM3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1225,"78","M","SBFC","Hayes","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1226,"78","M","SBFC","Gordon","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1227,"78","D","BOS","Pathman","passes.f.c","DM3L","AM3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1228,"78","M","BOS","Mewis","passes.b.c","AM3L","DM3C",NA,"M","SBFC","Stanton","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1229,"78","D","BOS","Engen","passes.f.c","DM3C","DM3L",NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1230,"78","D","BOS","Kallman","passes.s.c","DM3L","AM3R",NA,"F","SBFC","Rodriguez","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1230,"78",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1231,"79","M","BOS","Zerboni","passes.f.c","AM3R","AM3R",NA,"F","SBFC","Rodriguez","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1231,"79",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","E. Simon","clearances","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1232,"79","D","BOS","Westphal","passes.b.c","AM3R","AM3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1233,"79","D","BOS","Engen","passes.b.c","AM3R","DM3C",NA,"F","SBFC","Kai","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1234,"79","D","BOS","Kallman","passes.f.c","DM3C","AM3C",NA,"F","SBFC","Rodriguez","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1235,"79","F","BOS","K. Simon","movement","AM3C","DM3C",NA,"F","SBFC","Rodriguez","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1236,"79","F","BOS","K. Simon","passes.b.c","DM3C","DM3R",NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1237,"79","D","BOS","Engen","passes.s.c","DM3R","DM3R",NA,"F","SBFC","Kai","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1238,"79","F","BOS","K. Simon","movement","DM3R","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1239,"79","F","BOS","K. Simon","passes.f.c","DM3C","AM3L",NA,"F","SBFC","Rodriguez","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1240,"79","D","BOS","Kallman","passes.f.c","AM3L","A3L",NA,"F","SBFC","Rodriguez","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1241,"79","D","BOS","Pathman","passes.f.c","A3L","A18","corner.crosses","M","SBFC","Gordon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1241,"79",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1242,"79","M","BOS","Zerboni","dispossessed","A18",NA,NA,"D","SBFC","E. Simon","tackles.ball","D18",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1242,"79",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1243,"80","F","BOS","K. Simon","passes.f","A3R",NA,"free.kick","D","SBFC","Skroski","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1244,"80","F","BOS","K. Simon","recoveries","AM3R",NA,NA,"M","SBFC","Lytle","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1245,"80","F","BOS","K. Simon","passes.b.c","AM3R","DM3R",NA,"M","SBFC","Lytle","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1246,"80","D","BOS","Engen","passes.b.c","DM3R","DM3L",NA,"F","SBFC","Rodriguez","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1247,"80","D","BOS","Pathman","passes.f.c","DM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1248,"81","D","BOS","Kallman","passes.b.c","AM3L","AM3L",NA,"M","SBFC","Gordon","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1249,"81","D","BOS","Pathman","passes.b.c","AM3L","AM3C",NA,"F","SBFC","Rodriguez","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1250,"81","D","BOS","Engen","passes.f.c","AM3C","AM3L",NA,"F","SBFC","Kai","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1251,"81","D","BOS","Kallman","movement","AM3L","A3L",NA,"M","SBFC","Gordon","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1252,"81","D","BOS","Kallman","take.on.won","A3L",NA,NA,"M","SBFC","Gordon","dribbled.out.run","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1253,"81","D","BOS","Kallman","passes.b.c","A3L","A3L",NA,"D","SBFC","O'Hara","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1254,"81","M","BOS","Mewis","passes.f.c","A3L","A3L","th","M","SBFC","Killion","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1255,"81","D","BOS","Kallman","passes.f.c","A3L","A18","th","D","SBFC","O'Hara","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1256,"81","M","BOS","Mewis","passes.s","A18",NA,"corner.crosses","M","SBFC","Killion","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1256,"81",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","clearances","D8",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1257,"81","M","SBFC","Gordon","recoveries","D3R",NA,NA,"D","BOS","Kallman","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1258,"81","M","SBFC","Gordon","passes.f.c","D3R","D3C",NA,"D","BOS","Kallman","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1259,"81","F","SBFC","Rodriguez","passes.f.c","D3C","DM3C",NA,"M","BOS","Salem","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1260,"81","M","SBFC","Lytle","passes.f","DM3C",NA,"th","D","BOS","Westphal","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1261,"81","D","BOS","Pathman","recoveries","D3L",NA,NA,"M","SBFC","Gordon","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1262,"81","D","BOS","Pathman","passes.b.c","D3L","D18",NA,"M","SBFC","Gordon","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1263,"81","GK","BOS","Stout","passes.f.c","D18","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1264,"81","D","BOS","Engen","passes.f.c","D3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1265,"81","D","BOS","Westphal","passes.b.c","DM3R","D3R","lay.off","M","SBFC","Lytle","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1266,"81","D","BOS","Engen","passes.s.c","D3R","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1267,"81","D","BOS","Kallman","passes.f.c","DM3C","DM3R",NA,"F","SBFC","Rodriguez","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1268,"82","D","BOS","Engen","passes.f.c","DM3R","A3L","launch","F","SBFC","Kai","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1268,"82",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","O'Hara","clearances","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1269,"82","F","BOS","K. Simon","recoveries","A3L",NA,NA,"M","SBFC","Stanton","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1270,"82","F","BOS","K. Simon","passes.f.c","A3L","A3L",NA,"M","SBFC","Stanton","challenged","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1271,"82","M","BOS","Mewis","passes.b.c","A3L","A3C",NA,"M","SBFC","Gordon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1272,"82","F","BOS","K. Simon","passes.f.c","A3C","A3C",NA,"M","SBFC","Killion","challenged","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1273,"82","M","BOS","Zerboni","dispossessed","A3C",NA,NA,"D","SBFC","E. Simon","dispossessed","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1274,"82","D","BOS","Westphal","recoveries","A3R",NA,NA,"M","SBFC","Lytle","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1275,"82","D","BOS","Westphal","passes.f.c","A3R","A3R",NA,"M","SBFC","Lytle","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1276,"82","F","BOS","McCaffrey","take.on.won","A3R",NA,NA,"D","SBFC","E. Simon","dribbled.out.run","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1277,"82","F","BOS","McCaffrey","passes.s.c","A3R","A3C","corner.crosses","D","SBFC","E. Simon","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1277,"82",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1278,"82","F","BOS","K. Simon","recoveries","A3C",NA,NA,"M","SBFC","Gordon","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1279,"82","F","BOS","K. Simon","passes.f.c","A3C","A3L",NA,"M","SBFC","Gordon","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1280,"82","D","BOS","Pathman","passes.s.c","A3L","A18","corner.crosses","D","SBFC","O'Hara","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1281,"82","F","BOS","K. Simon","aerial.won","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1282,"82","M","BOS","Schoepfer","shots.missed","A18",NA,NA,"D","SBFC","Skroski","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1282,"82",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.shot.miss","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1283,"83","M","BOS","Zerboni","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1284,"83","M","BOS","Verdoia","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1285,"83","F","SBFC","Rodriguez","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1286,"83","D","SBFC","Grubka","substituion.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1287,"83","GK","SBFC","Stanley","passes.f","D6",NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1288,"83","F","SBFC","Kai","aerial.lost","DM3C",NA,NA,"M","BOS","Verdoia","aerial.won","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1288,"83",NA,NA,NA,NA,NA,NA,NA,"D","BOS","Engen","clearances","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1289,"83","D","SBFC","Skroski","passes.f.c","D3L","D3L","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1290,"83","M","SBFC","Lytle","recoveries","D3L",NA,NA,"M","BOS","Verdoia","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1291,"83","M","SBFC","Lytle","passes.b.c","D3L","D3L",NA,"M","BOS","Verdoia","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1292,"83","M","SBFC","Killion","lost.touch","D3L",NA,NA,"M","BOS","Verdoia","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1293,"83","M","BOS","Verdoia","recoveries","A3R",NA,NA,"M","SBFC","Killion","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1294,"83","M","BOS","Verdoia","passes.f.c","A3R","A3R",NA,"M","SBFC","Killion","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1295,"83","F","BOS","McCaffrey","passes.s","A3R",NA,"corner.crosses","D","SBFC","E. Simon","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1295,"84",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Rampone","clearances","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1296,"84","M","SBFC","Lytle","recoveries","D3L",NA,NA,"M","BOS","Verdoia","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1297,"84","M","SBFC","Lytle","passes.b.c","D3L","D3L",NA,"M","BOS","Verdoia","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1298,"84","M","SBFC","Killion","lost.touch","D3L",NA,NA,"M","BOS","Verdoia","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1299,"84","M","BOS","Verdoia","recoveries","A3R",NA,NA,"M","SBFC","Killion","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1300,"84","M","BOS","Verdoia","passes.s","A3R",NA,"corner.crosses","D","SBFC","E. Simon","blocks","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1301,"84","F","BOS","McCaffrey","recoveries","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1302,"84","F","BOS","McCaffrey","passes.s.c","A3R","A3R","corner.crosses","D","SBFC","E. Simon","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1302,"84",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1302,"84",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Stanton","clearances","D3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1303,"84","D","BOS","Westphal","passes.b.c","A3R","AM3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1304,"84","D","BOS","Engen","passes.b.c","AM3R","AM3C",NA,"F","SBFC","Kai","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1305,"84","D","BOS","Kallman","passes.f.c","AM3C","AM3C",NA,"D","SBFC","Grubka","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1306,"84","M","BOS","Mewis","passes.f.c","AM3C","AM3L",NA,"D","SBFC","Grubka","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1306,"84",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Rampone","clearances","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1307,"84","M","BOS","Mewis","recoveries","AM3L",NA,NA,"D","SBFC","Grubka","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1308,"84","M","BOS","Mewis","passes.f.c","AM3L","A3L",NA,"D","SBFC","Grubka","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1309,"84","D","BOS","Pathman","passes.f.c","A3L","A18","corner.crosses","M","SBFC","Gordon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1310,"84","M","BOS","Schoepfer","shots.stopped.by.gk","A18",NA,"headed","GK","SBFC","Stanley","gk.s.o.g.stop","D6","caught","diving",NA,NA,NA,NA,NA,NA,NA
+1310,"84",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1311,"85","M","BOS","Verdoia","passes.f","AM3R",NA,NA,"M","SBFC","Lytle","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1311,"85",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","interceptions","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1312,"85","D","SBFC","Skroski","passes.f.c","D3C","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1313,"85","M","SBFC","Gordon","passes.b.c","DM3R","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1314,"85","D","SBFC","Rampone","passes.f.c","D3R","AM3R","launch","F","BOS","K. Simon","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1315,"85","D","SBFC","O'Hara","passes.f","AM3R",NA,"th","D","BOS","Kallman","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1316,"85","D","BOS","Engen","recoveries","DM3C",NA,NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1317,"85","D","BOS","Engen","passes.f.c","DM3C","DM3C",NA,"F","SBFC","Kai","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1318,"85","M","BOS","Salem","passes.f.c","DM3C","AM3C",NA,"D","SBFC","Grubka","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1319,"85","F","BOS","K. Simon","passes.f.c","AM3C","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1320,"85","F","BOS","McCaffrey","passes.s.c","AM3C","A3C","lay.off","D","SBFC","E. Simon","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1321,"85","F","BOS","K. Simon","passes.f","A3C",NA,"th","M","SBFC","Killion","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1322,"85","M","BOS","Schoepfer","offside.calls","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1323,"86","GK","SBFC","Stanley","passes.f","D3R",NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1323,"86",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1324,"86","D","SBFC","Grubka","aerial.lost","AM3R",NA,NA,"D","BOS","Kallman","aerial.won","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1325,"86","M","BOS","Mewis","recoveries","DM3L",NA,NA,"M","SBFC","Stanton","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1326,"86","M","BOS","Mewis","passes.b.c","DM3L","DM3C",NA,"M","SBFC","Stanton","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1327,"86","M","BOS","Salem","lost.touch","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1328,"86","F","SBFC","Kai","recoveries","AM3C",NA,NA,"M","BOS","Verdoia","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1329,"86","F","SBFC","Kai","movement","AM3C","AM3R",NA,"M","BOS","Salem","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1330,"86","F","SBFC","Kai","passes.b.c","AM3R","AM3R",NA,"M","BOS","Salem","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1331,"86","D","SBFC","O'Hara","passes.f.c","AM3R","A3R",NA,"M","BOS","Salem","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1332,"86","M","SBFC","Lytle","lost.touch","A3R",NA,NA,"D","BOS","Engen","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1333,"86","D","BOS","Kallman","recoveries","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1334,"86","D","BOS","Kallman","passes.f.c","D3L","DM3C",NA,"M","SBFC","Lytle","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1335,"86","M","BOS","Verdoia","passes.f.c","DM3C","DM3L","th","M","SBFC","Stanton","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1336,"86","M","BOS","Mewis","movement","DM3L","DM3C",NA,"D","SBFC","O'Hara","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1337,"86","M","BOS","Mewis","passes.f.c","DM3C","AM3C",NA,"M","SBFC","Gordon","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1338,"86","F","BOS","McCaffrey","dispossessed","AM3C",NA,NA,"M","SBFC","Killion","dispossessed","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1339,"86","M","SBFC","Killion","recoveries","DM3C",NA,NA,"F","BOS","McCaffrey","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1340,"86","M","SBFC","Killion","passes.f.c","DM3C","DM3C",NA,"F","BOS","McCaffrey","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1341,"86","M","SBFC","Lytle","passes.b.c","DM3C","DM3L",NA,"F","BOS","McCaffrey","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1342,"86","M","SBFC","Killion","passes.f","DM3L",NA,NA,"F","BOS","McCaffrey","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1343,"87","D","SBFC","Grubka","offside.calls","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1344,"87","D","BOS","Engen","passes.f.c","DM3R","DM3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1345,"87","M","BOS","Salem","passes.f.c","DM3C","AM3R",NA,"D","SBFC","Grubka","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1346,"87","M","BOS","Verdoia","passes.b.c","AM3R","DM3R",NA,"M","SBFC","Lytle","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1347,"87","D","BOS","Westphal","passes.f.c","DM3R","AM3R",NA,"M","SBFC","Lytle","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1348,"87","F","BOS","McCaffrey","movement","AM3R","A3R",NA,"D","SBFC","E. Simon","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1349,"87","F","BOS","McCaffrey","dispossessed","A3R",NA,NA,"D","SBFC","E. Simon","dispossessed","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1350,"87","D","SBFC","E. Simon","lost.touch","D3L",NA,NA,"F","BOS","McCaffrey","pressured","A3R",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1351,"87","D","BOS","Westphal","passes.b.c","A3R","A3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1352,"87","M","BOS","Salem","passes.f.c","A3R","A3R","th","F","SBFC","Kai","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1353,"87","F","BOS","K. Simon","passes.f.c","A3R","A3R",NA,"M","SBFC","Killion","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1354,"87","F","BOS","McCaffrey","passes.f.c","A3R","A3R",NA,"M","SBFC","Killion","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1355,"87","F","BOS","K. Simon","passes.s","A3R",NA,"corner.crosses","M","SBFC","Killion","blocks","D3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1356,"87","D","BOS","Westphal","passes.f.c","A3R","A3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1357,"87","F","BOS","K. Simon","passes.f.c","A3R","A3R",NA,"D","SBFC","E. Simon","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1357,"87",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Killion","interceptions","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1358,"87","D","BOS","Westphal","recoveries","A3R",NA,NA,"M","SBFC","Lytle","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1359,"87","D","BOS","Westphal","dispossessed","A3R",NA,NA,"F","SBFC","Kai","dispossessed","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1360,"87","M","BOS","Verdoia","recoveries","A18",NA,NA,"D","SBFC","Skroski","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1361,"87","M","BOS","Verdoia","passes.s","A18","A6","corner.crosses","D","SBFC","Skroski","pressured","D18",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1362,"88","GK","SBFC","Stanley","passes.f","D6",NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1363,"88","D","SBFC","Grubka","aerial.lost","DM3C",NA,NA,"M","BOS","Salem","aerial.won","AM3C",NA,NA,"fouls.won",NA,"fouls.conceded","fc",NA,NA,NA
+1364,"88","D","SBFC","Rampone","passes.f.c","DM3C","AM3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1365,"88","F","SBFC","Kai","aerial.won","AM3L",NA,NA,"D","BOS","Westphal","aerial.lost","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1366,"88","M","SBFC","Killion","recoveries","AM3L",NA,NA,"M","BOS","Verdoia","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1367,"88","M","SBFC","Killion","passes.f.c","AM3L","A3L",NA,"M","BOS","Verdoia","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1368,"88","M","SBFC","Lytle","passes.b.c","A3L","A3L",NA,"D","BOS","Westphal","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1369,"88","F","SBFC","Kai","passes.b.c","A3L","A3C",NA,"M","BOS","Verdoia","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1370,"88","M","SBFC","Killion","passes.f.c","A3C","A3R","switch","M","BOS","Verdoia","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1371,"89","D","SBFC","O'Hara","ball.shield","A3R",NA,NA,"D","BOS","Pathman","challenged","D3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1372,"89","D","SBFC","O'Hara","passes.s","A3R",NA,"throw.in","D","BOS","Kallman","clearances","D3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1373,"89","D","SBFC","O'Hara","passes.f.c","A3R","A3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1374,"89","D","SBFC","Grubka","passes.b.c","A3R","A3R",NA,"D","BOS","Pathman","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1375,"89","D","SBFC","O'Hara","ball.shield","A3R",NA,NA,"M","BOS","Schoepfer","challenged","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1376,"89","D","SBFC","O'Hara","dispossessed","A3R",NA,NA,"M","BOS","Schoepfer","dispossessed","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1377,"89","M","BOS","Schoepfer","lost.touch","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1378,"89","D","SBFC","Grubka","recoveries","A3R",NA,NA,"M","BOS","Schoepfer","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1379,"89","D","SBFC","Grubka","dispossessed","A3R",NA,NA,"D","BOS","Pathman","dispossessed","D3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1380,"89","D","SBFC","O'Hara","passes.f","A3R",NA,"throw.in","D","BOS","Pathman","blocks","D3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1381,"90","D","SBFC","O'Hara","passes.f.c","A3R","A3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1382,"90","F","SBFC","Kai","passes.f","A3R",NA,NA,"D","BOS","Pathman","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1383,"90","D","SBFC","Grubka","offside.calls","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1384,"90","GK","BOS","Stout","passes.f","D3L",NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1385,"90","M","BOS","Salem","aerial.lost","DM3L",NA,NA,"F","SBFC","Kai","aerial.won","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1386,"90","M","SBFC","Lytle","recoveries","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1387,"90","M","SBFC","Lytle","passes.s.c","AM3C","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1388,"90","M","SBFC","Gordon","passes.b.c","AM3R","AM3R",NA,"M","BOS","Salem","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1389,"90","F","SBFC","Kai","passes.b.c","AM3R","DM3R",NA,"M","BOS","Salem","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1390,"90","D","SBFC","Rampone","passes.f","DM3R",NA,"launch","F","BOS","K. Simon","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1391,"90","D","SBFC","O'Hara","offside.calls","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1392,"90+1","D","BOS","Engen","passes.f.c","D3L","A3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1392,"90+1",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1393,"90+1","M","BOS","Mewis","aerial.won","A3L",NA,NA,"M","SBFC","Killion","aerial.lost","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1394,"90+1","M","BOS","Mewis","passes.f",NA,NA,NA,"D","SBFC","Skroski","blocks","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1394,"90+1",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Killion","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1395,"90+1","D","SBFC","Rampone","recoveries","D3R",NA,NA,"M","BOS","Mewis","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1396,"90+1","D","SBFC","Rampone","passes.f.c","D3R","DM3R",NA,"M","BOS","Mewis","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1397,"90+1","M","SBFC","Gordon","passes.f.c","DM3R","DM3R",NA,"M","BOS","Schoepfer","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1398,"90+1","M","SBFC","Killion","passes.f","DM3R",NA,NA,"M","BOS","Salem","blocks","AM3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
+1399,"90+1","D","SBFC","O'Hara","passes.f","DM3R",NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1400,"90+1","F","SBFC","Kai","aerial.lost","AM3R",NA,NA,"D","BOS","Kallman","aerial.won","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1401,"90+1","M","BOS","Salem","recoveries","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1402,"90+1","M","BOS","Salem","passes.f","AM3L",NA,NA,"M","SBFC","Gordon","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1402,"90+1",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","O'Hara","interceptions","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1403,"90+1","D","SBFC","O'Hara","passes.f.c","DM3R","DM3C",NA,"F","BOS","K. Simon","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1404,"90+1","M","SBFC","Lytle","passes.f","DM3C",NA,"launch","M","BOS","Verdoia","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1405,"90+1","D","BOS","Kallman","recoveries","D3L",NA,NA,"F","SBFC","Kai","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1406,"90+1","D","BOS","Kallman","passes.b.c","D3L","D18",NA,"F","SBFC","Kai","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1407,"90+1","GK","BOS","Stout","passes.f","D18",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1408,"90+1","M","BOS","Salem","aerial.lost","DM3L",NA,NA,"M","SBFC","Killion","aerial.won","AM3R",NA,NA,"fouls.won",NA,"fouls.conceded","fc",NA,NA,NA
+1409,"90+2","D","BOS","Kallman","passes.f.c","DM3L","A3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1410,"90+2","D","BOS","Engen","passes.f","A3L",NA,"headed","M","SBFC","Killion","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1410,"90+2",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","O'Hara","clearances","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1411,"90+2","M","SBFC","Gordon","recoveries","D3R",NA,NA,"D","BOS","Engen","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1412,"90+2","M","SBFC","Gordon","passes.f.c","D3R","D3R",NA,"D","BOS","Engen","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1413,"90+2","M","SBFC","Killion","movement","D3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1414,"90+2","M","SBFC","Killion","passes.f.c","DM3R","DM3R",NA,"D","BOS","Engen","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1415,"90+2","D","SBFC","Grubka","passes.f","DM3R",NA,"launch","D","BOS","Kallman","pressured","AM3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1416,"90+2","D","BOS","Pathman","passes.b.c","DM3L","D3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1417,"90+2","D","BOS","Kallman","passes.b.c","D3L","D3C",NA,"D","SBFC","Grubka","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1418,"90+2","GK","BOS","Stout","passes.f.c","D3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1419,"90+2","D","BOS","Engen","passes.f.c","DM3C","AM3C","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1420,"90+2","M","BOS","Schoepfer","passes.f","AM3C",NA,"headed","D","SBFC","O'Hara","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1421,"90+2","D","BOS","Pathman","recoveries","A3L",NA,NA,"M","SBFC","Gordon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1422,"90+2","D","BOS","Pathman","passes.f.c","A3L","A3L",NA,"M","SBFC","Gordon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1422,"90+2",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Killion","blocks","D3R",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
+1423,"90+3","D","BOS","Pathman","passes.b.c","A3L","A3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1424,"90+3","M","BOS","Verdoia","passes.f.c","A3L","A3L",NA,"M","SBFC","Gordon","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1425,"90+3","D","BOS","Pathman","passes.f","A3L",NA,"corner.crosses","D","SBFC","Skroski","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1426,"90+3","M","BOS","Verdoia","aerial.lost","A3L",NA,NA,"F","SBFC","Kai","aerial.won","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1427,"90+3","M","SBFC","Gordon","recoveries","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1428,"90+3","M","SBFC","Gordon","passes.f","D3R",NA,"launch","D","BOS","Pathman","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1429,"90+3","D","BOS","Kallman","recoveries","DM3L",NA,NA,"D","SBFC","Grubka","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1430,"90+3","D","BOS","Kallman","passes.b.c","DM3L","D3L",NA,"D","SBFC","Grubka","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1431,"90+3","GK","BOS","Stout","passes.f.c","D3L","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1432,"90+3","D","BOS","Engen","passes.f.c","DM3C","A3C","launch","M","SBFC","Lytle","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1433,"90+3","M","BOS","Schoepfer","aerial.won","A3C",NA,NA,"D","SBFC","Rampone","aerial.lost","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1434,"90+3","D","SBFC","O'Hara","recoveries","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1435,"90+3","D","SBFC","O'Hara","passes.f","D3R",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1436,"90+3","GK","BOS","Stout","recoveries","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1437,"90+3","GK","BOS","Stout","passes.f.c","D3C","A3C","launch","F","SBFC","Kai","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1437,"90+3",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Stanton","blocks","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1438,"90+3","F","BOS","K. Simon","passes.f.c","A3C","A3C",NA,"M","SBFC","Stanton","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1438,"90+3",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","O'Hara","blocks","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1438,"90+3",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","clearances","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1439,"90+3","M","BOS","Schoepfer","aerial.won","A3C",NA,NA,"M","SBFC","Stanton","aerial.lost","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1440,"90+3","F","BOS","K. Simon","passes.f.c","A3C","A18",NA,"M","SBFC","Killion","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1441,"90+3","M","BOS","Mewis","dispossessed","A18",NA,NA,"D","SBFC","Skroski","dispossessed","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+1441,"90+4",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.loose.balls.won","D18","collected",NA,NA,NA,NA,NA,NA,NA,NA
+1441,"90+4",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1442,"90+4",NA,NA,NA,"end.of.match",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
