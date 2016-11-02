@@ -6,14 +6,19 @@ source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-
 # 1. Attempted pases (attempted-passes)
 # 2. Completed passes (completed-passes)
 # 3. Passing completion percentage (pass-comp-pct)
-# 4. Interceptions (interceptions)
-# 5. Take ons won (take-ons-won)
-# 6. Take ons lost (take-ons-lost)
-# 7. Aerial duels won (aerial_duels-won)
-# 8. Aerial duels lost (aerial-duels-lost)
-# 9. Tackles (tackles)
-# 10. Pressure/Challenges (pressure)
-# 11. Recoveries (recoveries)
+# 4. Take ons won (take-ons-won)
+# 5. Take ons lost (take-ons-lost)
+# 6. Aerial duels won (aerial_duels-won)
+# 7. Aerial duels lost (aerial-duels-lost)
+# 8. Tackles (tackles)
+# 9. Dispossessions of Opp (opp-dispossess)
+# 10. Opp Poss Disrupted (opp-poss-disrupted)
+# 11. Pressure/Challenges (pressure)
+# 12. Recoveries (recoveries)
+# 13. Interceptions (interceptions)
+# 14. Blocks (blocks)
+# 15. Clearances (clearances)
+# 16. Opp Ball Disrupted (opp-ball-disrupted)
 
 #Set the stat you want as "match_stat."
 #"match_stat" MUST be written exactly as in the list above in
@@ -28,22 +33,26 @@ createLocationStatsTable <- function(match_stat, match_df){
     stats_tab <- merge(players, getPassAtt(match_df), by="Player", all=TRUE)
     stats_tab <- merge(stats_tab, getPassComp(match_df), by="Player", all=TRUE)
     stats_tab <- merge(stats_tab, getPassPct(match_df), by="Player", all=TRUE)
-    stats_tab <- merge(stats_tab, getInterceptions(match_df), by="Player", all=TRUE)
     stats_tab <- merge(stats_tab, getTakeOnsWon(match_df), by="Player", all=TRUE)
     stats_tab <- merge(stats_tab, getTakeOnsLost(match_df), by="Player", all=TRUE)
     stats_tab <- merge(stats_tab, getAerialsWon(match_df), by="Player", all=TRUE)
     stats_tab <- merge(stats_tab, getAerialsLost(match_df), by="Player", all=TRUE)
     stats_tab <- merge(stats_tab, getTackles(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getOppDispossessed(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getOppPossDisrupted(match_df), by="Player", all=TRUE)
     stats_tab <- merge(stats_tab, getPressures(match_df), by="Player", all=TRUE)
     stats_tab <- merge(stats_tab, getRecoveries(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getInterceptions(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getBlocks(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getClearances(match_df), by="Player", all=TRUE)
+    stats_tab <- merge(stats_tab, getOppBallDisrupted(match_df), by="Player", all=TRUE)
+    
   } else if (match_stat == "attempted-passes") {
     stats_tab <- merge(players, getPassAtt(match_df), by="Player", all=TRUE)
   } else if (match_stat == "completed-passes") {
     stats_tab <- merge(players, getPassComp(match_df), by="Player", all=TRUE)
   } else if (match_stat == "pass-comp-pct") {
     stats_tab <- merge(players, getPassPct(match_df), by="Player", all=TRUE)
-  } else if (match_stat == "interceptions") {
-    stats_tab <- merge(players, getInterceptions(match_df), by="Player", all=TRUE)
   } else if (match_stat == "take-ons-won") {
     stats_tab <- merge(players, getTakeOnsWon(match_df), by="Player", all=TRUE)
   } else if (match_stat == "take-ons-lost") {
@@ -54,11 +63,21 @@ createLocationStatsTable <- function(match_stat, match_df){
     stats_tab <- merge(players, getAerialsLost(match_df), by="Player", all=TRUE)
   } else if (match_stat == "tackles") {
     stats_tab <- merge(players, getTackles(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "opp-dispossess") {
+    stats_tab <- merge(players, getOppDispossessed(match_df), by="Player", all=TRUE)
   } else if (match_stat == "pressure") {
     stats_tab <- merge(players, getPressures(match_df), by="Player", all=TRUE)
   } else if (match_stat == "recoveries") {
-    stats_tab <- merge(players, getRecoveries(match_df), by="Player", all=TRUE)
-  }
+    stats_tab <- merge(players, getRecoveries(match_df), by="Player", all=TRUE) 
+  } else if (match_stat == "interceptions") {
+    stats_tab <- merge(players, getInterceptions(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "blocks") {
+    stats_tab <- merge(players, getBlocks(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "clearances") {
+    stats_tab <- merge(players, getClearances(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "opp-ball-disrupted") {
+    stats_tab <- merge(players, getOppBallDisrupted(match_df), by="Player", all=TRUE)
+  } 
   stats_tab[is.na(stats_tab)] <- 0
   names(stats_tab) <- gsub(" ",".", names(stats_tab))
   stats_tab
@@ -160,7 +179,7 @@ getPlayers <- function(match_df) {
   players
 }
 
-##CREATE COLUMNS FOR ATTEMPTED OPEN PLAY PASSES BY ZONE--------
+##1. CREATE COLUMNS FOR ATTEMPTED OPEN PLAY PASSES BY ZONE--------
 getPassAtt <- function(match_df){
   #Passing stats, without dead ball scenarios (GKs, GK throws, GK drop kicks,FKs, CKs, throw ins)
   t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type", ogdf = match_df, invert = TRUE,
@@ -194,7 +213,7 @@ getPassAtt <- function(match_df){
   #rm(t, tab, zones, passAttLocation)
 }
 
-##CREATE COLUMNS FOR COMPLETED OPEN PLAY PASSES BY ZONE--------
+##2. CREATE COLUMNS FOR COMPLETED OPEN PLAY PASSES BY ZONE--------
 getPassComp <- function(match_df) {
   #Passing stats, without dead ball scenarios (GKs, GK throws, GK drop kicks,FKs, CKs, throw ins)
   t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type", ogdf = match_df, invert = TRUE,
@@ -228,7 +247,7 @@ getPassComp <- function(match_df) {
   passCompLocation
 }
 
-##CREATE COLUMNS FOR OPEN PLAY PASSING COMP PCT BY ZONE--------
+##3. CREATE COLUMNS FOR OPEN PLAY PASSING COMP PCT BY ZONE--------
 getPassPct <- function(match_df) {
   #Passing stats, without dead ball scenarios (GKs, GK throws, GK drop kicks,FKs, CKs, throw ins)
   t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type", ogdf = match_df, invert = TRUE,
@@ -261,40 +280,8 @@ getPassPct <- function(match_df) {
   }
   passPctLocation
 }
-  
 
-##CREATE COLUMNS FOR INTERCEPTIONS BY ZONE--------
-getInterceptions <- function(match_df) {
-  t <- createDataFrame(c("interceptions"), "def.action", match_df)
-  t <- t[,c("event","time", "def.position","def.team","def.player","def.action","def.location", "def.player.disciplinary","def.notes")]
-  names(t) <- c("event", "time", "position","team", "poss.player", "player.event", "location", 
-                "def.player.disciplinary", "def.notes")
-  t <- t[t[,"player.event"]=="interceptions" & !is.na(t[,"player.event"]),]
-  t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
-                                                 "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
-                                                 "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
-                                                 "A18"="A18", "A6"="A6"),
-                                    ogdf = t,ndf = t,
-                                    pattern_locations = c("location","location","location","location",
-                                                          "location","location","location", "location",
-                                                          "location","location","location","location",
-                                                          "location","location","location","location"))
-  ##Creates blank table with columns for direction distribution
-  zones <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML",
-             "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
-  for(i in zones) {
-    tab <- createTable(c("interceptions"), "player.event", t[t[,i] == "yes",])
-    names(tab) <- c("Player", paste0(i,".Int"))
-    if(exists("intLocation")){
-      intLocation <- merge(intLocation, tab, by="Player", all=TRUE)
-    } else {
-      intLocation <- tab
-    }
-  }
-  intLocation
-}
-
-##CREATE COLUMNS FOR TAKE ONS WON BY ZONE--------
+##4. CREATE COLUMNS FOR TAKE ONS WON BY ZONE--------
 getTakeOnsWon <- function(match_df) {
   t <- createCleanDataFrame(c("take.on.won"),"poss.action", match_df)
   t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
@@ -320,7 +307,7 @@ getTakeOnsWon <- function(match_df) {
   takeOnWonLocation
 }
 
-##CREATE COLUMNS FOR TAKE ONS LOST BY ZONE--------
+##5. CREATE COLUMNS FOR TAKE ONS LOST BY ZONE--------
 getTakeOnsLost <- function(match_df) {
   t <- createCleanDataFrame(c("take.on.lost"),"poss.action", match_df)
   t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
@@ -346,7 +333,7 @@ getTakeOnsLost <- function(match_df) {
   takeOnLostLocation
 }
 
-##CREATE COLUMNS FOR AERIAL DUELS WON BY ZONE--------
+##6. CREATE COLUMNS FOR AERIAL DUELS WON BY ZONE--------
 getAerialsWon <- function(match_df) {
   t <- createDataFrame(c("aerial.won", "aerial.lost"), "poss.action", match_df)
   t2 <- t[,c("event", "time", "poss.position", "poss.team", "poss.player", "poss.action", "poss.location")]
@@ -378,7 +365,7 @@ getAerialsWon <- function(match_df) {
   aerialWonLocation
 }
 
-##CREATE COLUMNS FOR AERIAL DUELS LOST BY ZONE--------
+##7. CREATE COLUMNS FOR AERIAL DUELS LOST BY ZONE--------
 getAerialsLost <- function(match_df) {
   t <- createDataFrame(c("aerial.won", "aerial.lost"), "poss.action", match_df)
   t2 <- t[,c("event", "time", "poss.position", "poss.team", "poss.player", "poss.action", "poss.location")]
@@ -410,7 +397,7 @@ getAerialsLost <- function(match_df) {
   aerialLostLocation
 }
 
-##CREATE COLUMNS FOR TACKLES BY ZONE--------
+##8. CREATE COLUMNS FOR TACKLES BY ZONE--------
 getTackles <- function(match_df) {
   t <- createDataFrame(c("tackles.ball.away", "tackles.ball.won", "tackles.ball"), "def.action", match_df)
   t <- t[,c("event","time","def.position","def.team","def.player","def.action","def.location","def.player.disciplinary","def.notes")]
@@ -443,7 +430,71 @@ getTackles <- function(match_df) {
   tackleLocation
 }
 
-##CREATE COLUMNS FOR PRESSURE BY ZONE--------
+##9. CREATE COLUMNS FOR OPP DISSPOSSESSED BY ZONE--------
+getOppDispossessed <- function(match_df) {
+  t <- createDataFrame(c("dispossessed"), "def.action", match_df)
+  t <- t[,c("event","time","def.position","def.team","def.player","def.action","def.location","def.player.disciplinary","def.notes")]
+  names(t) <- c("event", "time", "position" ,"team", "poss.player", "player.event", "location", 
+                "def.player.disciplinary", "def.notes")
+  t <- t[grepl("dispossessed", t[,"player.event"]) & !is.na(t[,"player.event"]),]
+  t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
+                                                 "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
+                                                 "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
+                                                 "A18"="A18", "A6"="A6"),
+                                    ogdf = t,ndf = t,
+                                    pattern_locations = c("location","location","location","location",
+                                                          "location","location","location", "location",
+                                                          "location","location","location","location",
+                                                          "location","location","location","location"))
+  ##Creates blank table with columns for direction distribution
+  zones <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML",
+             "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
+  for(i in zones) {
+    tab <- createTable(c("dispossessed"), "player.event", t[t[,i] == "yes",])
+    names(tab) <- c("Player", paste0(i,".OppDispossessed"))
+    if(exists("oppDispossessedLocation")){
+      oppDispossessedLocation <- merge(oppDispossessedLocation, tab, by="Player", all=TRUE)
+    } else {
+      oppDispossessedLocation <- tab
+    }
+  }
+  oppDispossessedLocation
+}
+
+##10. CREATE COLUMNS FOR OPP POSS DISRUPTED BY ZONE--------
+getOppPossDisrupted <- function(match_df) {
+  t <- createDataFrame(c("tackles.ball.away", "tackles.ball.won", "tackles.ball", "dispossessed"), "def.action", match_df)
+  t <- t[,c("event","time", "def.position","def.team","def.player","def.action","def.location", "def.player.disciplinary","def.notes")]
+  names(t) <- c("event", "time", "position","team", "poss.player", "player.event", "location", 
+                "def.player.disciplinary", "def.notes")
+  t <- t[grepl("tackles.ball.away|tackles.ball.won|tackles.ball|dispossessed",t[,"player.event"]) & !is.na(t[,"player.event"]),]
+  t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
+                                                 "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
+                                                 "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
+                                                 "A18"="A18", "A6"="A6"),
+                                    ogdf = t,ndf = t,
+                                    pattern_locations = c("location","location","location","location",
+                                                          "location","location","location", "location",
+                                                          "location","location","location","location",
+                                                          "location","location","location","location"))
+  ##Creates blank table with columns for direction distribution
+  zones <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML",
+             "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
+  for(i in zones) {
+    tab <- createTable(c("tackles.ball.away", "tackles.ball.won", "tackles.ball", "dispossessed"), "player.event", t[t[,i] == "yes",])
+    tab$oppPossDisrupted <- rowSums(tab[,c("tackles.ball.away", "tackles.ball.won", "tackles.ball", "dispossessed")])
+    tab <- tab[,!(names(tab) %in% c("tackles.ball.away", "tackles.ball.won", "tackles.ball", "dispossessed"))]
+    names(tab) <- c("Player", paste0(i,".oppPossDisrupted"))
+    if(exists("oppPossDisruptLocation")){
+      oppPossDisruptLocation <- merge(oppPossDisruptLocation, tab, by="Player", all=TRUE)
+    } else {
+      oppPossDisruptLocation <- tab
+    }
+  }
+  oppPossDisruptLocation
+}
+
+##11. CREATE COLUMNS FOR PRESSURE BY ZONE--------
 getPressures <- function(match_df) {
   t <- createDataFrame(c("pressured", "challenged"), "def.action", match_df)
   t <- t[,c("event","time","def.position","def.team","def.player","def.action","def.location","def.player.disciplinary","def.notes")]
@@ -476,7 +527,7 @@ getPressures <- function(match_df) {
   pressureLocation
 }
 
-##CREATE COLUMNS FOR RECOVERIES BY ZONE--------
+##12. CREATE COLUMNS FOR RECOVERIES BY ZONE--------
 getRecoveries <- function(match_df) {
   t <- createCleanDataFrame(c("recoveries"),"poss.action", match_df)
   t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
@@ -500,4 +551,130 @@ getRecoveries <- function(match_df) {
     }
   }
   recoveryLocation
+}
+
+##13. CREATE COLUMNS FOR INTERCEPTIONS BY ZONE--------
+getInterceptions <- function(match_df) {
+  t <- createDataFrame(c("interceptions"), "def.action", match_df)
+  t <- t[,c("event","time", "def.position","def.team","def.player","def.action","def.location", "def.player.disciplinary","def.notes")]
+  names(t) <- c("event", "time", "position","team", "poss.player", "player.event", "location", 
+                "def.player.disciplinary", "def.notes")
+  t <- t[t[,"player.event"]=="interceptions" & !is.na(t[,"player.event"]),]
+  t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
+                                                 "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
+                                                 "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
+                                                 "A18"="A18", "A6"="A6"),
+                                    ogdf = t,ndf = t,
+                                    pattern_locations = c("location","location","location","location",
+                                                          "location","location","location", "location",
+                                                          "location","location","location","location",
+                                                          "location","location","location","location"))
+  ##Creates blank table with columns for direction distribution
+  zones <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML",
+             "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
+  for(i in zones) {
+    tab <- createTable(c("interceptions"), "player.event", t[t[,i] == "yes",])
+    names(tab) <- c("Player", paste0(i,".Int"))
+    if(exists("intLocation")){
+      intLocation <- merge(intLocation, tab, by="Player", all=TRUE)
+    } else {
+      intLocation <- tab
+    }
+  }
+  intLocation
+}
+
+##14. CREATE COLUMNS FOR BLOCKS BY ZONE--------
+getBlocks <- function(match_df) {
+  t <- createDataFrame(c("blocks"), "def.action", match_df)
+  t <- t[,c("event","time", "def.position","def.team","def.player","def.action","def.location", "def.player.disciplinary","def.notes")]
+  names(t) <- c("event", "time", "position","team", "poss.player", "player.event", "location", 
+                "def.player.disciplinary", "def.notes")
+  t <- t[t[,"player.event"]=="blocks" & !is.na(t[,"player.event"]),]
+  t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
+                                                 "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
+                                                 "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
+                                                 "A18"="A18", "A6"="A6"),
+                                    ogdf = t,ndf = t,
+                                    pattern_locations = c("location","location","location","location",
+                                                          "location","location","location", "location",
+                                                          "location","location","location","location",
+                                                          "location","location","location","location"))
+  ##Creates blank table with columns for direction distribution
+  zones <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML",
+             "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
+  for(i in zones) {
+    tab <- createTable(c("blocks"), "player.event", t[t[,i] == "yes",])
+    names(tab) <- c("Player", paste0(i,".Blocks"))
+    if(exists("blockLocation")){
+      blockLocation <- merge(blockLocation, tab, by="Player", all=TRUE)
+    } else {
+      blockLocation <- tab
+    }
+  }
+  blockLocation
+}
+
+##15. CREATE COLUMNS FOR CLEARANCES BY ZONE--------
+getClearances <- function(match_df) {
+  t <- createDataFrame(c("clearances"), "def.action", match_df)
+  t <- t[,c("event","time", "def.position","def.team","def.player","def.action","def.location", "def.player.disciplinary","def.notes")]
+  names(t) <- c("event", "time", "position","team", "poss.player", "player.event", "location", 
+                "def.player.disciplinary", "def.notes")
+  t <- t[t[,"player.event"]=="clearances" & !is.na(t[,"player.event"]),]
+  t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
+                                                 "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
+                                                 "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
+                                                 "A18"="A18", "A6"="A6"),
+                                    ogdf = t,ndf = t,
+                                    pattern_locations = c("location","location","location","location",
+                                                          "location","location","location", "location",
+                                                          "location","location","location","location",
+                                                          "location","location","location","location"))
+  ##Creates blank table with columns for direction distribution
+  zones <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML",
+             "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
+  for(i in zones) {
+    tab <- createTable(c("clearances"), "player.event", t[t[,i] == "yes",])
+    names(tab) <- c("Player", paste0(i,".Clearances"))
+    if(exists("clearsLocation")){
+      clearsLocation <- merge(clearsLocation, tab, by="Player", all=TRUE)
+    } else {
+      clearsLocation <- tab
+    }
+  }
+  clearsLocation
+}
+
+#16. CREATE COLUMNS FOR OPP BALLS DISRUPTED BY ZONE--------
+getOppBallDisrupted <- function(match_df) {
+  t <- createDataFrame(c("clearances", "blocks", "interceptions"), "def.action", match_df)
+  t <- t[,c("event","time", "def.position","def.team","def.player","def.action","def.location", "def.player.disciplinary","def.notes")]
+  names(t) <- c("event", "time", "position","team", "poss.player", "player.event", "location", 
+                "def.player.disciplinary", "def.notes")
+  t <- t[grepl("clearances|blocks|interceptions",t[,"player.event"]) & !is.na(t[,"player.event"]),]
+  t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
+                                                 "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
+                                                 "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
+                                                 "A18"="A18", "A6"="A6"),
+                                    ogdf = t,ndf = t,
+                                    pattern_locations = c("location","location","location","location",
+                                                          "location","location","location", "location",
+                                                          "location","location","location","location",
+                                                          "location","location","location","location"))
+  ##Creates blank table with columns for direction distribution
+  zones <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML",
+             "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
+  for(i in zones) {
+    tab <- createTable(c("clearances", "blocks", "interceptions"), "player.event", t[t[,i] == "yes",])
+    tab$oppBallDisrupted <- rowSums(tab[,c("clearances", "blocks", "interceptions")])
+    tab <- tab[,!(names(tab) %in% c("clearances", "blocks", "interceptions"))]
+    names(tab) <- c("Player", paste0(i,".oppBallDisrupted"))
+    if(exists("oppBallDisruptLocation")){
+      oppBallDisruptLocation <- merge(oppBallDisruptLocation, tab, by="Player", all=TRUE)
+    } else {
+      oppBallDisruptLocation <- tab
+    }
+  }
+  oppBallDisruptLocation
 }
