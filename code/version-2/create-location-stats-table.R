@@ -65,6 +65,8 @@ createLocationStatsTable <- function(match_stat, match_df){
     stats_tab <- merge(players, getTackles(match_df), by="Player", all=TRUE)
   } else if (match_stat == "opp-dispossess") {
     stats_tab <- merge(players, getOppDispossessed(match_df), by="Player", all=TRUE)
+  } else if (match_stat == "opp-poss-disrupted") {
+    stats_tab <- merge(players, getOppPossDisrupted(match_df), by="Player", all=TRUE)
   } else if (match_stat == "pressure") {
     stats_tab <- merge(players, getPressures(match_df), by="Player", all=TRUE)
   } else if (match_stat == "recoveries") {
