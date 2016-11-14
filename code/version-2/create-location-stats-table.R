@@ -86,12 +86,35 @@ createLocationStatsTable <- function(match_stat, match_df){
 }
 
 ##FUNCTION TO CREATE MULTIPLE STATS TABLES FOR VARIOUS MATCHES---------
-createMultiLocStatsTabs <- function(match_list, match_stat) {
+createMultiLocStatsTabs <- function(match_list, match_stat, per_90 = FALSE) {
   stats_list <- vector("list", 0)
   #For every match csv file in match_list, create a stats table
   for (matchSheet in match_list){
     stats_tab <- createLocationStatsTable(match_stat, matchSheet)
     stats_list[[length(stats_list)+1]] <- stats_tab
+  }
+  if (per_90 == TRUE) {
+    df_binded <- do.call("rbind", stats_list)
+    all_players <- unique(df_binded[,c("Player", "Team")])
+    all_stats <- as.data.frame(matrix(rep(0, length(names(df_binded))), nrow = 1))[-1,]
+    names(all_stats) <- names(df_binded)
+    all_stats$Player <- as.character(all_stats$Player)
+    all_stats$Team <- as.character(all_stats$Team)
+    df_p90 <- merge(all_players, all_stats, by=c("Player", "Team"), all=TRUE)
+    
+    #for each row in "df_p90", gets each column's colSums for that row's "Player"-"Team" combo in d
+    x <- 1
+    while(x <= nrow(df_p90)) {
+      player_rows <- df_binded[df_binded[,"Player"] == df_p90[x,"Player"] & 
+                                df_binded[,"Team"] == df_p90[x,"Team"],]
+      player_rbinded <- colSums(player_rows[,3:ncol(player_rows)])
+      player_rbinded[4:length(player_rbinded)] <- player_rbinded[4:length(player_rbinded)]/(player_rbinded[2])
+      df_p90[x,3:ncol(df_p90)] <- player_rbinded
+      x <- x + 1
+    }
+    df_p90[,38:53] <- df_p90[,22:37]/df_p90[,6:21]
+    
+    stats_list[[length(stats_list)+1]] <- df_p90
   }
   stats_list
 }
