@@ -108,7 +108,7 @@ createMultiLocStatsTabs <- function(match_list, match_stat, per_90 = FALSE) {
       player_rows <- df_binded[df_binded[,"Player"] == df_p90[x,"Player"] & 
                                 df_binded[,"Team"] == df_p90[x,"Team"],]
       player_rbinded <- colSums(player_rows[,3:ncol(player_rows)])
-      player_rbinded[4:length(player_rbinded)] <- player_rbinded[4:length(player_rbinded)]/(player_rbinded[2])
+      player_rbinded[4:length(player_rbinded)] <- player_rbinded[4:length(player_rbinded)]*(90/(player_rbinded[2]))
       df_p90[x,3:ncol(df_p90)] <- player_rbinded
       x <- x + 1
     }
