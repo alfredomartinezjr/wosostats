@@ -115,8 +115,10 @@ createMultiLocStatsTabs <- function(match_list, match_stat, per_90 = FALSE) {
     df_p90[,38:53] <- df_p90[,22:37]/df_p90[,6:21]
     
     stats_list[[length(stats_list)+1]] <- df_p90
+    match_names[length(match_names)+1] <- "overall-p90"
   }
-  stats_list
+  assign("stats_list",stats_list, pos=1)
+  assign("match_names", match_names, pos=1)
 }
 
 ##CREATES CSV FILE FOR STATS TABLE---------
