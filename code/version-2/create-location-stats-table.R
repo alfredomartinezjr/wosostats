@@ -113,6 +113,7 @@ createMultiLocStatsTabs <- function(match_list, match_stat, per_90 = FALSE) {
       x <- x + 1
     }
     df_p90[,38:53] <- df_p90[,22:37]/df_p90[,6:21]
+    df_p90 <- df_p90[order(-df_p90$MP),]
     
     stats_list[[length(stats_list)+1]] <- df_p90
     match_names[length(match_names)+1] <- "overall-p90"
