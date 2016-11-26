@@ -463,7 +463,7 @@ getOppDispossessed <- function(match_df) {
   t <- t[,c("event","time","def.position","def.team","def.player","def.action","def.location","def.player.disciplinary","def.notes")]
   names(t) <- c("event", "time", "position" ,"team", "poss.player", "player.event", "location", 
                 "def.player.disciplinary", "def.notes")
-  t <- t[grepl("dispossessed", t[,"player.event"]) & !is.na(t[,"player.event"]),]
+  t <- t[grepl("dispossess", t[,"player.event"]) & !is.na(t[,"player.event"]),]
   t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
                                                  "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
                                                  "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
@@ -477,7 +477,9 @@ getOppDispossessed <- function(match_df) {
   zones <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML",
              "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
   for(i in zones) {
-    tab <- createTable(c("dispossessed"), "player.event", t[t[,i] == "yes",])
+    tab <- createTable(c("dispossessed","dispossess.ball.shield", "dispossess.steal","dispossess.lost.touch"), "player.event", t[t[,i] == "yes",])
+    tab$oppdispossessed <- tab$dispossessed + tab$dispossess.ball.shield + tab$dispossess.steal + tab$dispossess.lost.touch
+    tab <- tab[,!(names(tab) %in% c("dispossessed","dispossess.ball.shield", "dispossess.steal","dispossess.lost.touch"))]
     names(tab) <- c("Player", paste0(i,".OppDispossessed"))
     if(exists("oppDispossessedLocation")){
       oppDispossessedLocation <- merge(oppDispossessedLocation, tab, by="Player", all=TRUE)
@@ -494,7 +496,7 @@ getOppPossDisrupted <- function(match_df) {
   t <- t[,c("event","time", "def.position","def.team","def.player","def.action","def.location", "def.player.disciplinary","def.notes")]
   names(t) <- c("event", "time", "position","team", "poss.player", "player.event", "location", 
                 "def.player.disciplinary", "def.notes")
-  t <- t[grepl("tackles.ball.away|tackles.ball.won|tackles.ball|dispossessed",t[,"player.event"]) & !is.na(t[,"player.event"]),]
+  t <- t[grepl("tackles.ball.away|tackles.ball.won|tackles.ball|dispossess|dispossess.ball.shield|dispossess.steal|dispossess.lost.touch",t[,"player.event"]) & !is.na(t[,"player.event"]),]
   t <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
                                                  "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
                                                  "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
@@ -508,9 +510,9 @@ getOppPossDisrupted <- function(match_df) {
   zones <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML",
              "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
   for(i in zones) {
-    tab <- createTable(c("tackles.ball.away", "tackles.ball.won", "tackles.ball", "dispossessed"), "player.event", t[t[,i] == "yes",])
-    tab$oppPossDisrupted <- rowSums(tab[,c("tackles.ball.away", "tackles.ball.won", "tackles.ball", "dispossessed")])
-    tab <- tab[,!(names(tab) %in% c("tackles.ball.away", "tackles.ball.won", "tackles.ball", "dispossessed"))]
+    tab <- createTable(c("tackles.ball.away", "tackles.ball.won", "tackles.ball", "dispossessed","dispossess.ball.shield", "dispossess.steal","dispossess.lost.touch"), "player.event", t[t[,i] == "yes",])
+    tab$oppPossDisrupted <- rowSums(tab[,c("tackles.ball.away", "tackles.ball.won", "tackles.ball", "dispossessed","dispossess.ball.shield", "dispossess.steal","dispossess.lost.touch")])
+    tab <- tab[,!(names(tab) %in% c("tackles.ball.away", "tackles.ball.won", "tackles.ball", "dispossessed","dispossess.ball.shield", "dispossess.steal","dispossess.lost.touch"))]
     names(tab) <- c("Player", paste0(i,".oppPossDisrupted"))
     if(exists("oppPossDisruptLocation")){
       oppPossDisruptLocation <- merge(oppPossDisruptLocation, tab, by="Player", all=TRUE)
