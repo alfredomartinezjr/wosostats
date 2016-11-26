@@ -82,7 +82,7 @@ createLocationStatsTable <- function(match_stat, match_df){
   } 
   stats_tab[is.na(stats_tab)] <- 0
   names(stats_tab) <- gsub(" ",".", names(stats_tab))
-  stats_tab
+  assign("stats_tab",stats_tab, pos=1)
 }
 
 ##FUNCTION TO CREATE MULTIPLE STATS TABLES FOR VARIOUS MATCHES---------
