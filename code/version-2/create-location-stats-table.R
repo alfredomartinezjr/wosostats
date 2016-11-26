@@ -46,7 +46,6 @@ createLocationStatsTable <- function(match_stat, match_df){
     stats_tab <- merge(stats_tab, getBlocks(match_df), by="Player", all=TRUE)
     stats_tab <- merge(stats_tab, getClearances(match_df), by="Player", all=TRUE)
     stats_tab <- merge(stats_tab, getOppBallDisrupted(match_df), by="Player", all=TRUE)
-    
   } else if (match_stat == "attempted-passes") {
     stats_tab <- merge(players, getPassAtt(match_df), by="Player", all=TRUE)
   } else if (match_stat == "completed-passes") {
@@ -491,7 +490,7 @@ getOppDispossessed <- function(match_df) {
 
 ##10. CREATE COLUMNS FOR OPP POSS DISRUPTED BY ZONE--------
 getOppPossDisrupted <- function(match_df) {
-  t <- createDataFrame(c("tackles.ball.away", "tackles.ball.won", "tackles.ball", "dispossessed"), "def.action", match_df)
+  t <- createDataFrame(c("tackles.ball.away", "tackles.ball.won", "tackles.ball", "dispossessed","dispossess.ball.shield", "dispossess.steal","dispossess.lost.touch"), "def.action", match_df)
   t <- t[,c("event","time", "def.position","def.team","def.player","def.action","def.location", "def.player.disciplinary","def.notes")]
   names(t) <- c("event", "time", "position","team", "poss.player", "player.event", "location", 
                 "def.player.disciplinary", "def.notes")
