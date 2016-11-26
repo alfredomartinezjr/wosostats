@@ -90,7 +90,7 @@ createMultiLocStatsTabs <- function(match_list, match_stat, per_90 = FALSE) {
   stats_list <- vector("list", 0)
   #For every match csv file in match_list, create a stats table
   for (matchSheet in match_list){
-    stats_tab <- createLocationStatsTable(match_stat, matchSheet)
+    createLocationStatsTable(match_stat, matchSheet)
     stats_list[[length(stats_list)+1]] <- stats_tab
   }
   if (per_90 == TRUE) {
@@ -460,7 +460,7 @@ getTackles <- function(match_df) {
 
 ##9. CREATE COLUMNS FOR OPP DISSPOSSESSED BY ZONE--------
 getOppDispossessed <- function(match_df) {
-  t <- createDataFrame(c("dispossessed"), "def.action", match_df)
+  t <- createDataFrame(c("dispossessed","dispossess.ball.shield", "dispossess.steal","dispossess.lost.touch"), "def.action", match_df)
   t <- t[,c("event","time","def.position","def.team","def.player","def.action","def.location","def.player.disciplinary","def.notes")]
   names(t) <- c("event", "time", "position" ,"team", "poss.player", "player.event", "location", 
                 "def.player.disciplinary", "def.notes")
