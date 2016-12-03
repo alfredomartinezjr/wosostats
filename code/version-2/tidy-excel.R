@@ -268,7 +268,7 @@ df$gk.s.o.g.attempt <- tolower(df$gk.s.o.g.attempt)
 df$poss.player.disciplinary <- tolower(df$poss.player.disciplinary)
 df$poss.notes <- tolower(df$poss.notes)
 df$def.player.disciplinary <- tolower(df$def.player.disciplinary)
-df$def.notes <- tolower(df$def.player.disciplinary)
+df$def.notes <- tolower(df$def.notes)
 abbreviation_processor = AbbreviationProcessor$new()
 for(i in 1:nrow(df))
 {
