@@ -74,7 +74,7 @@ AbbreviationConverter_PlayType =
         self$add_abbreviation("^cc",        "corner.crosses")
         self$add_abbreviation("^dc",        "deep.crosses")
         self$add_abbreviation("^s",         "switch")
-        self$add_abbreviation("^lay",       "lay.off")
+        self$add_abbreviation("^lau",       "launch")
         self$add_abbreviation("^flick",     "flick.on")
         self$add_abbreviation("^ti",        "throw.in")
         self$add_abbreviation("^fk",        "free.kick")
