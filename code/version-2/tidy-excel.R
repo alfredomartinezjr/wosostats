@@ -308,7 +308,7 @@ while (rownum <= nrow(df)) {
       # find location of next poss.player
       eventnum <- df[rownum,"event"][1]
       nexteventnum <- eventnum + 1
-      nexteventlocation <- df[df[,"event"] == df[nexteventnum,"event"],"poss.location"][1]
+      nexteventlocation <- df[!is.na(df[,"event"]) & df[,"event"] == nexteventnum,"poss.location"][1]
       # assign it as the "def.location"
       df[rownum,"def.location"] <- nexteventlocation
     }
