@@ -2,21 +2,8 @@ getMetaData <- function(excel_df) {
   meta_df <- excel_df[1:(grep("kickoff", excel_df[,"poss.action"])[1]-1),]
   meta_df[,"poss.player"] <- trimws(meta_df[,"poss.player"])
   meta_df[,"def.player"] <- trimws(meta_df[,"def.player"])
-  ### Creates a vector for the "home" team and the "away" team, excluding possible NA values
-  teams <- as.character(unique(meta_df$poss.team))
-  teams <- teams[!is.na(teams) & !(teams=="-") & !(teams==" ") & !(teams=="")]
-  ### home team should always be listed first
-  hometeam <- teams[1]
-  awayteam <- teams[2]
-  rm(teams)
-  meta_home <- meta_df[meta_df[,"poss.team"]==hometeam,c("poss.position","poss.team","poss.number", "poss.player")]
-  meta_away <- meta_df[meta_df[,"poss.team"]==awayteam,c("poss.position","poss.team","poss.number" ,"poss.player")]
   
   assign("meta_df", meta_df, pos=1)
-  assign("hometeam", hometeam, pos=1)
-  assign("awayteam", awayteam, pos=1)
-  assign("meta_home", meta_home, pos=1)
-  assign("meta_away", meta_away, pos=1)
 }
 
 trimRowsColumns <- function(excel_df) {
