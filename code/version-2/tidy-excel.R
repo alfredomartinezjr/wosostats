@@ -25,7 +25,6 @@ if(online_mode == "online") {
   source("~/wosostats/code/version-2/abbreviations.R")
 }
 
-
 ## REFERENCE DATA TO SOURCE----------
 ### ref.classes will be a data.frame of class data for columns in the spreadsheet.
 ### Sourcing this data.frame and creating the col_types vector below will be
