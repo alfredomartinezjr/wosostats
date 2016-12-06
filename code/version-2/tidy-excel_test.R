@@ -20,23 +20,16 @@ if(online_mode == "online") {
   code_directory = paste(base_directory, "code/version-2/", sep="")
   source(paste(code_directory, "abbreviations.R", sep=""))
   source(paste(code_directory, "tidy-excel-functions.R", sep=""))
-  ref.classes <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/resources/spreadsheet-classes.csv")
-  ref.classes <- read.csv(textConnection(ref.classes), stringsAsFactors = FALSE)
   rosters <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/rosters/nwsl-2016.csv")
   rosters <- read.csv(textConnection(rosters), stringsAsFactors = FALSE)
   rm(base_directory, code_directory)
 } else if(online_mode == "offline") {
   source("~/wosostats/code/version-2/abbreviations.R")
   source("~/wosostats/code/version-2/tidy-excel-functions.R")
-  ref.classes <- read.csv("~/wosostats/resources/spreadsheet-classes.csv")
   rosters <- read.csv("~/wosostats/rosters/nwsl-2016.csv")
 }
-# ref.classes is has what class each column should be.
-# Sourcing this and creating the col_types vector below is necessary due to 
-# how read_excel() requires the column class types to be in a vector for 
-# every column in the spreadsheet in the precise order in which they appear.
 
-# Location zones reference--------
+# Objects to reference--------
 posslocations <- c("A6", "A18", "A3L", "A3C", "A3R", "AM3L", "AM3C", 
                    "AM3R", "DM3L", "DM3C", "DM3R", "D3L", "D3C", "D3R", 
                    "D18", "D6", "AL", "AC", "AR", "AML", "AMC", 
@@ -46,22 +39,21 @@ deflocations <- c("D6", "D18", "D3R", "D3C", "D3L", "DM3R", "DM3C",
                   "A18", "A6", "DR", "DC", "DL", "DMR", "DMC",
                   "DML", "AMR", "AMC", "AML", "AR", "AC", "AL")
 opposites <- data.frame(posslocations, deflocations)
+abbreviation_processor = AbbreviationProcessor$new()
 
 # Reading the Excel file----------
 # "match.file" must be a string value and the Excel file must be in the working directory
 excel_df <- as.data.frame(read_excel(match.file))
 
+# Cleaning up excess cells and characters--------
 excel_df <- trimRowsColumns(excel_df)
 excel_df <- cleanUpCells(excel_df)
+
+# Get metadata----------
 getMetaData(excel_df)
 excel_df <- excel_df[grep("kickoff", excel_df[,"poss.action"])[1]:nrow(excel_df),]
-abbreviation_processor = AbbreviationProcessor$new()
-#for(sheet_row in 1:nrow(excel_df))
-#{
-#  excel_df[sheet_row,] = abbreviation_processor$process_row(excel_df[sheet_row,])
-#}
-#rm(sheet_row, abbreviation_processor)
 
+# Expand shortcuts and calculate missing values
 for (sheet_row in ((grep("kickoff", excel_df[,"poss.action"])[1])+1):nrow(excel_df)){
   excel_df[sheet_row,] = abbreviation_processor$process_row(excel_df[sheet_row,])
   excel_df[sheet_row,"time"] <- calcTimeValue(sheet_row, excel_df = excel_df)
@@ -73,6 +65,7 @@ for (sheet_row in ((grep("kickoff", excel_df[,"poss.action"])[1])+1):nrow(excel_
   }
 }
 
+# Calculate completed passes and missing "poss.play.destination" locations----------
 for (sheet_row in ((grep("kickoff", excel_df[,"poss.action"])[1])+1):nrow(excel_df)){
   if (grepl("pass", excel_df[sheet_row,"poss.action"]) & !grepl("c", excel_df[sheet_row,"poss.action"])) {
     if(isCompletedPass(sheet_row, excel_df = excel_df) == TRUE) {
