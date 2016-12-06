@@ -80,3 +80,5 @@ for (sheet_row in ((grep("kickoff", excel_df[,"poss.action"])[1])+1):nrow(excel_
     }
   }
 }
+
+rm(list=setdiff(ls(), "excel_df"))
