@@ -648,6 +648,7 @@ t <- t[grep("recoveries",t[,"poss.action"]),]
 ##Create columns that will mark if an event is a defensive or possessing recovery
 t$def <- NA
 t$poss <- NA
+t$event <- as.numeric(t$event)
 x <- 1
 while (x <= length(unique(t$event))) {
   if (is.na((d[d[,"event"] == (unique(t$event)[x] - 1),"poss.team"] == t[t[,"event"] == unique(t$event)[x],"poss.team"])[1])){
