@@ -188,7 +188,7 @@
 "168","11","F","HOU","Ohai","take.on.won",NA,NA,NA,"D","PTFC","Menges","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "169","11","F","HOU","Ohai","passes.f.c",NA,"D3C","launch","M","PTFC","Fitzgerald","pressured",NA,NA,NA,NA,"key.passes",NA,NA,NA,NA,NA
 "169","11",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"170","11","F","HOU","Daly","shots.stopped.by.gk","D3C",NA,NA,"GK","PTFC","Betos","gk.s.o.g.stop",NA,"caught","diving",NA,NA,NA,NA,NA,NA,NA
+"170","11","F","HOU","Daly","shots.stopped.by.gk","D3C",NA,NA,"GK","PTFC","Betos","gk.s.o.g.stop",NA,"caught","diving",NA,"big.chances.shot.on.goal",NA,NA,NA,NA,NA
 "171","11",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "172","11","M","HOU","O'Sullivan","passes.b.c",NA,NA,NA,"M","PTFC","Boureille","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "173","11","D","HOU","Roccaro","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -245,7 +245,7 @@
 "218","14","M","HOU","O'Sullivan","shots.missed","D3C",NA,NA,"GK","PTFC","Betos","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "219","14",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "220","15","D","HOU","Brush","passes.b",NA,NA,NA,"M","PTFC","Raso","interceptions",NA,NA,NA,NA,"errors.to.big.chances",NA,NA,NA,NA,NA
-"221","15","M","PTFC","Raso","shots.missed",NA,NA,NA,"GK","HOU","Henninger","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"221","15","M","PTFC","Raso","shots.missed",NA,NA,NA,"GK","HOU","Henninger","gk.shot.miss",NA,NA,NA,NA,"big.chances.shot.missed",NA,NA,NA,NA,NA
 "222","15","GK","HOU","Henninger","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "222","15",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "223","15","D","HOU","Privett","aerial.won",NA,NA,NA,"M","PTFC","Raso","aerial.lost",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
@@ -1050,7 +1050,7 @@
 "923","67",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Lofton","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "924","67","D","PTFC","Lofton","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"errors.to.big.chances",NA,NA,NA,NA,NA
 "925","67","F","HOU","Ohai","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"926","67","F","HOU","Ohai","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"926","67","F","HOU","Ohai","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA,NA,NA,NA
 "927","67","M","HOU","O'Sullivan","lost.touch",NA,NA,NA,"D","PTFC","Skogerboe","clearances",NA,NA,NA,NA,"big.chances.lost",NA,NA,NA,NA,NA
 "928","67","D","PTFC","Menges","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "929","67","D","PTFC","Menges","take.on.won",NA,NA,NA,"F","HOU","Daly","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1070,7 +1070,7 @@
 "941","68","D","HOU","Moros","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "942","68","D","HOU","Moros","passes.f.c",NA,NA,"corner.crosses","D","PTFC","Reynolds","pressured",NA,NA,NA,NA,"assists",NA,NA,NA,NA,NA
 "942","68",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA,NA,NA,NA
-"943","68","M","HOU","Brooks","shots.scored",NA,NA,NA,"GK","PTFC","Betos","gk.s.o.g.scored",NA,"diving",NA,NA,NA,NA,NA,NA,NA,NA
+"943","68","M","HOU","Brooks","shots.scored",NA,NA,NA,"GK","PTFC","Betos","gk.s.o.g.scored",NA,"diving",NA,NA,"big.chances.scored",NA,NA,NA,NA,NA
 "944","69","M","PTFC","Weber","passes.s.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "945","69","F","PTFC","Nadim","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "946","69","D","HOU","Moros","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
