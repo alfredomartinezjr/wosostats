@@ -43,42 +43,42 @@ abbreviation_processor = AbbreviationProcessor$new()
 
 # Reading the Excel file----------
 # "match.file" must be a string value and the Excel file must be in the working directory
-excel_df <- as.data.frame(read_excel(match.file))
+match_df <- as.data.frame(read_excel(match.file))
 
 # Cleaning up excess cells and characters--------
-excel_df <- trimRowsColumns(excel_df)
-excel_df <- cleanUpCells(excel_df)
+match_df <- trimRowsColumns(match_df)
+match_df <- cleanUpCells(match_df)
 
 # Get metadata----------
-getMetaData(excel_df)
-excel_df <- excel_df[grep("kickoff", excel_df[,"poss.action"])[1]:nrow(excel_df),]
+getMetaData(match_df)
+match_df <- match_df[grep("kickoff", match_df[,"poss.action"])[1]:nrow(match_df),]
 
 # Expand shortcuts and calculate missing values
-for (sheet_row in ((grep("kickoff", excel_df[,"poss.action"])[1])+1):nrow(excel_df)){
-  excel_df[sheet_row,] = abbreviation_processor$process_row(excel_df[sheet_row,])
-  excel_df[sheet_row,"time"] <- calcTimeValue(sheet_row, excel_df = excel_df)
-  excel_df[sheet_row,"event"] <- calcEventValue(sheet_row, excel_df = excel_df)
-  excel_df[sheet_row,c("poss.position", "poss.team","poss.number","poss.player")] <- setPlayerInfo(sheet_row, excel_df = excel_df, col_set = "poss")
-  excel_df[sheet_row,c("def.position", "def.team","def.number","def.player")] <- setPlayerInfo(sheet_row, excel_df = excel_df, col_set = "def")
-  if (!is.na(excel_df[sheet_row,"def.action"]) & is.na(excel_df[sheet_row,"def.location"])){
-    excel_df[sheet_row,c("def.location")] <- getDefLocation(sheet_row, excel_df = excel_df)
+for (sheet_row in ((grep("kickoff", match_df[,"poss.action"])[1])+1):nrow(match_df)){
+  match_df[sheet_row,] = abbreviation_processor$process_row(match_df[sheet_row,])
+  match_df[sheet_row,"time"] <- calcTimeValue(sheet_row, match_df = match_df)
+  match_df[sheet_row,"event"] <- calcEventValue(sheet_row, match_df = match_df)
+  match_df[sheet_row,c("poss.position", "poss.team","poss.number","poss.player")] <- setPlayerInfo(sheet_row, match_df = match_df, col_set = "poss")
+  match_df[sheet_row,c("def.position", "def.team","def.number","def.player")] <- setPlayerInfo(sheet_row, match_df = match_df, col_set = "def")
+  if (!is.na(match_df[sheet_row,"def.action"]) & is.na(match_df[sheet_row,"def.location"])){
+    match_df[sheet_row,c("def.location")] <- getDefLocation(sheet_row, match_df = match_df)
   }
 }
 
 # Calculate completed passes and missing "poss.play.destination" locations----------
-for (sheet_row in ((grep("kickoff", excel_df[,"poss.action"])[1])+1):nrow(excel_df)){
-  if (grepl("pass", excel_df[sheet_row,"poss.action"]) & !grepl("c", excel_df[sheet_row,"poss.action"])) {
-    if(isCompletedPass(sheet_row, excel_df = excel_df) == TRUE) {
+for (sheet_row in ((grep("kickoff", match_df[,"poss.action"])[1])+1):nrow(match_df)){
+  if (grepl("pass", match_df[sheet_row,"poss.action"]) & !grepl("c", match_df[sheet_row,"poss.action"])) {
+    if(isCompletedPass(sheet_row, match_df = match_df) == TRUE) {
       # add a ".c" to the end of the "poss.action" value to signify that it's a completed pass,
-      excel_df[sheet_row,"poss.action"] <- paste0(excel_df[sheet_row,"poss.action"], ".c")
+      match_df[sheet_row,"poss.action"] <- paste0(match_df[sheet_row,"poss.action"], ".c")
       # set value in "poss.play.destination" if NA
-      if(is.na(excel_df[sheet_row,"poss.play.destination"])) {
-        sheet_event_next <- as.numeric(excel_df[sheet_row,"event"][1])+1
-        sheet_row_nextevent <- grep(paste0("^",sheet_event_next,"$"),excel_df[,"event"])[1]
-        excel_df[sheet_row,"poss.play.destination"] <- excel_df[sheet_row_nextevent, "poss.location"]
+      if(is.na(match_df[sheet_row,"poss.play.destination"])) {
+        sheet_event_next <- as.numeric(match_df[sheet_row,"event"][1])+1
+        sheet_row_nextevent <- grep(paste0("^",sheet_event_next,"$"),match_df[,"event"])[1]
+        match_df[sheet_row,"poss.play.destination"] <- match_df[sheet_row_nextevent, "poss.location"]
       }
     }
   }
 }
 
-rm(list=setdiff(ls(), "excel_df"))
+rm(list=setdiff(ls(), "match_df"))
