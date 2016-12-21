@@ -1,80 +1,80 @@
-getMetaData <- function(excel_df) {
-  meta_df <- excel_df[1:(grep("kickoff", excel_df[,"poss.action"])[1]-1),]
+getMetaData <- function(match_df) {
+  meta_df <- match_df[1:(grep("kickoff", match_df[,"poss.action"])[1]-1),]
   meta_df[,"poss.player"] <- trimws(meta_df[,"poss.player"])
   meta_df[,"def.player"] <- trimws(meta_df[,"def.player"])
   
   assign("meta_df", meta_df, pos=1)
 }
 
-trimRowsColumns <- function(excel_df) {
+trimRowsColumns <- function(match_df) {
   # removes NA columns
-  excel_df <- excel_df[,!grepl("^NA",names(excel_df))]
+  match_df <- match_df[,!grepl("^NA",names(match_df))]
   
   # removes blank rows after the row with "end.of.match" in the "poss.action" column
-  excel_df <- excel_df[1:max(grep("end.of.match", excel_df[,"poss.action"])),]
+  match_df <- match_df[1:max(grep("end.of.match", match_df[,"poss.action"])),]
   
   # adds any missing columns
-  if(!("xG" %in% colnames(excel_df))) (excel_df$xG <- NA)
-  if(!("poss.number" %in% colnames(excel_df))) (excel_df$poss.number <- NA)
-  if(!("def.number" %in% colnames(excel_df))) (excel_df$def.number <- NA)
+  if(!("xG" %in% colnames(match_df))) (match_df$xG <- NA)
+  if(!("poss.number" %in% colnames(match_df))) (match_df$poss.number <- NA)
+  if(!("def.number" %in% colnames(match_df))) (match_df$def.number <- NA)
   
-  excel_df
+  match_df
 }
 
-cleanUpCells <- function(excel_df) {
-  excel_df[(excel_df) == "-"] <- NA
-  excel_df[(excel_df) == " "] <- NA
-  excel_df[(excel_df) == ""] <- NA
-  excel_df <- as.data.frame(apply(excel_df,2,trimws), stringsAsFactors = FALSE)
+cleanUpCells <- function(match_df) {
+  match_df[(match_df) == "-"] <- NA
+  match_df[(match_df) == " "] <- NA
+  match_df[(match_df) == ""] <- NA
+  match_df <- as.data.frame(apply(match_df,2,trimws), stringsAsFactors = FALSE)
   
-  excel_df$poss.action <- tolower(excel_df$poss.action)
-  excel_df$play.type <- tolower(excel_df$play.type)
-  excel_df$def.action <- tolower(excel_df$def.action)
-  excel_df$gk.ball.stop <- tolower(excel_df$gk.ball.stop)
-  excel_df$gk.s.o.g.attempt <- tolower(excel_df$gk.s.o.g.attempt)
-  excel_df$poss.player.disciplinary <- tolower(excel_df$poss.player.disciplinary)
-  excel_df$poss.notes <- tolower(excel_df$poss.notes)
-  excel_df$def.player.disciplinary <- tolower(excel_df$def.player.disciplinary)
-  excel_df$def.notes <- tolower(excel_df$def.notes)
-  excel_df$poss.location <- toupper(excel_df$poss.location)
-  excel_df$poss.play.destination <- toupper(excel_df$poss.play.destination)
-  excel_df$def.location <- toupper(excel_df$def.location)
+  match_df$poss.action <- tolower(match_df$poss.action)
+  match_df$play.type <- tolower(match_df$play.type)
+  match_df$def.action <- tolower(match_df$def.action)
+  match_df$gk.ball.stop <- tolower(match_df$gk.ball.stop)
+  match_df$gk.s.o.g.attempt <- tolower(match_df$gk.s.o.g.attempt)
+  match_df$poss.player.disciplinary <- tolower(match_df$poss.player.disciplinary)
+  match_df$poss.notes <- tolower(match_df$poss.notes)
+  match_df$def.player.disciplinary <- tolower(match_df$def.player.disciplinary)
+  match_df$def.notes <- tolower(match_df$def.notes)
+  match_df$poss.location <- toupper(match_df$poss.location)
+  match_df$poss.play.destination <- toupper(match_df$poss.play.destination)
+  match_df$def.location <- toupper(match_df$def.location)
   
-  excel_df
+  match_df
 }
 
-calcTimeValue <- function(sheet_row, excel_df) {
+calcTimeValue <- function(sheet_row, match_df) {
   # calculate the time value, if necessary
-  if (is.na(excel_df[sheet_row,"time"])) {
+  if (is.na(match_df[sheet_row,"time"])) {
     #if time column is " " or a "-", set it as whatever the time is in the above row
-    excel_df[sheet_row-1, "time"]
+    match_df[sheet_row-1, "time"]
   } else {
-    excel_df[sheet_row, "time"]
+    match_df[sheet_row, "time"]
   }
 }
 
-calcEventValue <- function(sheet_row, excel_df) {
+calcEventValue <- function(sheet_row, match_df) {
   # If there are "-"'s or " " values in "event" column, assign them as "NA"
-  if (is.na(excel_df[sheet_row,"event"])) {
-    excel_df[sheet_row,"event"] <- NA
+  if (is.na(match_df[sheet_row,"event"])) {
+    match_df[sheet_row,"event"] <- NA
   }
   # Checks if "poss.player" is NA, "-", or " " and set appropriate event value.
   # The logic is that if the "poss.player" column is blank, everything in the row
   # is part of the same event as the row above it, assuming it's logged correctly.
   if(
-    (is.na(excel_df[sheet_row,"poss.player"])) &&
-    !grepl(("end.of.match|stoppage.in.play|halftime|playcutoff"),excel_df[sheet_row,"poss.action"])
+    (is.na(match_df[sheet_row,"poss.player"])) &&
+    !grepl(("end.of.match|stoppage.in.play|halftime|playcutoff"),match_df[sheet_row,"poss.action"])
   )
   {
     #sets event value as previous row's event value
-    excel_df[sheet_row-1,"event"]
+    match_df[sheet_row-1,"event"]
   } else {
     #sets event value as 1 plus previous row's event value
-    as.numeric(excel_df[sheet_row-1,"event"]) + 1
+    as.numeric(match_df[sheet_row-1,"event"]) + 1
   }
 }
 
-setPlayerInfo <- function(sheet_row, excel_df, col_set) {
+setPlayerInfo <- function(sheet_row, match_df, col_set) {
   if (col_set == "poss") {
     player_col <- "poss.player"
     team_col <- "poss.team"
@@ -86,12 +86,12 @@ setPlayerInfo <- function(sheet_row, excel_df, col_set) {
     position_col <- "def.position"
     number_col <- "def.number"
   }
-  player_info <- excel_df[sheet_row,c(position_col,team_col,number_col,player_col)]
-  if (!is.na(excel_df[sheet_row,player_col])) {
-    player_string <- excel_df[sheet_row,player_col]
-    player_team <- excel_df[sheet_row,team_col]
-    player_position <- excel_df[sheet_row,position_col]
-    player_number <- excel_df[sheet_row,number_col]
+  player_info <- match_df[sheet_row,c(position_col,team_col,number_col,player_col)]
+  if (!is.na(match_df[sheet_row,player_col])) {
+    player_string <- match_df[sheet_row,player_col]
+    player_team <- match_df[sheet_row,team_col]
+    player_position <- match_df[sheet_row,position_col]
+    player_number <- match_df[sheet_row,number_col]
     # checks if the player string is the name with the number in parentheses
     # checks if the player string exists in the metadata
     if(tolower(strsplit(player_string," \\(")[[1]][1]) %in% 
@@ -144,17 +144,17 @@ setPlayerInfo <- function(sheet_row, excel_df, col_set) {
 
 # Determine if an action's location is invertible based on the
 # location of certain opposing players' action
-actionIsInvertible <- function(match_action, sheet_col, excel_df) {
-  grepl("pressure|challenge|aerial|tackle|dispossess|dribble|pass|move|take|shots",excel_df[match_action, sheet_col])
+actionIsInvertible <- function(match_action, sheet_col, match_df) {
+  grepl("pressure|challenge|aerial|tackle|dispossess|dribble|pass|move|take|shots",match_df[match_action, sheet_col])
 }
 
-getDefLocation <- function(sheet_row, excel_df) {
+getDefLocation <- function(sheet_row, match_df) {
   # checks if the defensive action can have its location determined
   # based on the inverse of certain possessing actions its acting upon
-  if (actionIsInvertible(sheet_row, sheet_col = "def.action", excel_df = excel_df)) {
+  if (actionIsInvertible(sheet_row, sheet_col = "def.action", match_df = match_df)) {
     # checks if the corresponding event has a value in "poss.location"
-    sheet_event <- excel_df[sheet_row,"event"]
-    event_poss_location <- excel_df[!is.na(excel_df[,"event"]) & excel_df[,"event"]==sheet_event,"poss.location"][1]
+    sheet_event <- match_df[sheet_row,"event"]
+    event_poss_location <- match_df[!is.na(match_df[,"event"]) & match_df[,"event"]==sheet_event,"poss.location"][1]
     if(!is.na(event_poss_location)) {
       # returns the opposite of event_poss_location
       as.character(opposites[as.character(opposites[,"posslocations"]) == as.character(event_poss_location),"deflocations"])
@@ -167,11 +167,11 @@ getDefLocation <- function(sheet_row, excel_df) {
   # checks if "def.location" is blank for interceptions, which can have its location
   # determined based on location of next action, which is by definition by the intercepting
   # player at the location of the interception
-  else if (grepl("interceptions", excel_df[sheet_row,"def.action"])) {
+  else if (grepl("interceptions", match_df[sheet_row,"def.action"])) {
     # find location of next poss.player
-    sheet_event <- as.numeric(excel_df[sheet_row,"event"][1])
+    sheet_event <- as.numeric(match_df[sheet_row,"event"][1])
     sheet_event_next <- as.numeric(sheet_event) + 1
-    excel_df[!is.na(excel_df[,"event"]) & excel_df[,"event"] == sheet_event_next,"poss.location"][1]
+    match_df[!is.na(match_df[,"event"]) & match_df[,"event"] == sheet_event_next,"poss.location"][1]
   } else {
     NA
     # def location cannot be determined
@@ -179,23 +179,23 @@ getDefLocation <- function(sheet_row, excel_df) {
   }
 }
 
-isCompletedPass <- function(sheet_row, excel_df) {
-  sheet_event <- as.numeric(excel_df[sheet_row,"event"][1])
+isCompletedPass <- function(sheet_row, match_df) {
+  sheet_event <- as.numeric(match_df[sheet_row,"event"][1])
   sheet_event_next <- as.numeric(sheet_event) + 1
-  sheet_row_nextevent <- grep(paste0("^",sheet_event_next,"$"),excel_df[,"event"])[1]
+  sheet_row_nextevent <- grep(paste0("^",sheet_event_next,"$"),match_df[,"event"])[1]
   # checks if next event isn't an instance that cut off the broadcast or stopped play.
   !grepl("playcutoffbybroadcast|stoppage|
-           substitution|halftime|fulltime|end.of.match", excel_df[sheet_row_nextevent,"poss.action"]) &&
+           substitution|halftime|fulltime|end.of.match", match_df[sheet_row_nextevent,"poss.action"]) &&
     # checks if next event isn't a lost aerial duel
-    !grepl("aerial.lost", excel_df[sheet_row_nextevent, "poss.action"]) &&
+    !grepl("aerial.lost", match_df[sheet_row_nextevent, "poss.action"]) &&
     # checks if next event isn't a recovery
-    !grepl("recoveries", excel_df[sheet_row_nextevent, "poss.action"]) &&
+    !grepl("recoveries", match_df[sheet_row_nextevent, "poss.action"]) &&
     # checks if the defensive action isn't something that by definition disrupted a pass attempt
-    !grepl("interceptions|blocks|clearances|shield|high.balls.won|smothers.won|loose.balls.won", excel_df[excel_df[,"event"] == sheet_event & !is.na(excel_df[,"event"]),"def.action"]) &&
+    !grepl("interceptions|blocks|clearances|shield|high.balls.won|smothers.won|loose.balls.won", match_df[match_df[,"event"] == sheet_event & !is.na(match_df[,"event"]),"def.action"]) &&
     # checks if the "gk.ball.stop" column isn't a value besides "missed.the.ball"
-    !grepl("caught|punched|dropped|collected|parried|deflected", excel_df[excel_df[,"event"] == sheet_event & !is.na(excel_df[,"event"]),"gk.ball.stop"]) &&
+    !grepl("caught|punched|dropped|collected|parried|deflected", match_df[match_df[,"event"] == sheet_event & !is.na(match_df[,"event"]),"gk.ball.stop"]) &&
     # checks if "poss.player.disciplinary" column is blank
-    !grepl("fouls|fouls|yellow|red|penalties", excel_df[excel_df[,"event"] == sheet_event & !is.na(excel_df[,"event"]),"poss.player.disciplinary"]) &&
+    !grepl("fouls|fouls|yellow|red|penalties", match_df[match_df[,"event"] == sheet_event & !is.na(match_df[,"event"]),"poss.player.disciplinary"]) &&
     # checks if the ball didn't go out of bounds
-    !grepl("out.of.bounds", excel_df[excel_df[,"event"] == sheet_event & !is.na(excel_df[,"event"]),"poss.notes"])
+    !grepl("out.of.bounds", match_df[match_df[,"event"] == sheet_event & !is.na(match_df[,"event"]),"poss.notes"])
 }

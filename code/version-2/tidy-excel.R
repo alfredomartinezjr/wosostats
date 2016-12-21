@@ -13,6 +13,7 @@ if(!exists("online_mode")){
 # Install packages if necessary--------
 require(readxl)
 require(RCurl)
+require(R6)
 
 # Internal files to include--------
 if(online_mode == "online") {
