@@ -105,11 +105,13 @@ all <- merge(players, t, by="Player", all=TRUE)
 all$`Shots per 90` <- (all$Shots/all$MP)*90
 rm(t, players)
 
+
 #EXPECTED GOALS (xG)----------
 t <- ddply(d[!is.na(d[,"xG"]),c("poss.player", "xG")], .(poss.player), summarise, xG=sum(xG))
 names(t) <- c("Player","xG")
 all <- merge(all, t, by=c("Player"), all=TRUE)
 rm(t)
+
 
 #SHOTS UNDER PRESSURE---------------
 t <- addMultiColumnsForQualifiers(patterns = c("pressured"="pressure", "challenged"="challenge"), 
@@ -129,6 +131,7 @@ names(t2) <- c("Player","Shot Pressed", "Pct Shots Pressed")
 all <- merge(all, t2, by="Player", all=TRUE)
 rm(t,t2)
 
+
 #SHOT LOCATION---------------
 t <- createCleanDataFrame(c("shots", "accuracy", "shots.scored", "shots.stopped.by.gk", "shots.stopped.by.def", "shots.missed") ,
                           "poss.action", d)
@@ -143,6 +146,7 @@ t2 <- t2[,1:7]
 names(t2) <- c("Player", "A6 Shots", "A18 Shots", "A3L Shots", "A3C Shots", "A3R Shots", "Far Shots")
 all <- merge(all, t2, by="Player", all=TRUE)
 rm(t,t2)
+
 
 #ASSISTS---------------
 t <- addMultiColumnsForQualifiers(c("assists"="assist", "key.passes"="key.pass|second.assist", "second.assists"="second.assist"),
@@ -174,6 +178,7 @@ rm(t, t1, t2, t3, t4, t6)
 all$`Assists per 90` <- (all$Assists/all$MP)*90
 all$`Key Passes per 90` <- (all$`Key Passes`/all$MP)*90
 
+
 #BIG CHANCES---------------
 t <- createTable(c("big.chances", "big.chances.per.90", "big.chances.scored", "big.chances.conversion","big.chances.shot.on.goal", "big.chances.shot.missed", 
                    "big.chances.dispossessed","big.chances.created", "big.chances.lost"),"poss.notes", d)
@@ -185,6 +190,7 @@ all <- merge(all, t, by="Player", all=TRUE)
 rm(t)
 #Calculate "per 90" fields
 all$`Big Chances per 90` <- (all$`Big Chances`/all$MP)*90
+
 
 #OVERALL PASSING---------------
 t <- addMultiColumnsForQualifiers(patterns=c("pressured"="pressured", "challenged"="challenged", "forward.pass"="^passes.f", "sideways.pass"="^passes.s", "backward.pass"="^passes.b"),
@@ -199,6 +205,7 @@ all <- merge(all, t2, by=1, all=TRUE)
 rm(t,t2)
 all$`Pass Att per 90` <- (all$`Pass Att`/all$MP)*90
 
+
 #OPEN PLAY PASSING----------
 t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick", patternLocation = "play.type", ogdf = d, 
                            ndf = createDataFrame(c("passes.f.c", "passes.f", 
@@ -210,6 +217,7 @@ names(t) <- c("Player","opPass Comp", "opPass Att","opPass Att per 90" , "opPass
 all <- merge(all, t, by=1, all=TRUE)
 rm(t)
 all$`opPass Att per 90` <- (all$`opPass Att`/all$MP)*90
+
 
 #OPEN PLAY PASSING UNDER PRESSURE----------
 ## Add qualifiers
@@ -230,6 +238,7 @@ names(t3) <- c("Player", "opPPass Comp", "opPPass Att", "opPPass Att per 90","op
 all <- merge(all, t3, by="Player", all=TRUE)
 rm(t, t2, t3)
 all$`opPPass Att per 90` <- (all$`opPPass Att`/all$MP)*90
+
 
 #OVERALL PASSING BY DIRECTION---------------
 t <- addMultiColumnsForQualifiers(patterns = c("forward.pass"="^passes.f","sideways.pass"="^passes.s","backward.pass"="^passes.b"),
@@ -259,6 +268,7 @@ rm(directiondist, fwdtab,sidetab, backtab,passdirection)
 all$`fwPass.Att.per.90` <- (all$`fwPass.Att`/all$MP)*90
 all$`sPass.Att.per.90` <- (all$`sPass.Att`/all$MP)*90
 all$`bPass.Att.per.90` <- (all$`bPass.Att`/all$MP)*90
+
 
 #OVERALL PASSING BY LOCATION---------
 #creates column for each third (def, mid, attack)
@@ -291,6 +301,7 @@ rm(locationdist, a3tab,m3tab, d3tab,passlocation)
 all$`A3Pass.Att.per.90` <- (all$`A3Pass.Att`/all$MP)*90
 all$`M3Pass.Att.per.90` <- (all$`M3Pass.Att`/all$MP)*90
 all$`D3Pass.Att.per.90` <- (all$`D3Pass.Att`/all$MP)*90
+
 
 #OPEN PLAY PASSING BY LOCATION----------
 #Passing stats, without dead ball scenarios (GKs, GK throws, GK drop kicks,FKs, CKs, throw ins)
@@ -328,6 +339,7 @@ rm(locationdist, a3tab,m3tab, d3tab,passlocation)
 all$`A3opPass.Att.per.90` <- (all$`A3opPass.Att`/all$MP)*90
 all$`M3opPass.Att.per.90` <- (all$`M3opPass.Att`/all$MP)*90
 all$`D3opPass.Att.per.90` <- (all$`D3opPass.Att`/all$MP)*90
+
 
 #COMPLETED PASSES BY ORIGIN & DESTINATION----------
 t <- addColumnForQualifier("completed", pattern="passes.*.c", patternLocation = "poss.action", ogdf = d, 
@@ -380,6 +392,8 @@ t2 <- createTable(c("Pass.Comp.D3toD3", "Pass.Comp.D3toM3", "Pass.Comp.D3toA3", 
 all <- merge(all, t2, by="Player", all=TRUE)
 rm(t,t2)
 
+
+
 #OPEN PLAY PASSING BY DIRECTION----------
 #Passing stats, without dead ball scenarios (GKs, GK throws, GK drop kicks,FKs, CKs, throw ins)
 t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type", ogdf = d, 
@@ -419,6 +433,7 @@ all$`fwopPass.Att.per.90` <- (all$`fwopPass.Att`/all$MP)*90
 all$`sopPass.Att.per.90` <- (all$`sopPass.Att`/all$MP)*90
 all$`bopPass.Att.per.90` <- (all$`bopPass.Att`/all$MP)*90
 
+
 #PASSING UNDER PRESSURE---------------
 t <- addMultiColumnsForQualifiers(patterns=c("pressured"="pressure", "challenged"="challenge"),
                                   pattern_locations = c("def.action", "def.action"),
@@ -440,6 +455,7 @@ names(t4) <- c("Player", "Pct Passes Pressed", "PPass Comp", "PPass Att", "PPass
 all <- merge(all, t4, by="Player", all=TRUE)
 rm(t, t2, t3, t4)
 all$`PPass Att per 90` <- (all$`PPass Att`/all$MP)*90
+
 
 #PASSING UNDER PRESSURE BY DIRECTION---------------
 t <- createCleanDataFrame(c("passes.f.c", "passes.f", 
@@ -478,6 +494,7 @@ all$`fwPPass.Att.per.90` <- (all$`fwPPass.Att`/all$MP)*90
 all$`sPPass.Att.per.90` <- (all$`sPPass.Att`/all$MP)*90
 all$`bPPass.Att.per.90` <- (all$`bPPass.Att`/all$MP)*90
 
+
 #CROSSES---------------
 t <- addColumnForQualifier("opPass", pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type", ogdf = d, invert = TRUE,
                            ndf = createCleanDataFrame(c("passes.f.c", "passes.f", 
@@ -503,6 +520,7 @@ rm(t, t2, t3, t4)
 all$`Cross Att per 90` <- (all$`Cross Att`/all$MP)*90
 all$`Cross Att per opPass` <- (all$`Cross Att`/all$`opPass Att`)
 
+
 #LAUNCH BALLS---------------
 t <- addColumnForQualifier(newcol="launch", pattern = "launch|gk.drop.kick", patternLocation = "play.type",
                            ogdf = d, ndf = createCleanDataFrame(c("passes.f.c", "passes.f", 
@@ -517,6 +535,7 @@ rm(t, t2)
 all$`Launch Att per 90` <- (all$`Launch Att`/all$MP)*90
 all$`Launch Att per Pass` <- (all$`Launch Att`/all$`Pass Att`)
 
+
 #THROUGH BALLS---------------
 t <- createCleanDataFrame(c("through"), "play.type", createDataFrame(c("passes.f.c", "passes.f", 
                                                                        "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", d))
@@ -529,6 +548,7 @@ rm(t2, t)
 all$`Through Att per 90` <- (all$`Through Att`/all$MP)*90
 all$`Through Att per Pass` <- (all$`Through Att`/all$`Pass Att`)
 all$`Through Att per opPass` <- (all$`Through Att`/all$`opPass Att`)
+
 
 #THROW INS---------------
 ##Create blank "throwin" column, to be filled with "yes" or "no"
@@ -544,6 +564,7 @@ rm(t2)
 #Calculate "per 90" columns
 all$`Throw In Att per 90` <- (all$`Throw In Att`/all$MP)*90
 all$`Throw In Att per Pass` <- (all$`Throw In Att`/all$`Pass Att`)
+
 
 #CORNER KICKS----------
 t <- addMultiColumnsForQualifiers(ogdf=d, ndf=createCleanDataFrame(c("passes.f.c", "passes.f", 
@@ -563,6 +584,7 @@ t5 <- merge(t2, t3, by="Player", all=TRUE)
 t5 <- merge(t5, t4, by="Player", all=TRUE)
 all <- merge(all, t5, by="Player", all=TRUE)
 rm(t, t2, t3, t4, t5)
+
 
 #FREE KICKS----------
 t <- addMultiColumnsForQualifiers(ogdf=d, ndf=createCleanDataFrame(c("passes.f.c", "passes.f", "passes.s.c", "passes.s", 
@@ -593,6 +615,7 @@ names(t7)[9] <- "Free Kicks Taken"
 all <- merge(all, t7, by="Player", all=TRUE)
 rm(t, t2, t3, t4, t5, t6, t7)
 
+
 #TAKE ONS---------------
 t <- createTable(c("Take Ons", "take.ons.per.90", "take.on.won","take.on.lost", "Take On Win Pct",  "dispossessed", "lost.touch", "All Possessions Disrupted", "Poss Disrupted per 90"), "poss.action", 
                  createCleanDataFrame(c("take.on.won", "take.on.lost", "dispossessed", "lost.touch"),"poss.action", d))
@@ -605,6 +628,7 @@ all <- merge(all, t, by=1, all=TRUE)
 rm(t)
 all$`Take Ons per 90` <- (all$`Take Ons`/all$MP)*90
 all$`Poss Disrupted per 90` <- (all$`All Possessions Disrupted`/all$MP)*90
+
 
 #AERIAL DUELS---------------
 t <- createDataFrame(c("aerial.won", "aerial.lost"), "poss.action", d)
@@ -621,6 +645,7 @@ names(t5) <- c("Player","Aerial Duels", "Aerial Duels per 90", "AD Won", "AD Los
 all <- merge(all, t5, by=1, all=TRUE)
 rm(t, t2,t3,t4,t5)
 all$`Aerial Duels per 90` <- (all$`Aerial Duels`/all$MP)*90
+
 
 #TACKLES & PRESSURE---------------
 t <- createDataFrame(c("dispossessed", "tackles.ball.away", "tackles.ball.won", "tackles.ball","dribbled.tackles.missed", 
@@ -641,6 +666,7 @@ all <- merge(all, t2, by=1, all=TRUE)
 rm(t,t2)
 all$`Opp Poss Disrupted per 90` <- (all$`All Opp Poss Disrupted`/all$MP)*90
 all$`Dribbled per 90` <- (all$`Dribbled`/all$MP)*90
+
 
 #RECOVERIES---------------
 t <- createDataFrame(c("recoveries"), "poss.action", d)
@@ -686,6 +712,7 @@ all <- merge(all, t5, by=1, all=TRUE)
 rm(t2,t3,t4,t5)
 all$`Recoveries per 90` <- (all$Recoveries/all$MP)*90
 
+
 #INTERCEPTIONS, BLOCKS, CLEARANCES, BALL SHIELDS----------
 t <- createDataFrame(c("interceptions","clearances", "ball.shield", "blocks"), "def.action", d)
 t <- t[,c("event","time", "def.position","def.team","def.player","def.action","def.location", "def.player.disciplinary","def.notes")]
@@ -698,6 +725,7 @@ rm(t2)
 all$`Int per 90` <- (all$Interceptions/all$MP)*90
 all$`Blocks per 90` <- (all$Blocks/all$MP)*90
 all$`Clearances per 90` <- (all$Clearances/all$MP)*90
+
 
 #DISCIPLINARY---------
 #For disciplinary actions that show up the def.notes column
@@ -775,6 +803,7 @@ comb <- comb[,c("Player", "Offsides", "Fouls Won", "Fouls Conceded",  "Yellow Ca
 all <- merge(all, comb, by="Player", all=TRUE)
 rm(comb,def,poss)
 
+
 #ERRORS & BIG CHANCE STOPS----------
 #For errors and big stops that show up the def.notes column
 t <- d[,c("event","time","def.position", "def.team", "def.player", "def.action",
@@ -818,6 +847,7 @@ comb <- rbind(def,poss)
 all <- merge(all, comb, by="Player", all=TRUE)
 rm(def,poss,comb,t,t2,t3,t4,t5)
 
+
 #GK SHOTS ON GOAL FACED----------
 t <- createDataFrame(c("gk.s.o.g.stop", "gk.s.o.g.def.stop","gk.s.o.g.scored"), "def.action", d)
 ##transforms data frame to move defensive actions into the "possessing action" columns
@@ -854,6 +884,7 @@ rm(t2,t3,t4)
 all <- merge(all, t5, by=1, all=TRUE)
 rm(t5)
 
+
 #GK BIG CHANCES SOG FACED----------
 t <- addMultiColumnsForQualifiers(patterns=c("BC.SOG.Faced"="big.chances.scored|big.chances.shot.on.goal","BC.Goals.Allowed"="big.chances.scored","GK.Stop"="gk.s.o.g.stop"),
                                      pattern_locations = c("poss.notes", "poss.notes","def.action"),
@@ -876,6 +907,7 @@ names(t2) <- c("Player", "BC SOG Faced", "BC Saves", "BC Goals Allowed", "GperBC
 t2$GperBCSOG <- t2[,"BC Goals Allowed"]/t2[,"BC SOG Faced"]
 all <- merge(all, t2, by="Player", all=TRUE)
 rm(t, t2)
+
 
 #GK HIGH BALLS FACED----------
 t <- createDataFrame("GK", "def.position", d)
@@ -923,6 +955,7 @@ names(t2)[18:19] <- c("FKs Won", "FKs Lost")
 all <- merge(all, t2, by=1, all=TRUE)
 rm(t, t2)
 
+
 #GK SMOTHERS----------
 t <- createDataFrame(c("gk.smothers.won", "gk.smothers.lost"), "def.action", d)
 t <- t[grep("[Gg][Kk]", t[,"def.position"]),]
@@ -933,6 +966,7 @@ smothers <- t
 rm(t)
 all <- merge(all, smothers, by=1, all=TRUE)
 rm(smothers)
+
 
 #GK DISTRIBUTION----------
 #Create clean data frame with only goalkeeper passing events
@@ -960,6 +994,7 @@ t6 <- merge(t6, t4, by="Player", all=TRUE)
 t6 <- merge(t6, t5, by="Player", all=TRUE)
 all <- merge(all, t6, by=1, all=TRUE)
 rm(t, t2, t3, t4, t5, t6)
+
 
 #CLEANING UP TABLE----------
 all[is.na(all)] <- 0
