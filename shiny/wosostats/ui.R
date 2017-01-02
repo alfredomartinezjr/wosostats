@@ -20,12 +20,12 @@ shinyUI(fluidPage(
       br(),
       downloadButton("downloadData", "Download"),
       div(helpText("Download a csv file of all the stats for this match"), style="font-size:12px"),
-      div(helpText(p("Send feedback & questions to alfredom790@gmail.com or to", a("@WoSoStats on Twitter.", href="https://twitter.com/wosostats")), style="font-size:12px")),
+      div(helpText(p("Send feedback & questions to wosostats.team@gmail.com or to", a("@WoSoStats on Twitter.", href="https://twitter.com/wosostats")), style="font-size:12px")),
       width = 3),
     mainPanel(
       div(navbarPage(
         title = NULL,
-        header = p("There is a cap that shinyapps.io puts on how much total time this app can be used per month. Please, to save some headaches, if you don't need to use this app, close it! :) For a glossary of each of these stats, go", a("here", href="https://github.com/amj2012/wosostats/blob/master/resources/stats-glossary.md")),
+        header = p("There is a cap that shinyapps.io puts on how much total time this app can be used per month. Please, to save some headaches, if you don't need to use this app, close it! :) For a glossary of each of these stats, go", a("here.", href="https://github.com/amj2012/wosostats/blob/master/resources/stats-glossary.md"), "To learn more about how you can log stats for this project, read more ", a("here.", href="https://wosostats.wordpress.com/how-to-help")),
         tabPanel('Shots', dataTableOutput('shots')),
         tabPanel('Passing', dataTableOutput('passing')),
         tabPanel('Possession', dataTableOutput('possession')),
