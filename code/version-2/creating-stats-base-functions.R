@@ -184,23 +184,3 @@ createPassingTable <- function(df, extra=NA){
   }
   s
 }
-
-#7. Create multiple tables
-## useful for when you're going to need to create a lot of tables for
-## given qualifiers, and then merge them all into one table
-
-##this could be useful again (DO NOT RUN THIS)
-#t$freekick <- NA
-#x <- 1
-#while (x <= length(unique(t$event))) {
-#  if (grepl("free.kick",
-#            paste(unlist(strsplit(t[t[,"event"] == unique(t$event)[x],"play.type"], ","), 
-#                         recursive=TRUE), 
-#                  sep="", 
-#                  collapse=" "))) {
-#    t[t[,"event"] == unique(t$event)[x],"freekick"] <- "yes"
-#  } else {
-#    t[t[,"event"] == unique(t$event)[x],"freekick"] <- "no"
-#  }
-#  x <- x + 1
-#}
