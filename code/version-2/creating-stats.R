@@ -14,9 +14,9 @@ if(!exists("d")){
 ### Otherwise, if online_mode hasn't been created yet, you'll just source the "functions.R"
 ### file from the GitHub site
 if(!exists("online_mode")){
-  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/functions.R")
+  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/creating-stats-base-functions.R")
 } else if(exists("online_mode") && online_mode == "offline"){
-  source("~/wosostats/code/version-2/functions.R")
+  source("~/wosostats/code/version-2/creating-stats-base-functions.R")
 }
 
 #MINUTES PLAYED & META DATA----------

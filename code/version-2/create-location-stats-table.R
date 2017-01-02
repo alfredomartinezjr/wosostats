@@ -1,6 +1,6 @@
 # This creates a match stats table for a specified stat, 
 # given as "match_stat", broken up into each location zone.
-source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/functions.R")
+source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/creating-stats-base-functions.R")
 
 #Create heat maps for these specific stats:
 # 1. Attempted pases (attempted-passes)
