@@ -5,28 +5,59 @@
 # 1.
 ## Function that takes a pattern and a column name
 ## The pattern will be the factors as well
-createTable <- function(pattern, col, df) {
+createTable <- function(pattern, target_col, source_df) {
   ## Get event number for all events that have that pattern in the specified column
-  e <- df[df[,col] %in% c(pattern),"event"]
-  e <- paste0("^", e, "$")
+  event_num <- source_df[source_df[,target_col] %in% c(pattern),"event"]
+  event_num <- paste0("^", event_num, "$")
   
   ## Go back to the original data frame and get all rows with an "event" number 
   ## matching a value in the "e" vector
-  d2 <- df[grep(paste(e,collapse="|"), df[,"event"]),]
+  d2 <- source_df[grep(paste(event_num,collapse="|"), source_df[,"event"]),]
   
   ## Include only the rows with the pattern events (excludes defensive plays that added rows to an event)
-  d2 <- d2[d2[,col] %in% c(pattern),]
+  d2 <- d2[d2[,target_col] %in% c(pattern),]
   
   ### Set factors, in case all events specified in the pattern don't show up, so that they show up in the table
-  d2[,col] <- factor(as.character(d2[,col]), levels=c(pattern))
+  d2[,target_col] <- factor(as.character(d2[,target_col]), levels=c(pattern))
   
   ## Create the table
-  t <- table(d2$poss.player, d2[,col])
+  t <- table(d2$poss.player, d2[,target_col])
   t <- data.frame(unclass(t))
   t <- cbind(Player=rownames(t), t)
   rownames(t) <- NULL
   t
 }
+
+createStatsTable <- function(pattern, target_col, source_df) {
+  ### Set factors, in case all events specified in the pattern don't show up, so that they show up in the table
+  source_df[,target_col] <- factor(as.character(source_df[,target_col]), levels=c(pattern))
+  
+  ## Create the table
+  stats_table <- table(source_df$poss.player, source_df[,target_col])
+  stats_table <- data.frame(unclass(stats_table))
+  stats_table <- cbind(Player=rownames(stats_table), stats_table)
+  rownames(stats_table) <- NULL
+  stats_table
+}
+
+createLocationStatsTable <- function(pattern, target_col, source_df, new_sumcol = NA) {
+  locationZones <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML",
+                     "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
+  for(zone in locationZones) {
+    zone_table <- createStatsTable(pattern, target_col, source_df[source_df[,zone] == "yes",])
+    if(!is.na(new_sumcol)){
+      zone_table[,new_sumcol] <- rowSums(zone_table[,(ncol(zone_table)-length(pattern)+1):(ncol(zone_table))])
+    }
+    #ADD ZONE NAME TO COLUMN NAMES WITH PASTE
+    if(exists("stats_table")){
+      stats_table <- merge(zone_table, stats_table, by="Player", all=TRUE)
+    } else {
+      stats_table <- zone_table
+    }
+  }
+  stats_table
+}
+
 
 # 2.
 ## Function that creates a data frame of only events that fit a certain pattern
@@ -184,8 +215,3 @@ createPassingTable <- function(df, extra=NA){
   }
   s
 }
-
-#9 
-## Create locationZones
-locationZones <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML",
-           "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
