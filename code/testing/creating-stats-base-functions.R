@@ -186,7 +186,7 @@ createCleanDataFrame <- function(pattern, col, df) {
   
   ## Create the data.frame from which we will create the final table
   ## Takes only unique instances of "event" numbers
-  t <- t[!duplicated(t$event),c("event", "time","poss.position", "poss.team", "poss.player", "poss.action", 
+  t <- t[!duplicated(t$event),c("event", "time", "poss.team", "poss.player", "poss.number","poss.position","poss.action", 
                                 "poss.location", "poss.play.destination", "play.type", 
                                 "poss.player.disciplinary", "poss.notes")]
   t
