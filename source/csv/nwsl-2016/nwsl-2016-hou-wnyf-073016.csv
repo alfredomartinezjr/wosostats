@@ -39,7 +39,7 @@
 "34","2","D","WNYF","Eddy","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "35","2","M","WNYF","Doniak","passes.f.c",NA,NA,"deep.crosses","D","HOU","Privett","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "36","2","F","WNYF","Williams","passes.b.c",NA,"A18",NA,"D","HOU","Moros","pressured",NA,NA,NA,NA,"assists",NA,NA,NA,NA,NA
-"37","2","M","WNYF","Sanderson","shots.scored","A18",NA,NA,"D","HOU","Roccaro","pressured","D18",NA,NA,NA,"big.chances.scored",NA,NA,NA,NA,NA
+"37","2","M","WNYF","Sanderson","shots.scored","A18",NA,NA,"D","HOU","Roccaro","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "37","2",NA,NA,NA,NA,NA,NA,NA,"D","HOU","Brush","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "37","2",NA,NA,NA,NA,NA,NA,NA,"GK","HOU","Henninger","gk.s.o.g.scored",NA,"parried.to.danger","diving",NA,NA,NA,NA,NA,NA,NA
 "38","3","F","HOU","Ohai","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1026,7 +1026,7 @@
 "883","62","D","HOU","Roccaro","passes.s.c",NA,NA,NA,"F","WNYF","McDonald","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "884","62","D","HOU","Moros","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "885","62","D","HOU","Moros","passes.f.c",NA,NA,NA,"M","WNYF","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"886","63","F","HOU","Daly","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA,NA,NA,NA
+"886","63","F","HOU","Daly","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "887","63","M","HOU","Ochs","passes.s.c",NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,"assists",NA,NA,NA,NA,NA
 "888","63","F","HOU","Ohai","take.on.won",NA,NA,NA,"M","WNYF","Smith","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "889","63","F","HOU","Ohai","shots.scored","A18",NA,NA,"GK","WNYF","Rowland","gk.s.o.g.scored",NA,NA,"standing",NA,NA,NA,NA,NA,NA,NA
