@@ -31,12 +31,12 @@ date,year,month,day,competition.slug,competition.string,home.team,away.team,matc
 10/19/16,2016,10,19,international-friendlies-2016,International Friendlies 2016,USA,SUI,USA-SUI,,https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/international-friendlies-2016/2016-international-friendly-usa-sui-101916.csv,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/international-friendlies-2016/2016-international-friendly-usa-sui-101916.csv,,,no
 10/23/16,2016,10,23,international-friendlies-2016,International Friendlies 2016,USA,SUI,USA-SUI,,https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/international-friendlies-2016/2016-international-friendly-usa-sui-102316.csv,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/international-friendlies-2016/2016-international-friendly-usa-sui-102316.csv,,,no
 ,,,,nwsl-2016,NWSL 2016,,,Season,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-season.csv,,,inc
-,,,,nwsl-2016,NWSL 2016,,,Week 1,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-1.csv,,,inc
-,,,,nwsl-2016,NWSL 2016,,,Week 2,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-2.csv,,,no
-,,,,nwsl-2016,NWSL 2016,,,Week 3,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-3.csv,,,no
-,,,,nwsl-2016,NWSL 2016,,,Week 4,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-4.csv,,,no
-,,,,nwsl-2016,NWSL 2016,,,Week 5,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-5.csv,,,no
-,,,,nwsl-2016,NWSL 2016,,,Week 6,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-6.csv,,,no
+,,,,nwsl-2016,NWSL 2016,,,Week 1,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-1.csv,,,yes
+,,,,nwsl-2016,NWSL 2016,,,Week 2,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-2.csv,,,yes
+,,,,nwsl-2016,NWSL 2016,,,Week 3,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-3.csv,,,yes
+,,,,nwsl-2016,NWSL 2016,,,Week 4,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-4.csv,,,yes
+,,,,nwsl-2016,NWSL 2016,,,Week 5,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-5.csv,,,yes
+,,,,nwsl-2016,NWSL 2016,,,Week 6,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-6.csv,,,yes
 ,,,,nwsl-2016,NWSL 2016,,,Week 7,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-7.csv,,,no
 ,,,,nwsl-2016,NWSL 2016,,,Week 8,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-8.csv,,,no
 ,,,,nwsl-2016,NWSL 2016,,,Week 9,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-9.csv,,,no
@@ -45,6 +45,10 @@ date,year,month,day,competition.slug,competition.string,home.team,away.team,matc
 ,,,,nwsl-2016,NWSL 2016,,,Week 12,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-12.csv,,,no
 ,,,,nwsl-2016,NWSL 2016,,,Week 13,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-13.csv,,,no
 ,,,,nwsl-2016,NWSL 2016,,,Week 14,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-14.csv,,,no
+,,,,nwsl-2016,NWSL 2016,,,Week 15,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-15.csv,,,no
+,,,,nwsl-2016,NWSL 2016,,,Week 16,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-16.csv,,,no
+,,,,nwsl-2016,NWSL 2016,,,Week 17,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-17.csv,,,no
+,,,,nwsl-2016,NWSL 2016,,,Week 19,,NA,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-week-19.csv,,,no
 4/16/16,2016,4,16,nwsl-2016,NWSL 2016,WAS,BOS,WAS-BOS,,https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/nwsl-2016/nwsl-2016-was-bos-041616.csv,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-was-bos-041616.csv,,week-1,yes
 4/16/16,2016,4,16,nwsl-2016,NWSL 2016,HOU,CRS,HOU-CRS,,https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/nwsl-2016/nwsl-2016-hou-crs-041616.csv,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-hou-crs-041616.csv,,week-1,yes
 4/16/16,2016,4,16,nwsl-2016,NWSL 2016,FCKC,WNYF,FCKC-WNYF,,https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/nwsl-2016/nwsl-2016-fckc-wnyf-041616.csv,https://raw.githubusercontent.com/amj2012/wosostats/master/analysis/csv/matches/tables/nwsl-2016/nwsl-2016-fckc-wnyf-041616.csv,,week-1,yes
