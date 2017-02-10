@@ -181,15 +181,17 @@ addMultiColumnsForQualifiers <- function(patterns, pattern_locations, ogdf, ndf)
 
 addColumnForMultiQualifiers <- function(newcol, pattern, source_df, exp, invert=FALSE) {
   newcol_vec <- logical(nrow(source_df))
-  for(match_sheet_row in 1:nrow(source_df)){
-    #subsets source_df to only the row in question
-    subsetcol <- source_df[match_sheet_row,names(pattern)]
-    #goes through each column to find a TRUE
-    if (exp == "OR" & (TRUE %in% (pattern == subsetcol))) {
-      newcol_vec[match_sheet_row] <- TRUE
-    } else if (exp == "AND" & !(FALSE %in% (pattern == subsetcol))) {
-      newcol_vec[match_sheet_row] <- TRUE
-    }
+  if(nrow(source_df) > 0) {
+    for(match_sheet_row in 1:nrow(source_df)){
+      #subsets source_df to only the row in question
+      subsetcol <- source_df[match_sheet_row,names(pattern)]
+      #goes through each column to find a TRUE
+      if (exp == "OR" & (TRUE %in% (pattern == subsetcol))) {
+        newcol_vec[match_sheet_row] <- TRUE
+      } else if (exp == "AND" & !(FALSE %in% (pattern == subsetcol))) {
+        newcol_vec[match_sheet_row] <- TRUE
+      }
+    }  
   }
   source_df[,newcol] <- newcol_vec
   source_df

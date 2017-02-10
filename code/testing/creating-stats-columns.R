@@ -1,5 +1,4 @@
 # Install if necessary---------------#
-#library(plyr); library(dplyr)
 library(RCurl)
 
 
@@ -131,12 +130,17 @@ createShotsColumns <- function(){
 
 # all_stats <- merge(all_players, all_shots, by=c("Player","Team","Number"), all.x=TRUE)
 
-#ASSISTS---------------
+#KEY PASSES---------------
 createKeyPassesColumns <- function() {
+  match_subset <- createDataFrame(pattern = c("assists", "key.pass","second.assists"),col = "poss.notes",df = match_sheet)
   match_subset <- addMultiColumnsForQualifiers(patterns = c("assists"="^assists", "key.passes"="key.pass|second.assist", "second.assists"="second.assist"),
                                                pattern_locations = c("poss.notes", "poss.notes", "poss.notes"),
                                                ogdf = match_sheet, 
-                                               ndf = createDataFrame(c("passes.f.c", "passes.f", "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", match_sheet))
+                                               ndf = match_subset)
+  #match_subset <- addMultiColumnsForQualifiers(patterns = c("assists"="^assists", "key.passes"="key.pass|second.assist", "second.assists"="second.assist"),
+  #                                             pattern_locations = c("poss.notes", "poss.notes", "poss.notes"),
+  #                                             ogdf = match_subset, 
+  #                                             ndf = createDataFrame(c("passes.f.c", "passes.f", "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", match_sheet))
   match_subset <- addColumnForMultiQualifiers(newcol = "key.assists", pattern = c("assists"=TRUE,"key.passes"=TRUE), 
                                               source_df = match_subset,
                                               exp = "AND")
