@@ -1,7 +1,6 @@
 # Install if necessary---------------#
 library(RCurl)
 
-
 # About offline mode:
 # Trying to do work on a plane & don't want to pay $8 for Wi-Fi? Stuck in a train tunnel?
 # Assign "offline" to  online_mode and, assuming you've got the GitHub repo duplicated in
@@ -9,13 +8,14 @@ library(RCurl)
 # Otherwise, if online_mode hasn't been created yet, you'll just source the "functions.R"## file from the GitHub site
 if(!exists("online_mode")){
   source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/testing/creating-stats-base-functions.R")
-  rosters <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/rosters/nwsl-2016.csv")
-  rosters <- read.csv(textConnection(rosters), stringsAsFactors = FALSE)
+  #rosters <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/rosters/nwsl-2016.csv")
+  #rosters <- read.csv(textConnection(rosters), stringsAsFactors = FALSE)
 } else if(exists("online_mode") && online_mode == "offline"){
   source("~/wosostats/code/testing/creating-stats-base-functions.R")
-  rosters <- read.csv("~/wosostats/rosters/nwsl-2016.csv")
+  #rosters <- read.csv("~/wosostats/rosters/nwsl-2016.csv")
 }
 
+#MATCH PLAYERS---------
 ## Gets data frame that binds data frames of every player who shows up in "poss.player" and "def.player" column
 createPlayersColumns <- function(use_rosters=FALSE, match_positions=FALSE) {
   
@@ -241,7 +241,7 @@ createPassingColumns <- function(type=NA) {
   stats_cols[[17]] <- createPassingTable(source_df = createCleanDataFrame(c("passes.b.c", "passes.b"), "poss.action", match_subset[match_subset[,"pressed"]==TRUE,]),
                                         extra = "bPPass.Att.per.90",
                                         stat_names = c("bPPass.Comp", "bPPass.Att", "bPPass.Comp.Pct", "bPPass.Att.per.90"))
-  if(type=="location") {
+  if(!is.na(type) & type=="location") {
     #by location - all passes
     stats_cols[[18]] <- createPassingTable(source_df = match_subset[grep("A3L|AL|A3C|AC|A3R|AR|A18|A6",match_subset$poss.location),],
                                            extra = "A3Pass.Att.per.90",
@@ -287,7 +287,7 @@ createPassingColumns <- function(type=NA) {
   merged_stats[,c("rFreq.opPass.Fwd","rFreq.opPass.Side","rFreq.opPass.Back")] <-  merged_stats[,c("fwopPass.Att","sopPass.Att","bopPass.Att")]/opPassAtt
   pressPassAtt <- rowSums(merged_stats[,c("fwPPass.Att","sPPass.Att","bPPass.Att")],na.rm = TRUE)
   merged_stats[,c("rFreq.PPass.Fwd","rFreq.PPass.Side","rFreq.PPass.Back")] <-  merged_stats[,c("fwPPass.Att","sPPass.Att","bPPass.Att")]/pressPassAtt
-  if(type=="location") {
+  if(!is.na(type) & type=="location") {
     location_allPassAtt <- rowSums(merged_stats[,c("A3Pass.Att","M3Pass.Att","D3Pass.Att")],na.rm = TRUE)
     merged_stats[,c("rFreq.A3.Passes", "rFreq.M3.Passes", "rFreq.D3.Passes")] <- merged_stats[,c("A3Pass.Att","M3Pass.Att","D3Pass.Att")]/location_allPassAtt
     location_opPassAtt <- rowSums(merged_stats[,c("A3opPass.Att","M3opPass.Att","D3opPass.Att")],na.rm = TRUE)
@@ -337,11 +337,6 @@ createPassRangeColumns <- function() {
   merged_stats
 }
 
-# all_passesByRange <- createPassRangeColumns()
-# all_stats <- merge(all_stats, all_passesByRange, by=c("Player","Team","Number"), all.x=TRUE)
-
-
-
 #SET PIECES--------
 createSetPieceColumns <- function() {
   match_subset <- createDataFrame(pattern = c("corner.kick", "free.kick"),col = "play.type",df = match_sheet)
@@ -382,9 +377,6 @@ createSetPieceColumns <- function() {
   merged_stats
 }
 
-# all_setPieces <- createSetPieceColumns()
-# all_stats <- merge(all_stats, all_setPieces, by=c("Player","Team","Number"), all.x=TRUE)
-
 #POSSESSION--------
 createPossessionColumns <- function() {
   stats_cols <- list()
@@ -410,10 +402,6 @@ createPossessionColumns <- function() {
   merged_stats
   
 }
-
-# all_possessions <- createPossessionColumns()
-# all_stats <- merge(all_stats, all_possessions, by=c("Player","Team","Number"), all.x=TRUE)
-
 
 #RECOVERIES---------------
 createRecoveryColumns <- function() {
@@ -447,9 +435,6 @@ createRecoveryColumns <- function() {
   merged_stats
 }
 
-# all_recoveries <- createRecoveryColumns()
-# all_stats <- merge(all_stats, all_recoveries, by=c("Player","Team","Number"), all.x=TRUE)
-
 #AERIAL DUELS---------------
 createAerialColumns <- function() {
   match_subset <- createDataFrame(pattern = c("aerial.won","aerial.lost"),col = "poss.action",df = match_sheet)
@@ -470,9 +455,6 @@ createAerialColumns <- function() {
   
   merged_stats
 }
-
-# all_aerialDuels <- createAerialColumns()
-# all_stats <- merge(all_stats, all_aerialDuels, by=c("Player","Team","Number"), all.x=TRUE)
 
 #DEFENSIVE DISRUPTIONS---------------
 createDefActionsColumns <- function() {
@@ -605,6 +587,3 @@ createGkDistColumns <- function() {
   merged_stats
   
 }
-
-# all_gkPasses <- createGkDistColumns()
-# all_stats <- merge(all_stats, all_gkPasses, by=c("Player","Team","Number"), all.x=TRUE)
