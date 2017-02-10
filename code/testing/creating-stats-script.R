@@ -24,21 +24,19 @@ stats_list[[1]] <-  createPlayersColumns()
 stats_list[[2]] <- createShotsColumns()
 stats_list[[3]] <- createKeyPassesColumns()
 stats_list[[4]] <- createChancesColumns() 
-stats_list[[5]] <- createPassingColumns() #this takes too long
-stats_list[[6]] <- createPassingDirectionColumns() #this takes too long
-stats_list[[7]] <- createPassingLocationColumns() #this takes too long
-stats_list[[8]] <- createPassRangeColumns()
-stats_list[[9]] <- createSpecialPassColumns()
-stats_list[[10]] <- createSetPieceColumns()
-stats_list[[11]] <- createPossessionColumns()
-stats_list[[12]] <- createRecoveryColumns()
-stats_list[[13]] <- createAerialColumns()
-stats_list[[14]] <- createTacklesColumns()
-stats_list[[15]] <- createBallDisruptionColumns()
-stats_list[[16]] <- createGkSogColumns()
-stats_list[[17]] <- createGkHighBallColumns()
-stats_list[[18]] <- createGkSmotherColumns()
-stats_list[[19]] <- createGkDistColumns()
+stats_list[[5]] <- createPassingColumns(type="location") #this takes too long
+stats_list[[6]] <- createPassRangeColumns()
+stats_list[[7]] <- createSpecialPassColumns()
+stats_list[[8]] <- createSetPieceColumns()
+stats_list[[9]] <- createPossessionColumns()
+stats_list[[10]] <- createRecoveryColumns()
+stats_list[[11]] <- createAerialColumns()
+stats_list[[12]] <- createTacklesColumns()
+stats_list[[13]] <- createBallDisruptionColumns()
+stats_list[[14]] <- createGkSogColumns()
+stats_list[[15]] <- createGkHighBallColumns()
+stats_list[[16]] <- createGkSmotherColumns()
+stats_list[[17]] <- createGkDistColumns()
 
 for(index in 1:length(stats_list)) {
   if(exists("match_stats")) {

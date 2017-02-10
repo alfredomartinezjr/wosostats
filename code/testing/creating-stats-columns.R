@@ -200,15 +200,9 @@ createChancesColumns <- function() {
 # all_stats <- merge(all_stats, all_bigChances, by=c("Player","Team","Number"), all.x=TRUE)
 
 #PASSING---------------
-createPassingColumns <- function() {
+createPassingColumns <- function(type=NA) {
   match_subset <- createCleanDataFrame(c("passes.f.c", "passes.f", "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", match_sheet)
-  match_subset <- addMultiColumnsForQualifiers(patterns=c("pressured"="pressured", "challenged"="challenged", "forward.pass"="^passes.f", "sideways.pass"="^passes.s", "backward.pass"="^passes.b"),
-                                               pattern_locations = c("def.action","def.action", "poss.action", "poss.action", "poss.action"),
-                                               ogdf = match_sheet, 
-                                               ndf= match_subset)
-  match_subset <- addColumnForMultiQualifiers(newcol = "pressed", 
-                                              pattern = c("pressured"=TRUE,"challenged"=TRUE),
-                                              source_df = match_subset, exp="OR")
+  match_subset <- addColumnForQualifier(newcol = "pressed",pattern = "pressured|challenged",patternLocation = "def.action",ogdf = match_sheet,ndf = match_subset)
   match_subset <- addColumnForQualifier(newcol = "opPass", 
                                         pattern="throw|gk|corner.kick|free.kick|goal.kick", 
                                         patternLocation = "play.type",
@@ -228,65 +222,69 @@ createPassingColumns <- function() {
                                       new_divcol = list(name="pct", numerator="TRUE.", denominator=c("TRUE.","FALSE.")),
                                       drop_cols = c("TRUE.","FALSE."),
                                       stat_names = c("Pct opPass Pressed"))
-  
-  for(index in 1:length(stats_cols)) {
-    if(exists("merged_stats")) {
-      merged_stats <- merge(merged_stats, stats_cols[[index]], by=c("Player","Team","Number"), all=TRUE)
-    } else {
-      merged_stats <- stats_cols[[index]]
-    }
-  }
-  merged_stats
-
-}
-
-# all_passes <- createPassingColumns()
-# all_stats <- merge(all_stats, all_passes, by=c("Player","Team","Number"), all.x=TRUE)
-
-#PASSING BY DIRECTION---------------
-createPassingDirectionColumns <- function() {
-  match_subset <- addMultiColumnsForQualifiers(patterns = c("forward.pass"="^passes.f","sideways.pass"="^passes.s","backward.pass"="^passes.b"),
-                                               pattern_locations =  c("poss.action","poss.action","poss.action"),
-                                               ogdf = match_sheet, 
-                                               ndf = createCleanDataFrame(pattern = c("passes.f.c", "passes.f", "passes.s.c", "passes.s", "passes.b.c", "passes.b"), 
-                                                                          col = "poss.action", df = match_sheet,keep_cols = c("def.action")))
-  match_subset <- addColumnForQualifier(newcol = "pressed",
-                                        pattern = c("pressured|challenged"),patternLocation = "def.action",
-                                        ogdf = match_sheet, ndf = match_subset)
-  match_subset <- addColumnForQualifier(newcol = "opPass", pattern = "throw|gk|corner.kick|free.kick|goal.kick",
-                                        patternLocation = "play.type",ogdf = match_sheet, ndf = match_subset,invert = TRUE)
-  
-  stats_cols <- list()
-  #all passes
-  stats_cols[[1]] <- createPassingTable(source_df = match_subset[match_subset[,"forward.pass"]==TRUE,], 
-                              extra = "fwpass.att.per.90",
-                              stat_names = c("fwPass.Comp", "fwPass.Att", "fwPass.Comp.Pct", "fwPass.Att.per.90"))
-  stats_cols[[2]] <- createPassingTable(source_df = match_subset[match_subset[,"sideways.pass"]==TRUE,], 
-                              extra = "spass.att.per.90",
-                              stat_names = c("sPass.Comp", "sPass.Att", "sPass.Comp.Pct", "sPass.Att.per.90"))
-  stats_cols[[3]] <- createPassingTable(source_df = match_subset[match_subset[,"backward.pass"]==TRUE,], 
-                              extra = "bpass.att.per.90",
-                              stat_names = c("bPass.Comp", "bPass.Att", "bPass.Comp.Pct", "bPass.Att.per.90"))
-  #open play passes
-  stats_cols[[4]] <- createPassingTable(source_df = match_subset[match_subset[,"forward.pass"]==TRUE & match_subset[,"opPass"]==TRUE,], 
+  #by direction - all passes
+  stats_cols[[5]] <- createPassingTable(source_df = createCleanDataFrame(c("passes.f.c", "passes.f"), "poss.action", match_subset), 
+                                        extra = "fwpass.att.per.90",
+                                        stat_names = c("fwPass.Comp", "fwPass.Att", "fwPass.Comp.Pct", "fwPass.Att.per.90"))
+  stats_cols[[6]] <- createPassingTable(source_df = createCleanDataFrame(c("passes.s.c", "passes.s"), "poss.action", match_subset), 
+                                        extra = "spass.att.per.90",
+                                        stat_names = c("sPass.Comp", "sPass.Att", "sPass.Comp.Pct", "sPass.Att.per.90"))
+  stats_cols[[7]] <- createPassingTable(source_df = createCleanDataFrame(c("passes.b.c", "passes.b"), "poss.action", match_subset), 
+                                        extra = "bpass.att.per.90",
+                                        stat_names = c("bPass.Comp", "bPass.Att", "bPass.Comp.Pct", "bPass.Att.per.90"))
+  #by direction - open play passes
+  stats_cols[[8]] <- createPassingTable(source_df = createCleanDataFrame(c("passes.f.c", "passes.f"), "poss.action", match_subset[match_subset[,"opPass"]==TRUE,]), 
                                         extra = "fwoppass.att.per.90",
                                         stat_names = c("fwopPass.Comp", "fwopPass.Att", "fwopPass.Comp.Pct", "fwopPass.Att.per.90"))
-  stats_cols[[5]] <- createPassingTable(source_df = match_subset[match_subset[,"sideways.pass"]==TRUE & match_subset[,"opPass"]==TRUE,], 
+  stats_cols[[9]] <- createPassingTable(source_df = createCleanDataFrame(c("passes.s.c", "passes.s"), "poss.action", match_subset[match_subset[,"opPass"]==TRUE,]), 
                                         extra = "soppass.att.per.90",
                                         stat_names = c("sopPass.Comp", "sopPass.Att", "sopPass.Comp.Pct", "sopPass.Att.per.90"))
-  stats_cols[[6]] <- createPassingTable(source_df = match_subset[match_subset[,"backward.pass"]==TRUE & match_subset[,"opPass"]==TRUE,], 
+  stats_cols[[10]] <- createPassingTable(source_df = createCleanDataFrame(c("passes.b.c", "passes.b"), "poss.action", match_subset[match_subset[,"opPass"]==TRUE,]), 
                                         extra = "boppass.att.per.90",
                                         stat_names = c("bopPass.Comp", "bopPass.Att", "bopPass.Comp.Pct", "bopPass.Att.per.90"))
-  #pressed passes
-  stats_cols[[7]] <- createPassingTable(source_df = match_subset[match_subset[,"forward.pass"] == TRUE & match_subset[,"pressed"]== TRUE,],
+  #by direction - pressed passses
+  stats_cols[[11]] <- createPassingTable(source_df = createCleanDataFrame(c("passes.f.c", "passes.f"), "poss.action", match_subset[match_subset[,"pressed"]==TRUE,]),
                                         extra = "fwPPass.Att.per.90",
                                         stat_names = c("fwPPass.Comp", "fwPPass.Att", "fwPPass.Comp.Pct", "fwPPass.Att.per.90"))
-  stats_cols[[8]] <- createPassingTable(source_df = match_subset[match_subset[,"sideways.pass"] == TRUE & match_subset[,"pressed"]== TRUE,],
+  stats_cols[[12]] <- createPassingTable(source_df = createCleanDataFrame(c("passes.s.c", "passes.s"), "poss.action", match_subset[match_subset[,"pressed"]==TRUE,]),
                                         extra = "sPPass.Att.per.90",
                                         stat_names = c("sPPass.Comp", "sPPass.Att", "sPPass.Comp.Pct", "sPPass.Att.per.90"))
-  stats_cols[[9]] <- createPassingTable(source_df = match_subset[match_subset[,"backward.pass"] == TRUE & match_subset[,"pressed"]== TRUE,],
+  stats_cols[[13]] <- createPassingTable(source_df = createCleanDataFrame(c("passes.b.c", "passes.b"), "poss.action", match_subset[match_subset[,"pressed"]==TRUE,]),
                                         extra = "bPPass.Att.per.90",
                                         stat_names = c("bPPass.Comp", "bPPass.Att", "bPPass.Comp.Pct", "bPPass.Att.per.90"))
+  if(type=="location") {
+    #all passes
+    stats_cols[[14]] <- createPassingTable(source_df = match_subset[grep("A3L|AL|A3C|AC|A3R|AR|A18|A6",match_subset$poss.location),],
+                                           extra = "A3Pass.Att.per.90",
+                                           stat_names = c("A3Pass.Comp", "A3Pass.Att", "A3Pass.Comp.Pct", "A3Pass.Att.per.90"))
+    stats_cols[[15]] <- createPassingTable(source_df = match_subset[grep("AM3L|AML|AM3C|AMC|AM3R|AMR|DM3L|DML|DM3C|DMC|DM3R|DMR",match_subset$poss.location),],
+                                          extra = "M3Pass.Att.per.90",
+                                          stat_names = c("M3Pass.Comp", "M3Pass.Att", "M3Pass.Comp.Pct", "M3Pass.Att.per.90"))
+    stats_cols[[16]] <- createPassingTable(source_df = match_subset[grep("D3L|DL|D3C|DC|D3R|DR|D18|D6",match_subset$poss.location),], 
+                                          extra = "D3Pass.Att.per.90",
+                                          stat_names = c("D3Pass.Comp", "D3Pass.Att", "D3Pass.Comp.Pct", "D3Pass.Att.per.90"))
+    #open play passes
+    stats_cols[[17]] <- createPassingTable(source_df = match_subset[grepl("A3L|AL|A3C|AC|A3R|AR|A18|A6",match_subset$poss.location) == TRUE & match_subset[,"opPass"]==TRUE,], 
+                                          extra = "A3opPass.Att.per.90",
+                                          stat_names = c("A3opPass.Comp", "A3opPass.Att", "A3opPass.Comp.Pct", "A3opPass.Att.per.90"))
+    stats_cols[[18]] <- createPassingTable(source_df = match_subset[grepl("AM3L|AML|AM3C|AMC|AM3R|AMR|DM3L|DML|DM3C|DMC|DM3R|DMR",match_subset$poss.location) == TRUE & match_subset[,"opPass"]==TRUE,], 
+                                          extra = "M3opPass.Att.per.90",
+                                          stat_names = c("M3opPass.Comp", "M3opPass.Att", "M3opPass.Comp.Pct", "M3opPass.Att.per.90"))
+    stats_cols[[19]] <- createPassingTable(source_df = match_subset[grepl("D3L|DL|D3C|DC|D3R|DR|D18|D6",match_subset$poss.location) == TRUE & match_subset[,"opPass"]==TRUE,], 
+                                          extra = "D3opPass.Att.per.90",
+                                          stat_names = c("D3opPass.Comp", "D3opPass.Att", "D3opPass.Comp.Pct", "D3opPass.Att.per.90"))
+    #pressured passes
+    stats_cols[[20]] <- createPassingTable(source_df = match_subset[grepl("A3L|AL|A3C|AC|A3R|AR|A18|A6",match_subset$poss.location) == TRUE & match_subset[,"pressed"]==TRUE,], 
+                                          extra = "A3PPass.Att.per.90",
+                                          stat_names = c("A3PPass.Comp", "A3PPass.Att", "A3PPass.Comp.Pct", "A3PPass.Att.per.90"))
+    stats_cols[[21]] <- createPassingTable(source_df = match_subset[grepl("AM3L|AML|AM3C|AMC|AM3R|AMR|DM3L|DML|DM3C|DMC|DM3R|DMR",match_subset$poss.location) == TRUE & match_subset[,"pressed"]==TRUE,], 
+                                          extra = "M3PPass.Att.per.90",
+                                          stat_names = c("M3PPass.Comp", "M3PPass.Att", "M3PPass.Comp.Pct", "M3PPass.Att.per.90"))
+    stats_cols[[22]] <- createPassingTable(source_df = match_subset[grepl("D3L|DL|D3C|DC|D3R|DR|D18|D6",match_subset$poss.location) == TRUE & match_subset[,"pressed"]==TRUE,], 
+                                          extra = "D3PPass.Att.per.90",
+                                          stat_names = c("D3PPass.Comp", "D3PPass.Att", "D3PPass.Comp.Pct", "D3PPass.Att.per.90"))
+  }
+  
   
   for(index in 1:length(stats_cols)) {
     if(exists("merged_stats")) {
@@ -295,87 +293,26 @@ createPassingDirectionColumns <- function() {
       merged_stats <- stats_cols[[index]]
     }
   }
-  
   allPassAtt <- rowSums(merged_stats[,c("fwPass.Att","sPass.Att","bPass.Att")],na.rm = TRUE)
   merged_stats[,c("rFreq Pass Fwd", "rFreq Pass Side", "rFreq Pass Back")] <- merged_stats[,c("fwPass.Att","sPass.Att","bPass.Att")]/allPassAtt
   opPassAtt <- rowSums(merged_stats[,c("fwopPass.Att","sopPass.Att","bopPass.Att")],na.rm = TRUE)
   merged_stats[,c("rFreq.opPass.Fwd","rFreq.opPass.Side","rFreq.opPass.Back")] <-  merged_stats[,c("fwopPass.Att","sopPass.Att","bopPass.Att")]/opPassAtt
   pressPassAtt <- rowSums(merged_stats[,c("fwPPass.Att","sPPass.Att","bPPass.Att")],na.rm = TRUE)
   merged_stats[,c("rFreq.PPass.Fwd","rFreq.PPass.Side","rFreq.PPass.Back")] <-  merged_stats[,c("fwPPass.Att","sPPass.Att","bPPass.Att")]/pressPassAtt
-  
-  merged_stats
-}
-
-# all_passesByDirection <- createPassingDirectionColumns()
-# all_stats <- merge(all_stats, all_passesByDirection, by=c("Player","Team","Number"), all.x=TRUE)
-
-#PASSING BY LOCATION--------
-createPassingLocationColumns <- function() {
-  match_subset <- addColumnForQualifier(newcol = "opPass", pattern="throw|gk|corner.kick|free.kick|goal.kick", 
-                                        patternLocation = "play.type", ogdf = match_sheet, invert = TRUE,
-                                        ndf = createCleanDataFrame(c("passes.f.c", "passes.f", "passes.s.c", "passes.s",
-                                                                     "passes.b.c", "passes.b"), "poss.action", match_sheet))
-  match_subset <- addColumnForQualifier(newcol = "pressed",
-                                        pattern = c("pressured|challenged"),patternLocation = "def.action",
-                                        ogdf = match_sheet, ndf = match_subset)
-  match_subset <- addMultiColumnsForQualifiers(patterns = c("A3"="A3L|AL|A3C|AC|A3R|AR|A18|A6",
-                                                 "M3"="AM3L|AML|AM3C|AMC|AM3R|AMR|DM3L|DML|DM3C|DMC|DM3R|DMR",
-                                                 "D3"="D3L|DL|D3C|DC|D3R|DR|D18|D6"),
-                                    pattern_locations = c("poss.location","poss.location","poss.location"),
-                                    ogdf = match_sheet, ndf = match_subset)
-  
-  stats_cols <- list()
-  #all passes
-  stats_cols[[1]] <- createPassingTable(source_df = match_subset[match_subset[,"A3"]==TRUE,], 
-                                        extra = "A3Pass.Att.per.90",
-                                        stat_names = c("A3Pass.Comp", "A3Pass.Att", "A3Pass.Comp.Pct", "A3Pass.Att.per.90"))
-  stats_cols[[2]] <- createPassingTable(source_df = match_subset[match_subset[,"M3"]==TRUE,], 
-                                        extra = "M3Pass.Att.per.90",
-                                        stat_names = c("M3Pass.Comp", "M3Pass.Att", "M3Pass.Comp.Pct", "M3Pass.Att.per.90"))
-  stats_cols[[3]] <- createPassingTable(source_df = match_subset[match_subset[,"D3"]==TRUE,], 
-                                        extra = "D3Pass.Att.per.90",
-                                        stat_names = c("D3Pass.Comp", "D3Pass.Att", "D3Pass.Comp.Pct", "D3Pass.Att.per.90"))
-  #open play passes
-  stats_cols[[4]] <- createPassingTable(source_df = match_subset[match_subset[,"A3"]==TRUE & match_subset[,"opPass"]==TRUE,], 
-                                        extra = "A3opPass.Att.per.90",
-                                        stat_names = c("A3opPass.Comp", "A3opPass.Att", "A3opPass.Comp.Pct", "A3opPass.Att.per.90"))
-  stats_cols[[5]] <- createPassingTable(source_df = match_subset[match_subset[,"M3"]==TRUE & match_subset[,"opPass"]==TRUE,], 
-                                        extra = "M3opPass.Att.per.90",
-                                        stat_names = c("M3opPass.Comp", "M3opPass.Att", "M3opPass.Comp.Pct", "M3opPass.Att.per.90"))
-  stats_cols[[6]] <- createPassingTable(source_df = match_subset[match_subset[,"D3"]==TRUE & match_subset[,"opPass"]==TRUE,], 
-                                        extra = "D3opPass.Att.per.90",
-                                        stat_names = c("D3opPass.Comp", "D3opPass.Att", "D3opPass.Comp.Pct", "D3opPass.Att.per.90"))
-  #pressured passes
-  stats_cols[[7]] <- createPassingTable(source_df = match_subset[match_subset[,"A3"]==TRUE & match_subset[,"pressed"]==TRUE,], 
-                                        extra = "A3PPass.Att.per.90",
-                                        stat_names = c("A3PPass.Comp", "A3PPass.Att", "A3PPass.Comp.Pct", "A3PPass.Att.per.90"))
-  stats_cols[[8]] <- createPassingTable(source_df = match_subset[match_subset[,"M3"]==TRUE & match_subset[,"pressed"]==TRUE,], 
-                                        extra = "M3PPass.Att.per.90",
-                                        stat_names = c("M3PPass.Comp", "M3PPass.Att", "M3PPass.Comp.Pct", "M3PPass.Att.per.90"))
-  stats_cols[[9]] <- createPassingTable(source_df = match_subset[match_subset[,"D3"]==TRUE & match_subset[,"pressed"]==TRUE,], 
-                                        extra = "D3PPass.Att.per.90",
-                                        stat_names = c("D3PPass.Comp", "D3PPass.Att", "D3PPass.Comp.Pct", "D3PPass.Att.per.90"))
-  
-  for(index in 1:length(stats_cols)) {
-    if(exists("merged_stats")) {
-      merged_stats <- merge(merged_stats, stats_cols[[index]], by=c("Player","Team","Number"), all=TRUE)
-    } else {
-      merged_stats <- stats_cols[[index]]
-    }
+  if(type=="location") {
+    location_allPassAtt <- rowSums(merged_stats[,c("A3Pass.Att","M3Pass.Att","D3Pass.Att")],na.rm = TRUE)
+    merged_stats[,c("rFreq.A3.Passes", "rFreq.M3.Passes", "rFreq.D3.Passes")] <- merged_stats[,c("A3Pass.Att","M3Pass.Att","D3Pass.Att")]/location_allPassAtt
+    location_opPassAtt <- rowSums(merged_stats[,c("A3opPass.Att","M3opPass.Att","D3opPass.Att")],na.rm = TRUE)
+    merged_stats[,c("rFreq.A3.opPasses", "rFreq.M3.opPasses", "rFreq.D3.opPasses")] <- merged_stats[,c("A3opPass.Att","M3opPass.Att","D3opPass.Att")]/location_opPassAtt
+    location_pressPassAtt <- rowSums(merged_stats[,c("A3PPass.Att","M3PPass.Att","D3PPass.Att")],na.rm = TRUE)
+    merged_stats[,c("rFreq.A3.PPasses", "rFreq.M3.PPasses", "rFreq.D3.PPasses")] <- merged_stats[,c("A3PPass.Att","M3PPass.Att","D3PPass.Att")]/location_pressPassAtt
   }
-  
-  allPassAtt <- rowSums(merged_stats[,c("A3Pass.Att","M3Pass.Att","D3Pass.Att")],na.rm = TRUE)
-  merged_stats[,c("rFreq.A3.Passes", "rFreq.M3.Passes", "rFreq.D3.Passes")] <- merged_stats[,c("A3Pass.Att","M3Pass.Att","D3Pass.Att")]/allPassAtt
-  opPassAtt <- rowSums(merged_stats[,c("A3opPass.Att","M3opPass.Att","D3opPass.Att")],na.rm = TRUE)
-  merged_stats[,c("rFreq.A3.opPasses", "rFreq.M3.opPasses", "rFreq.D3.opPasses")] <- merged_stats[,c("A3opPass.Att","M3opPass.Att","D3opPass.Att")]/opPassAtt
-  pressPassAtt <- rowSums(merged_stats[,c("A3PPass.Att","M3PPass.Att","D3PPass.Att")],na.rm = TRUE)
-  merged_stats[,c("rFreq.A3.PPasses", "rFreq.M3.PPasses", "rFreq.D3.PPasses")] <- merged_stats[,c("A3PPass.Att","M3PPass.Att","D3PPass.Att")]/pressPassAtt
-  
   merged_stats
+  
 }
 
-# all_passesByLocation <- createPassingLocationColumns()
-# all_stats <- merge(all_stats, all_passesByLocation, by=c("Player","Team","Number"), all.x=TRUE)
+# all_passes <- createPassingColumns()
+# all_stats <- merge(all_stats, all_passes, by=c("Player","Team","Number"), all.x=TRUE)
 
 #PASSING BY ORIGIN & DESTINATION----------
 createPassRangeColumns <- function() {
