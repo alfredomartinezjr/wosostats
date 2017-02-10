@@ -22,14 +22,14 @@ if(!exists("match_sheet")){
 stats_list <- list()
 stats_list[[1]] <-  createPlayersColumns()
 stats_list[[2]] <- createShotsColumns()
-stats_list[[3]] <- createKeyPassesColumns() #this takes too long
+stats_list[[3]] <- createKeyPassesColumns()
 stats_list[[4]] <- createChancesColumns() 
 stats_list[[5]] <- createPassingColumns() #this takes too long
 stats_list[[6]] <- createPassingDirectionColumns() #this takes too long
 stats_list[[7]] <- createPassingLocationColumns() #this takes too long
 stats_list[[8]] <- createPassRangeColumns()
-stats_list[[9]] <- createSpecialPassColumns() #this takes too long
-stats_list[[10]] <- createSetPieceColumns() #this takes too long
+stats_list[[9]] <- createSpecialPassColumns()
+stats_list[[10]] <- createSetPieceColumns()
 stats_list[[11]] <- createPossessionColumns()
 stats_list[[12]] <- createRecoveryColumns()
 stats_list[[13]] <- createAerialColumns()

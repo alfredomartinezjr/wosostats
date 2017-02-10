@@ -201,10 +201,11 @@ createChancesColumns <- function() {
 
 #PASSING---------------
 createPassingColumns <- function() {
+  match_subset <- createCleanDataFrame(c("passes.f.c", "passes.f", "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", match_sheet)
   match_subset <- addMultiColumnsForQualifiers(patterns=c("pressured"="pressured", "challenged"="challenged", "forward.pass"="^passes.f", "sideways.pass"="^passes.s", "backward.pass"="^passes.b"),
                                                pattern_locations = c("def.action","def.action", "poss.action", "poss.action", "poss.action"),
                                                ogdf = match_sheet, 
-                                               ndf= createCleanDataFrame(c("passes.f.c", "passes.f", "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", match_sheet))
+                                               ndf= match_subset)
   match_subset <- addColumnForMultiQualifiers(newcol = "pressed", 
                                               pattern = c("pressured"=TRUE,"challenged"=TRUE),
                                               source_df = match_subset, exp="OR")
@@ -419,12 +420,11 @@ createPassRangeColumns <- function() {
 
 #SPECIAL PASSING TYPES--------
 createSpecialPassColumns <- function() {
-  match_subset <- addMultiColumnsForQualifiers(patterns = c("isCross"="cross","isLaunch"="launch","isThrough"="through", "isThrowIn" = "throw.in",
-                                                            "isCornerKick"="corner.kick","isFreeKick"="free.kick"),
-                                               pattern_locations = c("play.type","play.type","play.type","play.type","play.type"),
+  match_subset <- createDataFrame(pattern = c("corner.crosses", "deep.crosses","through","throw.in"),col = "play.type",df = match_sheet)
+  match_subset <- addMultiColumnsForQualifiers(patterns = c("isCross"="cross","isLaunch"="launch","isThrough"="through", "isThrowIn" = "throw.in"),
+                                               pattern_locations = c("play.type","play.type","play.type"),
                                                ogdf = match_sheet, 
-                                               ndf = createCleanDataFrame(c("passes.f.c", "passes.f", "passes.s.c", "passes.s", 
-                                                                            "passes.b.c", "passes.b"), "poss.action", match_sheet))
+                                               ndf = match_subset)
   
   stats_cols <- list()
   stats_cols[[1]] <- createPassingTable(source_df = match_subset[match_subset[,"isCross"]==TRUE,], extra = c("cross.att.per.90","cross.att.per.oppass"),
@@ -452,14 +452,12 @@ createSpecialPassColumns <- function() {
 
 #SET PIECES--------
 createSetPieceColumns <- function() {
+  match_subset <- createDataFrame(pattern = c("corner.kick", "free.kick"),col = "play.type",df = match_sheet)
   match_subset <- addMultiColumnsForQualifiers(patterns = c("corner.kick"="corner.kick", "free.kick"="free.kick", "shot"="shot", "scored"="scored", 
                                                             "assist"="^assist", "keypass"="key.pass|^second.assist"),
                                                pattern_locations = c("play.type", "play.type", "poss.action", "poss.action", "poss.notes", "poss.notes"),
                                                ogdf = match_sheet,
-                                               ndf = createCleanDataFrame(c("passes.f.c", "passes.f", "passes.s.c", "passes.s", 
-                                                                            "passes.b.c", "passes.b", "shots.stopped.by.gk", 
-                                                                            "shots.stopped.by.def", "shots.blocked", "shots.missed", 
-                                                                            "shots.scored"), "poss.action", match_sheet))
+                                               ndf = match_subset)
   
   stats_cols <- list()
   stats_cols[[1]] <- createPassingTable(source_df = match_subset[match_subset[,"corner.kick"]==TRUE,],
