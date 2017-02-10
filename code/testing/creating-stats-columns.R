@@ -437,7 +437,7 @@ createSpecialPassColumns <- function() {
     }
   }
   
-  merged
+  merged_stats
 }
 
 # all_specialPasses <- createSpecialPassColumns()
