@@ -168,13 +168,16 @@ createKeyPassesColumns <- function() {
 
 #BIG CHANCES---------------
 createChancesColumns <- function() {
+  match_subset <- createDataFrame(pattern = c("big.chances","big.chances.scored","big.chances.shot.on.goal","big.chances.shot.missed",
+                                              "big.chances.dispossessed","big.chances.created","big.chances.lost"),
+                                  col = "poss.notes", df = match_sheet)
   match_subset <- addMultiColumnsForQualifiers(patterns = c("big.chances"="big.chances","big.chances.scored"="big.chances.scored",
                                                             "big.chances.shot.on.goal"="big.chances.shot.on.goal","big.chances.shot.missed"="big.chances.shot.missed",
                                                             "big.chances.dispossessed"="big.chances.dispossessed","big.chances.created"="big.chances.created",
                                                             "big.chances.lost"="big.chances.lost"),
                                                pattern_locations = c("poss.notes","poss.notes","poss.notes","poss.notes","poss.notes","poss.notes","poss.notes"),
                                                ogdf=match_sheet,
-                                               ndf=match_sheet)
+                                               ndf=match_subset)
   
   stats_cols <- list()
   stats_cols[[1]] <- createStatsTable(pattern = c("big.chances.per.90", "big.chances.scored","big.chances.shot.on.goal", "big.chances.shot.missed", 
