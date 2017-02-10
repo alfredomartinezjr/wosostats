@@ -27,10 +27,9 @@ stats_list[[6]] <- createSetPieceColumns()
 stats_list[[7]] <- createPossessionColumns()
 stats_list[[8]] <- createRecoveryColumns()
 stats_list[[9]] <- createAerialColumns()
-stats_list[[10]] <- createTacklesColumns()
-stats_list[[11]] <- createBallDisruptionColumns()
-stats_list[[12]] <- createGkDefenseColumns()
-stats_list[[13]] <- createGkDistColumns()
+stats_list[[10]] <- createDefActionsColumns()
+stats_list[[11]] <- createGkDefenseColumns()
+stats_list[[12]] <- createGkDistColumns()
 
 for(index in 1:length(stats_list)) {
   if(exists("match_stats")) {

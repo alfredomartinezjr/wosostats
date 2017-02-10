@@ -474,19 +474,31 @@ createAerialColumns <- function() {
 # all_aerialDuels <- createAerialColumns()
 # all_stats <- merge(all_stats, all_aerialDuels, by=c("Player","Team","Number"), all.x=TRUE)
 
-#TACKLES & PRESSURE---------------
-createTacklesColumns <- function() {
+#DEFENSIVE DISRUPTIONS---------------
+createDefActionsColumns <- function() {
   match_subset <- createDataFrame(pattern = c("dispossessed", "tackles.ball.away", "tackles.ball.won", "tackles.ball","dribbled.tackles.missed", 
-                                              "dribbled.out.run","dribbled.turned", "pressured", "challenged"),
+                                              "dribbled.out.run","dribbled.turned", "pressured", "challenged","interceptions","clearances", "ball.shield", "blocks"),
                                   col = "def.action", df = match_sheet)
   
-  
-  merged_stats <- createStatsTable(pattern = c("dispossessed", "pressured", "challenged", 
+  stats_cols <- list()
+  stats_cols[[1]] <- createStatsTable(pattern = c("dispossessed", "pressured", "challenged", 
                                                "tackles.ball.away", "tackles.ball.won", "tackles.ball",
                                                "dribbled.tackles.missed", "dribbled.out.run","dribbled.turned"),
                                    target_col = "def.action", source_df = match_subset, team = "def",
                                    stat_names = c("Dispossessed","Pressured Opp","Challenged Opp","Tackles Ball Away","Tackles Ball Won",
                                                   "Tackles Ball","Dribbled Tackles Missed","Dribbled Out Run","Dribbled Turned"))
+  stats_cols[[2]] <- createStatsTable(pattern = c("interceptions", "interceptions.per.90","blocks", "blocks.per.90", "clearances", "clearances.per.90", "ball.shield"),
+                                      target_col = "def.action",source_df = match_subset,team = "def", 
+                                      stat_names = c("Interceptions","Int per 90", "Blocks","Blocks per 90", "Clearances", "Clearances per 90", "Ball Shields"))
+  
+  for(index in 1:length(stats_cols)) {
+    if(exists("merged_stats")) {
+      merged_stats <- merge(merged_stats, stats_cols[[index]], by=c("Player","Team","Number"), all=TRUE)
+    } else {
+      merged_stats <- stats_cols[[index]]
+    }
+  }
+  
   merged_stats$Tackles <- rowSums(merged_stats[,c("Tackles Ball Away","Tackles Ball Won","Tackles Ball")])
   merged_stats$Dribbled <- rowSums(merged_stats[,c("Dribbled Tackles Missed","Dribbled Out Run","Dribbled Turned")])
   merged_stats$'All Opp Poss Disrupted' <- rowSums(merged_stats[,c("Tackles","Dispossessed")])
@@ -495,24 +507,6 @@ createTacklesColumns <- function() {
   
   merged_stats
 }
-
-# all_tackles <- createTacklesColumns()
-# all_stats <- merge(all_stats, all_tackles, by=c("Player","Team","Number"), all.x=TRUE)
-
-#INTERCEPTIONS, BLOCKS, CLEARANCES, BALL SHIELDS----------
-createBallDisruptionColumns <- function() {
-  match_subset <- createDataFrame(pattern = c("interceptions","clearances", "ball.shield", "blocks"),
-                                  col = "def.action", df = match_sheet)
-  
-  merged_stats <- createStatsTable(pattern = c("interceptions", "interceptions.per.90","blocks", "blocks.per.90", "clearances", "clearances.per.90", "ball.shield"),
-                                   target_col = "def.action",source_df = match_subset,team = "def", 
-                                   stat_names = c("Interceptions","Int per 90", "Blocks","Blocks per 90", "Clearances", "Clearances per 90", "Ball Shields"))
-  
-  merged_stats
-}
-
-# all_balldisrupt <- createBallDisruptionColumns()
-# all_stats <- merge(all_stats, all_balldisrupt, by=c("Player","Team","Number"), all.x=TRUE)
 
 #GK DEFENSIVE ACTIONS----------
 createGkDefenseColumns <- function() {
