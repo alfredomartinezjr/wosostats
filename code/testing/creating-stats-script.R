@@ -7,11 +7,9 @@ library(RCurl)
 # test 3 (has big chances & key passes): matchURL <- "https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/nwsl-2016/nwsl-2016-srfc-sbfc-041716.csv"
 
 if(!exists("online_mode")){
-  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/testing/creating-stats-base-functions.R")
   source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/testing/creating-stats-columns.R")
 } else if(exists("online_mode") && online_mode == "offline"){
-  source("~/wosostats/code/testing/creating-stats-base-functions.R")
-  source("~/wosostats/code/testing/creating-stats-base-columns")
+  source("~/wosostats/code/testing/creating-stats-columns")
 }
 
 if(!exists("match_sheet")){
@@ -20,23 +18,19 @@ if(!exists("match_sheet")){
 }
 
 stats_list <- list()
-stats_list[[1]] <-  createPlayersColumns()
+stats_list[[1]] <- createPlayersColumns()
 stats_list[[2]] <- createShotsColumns()
-stats_list[[3]] <- createKeyPassesColumns()
-stats_list[[4]] <- createChancesColumns() 
-stats_list[[5]] <- createPassingColumns(type="location") #this takes too long
-stats_list[[6]] <- createPassRangeColumns()
-stats_list[[7]] <- createSpecialPassColumns()
-stats_list[[8]] <- createSetPieceColumns()
-stats_list[[9]] <- createPossessionColumns()
-stats_list[[10]] <- createRecoveryColumns()
-stats_list[[11]] <- createAerialColumns()
-stats_list[[12]] <- createTacklesColumns()
-stats_list[[13]] <- createBallDisruptionColumns()
-stats_list[[14]] <- createGkSogColumns()
-stats_list[[15]] <- createGkHighBallColumns()
-stats_list[[16]] <- createGkSmotherColumns()
-stats_list[[17]] <- createGkDistColumns()
+stats_list[[3]] <- createChancesColumns() 
+stats_list[[4]] <- createPassingColumns(type="location")
+stats_list[[5]] <- createPassRangeColumns()
+stats_list[[6]] <- createSetPieceColumns()
+stats_list[[7]] <- createPossessionColumns()
+stats_list[[8]] <- createRecoveryColumns()
+stats_list[[9]] <- createAerialColumns()
+stats_list[[10]] <- createTacklesColumns()
+stats_list[[11]] <- createBallDisruptionColumns()
+stats_list[[12]] <- createGkDefenseColumns()
+stats_list[[13]] <- createGkDistColumns()
 
 for(index in 1:length(stats_list)) {
   if(exists("match_stats")) {
