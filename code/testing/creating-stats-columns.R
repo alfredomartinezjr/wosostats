@@ -17,7 +17,7 @@ if(!exists("online_mode")){
 
 #MATCH PLAYERS---------
 ## Gets data frame that binds data frames of every player who shows up in "poss.player" and "def.player" column
-createPlayersColumns <- function(use_rosters=FALSE, match_positions=FALSE) {
+createPlayersColumns <- function(use_rosters=FALSE, match_positions=FALSE, match_sheet) {
   
   poss_columns <- unique(match_sheet[,c("poss.player", "poss.team", "poss.number")])
   names(poss_columns) <- c("Player", "Team", "Number")
@@ -83,7 +83,7 @@ createPlayersColumns <- function(use_rosters=FALSE, match_positions=FALSE) {
 }
 
 #SHOTS---------------
-createShotsColumns <- function(){
+createShotsColumns <- function(match_sheet){
 
     match_subset <- addMultiColumnsForQualifiers(patterns = c("pressured"="pressure", "challenged"="challenge"), 
                                       pattern_locations = c("def.action", "def.action"), ogdf = match_sheet,
@@ -129,7 +129,7 @@ createShotsColumns <- function(){
 }
 
 #KEY PASSES & CHANCES---------------
-createChancesColumns <- function() {
+createChancesColumns <- function(match_sheet) {
   match_subset <- createDataFrame(pattern = c("assists", "key.passes","second.assists","big.chances","big.chances.scored","big.chances.shot.on.goal",
                                               "big.chances.shot.missed","big.chances.dispossessed","big.chances.created","big.chances.lost"),
                                   col = "poss.notes",df = match_sheet)
@@ -176,7 +176,7 @@ createChancesColumns <- function() {
 }
 
 #PASSING---------------
-createPassingColumns <- function(type=NA) {
+createPassingColumns <- function(type=NA, match_sheet) {
   match_subset <- createCleanDataFrame(c("passes.f.c", "passes.f", "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", match_sheet)
   match_subset <- addColumnForQualifier(newcol = "pressed",pattern = "pressured|challenged",patternLocation = "def.action",ogdf = match_sheet,ndf = match_subset)
   match_subset <- addColumnForQualifier(newcol = "opPass", 
@@ -300,7 +300,7 @@ createPassingColumns <- function(type=NA) {
 }
 
 #PASSING BY ORIGIN & DESTINATION----------
-createPassRangeColumns <- function() {
+createPassRangeColumns <- function(match_sheet) {
   match_subset <- addColumnForQualifier(newcol = "completed", pattern = "passes.*.c", 
                                         patternLocation = "poss.action", ogdf = match_sheet,
                                         ndf = createCleanDataFrame(col = "poss.action", df = match_sheet,
@@ -338,7 +338,7 @@ createPassRangeColumns <- function() {
 }
 
 #SET PIECES--------
-createSetPieceColumns <- function() {
+createSetPieceColumns <- function(match_sheet) {
   match_subset <- createDataFrame(pattern = c("corner.kick", "free.kick"),col = "play.type",df = match_sheet)
   match_subset <- addMultiColumnsForQualifiers(patterns = c("corner.kick"="corner.kick", "free.kick"="free.kick", "shot"="shot", "scored"="scored", 
                                                             "assist"="^assist", "keypass"="key.pass|^second.assist"),
@@ -378,7 +378,7 @@ createSetPieceColumns <- function() {
 }
 
 #POSSESSION--------
-createPossessionColumns <- function() {
+createPossessionColumns <- function(match_sheet) {
   stats_cols <- list()
   stats_cols[[1]] <- createStatsTable(pattern = c("take.on.won","take.on.lost", "take.ons.per.90"),
                                    target_col = "poss.action", source_df = match_sheet, 
@@ -404,7 +404,7 @@ createPossessionColumns <- function() {
 }
 
 #RECOVERIES---------------
-createRecoveryColumns <- function() {
+createRecoveryColumns <- function(match_sheet) {
 
   recoveryEvents <- sort(c(match_sheet[match_sheet[,"poss.action"] %in% "recoveries","event"],
                          match_sheet[match_sheet[,"poss.action"] %in% "recoveries","event"]-1))
@@ -436,7 +436,7 @@ createRecoveryColumns <- function() {
 }
 
 #AERIAL DUELS---------------
-createAerialColumns <- function() {
+createAerialColumns <- function(match_sheet) {
   match_subset <- createDataFrame(pattern = c("aerial.won","aerial.lost"),col = "poss.action",df = match_sheet)
   match_subset <- fillBlanks(match_subset)
   
@@ -457,7 +457,7 @@ createAerialColumns <- function() {
 }
 
 #DEFENSIVE DISRUPTIONS---------------
-createDefActionsColumns <- function() {
+createDefActionsColumns <- function(match_sheet) {
   match_subset <- createDataFrame(pattern = c("dispossessed", "tackles.ball.away", "tackles.ball.won", "tackles.ball","dribbled.tackles.missed", 
                                               "dribbled.out.run","dribbled.turned", "pressured", "challenged","interceptions","clearances", "ball.shield", "blocks"),
                                   col = "def.action", df = match_sheet)
@@ -491,7 +491,7 @@ createDefActionsColumns <- function() {
 }
 
 #GK DEFENSIVE ACTIONS----------
-createGkDefenseColumns <- function() {
+createGkDefenseColumns <- function(match_sheet) {
   match_subset <- createDataFrame(pattern = c("gk.s.o.g.stop", "gk.s.o.g.def.stop", "gk.s.o.g.scored", "gk.shot.miss",
                                               "gk.high.balls.won", "gk.high.balls.lost","gk.smothers.won", "gk.smothers.lost"),
                                   col = "def.action",df = match_sheet)
@@ -563,7 +563,7 @@ createGkDefenseColumns <- function() {
 
 #GK DISTRIBUTION----------
 #Create clean data frame with only goalkeeper passing events
-createGkDistColumns <- function() {
+createGkDistColumns <- function(match_sheet) {
   match_subset <- createDataFrame(pattern = c("passes.f.c", "passes.f", "passes.s.c", "passes.s", "passes.b.c", "passes.b"),
                                   col = "poss.action", df = match_sheet[grep("[Gg][Kk]", match_sheet[,"poss.position"]),])
   match_subset <- addMultiColumnsForQualifiers(patterns=c("gkthrow"="gk.throw", "gkdropkick"="gk.drop.kick","gkfk"="goal.kick|free.kick"),
