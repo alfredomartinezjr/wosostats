@@ -206,7 +206,7 @@ isCompletedPass <- function(sheet_row, match_df) {
     !grepl("out.of.bounds", match_df[match_df[,"event"] == sheet_event & !is.na(match_df[,"event"]),"poss.notes"])
 }
 
-readMatchExcel <- function(match_df) {
+readMatchExcel <- function(match.file) {
   
   # Reading the Excel file----------
   # "match.file" must be a string value and the Excel file must be in the working directory
