@@ -28,16 +28,3 @@ if(online_mode == "online") {
   source("~/wosostats/code/testing/tidy-excel-functions.R")
   rosters <- read.csv("~/wosostats/rosters/nwsl-2016.csv")
 }
-
-
-# Objects to reference--------
-posslocations <- c("A6", "A18", "A3L", "A3C", "A3R", "AM3L", "AM3C", 
-                   "AM3R", "DM3L", "DM3C", "DM3R", "D3L", "D3C", "D3R", 
-                   "D18", "D6", "AL", "AC", "AR", "AML", "AMC", 
-                   "AMR", "DML", "DMC", "DMR", "DL", "DC", "DR")
-deflocations <- c("D6", "D18", "D3R", "D3C", "D3L", "DM3R", "DM3C",
-                  "DM3L", "AM3R", "AM3C", "AM3L", "A3R", "A3C", "A3L", 
-                  "A18", "A6", "DR", "DC", "DL", "DMR", "DMC",
-                  "DML", "AMR", "AMC", "AML", "AR", "AC", "AL")
-opposites <- data.frame(posslocations, deflocations)
-abbreviation_processor = AbbreviationProcessor$new()
