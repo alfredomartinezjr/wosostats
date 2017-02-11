@@ -263,17 +263,32 @@ tidyMatchExcel <- function(match.file) {
   match_df
 }
 
-tidyMultiMatchExcels <- function(competition.slug, team=NA) {
+tidyMultiMatchExcels <- function(competition.slug, team=NA, round=NA) {
   excel_list <- grep(".xlsx", list.files(),value = TRUE)
   excel_list <- grep(competition.slug, excel_list, value = TRUE)
   if(!is.na(team)){
     excel_list <- grep(tolower(team), excel_list, value = TRUE)
   }
-
+  if(!is.na(round)){
+    if(!exists("database") & (online_mode=="online")){
+      database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
+      database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
+    } else if (!exists("database") & (online_mode=="offline")) {
+      database <- read.csv("~/wosostats/database.csv")
+    }
+    match_strings <- database[database[,"round"]==round,"match.csv.link"]
+    match_strings <- sapply(match_strings, function(x) strsplit(x,split="/")[[1]][length(strsplit(x,split="/")[[1]])])
+    match_strings <- sapply(match_strings, function(x) strsplit(x, split=".csv")[[1]])
+    match_strings <- paste0(match_strings, ".xlsx")
+    excel_list <- excel_list[excel_list %in% match_strings]
+  }
   tidied_list <- list()
+  file_names <- c()
   for (index in 1:length(excel_list)) {
     tidied_list[[index]] <- tidyMatchExcel(match.file = excel_list[index])
+    file_names <- excel_list[index]
   }
   
-  tidied_list
+  assign("tidied_names",file_names, pos=1)
+  assign("tidied_list", tidied_list, pos=1)
 }

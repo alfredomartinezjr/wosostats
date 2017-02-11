@@ -29,7 +29,10 @@ if(online_mode == "online") {
   rosters <- read.csv("~/wosostats/rosters/nwsl-2016.csv")
 }
 
-# match_sheet <- tidyMatchExcel(match.file = "nameoffileinworkingdirectory")
+# will return a "tidied_list" list with each match in a data frame, and a "tidied_names" vector with filenames
+# for when you write the files
+#
+# tidyMatchExcel(match.file = "nameoffileinworkingdirectory")
 
 # multiple_sheets <- tidyMultiMatchExcels <- function(competition.slug, team="teamacronym")
 
