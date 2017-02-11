@@ -10,14 +10,22 @@ if(!exists("online_mode")){
   source("~/wosostats/code/testing/creating-stats-columns")
 }
 
-getStatsForMatch <- function(matchURL = NA, filename = NA, match_csv = NA, type=NA) {
+getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA, type="basic", database=NA) {
   if(!is.na(matchURL)) {
     match_sheet <- getURL(matchURL)
     match_sheet <- read.csv(textConnection(match_sheet), stringsAsFactors = FALSE)
   } else if (!is.na(filename)) {
     match_sheet <- read.csv(filename, stringsAsFactors = FALSE)
-  } else if (!is.na(match_csv)) {
+  } else if (exists("match_csv") && !is.na(match_csv)) {
     match_sheet <- match_csv
+  } else if (!is.na(matchup)){
+    if(is.na(database)) {
+      database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
+      database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
+    }
+    matchURL <- database[database[,"matchup"]==strsplit(matchup,split="_")[[1]][1] & database[,"date"]==strsplit(matchup,split="_")[[1]][2],"match.csv.link"]
+    match_sheet <- getURL(matchURL)
+    match_sheet <- read.csv(textConnection(match_sheet), stringsAsFactors = FALSE)
   }
   
   if(type == "basic"){
@@ -51,14 +59,18 @@ getStatsForMatch <- function(matchURL = NA, filename = NA, match_csv = NA, type=
   match_stats
 }
 
-getMatchCsvFiles <- function(competition.slug, round=NA, multi_round=NA, month_year=NA, team=NA, location_complete=FALSE) {
+getMatchCsvFiles <- function(competition.slug, team=NA, round=NA, multi_round=NA, month_year=NA, location_complete=FALSE, database=database) {
   if(competition.slug == "database"){
     if(location_complete == TRUE){
       matches <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","match.csv.link"]
-      names <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","matchup"]
+      names_matchup <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","matchup"]
+      dates_matchup <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","date"]
+      names <- paste(names_matchup,dates_matchup,sep = "-")
     } else {
       matches <- database[!is.na(database[,"match.csv.link"]),"match.csv.link"]
-      names <- database[!is.na(database[,"match.csv.link"]),"matchup"]
+      names_matchup <- database[!is.na(database[,"match.csv.link"]),"matchup"]
+      dates_matchup <- database[!is.na(database[,"match.csv.link"]),"date"]
+      names <- paste(names_matchup,dates_matchup,sep = "-")
     }
   } else {
     if (!is.na(round)){
@@ -75,10 +87,14 @@ getMatchCsvFiles <- function(competition.slug, round=NA, multi_round=NA, month_y
     }
     if(location_complete == TRUE) {
       matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","match.csv.link"]
-      names <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","matchup"]
+      names_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","matchup"]
+      dates_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","date"]
+      names <- paste(names_matchup,dates_matchup,sep = "-")
     } else {
       matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"match.csv.link"]
-      names <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"matchup"]
+      names_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"matchup"]
+      dates_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"date"]
+      names <- paste(names_matchup,dates_matchup,sep = "-")
     }
   }
   match_list <- vector("list", 0)
@@ -93,24 +109,25 @@ getMatchCsvFiles <- function(competition.slug, round=NA, multi_round=NA, month_y
   assign("match_names", names, pos=1)
 }
 
-getStatsInBulk <- function(competition.slug,team=NA, writeSheets = FALSE) {
+getStatsInBulk <- function(competition.slug,team=NA, round=NA, multi_round=NA, month_year=NA, location_complete = FALSE) {
   database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
   database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
   
-  getMatchCsvFiles(competition.slug = competition.slug,team = team)
-  #matches <- database[!is.na(database[,"match.csv.link"]),"match.csv.link"]
-  
+  getMatchCsvFiles(competition.slug=competition.slug, team=team, round=round, multi_round=multi_round, month_year=month_year, location_complete=location_complete, database=database)
+
   stats_list <- list()
   for (index in 1:length(match_list)) {
-    all <- getStatsForMatch(match_csv = match_list[[index]],type = "basic")
+    all <- getStatsForMatch(match_csv = match_list[[index]])
     stats_list[[index]] <- all
   }
+  
   stats_list
-  if(writeSheets == TRUE) {
-    #Writes csv files in bulk into whatever directory you're in
-    for (index in 1:length(stats_list)) {
-      file_name <- strsplit(matches_names[index], "/")[[1]][[length(strsplit(matches_names[index], "/")[[1]])]]
-      write.csv(stats_list[[index]], file=file_name, row.names = FALSE)
-    }
-  }
 }
+
+#if(writeSheets == TRUE) {
+#  #Writes csv files in bulk into whatever directory you're in
+#  for (index in 1:length(stats_list)) {
+#    file_name <- strsplit(matches_names[index], "/")[[1]][[length(strsplit(matches_names[index], "/")[[1]])]]
+#    write.csv(stats_list[[index]], file=file_name, row.names = FALSE)
+#  }
+#}
