@@ -28,3 +28,8 @@ if(online_mode == "online") {
   source("~/wosostats/code/testing/tidy-excel-functions.R")
   rosters <- read.csv("~/wosostats/rosters/nwsl-2016.csv")
 }
+
+# match_sheet <- tidyMatchExcel(match.file = "nameoffileinworkingdirectory")
+
+# multiple_sheets <- tidyMultiMatchExcels <- function(competition.slug, team="teamacronym")
+

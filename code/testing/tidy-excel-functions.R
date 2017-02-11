@@ -218,7 +218,7 @@ isCompletedPass <- function(sheet_row, match_df) {
     !grepl("out.of.bounds", match_df[match_df[,"event"] == sheet_event & !is.na(match_df[,"event"]),"poss.notes"])
 }
 
-readMatchExcel <- function(match.file) {
+tidyMatchExcel <- function(match.file) {
   
   # Reading the Excel file----------
   # "match.file" must be a string value and the Excel file must be in the working directory
@@ -261,4 +261,19 @@ readMatchExcel <- function(match.file) {
   }
   
   match_df
+}
+
+tidyMultiMatchExcels <- function(competition.slug, team=NA) {
+  excel_list <- grep(".xlsx", list.files(),value = TRUE)
+  excel_list <- grep(competition.slug, excel_list, value = TRUE)
+  if(!is.na(team)){
+    excel_list <- grep(tolower(team), excel_list, value = TRUE)
+  }
+
+  tidied_list <- list()
+  for (index in 1:length(excel_list)) {
+    tidied_list[[index]] <- tidyMatchExcel(match.file = excel_list[index])
+  }
+  
+  tidied_list
 }
