@@ -107,11 +107,12 @@ createShotsColumns <- function(match_sheet){
                                 new_sumcol = list(name = "shots", summed="shots"), 
                                 new_divcol = list(name = "accuracy", 
                                                numerator = c("shots.scored", "shots.stopped.by.gk", "shots.stopped.by.def"), 
-                                               denominator = c("shots.scored", "shots.stopped.by.gk", "shots.stopped.by.def", "shots.missed")) )
+                                               denominator = c("shots.scored", "shots.stopped.by.gk", "shots.stopped.by.def", "shots.missed")),
+                                stat_names = c("Shots per 90","Goals", "Shots Stopped by GK", "Shots Stopped by Def", "Shots Missed","Shots Blocked","Shots","Shot Accuracy"))
     stats_cols[[2]] <- createStatsTable(pattern = c(TRUE, FALSE), target_col = "pressed", source_df = match_subset, 
                                         new_sumcol = list(name = "shots", summed="TRUE|FALSE"),
                                         new_divcol = list(name= "pct", numerator = "TRUE.", denominator = c("TRUE.","FALSE.")),
-                                        stat_names = c("Shot Pressed", "Shots Not Pressed", "All Shots", "Pct Shots Pressed"))
+                                        stat_names = c("Shots Pressed", "Shots Not Pressed", "All Shots", "Pct Shots Pressed"))
     stats_cols[[3]] <- createLocationStatsTable(c("shots.scored", "shots.stopped.by.gk", 
                                               "shots.stopped.by.def", "shots.missed", "shots.blocked"), "poss.action", 
                                               source_df = match_subset, 
