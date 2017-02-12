@@ -25,7 +25,7 @@
 "21","1","D","SBFC","Skroski","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "22","1","D","SBFC","Grubka","passes.f.c",NA,NA,NA,"F","PTFC","Sinclair","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "23","1","D","SBFC","Simon","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"24","1","D","SBFC","Simon","passes.f.c",NA,NA,"through","M","PTFC","Nadim","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"24","1","D","SBFC","Simon","passes.f",NA,NA,"through","M","PTFC","Nadim","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "25","1","M","SBFC","Kerr","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "26","1","D","PTFC","Sonnett","passes.b.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "27","1","GK","PTFC","Betos","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -44,7 +44,7 @@
 "38","3","M","PTFC","Henry","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "39","3","M","PTFC","Horan","aerial.lost",NA,NA,NA,"F","SBFC","Hayes","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "40","3","F","PTFC","Sinclair","passes.s",NA,NA,"headed","M","SBFC","Killion","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"41","3","M","PTFC","Henry","passes.f.c",NA,NA,NA,"M","SBFC","Killion","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"41","3","M","PTFC","Henry","passes.f",NA,NA,NA,"M","SBFC","Killion","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "42","3","D","PTFC","Sonnett","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "43","3","GK","SBFC","Casey","passes.s.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "44","3","D","SBFC","Rampone","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -130,7 +130,7 @@
 "118","8","M","PTFC","Nadim","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "119","8","M","PTFC","Nadim","passes.b.c",NA,NA,NA,"M","SBFC","Rodriguez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "120","8","D","PTFC","Reynolds","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"121","8","M","PTFC","Long","passes.f.c",NA,NA,NA,"M","SBFC","Rodriguez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"121","8","M","PTFC","Long","passes.f",NA,NA,NA,"M","SBFC","Rodriguez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "121","8",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Rampone","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "122","8","M","PTFC","Long","passes.f",NA,NA,"headed","D","SBFC","Rampone","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "123","8","M","PTFC","Long","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -143,7 +143,7 @@
 "128","8","M","PTFC","Henry","passes.f.c",NA,NA,NA,"M","SBFC","Killion","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "129","8","M","PTFC","Horan","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "130","8","M","PTFC","Horan","shots.stopped.by.gk","D18",NA,NA,"GK","SBFC","Casey","gk.s.o.g.stop",NA,"collected","standing",NA,NA,NA,NA,NA,NA,NA
-"131","9","GK","SBFC","Casey","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"131","9","GK","SBFC","Casey","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "131","9",NA,NA,NA,NA,NA,NA,"gk.drop.kick","D","PTFC","Menges","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "132","9","M","PTFC","Henry","passes.f",NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "132","9",NA,NA,NA,NA,NA,NA,"headed","D","SBFC","Rampone","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -163,7 +163,7 @@
 "145","9","M","PTFC","Horan","shots.blocked","D18",NA,NA,"D","SBFC","Grubka","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "146","9","D","SBFC","Rampone","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "147","9","D","SBFC","Rampone","passes.s.c",NA,NA,NA,"F","PTFC","Sinclair","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"148","9","M","SBFC","Rodriguez","passes.f.c",NA,NA,NA,"F","PTFC","Sinclair","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"148","9","M","SBFC","Rodriguez","passes.f",NA,NA,NA,"F","PTFC","Sinclair","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "148","10",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Henry","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "149","10","M","PTFC","Henry","passes.b.c",NA,NA,NA,"F","SBFC","Kai","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "150","10","D","PTFC","Menges","passes.f",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -177,7 +177,7 @@
 "157","10","M","SBFC","Rodriguez","passes.b.c",NA,NA,NA,"F","PTFC","Sinclair","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "158","10","M","SBFC","Killion","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "159","10","D","SBFC","Rampone","passes.s.c",NA,NA,NA,"M","PTFC","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"160","10","D","SBFC","Simon","passes.f.c",NA,NA,NA,"M","PTFC","Nadim","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"160","10","D","SBFC","Simon","passes.f",NA,NA,NA,"M","PTFC","Nadim","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "160","10",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Long","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "160","10",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Sonnett","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "161","11","M","SBFC","O'Hara","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -230,7 +230,7 @@
 "203","13","M","PTFC","Horan","passes.f.c",NA,NA,NA,"M","SBFC","Killion","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "203","13",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "204","13","M","PTFC","Nadim","dispossessed",NA,NA,NA,"D","SBFC","Simon","tackles.ball",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-"205","14","M","PTFC","Heath","passes.s.c",NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"205","14","M","PTFC","Heath","passes.s",NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "205","14",NA,NA,NA,NA,NA,NA,"corner.kick","M","SBFC","Rodriguez","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "206","14","D","PTFC","Reynolds","passes.s",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "206","14",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -316,7 +316,7 @@
 "276","18","M","SBFC","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "277","18","M","SBFC","O'Hara","take.on.won",NA,NA,NA,"M","PTFC","Nadim","dribbled.out.run",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "278","18","M","SBFC","O'Hara","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"279","18","M","SBFC","O'Hara","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"279","18","M","SBFC","O'Hara","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "279","18",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "280","19","F","SBFC","Kai","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "281","19","D","PTFC","Sonnett","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -328,7 +328,7 @@
 "287","19","GK","PTFC","Betos","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "288","19","M","PTFC","Long","passes.s.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "288","19",NA,NA,NA,NA,NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"289","19","M","PTFC","Henry","passes.f.c",NA,NA,"launch","M","SBFC","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"289","19","M","PTFC","Henry","passes.f",NA,NA,"launch","M","SBFC","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "289","19",NA,NA,NA,NA,NA,NA,"through","D","SBFC","Grubka","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "290","19","D","PTFC","Klingenberg","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "291","19","M","PTFC","Henry","passes.f.c",NA,"D18","deep.crosses","F","SBFC","Hayes","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -342,7 +342,7 @@
 "298","20","M","PTFC","Heath","passes.b.c",NA,NA,NA,"M","SBFC","Rodriguez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "298","20",NA,NA,NA,NA,NA,NA,NA,"F","SBFC","Hayes","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "299","20","M","PTFC","Henry","passes.f.c",NA,NA,NA,"M","SBFC","Killion","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"300","20","M","PTFC","Horan","passes.f.c",NA,NA,"launch","D","SBFC","Rampone","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"300","20","M","PTFC","Horan","passes.f",NA,NA,"launch","D","SBFC","Rampone","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "300","20",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","O'Hara","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "301","20","M","SBFC","O'Hara","passes.f.c",NA,NA,NA,"F","PTFC","Sinclair","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "302","20","M","SBFC","Killion","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -377,12 +377,12 @@
 "330","22","D","PTFC","Klingenberg","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "331","22","D","PTFC","Klingenberg","passes.f.c",NA,NA,NA,"F","SBFC","Hayes","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "332","22","F","PTFC","Sinclair","passes.b.c",NA,NA,NA,"M","SBFC","Rodriguez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"333","22","M","PTFC","Henry","passes.f.c",NA,NA,NA,"M","SBFC","Rodriguez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"333","22","M","PTFC","Henry","passes.f",NA,NA,NA,"M","SBFC","Rodriguez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "333","22",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Killion","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "334","22","M","SBFC","Killion","passes.f.c",NA,NA,NA,"M","PTFC","Heath","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "335","22","M","SBFC","Kerr","passes.s.c",NA,NA,"launch","D","PTFC","Menges","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "335","22",NA,NA,NA,NA,NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"336","22","M","SBFC","O'Hara","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"336","22","M","SBFC","O'Hara","passes.f",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "336","22",NA,NA,NA,NA,NA,NA,"launch","D","PTFC","Reynolds","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "337","22","M","PTFC","Nadim","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "338","22","M","PTFC","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -402,7 +402,7 @@
 "351","23","M","PTFC","Long","passes.f.c",NA,NA,NA,"F","SBFC","Kai","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "352","23","M","PTFC","Nadim","passes.f",NA,NA,NA,"D","SBFC","Rampone","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "353","23","M","PTFC","Nadim","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"354","23","M","PTFC","Nadim","passes.f.c",NA,NA,"through","D","SBFC","Rampone","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"354","23","M","PTFC","Nadim","passes.f",NA,NA,"through","D","SBFC","Rampone","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "354","23",NA,NA,NA,NA,NA,NA,"launch","GK","SBFC","Casey","gk.loose.balls.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "355","23","GK","SBFC","Casey","passes.f",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "355","23",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -435,7 +435,7 @@
 "382","24","D","SBFC","Skroski","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "383","25","D","SBFC","Skroski","passes.f",NA,NA,NA,"M","PTFC","Nadim","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "384","25","M","SBFC","Rodriguez",NA,NA,NA,NA,"M","PTFC","Nadim",NA,NA,NA,NA,"fouls.conceded",NA,"fouls.won",NA,NA,NA,NA
-"385","25","M","PTFC","Heath","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"385","25","M","PTFC","Heath","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "385","25",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "386","25","M","PTFC","Long","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "387","25","GK","SBFC","Casey","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -511,7 +511,7 @@
 "452","29","D","SBFC","Skroski","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "453","29","D","SBFC","Grubka","passes.f.c",NA,NA,"launch","M","PTFC","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "454","29","D","SBFC","Simon","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"455","29","D","SBFC","Simon","passes.f.c",NA,NA,"through","M","PTFC","Nadim","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"455","29","D","SBFC","Simon","passes.f",NA,NA,"through","M","PTFC","Nadim","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "455","29",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Sonnett","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "456","29","M","SBFC","O'Hara","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "457","29","M","SBFC","Kerr","passes.s",NA,NA,NA,"D","PTFC","Reynolds","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
@@ -521,7 +521,7 @@
 "461","29","M","SBFC","Rodriguez","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "462","30","M","SBFC","Killion","passes.b.c",NA,NA,NA,"M","PTFC","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "463","31","D","SBFC","Grubka","passes.f.c",NA,NA,"deep.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"464","31","M","SBFC","O'Hara","passes.s.c",NA,NA,"corner.crosses","D","PTFC","Reynolds","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"464","31","M","SBFC","O'Hara","passes.s",NA,NA,"corner.crosses","D","PTFC","Reynolds","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "464","31",NA,NA,NA,NA,NA,NA,NA,"GK","PTFC","Betos","gk.high.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,NA
 "465","31","GK","PTFC","Betos","passes.f.c",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "465","31",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -531,7 +531,7 @@
 "468","31","D","SBFC","Simon","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "469","31","D","SBFC","Simon","passes.s.c",NA,NA,NA,"M","PTFC","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "470","31","M","SBFC","Killion","passes.f.c",NA,NA,NA,"M","PTFC","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"471","31","M","SBFC","Rodriguez","passes.f.c",NA,NA,"through","M","PTFC","Henry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"471","31","M","SBFC","Rodriguez","passes.f",NA,NA,"through","M","PTFC","Henry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "471","31",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "472","31","F","SBFC","Kai","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "473","31","GK","PTFC","Betos","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -586,7 +586,7 @@
 "519","34","GK","SBFC","Casey","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "519","34",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "520","34","F","SBFC","Kai","aerial.won",NA,NA,NA,"M","PTFC","Henry","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"521","34","F","SBFC","Kai","passes.f.c",NA,NA,"headed","M","PTFC","Henry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"521","34","F","SBFC","Kai","passes.f",NA,NA,"headed","M","PTFC","Henry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "521","35",NA,NA,NA,NA,NA,NA,"flick.on","D","PTFC","Menges","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "522","35","M","PTFC","Nadim","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "522","35",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -610,12 +610,12 @@
 "540","35","F","PTFC","Sinclair","passes.b.c",NA,NA,NA,"D","SBFC","Simon","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "541","35","M","PTFC","Nadim","dispossessed",NA,NA,NA,"M","SBFC","Rodriguez","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "542","35","M","PTFC","Henry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"543","35","M","PTFC","Henry","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"543","35","M","PTFC","Henry","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "543","35",NA,NA,NA,NA,NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "544","36","D","PTFC","Klingenberg","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "545","36","GK","SBFC","Casey","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "545","36",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"546","36","M","SBFC","O'Hara","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"546","36","M","SBFC","O'Hara","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "546","36",NA,NA,NA,NA,NA,NA,"flick.on","D","PTFC","Sonnett","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "547","36","M","SBFC","O'Hara","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "548","36","M","SBFC","Kerr","ball.shield",NA,NA,NA,"D","PTFC","Reynolds","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -726,7 +726,7 @@
 "641","42",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Grubka","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "642","42","GK","SBFC","Casey","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "642","42",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"643","42","F","SBFC","Kai","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"643","42","F","SBFC","Kai","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "643","42",NA,NA,NA,NA,NA,NA,"flick.on","M","PTFC","Long","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "644","42","M","PTFC","Long","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "645","42","M","PTFC","Henry","passes.f.c",NA,NA,NA,"F","SBFC","Kai","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -870,7 +870,7 @@
 "772","51","M","SBFC","O'Hara","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "773","52","D","SBFC","Simon","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "774","52","D","SBFC","Rampone","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"775","52","D","SBFC","Simon","passes.f.c",NA,NA,"through","M","PTFC","Nadim","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"775","52","D","SBFC","Simon","passes.f",NA,NA,"through","M","PTFC","Nadim","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "775","52",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Sonnett","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "776","52","M","SBFC","O'Hara","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "777","52","M","SBFC","Rodriguez","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
@@ -940,7 +940,7 @@
 "838","56","D","SBFC","Skroski","passes.b.c",NA,NA,NA,"M","PTFC","Heath","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "839","56","D","SBFC","Grubka","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "840","56","GK","SBFC","Casey","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"841","56","D","SBFC","Rampone","passes.f.c",NA,NA,"launch","M","PTFC","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"841","56","D","SBFC","Rampone","passes.f",NA,NA,"launch","M","PTFC","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "841","56",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Sonnett","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "842","56","D","PTFC","Sonnett","passes.b",NA,NA,NA,"M","SBFC","Kerr","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "843","57","M","SBFC","O'Hara","passes.s.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -976,7 +976,7 @@
 "872","59","M","PTFC","Heath","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "873","59","M","PTFC","Horan","passes.s.c",NA,NA,NA,"M","SBFC","Rodriguez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "874","59","M","PTFC","Long","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"875","59","M","PTFC","Henry","passes.f.c",NA,NA,NA,"F","SBFC","Hayes","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"875","59","M","PTFC","Henry","passes.f",NA,NA,NA,"F","SBFC","Hayes","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "875","59",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "876","59","D","SBFC","Skroski","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "877","59","M","PTFC","Henry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -991,7 +991,7 @@
 "883","61",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "884","61","F","SBFC","Kai","aerial.lost",NA,NA,NA,"M","PTFC","Long","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "885","61","M","PTFC","Heath","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"886","61","M","PTFC","Heath","passes.b.c",NA,NA,NA,"M","SBFC","Killion","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"886","61","M","PTFC","Heath","passes.b",NA,NA,NA,"M","SBFC","Killion","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "886","61",NA,NA,NA,NA,NA,NA,NA,"F","SBFC","Hayes","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "887","62","D","PTFC","Klingenberg","passes.f",NA,NA,"throw.in","F","SBFC","Hayes","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "888","62","M","SBFC","Kerr","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1022,7 +1022,7 @@
 "912","63","F","PTFC","Sinclair","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "913","63","D","SBFC","Grubka","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "914","63","D","SBFC","Grubka","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"915","63","M","SBFC","O'Hara","passes.f.c",NA,NA,"launch","M","PTFC","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"915","63","M","SBFC","O'Hara","passes.f",NA,NA,"launch","M","PTFC","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "915","63",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Menges","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "916","63","D","PTFC","Menges","passes.f.c",NA,NA,NA,"F","SBFC","Hayes","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "917","63","M","PTFC","Heath","passes.s.c",NA,NA,NA,"M","SBFC","Killion","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1043,7 +1043,7 @@
 "932","64","M","SBFC","Killion","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "933","64","D","SBFC","Grubka","passes.f.c",NA,NA,NA,"F","PTFC","Sinclair","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "934","64","D","SBFC","Skroski","passes.b.c",NA,NA,NA,"M","PTFC","Heath","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"935","64","D","SBFC","Grubka","passes.f.c",NA,NA,"launch","F","PTFC","Sinclair","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"935","64","D","SBFC","Grubka","passes.f",NA,NA,"launch","F","PTFC","Sinclair","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "936","64","F","SBFC","Kai","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "937","64","D","PTFC","Klingenberg","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "938","64","M","PTFC","Henry","passes.b.c",NA,NA,NA,"F","SBFC","Kai","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1052,7 +1052,7 @@
 "940","65","GK","PTFC","Betos","passes.f.c",NA,NA,NA,"M","SBFC","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "941","65","D","PTFC","Menges","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "942","65","D","PTFC","Klingenberg","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"943","65","F","PTFC","Sinclair","passes.s.c",NA,NA,NA,"M","SBFC","Rodriguez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"943","65","F","PTFC","Sinclair","passes.s",NA,NA,NA,"M","SBFC","Rodriguez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "943","65",NA,NA,NA,NA,NA,NA,NA,"F","SBFC","Hayes","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "944","65","F","SBFC","Hayes","passes.s.c",NA,NA,NA,"D","PTFC","Klingenberg","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "945","65","M","SBFC","Killion","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1197,18 +1197,18 @@
 "1068","75","D","PTFC","Sonnett","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1068","75",NA,NA,NA,NA,NA,NA,"launch","D","SBFC","Grubka","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1069","75","M","SBFC","Killion","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1070","75","M","SBFC","Killion","passes.f.c",NA,NA,NA,"M","PTFC","Henry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1070","75","M","SBFC","Killion","passes.f",NA,NA,NA,"M","PTFC","Henry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1070","75",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Sonnett","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1071","75","D","PTFC","Sonnett","passes.s.c",NA,NA,NA,"M","SBFC","Stanton","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1072","75","M","PTFC","Horan","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1073","75","M","PTFC","Brynjarsdottir","passes.s.c",NA,NA,"lay.off","D","SBFC","Simon","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1073","75","M","PTFC","Brynjarsdottir","passes.s",NA,NA,"lay.off","D","SBFC","Simon","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1073","75",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Grubka","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1074","75","D","SBFC","Grubka","passes.f.c",NA,NA,NA,"M","PTFC","Henry","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1075","75","D","SBFC","Simon","movement",NA,NA,NA,"M","PTFC","Brynjarsdottir","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
 "1076","76","M","SBFC","Killion","passes.b.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1077","76","D","SBFC","Rampone","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1078","76","M","SBFC","Killion","passes.s.c",NA,NA,NA,"F","PTFC","Sinclair","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1079","76","D","SBFC","Grubka","passes.f.c",NA,NA,"launch","M","PTFC","Horan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1079","76","D","SBFC","Grubka","passes.f",NA,NA,"launch","M","PTFC","Horan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1079","76",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Heath","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1080","76","F","SBFC","Galton","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1081","76","D","PTFC","Sonnett","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1228,7 +1228,7 @@
 "1093","77","M","SBFC","Kerr","passes.s.c",NA,NA,"switch","F","PTFC","Sinclair","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1094","78","D","SBFC","Rampone","passes.f",NA,NA,"corner.crosses","D","PTFC","Sonnett","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1095","78","D","SBFC","Rampone","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1096","78","D","SBFC","Rampone","passes.s.c",NA,NA,NA,"M","PTFC","Heath","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1096","78","D","SBFC","Rampone","passes.s",NA,NA,NA,"M","PTFC","Heath","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1096","78",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Brynjarsdottir","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1097","78","M","PTFC","Brynjarsdottir","passes.s",NA,NA,NA,"M","SBFC","Killion","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1098","78","M","SBFC","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1250,7 +1250,7 @@
 "1114","79","M","PTFC","Heath","passes.f.c",NA,NA,NA,"D","SBFC","Skroski","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1115","79","M","PTFC","Horan","passes.f.c",NA,NA,"flick.on","D","SBFC","Grubka","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1116","79","D","PTFC","Klingenberg","dispossessed",NA,NA,NA,"M","SBFC","O'Hara","dispossessed",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-"1117","79","M","PTFC","Heath","passes.s.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1117","79","M","PTFC","Heath","passes.s",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1117","79",NA,NA,NA,NA,NA,NA,"corner.crosses","M","SBFC","Stanton","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "1118","80","D","PTFC","Klingenberg","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1119","80","M","PTFC","Heath","lost.touch",NA,NA,NA,"D","SBFC","Skroski","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1263,7 +1263,7 @@
 "1125","80","D","PTFC","Menges","passes.b.c",NA,NA,NA,"M","SBFC","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1126","80","D","PTFC","Sonnett","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1127","80","M","PTFC","Henry","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1128","80","D","PTFC","Reynolds","passes.f.c",NA,NA,NA,"F","SBFC","Galton","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1128","80","D","PTFC","Reynolds","passes.f",NA,NA,NA,"F","SBFC","Galton","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1128","80",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Simon","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1129","80","D","SBFC","Simon","passes.s.c",NA,NA,"lay.off","M","PTFC","Brynjarsdottir","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1130","80","M","SBFC","Killion","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1328,7 +1328,7 @@
 "1185","85","D","SBFC","Skroski","recoveries",NA,NA,NA,"M","PTFC","Heath","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1186","85","D","SBFC","Skroski","passes.b.c",NA,NA,NA,"F","PTFC","Raso","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1187","85","D","SBFC","Grubka","passes.s.c",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1188","85","D","SBFC","Rampone","passes.f.c",NA,NA,NA,"M","PTFC","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1188","85","D","SBFC","Rampone","passes.f",NA,NA,NA,"M","PTFC","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1188","85",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Reynolds","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1189","85","D","PTFC","Reynolds","passes.f",NA,NA,NA,"D","SBFC","Simon","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1190","85","M","PTFC","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1336,7 +1336,7 @@
 "1192","85","M","PTFC","Long","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1193","85","D","PTFC","Reynolds","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1194","85","D","PTFC","Sonnett","passes.b.c",NA,NA,NA,"F","SBFC","Galton","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1195","86","GK","PTFC","Betos","passes.f.c",NA,NA,"launch","F","SBFC","Galton","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1195","86","GK","PTFC","Betos","passes.f",NA,NA,"launch","F","SBFC","Galton","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1195","86",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Stanton","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1196","86","M","SBFC","Stanton","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1197","86","M","SBFC","O'Hara","passes.f.c",NA,NA,"deep.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1348,7 +1348,7 @@
 "1201","86","M","PTFC","Long","aerial.won",NA,NA,NA,"M","SBFC","Killion","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1201","86",NA,NA,NA,"passes.f.c",NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1201","86",NA,NA,NA,NA,NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1202","86","M","PTFC","Horan","passes.s.c",NA,NA,NA,"M","SBFC","Stanton","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1202","86","M","PTFC","Horan","passes.s",NA,NA,NA,"M","SBFC","Stanton","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1202","86",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","O'Hara","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1203","86","M","SBFC","O'Hara","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1204","86","M","SBFC","Kerr","take.on.lost",NA,NA,NA,"D","PTFC","Menges","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1400,7 +1400,7 @@
 "1246","88","M","PTFC","Horan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1247","88","M","PTFC","Heath","passes.s.c",NA,NA,NA,"M","SBFC","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1248","89","M","PTFC","Long","passes.b.c",NA,NA,NA,"M","SBFC","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1249","89","D","PTFC","Klingenberg","passes.f.c",NA,NA,"launch","M","SBFC","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1249","89","D","PTFC","Klingenberg","passes.f",NA,NA,"launch","M","SBFC","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1249","89",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1250","89","D","SBFC","Skroski","passes.f.c",NA,NA,NA,"F","PTFC","Raso","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1251","89","M","SBFC","Killion","take.on.lost",NA,NA,NA,"M","PTFC","Horan","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1445,7 +1445,7 @@
 "1286","90+1","M","SBFC","Killion","dispossessed",NA,NA,NA,"M","PTFC","Brynjarsdottir","dispossessed",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "1287","90+1","M","SBFC","Killion","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1288","90+1","F","SBFC","Gordon","passes.f.c",NA,NA,NA,"M","PTFC","Henry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1289","90+1","M","SBFC","Kerr","passes.s.c",NA,NA,"switch","D","PTFC","Sonnett","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1289","90+1","M","SBFC","Kerr","passes.s",NA,NA,"switch","D","PTFC","Sonnett","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1289","90+1",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Klingenberg","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1290","90+1","D","PTFC","Klingenberg","passes.f.c",NA,NA,"switch","M","SBFC","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1291","90+1","M","PTFC","Brynjarsdottir","passes.f",NA,NA,"headed","D","SBFC","Rampone","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
