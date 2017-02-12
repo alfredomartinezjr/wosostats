@@ -15,7 +15,7 @@
 "14","1","GK","SBFC","Casey","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "15","1","D","SBFC","Grubka","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "16","1","D","SBFC","Grubka","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"17","1","F","SBFC","Galton","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"17","1","F","SBFC","Galton","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "17","1",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "18","1","F","SBFC","Kai","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "19","2","GK","BOS","Kranich","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -38,7 +38,7 @@
 "31","2",NA,NA,NA,NA,NA,NA,NA,"M","BOS","Schillgard","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "32","2","D","SBFC","Simon","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "33","2","D","SBFC","Simon","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"34","2","D","SBFC","Simon","passes.f.c",NA,NA,"launch","M","BOS","Schillgard","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"34","2","D","SBFC","Simon","passes.f",NA,NA,"launch","M","BOS","Schillgard","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "34","2",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "35","2","F","SBFC","Galton","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "36","3","GK","BOS","Kranich","passes.s.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -250,7 +250,7 @@
 "210","14","D","SBFC","Grubka","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "211","14","D","SBFC","Rampone","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "212","14","D","SBFC","Grubka","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"213","14","D","SBFC","Skroski","passes.f.c",NA,NA,"launch","F","BOS","McCaffrey","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"213","14","D","SBFC","Skroski","passes.f",NA,NA,"launch","F","BOS","McCaffrey","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "214","14","F","SBFC","Kai","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "215","14","D","BOS","Kallman","passes.s.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "216","14","M","BOS","Salem","passes.s.c",NA,NA,NA,"F","SBFC","Kai","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -314,7 +314,7 @@
 "264","17","F","SBFC","Kai","aerial.lost",NA,NA,NA,"F","BOS","Beckmann","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "265","17","D","SBFC","Grubka","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "266","17","D","SBFC","Grubka","passes.b.c",NA,NA,"headed","D","BOS","Kallman","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"267","17","M","SBFC","Lytle","passes.s.c",NA,NA,"corner.crosses","M","BOS","Schoepfer","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"267","17","M","SBFC","Lytle","passes.s",NA,NA,"corner.crosses","M","BOS","Schoepfer","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "268","17","F","SBFC","Kai","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "269","17",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "270","17","D","BOS","Kallman","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -572,7 +572,7 @@
 "474","34",NA,NA,NA,NA,NA,NA,NA,"D","BOS","Pathman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "474","34",NA,NA,NA,NA,NA,NA,NA,"D","BOS","Pathman","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "475","35","D","SBFC","Skroski","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"476","35","M","SBFC","Zimmerman","passes.f.c",NA,NA,NA,"D","BOS","Pathman","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"476","35","M","SBFC","Zimmerman","passes.f",NA,NA,NA,"D","BOS","Pathman","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "477","35","D","SBFC","Skroski","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "478","35","GK","BOS","Kranich","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "478","35",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -695,7 +695,7 @@
 "577","40","M","SBFC","Lytle","passes.s.c",NA,NA,NA,"M","BOS","Schillgard","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "578","40","M","SBFC","Killion","passes.b.c",NA,NA,NA,"M","BOS","Verdoia","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "579","40","D","SBFC","Rampone","passes.s.c",NA,NA,NA,"M","BOS","Verdoia","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"580","40","D","SBFC","Grubka","passes.f.c",NA,NA,"launch","F","BOS","Beckmann","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"580","40","D","SBFC","Grubka","passes.f",NA,NA,"launch","F","BOS","Beckmann","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "581","40","F","SBFC","Kai","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "582","41","GK","BOS","Kranich","passes.s.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "583","41","D","BOS","Kallman","passes.f.c",NA,NA,NA,"M","SBFC","Lytle","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -968,7 +968,7 @@
 "819","50","M","BOS","Salem","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "820","50","M","BOS","Salem","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "821","50","D","BOS","Westphal","passes.f.c",NA,NA,NA,"F","SBFC","Galton","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"822","51","M","BOS","Schillgard","passes.f.c",NA,NA,"launch","D","SBFC","Simon","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"822","51","M","BOS","Schillgard","passes.f",NA,NA,"launch","D","SBFC","Simon","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "822","51",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "823","51","F","BOS","Beckmann","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "824","51",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1024,7 +1024,7 @@
 "867","53","M","SBFC","Rodriguez","passes.b.c",NA,NA,NA,"M","BOS","Verdoia","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "868","53","D","SBFC","Simon","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "869","53","D","SBFC","Rampone","passes.f.c",NA,NA,NA,"M","BOS","Verdoia","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"870","53","M","SBFC","Killion","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"870","53","M","SBFC","Killion","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "870","53",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "871","53","F","SBFC","Kai","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "872","54","GK","BOS","Kranich","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1233,7 +1233,7 @@
 "1036","66","D","SBFC","Rampone","passes.f.c",NA,NA,NA,"F","BOS","McCaffrey","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1037","66","M","SBFC","Killion","passes.s.c",NA,NA,NA,"M","BOS","Schillgard","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1037","66",NA,NA,NA,NA,NA,NA,NA,"M","BOS","Ratcliffe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1038","66","D","SBFC","Simon","passes.f.c",NA,NA,"launch","M","BOS","Ratcliffe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1038","66","D","SBFC","Simon","passes.f",NA,NA,"launch","M","BOS","Ratcliffe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1038","66",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1039","66","F","SBFC","Galton","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1040","66",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1440,7 +1440,7 @@
 "1204","78","M","BOS","Salem","passes.f",NA,NA,"launch","M","SBFC","Lytle","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "1205","78","D","SBFC","Skroski","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1206","78","M","SBFC","Lytle","passes.s.c",NA,NA,NA,"M","BOS","Salem","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1207","78","D","SBFC","Skroski","passes.f.c",NA,NA,NA,"D","BOS","Pathman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1207","78","D","SBFC","Skroski","passes.f",NA,NA,NA,"D","BOS","Pathman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1208","78","F","SBFC","Hayes","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1209","78","D","BOS","Kallman","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1210","78","M","BOS","Verdoia","passes.s.c",NA,NA,NA,"F","SBFC","Hayes","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

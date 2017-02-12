@@ -145,7 +145,7 @@
 "126","9","D","CRS","Gilliland","recoveries","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "127","9","D","CRS","Gilliland","passes.f.c","DR","DMR","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "128","9","F","CRS","Hoy","aerial.won","DMR",NA,NA,"D","BOS","Kallman","aerial.lost","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"129","9","F","CRS","Hoy","passes.f.c","DMR","AMR","headed","D","BOS","Kallman","challenged","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"129","9","F","CRS","Hoy","passes.f","DMR",NA,"headed","D","BOS","Kallman","challenged","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "129","9",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "130","9","F","CRS","Huerta","offside.calls","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "131","10","D","BOS","Kallman","passes.f","DML",NA,"free.kick","GK","CRS","Naeher","gk.loose.balls.won","D6","caught",NA,NA,NA,NA,NA,NA,NA,NA
@@ -750,7 +750,7 @@
 "678","48","F","CRS","Huerta","passes.b.c","AMC","AMC",NA,"M","BOS","Salem","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "679","48","M","CRS","Press","passes.f.c","AMC","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "680","48","D","CRS","Short","passes.f","AL",NA,"deep.crosses","D","BOS","Kallman","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"681","48","F","CRS","Huerta","passes.s.c","AC","AR",NA,"D","BOS","Engen","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"681","48","F","CRS","Huerta","passes.s","AC",NA,NA,"D","BOS","Engen","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "682","48","D","CRS","Gilliland","offside.calls","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "683","48","D","BOS","Pathman","passes.b.c","DL","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "684","48","GK","BOS","Stout","passes.f.c","DL","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1093,7 +1093,7 @@
 "991","70","F","BOS","Mewis","passes.s","AMR",NA,"switch","M","CRS","Press","interceptions","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "992","70","M","CRS","Press","movement","DMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "993","70","M","CRS","Press","movement","AMC","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"994","70","M","CRS","Press","passes.f.c","AC","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"994","70","M","CRS","Press","passes.f","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "995","70","F","CRS","Huerta","offside.calls","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "996","71","GK","BOS","Stout","passes.f.c","DC","DC","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "997","71","M","BOS","Salem","passes.f.c","DC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1141,7 +1141,7 @@
 "1035","72","M","CRS","Press","passes.s.c","AMR","AMC",NA,"D","BOS","Kallman","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1036","73","M","CRS","Da Costa","passes.s","AMC",NA,NA,"M","BOS","Zerboni","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1037","73","M","CRS","DiBernardo","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1038","73","M","CRS","DiBernardo","passes.f.c","AC","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1038","73","M","CRS","DiBernardo","passes.f","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1039","73","F","CRS","Huerta","offside.calls","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1040","73","GK","BOS","Stout","passes.f.c","DC","AMC","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1040","73",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

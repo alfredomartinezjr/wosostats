@@ -117,7 +117,7 @@
 "109","6","F","SRFC","Melis","passes.s.c","DMR","DMR",NA,"M","BOS","Zerboni","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "110","6","M","SRFC","Fishlock","passes.f.c","DMR","AMR",NA,"M","BOS","Zerboni","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "111","6","M","SRFC","Little","passes.b.c","AMR","DMC",NA,"M","BOS","Zerboni","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"112","6","M","SRFC","Fishlock","passes.f.c","DMC","AL","launch","M","BOS","Salem","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"112","6","M","SRFC","Fishlock","passes.f","DMC",NA,"launch","M","BOS","Salem","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "113","6","M","SRFC","Yanez","offside.calls","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "114","6","D","BOS","Engen","passes.s.c","DR","DL","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "115","6","D","BOS","Kallman","passes.s.c","DL","DC",NA,"M","SRFC","Little","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -528,7 +528,7 @@
 "491","37","D","BOS","Pathman","passes.f.c","DMR","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "492","38","M","BOS","Ratcliffe","passes.f","AR",NA,NA,"D","SRFC","Pickett","interceptions","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "493","38","D","SRFC","Pickett","passes.f","DL",NA,NA,"M","BOS","Ratcliffe","interceptions","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"494","38","M","BOS","Ratcliffe","fw","AR",NA,NA,"D","SRFC","Pickett","fc",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
+"494","38","M","BOS","Ratcliffe","fouls.won","AR",NA,NA,"D","SRFC","Pickett","fouls.conceded",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
 "495","38","M","BOS","Salem","passes.f.c","AR","A18","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "496","38","D","BOS","King","aerial.won","A18",NA,NA,"M","SRFC","Fishlock","aerial.lost","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "496","38",NA,NA,NA,NA,NA,NA,NA,"D","SRFC","Corsie","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -615,7 +615,7 @@
 "574","44","D","BOS","King","passes.b.c","AMR","DMR",NA,"M","SRFC","Yanez","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "575","44","D","BOS","Engen","passes.f.c","DMR","AR","launch","F","SRFC","Mathias","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "576","44","M","BOS","Mewis","passes.b.c","AR","AR",NA,"D","SRFC","Barnes","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"577","44","F","BOS","Simon","passes.f.c","AR","A18","th","M","SRFC","Little","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"577","44","F","BOS","Simon","passes.f","AR",NA,"th","M","SRFC","Little","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "578","44","F","BOS","McCaffrey","offside.calls","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "579","44","GK","SRFC","Solo","passes.f.c","D18","D18","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "580","44","D","SRFC","Corsie","movement","D18","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -678,7 +678,7 @@
 "635","45+3","M","BOS","Mewis","aerial.won","AL",NA,NA,"D","SRFC","Corsie","aerial.lost","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "636","45+3","M","BOS","Mewis","recoveries","AL",NA,NA,"M","SRFC","Winters","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "637","45+3","M","BOS","Mewis","passes.f.c","AL","AL",NA,"M","SRFC","Winters","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"638","45+3","F","BOS","Simon","passes.f.c","AL","AL","th","D","SRFC","Fletcher","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"638","45+3","F","BOS","Simon","passes.f","AL",NA,"th","D","SRFC","Fletcher","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "639","45+3","F","BOS","McCaffrey","offside.calls","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "640","45+3","GK","SRFC","Solo","passes.f","DC",NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "641","45+3","D","SRFC","Reed","aerial.lost","AMC",NA,"headed","M","BOS","Salem","aerial.won","DMC",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
@@ -1284,7 +1284,7 @@
 "1176","86","D","BOS","Kallman","passes.b.c","DL","D18",NA,"M","SRFC","Yanez","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1177","86","M","SRFC","Yanez","passes.f.c","D18","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1178","86","D","BOS","Kallman","passes.f.c","DL","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1179","86","D","BOS","Pathman","passes.f.c","DML","AML",NA,NA,"SRFC","Dallstream","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1179","86","D","BOS","Pathman","passes.f","DML",NA,NA,NA,"SRFC","Dallstream","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1180","86",NA,"BOS","Marlborough","offside.calls","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1181","86","D","SRFC","Corsie","passes.f.c","DMR","AL","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1182","86","D","SRFC","Reed","passes.b.c","AL","AL","lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1408,6 +1408,6 @@
 "1289","90+3","D","SRFC","Pickett","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1290","90+3","D","SRFC","Pickett","passes.b.c","DC","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1291","90+3","GK","SRFC","Solo","passes.f","D18",NA,"launch","F","BOS","Simon","interceptions","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1292","90+3","F","BOS","Simon","passes.f.c","AML","AL","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1292","90+3","F","BOS","Simon","passes.f","AML",NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1293","90+3",NA,"BOS","Marlborough","offside.calls","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1294","90+3",NA,NA,NA,"end.of.match",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

@@ -121,7 +121,7 @@
 "109","7","M","BOS","Zerboni","passes.b.c",NA,NA,NA,"M","WAS","Lohman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "110","7","D","BOS","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "111","7","D","BOS","Kallman","passes.f.c",NA,NA,NA,"M","WAS","Lohman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"112","7","M","BOS","Pathman","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"112","7","M","BOS","Pathman","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "113","7","F","BOS","Beckmann","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "114","7",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "115","7","D","WAS","Krieger","passes.f",NA,NA,"launch","GK","BOS","Stout","gk.high.balls.won",NA,"parried.to.danger",NA,NA,NA,NA,NA,NA,NA,NA
@@ -159,7 +159,7 @@
 "143","10","M","WAS","Nairn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "144","10","D","WAS","Krieger","passes.f.c",NA,NA,NA,"M","BOS","Pathman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "145","10","F","WAS","Dunn","take.on.won",NA,NA,NA,"D","BOS","Kallman","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"146","10","F","WAS","Dunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"146","10","F","WAS","Dunn","passes.f",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "147","10","F","WAS","Stengel","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "148","11","GK","BOS","Stout","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "148","11",NA,NA,NA,NA,NA,NA,"launch","D","WAS","Krieger","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -221,7 +221,7 @@
 "198","14","D","BOS","Elby",NA,NA,NA,NA,"F","WAS","Farquharson",NA,NA,NA,NA,"penalties.won",NA,"penalties.conceded",NA,NA,NA,NA
 "199","15","M","BOS","Schillgard","shots.scored",NA,NA,NA,"GK","WAS","Wys","gk.s.o.g.scored",NA,NA,"standing",NA,NA,NA,NA,NA,NA,NA
 "200","15",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"201","16","D","WAS","Oyster","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"201","16","D","WAS","Oyster","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "202","16","F","WAS","Stengel","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "203","16","GK","BOS","Stout","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "203","16",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -451,7 +451,7 @@
 "411","30","D","WAS","Zadorsky","passes.b.c",NA,NA,NA,"M","BOS","Schillgard","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "412","30","M","WAS","Huster","passes.f.c",NA,NA,NA,"F","BOS","McCaffrey","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "413","30","D","WAS","Zadorsky","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"414","30","M","WAS","Nairn","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"414","30","M","WAS","Nairn","passes.f",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "415","30","F","WAS","Stengel","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "416","31",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "417","31","D","WAS","Oyster",NA,NA,NA,NA,"F","BOS","McCaffrey",NA,NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
@@ -725,7 +725,7 @@
 "655","46",NA,NA,NA,NA,NA,NA,NA,"F","WAS","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "656","46","M","BOS","Zerboni","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "657","46","F","BOS","McCaffrey","passes.s.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"658","46","M","BOS","Pathman","passes.f.c",NA,NA,NA,"D","WAS","Krieger","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"658","46","M","BOS","Pathman","passes.f",NA,NA,NA,"D","WAS","Krieger","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "659","46","M","BOS","Schillgard","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "660","46","GK","WAS","Wys","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "660","46",NA,NA,NA,NA,NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -801,7 +801,7 @@
 "722","50","M","BOS","Salem","passes.f",NA,NA,"launch","M","WAS","Lohman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "722","50",NA,NA,NA,NA,NA,NA,NA,"D","WAS","Oyster","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "723","50","D","WAS","Oyster","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"724","50","D","WAS","Krieger","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"724","50","D","WAS","Krieger","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "724","50",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "725","50","F","WAS","Farquharson","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "726","51","D","BOS","Engen","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -952,7 +952,7 @@
 "858","61","M","WAS","Lohman","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "859","61","D","WAS","Krieger","passes.f.c",NA,NA,NA,"F","BOS","McCaffrey","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "860","62","F","WAS","Stengel","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"861","62","D","WAS","Krieger","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"861","62","D","WAS","Krieger","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "861","62",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "862","62","F","WAS","Dunn","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "863","62","F","WAS","Farquharson","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1052,7 +1052,7 @@
 "948","69","GK","WAS","Wys","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "949","70","M","WAS","Huster","passes.f",NA,NA,"headed","M","BOS","Salem","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "950","70","M","BOS","Salem","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"951","70","M","BOS","Schillgard","passes.f.c",NA,NA,"through","D","WAS","Oyster","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"951","70","M","BOS","Schillgard","passes.f",NA,NA,"through","D","WAS","Oyster","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "952","70","F","BOS","McCaffrey","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "953","70","GK","WAS","Wys","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "953","70",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
