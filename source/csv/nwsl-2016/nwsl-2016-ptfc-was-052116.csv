@@ -567,7 +567,7 @@
 "452","32","M","PTFC","Long","passes.b.c","DC","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "453","32","D","PTFC","Sonnett","lost.touch","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "454","32","F","WAS","Dunn","recoveries","AL",NA,NA,"D","PTFC","Sonnett","challenged","DR",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
-"454","32",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA
+"454","32",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Sonnett",NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA
 "455","33","M","WAS","Nairn","passes.f","AL",NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "455","33",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "456","33","GK","PTFC","Franch","passes.f.c","D6","DMC","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
