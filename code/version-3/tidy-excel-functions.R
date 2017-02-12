@@ -201,9 +201,9 @@ isCompletedPass <- function(sheet_row, match_df) {
   sheet_event <- as.numeric(match_df[sheet_row,"event"][1])
   sheet_event_next <- as.numeric(sheet_event) + 1
   sheet_row_nextevent <- grep(paste0("^",sheet_event_next,"$"),match_df[,"event"])[1]
-  # checks if next event isn't an instance that cut off the broadcast or stopped play.
+  # checks if next event isn't an instance that cut off the broadcast or stopped play, or an offside call.
   !grepl("playcutoffbybroadcast|stoppage|
-           substitution|halftime|fulltime|end.of.match", match_df[sheet_row_nextevent,"poss.action"]) &&
+           substitution|halftime|fulltime|end.of.match|offside", match_df[sheet_row_nextevent,"poss.action"]) &&
     # checks if next event isn't a lost aerial duel
     !grepl("aerial.lost", match_df[sheet_row_nextevent, "poss.action"]) &&
     # checks if next event isn't a recovery
