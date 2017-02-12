@@ -34,5 +34,5 @@ if(online_mode == "online") {
 #
 # tidyMatchExcel(match.file = "nameoffileinworkingdirectory")
 
-# multiple_sheets <- tidyMultiMatchExcels <- function(competition.slug, team="teamacronym")
+# multiple_sheets <- tidyMultiMatchExcels(competition.slug, team="teamacronym", round="week-X")
 
