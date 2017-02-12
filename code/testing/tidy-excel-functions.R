@@ -209,7 +209,7 @@ isCompletedPass <- function(sheet_row, match_df) {
     # checks if next event isn't a recovery
     !grepl("recoveries", match_df[sheet_row_nextevent, "poss.action"]) &&
     # checks if the defensive action isn't something that by definition disrupted a pass attempt
-    !grepl("interceptions|blocks|clearances|shield|high.balls.won|smothers.won|loose.balls.won", match_df[match_df[,"event"] == sheet_event & !is.na(match_df[,"event"]),"def.action"]) &&
+    !(TRUE %in% grepl("interceptions|blocks|clearances|shield|high.balls.won|smothers.won|loose.balls.won", match_df[match_df[,"event"] == sheet_event & !is.na(match_df[,"event"]),"def.action"])) &&
     # checks if the "gk.ball.stop" column isn't a value besides "missed.the.ball"
     !grepl("caught|punched|dropped|collected|parried|deflected", match_df[match_df[,"event"] == sheet_event & !is.na(match_df[,"event"]),"gk.ball.stop"]) &&
     # checks if "poss.player.disciplinary" column is blank
