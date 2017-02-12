@@ -34,5 +34,7 @@ if(online_mode == "online") {
 #
 # tidyMatchExcel(match.file = "nameoffileinworkingdirectory")
 
-# multiple_sheets <- tidyMultiMatchExcels(competition.slug, team="teamacronym", round="week-X")
+# tidyMultiMatchExcels(competition.slug, team="teamacronym", round="week-X")
+
+# for (index in 1:length(tidied_names)) { write.csv(tidied_list[[index]], file=tidied_names[index], row.names=FALSE) }
 

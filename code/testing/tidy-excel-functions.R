@@ -286,7 +286,7 @@ tidyMultiMatchExcels <- function(competition.slug, team=NA, round=NA) {
   file_names <- c()
   for (index in 1:length(excel_list)) {
     tidied_list[[index]] <- tidyMatchExcel(match.file = excel_list[index])
-    file_names <- excel_list[index]
+    file_names[index] <- paste0(strsplit(excel_list[index],".xlsx")[[1]],".csv")
   }
   
   assign("tidied_names",file_names, pos=1)
