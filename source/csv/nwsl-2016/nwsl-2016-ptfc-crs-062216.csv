@@ -67,7 +67,7 @@
 "59","4","M","CRS","DiBernardo","recoveries","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "60","4","M","CRS","DiBernardo","movement","D18","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "61","4","M","CRS","DiBernardo","passes.f.c","DL","DL",NA,"D","PTFC","Reynolds","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"62","4","F","CRS","Press","passes.b.c","DL","AR",NA,"D","PTFC","Sonnett","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"62","4","F","CRS","Press","passes.b","DL",NA,NA,"D","PTFC","Sonnett","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "62","4",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Reynolds","interceptions","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "63","4","D","PTFC","Reynolds","passes.b.c","AR","AMR",NA,"F","CRS","Press","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "64","4","M","PTFC","Long","passes.s.c","AMR","AMR",NA,"M","CRS","Da Costa","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -106,7 +106,7 @@
 "94","6",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "95","7","GK","PTFC","Betos","passes.f","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "96","7","D","CRS","Gilliland","recoveries","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"97","7","D","CRS","Gilliland","passes.f.c","AMR","DML",NA,"M","PTFC","Heath","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"97","7","D","CRS","Gilliland","passes.f","AMR",NA,NA,"M","PTFC","Heath","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "97","7",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Long","interceptions","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "98","7","M","PTFC","Long","lost.touch","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "99","7","M","CRS","Mautz","recoveries","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -190,10 +190,10 @@
 "170","11","GK","PTFC","Betos","passes.f.c","D18","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "171","11","D","PTFC","Menges","movement","DL","DML",NA,"F","CRS","Huerta","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "172","11","D","PTFC","Menges","passes.f.c","DML","DML",NA,"F","CRS","Huerta","challenged","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"173","11","M","PTFC","Heath","passes.f.c","DML","AMR",NA,"D","CRS","Gilliland","challenged","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"173","11","M","PTFC","Heath","passes.f","DML",NA,NA,"D","CRS","Gilliland","challenged","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "173","11",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Mautz","interceptions","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "174","11","M","CRS","Mautz","passes.f.c","AMR","AR","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"175","12","M","CRS","Da Costa","passes.s.c","AR","D18","corner.crosses","D","PTFC","Menges","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"175","12","M","CRS","Da Costa","passes.s","AR",NA,"corner.crosses","D","PTFC","Menges","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "175","12",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Henry","interceptions","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "176","12","M","PTFC","Henry","clearances","D18",NA,NA,"M","CRS","DiBernardo","pressured","A18",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "177","12","D","CRS","Short","passes.f.c","AL","AL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -247,7 +247,7 @@
 "221","14","M","CRS","Da Costa","passes.f","AR",NA,NA,"M","PTFC","Long","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "221","14",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Long","blocks","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "222","14","D","CRS","Gilliland","recoveries","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"223","14","D","CRS","Gilliland","passes.s.c","AR","DL","corner.crosses","D","PTFC","Klingenberg","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"223","14","D","CRS","Gilliland","passes.s","AR",NA,"corner.crosses","D","PTFC","Klingenberg","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "223","14",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Long","interceptions","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "224","14","M","PTFC","Long","passes.f.c","DL","DL","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "225","14","M","PTFC","Horan","aerial.won","DL",NA,NA,"M","CRS","DiBernardo","aerial.lost","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -261,7 +261,7 @@
 "232","15","GK","PTFC","Betos","passes.f","D18",NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "232","15",NA,NA,NA,NA,NA,NA,"launch","D","CRS","Johnson","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "233","15","D","CRS","Short","recoveries","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"234","15","D","CRS","Short","passes.b.c","DL","AMR",NA,"F","PTFC","Sinclair","challenged","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"234","15","D","CRS","Short","passes.b","DL",NA,NA,"F","PTFC","Sinclair","challenged","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "234","15",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Nadim","interceptions","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "235","15","M","PTFC","Nadim","passes.f","AMR",NA,NA,"M","CRS","DiBernardo","challenged","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "236","15","F","CRS","Colaprico","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -280,7 +280,7 @@
 "249","15","F","CRS","Huerta","recoveries","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "250","15","F","CRS","Huerta","movement","AR","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "251","16","F","CRS","Huerta",NA,"AC",NA,NA,"M","PTFC","Long","challenged","DC",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
-"252","16","F","CRS","Colaprico","passes.f.c","AC","A18","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"252","16","F","CRS","Colaprico","passes.f","AC",NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "252","16",NA,NA,NA,NA,NA,NA,"deep.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "253","16","M","CRS","Mautz","offside.calls","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "254","17","GK","PTFC","Betos","passes.f","D18",NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -381,7 +381,7 @@
 "344","22","M","CRS","Da Costa","passes.f.c","AMR","AR",NA,"M","PTFC","Henry","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "345","22","F","CRS","Huerta","passes.f.c","AR","A18",NA,"D","PTFC","Menges","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "345","22",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Klingenberg","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"346","22","M","CRS","Da Costa","passes.s.c","A18","D18","flick.on","M","PTFC","Long","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"346","22","M","CRS","Da Costa","passes.s","A18",NA,"flick.on","M","PTFC","Long","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "346","22",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Sonnett","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "347","22","M","PTFC","Henry","lost.touch","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "348","22","F","CRS","Press","recoveries","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -453,7 +453,7 @@
 "409","27","D","PTFC","Klingenberg","passes.b.c","DL","DL",NA,"M","CRS","Da Costa","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "410","27","D","PTFC","Menges","clearances","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "411","27","M","CRS","Mautz","passes.s.c","AR","AR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"412","27","M","CRS","Da Costa","passes.s.c","AR","DL",NA,"M","PTFC","Heath","challenged","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"412","27","M","CRS","Da Costa","passes.s","AR",NA,NA,"M","PTFC","Heath","challenged","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "412","27",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Henry","interceptions","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "413","27","M","PTFC","Henry","passes.b.c","DL","D18",NA,"M","CRS","Mautz","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "414","27","GK","PTFC","Betos","clearances","D18",NA,NA,"F","CRS","Press","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -494,7 +494,7 @@
 "448","29","D","CRS","Gilliland","passes.s","AR",NA,"corner.crosses","M","PTFC","Heath","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "448","29",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Reynolds","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "449","29","M","PTFC","Nadim","recoveries","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"450","29","M","PTFC","Nadim","passes.f.c","DR","AC",NA,"M","CRS","DiBernardo","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"450","29","M","PTFC","Nadim","passes.f","DR",NA,NA,"M","CRS","DiBernardo","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "450","29",NA,NA,NA,NA,NA,NA,NA,"F","CRS","Colaprico","interceptions","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "451","29","F","CRS","Colaprico","passes.f.c","AC","AC",NA,"M","PTFC","Long","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "452","29","F","CRS","Huerta","shots.missed","AC",NA,NA,"D","PTFC","Sonnett","challenged","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -514,7 +514,7 @@
 "465","30","M","CRS","Mautz","passes.s","AR",NA,"corner.crosses","GK","PTFC","Betos","gk.high.balls.won","D6","caught",NA,NA,NA,NA,NA,NA,NA,NA
 "466","30","GK","PTFC","Betos","passes.s.c","D18","DL","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "467","30","D","PTFC","Menges","passes.b.c","DL","D18",NA,"F","CRS","Press","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"468","30","GK","PTFC","Betos","passes.f.c","D18","AMC",NA,"F","CRS","Press","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"468","30","GK","PTFC","Betos","passes.f","D18",NA,NA,"F","CRS","Press","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "468","30",NA,NA,NA,NA,NA,NA,NA,"M","CRS","DiBernardo","interceptions","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "469","30","M","CRS","DiBernardo","movement","AMC","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "470","30","M","CRS","DiBernardo","shots.blocked","AC",NA,NA,"M","PTFC","Henry","blocks","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -527,8 +527,8 @@
 "477","31","D","PTFC","Reynolds","passes.f","DMR",NA,NA,"F","CRS","Press","blocks","AML",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "478","31","D","PTFC","Reynolds","passes.f.c","DMR","AMR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "479","31","F","PTFC","Sinclair","aerial.won","AMR",NA,NA,"M","CRS","DiBernardo","aerial.lost","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"479","31",NA,NA,NA,"passes.f.c",NA,"DML","headed","D","CRS","Short","interceptions","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"480","31","D","CRS","Short","passes.f.c","DML","AMR",NA,"M","PTFC","Horan","challenged","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"479","31",NA,NA,NA,"passes.f",NA,NA,"headed","D","CRS","Short","interceptions","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"480","31","D","CRS","Short","passes.f","DML",NA,NA,"M","PTFC","Horan","challenged","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "480","31",NA,NA,NA,NA,NA,NA,NA,"F","PTFC","Sinclair","blocks","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "481","31","F","PTFC","Sinclair","dispossessed","AMR",NA,NA,"M","CRS","DiBernardo","dispossessed","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "482","31","F","CRS","Colaprico","recoveries","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -563,7 +563,7 @@
 "508","33","GK","CRS","Naeher","passes.f","D6",NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "509","33","F","CRS","Colaprico","aerial.lost","DMC",NA,NA,"M","PTFC","Horan","aerial.won","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "510","33","D","CRS","Johnston","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"511","33","D","CRS","Johnston","passes.f.c","DMC","AMC","headed","F","PTFC","Sinclair","challenged","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"511","33","D","CRS","Johnston","passes.f","DMC",NA,"headed","F","PTFC","Sinclair","challenged","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "511","33",NA,NA,NA,NA,NA,NA,NA,"F","PTFC","Sinclair","interceptions","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "512","33","F","PTFC","Sinclair","passes.b.c","AMC","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "513","33","D","PTFC","Reynolds","passes.f.c","AMR","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -611,7 +611,7 @@
 "551","35","M","PTFC","Nadim","passes.s.c","AMR","AMR",NA,"D","CRS","Short","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "552","35","F","PTFC","Sinclair","passes.s.c","AMR","AMR","flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "553","35","M","PTFC","Henry","passes.f.c","AMR","AR","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"554","35","M","PTFC","Nadim","passes.b.c","AR","AR",NA,"D","CRS","Short","challenged","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"554","35","M","PTFC","Nadim","passes.b","AR",NA,NA,"D","CRS","Short","challenged","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "554","35",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Short","blocks","DL",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "555","36","M","PTFC","Heath","passes.s.c","AR","A6","corner.kicks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "555","36",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -619,7 +619,7 @@
 "557","36","GK","CRS","Naeher","passes.f","D6",NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "558","37","F","CRS","Huerta","aerial.lost","AMC",NA,NA,"M","PTFC","Long","aerial.won","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "559","37","F","CRS","Colaprico","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"560","37","F","CRS","Colaprico","passes.f.c","DMC","DMR",NA,"M","PTFC","Horan","challenged","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"560","37","F","CRS","Colaprico","passes.f","DMC",NA,NA,"M","PTFC","Horan","challenged","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "560","37",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Menges","clearances","DMC",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "561","37","D","CRS","Gilliland","passes.f.c","DMR","AMR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "562","37","M","CRS","Da Costa","passes.b.c","AMR","DMR",NA,"M","PTFC","Heath","challenged","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -783,7 +783,7 @@
 "715","45","M","CRS","DiBernardo","passes.b.c","AML","DMC",NA,"M","PTFC","Horan","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "716","45","F","CRS","Colaprico","passes.f.c","DMC","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "717","45","D","CRS","Gilliland","movement","AMR","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"718","45","D","CRS","Gilliland","passes.s.c","AR","D18",NA,"D","PTFC","Klingenberg","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"718","45","D","CRS","Gilliland","passes.s","AR",NA,NA,"D","PTFC","Klingenberg","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "718","45",NA,NA,NA,NA,NA,NA,NA,"GK","PTFC","Betos","gk.smothers.won","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "719","45","GK","PTFC","Betos","passes.f","D18",NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "719","45",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -791,7 +791,7 @@
 "721","45","D","CRS","Short","passes.f.c","DML","AML",NA,"M","PTFC","Horan","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "722","45","M","CRS","DiBernardo","passes.f","AML",NA,"switch","M","PTFC","Nadim","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "723","45","D","PTFC","Klingenberg","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"724","45","D","PTFC","Klingenberg","passes.b.c","DC","D18","headed","M","CRS","Mautz","pressured","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"724","45","D","PTFC","Klingenberg","passes.b","DC",NA,"headed","M","CRS","Mautz","pressured","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "724","45",NA,NA,NA,NA,NA,NA,NA,"GK","PTFC","Betos","gk.loose.balls.won","D18","collected",NA,NA,NA,NA,NA,NA,NA,NA
 "725","45","GK","PTFC","Betos","passes.f","D18",NA,"gk.drop.kick","F","CRS","Press","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "726","45","M","PTFC","Horan","aerial.lost","AMR",NA,NA,"D","CRS","Short","aerial.won","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -870,7 +870,7 @@
 "788","49","M","CRS","Da Costa","passes.f","AMR",NA,"through","D","PTFC","Sonnett","interceptions","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "789","49","D","PTFC","Sonnett","passes.b.c","DC","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "790","49","D","PTFC","Klingenberg","movement","D18","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"791","49","D","PTFC","Klingenberg","passes.b.c","DL","DL",NA,"M","CRS","Da Costa","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"791","49","D","PTFC","Klingenberg","passes.b","DL",NA,NA,"M","CRS","Da Costa","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "791","49",NA,NA,NA,NA,NA,NA,NA,"F","CRS","Huerta","blocks","AR",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "792","50","D","PTFC","Klingenberg","passes.f","DL",NA,"throw.in","D","CRS","Gilliland","blocks","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "793","50","M","CRS","Mautz","recoveries","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -952,12 +952,12 @@
 "865","56","D","CRS","Johnston","passes.f.c","DMR","AC","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "865","56",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "866","56","M","CRS","Da Costa","aerial.won","AC",NA,NA,"M","PTFC","Long","aerial.lost","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"867","56","M","CRS","Da Costa","passes.f.c","AC","D18","headed","M","PTFC","Long","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"867","56","M","CRS","Da Costa","passes.f","AC",NA,"headed","M","PTFC","Long","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "867","56",NA,NA,NA,NA,NA,NA,"flick.on","GK","PTFC","Betos","gk.loose.balls.won","D18","caught",NA,NA,NA,NA,NA,NA,NA,NA
 "868","56","GK","PTFC","Betos","passes.f.c","D18","DL","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "869","56","D","PTFC","Menges","passes.b.c","DL","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "870","56","GK","PTFC","Betos","passes.f.c","D18","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"871","57","D","PTFC","Menges","passes.f.c","DL","AR",NA,"F","CRS","Huerta","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"871","57","D","PTFC","Menges","passes.f","DL",NA,NA,"F","CRS","Huerta","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "871","57",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Mautz","interceptions","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "872","57","M","CRS","Mautz","passes.f.c","AR","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "873","57","M","CRS","Da Costa","passes.b.c","AC","AMC",NA,"M","PTFC","Henry","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -987,7 +987,7 @@
 "896","58","M","CRS","Mautz","passes.b.c","AML","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "897","58","M","CRS","DiBernardo","passes.f.c","AML","AML",NA,"M","PTFC","Horan","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "898","58","M","CRS","Mautz","movement","AML","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"899","58","M","CRS","Mautz","passes.b.c","AL","DR",NA,"D","PTFC","Reynolds","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"899","58","M","CRS","Mautz","passes.b","AL",NA,NA,"D","PTFC","Reynolds","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "899","58",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Horan","interceptions","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "900","58","M","PTFC","Horan","passes.f.c","DR","DMR",NA,"F","CRS","Press","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "901","58","M","PTFC","Nadim","passes.b.c","DMR","DR",NA,"M","CRS","DiBernardo","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1038,7 +1038,7 @@
 "942","61",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Gilliland","blocks","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "943","61","D","CRS","Gilliland","passes.f.c","DR","DR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "944","61","F","CRS","Colaprico","passes.b.c","DR","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"945","61","D","CRS","Gilliland","passes.f.c","DR","AML",NA,"M","PTFC","Henry","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"945","61","D","CRS","Gilliland","passes.f","DR",NA,NA,"M","PTFC","Henry","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "945","61",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Long","interceptions","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "946","61","M","PTFC","Long","passes.f","AML",NA,NA,"M","CRS","Da Costa","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "946","61",NA,NA,NA,NA,NA,NA,NA,"F","CRS","Colaprico","blocks","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1134,7 +1134,7 @@
 "1024","69","GK","PTFC","Betos","passes.f.c","D18","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1025","69","M","PTFC","Long","passes.s.c","D18","DR",NA,"M","CRS","Mautz","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1026","69","D","PTFC","Menges","passes.f.c","DR","DMR",NA,"F","CRS","Press","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1027","69","D","PTFC","Reynolds","passes.f.c","DMR","AML",NA,"M","CRS","Comeau","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1027","69","D","PTFC","Reynolds","passes.f","DMR",NA,NA,"M","CRS","Comeau","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1027","69",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Short","interceptions","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1028","69","D","CRS","Short","passes.f.c","AML","AML",NA,"M","PTFC","Nadim","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1029","69","F","CRS","Press","lost.touch","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1144,7 +1144,7 @@
 "1033","69","D","PTFC","Klingenberg","recoveries","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1034","69","D","PTFC","Klingenberg","passes.f.c","DML","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1035","69","M","PTFC","Henry","passes.f.c","AML","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1036","69","M","PTFC","Heath","passes.s.c","AL",NA,"corner.crosses","D","CRS","Gilliland","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1036","69","M","PTFC","Heath","passes.s","AL",NA,"corner.crosses","D","CRS","Gilliland","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1036","69",NA,NA,NA,NA,NA,NA,NA,"M","CRS","DiBernardo","blocks","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1037","69","M","PTFC","Henry","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1038","69","M","PTFC","Brynjarsdottir","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1189,7 +1189,7 @@
 "1070","73","M","PTFC","Brynjarsdottir","passes.f","AML",NA,NA,"F","CRS","Colaprico","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1070","73",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Johnson","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1071","73","F","CRS","Huerta","recoveries","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1072","73","F","CRS","Huerta","passes.f.c","DMR","DMC",NA,"M","PTFC","Long","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1072","73","F","CRS","Huerta","passes.f","DMR",NA,NA,"M","PTFC","Long","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1072","73",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Sonnett","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1073","73","M","PTFC","Long","dispossessed","DMC",NA,NA,"M","CRS","DiBernardo","tackles.ball","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1074","73","M","PTFC","Horan","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1256,7 +1256,7 @@
 "1127","78","M","CRS","DiBernardo","passes.s.c","AR","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1128","78","F","CRS","Press","passes.f","AC",NA,"deep.crosses","GK","PTFC","Betos","gk.high.balls.won","D6","caught",NA,NA,NA,NA,NA,NA,NA,NA
 "1129","78",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1130","78","M","PTFC","Nadim","passes.f.c","AMR","DML",NA,"M","CRS","Comeau","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1130","78","M","PTFC","Nadim","passes.f","AMR",NA,NA,"M","CRS","Comeau","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1130","78",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Short","interceptions","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1131","78","D","CRS","Short","passes.f.c","DML","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1132","79","M","CRS","DiBernardo","passes.f.c","DML","AL","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1352,7 +1352,7 @@
 "1202","86",NA,NA,NA,NA,NA,NA,NA,"F","PTFC","Weber","clearances","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1203","86","F","CRS","Colaprico","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1204","86","F","CRS","Colaprico","passes.f.c","AMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1205","86","M","CRS","DiBernardo","passes.f.c","AMC","DL","switch","M","PTFC","Brynjarsdottir","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1205","86","M","CRS","DiBernardo","passes.f","AMC",NA,"switch","M","PTFC","Brynjarsdottir","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1205","86",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Klingenberg","interceptions","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1206","86","D","PTFC","Klingenberg","passes.f.c","DL","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1207","86","M","PTFC","Heath","movement","DML","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1364,7 +1364,7 @@
 "1212","87","D","CRS","Gilliland","clearances","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1213","87","F","CRS","Huerta","take.on.won","DMR",NA,NA,"D","PTFC","Menges","dribbled.tackles.missed","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1214","87","F","CRS","Huerta","take.on.won","DMR",NA,NA,"D","PTFC","Klingenberg","dribbled.tackles.missed","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1215","87","F","CRS","Huerta","passes.b.c","DMR","AML",NA,"M","PTFC","Long","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1215","87","F","CRS","Huerta","passes.b","DMR",NA,NA,"M","PTFC","Long","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1215","87",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Brynjarsdottir","interceptions","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1216","87","M","PTFC","Brynjarsdottir","passes.b.c","AML","AML",NA,"M","CRS","DiBernardo","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1217","87","M","PTFC","Long","take.on.won","AML",NA,NA,"M","CRS","DiBernardo","dribbled.tackles.missed","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1400,7 +1400,7 @@
 "1242","88","M","CRS","DiBernardo","take.on.won","AMC",NA,NA,"M","PTFC","Brynjarsdottir","dribbled.tackles.missed","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1243","88","M","CRS","DiBernardo","passes.b.c","AMC","AMC",NA,"M","PTFC","Horan","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1244","88","F","CRS","Colaprico","passes.f.c","AMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1245","88","D","CRS","Johnston","passes.f.c","AMC","D18","deep.crosses","M","PTFC","Brynjarsdottir","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1245","88","D","CRS","Johnston","passes.f","AMC",NA,"deep.crosses","M","PTFC","Brynjarsdottir","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1245","88",NA,NA,NA,NA,NA,NA,NA,"GK","PTFC","Betos","gk.high.balls.won","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1246","89","GK","PTFC","Betos","passes.f","D18",NA,"gk.drop.kick","M","CRS","Comeau","clearances","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1246","89",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1417,7 +1417,7 @@
 "1256","90","M","PTFC","Heath","passes.s.c","AL","AL",NA,"F","CRS","Colaprico","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1257","90","M","PTFC","Long","take.on.lost","AL",NA,NA,"M","CRS","DiBernardo","tackles.ball","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1258","90","M","CRS","DiBernardo","passes.f.c","DR","DMC",NA,"M","PTFC","Heath","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1259","90","F","CRS","Hoy","passes.b.c","DMC","AMC",NA,"M","PTFC","Horan","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1259","90","F","CRS","Hoy","passes.b","DMC",NA,NA,"M","PTFC","Horan","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1259","90",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Brynjarsdottir","interceptions","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1260","90","M","PTFC","Brynjarsdottir","passes.f","AMC",NA,NA,"F","CRS","Huerta","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1260","90",NA,NA,NA,NA,NA,NA,NA,"F","CRS","Colaprico","blocks","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1469,7 +1469,7 @@
 "1302","90","M","CRS","DiBernardo","passes.f.c","DMC","DMC",NA,"M","PTFC","Horan","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1303","90","D","CRS","Johnston","passes.b.c","DMC","DMC",NA,"M","PTFC","Brynjarsdottir","challenged","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1304","90","M","CRS","DiBernardo","passes.s.c","DMC","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1305","90","M","CRS","Comeau","passes.f.c","DML","DMR",NA,"F","PTFC","Weber","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1305","90","M","CRS","Comeau","passes.f","DML",NA,NA,"F","PTFC","Weber","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1305","90",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Brynjarsdottir","interceptions","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1306","90","M","PTFC","Brynjarsdottir","passes.f.c","DMR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1307","90","M","PTFC","Horan","passes.s.c","DMR","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1477,7 +1477,7 @@
 "1309","90","M","PTFC","Heath","take.on.won","AML",NA,NA,"F","CRS","Press","dribbled.turned","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1309","90",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Gilliland","dribbled.turned","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1310","90","M","PTFC","Heath","movement","AML","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1311","90","M","PTFC","Heath","passes.f.c","AL","DR","through","F","CRS","Press","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1311","90","M","PTFC","Heath","passes.f","AL",NA,"through","F","CRS","Press","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1311","90",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Gilliland","interceptions","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1312","90","D","CRS","Gilliland","passes.f.c","DR","DR",NA,"M","PTFC","Heath","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1313","90","F","CRS","Press","take.on.won","DR",NA,NA,"M","PTFC","Horan","dribbled.tackles.missed","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA

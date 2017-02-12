@@ -18,7 +18,7 @@
 "14","1","M","PTFC","Long","passes.s.c","AM3C","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "15","1","D","PTFC","Menges","passes.f.c","AM3L","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "16","1","D","PTFC","Klingenberg","passes.b.c","A3L","AM3L",NA,"F","ORL","Edmonds","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"17","1","M","PTFC","Horan","passes.f.c","AM3L","A3L",NA,"M","ORL","Evans","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"17","1","M","PTFC","Horan","passes.f","AM3L","A3L",NA,"M","ORL","Evans","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "17","1",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Belanger","interceptions","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "18","1","D","ORL","Belanger","passes.f.c","D3R","DM3R",NA,"M","PTFC","Horan","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "19","1","M","ORL","Evans","passes.f.c","DM3R","DM3R",NA,"D","PTFC","Klingenberg","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -92,7 +92,7 @@
 "86","5","M","ORL","Evans","aerial.lost","DM3C",NA,NA,"M","PTFC","Horan","aerial.won","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "87","5","M","PTFC","Brynjarsdottir","recoveries","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "88","5","M","PTFC","Brynjarsdottir","passes.f.c","AM3R","AM3R","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"89","5","M","PTFC","Shim","passes.s.c","AM3R","AM3R",NA,"M","ORL","Edwards","challenged","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"89","5","M","PTFC","Shim","passes.s","AM3R","AM3R",NA,"M","ORL","Edwards","challenged","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "89","5",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Catley","interceptions","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "90","5","D","ORL","Catley","passes.b.c","DM3L","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "91","5","D","ORL","Hickmann Alves","passes.f.c","DM3L","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -122,7 +122,7 @@
 "114","6","F","ORL","Edmonds","recoveries","A3R",NA,NA,"M","PTFC","Long","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "115","6","F","ORL","Edmonds","passes.b.c","A3R","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "116","6","D","ORL","Belanger","passes.s.c","AM3R","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"117","7","F","ORL","Edmonds","passes.f.c","AM3R","AM3R",NA,"M","PTFC","Shim","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"117","7","F","ORL","Edmonds","passes.f","AM3R","AM3R",NA,"M","PTFC","Shim","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "117","7",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Long","interceptions","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "118","7","M","PTFC","Long","passes.f.c","D3L","DM3L",NA,"M","ORL","Edwards","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "119","7","M","PTFC","Shim","passes.b.c","DM3L","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -139,7 +139,7 @@
 "129","7","D","ORL","Hickmann Alves","passes.f","D3L","AM3L","launch","D","PTFC","Sonnett","clearances","DM3R",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "130","7","D","ORL","Catley","passes.s.c","AM3L","AM3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "131","7","M","ORL","Evans","passes.s.c","AM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"132","8","D","ORL","Catley","passes.s.c","AM3L","AM3L",NA,"M","PTFC","Long","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"132","8","D","ORL","Catley","passes.s","AM3L","AM3L",NA,"M","PTFC","Long","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "132","8",NA,NA,NA,NA,NA,NA,NA,"F","PTFC","Brynjarsdottir","interceptions","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "133","8","M","PTFC","Brynjarsdottir","passes.f.c","D3L","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "134","8","F","PTFC","Nadim","passes.s","DM3L","DM3C","lay.off","M","ORL","Kyle","interceptions","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -272,7 +272,7 @@
 "257","15","D","PTFC","Williamson","movement","D3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "258","15","D","PTFC","Williamson","dispossessed","DM3R",NA,NA,"F","ORL","Spencer","tackles.ball","AM3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "259","15","D","PTFC","Williamson","passes.b.c","DM3R","D3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"260","15","D","PTFC","Sonnett","passes.f.c","DM3R","A3R","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"260","15","D","PTFC","Sonnett","passes.f","DM3R","A3R","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "261","15","F","PTFC","Nadim","offside.calls","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "262","16","D","ORL","Hickmann Alves","passes.f","D3L","AM3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "263","16","D","PTFC","Williamson","recoveries","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -323,7 +323,7 @@
 "308","18","M","ORL","Evans","passes.f.c","DM3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "309","19","F","ORL","Morgan","passes.b.c","DM3C","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "310","19","D","ORL","Catley","passes.b.c","DM3L","DM3L",NA,"F","PTFC","Brynjarsdottir","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"311","19","D","ORL","Hickmann Alves","passes.f.c","DM3L","AM3C","launch","F","PTFC","Nadim","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"311","19","D","ORL","Hickmann Alves","passes.f","DM3L","AM3C","launch","F","PTFC","Nadim","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "311","19",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Horan","blocks","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "312","19","M","ORL","Edwards","aerial.won","DM3L",NA,NA,"M","PTFC","Shim","aerial.lost","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "313","19","M","PTFC","Horan","ball.shield","AM3R",NA,NA,"M","ORL","Evans","challenged","DM3L",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
@@ -334,9 +334,9 @@
 "318","19","M","PTFC","Long","passes.f.c","D3C","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "319","20","M","PTFC","Brynjarsdottir","passes.b.c","AM3C","DM3C",NA,"M","ORL","Kyle","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "320","20","D","PTFC","Menges","passes.f.c","DM3C","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"321","20","D","PTFC","Klingenberg","passes.f.c","A3L","A6","deep.crosses","D","ORL","Belanger","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"321","20","D","PTFC","Klingenberg","passes.f","A3L","A6","deep.crosses","D","ORL","Belanger","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "321","20",NA,NA,NA,NA,NA,NA,NA,"GK","ORL","Harris","gk.high.balls.won","D6","caught",NA,NA,NA,NA,NA,NA,NA,NA
-"322","20","GK","ORL","Harris","passes.f.c","D18","AM3C","gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"322","20","GK","ORL","Harris","passes.f","D18","AM3C","gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "323","20","F","ORL","Morgan","offside.calls","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "324","20","D","PTFC","Sonnett","passes.f.c","DM3C","AM3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "325","20","M","PTFC","Long","passes.f.c","AM3C","AM3C",NA,"F","ORL","Morgan","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -470,7 +470,7 @@
 "448","28","D","PTFC","Sonnett","passes.f.c","D3C","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "449","28","D","PTFC","Williamson","movement","DM3R","DM3C",NA,"F","ORL","Spencer","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "450","28","D","PTFC","Williamson","passes.b.c","DM3C","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"451","28","D","PTFC","Sonnett","passes.f.c","D3C","A3C","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"451","28","D","PTFC","Sonnett","passes.f","D3C","A3C","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "452","28","F","PTFC","Nadim","offside.calls","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "453","28","D","ORL","Hickmann Alves","passes.f.c","D3C","DM3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "454","28","D","ORL","Catley","passes.s.c","DM3L","DM3C",NA,"F","PTFC","Brynjarsdottir","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -487,7 +487,7 @@
 "463","29",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "464","29","F","ORL","Morgan","movement","A3C","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "465","29","F","ORL","Morgan","take.on.won","A3R",NA,NA,"M","PTFC","Long","dribbled.tackles.missed","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"466","29","F","ORL","Morgan","passes.f.c","A3R","A18",NA,"D","PTFC","Menges","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"466","29","F","ORL","Morgan","passes.f","A3R","A18",NA,"D","PTFC","Menges","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "466","29",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Long","interceptions","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "467","29","M","PTFC","Long","passes.f.c","D18","D3L",NA,"F","ORL","Morgan","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "467","29",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Evans","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -572,7 +572,7 @@
 "542","33","D","ORL","Hickmann Alves","passes.s.c","DM3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "543","33","D","ORL","Alleway","passes.f.c","DM3C","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "544","33","M","ORL","Kyle","passes.b.c","AM3C","DM3R",NA,"M","PTFC","Heath","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"545","33","D","ORL","Belanger","passes.f.c","DM3R","AM3C","launch","M","PTFC","Heath","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"545","33","D","ORL","Belanger","passes.f","DM3R","AM3C","launch","M","PTFC","Heath","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "546","33","F","ORL","Morgan","offside.calls","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "547","33","M","PTFC","Long","passes.s.c","D3C","D3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "548","33","D","PTFC","Sonnett","passes.s.c","D3C","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -657,7 +657,7 @@
 "625","38","M","PTFC","Brynjarsdottir","passes.s.c","AM3R","DM3R",NA,"M","ORL","Edwards","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "626","38","M","PTFC","Long","passes.b.c","DM3R","DM3C",NA,"M","ORL","Kyle","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "627","38","D","PTFC","Menges","passes.f.c","DM3C","AM3C",NA,"F","ORL","Edmonds","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"628","38","M","PTFC","Heath","passes.f.c","AM3C","A18","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"628","38","M","PTFC","Heath","passes.f","AM3C","A18","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "629","38","F","PTFC","Nadim","offside.calls","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "630","39","GK","ORL","Harris","passes.f","D3C","A3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "631","39","F","ORL","Spencer","aerial.lost","A3C",NA,NA,"D","PTFC","Williamson","aerial.won","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -694,7 +694,7 @@
 "661","40","M","PTFC","Long","recoveries","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "662","40","M","PTFC","Long","movement","DM3C","AM3C",NA,"F","ORL","Spencer","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "663","40","M","PTFC","Long","movement","AM3C","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"664","40","M","PTFC","Long","passes.f.c","A3C","A18","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"664","40","M","PTFC","Long","passes.f","A3C","A18","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "665","40","F","PTFC","Nadim","offside.calls","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "666","41","GK","ORL","Harris","passes.f","D3C","AM3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "667","41","M","ORL","Edwards","aerial.lost","AM3C",NA,NA,"D","PTFC","Sonnett","aerial.won","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -703,7 +703,7 @@
 "670","41","M","PTFC","Long","recoveries","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "671","41","M","PTFC","Long","passes.f.c","DM3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "672","41","M","PTFC","Shim","passes.f.c","AM3L","AM3L",NA,"M","ORL","Kyle","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"673","41","M","PTFC","Heath","passes.f.c","AM3L","A3L","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"673","41","M","PTFC","Heath","passes.f","AM3L","A3L","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "674","41","D","PTFC","Klingenberg","offside.calls","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "675","41","GK","ORL","Harris","passes.f","D3R","AM3R","free.kick","D","PTFC","Menges","blocks","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "676","41","F","ORL","Edmonds","recoveries","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -806,7 +806,7 @@
 "769","46","M","PTFC","Heath","lost.touch","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "770","46","D","ORL","Belanger","passes.f","A3R",NA,"throw.in","D","PTFC","Menges","clearances","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "771","46","M","PTFC","Shim","recoveries","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"772","46","M","PTFC","Shim","passes.f.c","D3L","DM3R","through","D","ORL","Belanger","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"772","46","M","PTFC","Shim","passes.f","D3L",NA,"through","D","ORL","Belanger","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "772","46",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Alleway","interceptions","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "773","46","D","ORL","Alleway","passes.b.c","DM3R","DM3R",NA,"F","PTFC","Nadim","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "774","46","D","ORL","Hickmann Alves","movement","DM3R","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -837,14 +837,14 @@
 "797","47","M","ORL","Edwards","recoveries","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "798","47","M","ORL","Edwards","passes.b.c","DM3L","DM3L",NA,"F","PTFC","Nadim","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "799","47","D","ORL","Catley","passes.b.c","DM3L","DM3L",NA,"F","PTFC","Brynjarsdottir","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"800","47","D","ORL","Hickmann Alves","passes.f.c","DM3L","DM3R","launch","F","PTFC","Nadim","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"800","47","D","ORL","Hickmann Alves","passes.f","DM3L",NA,"launch","F","PTFC","Nadim","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "800","47",NA,NA,NA,NA,NA,NA,"through","D","PTFC","Sonnett","interceptions","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "801","47","D","PTFC","Sonnett","passes.f","DM3R",NA,"launch","D","ORL","Hickmann Alves","interceptions","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "801","47",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "802","48","D","ORL","Hickmann Alves","passes.b.c","D3L","D6",NA,"F","PTFC","Nadim","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "803","48","GK","ORL","Harris","passes.f.c","D6","D3L","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "804","48","D","ORL","Catley","dispossessed","D3L",NA,NA,"F","PTFC","Brynjarsdottir","dispossessed","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"805","48","M","PTFC","Brynjarsdottir","passes.f.c","A3R","A3R","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"805","48","M","PTFC","Brynjarsdottir","passes.f","A3R",NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "806","48","F","PTFC","Nadim","offside.calls","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "807","48","GK","ORL","Harris","passes.f.c","D3C","AM3C","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "807","48",NA,NA,NA,NA,NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -904,7 +904,7 @@
 "856","51","M","PTFC","Shim","recoveries","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "857","51","M","PTFC","Shim","passes.f.c","A3C","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "858","51","D","PTFC","Klingenberg","passes.b.c","A3L","A3L",NA,"D","ORL","Belanger","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"859","51","F","PTFC","Nadim","passes.f.c","A3L","A18","corner.crosses","F","ORL","Edmonds","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"859","51","F","PTFC","Nadim","passes.f","A3L",NA,"corner.crosses","F","ORL","Edmonds","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "860","51","M","PTFC","Long","offside.calls","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "861","52","GK","ORL","Harris","passes.f","D18",NA,"launch","D","PTFC","Sonnett","blocks","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "861","52",NA,NA,NA,NA,NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1028,7 +1028,7 @@
 "968","59","F","PTFC","Weber","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "969","59","D","ORL","Alleway","passes.s.c","D3C","D3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "970","59","D","ORL","Hickmann Alves","movement","D3L","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"971","59","D","ORL","Hickmann Alves","passes.f.c","DM3L","DM3C","launch","F","PTFC","Brynjarsdottir","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"971","59","D","ORL","Hickmann Alves","passes.f","DM3L",NA,"launch","F","PTFC","Brynjarsdottir","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "971","59",NA,NA,NA,NA,NA,NA,"through","D","PTFC","Sonnett","interceptions","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "972","59","D","PTFC","Sonnett","movement","DM3C","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "973","59","D","PTFC","Sonnett","passes.f","AM3C",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
@@ -1049,11 +1049,11 @@
 "986","60","M","ORL","Edwards","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "987","61","F","ORL","Sanderson","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "988","61",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"989","61","F","ORL","Morgan","passes.f.c","AM3R","D3C","launch","M","PTFC","Long","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"989","61","F","ORL","Morgan","passes.f","AM3R",NA,"launch","M","PTFC","Long","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "989","61",NA,NA,NA,NA,NA,NA,"through","D","PTFC","Williamson","interceptions","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "990","61","D","PTFC","Williamson","passes.f.c","D3C","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "991","61","D","PTFC","Sonnett","passes.f.c","D3C","AM3L","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"992","61","M","PTFC","Heath","passes.f.c","AM3L","D3R","headed","D","ORL","Belanger","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"992","61","M","PTFC","Heath","passes.f","AM3L",NA,"headed","D","ORL","Belanger","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "992","61",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Alleway","interceptions","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "993","61","D","ORL","Alleway","clearances","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "994","61","D","PTFC","Menges","recoveries","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1108,7 +1108,7 @@
 "1037","63","M","PTFC","Heath","recoveries","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1038","63","M","PTFC","Heath","take.on.lost","AM3L",NA,NA,"D","ORL","Belanger","ball.shield",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1039","64","D","ORL","Hickmann Alves","recoveries","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1040","64","D","ORL","Hickmann Alves","passes.f.c","D3R","AM3L",NA,"F","PTFC","Nadim","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1040","64","D","ORL","Hickmann Alves","passes.f","D3R",NA,NA,"F","PTFC","Nadim","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1040","64",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Klingenberg","interceptions","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1041","64","D","PTFC","Klingenberg","passes.f.c","AM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1042","64","M","PTFC","Long","take.on.won","AM3L",NA,NA,"M","ORL","Kyle","dribbled.turned","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1181,7 +1181,7 @@
 "1100","68","D","ORL","Hickmann Alves","recoveries","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1101","68","D","ORL","Hickmann Alves","passes.f.c","D18","DM3C",NA,"M","PTFC","Heath","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1101","68",NA,NA,NA,NA,NA,NA,NA,"F","PTFC","Nadim","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1102","68","F","ORL","Edmonds","passes.f.c","DM3C","AM3C","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1102","68","F","ORL","Edmonds","passes.f","DM3C",NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1103","68","F","ORL","Morgan","offside.calls","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1104","68",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1105","68","M","PTFC","Long","passes.f.c","DM3C","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1223,7 +1223,7 @@
 "1138","72","D","ORL","Catley","passes.f","DM3L",NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1139","72","F","ORL","Sanderson","aerial.lost","AM3L",NA,NA,"M","PTFC","Horan","aerial.won","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1140","72","F","ORL","Spencer","recoveries","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1141","72","F","ORL","Spencer","passes.f.c","AM3L","D3R","through","M","PTFC","Long","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1141","72","F","ORL","Spencer","passes.f","AM3L",NA,"through","M","PTFC","Long","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1141","72",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Sonnett","interceptions","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1142","72","D","PTFC","Sonnett","passes.f","D3R",NA,NA,"F","ORL","Morgan","pressured","A3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "1143","72","F","ORL","Sanderson","passes.s.c","A3L","A3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1233,7 +1233,7 @@
 "1145","72",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Williamson","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1145","72",NA,NA,NA,NA,NA,NA,NA,"F","PTFC","Weber","blocks","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1146","72","D","PTFC","Williamson","recoveries","D3R",NA,NA,"F","ORL","Spencer","challenged","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1147","72","D","PTFC","Williamson","passes.f.c","D3R","A3R",NA,"F","ORL","Spencer","challenged","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1147","72","D","PTFC","Williamson","passes.f","D3R",NA,NA,"F","ORL","Spencer","challenged","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1147","72",NA,NA,NA,NA,NA,NA,NA,"F","ORL","Spencer","interceptions","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1148","72","F","ORL","Spencer","movement","A3R","A18",NA,"M","PTFC","Horan","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1149","72","F","ORL","Spencer","passes.b","A18",NA,NA,"M","PTFC","Long","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1249,7 +1249,7 @@
 "1157","72","D","ORL","Belanger","passes.f","DM3R",NA,"launch","GK","PTFC","Betos","gk.loose.balls.won","D18","caught",NA,NA,NA,NA,NA,NA,NA,NA
 "1157","72",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1158","73","GK","PTFC","Betos","passes.f.c","D18","DM3L","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1159","73","D","PTFC","Klingenberg","passes.f.c","DM3L","D3C",NA,"F","ORL","Edmonds","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1159","73","D","PTFC","Klingenberg","passes.f","DM3L",NA,NA,"F","ORL","Edmonds","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1159","73",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Alleway","interceptions","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1160","73","D","ORL","Alleway","clearances","D3C",NA,NA,"M","PTFC","Horan","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1161","73","F","ORL","Sanderson","recoveries","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1263,7 +1263,7 @@
 "1167","74",NA,NA,NA,NA,NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1168","74","F","ORL","Morgan","recoveries","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1169","74","F","ORL","Morgan","passes.b.c","A3R","A3R",NA,"D","PTFC","Sonnett","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1170","74","F","ORL","Edmonds","passes.f.c","A3R","A18","corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1170","74","F","ORL","Edmonds","passes.f","A3R",NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1171","74","M","ORL","Kyle","offside.calls","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1172","74","GK","PTFC","Betos","passes.f.c","D18","D3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1173","74","D","PTFC","Sonnett","passes.f.c","D3C","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1293,7 +1293,7 @@
 "1194","76","D","ORL","Hickmann Alves","passes.f.c","DM3L","AM3L",NA,"F","PTFC","Weber","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1195","76","M","ORL","Kyle","passes.f.c","AM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1196","76","M","ORL","Weatherholt","passes.f.c","AM3L","AM3L",NA,"M","PTFC","Long","challenged","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1197","76","D","ORL","Catley","passes.f.c","AM3L","D3R","through","F","PTFC","Weber","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1197","76","D","ORL","Catley","passes.f","AM3L",NA,"through","F","PTFC","Weber","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1197","76",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Sonnett","interceptions","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1198","76","D","PTFC","Sonnett","passes.b.c","D3R","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1199","76","GK","PTFC","Betos","passes.f.c","D6","DM3C","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1349,7 +1349,7 @@
 "1241","80","D","PTFC","Klingenberg","recoveries","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1242","80","D","PTFC","Klingenberg","take.on.lost","A3R",NA,NA,"F","ORL","Morgan","tackles.ball","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1243","80","F","ORL","Morgan","movement","D3L","D3C",NA,"D","PTFC","Klingenberg","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1244","80","F","ORL","Morgan","passes.f.c","D3C","AM3C",NA,"M","PTFC","Heath","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1244","80","F","ORL","Morgan","passes.f","D3C",NA,NA,"M","PTFC","Heath","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1244","80",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Klingenberg","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1244","80",NA,NA,NA,NA,NA,NA,NA,"M","PTFC","Horan","interceptions","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1245","80","M","PTFC","Horan","passes.b","AM3C",NA,NA,"M","ORL","Weatherholt","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1362,7 +1362,7 @@
 "1251","80","M","ORL","Weatherholt","passes.s","A3R",NA,"corner.crosses","D","PTFC","Menges","pressured","D3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "1252","80","GK","PTFC","Betos","passes.f.c","D6","D3L","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1253","80","D","PTFC","Menges","movement","D3L","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1254","80","D","PTFC","Menges","passes.f.c","D18","AM3C","launch","F","ORL","Edmonds","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1254","80","D","PTFC","Menges","passes.f","D18",NA,"launch","F","ORL","Edmonds","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1254","80",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Kyle","interceptions","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1255","81","M","ORL","Kyle","passes.f.c","AM3C","A3C",NA,"M","PTFC","Horan","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1256","81","F","ORL","Sanderson","passes.f.c","A3C","A18","through",NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA,NA,NA,NA
@@ -1448,7 +1448,7 @@
 "1319","87",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1320","87","M","PTFC","Brynjarsdottir","aerial.lost","DM3C",NA,NA,"F","ORL","Sanderson","aerial.won","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1321","88","F","PTFC","Weber","recoveries","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1322","88","F","PTFC","Weber","passes.f.c","AM3C","DM3C","launch","D","ORL","Catley","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1322","88","F","PTFC","Weber","passes.f","AM3C",NA,"launch","D","ORL","Catley","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1322","88",NA,NA,NA,NA,NA,NA,"through","D","ORL","Alleway","interceptions","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1323","88","D","ORL","Alleway","passes.f.c","DM3C","AM3C","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1324","88","F","ORL","Sanderson","passes.f.c","AM3C","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1463,7 +1463,7 @@
 "1333","89","M","ORL","Weatherholt","recoveries","AM3C",NA,NA,"M","PTFC","Horan","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1334","89","M","ORL","Weatherholt","passes.f.c","AM3C","A3L",NA,"M","PTFC","Horan","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1335","89","F","ORL","Hagen","passes.s.c","A3L","A3C",NA,"M","PTFC","Horan","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1336","89","M","ORL","Weatherholt","passes.f.c","A3C","D3C",NA,"M","PTFC","Long","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1336","89","M","ORL","Weatherholt","passes.f","A3C",NA,NA,"M","PTFC","Long","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1336","89",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Menges","interceptions","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1337","89","D","PTFC","Menges","passes.f","D3C",NA,NA,"D","ORL","Belanger","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1338","89","F","PTFC","Weber","recoveries","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
