@@ -50,6 +50,8 @@ AbbreviationConverter_PossAction =
         self$add_abbreviation("^bs",          "ball.shield")
         self$add_abbreviation("^cl",          "clearances")
         self$add_abbreviation("^playcutoff",  "playcutoffbybroadcast")
+        self$add_abbreviation("^fw",   "fouls.won")
+        self$add_abbreviation("^fc",   "fouls.conceded")
       }
     )
 )
@@ -122,6 +124,8 @@ AbbreviationConverter_DefAction =
         self$add_abbreviation("^cl",    "clearances")
         self$add_abbreviation("^aw",    "aerial.won")
         self$add_abbreviation("^al",    "aerial.lost")
+        self$add_abbreviation("^fw",   "fouls.won")
+        self$add_abbreviation("^fc",   "fouls.conceded")
       }
     )
 )
