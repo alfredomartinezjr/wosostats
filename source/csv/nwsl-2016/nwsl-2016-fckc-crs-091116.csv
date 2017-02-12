@@ -8,7 +8,7 @@
 "7","1","D","CRS","Gilliland","passes.b.c",NA,NA,NA,"M","FCKC","O'Reilly","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "8","1","D","CRS","Naughton","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "9","1","GK","CRS","Naeher","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"10","1","D","CRS","Johnston","passes.f.c",NA,NA,"launch","M","FCKC","O'Reilly","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"10","1","D","CRS","Johnston","passes.f",NA,NA,"launch","M","FCKC","O'Reilly","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "10","1",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Sauerbrunn","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "11","1","D","CRS","Gilliland","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "12","1","F","CRS","McCaffrey","passes.s.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -16,7 +16,7 @@
 "14","1","F","CRS","McCaffrey","passes.s.c",NA,NA,"corner.crosses","M","FCKC","Scott","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "15","2","M","CRS","DiBernardo","passes.s",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "16","2","GK","FCKC","Barnhart","passes.s.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"17","2","D","FCKC","Taylor","passes.f.c",NA,NA,NA,"F","CRS","McCaffrey","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"17","2","D","FCKC","Taylor","passes.f",NA,NA,NA,"F","CRS","McCaffrey","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "17","2",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Short","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "18","2","D","CRS","Short","passes.s",NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "19","2","D","FCKC","Arlitt","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -58,7 +58,7 @@
 "54","5","D","FCKC","Sauerbrunn","passes.f.c",NA,NA,NA,"F","CRS","McCaffrey","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "55","5","M","FCKC","Laddish","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "56","5","F","FCKC","Groom","passes.s.c",NA,NA,NA,"M","CRS","Colaprico","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"57","5","M","FCKC","O'Reilly","passes.f.c",NA,NA,"launch","F","CRS","Huerta","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"57","5","M","FCKC","O'Reilly","passes.f",NA,NA,"launch","F","CRS","Huerta","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "57","5",NA,NA,NA,NA,NA,NA,NA,"GK","CRS","Naeher","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "58","5","D","FCKC","Arlitt","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "59","5","M","FCKC","O'Reilly","passes.b.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -75,7 +75,7 @@
 "69","6","F","CRS","Huerta","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "70","6","F","CRS","Press","passes.b",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "71","6",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"72","6","D","CRS","Johnston","passes.f.c",NA,NA,NA,"F","FCKC","McCarty","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"72","6","D","CRS","Johnston","passes.f",NA,NA,NA,"F","FCKC","McCarty","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "72","6",NA,NA,NA,NA,NA,NA,NA,"M","FCKC","Laddish","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "72","6",NA,NA,NA,NA,NA,NA,NA,"GK","FCKC","Barnhart","gk.loose.balls.won",NA,"collected","standing",NA,NA,NA,NA,NA,NA,NA
 "73","6","GK","FCKC","Barnhart","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -120,7 +120,7 @@
 "112","9","D","CRS","Short","passes.b.c",NA,NA,NA,"F","FCKC","Kastor","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "113","9","M","CRS","DiBernardo","passes.f",NA,NA,NA,"F","FCKC","Kastor","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "114","9","D","FCKC","Arlitt","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"115","9","D","FCKC","Arlitt","passes.f.c",NA,NA,NA,"F","CRS","Huerta","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"115","9","D","FCKC","Arlitt","passes.f",NA,NA,NA,"F","CRS","Huerta","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "115","9",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Gorden","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "116","10","D","FCKC","Arlitt","passes.f",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "117","10","F","FCKC","McCarty","aerial.lost",NA,NA,NA,"M","CRS","Colaprico","aerial.won",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
@@ -132,7 +132,7 @@
 "123","10","M","CRS","DiBernardo","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "124","10","M","CRS","DiBernardo","passes.f.c",NA,NA,NA,"M","FCKC","Laddish","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "125","10","F","CRS","Walls","passes.f.c",NA,NA,NA,"M","FCKC","Scott","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"126","10","F","CRS","McCaffrey","passes.f.c",NA,NA,"through","D","FCKC","Averbuch","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"126","10","F","CRS","McCaffrey","passes.f",NA,NA,"through","D","FCKC","Averbuch","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "126","10",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Arlitt","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "127","10","D","CRS","Gorden","passes.f",NA,NA,"deep.crosses","M","FCKC","O'Reilly","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "127","10",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Averbuch","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -163,7 +163,7 @@
 "149","12","D","CRS","Gorden","take.on.won",NA,NA,NA,"D","FCKC","Arlitt","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "150","12","D","CRS","Gorden","dispossessed",NA,NA,NA,"F","FCKC","McCarty","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "151","12","F","FCKC","McCarty","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"152","12","M","FCKC","Laddish","passes.s.c",NA,NA,NA,"F","CRS","Press","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"152","12","M","FCKC","Laddish","passes.s",NA,NA,NA,"F","CRS","Press","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "152","12",NA,NA,NA,NA,NA,NA,NA,"M","CRS","DiBernardo","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "153","12","M","CRS","DiBernardo","passes.s.c",NA,NA,NA,"M","FCKC","Scott","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "154","12","F","CRS","Press","take.on.won",NA,NA,NA,"M","FCKC","Laddish","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -237,7 +237,7 @@
 "217","16","M","CRS","DiBernardo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "218","16","F","CRS","Walls","passes.b.c",NA,NA,NA,"D","FCKC","Averbuch","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "219","16","M","CRS","DiBernardo","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"220","16","D","CRS","Short","passes.s.c",NA,NA,"corner.crosses","M","FCKC","Scott","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"220","16","D","CRS","Short","passes.s",NA,NA,"corner.crosses","M","FCKC","Scott","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "220","16",NA,NA,NA,NA,NA,NA,NA,"GK","FCKC","Barnhart","gk.loose.balls.won",NA,"collected","stooping",NA,NA,NA,NA,NA,NA,NA
 "221","17","GK","FCKC","Barnhart","passes.s.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "222","17","D","FCKC","Arlitt","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -317,7 +317,7 @@
 "296","21","F","CRS","McCaffrey","passes.b.c",NA,NA,NA,"D","FCKC","Averbuch","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "296","21",NA,NA,NA,NA,NA,NA,NA,"M","FCKC","Scott","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "297","21","D","CRS","Johnston","passes.f.c",NA,NA,NA,"M","FCKC","O'Reilly","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"298","21","D","CRS","Gorden","passes.f.c",NA,NA,"through","D","FCKC","Arlitt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"298","21","D","CRS","Gorden","passes.f",NA,NA,"through","D","FCKC","Arlitt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "298","21",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Sauerbrunn","clearances",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "299","23","D","FCKC","Arlitt","passes.f",NA,NA,"throw.in","F","CRS","Huerta","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "300","23","D","FCKC","Sauerbrunn","clearances",NA,NA,NA,"F","CRS","Walls","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -329,7 +329,7 @@
 "305","23",NA,NA,NA,NA,NA,NA,NA,"M","FCKC","Laddish","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "305","23",NA,NA,NA,NA,NA,NA,NA,"GK","FCKC","Barnhart","gk.loose.balls.won",NA,"collected","standing",NA,NA,NA,NA,NA,NA,NA
 "306","23","GK","FCKC","Barnhart","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"307","23","D","FCKC","Taylor","passes.f.c",NA,NA,"through","F","CRS","Walls","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"307","23","D","FCKC","Taylor","passes.f",NA,NA,"through","F","CRS","Walls","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "307","23",NA,NA,NA,NA,NA,NA,NA,"GK","CRS","Naeher","ball.shield",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "308","24","GK","CRS","Naeher","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "308","24",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -358,7 +358,7 @@
 "329","27","D","FCKC","Taylor","clearances",NA,NA,NA,"M","CRS","Mautz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "329","27",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Naughton","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "330","27","D","FCKC","Taylor","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"331","27","D","FCKC","Taylor","passes.f.c",NA,NA,NA,"M","CRS","Mautz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"331","27","D","FCKC","Taylor","passes.f",NA,NA,NA,"M","CRS","Mautz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "331","27",NA,NA,NA,NA,NA,NA,NA,"M","CRS","DiBernardo","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "332","27","M","CRS","DiBernardo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "333","27","F","CRS","Walls","lost.touch",NA,NA,NA,"GK","FCKC","Barnhart","gk.loose.balls.won",NA,"collected","standing",NA,NA,NA,NA,NA,NA,NA
@@ -398,7 +398,7 @@
 "363","29","D","FCKC","Averbuch","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "364","29","D","FCKC","Averbuch","passes.f.c",NA,NA,NA,"M","CRS","Mautz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "365","29","D","FCKC","Taylor","passes.f.c",NA,NA,NA,"M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"366","29","F","FCKC","Kastor","passes.b.c",NA,NA,"lay.off","D","CRS","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"366","29","F","FCKC","Kastor","passes.b",NA,NA,"lay.off","D","CRS","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "366","29",NA,NA,NA,NA,NA,NA,NA,"M","CRS","DiBernardo","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "367","29","M","CRS","DiBernardo","passes.f.c",NA,NA,"through","D","FCKC","Taylor","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "368","29","F","CRS","Walls","passes.b.c",NA,NA,NA,"D","FCKC","Averbuch","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -457,7 +457,7 @@
 "416","33","F","CRS","Huerta","take.on.won",NA,NA,NA,"F","FCKC","McCarty","dribbled.out.run",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "417","33","F","CRS","Huerta","passes.s",NA,NA,"corner.crosses","D","FCKC","Arlitt","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "418","33","F","CRS","Huerta","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"419","33","F","CRS","Huerta","passes.s.c",NA,NA,"corner.crosses","F","FCKC","McCarty","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"419","33","F","CRS","Huerta","passes.s",NA,NA,"corner.crosses","F","FCKC","McCarty","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "419","33",NA,NA,NA,NA,NA,NA,NA,"GK","FCKC","Barnhart","gk.loose.balls.won",NA,"collected","standing",NA,NA,NA,NA,NA,NA,NA
 "420","33","GK","FCKC","Barnhart","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "421","34","M","FCKC","Laddish","passes.f.c",NA,NA,NA,"F","CRS","Press","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -475,7 +475,7 @@
 "432","34","D","CRS","Short","passes.f.c",NA,NA,NA,"D","FCKC","Taylor","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "433","34","M","CRS","Mautz","passes.b.c",NA,NA,NA,"D","FCKC","Averbuch","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "434","34","M","CRS","DiBernardo","passes.f.c",NA,NA,"through","F","FCKC","Kastor","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"435","34","M","CRS","Mautz","passes.b.c",NA,NA,NA,"D","FCKC","Averbuch","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"435","34","M","CRS","Mautz","passes.b",NA,NA,NA,"D","FCKC","Averbuch","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "435","34",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Taylor","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "436","34","D","FCKC","Taylor","passes.b.c",NA,NA,NA,"M","CRS","Mautz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "437","34","D","FCKC","Averbuch","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
@@ -575,7 +575,7 @@
 "519","41","F","CRS","Walls","shots.blocked",NA,NA,"headed","F","FCKC","McCarty","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "520","41","D","FCKC","Arlitt","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "521","41","D","FCKC","Arlitt","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"522","41","M","FCKC","O'Reilly","passes.f.c",NA,NA,NA,"M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"522","41","M","FCKC","O'Reilly","passes.f",NA,NA,NA,"M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "522","41",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Gorden","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "523","41","D","CRS","Gorden","passes.f",NA,NA,NA,"F","FCKC","Groom","challenged",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
 "524","41","M","CRS","DiBernardo","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -622,7 +622,7 @@
 "565","44","F","CRS","Huerta","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "566","44","F","CRS","Huerta","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "567","44","F","CRS","Press","passes.f.c",NA,NA,NA,"M","FCKC","Laddish","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"568","44","F","CRS","Walls","passes.b.c",NA,NA,NA,"D","FCKC","Sauerbrunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"568","44","F","CRS","Walls","passes.b",NA,NA,NA,"D","FCKC","Sauerbrunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "568","44",NA,NA,NA,NA,NA,NA,NA,"M","FCKC","Scott","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "569","44","M","FCKC","Scott","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "570","44","D","FCKC","Arlitt","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -634,7 +634,7 @@
 "576","45","D","CRS","Naughton","passes.b.c",NA,NA,NA,"F","FCKC","Kastor","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "577","45","M","CRS","Mautz","passes.b.c",NA,NA,"lay.off","D","FCKC","Averbuch","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "578","45","D","CRS","Short","passes.f.c",NA,NA,NA,"F","FCKC","Kastor","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"579","45","M","CRS","DiBernardo","passes.f.c",NA,NA,NA,"M","FCKC","Laddish","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"579","45","M","CRS","DiBernardo","passes.f",NA,NA,NA,"M","FCKC","Laddish","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "580","45","M","CRS","Mautz","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "581","45","GK","FCKC","Barnhart","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "581","45",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -648,7 +648,7 @@
 "587","45+1",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "588","45+1",NA,NA,NA,"halftime",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "589","45+1",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"590","46","M","FCKC","Laddish","passes.b.c",NA,NA,NA,"F","CRS","Huerta","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"590","46","M","FCKC","Laddish","passes.b",NA,NA,NA,"F","CRS","Huerta","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "590","46",NA,NA,NA,NA,NA,NA,NA,"F","CRS","Walls","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "591","46","D","FCKC","Arlitt","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "592","46","F","FCKC","Groom","aerial.won",NA,NA,NA,"D","CRS","Gorden","aerial.lost",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
@@ -714,7 +714,7 @@
 "647","50",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Arlitt","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "648","50","M","FCKC","Laddish","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "649","50","M","FCKC","Laddish","passes.s.c",NA,NA,NA,"F","CRS","Press","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"650","50","D","FCKC","Taylor","passes.f.c",NA,NA,"deep.crosses","M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"650","50","D","FCKC","Taylor","passes.f",NA,NA,"deep.crosses","M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "650","50",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Johnston","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "651","50","D","CRS","Johnston","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "652","50","F","CRS","Huerta","passes.f",NA,NA,NA,"M","FCKC","Laddish","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -762,7 +762,7 @@
 "693","53","M","FCKC","O'Reilly","passes.b.c",NA,NA,NA,"M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "694","53","D","FCKC","Taylor","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "695","53","F","FCKC","Kastor","passes.s.c",NA,NA,NA,"D","CRS","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"696","53","M","FCKC","Laddish","passes.b.c",NA,NA,NA,"F","CRS","Huerta","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"696","53","M","FCKC","Laddish","passes.b",NA,NA,NA,"F","CRS","Huerta","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "696","53",NA,NA,NA,NA,NA,NA,NA,"F","CRS","Press","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "697","53","F","CRS","Press","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "698","53","M","CRS","Mautz","passes.f.c",NA,NA,NA,"M","FCKC","Scott","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -842,9 +842,9 @@
 "770","59","M","FCKC","LaBonta","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "771","60","M","FCKC","LaBonta","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "772","60","D","FCKC","Taylor","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"773","60","F","FCKC","McCarty","passes.s.c",NA,NA,"corner.crosses","D","CRS","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"773","60","F","FCKC","McCarty","passes.s",NA,NA,"corner.crosses","D","CRS","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "773","60",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Naughton","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"774","60","M","FCKC","O'Reilly","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"774","60","M","FCKC","O'Reilly","passes.f",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "775","60","F","FCKC","Groom","offside.calls",NA,NA,NA,"M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "776","60","GK","CRS","Naeher","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "776","60",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -945,7 +945,7 @@
 "867","67","F","FCKC","Groom","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "868","67","F","FCKC","Groom","passes.s.c",NA,NA,"switch","F","CRS","Huerta","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "869","67","D","FCKC","Taylor","passes.f.c",NA,NA,NA,"M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"870","67","M","FCKC","O'Reilly","passes.f.c",NA,NA,"deep.crosses","M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"870","67","M","FCKC","O'Reilly","passes.f",NA,NA,"deep.crosses","M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "870","67",NA,NA,NA,NA,NA,NA,NA,"GK","CRS","Naeher","gk.loose.balls.won",NA,"collected","standing",NA,NA,NA,NA,NA,NA,NA
 "871","67","GK","CRS","Naeher","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "872","67","D","CRS","Naughton","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -962,7 +962,7 @@
 "883","68","GK","FCKC","Barnhart","passes.s.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "884","68","D","FCKC","Averbuch","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "885","68","GK","FCKC","Barnhart","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"886","68","D","FCKC","Sauerbrunn","passes.f.c",NA,NA,"launch","M","CRS","Mautz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"886","68","D","FCKC","Sauerbrunn","passes.f",NA,NA,"launch","M","CRS","Mautz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "886","68",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Johnston","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "887","68","D","CRS","Johnston","clearances",NA,NA,NA,"F","FCKC","Silva","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "888","68","D","CRS","Gorden","passes.f",NA,NA,"throw.in","M","FCKC","LaBonta","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1034,7 +1034,7 @@
 "948","72","GK","FCKC","Barnhart","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "949","72","D","FCKC","Averbuch","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "950","73","D","FCKC","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"951","73","D","FCKC","Bowen","passes.f.c",NA,NA,"through","D","CRS","Gorden","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"951","73","D","FCKC","Bowen","passes.f",NA,NA,"through","D","CRS","Gorden","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "951","73",NA,NA,NA,NA,NA,NA,NA,"D","CRS","Johnston","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "952","73","D","FCKC","Bowen","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "953","73","M","FCKC","Laddish","dispossessed",NA,NA,NA,"D","CRS","Gorden","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1055,7 +1055,7 @@
 "967","74","M","FCKC","Laddish","passes.f.c",NA,NA,NA,"M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "968","74","M","FCKC","O'Reilly","passes.b.c",NA,NA,NA,"D","CRS","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "968","74",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Mautz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"969","74","M","FCKC","Laddish","passes.f.c",NA,NA,NA,"M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"969","74","M","FCKC","Laddish","passes.f",NA,NA,NA,"M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "970","74","M","FCKC","O'Reilly","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "971","75","GK","CRS","Naeher","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "972","75","M","CRS","Mautz","aerial.won",NA,NA,NA,"D","FCKC","Taylor","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1083,11 +1083,11 @@
 "992","76","D","FCKC","Taylor","passes.f",NA,NA,"deep.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "993","76","F","FCKC","Silva","aerial.lost",NA,NA,NA,"D","CRS","Gorden","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "994","76","F","CRS","Huerta","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"995","76","F","CRS","Huerta","passes.b.c",NA,NA,NA,"D","FCKC","Bowen","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"995","76","F","CRS","Huerta","passes.b",NA,NA,NA,"D","FCKC","Bowen","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "995","76",NA,NA,NA,NA,NA,NA,NA,"F","FCKC","Silva","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "996","76","F","FCKC","Silva","take.on.lost",NA,NA,NA,"D","CRS","Johnston","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "997","76","D","CRS","Johnston","passes.f.c",NA,NA,NA,"F","FCKC","Groom","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"998","76","D","CRS","Gorden","passes.f.c",NA,NA,NA,"D","FCKC","Bowen","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"998","76","D","CRS","Gorden","passes.f",NA,NA,NA,"D","FCKC","Bowen","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "998","76",NA,NA,NA,NA,NA,NA,NA,"M","FCKC","Laddish","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "999","76","M","FCKC","Laddish","take.on.lost",NA,NA,NA,"M","CRS","DiBernardo","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1000","76","M","CRS","DiBernardo","passes.f.c",NA,NA,NA,"M","FCKC","LaBonta","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1114,7 +1114,7 @@
 "1018","78","F","CRS","Press","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1019","78","D","FCKC","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1020","78","D","FCKC","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1021","78","D","FCKC","Bowen","passes.f.c",NA,NA,NA,"F","CRS","Huerta","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1021","78","D","FCKC","Bowen","passes.f",NA,NA,NA,"F","CRS","Huerta","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1021","78",NA,NA,NA,NA,NA,NA,NA,"M","CRS","Colaprico","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1021","78",NA,NA,NA,NA,NA,NA,NA,"GK","FCKC","Barnhart","gk.loose.balls.won",NA,"collected","standing",NA,NA,NA,NA,NA,NA,NA
 "1022","78","GK","FCKC","Barnhart","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1144,7 +1144,7 @@
 "1046","79","F","CRS","Walls","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1047","79","F","CRS","Walls","passes.b.c",NA,NA,NA,"M","FCKC","Scott","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1048","79","M","CRS","DiBernardo","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1049","79","F","CRS","Walls","passes.f.c",NA,NA,NA,"D","FCKC","Averbuch","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1049","79","F","CRS","Walls","passes.f",NA,NA,NA,"D","FCKC","Averbuch","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1049","79",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Bowen","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1050","79","D","FCKC","Bowen","passes.f.c",NA,NA,NA,"F","CRS","Huerta","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1051","79","M","FCKC","LaBonta","passes.b.c",NA,NA,NA,"F","CRS","Huerta","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1204,7 +1204,7 @@
 "1101","83","F","FCKC","Silva","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1102","83","F","FCKC","Silva","passes.b.c",NA,NA,NA,"M","CRS","Comeau","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1103","83","M","FCKC","Laddish","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1104","83","D","FCKC","Bowen","passes.s.c",NA,NA,"corner.crosses","D","CRS","Gorden","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1104","83","D","FCKC","Bowen","passes.s",NA,NA,"corner.crosses","D","CRS","Gorden","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1104","83",NA,NA,NA,NA,NA,NA,NA,"GK","CRS","Naeher","gk.loose.balls.won",NA,"collected","standing",NA,NA,NA,NA,NA,NA,NA
 "1105","83","GK","CRS","Naeher","passes.f",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1106","83","F","CRS","Press","aerial.lost",NA,NA,NA,"D","FCKC","Bowen","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1256,7 +1256,7 @@
 "1151","86","M","FCKC","O'Reilly","dispossessed",NA,NA,NA,"M","CRS","Comeau","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1152","86","M","FCKC","Laddish","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1153","86","M","FCKC","Laddish","take.on.won",NA,NA,NA,"M","CRS","DiBernardo","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1154","86","M","FCKC","Laddish","passes.f.c",NA,NA,"through","M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1154","86","M","FCKC","Laddish","passes.f",NA,NA,"through","M","CRS","DiBernardo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1154","86",NA,NA,NA,NA,NA,NA,NA,"GK","CRS","Naeher","gk.loose.balls.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1155","86","GK","CRS","Naeher","passes.f.c",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1156","86","D","CRS","Short","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1297,7 +1297,7 @@
 "1189","89","D","FCKC","Averbuch","passes.s.c",NA,NA,NA,"M","CRS","Comeau","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1190","89","D","FCKC","Sauerbrunn","passes.f",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1191","89","D","CRS","Johnston","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1192","89","D","CRS","Johnston","passes.s.c",NA,NA,NA,"F","FCKC","Silva","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1192","89","D","CRS","Johnston","passes.s",NA,NA,NA,"F","FCKC","Silva","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1192","89",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Bowen","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1193","89","D","FCKC","Bowen","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1194","89","F","FCKC","Groom","passes.s.c",NA,NA,"corner.crosses","D","CRS","Gorden","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1332,7 +1332,7 @@
 "1221","90","D","FCKC","Averbuch","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1222","90","F","FCKC","Groom","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1223","90","F","FCKC","Groom","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1224","90+1","F","FCKC","Groom","passes.f.c",NA,NA,"through","D","CRS","Johnston","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1224","90+1","F","FCKC","Groom","passes.f",NA,NA,"through","D","CRS","Johnston","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1225","90+1","M","FCKC","O'Reilly","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1226","90+1","GK","CRS","Naeher","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1226","90+1",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1364,7 +1364,7 @@
 "1251","90+2","D","FCKC","Averbuch","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1252","90+3","M","FCKC","Scott","passes.f.c",NA,NA,NA,"M","CRS","Mautz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1253","90+3","D","FCKC","Taylor","passes.s.c",NA,NA,"corner.crosses","D","CRS","Short","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1254","90+3","F","FCKC","Silva","passes.s.c",NA,NA,"corner.crosses","D","CRS","Naughton","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1254","90+3","F","FCKC","Silva","passes.s",NA,NA,"corner.crosses","D","CRS","Naughton","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1254","90+3",NA,NA,NA,NA,NA,NA,NA,"GK","CRS","Naeher","gk.high.balls.won",NA,"collected","standing",NA,NA,NA,NA,NA,NA,NA
 "1255","90+3","GK","CRS","Naeher","passes.f",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1256","90+3",NA,NA,NA,"end.of.match",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

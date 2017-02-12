@@ -23,7 +23,7 @@
 "21","2","M","FCKC","Scott","passes.f.c","DMR","DMC",NA,"M","ORL","Edwards","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "22","2","F","FCKC","Newfield","passes.f.c","DMC","DMC",NA,"D","ORL","Evans","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "23","2","M","FCKC","Tymrak","movement","DMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"24","2","M","FCKC","Tymrak","passes.f.c","AMC","DC","through","M","ORL","Edwards","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"24","2","M","FCKC","Tymrak","passes.f","AMC",NA,"through","M","ORL","Edwards","challenged","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "24","2",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Hickmann Alves","interceptions","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "25","2","D","ORL","Hickmann Alves","dispossessed","DC",NA,NA,"F","FCKC","Groom","tackles.ball","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "26","2","F","ORL","Belanger","recoveries","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -97,7 +97,7 @@
 "92","5","D","FCKC","Taylor","movement","DC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "93","5","D","FCKC","Taylor","passes.f.c","DMC","AMC",NA,"M","ORL","Edwards","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "94","5","F","FCKC","Groom","passes.s.c","AMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"95","5","F","FCKC","Newfield","passes.f.c","AMC","AMC","through","M","ORL","Edwards","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"95","5","F","FCKC","Newfield","passes.f","AMC",NA,"through","M","ORL","Edwards","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "96","5","M","FCKC","McCarty","offside.calls","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "97","5","GK","ORL","Bledsoe","passes.f","DL",NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "97","5",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -138,14 +138,14 @@
 "131","7","F","FCKC","Newfield","passes.s","DC",NA,NA,"M","ORL","Edwards","pressured","AC",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "132","7","M","ORL","Catley","passes.f","AML",NA,"throw.in","D","FCKC","Arlitt","blocks","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "133","7","M","ORL","Sanderson","recoveries","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"134","7","M","ORL","Sanderson","passes.s.c","AL","DR",NA,"D","FCKC","Arlitt","challenged","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"134","7","M","ORL","Sanderson","passes.s","AL",NA,NA,"D","FCKC","Arlitt","challenged","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "134","7",NA,NA,NA,NA,NA,NA,NA,"M","FCKC","Scott","interceptions","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "135","7","M","FCKC","Scott","passes.f.c","DR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "136","7","F","FCKC","Groom","dispossessed","DMR",NA,NA,"D","ORL","Pressley","tackles.ball","AML",NA,NA,"fouls.conceded",NA,"fouls.won",NA,NA,NA,NA
 "137","8",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,"GK","FCKC","Barnhart","gk.high.balls.won",NA,"caught","reaching",NA,NA,NA,NA,NA,NA,NA
 "138","8","GK","FCKC","Barnhart","passes.f.c","D18","DC","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "139","8","M","FCKC","Laddish","movement","DC","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"140","8","M","FCKC","Laddish","passes.f.c","DL","AR",NA,"M","ORL","Edwards","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"140","8","M","FCKC","Laddish","passes.f","DL",NA,NA,"M","ORL","Edwards","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "140","8",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Witteman","interceptions","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "141","8","D","ORL","Witteman","movement","AR","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "142","8","D","ORL","Witteman","passes.f.c","AC","A18","through","M","FCKC","Laddish","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -183,7 +183,7 @@
 "174","9","F","ORL","Hagen","lost.touch","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "175","9","M","ORL","Sanderson","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "176","9","M","ORL","Sanderson","movement","AMC","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"177","9","M","ORL","Sanderson","passes.f.c","AC","DC","through","D","FCKC","Averbuch","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"177","9","M","ORL","Sanderson","passes.f","AC",NA,"through","D","FCKC","Averbuch","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "177","9",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Bowen","interceptions","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "178","9","D","FCKC","Bowen","passes.b.c","DC","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "179","10","GK","FCKC","Barnhart","clearances","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -234,7 +234,7 @@
 "220","12","D","ORL","Pressley","passes.s.c","DMC","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "221","12","D","ORL","Hickmann Alves","passes.s.c","DC","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "222","12","F","ORL","Belanger","movement","DR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"223","12","F","ORL","Belanger","passes.f.c","DMR","D18","launch","F","FCKC","Groom","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"223","12","F","ORL","Belanger","passes.f","DMR",NA,"launch","F","FCKC","Groom","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "223","13",NA,NA,NA,NA,NA,NA,NA,"GK","FCKC","Barnhart","gk.loose.balls.won","D18","collected","standing",NA,NA,NA,NA,NA,NA,NA
 "224","13","GK","FCKC","Barnhart","passes.f.c","D18","DL","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "225","13","D","FCKC","Averbuch","passes.s.c","DL","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -274,7 +274,7 @@
 "256","14","D","FCKC","Arlitt","passes.f.c","AMR","AR",NA,"M","ORL","Spencer","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "257","14","M","FCKC","McCarty","take.on.lost","AR",NA,NA,"M","ORL","Catley","tackles.ball","DL",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "258","14","M","ORL","Catley","passes.f.c","DL","DML","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"259","14","F","ORL","Hagen","passes.b.c","DML","DL","lay.off","D","FCKC","Arlitt","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"259","14","F","ORL","Hagen","passes.b","DML",NA,"lay.off","D","FCKC","Arlitt","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "259","14",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Taylor","blocks","AMR",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "260","14","M","ORL","Catley","passes.f.c","DL","DML","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "261","14","F","ORL","Hagen","passes.b.c","DML","DML",NA,"M","FCKC","Laddish","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -282,7 +282,7 @@
 "263","15","D","ORL","Evans","passes.s.c","DL","DMR","switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "264","15","F","ORL","Belanger","take.on.won","DMR",NA,NA,"M","FCKC","Tymrak","dribbled.tackles.missed","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "265","15","F","ORL","Belanger","passes.f.c","DMR","AMR",NA,"F","FCKC","Newfield","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"266","15","M","ORL","Sanderson","passes.f.c","AMR","DL","through","D","FCKC","Averbuch","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"266","15","M","ORL","Sanderson","passes.f","AMR",NA,"through","D","FCKC","Averbuch","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "266","15",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Taylor","interceptions","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "267","15","D","FCKC","Taylor","passes.b.c","DL","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "268","15","GK","FCKC","Barnhart","passes.f.c","DC","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -331,7 +331,7 @@
 "311","18","D","FCKC","Taylor","passes.f","DC",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "312","18","F","FCKC","Groom","aerial.lost","AR",NA,NA,"D","ORL","Pressley","aerial.won","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "313","18","M","FCKC","McCarty","recoveries","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"314","18","M","FCKC","McCarty","passes.s.c","AR","DL",NA,"M","ORL","Catley","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"314","18","M","FCKC","McCarty","passes.s","AR",NA,NA,"M","ORL","Catley","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "314","18",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Pressley","blocks","DL",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "315","18","M","ORL","Catley","passes.f.c","DL","DML","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "316","18","M","ORL","Spencer","passes.b.c","DML","DL","lay.off","M","FCKC","McCarty","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -374,7 +374,7 @@
 "351","20","M","ORL","Spencer","movement","DML","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "352","20","M","ORL","Spencer","take.on.lost","DMC",NA,NA,"M","FCKC","Scott","tackles.ball","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "353","20","M","FCKC","Scott","passes.s.c","AMC","AMC",NA,"M","ORL","Edwards","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"354","20","F","FCKC","Newfield","passes.f.c","AMC","AMC","through","D","ORL","Evans","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"354","20","F","FCKC","Newfield","passes.f","AMC",NA,"through","D","ORL","Evans","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "355","20","F","FCKC","Groom","offside.calls","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "356","20","D","ORL","Hickmann Alves","passes.s.c","DC","DML","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "357","20","M","ORL","Catley","passes.b.c","DML","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -403,7 +403,7 @@
 "379","23","D","FCKC","Taylor","passes.f","DR",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "380","23","D","ORL","Pressley","recoveries","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "381","23","D","ORL","Pressley","passes.f.c","DML","AMC","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"382","23","M","ORL","Sanderson","passes.f.c","AMC","AMC","through","M","FCKC","Laddish","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"382","23","M","ORL","Sanderson","passes.f","AMC",NA,"through","M","FCKC","Laddish","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "383","23","F","ORL","Burkenroad","offside.calls","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "384","23","GK","FCKC","Barnhart","passes.f.c","DC","DR","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "385","23","D","FCKC","Taylor","passes.s.c","DR","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -437,7 +437,7 @@
 "413","25","GK","FCKC","Barnhart","passes.f.c","D18","DL",NA,"M","ORL","Spencer","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "414","25","D","FCKC","Averbuch","passes.f.c","DL","DL",NA,"M","ORL","Spencer","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "415","25","D","FCKC","Bowen","passes.b.c","DL","DL",NA,"D","ORL","Witteman","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"416","25","D","FCKC","Averbuch","passes.f.c","DL","AMR",NA,"M","ORL","Spencer","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"416","25","D","FCKC","Averbuch","passes.f","DL",NA,NA,"M","ORL","Spencer","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "416","25",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Edwards","interceptions","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "417","25","M","ORL","Edwards","passes.f.c","AMR","AR",NA,"M","FCKC","Scott","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "418","25","M","ORL","Sanderson","passes.f","AR",NA,"through","D","FCKC","Averbuch","blocks","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -543,7 +543,7 @@
 "511","32","M","ORL","Sanderson","passes.b.c","AML","AML","lay.off","M","FCKC","McCarty","challenged","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "512","32","M","ORL","Catley","passes.f","AML",NA,NA,"M","FCKC","Laddish","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "513","32",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"514","32","M","ORL","Sanderson","passes.f.c","AL","D18","through","M","FCKC","Scott","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"514","32","M","ORL","Sanderson","passes.f","AL",NA,"through","M","FCKC","Scott","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "514","32",NA,NA,NA,NA,NA,NA,NA,"GK","FCKC","Barnhart","gk.loose.balls.won","D18","collected","stooping",NA,NA,NA,NA,NA,NA,NA
 "515","32","GK","FCKC","Barnhart","passes.f.c","D18","DR","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "516","32","D","FCKC","Taylor","passes.s.c","DR","DMR",NA,"F","ORL","Burkenroad","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -580,7 +580,7 @@
 "544","34","M","ORL","Edwards","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "545","34","M","ORL","Edwards","passes.f.c","AMC","AMR",NA,"M","FCKC","Tymrak","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "546","34","D","ORL","Witteman","movement","AMR","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"547","34","D","ORL","Witteman","passes.s.c","AR","DC","corner.crosses","M","FCKC","Tymrak","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"547","34","D","ORL","Witteman","passes.s","AR",NA,"corner.crosses","M","FCKC","Tymrak","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "547","34",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Bowen","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "547","34",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Averbuch","interceptions","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "548","34","D","FCKC","Averbuch","passes.f","DC",NA,NA,"D","ORL","Witteman","pressured","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -608,7 +608,7 @@
 "570","35","F","FCKC","Newfield","recoveries","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "571","35","F","FCKC","Newfield","movement","AMR","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "572","35","F","FCKC","Newfield","passes.f.c","AR","AC",NA,"F","ORL","Burkenroad","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"573","35","F","FCKC","Groom","passes.f.c","AC","D18","through","D","ORL","Hickmann Alves","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"573","35","F","FCKC","Groom","passes.f","AC",NA,"through","D","ORL","Hickmann Alves","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "573","35",NA,NA,NA,NA,NA,NA,NA,"GK","ORL","Bledsoe","gk.loose.balls.won","D18","collected","diving",NA,NA,NA,NA,NA,NA,NA
 "574","35","GK","ORL","Bledsoe","passes.f.c","D18","DR","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "575","36","F","ORL","Belanger","passes.f.c","DR","DR",NA,"M","FCKC","Tymrak","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -717,7 +717,7 @@
 "676","42","M","FCKC","Scott","passes.f.c","DMC","AMR",NA,"F","ORL","Burkenroad","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "677","42","M","FCKC","McCarty","passes.b.c","AMR","DMR",NA,"M","ORL","Catley","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "678","42","M","FCKC","Scott","movement","DMR","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"679","42","M","FCKC","Scott","passes.f.c","AMC","DL",NA,"D","ORL","Evans","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"679","42","M","FCKC","Scott","passes.f","AMC",NA,NA,"D","ORL","Evans","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "679","42",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Catley","interceptions","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "680","42","M","ORL","Catley","passes.f.c","DL","DL",NA,"M","FCKC","McCarty","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "681","42","M","ORL","Edwards","passes.b.c","DL","DL",NA,"F","FCKC","Newfield","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -750,13 +750,13 @@
 "706","44","F","FCKC","Groom","movement","AMR","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "707","44","F","FCKC","Groom","passes.s.c","AMC","AL",NA,"M","ORL","Sanderson","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "708","44","D","FCKC","Bowen","movement","AL","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"709","44","D","FCKC","Bowen","passes.f.c","AC","D18","through","D","ORL","Witteman","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"709","44","D","FCKC","Bowen","passes.f","AC",NA,"through","D","ORL","Witteman","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "709","44",NA,NA,NA,NA,NA,NA,NA,"GK","ORL","Bledsoe","gk.loose.balls.won","D18","collected","standing",NA,NA,NA,NA,NA,NA,NA
 "710","44","GK","ORL","Bledsoe","passes.f.c","D18","DL","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "711","44","M","ORL","Catley","movement","DL","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "712","44","M","ORL","Catley","passes.f.c","DML","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "713","45","M","ORL","Sanderson","passes.b.c","AMC","DMC",NA,"M","FCKC","Scott","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"714","45","M","ORL","Edwards","passes.f.c","DMC","DMC",NA,"M","FCKC","Scott","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"714","45","M","ORL","Edwards","passes.f","DMC",NA,NA,"M","FCKC","Scott","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "714","45",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Averbuch","interceptions","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "715","45","D","FCKC","Averbuch","passes.f.c","DMC","DMC",NA,"M","ORL","Spencer","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "716","45","M","FCKC","Scott","passes.s.c","DMC","DMR",NA,"M","ORL","Edwards","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -768,16 +768,16 @@
 "722","45","D","FCKC","Taylor","movement","DMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "723","45","D","FCKC","Taylor","passes.f.c","AMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "724","45","F","FCKC","Newfield","dispossessed","AMC",NA,NA,"D","ORL","Pressley","dispossessed","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"725","45","D","ORL","Pressley","passes.f.c","DMC","DMC",NA,"D","FCKC","Taylor","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"725","45","D","ORL","Pressley","passes.f","DMC",NA,NA,"D","FCKC","Taylor","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "725","45",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Bowen","interceptions","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "726","45","D","FCKC","Bowen","passes.b.c","DMC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "727","45","D","FCKC","Averbuch","passes.s.c","DMC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"728","45","M","FCKC","Scott","passes.f.c","DMC","AR","lay.off","M","ORL","Edwards","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"728","45","M","FCKC","Scott","passes.f","DMC",NA,"lay.off","M","ORL","Edwards","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "728","45",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Catley","blocks","DL",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "729","45","D","FCKC","Arlitt","passes.s.c","AR","AR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "730","45+1","F","FCKC","Newfield","passes.f.c","AR","AR",NA,"D","ORL","Evans","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "731","45+1","M","FCKC","McCarty","take.on.won","AR",NA,NA,"M","ORL","Catley","dribbled.turned","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"732","45+1","M","FCKC","McCarty","passes.s.c","AR","D18","corner.crosses","M","ORL","Catley","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"732","45+1","M","FCKC","McCarty","passes.s","AR",NA,"corner.crosses","M","ORL","Catley","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "732","45+1",NA,NA,NA,NA,NA,NA,NA,"GK","ORL","Bledsoe","gk.high.balls.won","D6","caught","standing",NA,NA,NA,NA,NA,NA,NA
 "733","45+1","GK","ORL","Bledsoe","passes.f.c","D18","DL","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "734","45+1","F","ORL","Belanger","movement","DL","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -846,7 +846,7 @@
 "793","48","F","ORL","Belanger",NA,NA,NA,NA,"M","FCKC","Laddish","blocks","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "794","48","F","FCKC","Newfield","recoveries","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "795","48","F","FCKC","Newfield","passes.f.c","DMC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"796","48","F","FCKC","Groom","passes.f.c","DMC","AML","through","M","ORL","Edwards","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"796","48","F","FCKC","Groom","passes.f","DMC",NA,"through","M","ORL","Edwards","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "796","48",NA,NA,NA,NA,NA,NA,NA,"GK","ORL","Bledsoe","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "797","48","M","FCKC","Scott","lost.touch","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "798","48","D","ORL","Evans","recoveries","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -860,7 +860,7 @@
 "806","49","M","ORL","Catley","passes.b.c","AML","AML",NA,"M","FCKC","McCarty","challenged","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "807","49","D","ORL","Pressley","passes.f.c","AML","AML",NA,"F","FCKC","Groom","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "808","49","M","ORL","Spencer","passes.b.c","AML","AML",NA,"M","FCKC","Scott","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"809","49","M","ORL","Sanderson","passes.f.c","AML","DMC",NA,"D","FCKC","Arlitt","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"809","49","M","ORL","Sanderson","passes.f","AML",NA,NA,"D","FCKC","Arlitt","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "809","49",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Bowen","interceptions","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "810","49","D","FCKC","Bowen","passes.b.c","DMC","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "811","49","M","FCKC","Scott","passes.b.c","DR","DR",NA,"M","ORL","Spencer","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -878,11 +878,11 @@
 "822","49",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "823","50","D","FCKC","Taylor","passes.s.c","DMC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "824","50","D","FCKC","Bowen","passes.s.c","DMC","DMC",NA,"D","ORL","Witteman","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"825","50","M","FCKC","Scott","passes.f.c","DMC","DMC",NA,"D","ORL","Evans","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"825","50","M","FCKC","Scott","passes.f","DMC",NA,NA,"D","ORL","Evans","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "825","50",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Edwards","interceptions","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "826","50","M","ORL","Edwards","passes.f.c","DMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "827","50","M","ORL","Sanderson","passes.f.c","AMC","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"828","50","D","ORL","Witteman","passes.s.c","AR","AL","corner.crosses","D","FCKC","Bowen","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"828","50","D","ORL","Witteman","passes.s","AR",NA,"corner.crosses","D","FCKC","Bowen","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "828","50",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Averbuch","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "829","50","F","ORL","Burkenroad","passes.b.c","AL","AL",NA,"D","FCKC","Arlitt","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "830","50","M","ORL","Catley","passes.b.c","AL","AML",NA,"M","FCKC","McCarty","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -928,7 +928,7 @@
 "869","53","D","FCKC","Averbuch","shots.scored","AC",NA,"free.kick","GK","ORL","Bledsoe","gk.s.o.g.scored","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "870","53",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "871","53","M","ORL","Edwards","passes.f.c","DMC","AMC",NA,"F","FCKC","Groom","challenged","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"872","53","D","ORL","Witteman","passes.f.c","AMC","AMR",NA,"M","FCKC","Scott","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"872","53","D","ORL","Witteman","passes.f","AMC",NA,NA,"M","FCKC","Scott","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "872","53",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Taylor","clearances","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "873","53","F","ORL","Belanger","lost.touch","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "874","54","M","FCKC","Tymrak","recoveries","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1034,7 +1034,7 @@
 "966","60","D","FCKC","Taylor","lost.touch","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "967","60","M","ORL","Spencer","recoveries","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "968","60","M","ORL","Spencer","passes.b.c","AMC","AMC",NA,"D","FCKC","Taylor","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"969","60","M","ORL","Edwards","passes.f.c","AMC","DR","through","M","FCKC","Laddish","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"969","60","M","ORL","Edwards","passes.f","AMC",NA,"through","M","FCKC","Laddish","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "969","60",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Arlitt","interceptions","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "970","60","D","FCKC","Arlitt","passes.s.c","DR","DR",NA,"M","ORL","Sanderson","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "971","60","D","FCKC","Averbuch","passes.s.c","DR","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1064,7 +1064,7 @@
 "995","61","F","FCKC","Newfield","movement","DMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "996","61","F","FCKC","Newfield","passes.f.c","AMC","AMR",NA,"M","ORL","Edwards","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "997","61","M","FCKC","Tymrak","passes.s.c","AMR","AMC","lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"998","61","F","FCKC","Newfield","passes.f.c","AMC","AMC","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"998","61","F","FCKC","Newfield","passes.f","AMC",NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "999","61","F","FCKC","Groom","offside.calls","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1000","61",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1001","61","M","ORL","Spencer","take.on.lost","AMC",NA,NA,"M","FCKC","Scott","tackles.ball","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1088,7 +1088,7 @@
 "1018","62","D","ORL","Pressley","passes.s.c","DML","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1019","63","D","ORL","Hickmann Alves","movement","DMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1020","63","D","ORL","Hickmann Alves","passes.f.c","AMC","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1021","63","F","ORL","Burkenroad","passes.f.c","AMC","DC",NA,"D","FCKC","Averbuch","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1021","63","F","ORL","Burkenroad","passes.f","AMC",NA,NA,"D","FCKC","Averbuch","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1021","63",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Arlitt","interceptions","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1022","63","D","FCKC","Arlitt","passes.f.c","DC","DMC",NA,"M","ORL","Spencer","pressured","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1023","63","F","FCKC","Newfield","dispossessed","DMC",NA,NA,"M","ORL","Edwards","tackles.ball","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1170,7 +1170,7 @@
 "1095","68","GK","FCKC","Barnhart","passes.f.c","D6","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1096","68","D","FCKC","Averbuch","passes.f.c","DL","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1097","68","D","FCKC","Bowen","passes.f.c","DML","AML","flick.on","M","ORL","Fields","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1098","68","F","FCKC","Newfield","passes.b.c","AML","DMR",NA,"M","ORL","Edwards","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1098","68","F","FCKC","Newfield","passes.b","AML",NA,NA,"M","ORL","Edwards","pressured","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1098","68",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Fields","interceptions","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1099","68","M","ORL","Fields","passes.b.c","DMR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1100","68","F","ORL","Belanger","passes.b.c","DMR","DR",NA,"F","FCKC","Groom","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1212,7 +1212,7 @@
 "1131","71","F","FCKC","Groom","lost.touch","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "1132","71","M","ORL","Catley","passes.f.c","DML","AMR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1133","71","D","ORL","Evans","passes.b.c","AMR","DML","lay.off","M","FCKC","McCarty","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1134","71","M","ORL","Catley","passes.f.c","DML","DMR",NA,"M","FCKC","McCarty","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1134","71","M","ORL","Catley","passes.f","DML",NA,NA,"M","FCKC","McCarty","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1134","71",NA,NA,NA,NA,NA,NA,NA,"M","FCKC","Scott","interceptions","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1135","71","M","FCKC","Scott","take.on.won","DMR",NA,NA,"D","ORL","Evans","dribbled.turned","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1136","71","M","FCKC","Scott","passes.f.c","DMR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1260,7 +1260,7 @@
 "1172","74",NA,NA,NA,NA,NA,NA,NA,"M","FCKC","McCarty","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1173","74","D","ORL","Witteman","recoveries","AC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1174","74","D","ORL","Witteman","take.on.won","AC",NA,NA,"M","FCKC","Laddish","dribbled.tackles.missed","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1175","74","D","ORL","Witteman","passes.f.c","AC",NA,NA,"M","FCKC","Scott","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1175","74","D","ORL","Witteman","passes.f","AC",NA,NA,"M","FCKC","Scott","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1175","74",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Bowen","clearances","D18",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "1176","74","M","FCKC","McCarty","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1177","75","F","FCKC","Kastor","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1270,7 +1270,7 @@
 "1181","75","M","ORL","Fields","take.on.lost","AR",NA,NA,"D","FCKC","Bowen","tackles.ball","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1182","75","M","ORL","Fields","recoveries","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1183","75","M","ORL","Fields","take.on.won","AR",NA,NA,"D","FCKC","Bowen","dribbled.turned","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1184","75","M","ORL","Fields","passes.f.c","AR","AR",NA,"M","FCKC","Scott","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1184","75","M","ORL","Fields","passes.f","AR",NA,NA,"M","FCKC","Scott","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1184","75",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Averbuch","clearances","DL",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "1185","75","F","ORL","Belanger","passes.s.c","AR","AR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1186","75","M","ORL","Fields","passes.s.c","AR","AR",NA,"M","FCKC","Tymrak","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1301,7 +1301,7 @@
 "1209","77",NA,NA,NA,NA,NA,NA,NA,"M","ORL","Kyle","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1210","77",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1211","77","M","FCKC","Laddish","passes.f.c",NA,NA,"through","M","ORL","Kyle","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1212","77","F","FCKC","Kastor","passes.s.c",NA,"D18","corner.crosses","D","ORL","Pressley","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1212","77","F","FCKC","Kastor","passes.s",NA,NA,"corner.crosses","D","ORL","Pressley","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1212","77",NA,NA,NA,NA,NA,NA,NA,"GK","ORL","Bledsoe","gk.high.balls.won",NA,"caught","standing",NA,NA,NA,NA,NA,NA,NA
 "1213","77","GK","ORL","Bledsoe","passes.f.c","D18","AMC","gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1214","78","M","ORL","Spencer","lost.touch","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1366,11 +1366,11 @@
 "1269","82","GK","FCKC","Barnhart","passes.s.c","D18","DR","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1270","82","D","FCKC","Taylor","passes.f.c","DR","DR",NA,"M","ORL","Catley","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1271","82","D","FCKC","Arlitt","movement","DR","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1272","82","D","FCKC","Arlitt","passes.f.c","DMR","AMR",NA,"D","ORL","Witteman","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1272","82","D","FCKC","Arlitt","passes.f","DMR",NA,NA,"D","ORL","Witteman","pressured","AML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1272","82",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Pressley","blocks","DML",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "1273","82","D","FCKC","Arlitt","passes.f","AMR",NA,"throw.in","D","ORL","Pressley","blocks","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1274","82","D","FCKC","Arlitt","recoveries","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1275","82","D","FCKC","Arlitt","passes.f.c","AMR","D18",NA,"M","ORL","Catley","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1275","82","D","FCKC","Arlitt","passes.f","AMR",NA,NA,"M","ORL","Catley","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1275","82",NA,NA,NA,NA,NA,NA,NA,"GK","ORL","Bledsoe","gk.loose.balls.won","D18","collected","stooping",NA,NA,NA,NA,NA,NA,NA
 "1276","83","GK","ORL","Bledsoe","passes.f.c","D18","DML","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1277","83","D","ORL","Pressley","passes.f","DML",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1429,7 +1429,7 @@
 "1326","86","M","FCKC","Scott","recoveries","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1327","86","M","FCKC","Scott","movement","DC","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1328","86","M","FCKC","Scott","passes.f.c","DL","DML",NA,"D","ORL","Witteman","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1329","86","D","FCKC","Bowen","passes.s.c","DML","DMC",NA,"M","ORL","Fields","challenged","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1329","86","D","FCKC","Bowen","passes.s","DML",NA,NA,"M","ORL","Fields","challenged","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1329","86",NA,NA,NA,NA,NA,NA,NA,"D","ORL","Evans","interceptions","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1330","86","D","ORL","Evans","passes.f.c","DMC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1331","87","M","ORL","Kyle","passes.b","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
