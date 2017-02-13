@@ -97,7 +97,7 @@
 "91","4","D","SBFC","O'Hara","passes.f.c","DM3R","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "92","4","M","SBFC","Conheeney","passes.f.c","AM3R","A3R","lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "92","4",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"93","4","F","SBFC","Hayes","passes.f.c","A3R","A3R","through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"93","4","F","SBFC","Hayes","passes.f","A3R",NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "94","4","M","SBFC","Lytle","offside.calls","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "95","5","GK","WNYF","D'Angelo","passes.f.c","D3C","DM3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "96","5","M","WNYF","Mewis","passes.f.c","DM3C","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -111,7 +111,7 @@
 "102","6",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "103","6","D","WNYF","Kennedy","recoveries","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "104","6","D","WNYF","Kennedy","passes.f.c","D3C","DM3C",NA,"F","SBFC","Hayes","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"105","6","M","WNYF","Mewis","passes.f.c","DM3C","DM3L",NA,"F","SBFC","Hayes","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"105","6","M","WNYF","Mewis","passes.f","DM3C",NA,NA,"F","SBFC","Hayes","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "105","6",NA,NA,NA,NA,NA,NA,NA,"M","WNYF","Hahn","interceptions","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "106","6","M","WNYF","Hahn","passes.b.c","DM3L","D3L",NA,"F","SBFC","Hayes","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "106","6",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Stanton","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -133,14 +133,14 @@
 "121","7","D","WNYF","Hinkle","passes.f","A3L",NA,"corner.crosses","D","SBFC","Rampone","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "122","7","M","SBFC","Stanton","recoveries","D3C",NA,NA,"M","WNYF","Speck","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "123","7","M","SBFC","Stanton","passes.b.c","D3C","D3R",NA,"M","WNYF","Speck","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"124","7","D","SBFC","O'Hara","passes.f.c","D3R","AM3L","launch","M","WNYF","Speck","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"124","7","D","SBFC","O'Hara","passes.f","D3R",NA,"launch","M","WNYF","Speck","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "124","7",NA,NA,NA,NA,NA,NA,NA,"D","WNYF","Kennedy","interceptions","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "125","7","D","WNYF","Kennedy","passes.f","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "126","8","D","SBFC","O'Hara","passes.f","D3R",NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "127","8","F","SBFC","Kai","aerial.lost","DM3R",NA,NA,"D","WNYF","Kennedy","aerial.won","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "127","8",NA,NA,NA,NA,NA,NA,NA,"D","WNYF","Hinkle","aerial.lost","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "128","8","M","WNYF","Speck","recoveries","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"129","8","M","WNYF","Speck","passes.f.c","AM3L","D3C","through","D","SBFC","O'Hara","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"129","8","M","WNYF","Speck","passes.f","AM3L",NA,"through","D","SBFC","O'Hara","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "129","8",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","interceptions","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "130","8","D","SBFC","Skroski","passes.b.c","D3C","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "131","8","GK","SBFC","Stanley","passes.f.c","D18","DM3C","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -160,7 +160,7 @@
 "143","8","M","WNYF","Speck","passes.f.c","DM3L","AM3L",NA,"D","SBFC","O'Hara","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "144","9","F","WNYF","McDonald","passes.f.c","AM3L","A3L","through","M","SBFC","Stanton","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "145","9","F","WNYF","Williams","movement","A3L","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"146","9","F","WNYF","Williams","passes.s.c","A18","D18",NA,"D","SBFC","Skroski","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"146","9","F","WNYF","Williams","passes.s","A18",NA,NA,"D","SBFC","Skroski","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "146","9",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Rampone","interceptions","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "147","9","D","SBFC","Rampone","passes.f.c","D18","D3R",NA,"M","WNYF","Doniak","challenged","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "148","9","D","SBFC","O'Hara","passes.f","D3R",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -203,7 +203,7 @@
 "182","11","GK","WNYF","D'Angelo","passes.f","D18",NA,NA,"M","SBFC","Lytle","blocks","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "183","11","M","WNYF","Mewis","recoveries","D3R",NA,NA,"M","SBFC","Lytle","challenged","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "184","11","M","WNYF","Mewis","passes.b.c","D3R","D3R",NA,"M","SBFC","Lytle","challenged","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"185","11","D","WNYF","Eddy","passes.s.c","D3R","A3C",NA,"M","SBFC","Conheeney","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"185","11","D","WNYF","Eddy","passes.s","D3R",NA,NA,"M","SBFC","Conheeney","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "185","11",NA,NA,NA,NA,NA,NA,NA,"F","SBFC","Kai","interceptions","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "186","11","F","SBFC","Kai","passes.b.c","A3C","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "187","11","M","SBFC","Stanton","passes.f.c","AM3C","AM3L",NA,"M","WNYF","Mewis","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -233,7 +233,7 @@
 "210","14","F","WNYF","Williams","passes.b.c","A3L","A3C",NA,"D","SBFC","Skroski","challenged","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "211","14","D","WNYF","Dahlkemper","passes.f.c","A3C","A3R","launch","F","SBFC","Kai","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "212","14","D","WNYF","Eddy","take.on.won","A3R",NA,NA,"D","SBFC","Simon","dribbled.out.run","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"213","14","D","WNYF","Eddy","passes.s.c","A3R","D6","corner.crosses","D","SBFC","Simon","challenged","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"213","14","D","WNYF","Eddy","passes.s","A3R",NA,"corner.crosses","D","SBFC","Simon","challenged","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "213","14",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Rampone","interceptions","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "214","14","D","SBFC","Rampone","passes.f.c","D6","DM3L","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "215","14","F","SBFC","Kai","lost.touch","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -242,7 +242,7 @@
 "218","14","D","WNYF","Kennedy","passes.f","AM3R","AM3C","lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "219","14",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "220","14","F","WNYF","McDonald","passes.f.c","A3L","A18","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"221","15","M","WNYF","Mewis","passes.s.c","A18","A6","headed","M","SBFC","Stanton","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"221","15","M","WNYF","Mewis","passes.s","A18",NA,"headed","M","SBFC","Stanton","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "221","15",NA,NA,NA,NA,NA,NA,"flick.on","D","SBFC","O'Hara","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "221","15",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.high.balls.won","D6","punched.to.danger","reaching",NA,NA,NA,NA,NA,NA,NA
 "222","15","M","WNYF","Doniak","shots.missed","A6",NA,NA,"D","SBFC","Simon","pressured","D6",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
@@ -275,14 +275,14 @@
 "246","17",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "247","17","F","WNYF","McDonald","aerial.won","A6",NA,NA,"F","SBFC","Kai","aerial.lost","D6",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "248","17","M","WNYF","Doniak","recoveries","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"249","17","M","WNYF","Doniak","passes.s.c","A18","A18",NA,"M","SBFC","Killion","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"249","17","M","WNYF","Doniak","passes.s","A18",NA,NA,"M","SBFC","Killion","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "249","17",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Killion","blocks","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "250","17","D","WNYF","Kennedy","lost.touch","A18",NA,NA,"D","SBFC","Skroski","challenged","D18",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "251","18","GK","SBFC","Stanley","passes.f.c","D6","AM3R","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "251","18",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "252","18","M","WNYF","Mewis","passes.b","AM3R",NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "253","18","M","SBFC","Lytle","recoveries","DM3L",NA,NA,"M","WNYF","Doniak","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"254","18","M","SBFC","Lytle","passes.b.c","DM3L","AM3R",NA,"M","WNYF","Doniak","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"254","18","M","SBFC","Lytle","passes.b","DM3L",NA,NA,"M","WNYF","Doniak","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "254","18",NA,NA,NA,NA,NA,NA,NA,"M","WNYF","Doniak","interceptions","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "255","18","M","WNYF","Doniak","take.on.lost","AM3R",NA,NA,"M","SBFC","Lytle","tackles.ball","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "256","18","D","SBFC","Simon","recoveries","DM3L",NA,NA,"M","WNYF","Doniak","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -381,7 +381,7 @@
 "342","24","M","WNYF","Mewis","passes.f.c","D3C","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "343","24","M","WNYF","Speck","movement","DM3L","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "344","24","M","WNYF","Speck","passes.b.c","DM3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"345","25","D","WNYF","Dahlkemper","passes.f.c","DM3C","A3L","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"345","25","D","WNYF","Dahlkemper","passes.f","DM3C",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "345","25",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "346","25","F","WNYF","Williams","offside.calls","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "347","25","D","SBFC","Skroski","passes.b.c","D3R","D3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -457,7 +457,7 @@
 "412","28","GK","WNYF","D'Angelo","passes.f.c","D18","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "413","28","D","WNYF","Dahlkemper","passes.b.c","D3R","D18",NA,"F","SBFC","Kai","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "414","28","GK","WNYF","D'Angelo","passes.f","D18",NA,"launch","D","SBFC","Skroski","interceptions","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"415","29","D","SBFC","Skroski","passes.f.c","DM3C","DM3R",NA,"F","WNYF","Williams","challenged","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"415","29","D","SBFC","Skroski","passes.f","DM3C",NA,NA,"F","WNYF","Williams","challenged","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "415","29",NA,NA,NA,NA,NA,NA,NA,"F","WNYF","Williams","interceptions","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "416","29","F","WNYF","Williams","passes.b.c","DM3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "417","29","D","WNYF","Eddy","passes.s.c","DM3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -510,7 +510,7 @@
 "458","32","GK","WNYF","D'Angelo","passes.f.c","D18","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "459","32","D","WNYF","Dahlkemper","passes.b.c","D3R","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "460","32","GK","WNYF","D'Angelo","passes.f.c","D18","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"461","32","D","WNYF","Kennedy","passes.f.c","D3C","AM3L","launch","M","SBFC","Lytle","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"461","32","D","WNYF","Kennedy","passes.f","D3C",NA,"launch","M","SBFC","Lytle","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "461","32",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Gordon","interceptions","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "462","32","M","SBFC","Gordon","passes.b","AM3L",NA,NA,"F","WNYF","McDonald","interceptions","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "463","32","F","WNYF","McDonald","passes.b.c","AM3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -518,7 +518,7 @@
 "465","32","D","WNYF","Kennedy","passes.f.c","DM3C","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "466","32","D","WNYF","Hinkle","take.on.won","AM3L",NA,NA,"M","SBFC","Lytle","dribbled.turned","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "467","33","D","WNYF","Hinkle","movement","AM3L","A3L",NA,"M","SBFC","Lytle","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"468","33","D","WNYF","Hinkle","passes.f.c","A3L","A3L",NA,"M","SBFC","Stanton","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"468","33","D","WNYF","Hinkle","passes.f","A3L",NA,NA,"M","SBFC","Stanton","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "469","33","F","WNYF","Williams","offside.calls","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "470","33","D","SBFC","O'Hara","passes.f","D3R",NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "470","33",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -552,14 +552,14 @@
 "494","34",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "495","34","D","SBFC","O'Hara","take.on.lost","D3R",NA,NA,"F","WNYF","Williams","tackles.ball","A3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "496","35","D","SBFC","O'Hara","passes.f.c","D3R","D3R","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"497","35","F","SBFC","Kai","passes.s.c","D3R","A3L","headed","D","WNYF","Hinkle","challenged","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"497","35","F","SBFC","Kai","passes.s","D3R",NA,"headed","D","WNYF","Hinkle","challenged","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "497","35",NA,NA,NA,NA,NA,NA,NA,"M","WNYF","Hahn","interceptions","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "498","35","M","WNYF","Hahn","passes.b.c","A3L","AM3L",NA,"M","SBFC","Lytle","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "499","35","D","WNYF","Kennedy","movement","AM3L","DM3L",NA,"M","SBFC","Conheeney","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "500","35","D","WNYF","Kennedy","movement","DM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "501","35","D","WNYF","Kennedy","passes.b.c","AM3L","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "502","35","D","WNYF","Dahlkemper","passes.f.c","DM3C","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"503","35","M","WNYF","Mewis","passes.f.c","AM3R","DM3L",NA,"M","SBFC","Stanton","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"503","35","M","WNYF","Mewis","passes.f","AM3R",NA,NA,"M","SBFC","Stanton","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "503","35",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Gordon","interceptions","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "504","35","M","SBFC","Gordon","passes.f.c","DM3L","DM3C",NA,"M","WNYF","Doniak","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "505","35","M","SBFC","Conheeney","passes.f.c","DM3C","A3C","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -577,7 +577,7 @@
 "515","36","M","SBFC","Stanton","passes.b.c","A3C","AM3R",NA,"F","WNYF","Williams","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "516","36","D","SBFC","Skroski","passes.f.c","AM3R","A3R",NA,"F","WNYF","McDonald","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "517","36","M","SBFC","Lytle","passes.s.c","A3R","A3C","lay.off","D","WNYF","Hinkle","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"518","36","D","SBFC","O'Hara","passes.f.c","A3C","D18","through","M","WNYF","Hahn","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"518","36","D","SBFC","O'Hara","passes.f","A3C",NA,"through","M","WNYF","Hahn","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "518","36",NA,NA,NA,NA,NA,NA,NA,"M","WNYF","Mewis","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "518","36",NA,NA,NA,NA,NA,NA,NA,"D","WNYF","Hinkle","ball.shield","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "518","36",NA,NA,NA,NA,NA,NA,NA,"GK","WNYF","D'Angelo","gk.loose.balls.won","D18","collected",NA,NA,NA,NA,NA,NA,NA,NA
@@ -733,7 +733,7 @@
 "656","45","M","SBFC","Gordon","passes.f.c","AM3C","AM3C",NA,"D","WNYF","Eddy","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "657","45","M","SBFC","Lytle","passes.b.c","AM3C","AM3C",NA,"M","WNYF","Mewis","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "658","45","M","SBFC","Killion","passes.f.c","AM3C","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"659","45","M","SBFC","Stanton","passes.f.c","AM3R","D3L",NA,"M","WNYF","Speck","challenged","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"659","45","M","SBFC","Stanton","passes.f","AM3R",NA,NA,"M","WNYF","Speck","challenged","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "659","45",NA,NA,NA,NA,NA,NA,NA,"D","WNYF","Hinkle","interceptions","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "660","45","D","WNYF","Hinkle","movement","D3L","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "661","45","D","WNYF","Hinkle","movement","DM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -836,7 +836,7 @@
 "750","48","D","SBFC","Simon","take.on.lost","AM3R",NA,NA,"M","WNYF","Speck","pressured","DM3L",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "751","48","D","WNYF","Hinkle","passes.f.c","DM3L","DM3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "752","48","F","WNYF","Williams","movement","DM3L","DM3C",NA,"D","SBFC","Simon","challenged","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"753","48","F","WNYF","Williams","passes.f.c","DM3C","DM3C","through","M","SBFC","Killion","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"753","48","F","WNYF","Williams","passes.f","DM3C",NA,"through","M","SBFC","Killion","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "753","48",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","O'Hara","interceptions","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "754","48","D","SBFC","O'Hara","passes.f.c","DM3C","AM3C",NA,"F","WNYF","McDonald","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "755","48","M","SBFC","Gordon","passes.s","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -897,7 +897,7 @@
 "807","50","M","SBFC","Killion","movement","DM3C","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "808","50","M","SBFC","Killion","passes.f.c","DM3R","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "809","50","M","SBFC","Conheeney","passes.b.c","AM3R","AM3R",NA,"D","WNYF","Kennedy","challenged","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"810","50","M","SBFC","Lytle","passes.f.c","AM3R","A3C","through","M","WNYF","Mewis","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"810","50","M","SBFC","Lytle","passes.f","AM3R",NA,"through","M","WNYF","Mewis","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "811","50","F","SBFC","Galton","offside.calls","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "812","51","GK","WNYF","D'Angelo","passes.s.c","D3C","D3C","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "813","51","D","WNYF","Dahlkemper","passes.f.c","D3C","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -920,7 +920,7 @@
 "828","51","M","WNYF","Doniak","movement","DM3C","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "829","51","M","WNYF","Doniak","movement","AM3C","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "830","51","M","WNYF","Doniak","passes.f.c","A3C","A3R","through","M","SBFC","Stanton","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"831","51","F","WNYF","Williams","passes.s.c","A3R","D18","corner.crosses","D","SBFC","Rampone","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"831","51","F","WNYF","Williams","passes.s","A3R",NA,"corner.crosses","D","SBFC","Rampone","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "831","51",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.high.balls.won","D6","caught",NA,NA,NA,NA,NA,NA,NA,NA
 "832","51","GK","SBFC","Stanley","passes.f.c","D18","D3R","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "833","51","M","SBFC","Lytle","movement","D3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -934,7 +934,7 @@
 "840","52","M","WNYF","Mewis","passes.f.c","D3L","DM3L",NA,"M","SBFC","Conheeney","pressured","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "841","52","F","WNYF","McDonald","passes.b.c","DM3L","D3L","lay.off","M","SBFC","Stanton","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "842","52","M","WNYF","Mewis","passes.f","D3L",NA,"launch","M","SBFC","Conheeney","challenged","A3R",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
-"842","52",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA
+"842","52",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Conheeney",NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA
 "843","53","GK","WNYF","D'Angelo","passes.s.c","D3L","DM3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "844","53","D","WNYF","Kennedy","passes.f.c","DM3L","AM3L",NA,"F","SBFC","Galton","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "845","53","M","WNYF","Speck","movement","AM3L","DM3L",NA,"M","SBFC","Stanton","challenged","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -948,7 +948,7 @@
 "851","53","M","SBFC","Gordon","recoveries","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "852","53","M","SBFC","Gordon","passes.f","D3L",NA,NA,"D","WNYF","Eddy","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "853","53","D","WNYF","Dahlkemper","recoveries","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"854","53","D","WNYF","Dahlkemper","passes.s.c","A3R","D18","corner.crosses","D","SBFC","O'Hara","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"854","53","D","WNYF","Dahlkemper","passes.s","A3R",NA,"corner.crosses","D","SBFC","O'Hara","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "854","53",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Conheeney","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "854","53",NA,NA,NA,NA,NA,NA,NA,"GK","SBFC","Stanley","gk.high.balls.won","D18","caught",NA,NA,NA,NA,NA,NA,NA,NA
 "855","53","GK","SBFC","Stanley","passes.f.c","D18","D3C","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1011,7 +1011,7 @@
 "903","56","M","SBFC","Gordon","passes.s.c","AM3C","A3L",NA,"M","WNYF","Hahn","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "904","56","D","SBFC","O'Hara","movement","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "905","56","D","SBFC","O'Hara","take.on.won","A3L",NA,NA,"D","WNYF","Eddy","challenged","D3R",NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
-"905","56",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA
+"905","56",NA,NA,NA,NA,NA,NA,NA,"D","WNYF","Eddy",NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA
 "906","57","M","SBFC","Killion","passes.s.c","A3L","A3L","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "907","57","D","SBFC","O'Hara","shots.missed","A3L",NA,NA,"D","WNYF","Eddy","pressured","D3R",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "907","57",NA,NA,NA,NA,NA,NA,NA,"M","WNYF","Hahn","pressured","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1029,7 +1029,7 @@
 "916","58","M","SBFC","Killion","recoveries","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "917","58","M","SBFC","Killion","passes.f.c","D3C","DM3C",NA,"M","WNYF","Hahn","challenged","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "918","58","M","SBFC","Gordon","passes.s.c","DM3C","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"919","58","M","SBFC","Lytle","passes.f.c","AM3R","D3C",NA,"D","WNYF","Hinkle","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"919","58","M","SBFC","Lytle","passes.f","AM3R",NA,NA,"D","WNYF","Hinkle","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "919","58",NA,NA,NA,NA,NA,NA,NA,"D","WNYF","Kennedy","interceptions","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "920","58","D","WNYF","Kennedy","passes.s.c","D3C","DM3R",NA,"M","SBFC","Lytle","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "920","58",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Killion","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1096,12 +1096,12 @@
 "976","63","M","SBFC","Gordon","passes.b.c","AM3L","DM3L",NA,"D","WNYF","Eddy","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "977","63","D","SBFC","Simon","passes.f.c","DM3L","DM3L",NA,"F","WNYF","Williams","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "978","63","M","SBFC","Killion","movement","DM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"979","63","M","SBFC","Killion","passes.s.c","AM3L","D3C",NA,"M","WNYF","Mewis","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"979","63","M","SBFC","Killion","passes.s","AM3L",NA,NA,"M","WNYF","Mewis","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "979","63",NA,NA,NA,NA,NA,NA,NA,"M","WNYF","Hahn","interceptions","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "980","63","M","WNYF","Hahn","passes.f.c","D3C","DM3R",NA,"M","SBFC","Conheeney","challenged","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "981","63","M","WNYF","Speck","passes.b.c","DM3R","D3R",NA,"D","SBFC","Simon","challenged","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "982","63","D","WNYF","Eddy","passes.f.c","D3R","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"983","63","F","WNYF","Williams","passes.b.c","AM3R","AM3L",NA,"M","SBFC","Killion","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"983","63","F","WNYF","Williams","passes.b","AM3R",NA,NA,"M","SBFC","Killion","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "983","63",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Gordon","interceptions","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "984","63","M","SBFC","Gordon","dispossessed","AM3L",NA,NA,"M","WNYF","Speck","tackles.ball","DM3R",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "985","63","D","SBFC","Simon","passes.f.c","DM3L","AM3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1131,7 +1131,7 @@
 "1004","64","F","SBFC","Galton","passes.s.c","A3C","A3R",NA,"D","WNYF","Eddy","challenged","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1005","64","M","SBFC","Lytle","passes.f.c","A3R","A3C",NA,"D","WNYF","Hinkle","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1006","64","F","SBFC","DeCesare","passes.b.c","A3C","A3R","lay.off","D","WNYF","Kennedy","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1007","64","M","SBFC","Lytle","passes.s.c","A3R","D18","corner.crosses","D","WNYF","Hinkle","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1007","64","M","SBFC","Lytle","passes.s","A3R",NA,"corner.crosses","D","WNYF","Hinkle","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1007","64",NA,NA,NA,NA,NA,NA,NA,"D","WNYF","Kennedy","interceptions","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1008","64","D","WNYF","Kennedy","passes.f.c","D18","D3C",NA,"F","SBFC","DeCesare","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1009","64","M","WNYF","Mewis","passes.f.c","D3C","DM3L",NA,"M","SBFC","Conheeney","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1139,7 +1139,7 @@
 "1010","64","F","WNYF","McDonald","movement","DM3L","AM3L",NA,"M","SBFC","Killion","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1010","64",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1010","64",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","O'Hara","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1011","64","F","WNYF","McDonald","passes.f.c","AM3L","DM3R","through","D","SBFC","O'Hara","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1011","64","F","WNYF","McDonald","passes.f","AM3L",NA,"through","D","SBFC","O'Hara","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1011","64",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Skroski","interceptions","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1012","64","D","SBFC","Skroski","passes.f.c","DM3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1013","64","M","SBFC","Killion","passes.s.c","DM3R","DM3R",NA,"F","WNYF","McDonald","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1148,7 +1148,7 @@
 "1016","65","M","SBFC","Lytle","passes.b.c","AM3R","DM3R",NA,"D","WNYF","Hinkle","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1017","65","D","SBFC","O'Hara","passes.b.c","DM3R","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1018","65","D","SBFC","Skroski","passes.f.c","DM3R","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1019","65","D","SBFC","O'Hara","passes.f.c","AM3R","A3R",NA,"M","WNYF","Doniak","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1019","65","D","SBFC","O'Hara","passes.f","AM3R",NA,NA,"M","WNYF","Doniak","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1020","65","F","SBFC","Galton","offside.calls","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1021","65","D","WNYF","Kennedy","passes.b.c","D3L","D18","free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1022","65","GK","WNYF","D'Angelo","movement","D18","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1223,7 +1223,7 @@
 "1082","69","F","SBFC","Galton","passes.f.c","AM3C","A3C","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1082","69",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1083","69","F","SBFC","DeCesare","passes.b.c","A3C","A3C",NA,"D","WNYF","Kennedy","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1084","69","M","SBFC","Conheeney","passes.f.c","A3C","D3C",NA,"M","WNYF","Hahn","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1084","69","M","SBFC","Conheeney","passes.f","A3C",NA,NA,"M","WNYF","Hahn","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1084","69",NA,NA,NA,NA,NA,NA,NA,"D","WNYF","Kennedy","interceptions","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1085","69","D","WNYF","Kennedy","passes.s.c","D3C","D3C",NA,"F","SBFC","DeCesare","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1086","69","M","WNYF","Hahn","passes.b.c","D3C","D3C",NA,"M","SBFC","Conheeney","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1245,7 +1245,7 @@
 "1100","70","GK","WNYF","D'Angelo","passes.f.c","D18","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1101","70","D","WNYF","Dahlkemper","passes.f.c","D3R","AM3R",NA,"F","SBFC","DeCesare","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1102","70","M","WNYF","Smith","movement","AM3R","A3R",NA,"M","SBFC","Killion","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1103","71","M","WNYF","Smith","passes.s.c","A3R","D18","corner.crosses","D","SBFC","Rampone","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1103","71","M","WNYF","Smith","passes.s","A3R",NA,"corner.crosses","D","SBFC","Rampone","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1103","71",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Killion","interceptions","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1104","71","M","SBFC","Killion","clearances","D18",NA,NA,"M","WNYF","Smith","pressured","A18",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "1105","71","F","WNYF","McDonald","passes.s","A3R",NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1297,7 +1297,7 @@
 "1141","74","D","WNYF","Kennedy","passes.b.c","DM3L","D18",NA,"F","SBFC","DeCesare","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1142","74","GK","WNYF","D'Angelo","movement","D18","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1143","74","GK","WNYF","D'Angelo","passes.f.c","D3C","D3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1144","74","D","WNYF","Dahlkemper","passes.f.c","D3R","AM3L",NA,"F","SBFC","DeCesare","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1144","74","D","WNYF","Dahlkemper","passes.f","D3R",NA,NA,"F","SBFC","DeCesare","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1144","74",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Gordon","interceptions","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1145","74","M","SBFC","Gordon","passes.f.c","AM3L","AM3C",NA,"M","WNYF","Smith","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1146","74","M","SBFC","Conheeney","passes.b.c","AM3C","AM3L","lay.off","M","WNYF","Smith","pressured","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1429,7 +1429,7 @@
 "1255","82","D","SBFC","Skroski","passes.b.c","DM3C","DM3L",NA,"F","WNYF","McDonald","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1256","82","D","SBFC","Rampone","passes.s.c","DM3L","DM3C",NA,"F","WNYF","Leon","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1257","82","D","SBFC","Skroski","passes.f.c","DM3C","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1258","82","D","SBFC","Simon","passes.f.c","DM3R","D18","launch","F","WNYF","McDonald","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1258","82","D","SBFC","Simon","passes.f","DM3R",NA,"launch","F","WNYF","McDonald","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1258","82",NA,NA,NA,NA,NA,NA,"through","GK","WNYF","D'Angelo","gk.loose.balls.won","D18","caught",NA,NA,NA,NA,NA,NA,NA,NA
 "1259","83","GK","WNYF","D'Angelo","passes.f","D18",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1260","83","F","WNYF","McDonald","aerial.lost","AM3C",NA,NA,"D","SBFC","Skroski","aerial.won","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1442,7 +1442,7 @@
 "1267","83","M","WNYF","Smith","passes.f.c","AM3R","A3R",NA,"M","SBFC","Gordon","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1268","83","F","WNYF","Leon","passes.s","A3R",NA,"corner.crosses","D","SBFC","O'Hara","blocks","D3L",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "1269","83","F","WNYF","McDonald","passes.s.c","A3R","A18","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1270","83","M","WNYF","Mewis","passes.s.c","A18","D6","headed","D","SBFC","O'Hara","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1270","83","M","WNYF","Mewis","passes.s","A18",NA,"headed","D","SBFC","O'Hara","pressured","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1270","83",NA,NA,NA,NA,NA,NA,"flick.on","GK","SBFC","Stanley","gk.loose.balls.won","D6","caught",NA,NA,NA,NA,NA,NA,NA,NA
 "1271","84","GK","SBFC","Stanley","passes.f.c","D6","DM3C","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1272","84","M","SBFC","Gordon","lost.touch","DM3C",NA,NA,"M","WNYF","Smith","pressured","AM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1467,7 +1467,7 @@
 "1288","84","M","SBFC","Lytle","passes.f.c","AM3C","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1289","84","M","SBFC","Gordon","passes.f.c","A3C","A18",NA,"M","WNYF","Hahn","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1290","84","D","SBFC","O'Hara","take.on.won","A18",NA,NA,"M","WNYF","Smith","challenged","D18",NA,NA,"penalties.won",NA,"penalties.conceded",NA,NA,NA,NA
-"1290","84",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA
+"1290","84",NA,NA,NA,NA,NA,NA,NA,"M","WNYF","Smith",NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA
 "1291","85","M","SBFC","Killion","shots.scored","A18",NA,"penalty.kick","GK","WNYF","D'Angelo","gk.s.o.g.scored","D6","missed.the.ball","diving",NA,NA,NA,NA,NA,NA,NA
 "1291","86",NA,NA,NA,"kickoff",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1292","86","F","WNYF","McDonald","passes.b.c","AM3C","DM3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1575,7 +1575,7 @@
 "1381","90","D","SBFC","Simon","passes.s.c","AM3R","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1382","90","M","SBFC","Lytle","passes.f.c","AM3R","A3R",NA,"M","WNYF","Hahn","pressured","DM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1383","90","M","SBFC","Conheeney","passes.s.c","A3R","A3R",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1384","90","M","SBFC","Gordon","passes.f.c","A3R","D18","through","M","WNYF","Hamilton","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1384","90","M","SBFC","Gordon","passes.f","A3R",NA,"through","M","WNYF","Hamilton","pressured","D3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1384","90",NA,NA,NA,NA,NA,NA,NA,"D","WNYF","Eddy","clearances","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1384","90",NA,NA,NA,NA,NA,NA,NA,"GK","WNYF","D'Angelo","gk.loose.balls.won","D6","caught",NA,NA,NA,NA,NA,NA,NA,NA
 "1385","90","GK","WNYF","D'Angelo","passes.f","D18",NA,"launch","F","SBFC","DeCesare","pressured","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1599,7 +1599,7 @@
 "1400","90","D","SBFC","Rampone","passes.b.c","AM3L","DM3L",NA,"F","WNYF","Leon","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1401","90","D","SBFC","O'Hara","movement","DM3L","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1402","90","D","SBFC","O'Hara","passes.f.c","AM3L","A3C",NA,"M","WNYF","Mewis","pressured","DM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1403","90","F","SBFC","Galton","passes.s.c","A3C","A18",NA,"D","WNYF","Dahlkemper","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1403","90","F","SBFC","Galton","passes.s","A3C",NA,NA,"D","WNYF","Dahlkemper","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1403","90",NA,NA,NA,NA,NA,NA,NA,"D","WNYF","Kennedy","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1404","90","D","SBFC","Rampone","offside.calls","A18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1405","90","GK","WNYF","D'Angelo","passes.f","D18",NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
