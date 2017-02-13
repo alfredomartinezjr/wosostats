@@ -7,7 +7,7 @@
 "5","1","M","BOS","King","passes.f.c",NA,NA,"headed","GK","SRFC","Melis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "6","1","D","BOS","Salem","take.on.won",NA,NA,NA,"M","SRFC","Winters","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "7","1","D","BOS","Salem","passes.s.c",NA,NA,NA,"D","SRFC","Yanez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"8","1","M","BOS","Westphal","passes.f.c",NA,NA,NA,"D","SRFC","Yanez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"8","1","M","BOS","Westphal","passes.f",NA,NA,NA,"D","SRFC","Yanez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "8","1",NA,NA,NA,NA,NA,NA,NA,"M","SRFC","Barnes","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "9","1","M","SRFC","Barnes","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "10","1","M","BOS","King","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -59,7 +59,7 @@
 "51","3","D","BOS","Salem","passes.s.c",NA,NA,NA,"D","SRFC","Yanez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "52","3","D","BOS","McCaffrey","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "53","3","D","BOS","McCaffrey","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"54","3","D","BOS","McCaffrey","passes.f.c",NA,NA,NA,"M","SRFC","Winters","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"54","3","D","BOS","McCaffrey","passes.f",NA,NA,NA,"M","SRFC","Winters","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "54","3",NA,NA,NA,NA,NA,NA,NA,"M","SRFC","Fletcher","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "55","3","M","SRFC","Fletcher","passes.f.c",NA,NA,NA,"GK","BOS","Beckmann","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "56","3","D","SRFC","Yanez","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -97,7 +97,7 @@
 "85","4","D","SRFC","Fishlock","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "86","4","D","SRFC","Fishlock","passes.s",NA,NA,"switch","F","BOS","Wood","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "87","5","M","BOS","Westphal","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"88","5","D","BOS","McCaffrey","passes.b.c",NA,NA,"lay.off","D","SRFC","Yanez","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"88","5","D","BOS","McCaffrey","passes.b",NA,NA,"lay.off","D","SRFC","Yanez","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "88","5",NA,NA,NA,NA,NA,NA,NA,"D","SRFC","Yanez","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "89","5","D","SRFC","Yanez","passes.f.c",NA,NA,NA,"M","BOS","Westphal","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "90","5","GK","SRFC","Melis","take.on.lost",NA,NA,NA,"M","BOS","King","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -183,7 +183,7 @@
 "156","11","M","SRFC","Winters","take.on.won",NA,NA,NA,"GK","BOS","Beckmann","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "156","11",NA,NA,NA,NA,NA,NA,NA,"D","BOS","Simon","dribbled.tackles.missed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "157","11","M","SRFC","Winters","passes.s.c",NA,NA,NA,"D","BOS","Salem","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"158","11","D","SRFC","Fishlock","passes.f.c",NA,NA,"flick.on","D","BOS","Salem","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"158","11","D","SRFC","Fishlock","passes.f",NA,NA,"flick.on","D","BOS","Salem","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "158","11",NA,NA,NA,NA,NA,NA,"through","D","BOS","Schillgard","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "158","11",NA,NA,NA,NA,NA,NA,NA,"F","BOS","Kranich","gk.smothers.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,NA
 "159","11","F","BOS","Kranich","passes.s.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -248,7 +248,7 @@
 "209","13","D","SRFC","Fishlock","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "210","13","M","SRFC","Corsie","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "211","13","D","SRFC","Fishlock","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"212","13","M","SRFC","Fletcher","passes.f.c",NA,NA,NA,"GK","BOS","Beckmann","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"212","13","M","SRFC","Fletcher","passes.f",NA,NA,NA,"GK","BOS","Beckmann","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "212","13",NA,NA,NA,NA,NA,NA,NA,"M","BOS","Westphal","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "213","13","M","BOS","Westphal","dispossessed",NA,NA,NA,"D","SRFC","Little","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "213","13",NA,NA,NA,NA,NA,NA,NA,"F","SRFC","Reed","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -260,7 +260,7 @@
 "218","13","M","SRFC","Fletcher","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "219","13","D","SRFC","Fishlock","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "219","13",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"220","13","D","SRFC","Little","passes.f.c",NA,NA,NA,"M","BOS","Westphal","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"220","13","D","SRFC","Little","passes.f",NA,NA,NA,"M","BOS","Westphal","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "220","13",NA,NA,NA,NA,NA,NA,NA,"M","BOS","Westphal","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "221","13","M","BOS","Westphal","movement",NA,NA,NA,"D","SRFC","Little","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "222","13","M","BOS","Westphal","take.on.won",NA,NA,NA,"D","SRFC","Little","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -431,7 +431,7 @@
 "366","23","M","SRFC","Barnes","passes.f.c",NA,NA,NA,"D","BOS","Salem","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "366","23",NA,NA,NA,NA,NA,NA,NA,"D","BOS","McCaffrey","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "367","23","GK","SRFC","Melis","passes.s.c",NA,NA,NA,"D","BOS","Schillgard","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"368","23","M","SRFC","Winters","passes.f.c",NA,NA,"through","D","BOS","Simon","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"368","23","M","SRFC","Winters","passes.f",NA,NA,"through","D","BOS","Simon","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "368","23",NA,NA,NA,NA,NA,NA,NA,"F","BOS","Kranich","gk.loose.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,NA
 "369","23","F","BOS","Kranich","passes.f.c",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "370","23","F","BOS","Wood","passes.s.c",NA,NA,NA,"D","SRFC","Yanez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -441,7 +441,7 @@
 "372","23","D","BOS","McCaffrey","passes.f.c",NA,NA,NA,"D","SRFC","Little","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "373","23","GK","BOS","Beckmann","passes.s.c",NA,NA,"lay.off","M","SRFC","Barnes","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "373","23",NA,NA,NA,NA,NA,NA,NA,"D","SRFC","Little","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"374","23","D","BOS","McCaffrey","passes.s.c",NA,NA,"corner.crosses","D","SRFC","Little","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"374","23","D","BOS","McCaffrey","passes.s",NA,NA,"corner.crosses","D","SRFC","Little","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "374","23",NA,NA,NA,NA,NA,NA,NA,"F","SRFC","Kopmeyer","gk.loose.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,NA
 "375","23","F","SRFC","Kopmeyer","passes.s.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "376","24","F","SRFC","Reed","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -483,7 +483,7 @@
 "408","26","D","SRFC","Fishlock","passes.f",NA,NA,"launch","F","BOS","Kranich","gk.loose.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,NA
 "408","26",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "409","26","F","BOS","Kranich","passes.s.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"410","26","M","BOS","Westphal","passes.f.c",NA,NA,"launch","GK","SRFC","Melis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"410","26","M","BOS","Westphal","passes.f",NA,NA,"launch","GK","SRFC","Melis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "410","26",NA,NA,NA,NA,NA,NA,"through","M","SRFC","Fletcher","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "411","26","M","SRFC","Fletcher","dispossessed",NA,NA,NA,"D","BOS","Simon","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "412","26","D","BOS","Simon","movement",NA,NA,NA,"M","SRFC","Fletcher","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -512,7 +512,7 @@
 "428","28","D","BOS","Salem","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "429","28","D","BOS","Salem","passes.f.c",NA,NA,"headed","D","SRFC","Kawasumi","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "429","28",NA,NA,NA,NA,NA,NA,NA,"GK","SRFC","Melis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"430","28","F","BOS","Wood","passes.s.c",NA,NA,"corner.crosses","M","SRFC","Fletcher","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"430","28","F","BOS","Wood","passes.s",NA,NA,"corner.crosses","M","SRFC","Fletcher","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "430","28",NA,NA,NA,NA,NA,NA,NA,"F","SRFC","Kopmeyer","gk.high.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,NA
 "431","28","F","SRFC","Kopmeyer","passes.s.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "432","28","M","SRFC","Barnes","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -563,7 +563,7 @@
 "473","30","D","SRFC","Yanez","ball.shield",NA,NA,NA,"D","BOS","McCaffrey","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "474","30","D","SRFC","Yanez","passes.s",NA,NA,"corner.crosses","D","BOS","McCaffrey","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "475","30","D","BOS","Simon","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"476","30","D","BOS","Simon","passes.s.c",NA,NA,NA,"F","SRFC","Reed","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"476","30","D","BOS","Simon","passes.s",NA,NA,NA,"F","SRFC","Reed","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "476","30",NA,NA,NA,NA,NA,NA,NA,"M","SRFC","Winters","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "477","30","M","SRFC","Winters","movement",NA,NA,NA,"F","BOS","Wood","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "478","30","M","SRFC","Winters","passes.b.c",NA,NA,NA,"D","BOS","Salem","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -609,7 +609,7 @@
 "514","32","D","SRFC","Yanez","passes.f.c",NA,NA,"through","M","BOS","Pathman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "515","32","D","SRFC","Fishlock","movement",NA,NA,NA,"M","BOS","Pathman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "516","32","D","SRFC","Fishlock","passes.b.c",NA,NA,NA,"M","BOS","Pathman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"517","32","F","SRFC","Reed","passes.f.c",NA,NA,"lay.off","D","BOS","Simon","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"517","32","F","SRFC","Reed","passes.f",NA,NA,"lay.off","D","BOS","Simon","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "518","32","D","SRFC","Fishlock","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "519","33","F","BOS","Kranich","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "519","33",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -711,7 +711,7 @@
 "595","38","M","SRFC","Fletcher","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "596","38","D","SRFC","Yanez","passes.b.c",NA,NA,NA,"M","BOS","Westphal","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "597","38","M","SRFC","Barnes","passes.s.c",NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"598","38","D","SRFC","Fishlock","passes.f.c",NA,NA,"through","M","BOS","Kallman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"598","38","D","SRFC","Fishlock","passes.f",NA,NA,"through","M","BOS","Kallman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "598","38",NA,NA,NA,NA,NA,NA,NA,"F","BOS","Wood","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "598","38",NA,NA,NA,NA,NA,NA,NA,"M","BOS","King","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "599","38","M","BOS","King","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -723,7 +723,7 @@
 "605","38","M","SRFC","Fletcher","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "606","38","M","SRFC","Corsie","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "606","38",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"607","38","D","SRFC","Kawasumi","passes.s.c",NA,NA,"corner.crosses","M","BOS","Pathman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"607","38","D","SRFC","Kawasumi","passes.s",NA,NA,"corner.crosses","M","BOS","Pathman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "607","38",NA,NA,NA,NA,NA,NA,NA,"M","BOS","Kallman","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "608","38","M","BOS","Kallman","passes.f.c",NA,NA,"headed","GK","SRFC","Melis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "609","38","D","BOS","Salem","passes.f.c",NA,NA,"headed","D","SRFC","Little","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -745,7 +745,7 @@
 "623","39","M","SRFC","Corsie","passes.s.c",NA,NA,NA,"M","BOS","Westphal","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "624","39","D","SRFC","Little","passes.f.c",NA,NA,NA,"D","BOS","Salem","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "625","39","M","SRFC","Corsie","passes.s.c",NA,NA,NA,"D","BOS","Salem","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"626","39","D","SRFC","Fishlock","passes.f.c",NA,NA,NA,"F","BOS","Wood","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"626","39","D","SRFC","Fishlock","passes.f",NA,NA,NA,"F","BOS","Wood","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "627","39","D","SRFC","Yanez","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "628","39","F","BOS","Kranich","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "628","39",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -753,7 +753,7 @@
 "630","39","D","SRFC","Yanez","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "631","39","D","SRFC","Yanez","passes.f.c",NA,NA,"through","M","BOS","Westphal","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "632","39","GK","SRFC","Melis","fouls.won",NA,NA,NA,"M","BOS","King",NA,NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
-"632","39",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA
+"632","39",NA,NA,NA,NA,NA,NA,NA,"M","BOS","King",NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,NA,NA
 "633","40","D","SRFC","Kawasumi","passes.s",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "633","40",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "634","40","M","SRFC","Fletcher","aerial.lost",NA,NA,NA,"M","BOS","Kallman","aerial.lost",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
@@ -814,7 +814,7 @@
 "682","43","M","SRFC","Barnes","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "683","43","D","SRFC","Little","passes.b.c",NA,NA,NA,"M","BOS","King","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "683","43",NA,NA,NA,NA,NA,NA,NA,"D","BOS","McCaffrey","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"684","43","M","SRFC","Fletcher","passes.f.c",NA,NA,NA,"GK","BOS","Beckmann","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"684","43","M","SRFC","Fletcher","passes.f",NA,NA,NA,"GK","BOS","Beckmann","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "684","43",NA,NA,NA,NA,NA,NA,NA,"D","BOS","McCaffrey","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "684","43",NA,NA,NA,NA,NA,NA,NA,"D","BOS","Salem","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "685","43","D","BOS","Salem","passes.f.c",NA,NA,NA,"GK","SRFC","Melis","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1001,7 +1001,7 @@
 "845","52","M","SRFC","Fletcher","passes.f",NA,NA,"launch","M","BOS","Kallman","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "846","52","F","SRFC","Reed","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "847","52","D","SRFC","Kawasumi","passes.s.c",NA,NA,NA,"D","BOS","Salem","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"848","52","D","SRFC","Fishlock","passes.f.c",NA,NA,"through","F","BOS","Wood","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"848","52","D","SRFC","Fishlock","passes.f",NA,NA,"through","F","BOS","Wood","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "848","52",NA,NA,NA,NA,NA,NA,NA,"F","BOS","Kranich","gk.high.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,NA
 "849","52","F","BOS","Kranich","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "850","52","D","BOS","Simon","dispossessed",NA,NA,NA,"D","SRFC","Little","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1009,7 +1009,7 @@
 "851","52",NA,NA,NA,NA,NA,NA,NA,"M","BOS","Westphal","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "852","53","M","SRFC","Barnes","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "853","53","D","SRFC","Fishlock","passes.f.c",NA,NA,NA,"D","BOS","Schillgard","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"854","53","M","SRFC","Winters","passes.f.c",NA,NA,NA,"D","BOS","Salem","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"854","53","M","SRFC","Winters","passes.f",NA,NA,NA,"D","BOS","Salem","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "855","53","D","SRFC","Yanez","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "856","53","F","BOS","Kranich","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "856","53",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1018,7 +1018,7 @@
 "859","53","D","SRFC","Fishlock","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "860","53","D","SRFC","Little","passes.f.c",NA,"A3L","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "861","53","D","SRFC","Kawasumi","movement","A3L","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"862","53","D","SRFC","Kawasumi","passes.s.c",NA,NA,NA,"M","BOS","Pathman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"862","53","D","SRFC","Kawasumi","passes.s",NA,NA,NA,"M","BOS","Pathman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "862","53",NA,NA,NA,NA,NA,NA,NA,"D","BOS","Salem","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "862","53",NA,NA,NA,NA,NA,NA,NA,"F","BOS","Kranich","gk.loose.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,NA
 "863","54","F","BOS","Kranich","passes.f.c",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1065,7 +1065,7 @@
 "899","57","F","SRFC","Reed","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "900","57","F","SRFC","Reed","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "901","57","D","SRFC","Little","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"902","57","M","SRFC","Fletcher","passes.f.c",NA,"A3C",NA,"D","BOS","Simon","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"902","57","M","SRFC","Fletcher","passes.f",NA,NA,NA,"D","BOS","Simon","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "902","57",NA,NA,NA,NA,NA,NA,NA,"D","BOS","Salem","interceptions","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "903","57","D","BOS","Salem","shots.stopped.by.gk","A3C",NA,NA,"D","SRFC","Little","pressured","D3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "903","57",NA,NA,NA,NA,NA,NA,NA,"F","SRFC","Kopmeyer","gk.s.o.g.stop",NA,"caught","stooping",NA,NA,NA,NA,NA,NA,NA
@@ -1107,7 +1107,7 @@
 "936","60","M","SRFC","Barnes","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "937","60","D","SRFC","Yanez","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "937","60",NA,NA,NA,NA,NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"938","60","D","SRFC","Kawasumi","passes.f.c",NA,NA,"through","M","BOS","Pathman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"938","60","D","SRFC","Kawasumi","passes.f",NA,NA,"through","M","BOS","Pathman","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "938","60",NA,NA,NA,NA,NA,NA,NA,"F","BOS","Kranich","gk.smothers.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,NA
 "939","61","F","BOS","Kranich","passes.f",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "939","61",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1136,7 +1136,7 @@
 "959","63",NA,NA,NA,NA,NA,NA,NA,"M","SRFC","Barnes","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "960","63","D","BOS","Simon","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "961","63","D","BOS","Simon","passes.f.c",NA,NA,NA,"M","SRFC","Barnes","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"962","63","M","BOS","Westphal","passes.s.c",NA,NA,"corner.crosses","M","SRFC","Fletcher","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"962","63","M","BOS","Westphal","passes.s",NA,NA,"corner.crosses","M","SRFC","Fletcher","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "962","63",NA,NA,NA,NA,NA,NA,NA,"F","SRFC","Kopmeyer","gk.high.balls.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "963","63","F","SRFC","Kopmeyer","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "964","63","M","SRFC","Fletcher","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1298,7 +1298,7 @@
 "1110","77",NA,NA,NA,NA,NA,NA,NA,"F","BOS","Wood","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1111","77","D","SRFC","Kawasumi","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1112","77","D","SRFC","Little","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1113","77","D","SRFC","Fishlock","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1113","77","D","SRFC","Fishlock","passes.f",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1114","77","D","SRFC","Kawasumi","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1115","77","F","BOS","Kranich","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1116","77","D","BOS","Simon","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1362,7 +1362,7 @@
 "1172","80","M","SRFC","Barnes","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1173","80","M","SRFC","Barnes","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1174","80","M","SRFC","Fletcher","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1175","80","M","SRFC","Winters","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1175","80","M","SRFC","Winters","passes.f",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1176","80","D","SRFC","Kawasumi","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1177","80","F","BOS","Kranich","passes.f",NA,NA,"free.kick","M","SRFC","Fletcher","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1177","80",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
