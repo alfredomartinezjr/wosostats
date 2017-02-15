@@ -40,8 +40,9 @@ getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA,
     stats_list[[8]] <- createRecoveryColumns(match_sheet = match_sheet)
     stats_list[[9]] <- createAerialColumns(match_sheet = match_sheet)
     stats_list[[10]] <- createDefActionsColumns(match_sheet = match_sheet)
-    stats_list[[11]] <- createGkDefenseColumns(match_sheet = match_sheet)
-    stats_list[[12]] <- createGkDistColumns(match_sheet = match_sheet)
+    stats_list[[11]] <- createDisciplineColumns(match_sheet = match_sheet)
+    stats_list[[12]] <- createGkDefenseColumns(match_sheet = match_sheet)
+    stats_list[[13]] <- createGkDistColumns(match_sheet = match_sheet)
   }
   
   #merge stats list

@@ -491,6 +491,34 @@ createDefActionsColumns <- function(match_sheet) {
   merged_stats
 }
 
+#DISCIPLINARY ACTIONS--------
+createDisciplineColumns <- function(match_sheet) {
+  pattern <- c("fouls.won","fouls.conceded","yellow.cards","red.cards","penalties.won","penalties.conceded")
+  events_poss <- match_sheet[match_sheet[,"poss.player.disciplinary"] %in% c(pattern),"event"]
+  events_def <- match_sheet[match_sheet[,"def.player.disciplinary"] %in% c(pattern),"event"]
+  events_all <- sort(unique(c(events_poss, events_def)))
+  events_all <- paste0("^", events_all, "$")
+  
+  match_subset <- match_sheet[grep(paste(events_all, collapse = "|"), match_sheet[,"event"]),]
+  match_subset <- fillBlanks(match_subset)
+  
+  possDiscipline <- createStatsTable(pattern = c("fouls.won","fouls.conceded","yellow.cards","red.cards","penalties.won","penalties.conceded"), target_col = "poss.player.disciplinary", source_df = match_subset,
+                                  stat_names = c("Poss.Fouls.Won","Poss.Fouls.Conceded","Poss.Yellow.Cards","Poss.Red.Cards","Poss.Penalties.Won","Poss.Penalties.Conceded"))
+  defDiscipline <- createStatsTable(pattern = c("fouls.won","fouls.conceded","yellow.cards","red.cards","penalties.won","penalties.conceded"), target_col = "def.player.disciplinary", source_df = match_subset,
+                                 stat_names = c("Def.Fouls.Won","Def.Fouls.Conceded","Def.Yellow.Cards","Def.Red.Cards","Def.Penalties.Won","Def.Penalties.Conceded"), team = "def")
+  merged_stats <- merge(possDiscipline,defDiscipline,by=c("Player","Team","Number"), all=TRUE)
+  merged_stats$'Fouls Won' <- rowSums(merged_stats[,c("Poss.Fouls.Won","Def.Fouls.Won")],na.rm = TRUE)
+  merged_stats$'Fouls Conceded' <- rowSums(merged_stats[,c("Poss.Fouls.Conceded","Def.Fouls.Conceded")],na.rm = TRUE)
+  merged_stats$'Yellow Cards' <- rowSums(merged_stats[,c("Poss.Yellow.Cards","Def.Yellow.Cards")],na.rm = TRUE)
+  merged_stats$'Red Cards' <- rowSums(merged_stats[,c("Poss.Red.Cards","Def.Red.Cards")],na.rm = TRUE)
+  merged_stats$'Penalties Won' <- rowSums(merged_stats[,c("Poss.Penalties.Won","Def.Penalties.Won")],na.rm = TRUE)
+  merged_stats$'Penalties Conceded' <- rowSums(merged_stats[,c("Poss.Penalties.Conceded","Def.Penalties.Conceded")],na.rm = TRUE)
+  merged_stats <- merged_stats[,!names(merged_stats) %in% c("Poss.Fouls.Won","Def.Fouls.Won","Poss.Fouls.Conceded","Def.Fouls.Conceded","Poss.Yellow.Cards","Def.Yellow.Cards",
+                                                            "Poss.Red.Cards","Def.Red.Cards","Poss.Penalties.Won","Def.Penalties.Won","Poss.Penalties.Conceded","Def.Penalties.Conceded")]
+  
+  merged_stats
+}
+
 #GK DEFENSIVE ACTIONS----------
 createGkDefenseColumns <- function(match_sheet) {
   match_subset <- createDataFrame(pattern = c("gk.s.o.g.stop", "gk.s.o.g.def.stop", "gk.s.o.g.scored", "gk.shot.miss",
