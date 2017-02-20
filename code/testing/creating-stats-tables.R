@@ -5,12 +5,12 @@ library(RCurl)
 # your working directory, you can just read the files instead of going online.
 # Otherwise, if online_mode hasn't been created yet, you'll just source the "functions.R"## file from the GitHub site
 if(!exists("online_mode")){
-  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/testing/creating-stats-columns.R")
+  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-3/creating-stats-columns.R")
 } else if(exists("online_mode") && online_mode == "offline"){
-  source("~/wosostats/code/testing/creating-stats-columns")
+  source("~/wosostats/code/version-3/creating-stats-columns")
 }
 
-getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA, type="basic", database=NA) {
+getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA, location = "none", database=NA, per90=FALSE) {
   if(!is.na(matchURL)) {
     match_sheet <- getURL(matchURL)
     match_sheet <- read.csv(textConnection(match_sheet), stringsAsFactors = FALSE)
@@ -28,20 +28,46 @@ getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA,
     match_sheet <- read.csv(textConnection(match_sheet), stringsAsFactors = FALSE)
   }
   
-  if(type == "basic"){
+  if(location=="zones") {
+    match_sheet <- addMultiColumnsForQualifiers(patterns = c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", 
+                                                             "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML",
+                                                             "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR",
+                                                             "A18"="A18", "A6"="A6"),
+                                                ogdf = match_sheet, ndf = match_sheet,
+                                                pattern_locations = "poss.location")
+  } else if(location=="thirds"){
+    match_sheet <- addMultiColumnsForQualifiers(patterns = c("D3"="D6|D18|D3L|DL|D3C|DC|D3R|DR", "M3"="M", "A3"="A6|A18|A3L|AL|A3C|AC|A3R|AR"),
+                                                ogdf = match_sheet,ndf = match_sheet, pattern_locations = "poss.location")
+  }
+  if(location == "none"){
     stats_list <- list()
-    stats_list[[1]] <- createPlayersColumns(match_sheet = match_sheet)
-    stats_list[[2]] <- createShotsColumns(match_sheet = match_sheet)
-    stats_list[[3]] <- createChancesColumns(match_sheet = match_sheet) 
-    stats_list[[4]] <- createPassingColumns(match_sheet = match_sheet)
-    stats_list[[5]] <- createPassRangeColumns(match_sheet = match_sheet)
-    stats_list[[6]] <- createSetPieceColumns(match_sheet = match_sheet)
-    stats_list[[7]] <- createPossessionColumns(match_sheet = match_sheet)
-    stats_list[[8]] <- createRecoveryColumns(match_sheet = match_sheet)
-    stats_list[[9]] <- createAerialColumns(match_sheet = match_sheet)
-    stats_list[[10]] <- createDefActionsColumns(match_sheet = match_sheet)
-    stats_list[[11]] <- createGkDefenseColumns(match_sheet = match_sheet)
-    stats_list[[12]] <- createGkDistColumns(match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createPlayersColumns(match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createShotsColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createChancesColumns(location=location, match_sheet = match_sheet) 
+    stats_list[[length(stats_list)+1]] <- createPassingColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createSetPieceColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createPossessionColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createRecoveryColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createAerialColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createDefActionsColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createDisciplineColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createGkDefenseColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createGkDistColumns(location=location, match_sheet = match_sheet)
+  } else if (location == "thirds" | location=="zones") {
+    stats_list <- list()
+    stats_list[[length(stats_list)+1]] <- createPlayersColumns(match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createShotsColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createChancesColumns(location=location, match_sheet = match_sheet) 
+    stats_list[[length(stats_list)+1]] <- createPassingColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createPassRangeColumns(match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createSetPieceColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createPossessionColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createRecoveryColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createAerialColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createDefActionsColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createDisciplineColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createGkDefenseColumns(location=location, match_sheet = match_sheet)
+    stats_list[[length(stats_list)+1]] <- createGkDistColumns(location=location, match_sheet = match_sheet)
   }
   
   #merge stats list
@@ -56,6 +82,13 @@ getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA,
   #clean up match_stats
   match_stats[is.na(match_stats)] <- 0
   names(match_stats) <- gsub(" ",".", names(match_stats))
+  
+  if(per90==TRUE) {
+    #calculate p90 columns
+    colnamesForp90 <- grep("Player|Team|Number|^GP$|^MP$|^GS$|[Pp]ct|[Aa]ccuracy|rFreq|GperSOG|GperBCSOG", colnames(match_stats),invert = TRUE)
+    match_stats[,paste0(names(match_stats[,colnamesForp90]),".per.90")] <- (match_stats[,colnamesForp90]/match_stats$MP)*90
+  }
+  
   match_stats
 }
 
@@ -123,11 +156,3 @@ getStatsInBulk <- function(competition.slug,team=NA, round=NA, multi_round=NA, m
   
   stats_list
 }
-
-#if(writeSheets == TRUE) {
-#  #Writes csv files in bulk into whatever directory you're in
-#  for (index in 1:length(stats_list)) {
-#    file_name <- strsplit(matches_names[index], "/")[[1]][[length(strsplit(matches_names[index], "/")[[1]])]]
-#    write.csv(stats_list[[index]], file=file_name, row.names = FALSE)
-#  }
-#}
