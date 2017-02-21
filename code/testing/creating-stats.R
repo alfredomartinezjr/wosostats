@@ -1,34 +1,37 @@
 library(RCurl)
 
-# Get match spreadsheet---------
+# I. Sample match sheets---------
 # matchURL, which must be a string, is the URL for the match spreadsheet in tidied .csv format
 # test 1: matchURL <- "https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/nwsl-2016/nwsl-2016-srfc-crs-052216.csv"
 # test 2: matchURL <- "https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/nwsl-2016/nwsl-2016-wnyf-was-042916.csv"
 # test 3 (has big chances & key passes): matchURL <- "https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/nwsl-2016/nwsl-2016-srfc-sbfc-041716.csv"
 
+# II. Determine file location--------
 if(!exists("online_mode")){
   source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/testing/creating-stats-tables.R")
 } else if(exists("online_mode") && online_mode == "offline"){
   source("~/wosostats/code/testing/creating-stats-columns")
 }
 
-# getting stats from each match csv sheet can take approximately 3 seconds, for now
-
-# I. Get stats for one match
-# • You can get stats for one match given one of the following
-#   1. "match_up" - the matchup and date in "TEAM1-TEAM2_M/D/YY" format. Must include underscore between team acronyms and date. Date
+# 1. Get stats for one match ########
+# • Getting stats from each match csv sheet can take approximately 3 seconds, for now
+# • You can get stats for one match given one of the following:
+#   1. "match_up"   - the matchup and date in "TEAM1-TEAM2_M/D/YY" format. Must include underscore between team acronyms and date. Date
 #       must be exactly as it is in the data column in the database. So, no leading zeroes, and in month/day/year format.
-#   2. "match_csv" - if you've got the match csv sheet in your working environment, assign this value to it.
-#   3. "filename" - the location of the match csv sheet in your computer
-#   4. "matchURL" - the URL link for the match csv sheet in the WoSo Stats GitHub repo, found under in the match.csv.link column in the database
-#   5. "location" - if you want your stats broken down by location on the field, and if so by what location. default is "none" and other options are by
-#       "thirds" or by "zone".
-######
-# your_stats <- getStatsForMatch(matchURL=NA, filename=NA, match_csv=NA, matchup=NA, location="none", database=NA)
-######
+#   2. "match_csv"  - or, if you've got the match csv sheet in your working environment, assign this value to it.
+#   3. "filename"   - or, the location of the match csv sheet in your computer
+#   4. "matchURL"   - or, the URL link for the match csv sheet in the WoSo Stats GitHub repo, found under in the match.csv.link column in the database
+#   5. "location"   - this is optional. if you want your stats broken down by location on the field, and if so by what location. 
+#       default is "none". other options are by "thirds" or by "zone".
+#   6. "per_90"     - logical. this is optional and set to FALSE by default. set this as TRUE if you want "per 90" stats added
+#       to your stats table.
+#   7. "database"   - this is optional. most of the time, leave this alone, unless you know what you're doing
+#       and have a database spreadsheet different from what's in the WoSo Stats GitHub repo
+# • Run this, with arguments filled in:
+#   your_stats <- getStatsForMatch(matchup=NA, match_csv=NA, filename=NA, matchURL=NA, location="none", , per90=FALSE database=NA)
 #
-#
-# II. Get stats for multiple matches! Requires internet connection.
+# II. Get stats for multiple matches  ########
+# • Requires an internet connection
 # • Select your matches based on the following.
 #   1. "competition.slug" - this is mandatory. the string for the competition exactly as it appears in the competition.slug column in the database.
 #       If you're feeling brave (and want to see how long it takes), you can just create stats for the entire database by assigning
