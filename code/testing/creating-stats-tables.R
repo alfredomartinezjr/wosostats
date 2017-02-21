@@ -143,15 +143,15 @@ getMatchFiles <- function(competition.slug, type, team=NA, round=NA, multi_round
   assign("match_names", names, pos=1)
 }
 
-getStatsInBulk <- function(competition.slug,team=NA, round=NA, multi_round=NA, month_year=NA, location_complete = FALSE) {
+getStatsInBulk <- function(competition.slug, team=NA, round=NA, multi_round=NA, month_year=NA, location_complete = FALSE, per90=FALSE) {
   database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
   database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
   
-  getMatchFiles(competition.slug=competition.slug, team=team, round=round, multi_round=multi_round, month_year=month_year, location_complete=location_complete, database=database)
+  getMatchFiles(competition.slug=competition.slug, type="match.csv.link", team=team, round=round, multi_round=multi_round, month_year=month_year, location_complete=location_complete, database=database)
 
   stats_list <- list()
   for (index in 1:length(match_list)) {
-    all <- getStatsForMatch(match_csv = match_list[[index]])
+    all <- getStatsForMatch(match_csv = match_list[[index]], per90 = per90)
     stats_list[[index]] <- all
   }
   
@@ -178,9 +178,10 @@ mergeStatsList <- function(stats_list) {
   names(all_stats) <- gsub("\\."," ", names(all_stats))
   
   all_stats <- recalculatePctColumns(all_stats)
-  if(per90==TRUE) {
+  if(TRUE %in% (grepl("90", names(all_stats)))) {
     #calculate p90 columns
-    colnamesForp90 <- grep("Player|Team|Number|^GP$|^MP$|^GS$|[Pp]ct|[Aa]ccuracy|rFreq|GperSOG|GperBCSOG", colnames(match_stats),invert = TRUE)
-    match_stats[,paste0(names(match_stats[,colnamesForp90]),".per.90")] <- (match_stats[,colnamesForp90]/match_stats$MP)*90
+    colnamesForp90 <- grep("Player|Team|Number|^GP$|^MP$|^GS$|[Pp]ct|[Aa]ccuracy|rFreq|GperSOG|GperBCSOG|90", colnames(all_stats),invert = TRUE)
+    all_stats[,paste0(names(all_stats[,colnamesForp90])," per 90")] <- (all_stats[,colnamesForp90]/all_stats$MP)*90
   }
+  all_stats
 }

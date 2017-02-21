@@ -176,13 +176,13 @@ createPassingColumns <- function(location="none", match_sheet) {
                                       drop_cols = c("TRUE.","FALSE."),
                                       stat_names = c("Pct opPass Pressed"))
   #special passes
-  stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isCross"]==TRUE,], location = location, extra_col_names = "cross.att.per.oppass",
+  stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isCross"]==TRUE,], location = location, 
                                         stat_names = c("Cross Comp", "Cross Att","Cross Comp Pct"), isPassing = TRUE)
-  stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isLaunch"]==TRUE,], location = location, extra_col_names = "launch.att.per.pass",
+  stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isLaunch"]==TRUE,], location = location, 
                                         stat_names = c("Launch Comp", "Launch Att", "Launch Comp Pct"), isPassing = TRUE)
-  stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isThrough"]==TRUE,], location = location, extra_col_names = "through.att.per.pass",
+  stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isThrough"]==TRUE,], location = location,
                                         stat_names = c("Through Comp", "Through Att", "Through Comp Pct"), isPassing = TRUE)
-  stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isThrowIn"]==TRUE,], location = location, extra_col_names = "throw.in.att.per.pass",
+  stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isThrowIn"]==TRUE,], location = location,
                                         stat_names = c("Throw In Comp", "Throw In Att", "Throw In Comp Pct"), isPassing = TRUE)
   #by direction - all passes
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = createSubset(c("passes.f.c", "passes.f"), "poss.action", source_df = match_subset, clean = TRUE), location = location, 
