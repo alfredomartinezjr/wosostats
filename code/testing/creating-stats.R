@@ -7,9 +7,9 @@ library(RCurl)
 # test 3 (has big chances & key passes): matchURL <- "https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/nwsl-2016/nwsl-2016-srfc-sbfc-041716.csv"
 
 if(!exists("online_mode")){
-  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-3/creating-stats-tables.R")
+  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/testing/creating-stats-tables.R")
 } else if(exists("online_mode") && online_mode == "offline"){
-  source("~/wosostats/code/version-3/creating-stats-columns")
+  source("~/wosostats/code/testing/creating-stats-columns")
 }
 
 # getting stats from each match csv sheet can take approximately 3 seconds, for now
@@ -24,7 +24,7 @@ if(!exists("online_mode")){
 #   5. "location" - if you want your stats broken down by location on the field, and if so by what location. default is "none" and other options are by
 #       "thirds" or by "zone".
 #
-# match_stats <- getStatsForMatch(matchURL=NA, filename=NA, match_csv=NA, matchup=NA, location="none", database=NA)
+# your_stats <- getStatsForMatch(matchURL=NA, filename=NA, match_csv=NA, matchup=NA, location="none", database=NA)
 
 # Get stats for multiple matches! Requires internet connection.
 # • Select your matches based on the following.
@@ -38,7 +38,7 @@ if(!exists("online_mode")){
 #   5. "month_year" - optional. the string for the month and year of the competition in "M_YYYY" format (no leading zeroes for month).
 #   6. "location_complete" - assign this to TRUE if you only want matches with complete location data (will have 
 #       "yes" in the location.data column in the database)
-# getStatsInBulk(competition.slug, team=NA, round=NA, multi_round=NA, month_year=NA, location_complete = FALSE)
+# your_stats_list <- getStatsInBulk(competition.slug, team=NA, round=NA, multi_round=NA, month_year=NA, location_complete = FALSE)
 # 
 # Then, you can crites those csv files in bulk into whatever your working directory is in. 
 #  for (index in 1:length(stats_list)) {

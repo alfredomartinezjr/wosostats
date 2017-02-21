@@ -7,11 +7,11 @@ library(RCurl)
 # your working directory, you can just read the files instead of going online.
 # Otherwise, if online_mode hasn't been created yet, you'll just source the "functions.R"## file from the GitHub site
 if(!exists("online_mode")){
-  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-3/creating-stats-base-functions.R")
+  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/testing/creating-stats-base-functions.R")
   #rosters <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/rosters/nwsl-2016.csv")
   #rosters <- read.csv(textConnection(rosters), stringsAsFactors = FALSE)
 } else if(exists("online_mode") && online_mode == "offline"){
-  source("~/wosostats/code/version-3/creating-stats-base-functions.R")
+  source("~/wosostats/code/testing/creating-stats-base-functions.R")
   #rosters <- read.csv("~/wosostats/rosters/nwsl-2016.csv")
 }
 
@@ -177,13 +177,13 @@ createPassingColumns <- function(location="none", match_sheet) {
                                       stat_names = c("Pct opPass Pressed"))
   #special passes
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isCross"]==TRUE,], location = location, extra_col_names = "cross.att.per.oppass",
-                                        stat_names = c("Cross Comp", "Cross Att","Cross Comp Pct", "Cross Att per Pass"), isPassing = TRUE)
+                                        stat_names = c("Cross Comp", "Cross Att","Cross Comp Pct"), isPassing = TRUE)
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isLaunch"]==TRUE,], location = location, extra_col_names = "launch.att.per.pass",
-                                        stat_names = c("Launch Comp", "Launch Att", "Launch Comp Pct", "Launch Att per Pass"), isPassing = TRUE)
+                                        stat_names = c("Launch Comp", "Launch Att", "Launch Comp Pct"), isPassing = TRUE)
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isThrough"]==TRUE,], location = location, extra_col_names = "through.att.per.pass",
-                                        stat_names = c("Through Comp", "Through Att", "Through Comp Pct", "Through Att per Pass"), isPassing = TRUE)
+                                        stat_names = c("Through Comp", "Through Att", "Through Comp Pct"), isPassing = TRUE)
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isThrowIn"]==TRUE,], location = location, extra_col_names = "throw.in.att.per.pass",
-                                        stat_names = c("Throw In Comp", "Throw In Att", "Throw In Comp Pct", "Throw In Att per Pass"), isPassing = TRUE)
+                                        stat_names = c("Throw In Comp", "Throw In Att", "Throw In Comp Pct"), isPassing = TRUE)
   #by direction - all passes
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = createSubset(c("passes.f.c", "passes.f"), "poss.action", source_df = match_subset, clean = TRUE), location = location, 
                                         stat_names = c("fwPass Comp", "fwPass Att", "fwPass Comp Pct"), isPassing = TRUE)
@@ -657,4 +657,88 @@ createGkDistColumns <- function(location="none", match_sheet) {
   
   merged_stats
   
+}
+
+recalculatePctColumns <- function(match_sheet, location="none") {
+  if(location == "none") {
+    match_sheet[,"Shot Accuracy"] <- rowSums(match_sheet[,c("Goals","Shots Stopped by GK", "Shots Stopped by Def")])/rowSums(match_sheet[,c("Goals","Shots Stopped by GK", "Shots Stopped by Def","Shots Missed")])
+    match_sheet[,"Pct Shots Pressed"] <- match_sheet[,"Shots Pressed"]/match_sheet[,"Shots"]
+    match_sheet[,"BC Conversion Pct"] <- match_sheet[,"BC Scored"]/match_sheet[,"Big Chances"]
+    match_sheet[,"Pass Comp Pct"] <- match_sheet[,"Pass Comp"]/match_sheet[,"Pass Att"]
+    match_sheet[,"opPass Comp"] <- match_sheet[,"opPass Comp"]/match_sheet[,"opPass Att"]
+    match_sheet[,"PPass Comp"] <- match_sheet[,"PPass Comp"]/match_sheet[,"PPass Att"]
+    match_sheet[,"Cross Comp"] <- match_sheet[,"Cross Comp"]/match_sheet[,"Cross Att"]
+    match_sheet[,"Launch Comp"] <- match_sheet[,"Launch Comp"]/match_sheet[,"Launch Att"]
+    match_sheet[,"Through Comp"] <- match_sheet[,"Through Comp"]/match_sheet[,"Through Att"]
+    match_sheet[,"Throw In Comp"] <- match_sheet[,"Throw In Comp"]/match_sheet[,"Throw In Att"]
+    match_sheet[,"fwPass Comp"] <- match_sheet[,"fwPass Comp"]/match_sheet[,"fwPass Att"]
+    match_sheet[,"sPass Comp"] <- match_sheet[,"sPass Comp"]/match_sheet[,"sPass Att"]
+    match_sheet[,"bPass Comp"] <- match_sheet[,"bPass Comp"]/match_sheet[,"bPass Att"]
+    match_sheet[,"fwopPass Comp"] <- match_sheet[,"fwopPass Comp"]/match_sheet[,"fwopPass Att"]
+    match_sheet[,"sopPass Comp"] <- match_sheet[,"sopPass Comp"]/match_sheet[,"sopPass Att"]
+    match_sheet[,"bopPass Comp"] <- match_sheet[,"bopPass Comp"]/match_sheet[,"bopPass Att"]
+    match_sheet[,"fwPPass Comp"] <- match_sheet[,"fwPPass Comp"]/match_sheet[,"fwPPass Att"]
+    match_sheet[,"sPPass Comp"] <- match_sheet[,"sPPass Comp"]/match_sheet[,"sPPass Att"]
+    match_sheet[,"bPPass Comp"] <- match_sheet[,"bPPass Comp"]/match_sheet[,"bPPass Att"]
+    match_sheet[,"Pct opPass Pressed"] <- match_sheet[,"PPass Att"]/match_sheet[,"opPass Att"]
+    match_sheet[,c("rFreq Pass Fwd", "rFreq Pass Side", "rFreq Pass Back")] <- match_sheet[,c("fwPass Att","sPass Att","bPass Att")]/match_sheet[,"Pass Att"]
+    match_sheet[,c("rFreq opPass Fwd","rFreq opPass Side","rFreq opPass Back")] <-  match_sheet[,c("fwopPass Att","sopPass Att","bopPass Att")]/match_sheet[,"opPass Att"]
+    match_sheet[,c("rFreq PPass Fwd","rFreq PPass Side","rFreq PPass Back")] <-  match_sheet[,c("fwPPass Att","sPPass Att","bPPass Att")]/match_sheet[,"PPass Att"]
+    match_sheet[,"CK Comp Pct"] <- match_sheet[,"Corner Kicks Completed"]/match_sheet[,"Corner Kicks Taken"]
+    match_sheet[,"FK Pass Comp Pct"] <- match_sheet[,"FK Pass Comp"]/match_sheet[,"FK Pass Att"]
+    match_sheet[,"TO Win Pct"] <- match_sheet[,"TO Won"]/match_sheet[,"Take Ons"]
+    match_sheet[,"AD Win Pct"] <- match_sheet[,"AD Won"]/match_sheet[,"Aerial Duels"]
+    match_sheet[,"GperSOG"] <- match_sheet[,"Goals Allowed"]/match_sheet[,"GK SOG Faced"]
+    match_sheet[,"GperBCSOG"] <- match_sheet[,"BC Goals Allowed"]/match_sheet[,"BC SOG Faced"]
+    match_sheet[,"HB Win Pct"] <- match_sheet[,"HB Won"]/match_sheet[,"High Balls Faced"]
+    match_sheet[,"GK Overall Pass Comp Pct"] <- match_sheet[,"GK Overall Pass Comp"]/match_sheet[,"GK Overall Pass Att"]
+    match_sheet[,"GK Throw Comp Pct"] <- match_sheet[,"GK Throw Comp"]/match_sheet[,"GK Throw Att"]
+    match_sheet[,"GK Drop Kick Comp Pct"] <- match_sheet[,"GK Drop Kick Comp"]/match_sheet[,"GK Drop Kick Att"]
+    match_sheet[,"GKFK Comp Pct"] <- match_sheet[,"GKFK Comp"]/match_sheet[,"GKFK Att"]
+    
+    
+  } else if(location == "zones" | location == "thirds") {
+    if(location=="zones"){
+      locations <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML", "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
+    } else if(location=="thirds"){
+      locations <- c("D3", "M3", "A3")
+    }
+    for(index in locations){
+      match_sheet[,paste(index, "Shot Accuracy")] <- rowSums(match_sheet[,paste(index, c("Goals","Shots Stopped by GK", "Shots Stopped by Def"))])/rowSums(match_sheet[,paste(index, c("Goals","Shots Stopped by GK", "Shots Stopped by Def","Shots Missed"))])
+      match_sheet[,paste(index,"Pct Shots Pressed")] <- match_sheet[,paste(index,"Shots Pressed")]/match_sheet[,paste(index,"Shots")]
+      match_sheet[,paste(index,"BC Conversion Pct")] <- match_sheet[,paste(index,"BC Scored")]/match_sheet[,paste(index,"Big Chances")]
+      match_sheet[,paste(index,"Pass Comp Pct")] <- match_sheet[,paste(index, "Pass Comp")]/match_sheet[,paste(index,"Pass Att")]
+      match_sheet[,paste(index,"opPass Comp")] <- match_sheet[,paste(index,"opPass Comp")]/match_sheet[,paste(index,"opPass Att")]
+      match_sheet[,paste(index,"PPass Comp")] <- match_sheet[,paste(index,"PPass Comp")]/match_sheet[,paste(index,"PPass Att")]
+      match_sheet[,paste(index,"Cross Comp")] <- match_sheet[,paste(index,"Cross Comp")]/match_sheet[,paste(index,"Cross Att")]
+      match_sheet[,paste(index,"Launch Comp")] <- match_sheet[,paste(index,"Launch Comp")]/match_sheet[,paste(index,"Launch Att")]
+      match_sheet[,paste(index,"Through Comp")] <- match_sheet[,paste(index,"Through Comp")]/match_sheet[,paste(index,"Through Att")]
+      match_sheet[,paste(index,"Throw In Comp")] <- match_sheet[,paste(index,"Throw In Comp")]/match_sheet[,paste(index,"Throw In Att")]
+      match_sheet[,paste(index,"fwPass Comp")] <- match_sheet[,paste(index,"fwPass Comp")]/match_sheet[,paste(index,"fwPass Att")]
+      match_sheet[,paste(index,"sPass Comp")] <- match_sheet[,paste(index,"sPass Comp")]/match_sheet[,paste(index,"sPass Att")]
+      match_sheet[,paste(index,"bPass Comp")] <- match_sheet[,paste(index,"bPass Comp")]/match_sheet[,paste(index,"bPass Att")]
+      match_sheet[,paste(index,"fwopPass Comp")] <- match_sheet[,paste(index,"fwopPass Comp")]/match_sheet[,paste(index,"fwopPass Att")]
+      match_sheet[,paste(index,"sopPass Comp")] <- match_sheet[,paste(index,"sopPass Comp")]/match_sheet[,paste(index,"sopPass Att")]
+      match_sheet[,paste(index,"bopPass Comp")] <- match_sheet[,paste(index,"bopPass Comp")]/match_sheet[,paste(index,"bopPass Att")]
+      match_sheet[,paste(index,"fwPPass Comp")] <- match_sheet[,paste(index,"fwPPass Comp")]/match_sheet[,paste(index,"fwPPass Att")]
+      match_sheet[,paste(index,"sPPass Comp")] <- match_sheet[,paste(index,"sPPass Comp")]/match_sheet[,paste(index,"sPPass Att")]
+      match_sheet[,paste(index,"bPPass Comp")] <- match_sheet[,paste(index,"bPPass Comp")]/match_sheet[,paste(index,"bPPass Att")]
+      match_sheet[,paste(index,"Pct opPass Pressed")] <- match_sheet[,paste(index,"PPass Att")]/match_sheet[,paste(index,"opPass Att")]
+      match_sheet[,paste(index,c("rFreq Pass Fwd", "rFreq Pass Side", "rFreq Pass Back"))] <- match_sheet[,paste(index,c("fwPass Att","sPass Att","bPass Att"))]/match_sheet[,paste(index,"Pass Att")]
+      match_sheet[,paste(index,c("rFreq opPass Fwd","rFreq opPass Side","rFreq opPass Back"))] <-  match_sheet[,paste(index,c("fwopPass Att","sopPass Att","bopPass Att"))]/match_sheet[,paste(index,"opPass Att")]
+      match_sheet[,paste(index,c("rFreq PPass Fwd","rFreq PPass Side","rFreq PPass Back"))] <-  match_sheet[,paste(index,c("fwPPass Att","sPPass Att","bPPass Att"))]/match_sheet[,paste(index,"PPass Att")]
+      match_sheet[,paste(index,"CK Comp Pct")] <- match_sheet[,paste(index,"Corner Kicks Completed")]/match_sheet[,paste(index,"Corner Kicks Taken")]
+      match_sheet[,paste(index,"FK Pass Comp Pct")] <- match_sheet[,paste(index,"FK Pass Comp")]/match_sheet[,paste(index,"FK Pass Att")]
+      match_sheet[,paste(index,"TO Win Pct")] <- match_sheet[,paste(index,"TO Won")]/match_sheet[,paste(index,"Take Ons")]
+      match_sheet[,paste(index, "AD Win Pct")] <- match_sheet[,paste(index,"AD Won")]/match_sheet[,paste(index,"Aerial Duels")]
+      match_sheet[,paste(index,"GperSOG")] <- match_sheet[,paste(index,"Goals Allowed")]/match_sheet[,paste(index,"GK SOG Faced")]
+      match_sheet[,paste(index,"GperBCSOG")] <- match_sheet[,paste(index,"BC Goals Allowed")]/match_sheet[,paste(index,"BC SOG Faced")]
+      match_sheet[,paste(index,"HB Win Pct")] <- match_sheet[,paste(index,"HB Won")]/match_sheet[,paste(index,"High Balls Faced")]
+      match_sheet[,paste(index,"GK Overall Pass Comp Pct")] <- match_sheet[,paste(index,"GK Overall Pass Comp")]/match_sheet[,paste(index,"GK Overall Pass Att")]
+      match_sheet[,paste(index,"GK Throw Comp Pct")] <- match_sheet[,paste(index,"GK Throw Comp")]/match_sheet[,paste(index,"GK Throw Att")]
+      match_sheet[,paste(index,"GK Drop Kick Comp Pct")] <- match_sheet[,paste(index,"GK Drop Kick Comp")]/match_sheet[,paste(index,"GK Drop Kick Att")]
+      match_sheet[,paste(index,"GKFK Comp Pct")] <- match_sheet[,paste(index,"GKFK Comp")]/match_sheet[,paste(index,"GKFK Att")]
+    }
+  }
+  match_sheet
 }

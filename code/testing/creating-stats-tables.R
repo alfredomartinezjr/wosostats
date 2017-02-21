@@ -5,9 +5,9 @@ library(RCurl)
 # your working directory, you can just read the files instead of going online.
 # Otherwise, if online_mode hasn't been created yet, you'll just source the "functions.R"## file from the GitHub site
 if(!exists("online_mode")){
-  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-3/creating-stats-columns.R")
+  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/testing/creating-stats-columns.R")
 } else if(exists("online_mode") && online_mode == "offline"){
-  source("~/wosostats/code/version-3/creating-stats-columns")
+  source("~/wosostats/code/testing/creating-stats-columns")
 }
 
 getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA, location = "none", database=NA, per90=FALSE) {
@@ -92,15 +92,16 @@ getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA,
   match_stats
 }
 
-getMatchCsvFiles <- function(competition.slug, team=NA, round=NA, multi_round=NA, month_year=NA, location_complete=FALSE, database=database) {
+getMatchFiles <- function(competition.slug, type, team=NA, round=NA, multi_round=NA, month_year=NA, location_complete=FALSE, database=database) {
+  #type is either "match.csv.link" or "stats.csv.link"
   if(competition.slug == "database"){
     if(location_complete == TRUE){
-      matches <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","match.csv.link"]
+      matches <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes",type]
       names_matchup <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","matchup"]
       dates_matchup <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","date"]
       names <- paste(names_matchup,dates_matchup,sep = "-")
     } else {
-      matches <- database[!is.na(database[,"match.csv.link"]),"match.csv.link"]
+      matches <- database[!is.na(database[,"match.csv.link"]),type]
       names_matchup <- database[!is.na(database[,"match.csv.link"]),"matchup"]
       dates_matchup <- database[!is.na(database[,"match.csv.link"]),"date"]
       names <- paste(names_matchup,dates_matchup,sep = "-")
@@ -119,12 +120,12 @@ getMatchCsvFiles <- function(competition.slug, team=NA, round=NA, multi_round=NA
       database <- database[database[,"home.team"] %in% team | database[,"away.team"] %in% team,]
     }
     if(location_complete == TRUE) {
-      matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","match.csv.link"]
+      matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes",type]
       names_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","matchup"]
       dates_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","date"]
       names <- paste(names_matchup,dates_matchup,sep = "-")
     } else {
-      matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"match.csv.link"]
+      matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),type]
       names_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"matchup"]
       dates_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"date"]
       names <- paste(names_matchup,dates_matchup,sep = "-")
@@ -146,7 +147,7 @@ getStatsInBulk <- function(competition.slug,team=NA, round=NA, multi_round=NA, m
   database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
   database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
   
-  getMatchCsvFiles(competition.slug=competition.slug, team=team, round=round, multi_round=multi_round, month_year=month_year, location_complete=location_complete, database=database)
+  getMatchFiles(competition.slug=competition.slug, team=team, round=round, multi_round=multi_round, month_year=month_year, location_complete=location_complete, database=database)
 
   stats_list <- list()
   for (index in 1:length(match_list)) {
@@ -155,4 +156,31 @@ getStatsInBulk <- function(competition.slug,team=NA, round=NA, multi_round=NA, m
   }
   
   stats_list
+}
+
+
+#Given a match_list list with all the matches, rbinds them
+mergeStatsList <- function(stats_list) {
+  #Creates a blank overall table
+  all_stats_binded <- do.call("rbind", stats_list)
+  all_players <- unique(all_stats_binded[,c("Player", "Team", "Number")])
+  all_stats <- as.data.frame(matrix(rep(0, length(names(all_stats_binded))), nrow = 1))[-1,]
+  names(all_stats) <- names(all_stats_binded)
+  all_stats$Player <- as.character(all_stats$Player)
+  all_stats$Team <- as.character(all_stats$Team)
+  all_stats <- merge(all_players, all_stats, by=c("Player", "Team", "Number"), all=TRUE)
+  
+  #for each row in "overall", gets each column's colSums for that row's "Player"-"Team" combo in d
+  for(player in 1:nrow(all_stats)){
+    player_subset <- all_stats_binded[all_stats_binded[,"Player"] == all_stats[player,"Player"] & all_stats_binded[,"Team"] == all_stats[player,"Team"] & all_stats_binded[,"Number"] == all_stats[player,"Number"],]
+    all_stats[player, !grepl("^Player$|^Team$|^Number$", names(all_stats))] <- colSums(player_subset[,!grepl("^Player$|^Team$|^Number$", names(all_stats))])
+  }
+  names(all_stats) <- gsub("\\."," ", names(all_stats))
+  
+  all_stats <- recalculatePctColumns(all_stats)
+  if(per90==TRUE) {
+    #calculate p90 columns
+    colnamesForp90 <- grep("Player|Team|Number|^GP$|^MP$|^GS$|[Pp]ct|[Aa]ccuracy|rFreq|GperSOG|GperBCSOG", colnames(match_stats),invert = TRUE)
+    match_stats[,paste0(names(match_stats[,colnamesForp90]),".per.90")] <- (match_stats[,colnamesForp90]/match_stats$MP)*90
+  }
 }
