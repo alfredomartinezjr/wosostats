@@ -57,6 +57,6 @@ if(!exists("online_mode")){
 # III. Calculate stats for multiple matches. Can be used with the getStatsInBulk function above.
 # • 
 ######
-# your_stats <- mergeStatsList(stats_list = your_stats_list)
+# your_stats <- mergeStatsList(stats_list = your_stats_list, add_per90 = FALSE)
 ######
 

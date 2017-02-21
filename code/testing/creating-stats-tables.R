@@ -143,7 +143,7 @@ getMatchFiles <- function(competition.slug, type, team=NA, round=NA, multi_round
   assign("match_names", names, pos=1)
 }
 
-getStatsInBulk <- function(competition.slug, team=NA, round=NA, multi_round=NA, month_year=NA, location_complete = FALSE, per90=FALSE) {
+getStatsInBulk <- function(competition.slug, type, team=NA, round=NA, multi_round=NA, month_year=NA, location="none",location_complete = FALSE, per90=FALSE) {
   database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
   database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
   
@@ -151,7 +151,7 @@ getStatsInBulk <- function(competition.slug, team=NA, round=NA, multi_round=NA, 
 
   stats_list <- list()
   for (index in 1:length(match_list)) {
-    all <- getStatsForMatch(match_csv = match_list[[index]], per90 = per90)
+    all <- getStatsForMatch(match_csv = match_list[[index]], location=location, per90 = per90)
     stats_list[[index]] <- all
   }
   
@@ -160,7 +160,7 @@ getStatsInBulk <- function(competition.slug, team=NA, round=NA, multi_round=NA, 
 
 
 #Given a match_list list with all the matches, rbinds them
-mergeStatsList <- function(stats_list) {
+mergeStatsList <- function(stats_list, add_per90 = FALSE, location="none") {
   #Creates a blank overall table
   all_stats_binded <- do.call("rbind", stats_list)
   all_players <- unique(all_stats_binded[,c("Player", "Team", "Number")])
@@ -177,8 +177,8 @@ mergeStatsList <- function(stats_list) {
   }
   names(all_stats) <- gsub("\\."," ", names(all_stats))
   
-  all_stats <- recalculatePctColumns(all_stats)
-  if(TRUE %in% (grepl("90", names(all_stats)))) {
+  all_stats <- recalculatePctColumns(all_stats,location = location)
+  if(TRUE %in% (grepl("90", names(all_stats))) | add_per90 == TRUE) {
     #calculate p90 columns
     colnamesForp90 <- grep("Player|Team|Number|^GP$|^MP$|^GS$|[Pp]ct|[Aa]ccuracy|rFreq|GperSOG|GperBCSOG|90", colnames(all_stats),invert = TRUE)
     all_stats[,paste0(names(all_stats[,colnamesForp90])," per 90")] <- (all_stats[,colnamesForp90]/all_stats$MP)*90
