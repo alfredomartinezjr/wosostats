@@ -143,7 +143,7 @@ getMatchFiles <- function(competition.slug, type, team=NA, round=NA, multi_round
   assign("match_names", names, pos=1)
 }
 
-getStatsInBulk <- function(competition.slug, type, team=NA, round=NA, multi_round=NA, month_year=NA, location="none",location_complete = FALSE, per90=FALSE) {
+getStatsInBulk <- function(competition.slug, type="match.csv.link", team=NA, round=NA, multi_round=NA, month_year=NA, location="none",location_complete = FALSE, per90=FALSE) {
   database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
   database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
   
