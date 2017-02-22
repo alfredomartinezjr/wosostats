@@ -33,7 +33,7 @@ Otherwise, don't do anything and you'll just source everything from online.
   * `your_stats <- getStatsForMatch(matchup=NA, match_csv=NA, filename=NA, matchURL=NA, location="none", per90=FALSE, database=NA)`
 
 # 2. Get match stats for multiple matches
-* Uses the getStatsInBulk function.
+* Uses the `getStatsInBulk` function.
 * Given criteria for the competition, and additional information such as the teams, rounds, or dates, you'll calculate stats for multiple matches and get all those stats as a list.
 * You can also, as with getStatsForMatch, further customize your stats with additional arguments (location
 * Requires an internet connection
@@ -56,16 +56,12 @@ Otherwise, don't do anything and you'll just source everything from online.
    }`
 
 # 3. Calculate stats for multiple matches.
-* Use the getStatsInBulk function above, with the type argument set as "match_csv.link", to get a list of stats tables
-#   for the set of matches you want (i.e. only Portland matches, only matches from first 10 weeks, etc.)
-# • Combine those stats into one table with the mergeStatsList function based on the following arguments:
-#   1. "stats_list"   - this is mandatory. assign this to the name of the stat list you created with the getStatsInBulk function. In
-#                       the sample code above, we named it your_stats_list.
-#   2. "add_per90"    - optional. set as TRUE if you want to add "per 90" stats to the table. Will do this automatically if there are
-#                       already "per 90" columns in the stats tables in the stats_list list.
-#   3. "location"     - optional, but MUST be set as the same as what was used in getStatsInBulk. Set this as "thirds" if the stats
-#                       tables in the stats list are broken down by thirds of the field, and set as "zones" if they are broken down 
-#                       by zones of the field. If you didn't do anything with "location" in getStatsInBulk, then you can leave this blank.
-# • Run this, with the above arguments filled in:
-#                     your_stats <- mergeStatsList(stats_list = your_stats_list, add_per90 = FALSE, location = "none")
+* Use the `mergeStatsList` function, with the `getStatsInBulk` function above, to created one stats table that combines all the stats in a list of stats you craeted.
+* Given the stats list, and whether you'd like to add "per 90" stats and if location data is included in the stats list, you'll get one data frame.
+* Based on the following arguments:
+   1. `stats_list`   - this is mandatory. assign this to the name of the stat list you created with the getStatsInBulk function. In the sample code above, we named it your_stats_list.
+   2. `add_per90`    - optional. set as TRUE if you want to add "per 90" stats to the table. Will do this automatically if there are already "per 90" columns in the stats tables in the stats_list list.
+   3. `location`     - optional, but MUST be set as the same as what was used in getStatsInBulk. Set this as "thirds" if the stats tables in the stats list are broken down by thirds of the field, and set as "zones" if they are broken down by zones of the field. If you didn't do anything with "location" in getStatsInBulk, then you can leave this blank.
+* Run this, with the above arguments filled in:
+   * `your_stats <- mergeStatsList(stats_list = your_stats_list, add_per90 = FALSE, location = "none")`
 
