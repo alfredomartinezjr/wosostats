@@ -49,7 +49,7 @@ if(!exists("online_mode")){
 #   9. "database"           - this is optional. most of the time, leave this alone, unless you know what you're doing
 #                             and have a database spreadsheet different from what's in the WoSo Stats GitHub repo
 # • Run this, with the above arguments filled in:
-#                     your_stats_list <- getStatsInBulk(competition.slug, type, team=NA, round=NA, multi_round=NA, month_year=NA, location="none", location_complete = FALSE, per_90=FALSE)
+#                     your_stats_list <- getStatsInBulk(competition.slug, team=NA, round=NA, multi_round=NA, month_year=NA, location="none", location_complete = FALSE, per_90=FALSE)
 # • Then, you can write those stats csv files in bulk into whatever your working directory is in by running the following:
 #   for (index in 1:length(stats_list)) {
 #     file_name <- strsplit(matches_names[index], "/")[[1]][[length(strsplit(matches_names[index], "/")[[1]])]]
