@@ -38,6 +38,9 @@ getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA,
   } else if(location=="thirds"){
     match_sheet <- addMultiColumnsForQualifiers(patterns = c("D3"="D6|D18|D3L|DL|D3C|DC|D3R|DR", "M3"="M", "A3"="A6|A18|A3L|AL|A3C|AC|A3R|AR"),
                                                 ogdf = match_sheet,ndf = match_sheet, pattern_locations = "poss.location")
+  } else if(locaftion=="wings"){
+    match_sheet <- addMultiColumnsForQualifiers(patterns = c("L3"="L", "C3"="C|6|18", "R3"="R"),
+                                                ogdf = match_sheet,ndf = match_sheet, pattern_locations = "poss.location")
   }
   if(location == "none"){
     stats_list <- list()
@@ -53,7 +56,7 @@ getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA,
     stats_list[[length(stats_list)+1]] <- createDisciplineColumns(location=location, match_sheet = match_sheet)
     stats_list[[length(stats_list)+1]] <- createGkDefenseColumns(location=location, match_sheet = match_sheet)
     stats_list[[length(stats_list)+1]] <- createGkDistColumns(location=location, match_sheet = match_sheet)
-  } else if (location == "thirds" | location=="zones") {
+  } else if (location == "thirds" | location=="zones" | location=="wings") {
     stats_list <- list()
     stats_list[[length(stats_list)+1]] <- createPlayersColumns(match_sheet = match_sheet)
     stats_list[[length(stats_list)+1]] <- createShotsColumns(location=location, match_sheet = match_sheet)
