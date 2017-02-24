@@ -1,5 +1,5 @@
 # Intro
-The creating-stats R files in this folder will create stats tables for the WoSo matches [in our database](https://github.com/amj2012/wosostats/blob/master/database.csv). You will be able to create stats for matches based on criteria you can set in the R functions in the creating-stats.R files, and the stats can be either without location data, or broken down by thirds of the field or by ["zones" of the field](https://camo.githubusercontent.com/7df8218c1603fee2ffd1ea25cfa1d30f4572c6ae/687474703a2f2f692e696d6775722e636f6d2f45514c6d7059702e706e67)
+The creating-stats R files in this folder will create stats tables for the WoSo matches [in our database](https://github.com/amj2012/wosostats/blob/master/database.csv). You will be able to create stats for matches based on criteria you can set in the R functions in the creating-stats.R files, and the stats can be either without location data, or broken down by thirds of the field, wings of the field, or by ["zones" of the field](https://camo.githubusercontent.com/7df8218c1603fee2ffd1ea25cfa1d30f4572c6ae/687474703a2f2f692e696d6775722e636f6d2f45514c6d7059702e706e67)
 
 Unless you're interested in delving into the nitty-gritty of how the different code files work to further tailor the type of stats you get, you only need to use [the creating-stats.R file](https://github.com/amj2012/wosostats/blob/master/code/version-3/creating-stats.R). Source it and follow the instructions below on how to use the three functions (`getMatchStats`, `getStatsInBulk`, and `mergeStatsList`)  to get your stats.
 
@@ -28,7 +28,7 @@ Otherwise, don't do anything and you'll just source everything from online.
    2. `match_csv`  - OR, if you've got the match csv sheet in your working environment, assign that name to this.
    3. `filename`   - OR, the location of the match csv sheet in your computer
    4. `matchURL`   - OR, the URL link for the match csv sheet in the WoSo Stats GitHub repo, found under in the match.csv.link column in the database
-   5. `location`   - this is optional. if you want your stats broken down by location on the field, and if so by what location. default is "none". other options are by "thirds" or by "zone".
+   5. `location`   - this is optional. if you want your stats broken down by location on the field, and if so by what location. default is "none". other options are by "thirds", "wings", or by "zone".
    6. `per_90`     - logical (TRUE or FALSE). this is optional and set to FALSE by default. set this as TRUE if you want "per 90" stats added to your stats table.
    7. `database`   - this is optional. most of the time, leave this alone, unless you know what you're doing and have a database spreadsheet different from what's in the WoSo Stats GitHub repo
 * Run this, with the above arguments filled in, to get your stats:
@@ -46,7 +46,7 @@ Otherwise, don't do anything and you'll just source everything from online.
    5. `multi_round`        - optional. a vector in c("Week X", "Week Y", "Week Z", "etc.") format with multiple "rounds" of a competition, again exactly as they appear in the database.
    6. `month_year`         - optional. the string for the month and year of the competition in "M_YYYY" format (no leading zeroes for month).
    7. `location_complete`  - optional. assign TRUE to this if you only want to calculate stats for matches with complete location data (will have "yes" in the location.data column in the database)
-   8. `location`            - optional. different from `location_complete`. Assign "zones" to this if you want a stats tables with stats broken down by zones of the field, or assign "thirds" to this if you want a stats table with stas broken down by thirds of the field.
+   8. `location`            - optional. different from `location_complete`. Assign "zones" to this if you want a stats tables with stats broken down by zones of the field, assign "thirds" to this if you want a stats table with stas broken down by thirds of the field, or assing "wings" to this if you want a stats table with stats broken down by left wing, center, and right wing of the field.
    9. `per_90`             - optional. assign TRUE to this you want to add "per 90" stats to your stats table 
    10. `database`           - this is optional. most of the time, leave this alone, unless you know what you're doing and have a database spreadsheet different from what's in the WoSo Stats GitHub repo
 * Run this, with the above arguments filled in:
@@ -63,7 +63,7 @@ Otherwise, don't do anything and you'll just source everything from online.
 * Based on the following arguments:
    1. `stats_list`   - this is mandatory. assign this to the name of the stat list you created with the getStatsInBulk function. In the sample code above, we named it your_stats_list.
    2. `add_per90`    - optional. set as TRUE if you want to add "per 90" stats to the table. Will do this automatically if there are already "per 90" columns in the stats tables in the stats_list list.
-   3. `location`     - optional, but MUST be set as the same as what was used in getStatsInBulk. Set this as "thirds" if the stats tables in the stats list are broken down by thirds of the field, and set as "zones" if they are broken down by zones of the field. If you didn't do anything with "location" in getStatsInBulk, then you can leave this blank.
+   3. `location`     - optional, but MUST be set as the same as what was used in getStatsInBulk. Set this as "thirds" if the stats tables in the stats list are broken down by thirds of the field, set this as "wings" if the stats are broken down by left wings, center, or right wings of the field, and set as "zones" if they are broken down by zones of the field. If you didn't do anything with "location" in getStatsInBulk, then you can leave this blank.
 * Run this, with the above arguments filled in:
    * `your_stats <- mergeStatsList(stats_list = your_stats_list, add_per90 = FALSE, location = "none")`
 
