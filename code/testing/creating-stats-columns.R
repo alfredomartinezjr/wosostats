@@ -226,11 +226,13 @@ createPassingColumns <- function(location="none", match_sheet) {
     # frequency of pressed passes by direction
     pressPassAtt <- rowSums(merged_stats[,pressPassAtt_cols],na.rm = TRUE)
     merged_stats[,c("rFreq PPass Fwd","rFreq PPass Side","rFreq PPass Back")] <-  merged_stats[,c("fwPPass Att","sPPass Att","bPPass Att")]/pressPassAtt
-  } else if(location == "thirds" | location == "zones"){
+  } else if(location == "thirds" | location == "zones" | location == "wings"){
     if(location=="zones"){
       locations <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML", "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
     } else if(location=="thirds"){
       locations <- c("D3", "M3", "A3")
+    } else if(location=="wings"){
+      locations <- c("L3", "C3", "R3")
     }
     for(index in locations) {
       # frequency of all passes by direction
@@ -322,11 +324,13 @@ createSetPieceColumns <- function(location="none", match_sheet) {
   }
   if(location=="none"){
     merged_stats[,"Free Kicks Taken"] <- rowSums(merged_stats[,c("FK Pass Att", "FK Shot")], na.rm=TRUE)
-  } else if(location=="zones" | location=="thirds"){
+  } else if(location=="zones" | location=="thirds" | location=="wings"){
     if(location=="zones"){
       locations <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML", "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
     } else if(location=="thirds"){
       locations <- c("D3", "M3", "A3")
+    } else if(location=="wings"){
+      locations <- c("L3", "C3", "R3")
     }
     for(index in locations) {
       merged_stats[,paste(index,"Free Kicks Taken")] <- rowSums(merged_stats[,paste(index,c("FK Pass Att","FK Shot"))])
@@ -410,11 +414,13 @@ createAerialColumns <- function(location="none", match_sheet) {
     merged_stats$'AD Lost' <- rowSums(merged_stats[,c("Poss.Aerial.Lost","Def.Aerial.Lost")],na.rm = TRUE)
     merged_stats$'AD Win Pct' <- merged_stats$'AD Won'/merged_stats$'Aerial Duels'
     merged_stats <- merged_stats[,!names(merged_stats) %in% c("Poss.Aerial.Won","Poss.Aerial.Lost","Def.Aerial.Won","Def.Aerial.Lost")]
-  } else if(location == "thirds" | location == "zones"){
+  } else if(location == "thirds" | location == "zones" | location=="wings"){
     if(location=="zones"){
       locations <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML", "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
     } else if(location=="thirds"){
       locations <- c("D3", "M3", "A3")
+    } else if(location=="wings"){
+      locations <- c("L3", "C3", "R3")
     }
     for(index in locations) {
       merged_stats[,paste(index,"Aerial Duels")] <- rowSums(merged_stats[,paste(index, c("Poss.Aerial.Won","Poss.Aerial.Lost","Def.Aerial.Won","Def.Aerial.Lost"))],na.rm = TRUE)
@@ -436,11 +442,13 @@ createDefActionsColumns <- function(location="none", match_sheet) {
   
   # overrites location columns with the value that's in the "def.location" column
   #creates a new column for each qualifier in "patterns"
-  if(location=="zones" | location =="thirds"){
+  if(location=="zones" | location =="thirds" | location="wings"){
     if(location=="zones"){
       patterns <- c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML", "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR", "A18"="A18", "A6"="A6")
     } else if(location=="thirds"){
       patterns <- c("D3"="D6|D18|D3L|DL|D3C|DC|D3R|DR", "M3"="M", "A3"="A6|A18|A3L|AL|A3C|AC|A3R|AR")
+    } else if(location=="wings"){
+      patterns = c("L3"="L", "C3"="C|6|18", "R3"="R")
     }
     for(i in 1:length(patterns)) {
       newcol_vec <- c(grepl(patterns[i], match_subset[,"def.location"]))
@@ -472,11 +480,13 @@ createDefActionsColumns <- function(location="none", match_sheet) {
     merged_stats$Dribbled <- rowSums(merged_stats[,c("Dribbled Tackles Missed","Dribbled Out Run","Dribbled Turned")])
     merged_stats$'All Opp Poss Disrupted' <- rowSums(merged_stats[,c("Tackles","Dispossessed")])
     merged_stats <- merged_stats[,!names(merged_stats) %in% c("Tackles Ball Away","Tackles Ball Won", "Tackles Ball","Dribbled Tackles Missed","Dribbled Out Run","Dribbled Turned")]
-  } else if(location=="thirds" | location == "zones") {
+  } else if(location=="thirds" | location == "zones"| location=="wings") {
     if(location=="zones"){
       locations <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML", "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
     } else if(location=="thirds"){
       locations <- c("D3", "M3", "A3")
+    } else if(location=="wings"){
+      locations <- c("L3"="L", "C3"="C|6|18", "R3"="R")
     }
     for(index in locations){
       merged_stats[,paste(index,"Tackles")] <- rowSums(merged_stats[,paste(index, c("Tackles Ball Away","Tackles Ball Won","Tackles Ball"))])
@@ -503,11 +513,13 @@ createDisciplineColumns <- function(location="none", match_sheet) {
   possDiscipline <- createStatsTable(pattern = c("fouls.won","fouls.conceded","yellow.cards","red.cards","penalties.won","penalties.conceded"), target_col = "poss.player.disciplinary", source_df = match_subset,location = location,
                                   stat_names = c("Poss.Fouls.Won","Poss.Fouls.Conceded","Poss.Yellow.Cards","Poss.Red.Cards","Poss.Penalties.Won","Poss.Penalties.Conceded"))
   
-  if(location=="zones" | location =="thirds"){
+  if(location=="zones" | location =="thirds" | location == "wings"){
     if(location=="zones"){
       patterns <- c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML", "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR", "A18"="A18", "A6"="A6")
     } else if(location=="thirds"){
       patterns <- c("D3"="D6|D18|D3L|DL|D3C|DC|D3R|DR", "M3"="M", "A3"="A6|A18|A3L|AL|A3C|AC|A3R|AR")
+    } else if(location=="wings"){
+      patterns <- c("L3"="L", "C3"="C|6|18", "R3"="R")
     }
     for(i in 1:length(patterns)) {
       newcol_vec <- c(grepl(patterns[i], match_subset[,"def.location"]))
@@ -528,11 +540,13 @@ createDisciplineColumns <- function(location="none", match_sheet) {
     merged_stats$'Penalties Conceded' <- rowSums(merged_stats[,c("Poss.Penalties.Conceded","Def.Penalties.Conceded")],na.rm = TRUE)
     merged_stats <- merged_stats[,!names(merged_stats) %in% c("Poss.Fouls.Won","Def.Fouls.Won","Poss.Fouls.Conceded","Def.Fouls.Conceded","Poss.Yellow.Cards","Def.Yellow.Cards",
                                                               "Poss.Red.Cards","Def.Red.Cards","Poss.Penalties.Won","Def.Penalties.Won","Poss.Penalties.Conceded","Def.Penalties.Conceded")]
-  } else if(location=="thirds" | location == "zones"){
+  } else if(location=="thirds" | location == "zones" | location == "wings"){
     if(location=="zones"){
       locations <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML", "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
     } else if(location=="thirds"){
       locations <- c("D3", "M3", "A3")
+    } else if(location=="wings"){
+      locations <- c("L3", "C3", "R3")
     }
     for(index in locations){
       merged_stats[,paste(index, "Fouls Won")] <- rowSums(merged_stats[,paste(index, c("Poss.Fouls.Won","Def.Fouls.Won"))],na.rm = TRUE)
@@ -566,11 +580,13 @@ createGkDefenseColumns <- function(location="none", match_sheet) {
     
   stats_cols <- list()
   
-  if(location=="zones" | location =="thirds"){
+  if(location=="zones" | location =="thirds" | location=="wings"){
     if(location=="zones"){
       patterns <- c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML", "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR", "A18"="A18", "A6"="A6")
     } else if(location=="thirds"){
       patterns <- c("D3"="D6|D18|D3L|DL|D3C|DC|D3R|DR", "M3"="M", "A3"="A6|A18|A3L|AL|A3C|AC|A3R|AR")
+    } else if(location=="wings"){
+      patterns = c("L3"="L", "C3"="C|6|18", "R3"="R")
     }
     for(i in 1:length(patterns)) {
       newcol_vec <- c(grepl(patterns[i], match_subset[,"def.location"]))
@@ -697,11 +713,13 @@ recalculatePctColumns <- function(match_sheet, location="none") {
     match_sheet[,"GKFK Comp Pct"] <- match_sheet[,"GKFK Comp"]/match_sheet[,"GKFK Att"]
     
     
-  } else if(location == "zones" | location == "thirds") {
+  } else if(location == "zones" | location == "thirds" | location == "wings") {
     if(location=="zones"){
       locations <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML", "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
     } else if(location=="thirds"){
       locations <- c("D3", "M3", "A3")
+    } else if(location=="wings"){
+      locations <- c("L3", "C3", "R3")
     }
     for(index in locations){
       match_sheet[,paste(index, "Shot Accuracy")] <- rowSums(match_sheet[,paste(index, c("Goals","Shots Stopped by GK", "Shots Stopped by Def"))])/rowSums(match_sheet[,paste(index, c("Goals","Shots Stopped by GK", "Shots Stopped by Def","Shots Missed"))])
