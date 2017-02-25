@@ -38,7 +38,7 @@ getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA,
   } else if(location=="thirds"){
     match_sheet <- addMultiColumnsForQualifiers(patterns = c("D3"="D6|D18|D3L|DL|D3C|DC|D3R|DR", "M3"="M", "A3"="A6|A18|A3L|AL|A3C|AC|A3R|AR"),
                                                 ogdf = match_sheet,ndf = match_sheet, pattern_locations = "poss.location")
-  } else if(locaftion=="wings"){
+  } else if(location=="wings"){
     match_sheet <- addMultiColumnsForQualifiers(patterns = c("L3"="L", "C3"="C|6|18", "R3"="R"),
                                                 ogdf = match_sheet,ndf = match_sheet, pattern_locations = "poss.location")
   }
