@@ -442,7 +442,7 @@ createDefActionsColumns <- function(location="none", match_sheet) {
   
   # overrites location columns with the value that's in the "def.location" column
   #creates a new column for each qualifier in "patterns"
-  if(location=="zones" | location =="thirds" | location="wings"){
+  if(location=="zones" | location =="thirds" | location=="wings"){
     if(location=="zones"){
       patterns <- c("D6"="D6", "D18"="D18", "DL"="D3L|DL", "DC"="D3C|DC","DR"="D3R|DR", "DML"="DM3L|DML", "DMC"="DM3C|DMC", "DMR"="DM3R|DMR", "AML"="AM3L|AML", "AMC"="AM3C|AMC", "AMR"="AM3R|AMR", "AL"="A3L|AL", "AC"="A3C|AC", "AR"="A3R|AR", "A18"="A18", "A6"="A6")
     } else if(location=="thirds"){
