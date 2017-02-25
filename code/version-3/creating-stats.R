@@ -7,9 +7,9 @@ library(RCurl)
 # Sample 2: matchURL <- "https://raw.githubusercontent.com/amj2012/wosostats/master/source/csv/nwsl-2016/nwsl-2016-wnyf-was-042916.csv"
 
 if(!exists("online_mode")){
-  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/testing/creating-stats-tables.R")
+  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-3/creating-stats-tables.R")
 } else if(exists("online_mode") && online_mode == "offline"){
-  source("~/wosostats/code/testing/creating-stats-columns")
+  source("~/wosostats/code/version-3/creating-stats-columns")
 }
 
 # your_stats <- getStatsForMatch(matchup=NA, match_csv=NA, filename=NA, matchURL=NA, location="none", per90=FALSE, database=NA)

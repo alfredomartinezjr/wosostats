@@ -5,9 +5,9 @@ library(RCurl)
 # your working directory, you can just read the files instead of going online.
 # Otherwise, if online_mode hasn't been created yet, you'll just source the "functions.R"## file from the GitHub site
 if(!exists("online_mode")){
-  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/testing/creating-stats-columns.R")
+  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-3/creating-stats-columns.R")
 } else if(exists("online_mode") && online_mode == "offline"){
-  source("~/wosostats/code/testing/creating-stats-columns")
+  source("~/wosostats/code/version-3/creating-stats-columns")
 }
 
 getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA, location = "none", database=NA, per90=FALSE) {
