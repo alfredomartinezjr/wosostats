@@ -7,7 +7,7 @@ library(RCurl)
 if(!exists("online_mode")){
   source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/testing/creating-stats-columns.R")
 } else if(exists("online_mode") && online_mode == "offline"){
-  source("~/wosostats/code/testing/creating-stats-columns")
+  source("~/wosostats/code/testing/creating-stats-columns.R")
 }
 
 getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA, location = "none", database=NA, per90=FALSE) {
