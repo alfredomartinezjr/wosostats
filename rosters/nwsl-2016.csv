@@ -1,7 +1,7 @@
 Last.Name,First.Name,Team,Number,Primary.Position,Secondary.Position
 Beckmann,Eunice,BOS,99,F,
 Dowie,Natasha,BOS,9,F,
-Elby,Brooke,BOS,23,D,
+Elby,Brooke,BOS,23,D,FB
 Engen,Whitney,BOS,4,D,CB
 Kallman,Kassey,BOS,5,D,CB
 Karchouni,Ghoutia,BOS,29,M,
@@ -127,7 +127,7 @@ Morris,Meg,PTFC,44,D,
 Nadim,Nadia,PTFC,9,F,
 Pratt,Shade,PTFC,29,D,
 Raso,Hayley,PTFC,21,F,
-Reynolds,Katherine,PTFC,2,D,
+Reynolds,Katherine,PTFC,2,D,FB
 Shim,Mana,PTFC,6,M,
 Sinclair,Christine,PTFC,12,F,
 Skogerboe,Jennifer,PTFC,22,D,
@@ -181,19 +181,19 @@ Yanez,Beverly,SRFC,17,F,
 Banini,Estefania,WAS,10,M,
 Church,Whitney,WAS,5,D,
 Dunn,Crystal,WAS,19,F,
-Dydasco,Caprice,WAS,3,D,
+Dydasco,Caprice,WAS,3,D,CB
 Farquharson,Cali,WAS,17,F,
 Huster,Tori,WAS,23,M,
 Jensen,Line,WAS,27,D,
 Estelle,Johnson,WAS,24,D,
-Kleiner,Alyssa,WAS,22,D,
+Kleiner,Alyssa,WAS,22,D,FB
 Krieger,Ali,WAS,11,D,FB
 Labbe,Stephanie,WAS,1,GK,
 Lohman,Joanna,WAS,15,M,
 Matheson,Diana,WAS,8,M,
 Nairn,Christine,WAS,7,M,
 Ordega,Francisca,WAS,14,F,
-Oyster,Megan,WAS,4,D,
+Oyster,Megan,WAS,4,D,CB
 Stengel,Katie,WAS,12,F,
 Williams,Cheyna,WAS,20,F,
 Wys,Kelsey,WAS,18,GK,
@@ -202,7 +202,7 @@ Andrade,Lady,WNYF,16,M/F,
 Ayinde,Halimatu,WNYF,10,M,
 Cayman,Janice,WNYF,20,M,
 D'Angelo,Sabrina,WNYF,1,GK,
-Dahlkemper,Abby,WNYF,13,M,
+Dahlkemper,Abby,WNYF,13,M,CB
 Doniak,Makenzy,WNYF,3,F,
 Eckerstrom,Britt,WNYF,28,GK,
 Eddy,Elizabeth,WNYF,4,M,
@@ -221,4 +221,4 @@ Sanderson,Lianne,WNYF,10,F,
 Smith,Taylor,WNYF,11,F,
 Speck,Meredith,WNYF,25,M,
 Williams,Lynn,WNYF,9,F,
-Zerboni,McCall,WNYF,99,M,
+Zerboni,McCall,WNYF,99,M,DM
