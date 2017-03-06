@@ -95,11 +95,12 @@ createShotsColumns <- function(location="none", match_sheet=match_sheet){
                                                          new_divcol = list(name = "accuracy", 
                                                                            numerator = c("shots.scored", "shots.stopped.by.gk", "shots.stopped.by.def"), 
                                                                            denominator = c("shots.scored", "shots.stopped.by.gk", "shots.stopped.by.def", "shots.missed")),
-                                                         stat_names = c("Goals", "Shots Stopped by GK", "Shots Stopped by Def", "Shots Missed","Shots Blocked","Shots","Shot Accuracy"))
+                                                         stat_names = c("Goals", "Shots Stopped by GK", "Shots Stopped by Def", "Shots Missed","Shots Blocked","All Shots","Shot Accuracy"))
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(pattern = c(TRUE, FALSE), target_col = "pressed", source_df = match_subset, location = location,
                                                          new_sumcol = list(name = "shots", summed="TRUE|FALSE"),
                                                          new_divcol = list(name= "pct", numerator = "TRUE.", denominator = c("TRUE.","FALSE.")),
-                                                         stat_names = c("Shots Pressed", "Shots Not Pressed", "All Shots", "Pct Shots Pressed"))
+                                                         drop_cols = "Shots",
+                                                         stat_names = c("Shots Pressed", "Shots Not Pressed", "Shots", "Pct Shots Pressed"))
 
   for(index in 1:length(stats_cols)) {
     if(exists("merged_stats")) {
@@ -352,7 +353,7 @@ createPossessionColumns <- function(location="none", match_sheet) {
                                       target_col = "poss.action", source_df = match_sheet, location = location,
                                       new_sumcol = list(name="all.possessions.disrupted", summed="take.on|dispossessed|lost.touch"),
                                       drop_cols = c("take.on.lost"),
-                                      stat_names = c("Dispossessed","Lost Touches","All Possessions Disrupted"))
+                                      stat_names = c("Dispossessed by Opp","Lost Touches","All Possessions Disrupted"))
   
   for(index in 1:length(stats_cols)) {
     if(exists("merged_stats")) {
@@ -461,7 +462,7 @@ createDefActionsColumns <- function(location="none", match_sheet) {
                                                "tackles.ball.away", "tackles.ball.won", "tackles.ball",
                                                "dribbled.tackles.missed", "dribbled.out.run","dribbled.turned"),
                                    target_col = "def.action", source_df = match_subset, team = "def", location=location,
-                                   stat_names = c("Dispossessed","Pressured Opp","Challenged Opp","Tackles Ball Away","Tackles Ball Won",
+                                   stat_names = c("Dispossessed Opp","Pressured Opp","Challenged Opp","Tackles Ball Away","Tackles Ball Won",
                                                   "Tackles Ball","Dribbled Tackles Missed","Dribbled Out Run","Dribbled Turned"))
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(pattern = c("interceptions","blocks", "clearances", "ball.shield"),
                                       target_col = "def.action",source_df = match_subset,team = "def", location=location,
@@ -478,7 +479,7 @@ createDefActionsColumns <- function(location="none", match_sheet) {
   if(location=="none"){
     merged_stats$Tackles <- rowSums(merged_stats[,c("Tackles Ball Away","Tackles Ball Won","Tackles Ball")])
     merged_stats$Dribbled <- rowSums(merged_stats[,c("Dribbled Tackles Missed","Dribbled Out Run","Dribbled Turned")])
-    merged_stats$'All Opp Poss Disrupted' <- rowSums(merged_stats[,c("Tackles","Dispossessed")])
+    merged_stats$'All Opp Poss Disrupted' <- rowSums(merged_stats[,c("Tackles","Dispossessed Opp")])
     merged_stats <- merged_stats[,!names(merged_stats) %in% c("Tackles Ball Away","Tackles Ball Won", "Tackles Ball","Dribbled Tackles Missed","Dribbled Out Run","Dribbled Turned")]
   } else if(location=="thirds" | location == "zones"| location=="wings") {
     if(location=="zones"){
@@ -491,7 +492,7 @@ createDefActionsColumns <- function(location="none", match_sheet) {
     for(index in locations){
       merged_stats[,paste(index,"Tackles")] <- rowSums(merged_stats[,paste(index, c("Tackles Ball Away","Tackles Ball Won","Tackles Ball"))])
       merged_stats[,paste(index, "Dribbled")] <- rowSums(merged_stats[,paste(index, c("Dribbled Tackles Missed","Dribbled Out Run","Dribbled Turned"))])
-      merged_stats[,paste(index, "All Opp Poss Disrupted")] <- rowSums(merged_stats[,paste(index, c("Tackles","Dispossessed"))])
+      merged_stats[,paste(index, "All Opp Poss Disrupted")] <- rowSums(merged_stats[,paste(index, c("Tackles","Dispossessed Opp"))])
       merged_stats <- merged_stats[,!names(merged_stats) %in% paste(index, c("Tackles Ball Away","Tackles Ball Won", "Tackles Ball","Dribbled Tackles Missed","Dribbled Out Run","Dribbled Turned"))]
     }
   }
