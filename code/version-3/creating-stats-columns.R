@@ -696,43 +696,54 @@ createGkDistColumns <- function(location="none", match_sheet) {
   
 }
 
-recalculatePctColumns <- function(match_sheet, location="none") {
+recalculatePctColumns <- function(match_sheet, location="none", section="everything") {
   if(location == "none") {
-    match_sheet[,"Shot Accuracy"] <- rowSums(match_sheet[,c("Goals","Shots Stopped by GK", "Shots Stopped by Def")])/rowSums(match_sheet[,c("Goals","Shots Stopped by GK", "Shots Stopped by Def","Shots Missed")])
-    match_sheet[,"Pct Shots Pressed"] <- match_sheet[,"Shots Pressed"]/match_sheet[,"Shots"]
-    match_sheet[,"BC Conversion Pct"] <- match_sheet[,"BC Scored"]/match_sheet[,"Big Chances"]
-    match_sheet[,"Pass Comp Pct"] <- match_sheet[,"Pass Comp"]/match_sheet[,"Pass Att"]
-    match_sheet[,"opPass Comp Pct"] <- match_sheet[,"opPass Comp"]/match_sheet[,"opPass Att"]
-    match_sheet[,"PPass Comp Pct"] <- match_sheet[,"PPass Comp"]/match_sheet[,"PPass Att"]
-    match_sheet[,"Cross Comp Pct"] <- match_sheet[,"Cross Comp"]/match_sheet[,"Cross Att"]
-    match_sheet[,"Launch Comp Pct"] <- match_sheet[,"Launch Comp"]/match_sheet[,"Launch Att"]
-    match_sheet[,"Through Comp Pct"] <- match_sheet[,"Through Comp"]/match_sheet[,"Through Att"]
-    match_sheet[,"Throw In Comp Pct"] <- match_sheet[,"Throw In Comp"]/match_sheet[,"Throw In Att"]
-    match_sheet[,"fwPass Comp Pct"] <- match_sheet[,"fwPass Comp"]/match_sheet[,"fwPass Att"]
-    match_sheet[,"sPass Comp Pct"] <- match_sheet[,"sPass Comp"]/match_sheet[,"sPass Att"]
-    match_sheet[,"bPass Comp Pct"] <- match_sheet[,"bPass Comp"]/match_sheet[,"bPass Att"]
-    match_sheet[,"fwopPass Comp Pct"] <- match_sheet[,"fwopPass Comp"]/match_sheet[,"fwopPass Att"]
-    match_sheet[,"sopPass Comp Pct"] <- match_sheet[,"sopPass Comp"]/match_sheet[,"sopPass Att"]
-    match_sheet[,"bopPass Comp Pct"] <- match_sheet[,"bopPass Comp"]/match_sheet[,"bopPass Att"]
-    match_sheet[,"fwPPass Comp Pct"] <- match_sheet[,"fwPPass Comp"]/match_sheet[,"fwPPass Att"]
-    match_sheet[,"sPPass Comp Pct"] <- match_sheet[,"sPPass Comp"]/match_sheet[,"sPPass Att"]
-    match_sheet[,"bPPass Comp Pct"] <- match_sheet[,"bPPass Comp"]/match_sheet[,"bPPass Att"]
-    match_sheet[,"Pct opPass Pressed"] <- match_sheet[,"PPass Att"]/match_sheet[,"opPass Att"]
-    match_sheet[,c("rFreq Pass Fwd", "rFreq Pass Side", "rFreq Pass Back")] <- match_sheet[,c("fwPass Att","sPass Att","bPass Att")]/match_sheet[,"Pass Att"]
-    match_sheet[,c("rFreq opPass Fwd","rFreq opPass Side","rFreq opPass Back")] <-  match_sheet[,c("fwopPass Att","sopPass Att","bopPass Att")]/match_sheet[,"opPass Att"]
-    match_sheet[,c("rFreq PPass Fwd","rFreq PPass Side","rFreq PPass Back")] <-  match_sheet[,c("fwPPass Att","sPPass Att","bPPass Att")]/match_sheet[,"PPass Att"]
-    match_sheet[,"CK Comp Pct"] <- match_sheet[,"Corner Kicks Completed"]/match_sheet[,"Corner Kicks Taken"]
-    match_sheet[,"FK Pass Comp Pct"] <- match_sheet[,"FK Pass Comp"]/match_sheet[,"FK Pass Att"]
-    match_sheet[,"TO Win Pct"] <- match_sheet[,"TO Won"]/match_sheet[,"Take Ons"]
-    match_sheet[,"AD Win Pct"] <- match_sheet[,"AD Won"]/match_sheet[,"Aerial Duels"]
-    match_sheet[,"GperSOG"] <- match_sheet[,"Goals Allowed"]/match_sheet[,"GK SOG Faced"]
-    match_sheet[,"GperBCSOG"] <- match_sheet[,"BC Goals Allowed"]/match_sheet[,"BC SOG Faced"]
-    match_sheet[,"HB Win Pct"] <- match_sheet[,"HB Won"]/match_sheet[,"High Balls Faced"]
-    match_sheet[,"GK Overall Pass Comp Pct"] <- match_sheet[,"GK Overall Pass Comp"]/match_sheet[,"GK Overall Pass Att"]
-    match_sheet[,"GK Throw Comp Pct"] <- match_sheet[,"GK Throw Comp"]/match_sheet[,"GK Throw Att"]
-    match_sheet[,"GK Drop Kick Comp Pct"] <- match_sheet[,"GK Drop Kick Comp"]/match_sheet[,"GK Drop Kick Att"]
-    match_sheet[,"GKFK Comp Pct"] <- match_sheet[,"GKFK Comp"]/match_sheet[,"GKFK Att"]
-    
+    if(section=="everything" | section=="attacking"){
+      match_sheet[,"Shot Accuracy"] <- rowSums(match_sheet[,c("Goals","Shots Stopped by GK", "Shots Stopped by Def")])/rowSums(match_sheet[,c("Goals","Shots Stopped by GK", "Shots Stopped by Def","Shots Missed")])
+      match_sheet[,"Pct Shots Pressed"] <- match_sheet[,"Shots Pressed"]/match_sheet[,"Shots"]
+      match_sheet[,"BC Conversion Pct"] <- match_sheet[,"BC Scored"]/match_sheet[,"Big Chances"]
+    }
+    if(section=="everything" | section=="passing"){
+      match_sheet[,"Pass Comp Pct"] <- match_sheet[,"Pass Comp"]/match_sheet[,"Pass Att"]
+      match_sheet[,"opPass Comp Pct"] <- match_sheet[,"opPass Comp"]/match_sheet[,"opPass Att"]
+      match_sheet[,"PPass Comp Pct"] <- match_sheet[,"PPass Comp"]/match_sheet[,"PPass Att"]
+      match_sheet[,"Cross Comp Pct"] <- match_sheet[,"Cross Comp"]/match_sheet[,"Cross Att"]
+      match_sheet[,"Launch Comp Pct"] <- match_sheet[,"Launch Comp"]/match_sheet[,"Launch Att"]
+      match_sheet[,"Through Comp Pct"] <- match_sheet[,"Through Comp"]/match_sheet[,"Through Att"]
+      match_sheet[,"Throw In Comp Pct"] <- match_sheet[,"Throw In Comp"]/match_sheet[,"Throw In Att"]
+      match_sheet[,"opCross Comp Pct"] <- match_sheet[,"opCross Comp"]/match_sheet[,"opCross Att"]
+      match_sheet[,"opLaunch Comp Pct"] <- match_sheet[,"opLaunch Comp"]/match_sheet[,"opLaunch Att"]
+      match_sheet[,"opThrough Comp Pct"] <- match_sheet[,"opThrough Comp"]/match_sheet[,"opThrough Att"]
+      match_sheet[,"fwPass Comp Pct"] <- match_sheet[,"fwPass Comp"]/match_sheet[,"fwPass Att"]
+      match_sheet[,"sPass Comp Pct"] <- match_sheet[,"sPass Comp"]/match_sheet[,"sPass Att"]
+      match_sheet[,"bPass Comp Pct"] <- match_sheet[,"bPass Comp"]/match_sheet[,"bPass Att"]
+      match_sheet[,"fwopPass Comp Pct"] <- match_sheet[,"fwopPass Comp"]/match_sheet[,"fwopPass Att"]
+      match_sheet[,"sopPass Comp Pct"] <- match_sheet[,"sopPass Comp"]/match_sheet[,"sopPass Att"]
+      match_sheet[,"bopPass Comp Pct"] <- match_sheet[,"bopPass Comp"]/match_sheet[,"bopPass Att"]
+      match_sheet[,"fwPPass Comp Pct"] <- match_sheet[,"fwPPass Comp"]/match_sheet[,"fwPPass Att"]
+      match_sheet[,"sPPass Comp Pct"] <- match_sheet[,"sPPass Comp"]/match_sheet[,"sPPass Att"]
+      match_sheet[,"bPPass Comp Pct"] <- match_sheet[,"bPPass Comp"]/match_sheet[,"bPPass Att"]
+      match_sheet[,"Pct opPass Pressed"] <- match_sheet[,"PPass Att"]/match_sheet[,"opPass Att"]
+      match_sheet[,c("rFreq Pass Fwd", "rFreq Pass Side", "rFreq Pass Back")] <- match_sheet[,c("fwPass Att","sPass Att","bPass Att")]/match_sheet[,"Pass Att"]
+      match_sheet[,c("rFreq opPass Fwd","rFreq opPass Side","rFreq opPass Back")] <-  match_sheet[,c("fwopPass Att","sopPass Att","bopPass Att")]/match_sheet[,"opPass Att"]
+      match_sheet[,c("rFreq PPass Fwd","rFreq PPass Side","rFreq PPass Back")] <-  match_sheet[,c("fwPPass Att","sPPass Att","bPPass Att")]/match_sheet[,"PPass Att"]
+      match_sheet[,"CK Comp Pct"] <- match_sheet[,"Corner Kicks Completed"]/match_sheet[,"Corner Kicks Taken"]
+      match_sheet[,"FK Pass Comp Pct"] <- match_sheet[,"FK Pass Comp"]/match_sheet[,"FK Pass Att"]
+    }
+    if(section=="everything" | section=="possession"){
+      match_sheet[,"TO Win Pct"] <- match_sheet[,"TO Won"]/match_sheet[,"Take Ons"]
+      match_sheet[,"AD Win Pct"] <- match_sheet[,"AD Won"]/match_sheet[,"Aerial Duels"]
+      
+    }
+    if(section=="everything" | section=="goalkeeping"){
+      match_sheet[,"GperSOG"] <- match_sheet[,"Goals Allowed"]/match_sheet[,"GK SOG Faced"]
+      match_sheet[,"GperBCSOG"] <- match_sheet[,"BC Goals Allowed"]/match_sheet[,"BC SOG Faced"]
+      match_sheet[,"HB Win Pct"] <- match_sheet[,"HB Won"]/match_sheet[,"High Balls Faced"]
+      match_sheet[,"GK Overall Pass Comp Pct"] <- match_sheet[,"GK Overall Pass Comp"]/match_sheet[,"GK Overall Pass Att"]
+      match_sheet[,"GK Throw Comp Pct"] <- match_sheet[,"GK Throw Comp"]/match_sheet[,"GK Throw Att"]
+      match_sheet[,"GK Drop Kick Comp Pct"] <- match_sheet[,"GK Drop Kick Comp"]/match_sheet[,"GK Drop Kick Att"]
+      match_sheet[,"GKFK Comp Pct"] <- match_sheet[,"GKFK Comp"]/match_sheet[,"GKFK Att"]
+    }
     
   } else if(location == "zones" | location == "thirds" | location == "wings") {
     if(location=="zones"){
@@ -743,40 +754,51 @@ recalculatePctColumns <- function(match_sheet, location="none") {
       locations <- c("L3", "C3", "R3")
     }
     for(index in locations){
-      match_sheet[,paste(index, "Shot Accuracy")] <- rowSums(match_sheet[,paste(index, c("Goals","Shots Stopped by GK", "Shots Stopped by Def"))])/rowSums(match_sheet[,paste(index, c("Goals","Shots Stopped by GK", "Shots Stopped by Def","Shots Missed"))])
-      match_sheet[,paste(index,"Pct Shots Pressed")] <- match_sheet[,paste(index,"Shots Pressed")]/match_sheet[,paste(index,"Shots")]
-      match_sheet[,paste(index,"BC Conversion Pct")] <- match_sheet[,paste(index,"BC Scored")]/match_sheet[,paste(index,"Big Chances")]
-      match_sheet[,paste(index,"Pass Comp Pct")] <- match_sheet[,paste(index, "Pass Comp")]/match_sheet[,paste(index,"Pass Att")]
-      match_sheet[,paste(index,"opPass Comp Pct")] <- match_sheet[,paste(index,"opPass Comp")]/match_sheet[,paste(index,"opPass Att")]
-      match_sheet[,paste(index,"PPass Comp Pct")] <- match_sheet[,paste(index,"PPass Comp")]/match_sheet[,paste(index,"PPass Att")]
-      match_sheet[,paste(index,"Cross Comp Pct")] <- match_sheet[,paste(index,"Cross Comp")]/match_sheet[,paste(index,"Cross Att")]
-      match_sheet[,paste(index,"Launch Comp Pct")] <- match_sheet[,paste(index,"Launch Comp")]/match_sheet[,paste(index,"Launch Att")]
-      match_sheet[,paste(index,"Through Comp Pct")] <- match_sheet[,paste(index,"Through Comp")]/match_sheet[,paste(index,"Through Att")]
-      match_sheet[,paste(index,"Throw In Comp Pct")] <- match_sheet[,paste(index,"Throw In Comp")]/match_sheet[,paste(index,"Throw In Att")]
-      match_sheet[,paste(index,"fwPass Comp Pct")] <- match_sheet[,paste(index,"fwPass Comp")]/match_sheet[,paste(index,"fwPass Att")]
-      match_sheet[,paste(index,"sPass Comp Pct")] <- match_sheet[,paste(index,"sPass Comp")]/match_sheet[,paste(index,"sPass Att")]
-      match_sheet[,paste(index,"bPass Comp Pct")] <- match_sheet[,paste(index,"bPass Comp")]/match_sheet[,paste(index,"bPass Att")]
-      match_sheet[,paste(index,"fwopPass Comp Pct")] <- match_sheet[,paste(index,"fwopPass Comp")]/match_sheet[,paste(index,"fwopPass Att")]
-      match_sheet[,paste(index,"sopPass Comp Pct")] <- match_sheet[,paste(index,"sopPass Comp")]/match_sheet[,paste(index,"sopPass Att")]
-      match_sheet[,paste(index,"bopPass Comp Pct")] <- match_sheet[,paste(index,"bopPass Comp")]/match_sheet[,paste(index,"bopPass Att")]
-      match_sheet[,paste(index,"fwPPass Comp Pct")] <- match_sheet[,paste(index,"fwPPass Comp")]/match_sheet[,paste(index,"fwPPass Att")]
-      match_sheet[,paste(index,"sPPass Comp Pct")] <- match_sheet[,paste(index,"sPPass Comp")]/match_sheet[,paste(index,"sPPass Att")]
-      match_sheet[,paste(index,"bPPass Comp Pct")] <- match_sheet[,paste(index,"bPPass Comp")]/match_sheet[,paste(index,"bPPass Att")]
-      match_sheet[,paste(index,"Pct opPass Pressed")] <- match_sheet[,paste(index,"PPass Att")]/match_sheet[,paste(index,"opPass Att")]
-      match_sheet[,paste(index,c("rFreq Pass Fwd", "rFreq Pass Side", "rFreq Pass Back"))] <- match_sheet[,paste(index,c("fwPass Att","sPass Att","bPass Att"))]/match_sheet[,paste(index,"Pass Att")]
-      match_sheet[,paste(index,c("rFreq opPass Fwd","rFreq opPass Side","rFreq opPass Back"))] <-  match_sheet[,paste(index,c("fwopPass Att","sopPass Att","bopPass Att"))]/match_sheet[,paste(index,"opPass Att")]
-      match_sheet[,paste(index,c("rFreq PPass Fwd","rFreq PPass Side","rFreq PPass Back"))] <-  match_sheet[,paste(index,c("fwPPass Att","sPPass Att","bPPass Att"))]/match_sheet[,paste(index,"PPass Att")]
-      match_sheet[,paste(index,"CK Comp Pct")] <- match_sheet[,paste(index,"Corner Kicks Completed")]/match_sheet[,paste(index,"Corner Kicks Taken")]
-      match_sheet[,paste(index,"FK Pass Comp Pct")] <- match_sheet[,paste(index,"FK Pass Comp")]/match_sheet[,paste(index,"FK Pass Att")]
-      match_sheet[,paste(index,"TO Win Pct")] <- match_sheet[,paste(index,"TO Won")]/match_sheet[,paste(index,"Take Ons")]
-      match_sheet[,paste(index, "AD Win Pct")] <- match_sheet[,paste(index,"AD Won")]/match_sheet[,paste(index,"Aerial Duels")]
-      match_sheet[,paste(index,"GperSOG")] <- match_sheet[,paste(index,"Goals Allowed")]/match_sheet[,paste(index,"GK SOG Faced")]
-      match_sheet[,paste(index,"GperBCSOG")] <- match_sheet[,paste(index,"BC Goals Allowed")]/match_sheet[,paste(index,"BC SOG Faced")]
-      match_sheet[,paste(index,"HB Win Pct")] <- match_sheet[,paste(index,"HB Won")]/match_sheet[,paste(index,"High Balls Faced")]
-      match_sheet[,paste(index,"GK Overall Pass Comp Pct")] <- match_sheet[,paste(index,"GK Overall Pass Comp")]/match_sheet[,paste(index,"GK Overall Pass Att")]
-      match_sheet[,paste(index,"GK Throw Comp Pct")] <- match_sheet[,paste(index,"GK Throw Comp")]/match_sheet[,paste(index,"GK Throw Att")]
-      match_sheet[,paste(index,"GK Drop Kick Comp Pct")] <- match_sheet[,paste(index,"GK Drop Kick Comp")]/match_sheet[,paste(index,"GK Drop Kick Att")]
-      match_sheet[,paste(index,"GKFK Comp Pct")] <- match_sheet[,paste(index,"GKFK Comp")]/match_sheet[,paste(index,"GKFK Att")]
+      if(section=="everything" | section=="attacking"){
+        match_sheet[,paste(index, "Shot Accuracy")] <- rowSums(match_sheet[,paste(index, c("Goals","Shots Stopped by GK", "Shots Stopped by Def"))])/rowSums(match_sheet[,paste(index, c("Goals","Shots Stopped by GK", "Shots Stopped by Def","Shots Missed"))])
+        match_sheet[,paste(index,"Pct Shots Pressed")] <- match_sheet[,paste(index,"Shots Pressed")]/match_sheet[,paste(index,"Shots")]
+        match_sheet[,paste(index,"BC Conversion Pct")] <- match_sheet[,paste(index,"BC Scored")]/match_sheet[,paste(index,"Big Chances")]
+      }
+      if(section=="everything" | section=="passing"){
+        match_sheet[,paste(index,"Pass Comp Pct")] <- match_sheet[,paste(index, "Pass Comp")]/match_sheet[,paste(index,"Pass Att")]
+        match_sheet[,paste(index,"opPass Comp Pct")] <- match_sheet[,paste(index,"opPass Comp")]/match_sheet[,paste(index,"opPass Att")]
+        match_sheet[,paste(index,"PPass Comp Pct")] <- match_sheet[,paste(index,"PPass Comp")]/match_sheet[,paste(index,"PPass Att")]
+        match_sheet[,paste(index,"Cross Comp Pct")] <- match_sheet[,paste(index,"Cross Comp")]/match_sheet[,paste(index,"Cross Att")]
+        match_sheet[,paste(index,"Launch Comp Pct")] <- match_sheet[,paste(index,"Launch Comp")]/match_sheet[,paste(index,"Launch Att")]
+        match_sheet[,paste(index,"Through Comp Pct")] <- match_sheet[,paste(index,"Through Comp")]/match_sheet[,paste(index,"Through Att")]
+        match_sheet[,paste(index,"Throw In Comp Pct")] <- match_sheet[,paste(index,"Throw In Comp")]/match_sheet[,paste(index,"Throw In Att")]
+        match_sheet[,paste(index,"opCross Comp Pct")] <- match_sheet[,paste(index,"opCross Comp")]/match_sheet[,paste(index,"opCross Att")]
+        match_sheet[,paste(index,"opLaunch Comp Pct")] <- match_sheet[,paste(index,"opLaunch Comp")]/match_sheet[,paste(index,"opLaunch Att")]
+        match_sheet[,paste(index,"opThrough Comp Pct")] <- match_sheet[,paste(index,"opThrough Comp")]/match_sheet[,paste(index,"opThrough Att")]
+        match_sheet[,paste(index,"fwPass Comp Pct")] <- match_sheet[,paste(index,"fwPass Comp")]/match_sheet[,paste(index,"fwPass Att")]
+        match_sheet[,paste(index,"sPass Comp Pct")] <- match_sheet[,paste(index,"sPass Comp")]/match_sheet[,paste(index,"sPass Att")]
+        match_sheet[,paste(index,"bPass Comp Pct")] <- match_sheet[,paste(index,"bPass Comp")]/match_sheet[,paste(index,"bPass Att")]
+        match_sheet[,paste(index,"fwopPass Comp Pct")] <- match_sheet[,paste(index,"fwopPass Comp")]/match_sheet[,paste(index,"fwopPass Att")]
+        match_sheet[,paste(index,"sopPass Comp Pct")] <- match_sheet[,paste(index,"sopPass Comp")]/match_sheet[,paste(index,"sopPass Att")]
+        match_sheet[,paste(index,"bopPass Comp Pct")] <- match_sheet[,paste(index,"bopPass Comp")]/match_sheet[,paste(index,"bopPass Att")]
+        match_sheet[,paste(index,"fwPPass Comp Pct")] <- match_sheet[,paste(index,"fwPPass Comp")]/match_sheet[,paste(index,"fwPPass Att")]
+        match_sheet[,paste(index,"sPPass Comp Pct")] <- match_sheet[,paste(index,"sPPass Comp")]/match_sheet[,paste(index,"sPPass Att")]
+        match_sheet[,paste(index,"bPPass Comp Pct")] <- match_sheet[,paste(index,"bPPass Comp")]/match_sheet[,paste(index,"bPPass Att")]
+        match_sheet[,paste(index,"Pct opPass Pressed")] <- match_sheet[,paste(index,"PPass Att")]/match_sheet[,paste(index,"opPass Att")]
+        match_sheet[,paste(index,c("rFreq Pass Fwd", "rFreq Pass Side", "rFreq Pass Back"))] <- match_sheet[,paste(index,c("fwPass Att","sPass Att","bPass Att"))]/match_sheet[,paste(index,"Pass Att")]
+        match_sheet[,paste(index,c("rFreq opPass Fwd","rFreq opPass Side","rFreq opPass Back"))] <-  match_sheet[,paste(index,c("fwopPass Att","sopPass Att","bopPass Att"))]/match_sheet[,paste(index,"opPass Att")]
+        match_sheet[,paste(index,c("rFreq PPass Fwd","rFreq PPass Side","rFreq PPass Back"))] <-  match_sheet[,paste(index,c("fwPPass Att","sPPass Att","bPPass Att"))]/match_sheet[,paste(index,"PPass Att")]
+        match_sheet[,paste(index,"CK Comp Pct")] <- match_sheet[,paste(index,"Corner Kicks Completed")]/match_sheet[,paste(index,"Corner Kicks Taken")]
+        match_sheet[,paste(index,"FK Pass Comp Pct")] <- match_sheet[,paste(index,"FK Pass Comp")]/match_sheet[,paste(index,"FK Pass Att")]
+      }
+      if(section=="everything" | section=="possession"){
+        match_sheet[,paste(index,"TO Win Pct")] <- match_sheet[,paste(index,"TO Won")]/match_sheet[,paste(index,"Take Ons")]
+        match_sheet[,paste(index, "AD Win Pct")] <- match_sheet[,paste(index,"AD Won")]/match_sheet[,paste(index,"Aerial Duels")]
+      }
+      if(section=="everything" | section=="goalkeeping"){
+        match_sheet[,paste(index,"GperSOG")] <- match_sheet[,paste(index,"Goals Allowed")]/match_sheet[,paste(index,"GK SOG Faced")]
+        match_sheet[,paste(index,"GperBCSOG")] <- match_sheet[,paste(index,"BC Goals Allowed")]/match_sheet[,paste(index,"BC SOG Faced")]
+        match_sheet[,paste(index,"HB Win Pct")] <- match_sheet[,paste(index,"HB Won")]/match_sheet[,paste(index,"High Balls Faced")]
+        match_sheet[,paste(index,"GK Overall Pass Comp Pct")] <- match_sheet[,paste(index,"GK Overall Pass Comp")]/match_sheet[,paste(index,"GK Overall Pass Att")]
+        match_sheet[,paste(index,"GK Throw Comp Pct")] <- match_sheet[,paste(index,"GK Throw Comp")]/match_sheet[,paste(index,"GK Throw Att")]
+        match_sheet[,paste(index,"GK Drop Kick Comp Pct")] <- match_sheet[,paste(index,"GK Drop Kick Comp")]/match_sheet[,paste(index,"GK Drop Kick Att")]
+        match_sheet[,paste(index,"GKFK Comp Pct")] <- match_sheet[,paste(index,"GKFK Comp")]/match_sheet[,paste(index,"GKFK Att")]
+      }
     }
   }
   match_sheet
