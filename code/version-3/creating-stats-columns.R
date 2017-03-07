@@ -125,6 +125,9 @@ createChancesColumns <- function(location="none", match_sheet) {
   match_subset <- addColumnForMultiQualifiers(newcol = "key.assists", pattern = c("assists"=TRUE,"key.passes"=TRUE), 
                                               source_df = match_subset,
                                               exp = "AND")
+  match_subset <- addColumnForQualifier(newcol = "opPass", 
+                                        pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type",
+                                        ogdf = match_sheet, ndf = match_subset, invert = TRUE)
 
   stats_cols <- list()
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(pattern = c("big.chances.scored","big.chances.shot.on.goal", "big.chances.shot.missed", 
@@ -138,6 +141,7 @@ createChancesColumns <- function(location="none", match_sheet) {
                                       stat_names = c("BC Scored","BC SOG", "BC Shot Miss", "BC Dispossess", "BC Created", "BC Lost", "Big Chances","BC Conversion Pct"))
   
   match_subset <- createSubset(c("passes.f.c", "passes.f", "passes.s.c", "passes.s", "passes.b.c", "passes.b"), "poss.action", source_df = match_subset,clean=TRUE)
+  #all key passes & assists
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(pattern = TRUE,target_col = "assists", source_df = match_subset, location = location,
                                       stat_names = c("Assists"))
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(pattern = TRUE,target_col = "key.passes", source_df = match_subset, location = location,
@@ -146,6 +150,15 @@ createChancesColumns <- function(location="none", match_sheet) {
                                       stat_names = c("Key Assists"))
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(pattern = c(TRUE),target_col = "second.assists", source_df = match_subset, location = location,
                                       stat_names = c("Second Assists"))
+  #open play key passes & assists
+  stats_cols[[length(stats_cols)+1]] <- createStatsTable(pattern = TRUE,target_col = "assists", source_df = match_subset[match_subset[,"opPass"]==TRUE,], location = location,
+                                                         stat_names = c("Open Play Assists"))
+  stats_cols[[length(stats_cols)+1]] <- createStatsTable(pattern = TRUE,target_col = "key.passes", source_df = match_subset[match_subset[,"opPass"]==TRUE,], location = location,
+                                                         stat_names = c("Open Play Key Passes"))
+  stats_cols[[length(stats_cols)+1]] <- createStatsTable(pattern = c(TRUE),target_col = "key.assists", source_df = match_subset[match_subset[,"opPass"]==TRUE,], location = location,
+                                                         stat_names = c("Open Play Key Assists"))
+  stats_cols[[length(stats_cols)+1]] <- createStatsTable(pattern = c(TRUE),target_col = "second.assists", source_df = match_subset[match_subset[,"opPass"]==TRUE,], location = location,
+                                                         stat_names = c("Open Play Second Assists"))
   
   for(index in 1:length(stats_cols)) {
     if(exists("merged_stats")) {
@@ -185,6 +198,13 @@ createPassingColumns <- function(location="none", match_sheet) {
                                         stat_names = c("Through Comp", "Through Att", "Through Comp Pct"), isPassing = TRUE)
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isThrowIn"]==TRUE,], location = location,
                                         stat_names = c("Throw In Comp", "Throw In Att", "Throw In Comp Pct"), isPassing = TRUE)
+  #special open play passes
+  stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isCross"]==TRUE & match_subset[,"opPass"]==TRUE,], location = location, 
+                                                         stat_names = c("opCross Comp", "opCross Att","opCross Comp Pct"), isPassing = TRUE)
+  stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isLaunch"]==TRUE & match_subset[,"opPass"]==TRUE,], location = location, 
+                                                         stat_names = c("opLaunch Comp", "opLaunch Att", "opLaunch Comp Pct"), isPassing = TRUE)
+  stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = match_subset[match_subset[,"isThrough"]==TRUE & match_subset[,"opPass"]==TRUE,], location = location,
+                                                         stat_names = c("opThrough Comp", "opThrough Att", "opThrough Comp Pct"), isPassing = TRUE)
   #by direction - all passes
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(source_df = createSubset(c("passes.f.c", "passes.f"), "poss.action", source_df = match_subset, clean = TRUE), location = location, 
                                         stat_names = c("fwPass Comp", "fwPass Att", "fwPass Comp Pct"), isPassing = TRUE)
