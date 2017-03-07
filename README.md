@@ -18,5 +18,3 @@ The [source](https://github.com/amj2012/woso-stats/tree/master/source) folder is
 The [database.csv](https://github.com/amj2012/wosostats/blob/master/database.csv) file is the spreadsheet with every match that has been logged. This is also the list of matches that are represented in the WoSo Stats Shiny app. 
 
 The [stats.csv](https://github.com/amj2012/wosostats/blob/master/stats.csv) file is used by the WoSo Stats Shiny app and is a list of the stats represented in that app.
-
-The [wishlist.csv](https://github.com/amj2012/wosostats/blob/master/wishlist.csv) file was meant to be a place to note matches that we would like to log, but this spreadsheet has largely been unused for months and will likely be deleted soon.
