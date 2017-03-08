@@ -283,19 +283,19 @@ createPassRangeColumns <- function(match_sheet) {
   passRange <- character()
   for(i in 1:nrow(match_subset)) {
     passOrigin <- character()
-    if(grepl("D6|D18|D3",match_subset[i,"poss.location"])) {
+    if(grepl("D6|D18|D3|DL|DC|DR",match_subset[i,"poss.location"])) {
       passOrigin <- "D3"
     } else if (grepl("M",match_subset[i,"poss.location"])) {
       passOrigin <- "M3"
-    } else if (grepl("A6|A18|A3",match_subset[i,"poss.location"])) {
+    } else if (grepl("A6|A18|A3|AL|AC|AR",match_subset[i,"poss.location"])) {
       passOrigin <- "A3"
     }
     passDestination <- character()
-    if(grepl("D6|D18|D3",match_subset[i,"poss.play.destination"])) {
+    if(grepl("D6|D18|D3|DL|DC|DR",match_subset[i,"poss.play.destination"])) {
       passDestination <- "D3"
     } else if (grepl("M",match_subset[i,"poss.play.destination"])) {
       passDestination <- "M3"
-    } else if (grepl("A6|A18|A3",match_subset[i,"poss.play.destination"])) {
+    } else if (grepl("A6|A18|A3|AL|AC|AR",match_subset[i,"poss.play.destination"])) {
       passDestination <- "A3"
     }
     passRange[i] <- paste0("Pass.Comp.",passOrigin,"to",passDestination)
