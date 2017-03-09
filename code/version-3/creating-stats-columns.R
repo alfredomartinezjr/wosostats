@@ -313,7 +313,7 @@ createPassRangeColumns <- function(match_sheet) {
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(pattern = c("Pass.Comp.D3toD3", "Pass.Comp.D3toM3", "Pass.Comp.D3toA3", "Pass.Comp.M3toD3",
                                                                      "Pass.Comp.M3toM3", "Pass.Comp.M3toA3", "Pass.Comp.A3toD3", "Pass.Comp.A3toM3", 
                                                                      "Pass.Comp.A3toA3"),
-                                                         target_col = "pass.range", stat_names = cc("opPass.Comp.D3toD3", "opPass.Comp.D3toM3", "opPass.Comp.D3toA3", "opPass.Comp.M3toD3",
+                                                         target_col = "pass.range", stat_names = c("opPass.Comp.D3toD3", "opPass.Comp.D3toM3", "opPass.Comp.D3toA3", "opPass.Comp.M3toD3",
                                                                                                     "opPass.Comp.M3toM3", "opPass.Comp.M3toA3", "opPass.Comp.A3toD3", "opPass.Comp.A3toM3", 
                                                                                                     "opPass.Comp.A3toA3"),
                                                          source_df = match_subset[match_subset[,"opPass"]==TRUE,])
