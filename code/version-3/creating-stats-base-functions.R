@@ -166,15 +166,17 @@ createSubset <- function(pattern, col, source_df=match_sheet, clean=FALSE) {
 ## Adds column that fills in yes/no values based on qualifiers
 addColumnForQualifier <- function(newcol, pattern, patternLocation, ogdf, ndf, invert=FALSE) {
   newcol_vec <- logical(nrow(ndf))
-  for(match_sheet_row in 1:length(newcol_vec)) {
-    match_sheet_vec <- ogdf[ogdf[,"event"] == ndf[match_sheet_row,"event"],patternLocation]
-    if(invert) {
-      if (!(TRUE %in% grepl(pattern, match_sheet_vec))) {
-        newcol_vec[match_sheet_row] <- TRUE
-      }
-    } else {
-      if (TRUE %in% grepl(pattern, match_sheet_vec)) {
-        newcol_vec[match_sheet_row] <- TRUE
+  if(length(nrow(ndf)) > 0){
+    for(match_sheet_row in 1:length(newcol_vec)) {
+      match_sheet_vec <- ogdf[ogdf[,"event"] == ndf[match_sheet_row,"event"],patternLocation]
+      if(invert) {
+        if (!(TRUE %in% grepl(pattern, match_sheet_vec))) {
+          newcol_vec[match_sheet_row] <- TRUE
+        }
+      } else {
+        if (TRUE %in% grepl(pattern, match_sheet_vec)) {
+          newcol_vec[match_sheet_row] <- TRUE
+        }
       }
     }
   }
