@@ -68,6 +68,8 @@ createStatsTable <- function(pattern=character(), target_col=character(), source
       locations <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML", "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
     } else if(location=="thirds"){
       locations <- c("D3", "M3", "A3")
+    } else if(location=="wings"){
+      locations <- c("L3", "C3", "R3")
     }
     for(index in locations) {
       location_df <- source_df[source_df[,index] == TRUE,]
