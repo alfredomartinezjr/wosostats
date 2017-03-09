@@ -279,6 +279,9 @@ createPassRangeColumns <- function(match_sheet) {
                                                                    pattern = c("passes.f.c", "passes.f", "passes.s.c",
                                                                                "passes.s", "passes.b.c", "passes.b")))
   match_subset <- match_subset[match_subset[,"completed"]==TRUE,]
+  match_subset <- addColumnForQualifier(newcol = "opPass", 
+                                        pattern="throw|gk|corner.kick|free.kick|goal.kick", patternLocation = "play.type",
+                                        ogdf = match_sheet, ndf = match_subset, invert = TRUE)
   
   passRange <- character()
   for(i in 1:nrow(match_subset)) {
@@ -302,10 +305,15 @@ createPassRangeColumns <- function(match_sheet) {
   }
   match_subset$pass.range <- passRange
   
-  merged_stats <- createStatsTable(pattern = c("Pass.Comp.D3toD3", "Pass.Comp.D3toM3", "Pass.Comp.D3toA3", "Pass.Comp.M3toD3",
+  stats_cols <- list()
+  stats_cols[[length(stats_cols)+1]] <- createStatsTable(pattern = c("Pass.Comp.D3toD3", "Pass.Comp.D3toM3", "Pass.Comp.D3toA3", "Pass.Comp.M3toD3",
                                                "Pass.Comp.M3toM3", "Pass.Comp.M3toA3", "Pass.Comp.A3toD3", "Pass.Comp.A3toM3", 
                                                "Pass.Comp.A3toA3"),
                                    target_col = "pass.range", source_df = match_subset)
+  stats_cols[[length(stats_cols)+1]] <- createStatsTable(pattern = c("Pass.Comp.D3toD3", "Pass.Comp.D3toM3", "Pass.Comp.D3toA3", "Pass.Comp.M3toD3",
+                                                                     "Pass.Comp.M3toM3", "Pass.Comp.M3toA3", "Pass.Comp.A3toD3", "Pass.Comp.A3toM3", 
+                                                                     "Pass.Comp.A3toA3"),
+                                                         target_col = "pass.range", source_df = match_subset[match_subset[,"opPass"]==TRUE,])
   merged_stats
 }
 
