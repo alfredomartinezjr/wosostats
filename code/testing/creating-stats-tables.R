@@ -10,7 +10,7 @@ if(!exists("online_mode")){
   source("~/wosostats/code/version-3/creating-stats-columns.R")
 }
 
-getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA, location="none", section="everything", database=NA, per90=FALSE) {
+getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA, location="none", section="everything", per90=FALSE, database=NA) {
   if(!is.na(matchURL)) {
     match_sheet <- getURL(matchURL)
     match_sheet <- read.csv(textConnection(match_sheet), stringsAsFactors = FALSE)
@@ -142,7 +142,7 @@ getMatchFiles <- function(competition.slug, type, team=NA, round=NA, multi_round
   assign("match_names", names, pos=1)
 }
 
-getStatsInBulk <- function(competition.slug, type="match.csv.link", team=NA, round=NA, multi_round=NA, month_year=NA, location="none",section=section,location_complete = FALSE, per90=FALSE) {
+getStatsInBulk <- function(competition.slug, type="match.csv.link", team=NA, round=NA, multi_round=NA, month_year=NA, location="none",location_complete = FALSE, per90=FALSE, section="everything") {
   database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
   database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
   
@@ -159,7 +159,7 @@ getStatsInBulk <- function(competition.slug, type="match.csv.link", team=NA, rou
 
 
 #Given a match_list list with all the matches, rbinds them
-mergeStatsList <- function(stats_list, add_per90 = FALSE, location="none", section=section) {
+mergeStatsList <- function(stats_list, add_per90 = FALSE, location="none",section="everything") {
   #Creates a blank overall table
   all_stats_binded <- do.call("rbind", stats_list)
   all_players <- unique(all_stats_binded[,c("Player", "Team", "Number")])
@@ -176,7 +176,7 @@ mergeStatsList <- function(stats_list, add_per90 = FALSE, location="none", secti
   }
   names(all_stats) <- gsub("\\."," ", names(all_stats))
   
-  all_stats <- recalculatePctColumns(all_stats,location = location, section=section)
+  all_stats <- recalculatePctColumns(all_stats,location=location, section=section)
   if(TRUE %in% (grepl("90", names(all_stats))) | add_per90 == TRUE) {
     #calculate p90 columns
     colnamesForp90 <- grep("Player|Team|Number|^GP$|^MP$|^GS$|[Pp]ct|[Aa]ccuracy|rFreq|GperSOG|GperBCSOG|90", colnames(all_stats),invert = TRUE)
