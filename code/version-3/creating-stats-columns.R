@@ -313,7 +313,19 @@ createPassRangeColumns <- function(match_sheet) {
   stats_cols[[length(stats_cols)+1]] <- createStatsTable(pattern = c("Pass.Comp.D3toD3", "Pass.Comp.D3toM3", "Pass.Comp.D3toA3", "Pass.Comp.M3toD3",
                                                                      "Pass.Comp.M3toM3", "Pass.Comp.M3toA3", "Pass.Comp.A3toD3", "Pass.Comp.A3toM3", 
                                                                      "Pass.Comp.A3toA3"),
-                                                         target_col = "pass.range", source_df = match_subset[match_subset[,"opPass"]==TRUE,])
+                                                         target_col = "pass.range", stat_names = cc("opPass.Comp.D3toD3", "opPass.Comp.D3toM3", "opPass.Comp.D3toA3", "opPass.Comp.M3toD3",
+                                                                                                    "opPass.Comp.M3toM3", "opPass.Comp.M3toA3", "opPass.Comp.A3toD3", "opPass.Comp.A3toM3", 
+                                                                                                    "opPass.Comp.A3toA3"),
+                                                         source_df = match_subset[match_subset[,"opPass"]==TRUE,])
+  
+  for(index in 1:length(stats_cols)) {
+    if(exists("merged_stats")) {
+      merged_stats <- merge(merged_stats, stats_cols[[index]], by=c("Player","Team","Number"), all=TRUE)
+    } else {
+      merged_stats <- stats_cols[[index]]
+    }
+  }
+  
   merged_stats
 }
 
