@@ -17,15 +17,15 @@ if(!exists("online_mode")){
 # Internal files to include--------
 if(online_mode == "online") {
   base_directory = "https://raw.githubusercontent.com/amj2012/wosostats/master/"
-  code_directory = paste(base_directory, "code/testing/", sep="")
+  code_directory = paste(base_directory, "code/version-3/", sep="")
   source(paste(code_directory, "abbreviations.R", sep=""))
   source(paste(code_directory, "tidy-excel-functions.R", sep=""))
   rosters <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/rosters/nwsl-2016.csv")
   rosters <- read.csv(textConnection(rosters), stringsAsFactors = FALSE)
   rm(base_directory, code_directory)
 } else if(online_mode == "offline") {
-  source("~/wosostats/code/testing/abbreviations.R")
-  source("~/wosostats/code/testing/tidy-excel-functions.R")
+  source("~/wosostats/code/version-3/abbreviations.R")
+  source("~/wosostats/code/version-3/tidy-excel-functions.R")
   rosters <- read.csv("~/wosostats/rosters/nwsl-2016.csv")
 }
 

@@ -215,7 +215,7 @@ isCompletedPass <- function(sheet_row, match_df) {
     # checks if "poss.player.disciplinary" column is blank
     !grepl("fouls|fouls|yellow|red|penalties", match_df[match_df[,"event"] == sheet_event & !is.na(match_df[,"event"]),"poss.player.disciplinary"]) &&
     # checks if the ball didn't go out of bounds
-    !grepl("out.of.bounds", match_df[match_df[,"event"] == sheet_event & !is.na(match_df[,"event"]),"poss.notes"])
+    !(TRUE %in% grepl("out.of.bounds", match_df[match_df[,"event"] == sheet_event & !is.na(match_df[,"event"]),"poss.notes"]))
 }
 
 tidyMatchExcel <- function(match.file) {
