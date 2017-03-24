@@ -66,16 +66,26 @@ createStatsTable <- function(pattern=character(), target_col=character(), source
   } else if(location=="zones" | location=="thirds") {
     if(location=="zones"){
       locations <- c("D6", "D18", "DL", "DC","DR", "DML", "DMC", "DMR", "AML", "AMC", "AMR", "AL", "AC", "AR", "A18", "A6")
+      if(team=="def"){
+        opposites <- c("A6", "A18", "AR", "AC", "AL", "AMR", "AMC", "AML", "DMR", "DMC", "DML", "DR", "DC", "DL", "D18", "D6")
+      }
     } else if(location=="thirds"){
       locations <- c("D3", "M3", "A3")
+      if(team=="def"){
+        opposites <- c("A3", "M3", "D3")
+      }
     } else if(location=="wings"){
       locations <- c("L3", "C3", "R3")
+      if(team=="def") {
+        opposites <- c("R3", "C3", "R3")
+      }
     }
     for(index in locations) {
-      location_df <- source_df[source_df[,index] == TRUE,]
       if(team == "poss") {
+        location_df <- source_df[source_df[,index] == TRUE,]
         location_table <- table(paste(location_df$poss.team, location_df$poss.number, location_df$poss.player, sep="_"), location_df[,target_col])
       } else if (team == "def") {
+        location_df <- source_df[source_df[,opposites[grep(index, locations)]] == TRUE,]
         location_table <- table(paste(location_df$def.team, location_df$def.number, location_df$def.player, sep="_"), location_df[,target_col])
       }
       location_table <- data.frame(unclass(location_table))
