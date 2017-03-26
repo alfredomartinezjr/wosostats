@@ -77,7 +77,7 @@ In the GIF above, Leigh Ann Brown, the player in white and blue, moves with the 
 
 The above example on an Excel spreadsheet would look like this, with each "movement" in it's own row in the poss.action column, triggering a new event each time:
 
-![](http://i.imgur.com/vOolLGF.png)
+![](http://i.imgur.com/Sedv8gv.png)
 
 **Take ons won** - `take.on.won`, `tkw`
 
