@@ -128,7 +128,7 @@ getMatchFiles <- function(competition.slug, type, team=NA, round=NA, multi_round
     } else {
       matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),type]
       
-      names_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"competition.slug"]
+      competition_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"competition.slug"]
       names_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"matchup"]
       dates_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"date"]
       names <- tolower(paste(competition_matchup,names_matchup,dates_matchup,sep = "-"))
