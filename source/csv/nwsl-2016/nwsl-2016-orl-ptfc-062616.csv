@@ -1319,7 +1319,7 @@
 "1208","90+2","D","ORL","Hickmann Alves","passes.b.c","DML","DMC",NA,"M","PTFC","Horan","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1209","90+2","D","ORL","Catley","passes.f.c","DMC","DMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1210","90+2","D","ORL","Alleway","passes.f","DMR",NA,"launch","GK","PTFC","Betos","gk.loose.balls.won","D18","collected",NA,NA,NA,NA,NA,NA,NA,NA
-"1211","90+3","GK","PTFC","Betos","passes.f.c","D18","DMR","gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1211","90+3","GK","PTFC","Betos","passes.f","D18",NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1211","90+3",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "1212","90+3","D","ORL","Belanger","passes.f.c","DMR","AMR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1213","90+3","D","ORL","Witteman","lost.touch","AMR",NA,NA,"M","PTFC","Horan","challenged","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA

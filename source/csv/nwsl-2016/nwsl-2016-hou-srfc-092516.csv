@@ -870,7 +870,7 @@
 "823","49","M","SRFC","Winters","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "824","49","M","SRFC","Rapinoe","passes.f",NA,NA,"through","D","HOU","Poliana","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "824","49",NA,NA,NA,NA,NA,NA,NA,"D","HOU","Brush","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-"825","49","M","SRFC","Rapinoe","passes.s.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"825","49","M","SRFC","Rapinoe","passes.s",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "825","49",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "826","50","D","HOU","Moros","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "827","50","F","HOU","Ohai","passes.b.c",NA,NA,NA,"F","SRFC","Melis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1460,7 +1460,7 @@
 "1371","85","M","SRFC","Little","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1372","85","M","SRFC","Little","passes.b.c",NA,NA,NA,"M","HOU","O'Sullivan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1373","85","M","SRFC","Fishlock","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1374","85","F","SRFC","Melis","passes.f.c",NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1374","85","F","SRFC","Melis","passes.f",NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1374","85",NA,NA,NA,NA,NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "1375","85","F","SRFC","Yanez","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1376","86","M","SRFC","Elston","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

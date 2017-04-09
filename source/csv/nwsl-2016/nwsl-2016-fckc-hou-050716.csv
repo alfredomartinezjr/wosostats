@@ -461,7 +461,7 @@
 "441","26",NA,NA,NA,NA,NA,NA,NA,"M","HOU","Brian","pressured","DC",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "442","27","M","FCKC","O'Reilly","passes.b.c","AR","AR","corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "443","27","M","FCKC","Buczkowski","passes.s","AR",NA,"corner.crosses","M","HOU","Brooks","clearances","D18",NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-"444","28","M","FCKC","O'Reilly","passes.s.c","AR","D6","corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"444","28","M","FCKC","O'Reilly","passes.s","AR",NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "444","28",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "445","28","GK","HOU","Williams","passes.f.c","D6","DR","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "446","28","D","HOU","Brush","passes.f.c","DR","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -757,7 +757,7 @@
 "711","45","M","FCKC","Buczkowski","passes.f.c","DMC","AMC",NA,"M","HOU","Brian","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "712","45","M","FCKC","Laddish","passes.b.c","AMC","DMC",NA,"M","HOU","Brooks","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "712","45",NA,NA,NA,NA,NA,NA,NA,"F","HOU","Beckie","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"713","45","M","FCKC","O'Reilly","passes.f.c","DMC","DR","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"713","45","M","FCKC","O'Reilly","passes.f","DMC",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "713","45",NA,NA,NA,NA,NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "713","45",NA,NA,NA,NA,NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "714","45","D","HOU","Poliana","passes.b.c","DR","DR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -859,7 +859,7 @@
 "801","50","D","HOU","Poliana","passes.f","DMR",NA,"through","D","FCKC","Taylor","blocks","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "802","50","F","HOU","Ubogagu","recoveries","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "803","50","F","HOU","Ubogagu","passes.f.c","AMR","AR",NA,"D","FCKC","Sauerbrunn","pressured","DML",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"804","50","F","HOU","O'Sullivan","passes.f.c","AR","DL",NA,"M","FCKC","Buczkowski","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"804","50","F","HOU","O'Sullivan","passes.f","AR",NA,NA,"M","FCKC","Buczkowski","pressured","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "804","50",NA,NA,NA,NA,NA,NA,NA,"D","FCKC","Sauerbrunn","pressured","DL",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "805","51","D","FCKC","Frisbie","passes.f.c","DL","DL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "806","51","M","FCKC","Laddish","passes.f","DL",NA,"flick.on","M","HOU","Brooks","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -871,7 +871,7 @@
 "812","51","F","HOU","Daly","passes.f","AC",NA,"flick.on","D","FCKC","Averbuch","pressured","DC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "813","51","D","FCKC","Sauerbrunn","recoveries","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "814","51","D","FCKC","Sauerbrunn","passes.f.c","DL","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"815","51","M","FCKC","Scott","passes.f.c","DL","AMR",NA,"D","HOU","Poliana","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"815","51","M","FCKC","Scott","passes.f","DL",NA,NA,"D","HOU","Poliana","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "815","51",NA,NA,NA,NA,NA,NA,NA,"F","HOU","Beckie","pressured","AR",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "816","51","D","HOU","Poliana","passes.f.c","AMR","AR","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "817","51","F","HOU","Ubogagu","passes.b.c","AR","AMC",NA,"D","FCKC","Frisbie","challenged","DL",NA,NA,NA,NA,NA,NA,NA,NA,NA

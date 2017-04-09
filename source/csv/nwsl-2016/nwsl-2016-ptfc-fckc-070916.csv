@@ -492,7 +492,7 @@
 "415","25","D","FCKC","Averbuch","ball.shield",NA,NA,NA,"M","PTFC","Shim","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "416","25","D","FCKC","Averbuch","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "417","25","D","FCKC","Bowen","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"418","25","D","FCKC","Bowen","passes.f.c",NA,NA,NA,"M","PTFC","Pratt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"418","25","D","FCKC","Bowen","passes.f",NA,NA,NA,"M","PTFC","Pratt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "418","25",NA,NA,NA,NA,NA,NA,NA,"F","PTFC","Nadim","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "419","26","D","PTFC","Weber","passes.f",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "420","26","F","PTFC","Nadim","aerial.lost",NA,NA,NA,"M","FCKC","Tymrak","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -715,7 +715,7 @@
 "614","39","D","PTFC","Weber","passes.f",NA,NA,"throw.in","M","FCKC","Tymrak","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "615","39","D","PTFC","Weber","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "616","39","M","PTFC","Boureille","passes.b.c",NA,NA,NA,"M","FCKC","Tymrak","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"617","39","M","PTFC","Boureille","passes.f.c",NA,NA,"launch","F","FCKC","Groom","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"617","39","M","PTFC","Boureille","passes.f",NA,NA,"launch","F","FCKC","Groom","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "617","39",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "618","39","D","FCKC","Bowen","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "619","39","M","FCKC","Silva","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

@@ -65,7 +65,7 @@
 "59","3","M","PTFC","Heath","passes.b.c",NA,NA,NA,"M","SRFC","Little","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "59","3",NA,NA,NA,NA,NA,NA,NA,"M","SRFC","Kawasumi","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "60","3","M","PTFC","Henry","passes.f.c",NA,NA,NA,"F","SRFC","Melis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"61","3","D","PTFC","Menges","passes.f.c",NA,NA,"launch","M","SRFC","Kawasumi","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"61","3","D","PTFC","Menges","passes.f",NA,NA,"launch","M","SRFC","Kawasumi","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "61","3",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "62","3","D","SRFC","Mathias","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "63","3","M","SRFC","Little","passes.s.c",NA,NA,NA,"M","PTFC","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -251,7 +251,7 @@
 "224","13","M","SRFC","Winters","passes.b.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "225","13","D","SRFC","Barnes","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "226","13","D","SRFC","Fletcher","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"227","13","D","SRFC","Barnes","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"227","13","D","SRFC","Barnes","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "227","13",NA,NA,NA,NA,NA,NA,"through","D","PTFC","Reynolds","tackles.ball",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "228","14","M","SRFC","Kawasumi","passes.s",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "228","14",NA,NA,NA,NA,NA,NA,"corner.crosses","GK","PTFC","Betos","gk.high.balls.won",NA,"caught","reaching",NA,NA,NA,NA,NA,NA,NA
@@ -655,7 +655,7 @@
 "578","36","M","PTFC","Long","passes.b.c",NA,NA,NA,"F","SRFC","Melis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "579","36","D","PTFC","Klingenberg","passes.s.c",NA,NA,NA,"F","SRFC","Yanez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "580","36","D","PTFC","Menges","passes.f.c",NA,NA,"launch","M","SRFC","Little","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"581","36","M","PTFC","Heath","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"581","36","M","PTFC","Heath","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "581","36",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "582","36","D","SRFC","Mathias","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "583","36","M","SRFC","Little","passes.b.c",NA,NA,"lay.off","M","PTFC","Heath","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -700,7 +700,7 @@
 "615","38",NA,NA,NA,"stoppage.in.play",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "616","39","D","PTFC","Klingenberg","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "617","39","M","PTFC","Shim","passes.b.c",NA,NA,"lay.off","M","SRFC","Little","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"618","39","D","PTFC","Klingenberg","passes.f.c",NA,NA,"launch","F","SRFC","Yanez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"618","39","D","PTFC","Klingenberg","passes.f",NA,NA,"launch","F","SRFC","Yanez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "618","39",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "619","39","D","SRFC","Mathias","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "620","39","D","PTFC","Klingenberg","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1255,7 +1255,7 @@
 "1104","76","M","PTFC","Long","passes.s.c",NA,NA,"switch","F","SRFC","Yanez","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1105","76","D","PTFC","Menges","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1106","76","M","PTFC","Horan","passes.s.c",NA,NA,NA,"M","SRFC","Little","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1107","77","D","PTFC","Menges","passes.f.c",NA,NA,"launch","M","SRFC","Little","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1107","77","D","PTFC","Menges","passes.f",NA,NA,"launch","M","SRFC","Little","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1107","77",NA,NA,NA,NA,NA,NA,NA,"M","SRFC","Kawasumi","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "1108","77","M","SRFC","Kawasumi","passes.f",NA,NA,"throw.in","D","PTFC","Klingenberg","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "1109","77","D","SRFC","Mathias","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

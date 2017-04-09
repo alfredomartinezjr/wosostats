@@ -995,7 +995,7 @@
 "840","65",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "841","65","M","PTFC","Long","aerial.lost",NA,NA,NA,"M","WNYF","Mewis","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "842","65","D","PTFC","Klingenberg","ball.shield",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-"843","66","M","PTFC","Heath","passes.s.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"843","66","M","PTFC","Heath","passes.s",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "843","66",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "844","66","GK","WNYF","D'Angelo","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "844","66",NA,NA,NA,NA,NA,NA,"launch","D","PTFC","Klingenberg","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
@@ -1776,7 +1776,7 @@
 "1517","112","F","PTFC","Brynjarsdottir","passes.s.c",NA,NA,NA,"M","WNYF","Erceg","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1518","112","F","PTFC","Raso","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1519","112","M","PTFC","Heath","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1520","112","M","PTFC","Henry","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1520","112","M","PTFC","Henry","passes.f",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1520","112",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1520","112",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "1521","113","GK","WNYF","D'Angelo","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

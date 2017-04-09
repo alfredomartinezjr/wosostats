@@ -92,7 +92,7 @@
 "80","4","F","HOU","Ohai","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "81","4","F","HOU","Ohai","passes.s",NA,NA,"corner.crosses","D","PTFC","Sonnett","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "82","4","F","HOU","Ohai","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"83","4","F","HOU","Ohai","passes.s.c",NA,NA,"corner.crosses","D","PTFC","Sonnett","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"83","4","F","HOU","Ohai","passes.s",NA,NA,"corner.crosses","D","PTFC","Sonnett","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "83","5",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Reynolds","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "84","5","GK","PTFC","Betos","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "85","5","D","PTFC","Menges","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -349,7 +349,7 @@
 "309","17","M","PTFC","Heath","passes.b.c",NA,NA,NA,"F","HOU","Beckie","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "310","17","D","PTFC","Menges","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "311","17","M","PTFC","Long","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"312","17","M","PTFC","Henry","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"312","17","M","PTFC","Henry","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "312","17",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "313","18","GK","HOU","Williams","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "314","18","D","HOU","Moros","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -363,7 +363,7 @@
 "322","18","M","PTFC","Horan","passes.s.c",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "323","18","D","PTFC","Menges","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "324","18","M","PTFC","Horan","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"325","18","M","PTFC","Henry","passes.f.c",NA,NA,"launch","M","HOU","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"325","18","M","PTFC","Henry","passes.f",NA,NA,"launch","M","HOU","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "325","18",NA,NA,NA,NA,NA,NA,"through","M","HOU","O'Sullivan","pressured",NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "326","19","GK","HOU","Williams","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "326","19",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -463,7 +463,7 @@
 "411","23","D","PTFC","Sonnett","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "412","23","D","PTFC","Reynolds","passes.b.c",NA,NA,"lay.off","F","HOU","Ohai","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "413","23","D","PTFC","Sonnett","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"414","23","M","PTFC","Long","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"414","23","M","PTFC","Long","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "414","23",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "415","23","GK","HOU","Williams","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "415","23",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

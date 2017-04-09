@@ -640,7 +640,7 @@
 "576","44","GK","HOU","Williams","passes.f.c","D18","D3R","gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "577","44","D","HOU","Poliana","passes.f.c","D3R","AM3C","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "577","44",NA,NA,NA,NA,NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"578","44","M","HOU","Andressa","passes.f.c","AM3C","D6","launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"578","44","M","HOU","Andressa","passes.f","AM3C",NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "578","44",NA,NA,NA,NA,NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "579","45","GK","CRS","Naeher","passes.f","D6",NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "579","45",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

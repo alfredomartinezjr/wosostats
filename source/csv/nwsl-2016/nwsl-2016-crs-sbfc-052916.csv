@@ -72,7 +72,7 @@
 "67","4","M","CRS","Da Costa","passes.b.c","DML","DMC",NA,"F","SBFC","Conheeney","pressured","AMR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "68","4","D","CRS","Naughton","passes.f.c","DMC","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "69","4","M","CRS","Colaprico","passes.f.c","DMC","AMC",NA,"F","SBFC","Conheeney","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"70","4","M","CRS","Hoy","passes.f.c","AMC","DL",NA,"M","SBFC","Gordon","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"70","4","M","CRS","Hoy","passes.f","AMC",NA,NA,"M","SBFC","Gordon","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "70","4",NA,NA,NA,NA,NA,NA,NA,"D","SBFC","Rampone","pressured","DMC",NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "71","4","D","SBFC","Simon","passes.f.c","DL","DL","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "72","4","M","SBFC","Killion","passes.b.c","DL","DL",NA,"M","CRS","Da Costa","pressured","AR",NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -790,7 +790,7 @@
 "715","45","M","SBFC","Killion","passes.f.c","DMC","AMC",NA,"M","CRS","Colaprico","pressured","AMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "716","45","F","SBFC","Conheeney","passes.b.c","AMC","AMC",NA,"M","CRS","Colaprico","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "717","45","M","SBFC","Killion","passes.f.c","AMC","AL",NA,"F","CRS","Mautz","pressured","DMC",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"718","45","M","SBFC","Lytle","passes.f.c","AL","D6","corner.crosses","D","CRS","Gilliland","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"718","45","M","SBFC","Lytle","passes.f","AL",NA,"corner.crosses","D","CRS","Gilliland","pressured","DR",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "718","45",NA,NA,NA,NA,NA,NA,NA,"GK","CRS","Dalton","gk.high.balls.lost","D18","missed.the.ball",NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "719","45","GK","CRS","Dalton","passes.f.c","D6","DR","goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "720","45+1","D","CRS","Naughton","passes.f.c","DR","AMR","launch","F","SBFC","DeCesare","pressured","AL",NA,NA,NA,NA,NA,NA,NA,NA,NA

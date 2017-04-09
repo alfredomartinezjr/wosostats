@@ -543,7 +543,7 @@
 "479","32","D","PTFC","Klingenberg","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "480","32","D","PTFC","Menges","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "481","32","M","PTFC","Long","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"482","32","D","PTFC","Reynolds","passes.f.c",NA,NA,"launch","M","SBFC","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"482","32","D","PTFC","Reynolds","passes.f",NA,NA,"launch","M","SBFC","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "482","32",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "483","32","D","SBFC","Simon","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "484","32","M","SBFC","O'Hara","ball.shield",NA,NA,NA,"D","PTFC","Reynolds","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1340,7 +1340,7 @@
 "1195","86",NA,NA,NA,NA,NA,NA,NA,"M","SBFC","Stanton","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1196","86","M","SBFC","Stanton","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1197","86","M","SBFC","O'Hara","passes.f.c",NA,NA,"deep.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1198","86","M","SBFC","Kerr","passes.f.c",NA,NA,"flick.on","D","PTFC","Menges","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1198","86","M","SBFC","Kerr","passes.f",NA,NA,"flick.on","D","PTFC","Menges","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1198","86",NA,NA,NA,NA,NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "1199","86","GK","PTFC","Betos","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1199","86",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

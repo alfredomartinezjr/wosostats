@@ -235,7 +235,7 @@
 "210","14","D","HOU","Brush","passes.f",NA,NA,"launch","M","PTFC","Fitzgerald","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "210","14",NA,NA,NA,NA,NA,NA,NA,"D","PTFC","Menges","clearances",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "211","14","D","HOU","Privett","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"212","14","M","HOU","Brooks","passes.f.c",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"212","14","M","HOU","Brooks","passes.f",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "212","14",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "213","14","D","PTFC","Williamson","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "214","14","F","PTFC","Nadim","aerial.won",NA,NA,NA,"D","HOU","Moros","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -339,7 +339,7 @@
 "301","21",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "302","21","D","HOU","Roccaro","aerial.lost",NA,NA,NA,"D","PTFC","Williamson","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "302","21",NA,NA,NA,NA,NA,NA,NA,"GK","PTFC","Betos","gk.high.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,NA
-"303","21","GK","PTFC","Betos","passes.f.c",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"303","21","GK","PTFC","Betos","passes.f",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "303","21",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "304","21","D","HOU","Moros","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "305","21","F","HOU","Henderson","passes.s",NA,NA,NA,"M","PTFC","Weber","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -679,7 +679,7 @@
 "603","45+1","GK","PTFC","Betos","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "604","45+1","D","PTFC","Menges","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "605","45+1","M","PTFC","Shim","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"606","45+1","M","PTFC","Weber","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"606","45+1","M","PTFC","Weber","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "606","45+1",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "607","45+2","D","HOU","Moros","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "608","45+2","M","HOU","O'Sullivan",NA,NA,NA,NA,"D","PTFC","Williamson",NA,NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
@@ -1090,7 +1090,7 @@
 "959","70","M","PTFC","Raso","take.on.lost",NA,NA,NA,"D","HOU","Privett","tackles.ball",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
 "960","70","F","HOU","Henderson","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "961","71","D","HOU","Ochs","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"962","71","F","PTFC","Nadim","passes.s.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"962","71","F","PTFC","Nadim","passes.s",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "962","71",NA,NA,NA,NA,NA,NA,"corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "963","71","GK","HOU","Henninger","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "963","71",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

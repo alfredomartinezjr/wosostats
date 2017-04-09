@@ -391,7 +391,7 @@
 "367","21",NA,NA,NA,NA,NA,NA,NA,"M","BOS","Schillgard","pressured","AM3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "368","21","D","SBFC","Rampone","movement","D3C","D3R",NA,"F","BOS","McCaffrey","pressured","A3C",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "369","21","D","SBFC","Rampone","passes.f.c","D3R","DM3R",NA,"F","BOS","McCaffrey","pressured","A3L",NA,NA,NA,NA,NA,NA,NA,NA,NA
-"370","21","M","SBFC","Hayes","passes.f.c","DM3R","DM3L","headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"370","21","M","SBFC","Hayes","passes.f","DM3R",NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "370","21",NA,NA,NA,NA,NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "371","21","D","BOS","Pathman","passes.b.c","DM3L","DM3L","throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "372","21","D","BOS","Kallman","passes.b.c","DM3L","D3C",NA,"F","SBFC","Kai","pressured","AM3R",NA,NA,NA,NA,NA,NA,NA,NA,NA

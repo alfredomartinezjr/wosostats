@@ -333,7 +333,7 @@
 "278","19","M","HOU","O'Sullivan","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "279","20","M","HOU","O'Sullivan","dispossessed",NA,NA,NA,"D","WNYF","Hinkle","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "280","20","D","WNYF","Hinkle","ball.shield",NA,NA,NA,"M","HOU","O'Sullivan","pressured",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
-"281","20","GK","WNYF","Rowland","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"281","20","GK","WNYF","Rowland","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "281","20",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "282","20","D","HOU","Moros","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "283","20","F","HOU","Ohai","passes.b",NA,NA,NA,"F","WNYF","McDonald","blocks",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
@@ -567,7 +567,7 @@
 "485","38",NA,NA,NA,NA,NA,NA,"launch","D","HOU","Brush","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "486","38","M","WNYF","Sanderson","passes.f",NA,NA,NA,"M","HOU","Ochs","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "487","38","GK","HOU","Henninger","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"488","38","GK","HOU","Henninger","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"488","38","GK","HOU","Henninger","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "488","38",NA,NA,NA,NA,NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "489","38","D","WNYF","Eddy","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "490","38","F","HOU","Daly","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -928,7 +928,7 @@
 "794","57","M","WNYF","Doniak","passes.s.c",NA,"A18","corner.crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "795","57","F","WNYF","Williams","shots.stopped.by.gk","A18",NA,NA,"D","HOU","Roccaro","challenged","D18",NA,NA,NA,NA,NA,NA,NA,NA,NA
 "795","57",NA,NA,NA,NA,NA,NA,NA,"GK","HOU","Henninger","gk.s.o.g.stop",NA,"collected","standing",NA,NA,NA,NA,NA,NA,NA
-"796","57","GK","HOU","Henninger","passes.f.c",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"796","57","GK","HOU","Henninger","passes.f",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "796","57",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "797","57","D","WNYF","Hinkle","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "798","58","M","WNYF","Doniak","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1004,7 +1004,7 @@
 "863","61","D","WNYF","Hinkle","take.on.won",NA,NA,NA,"M","HOU","Ochs","dribbled.turned",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "864","61","D","WNYF","Hinkle","shots.stopped.by.gk","A3L",NA,NA,"M","HOU","Ochs","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "864","61",NA,NA,NA,NA,NA,NA,NA,"GK","HOU","Henninger","gk.s.o.g.stop",NA,"collected","stooping",NA,NA,NA,NA,NA,NA,NA
-"865","61","GK","HOU","Henninger","passes.f.c",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"865","61","GK","HOU","Henninger","passes.f",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "865","61",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "866","62","D","WNYF","Hinkle","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "867","62","M","WNYF","Doniak","passes.b.c",NA,NA,NA,"M","HOU","Ochs","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1036,7 +1036,7 @@
 "893","64","GK","HOU","Henninger","passes.f",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "893","64",NA,NA,NA,NA,NA,NA,"launch","D","WNYF","Hinkle","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "894","64","D","HOU","Brush","aerial.won",NA,NA,NA,"F","WNYF","Williams","aerial.lost",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
-"895","64","D","HOU","Brush","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"895","64","D","HOU","Brush","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "895","64",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "896","65","D","WNYF","Hinkle","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "897","65","M","WNYF","Sanderson","dispossessed",NA,NA,NA,"M","HOU","Ochs","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1194,7 +1194,7 @@
 "1029","74","M","WNYF","Sanderson","passes.f.c",NA,NA,NA,"M","HOU","Brooks","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1030","74","F","WNYF","McDonald","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "1031","74","D","HOU","Privett","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"1032","74","F","HOU","Daly","passes.f.c",NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1032","74","F","HOU","Daly","passes.f",NA,NA,"flick.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1032","74",NA,NA,NA,NA,NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "1033","74","D","WNYF","Hinkle","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1034","74","F","WNYF","McDonald","aerial.won",NA,NA,NA,"M","HOU","Brooks","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1421,7 +1421,7 @@
 "1221","90+2","D","WNYF","Niemiec","passes.f",NA,NA,"launch","D","HOU","Privett","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1222","90+2","F","HOU","Ohai","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1223","90+2","F","HOU","Ohai","fouls.won",NA,NA,NA,"D","WNYF","Hinkle","fouls.conceded",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,NA,NA
-"1224","90+2","M","HOU","Brooks","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1224","90+2","M","HOU","Brooks","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1224","90+2",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
 "1225","90+3","D","WNYF","Hinkle","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1226","90+3","M","WNYF","Zerboni","dispossessed",NA,NA,NA,"F","HOU","Daly","dispossessed",NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA
