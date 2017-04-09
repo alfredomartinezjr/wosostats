@@ -36,3 +36,8 @@ if(online_mode == "online") {
 
 # tidyMultiMatchExcels(competition.slug, team="teamacronym", round="week-X")
 
+# for (index in 1:length(tidied_list)) {
+#   file_name <- tidied_names[index]
+#   write.csv(tidied_list[[index]], file=file_name, row.names = FALSE)
+# }
+
