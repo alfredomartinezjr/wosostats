@@ -120,14 +120,18 @@ getMatchFiles <- function(competition.slug, type, team=NA, round=NA, multi_round
     }
     if(location_complete == TRUE) {
       matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes",type]
+      
+      competition_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","competition.slug"]
       names_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","matchup"]
       dates_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","date"]
-      names <- paste(names_matchup,dates_matchup,sep = "-")
+      names <- tolower(paste(competition_matchup,names_matchup,dates_matchup,sep = "-"))
     } else {
       matches <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),type]
+      
+      names_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"competition.slug"]
       names_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"matchup"]
       dates_matchup <- database[database[,"competition.slug"] == competition.slug & !is.na(database[,"match.csv.link"]),"date"]
-      names <- paste(names_matchup,dates_matchup,sep = "-")
+      names <- tolower(paste(competition_matchup,names_matchup,dates_matchup,sep = "-"))
     }
   }
   match_list <- vector("list", 0)
