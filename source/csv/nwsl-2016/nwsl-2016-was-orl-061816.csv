@@ -45,7 +45,7 @@ event,time,poss.position,poss.team,poss.player,poss.action,poss.location,poss.pl
 43,3,F,WAS,Banini,passes.f.c,NA,NA,through,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 44,3,D,WAS,Krieger,passes.s,NA,NA,corner.crosses,F,ORL,Spencer,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 44,3,NA,NA,NA,NA,NA,NA,NA,F,ORL,Spencer,interceptions,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45,3,NA,NA,Spencer (23),passes.f.c,NA,NA,launch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45,3,NA,ORL,Spencer,passes.f.c,NA,NA,launch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 46,3,F,ORL,Morgan,ball.shield,NA,NA,NA,D,WAS,Oyster,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 47,3,F,ORL,Morgan,passes.f,NA,NA,NA,D,WAS,Oyster,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 47,3,NA,NA,NA,NA,NA,NA,NA,D,WAS,Oyster,blocks,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -60,7 +60,7 @@ event,time,poss.position,poss.team,poss.player,poss.action,poss.location,poss.pl
 56,3,M,WAS,Matheson,dispossessed,NA,NA,NA,D,ORL,Hickmann Alves,tackles.ball,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 57,3,D,ORL,Hickmann Alves,passes.f.c,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 58,3,D,ORL,Edmonds,passes.s.c,NA,NA,NA,D,WAS,Huster,challenged,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-59,3,NA,NA,Spencer (23),passes.f.c,NA,DM3L,NA,D,WAS,Krieger,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+59,3,NA,ORL,Spencer,passes.f.c,NA,DM3L,NA,D,WAS,Krieger,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 60,3,F,ORL,Morgan,movement,DM3L,AM3L,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 61,3,F,ORL,Morgan,passes.f,NA,NA,through,D,WAS,Oyster,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 62,3,D,WAS,Zadorsky,recoveries,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -70,7 +70,7 @@ event,time,poss.position,poss.team,poss.player,poss.action,poss.location,poss.pl
 66,4,D,ORL,Pressley,passes.f.c,NA,NA,headed,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 67,4,D,ORL,Hickmann Alves,passes.f.c,NA,NA,headed,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 67,4,NA,NA,NA,NA,NA,NA,flick.on,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-68,4,NA,NA,Spencer (23),passes.b.c,NA,NA,NA,D,WAS,Krieger,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+68,4,NA,ORL,Spencer,passes.b.c,NA,NA,NA,D,WAS,Krieger,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 69,4,D,ORL,Hickmann Alves,passes.f.c,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 70,4,D,ORL,Edmonds,lost.touch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,out.of.bounds.lost.poss,NA,NA,NA,NA,NA
 71,4,D,WAS,Krieger,passes.f.c,NA,NA,throw.in,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -78,8 +78,8 @@ event,time,poss.position,poss.team,poss.player,poss.action,poss.location,poss.pl
 72,4,NA,NA,NA,NA,NA,NA,NA,D,ORL,Hickmann Alves,interceptions,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 73,4,D,ORL,Hickmann Alves,passes.f.c,NA,NA,headed,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 74,4,F,ORL,Morgan,passes.f.c,NA,NA,through,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-75,4,NA,NA,Spencer (23),take.on.won,NA,NA,NA,D,WAS,Krieger,dribbled.out.run,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-76,4,NA,NA,Spencer (23),passes.s,NA,NA,corner.crosses,D,WAS,Zadorsky,interceptions,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+75,4,NA,ORL,Spencer,take.on.won,NA,NA,NA,D,WAS,Krieger,dribbled.out.run,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+76,4,NA,ORL,Spencer,passes.s,NA,NA,corner.crosses,D,WAS,Zadorsky,interceptions,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 77,4,D,WAS,Zadorsky,passes.f.c,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 78,4,F,WAS,Banini,passes.f.c,NA,NA,NA,D,ORL,Catley,pressured,NA,NA,NA,NA,NA,fouls.conceded,NA,NA,NA,NA
 79,5,GK,WAS,Labbe,passes.f,NA,NA,free.kick,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -103,7 +103,7 @@ event,time,poss.position,poss.team,poss.player,poss.action,poss.location,poss.pl
 96,5,F,ORL,Belanger,recoveries,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 97,5,F,ORL,Belanger,passes.s.c,NA,NA,NA,F,WAS,Banini,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 98,6,D,ORL,Catley,passes.f.c,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-99,6,NA,NA,Spencer (23),passes.b.c,NA,NA,NA,D,WAS,Krieger,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+99,6,NA,ORL,Spencer,passes.b.c,NA,NA,NA,D,WAS,Krieger,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 100,6,D,ORL,Hickmann Alves,passes.f,NA,NA,NA,M,WAS,Matheson,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 100,6,NA,NA,NA,NA,NA,NA,NA,D,WAS,Kleiner,interceptions,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 101,6,D,WAS,Kleiner,passes.f.c,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -134,8 +134,8 @@ event,time,poss.position,poss.team,poss.player,poss.action,poss.location,poss.pl
 124,7,F,ORL,Belanger,passes.s.c,NA,NA,NA,M,WAS,Nairn,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 125,7,D,ORL,Hickmann Alves,passes.f.c,NA,NA,NA,F,WAS,Ordega,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 126,7,D,ORL,Evans,passes.f,NA,NA,deep.crosses,D,WAS,Huster,blocks,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-127,7,NA,NA,Spencer (23),recoveries,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-128,7,NA,NA,Spencer (23),lost.touch,NA,NA,NA,D,WAS,Krieger,ball.shield,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+127,7,NA,ORL,Spencer,recoveries,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+128,7,NA,ORL,Spencer,lost.touch,NA,NA,NA,D,WAS,Krieger,ball.shield,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 129,7,D,WAS,Zadorsky,recoveries,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 130,7,D,WAS,Zadorsky,passes.f.c,NA,NA,NA,F,ORL,Spencer,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 131,7,F,WAS,Dunn,take.on.won,NA,NA,NA,D,ORL,Evans,dribbled.turned,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -246,7 +246,7 @@ event,time,poss.position,poss.team,poss.player,poss.action,poss.location,poss.pl
 224,17,NA,NA,NA,NA,NA,NA,corner.crosses,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 225,17,GK,ORL,Harris,passes.f.c,NA,NA,goal.kick,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 225,17,NA,NA,NA,NA,NA,NA,launch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-226,17,NA,NA,Spencer (23),passes.b,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+226,17,NA,ORL,Spencer,passes.b,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 227,18,F,WAS,Dunn,recoveries,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 228,18,F,WAS,Dunn,dispossessed,NA,NA,NA,D,ORL,Edmonds,tackles.ball,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 229,18,D,ORL,Edmonds,passes.s.c,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -271,12 +271,12 @@ event,time,poss.position,poss.team,poss.player,poss.action,poss.location,poss.pl
 245,19,F,ORL,Morgan,aerial.won,NA,NA,NA,D,WAS,Zadorsky,aerial.lost,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 246,19,F,ORL,Morgan,passes.f.c,NA,NA,flick.on,D,WAS,Zadorsky,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 246,19,NA,NA,NA,NA,NA,NA,headed,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-247,19,NA,NA,Spencer (23),passes.s,NA,NA,corner.crosses,D,WAS,Zadorsky,interceptions,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+247,19,NA,ORL,Spencer,passes.s,NA,NA,corner.crosses,D,WAS,Zadorsky,interceptions,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 248,19,D,WAS,Huster,passes.f,NA,NA,NA,D,ORL,Witteman,pressured,NA,NA,NA,NA,out.of.bounds.lost.poss,NA,NA,NA,NA,NA
 249,19,F,ORL,Belanger,passes.b.c,NA,NA,throw.in,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 250,19,D,ORL,Hickmann Alves,passes.s.c,NA,NA,NA,F,WAS,Dunn,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 251,19,D,ORL,Pressley,passes.f,NA,NA,launch,F,WAS,Banini,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-252,19,NA,NA,Spencer (23),offside.calls,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+252,19,NA,ORL,Spencer,offside.calls,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 252,19,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 253,19,GK,WAS,Labbe,passes.f,NA,NA,goal.kick,NA,NA,NA,NA,NA,NA,NA,NA,out.of.bounds.lost.poss,NA,NA,NA,NA,NA
 253,19,NA,NA,NA,NA,NA,NA,launch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -441,8 +441,8 @@ event,time,poss.position,poss.team,poss.player,poss.action,poss.location,poss.pl
 396,30,NA,NA,NA,NA,NA,NA,NA,GK,ORL,Harris,gk.s.o.g.stop,D18,deflected.to.danger,diving,NA,NA,NA,NA,NA,NA,NA
 396,30,NA,NA,NA,NA,NA,NA,NA,D,ORL,Pressley,clearances,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 396,30,NA,NA,NA,NA,NA,NA,NA,D,ORL,Catley,clearances,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-397,30,NA,NA,Spencer (23),recoveries,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-398,30,NA,NA,Spencer (23),passes.s.c,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+397,30,NA,ORL,Spencer,recoveries,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+398,30,NA,ORL,Spencer,passes.s.c,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 399,30,D,ORL,Evans,passes.b.c,NA,NA,NA,D,WAS,Huster,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 400,30,D,ORL,Pressley,passes.s.c,NA,NA,switch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 401,30,F,ORL,Belanger,passes.f.c,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -452,7 +452,7 @@ event,time,poss.position,poss.team,poss.player,poss.action,poss.location,poss.pl
 405,30,D,WAS,Krieger,passes.f,NA,NA,NA,F,ORL,Spencer,blocks,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 406,30,D,ORL,Evans,recoveries,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 407,30,D,ORL,Evans,passes.f.c,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-408,30,NA,NA,Spencer (23),take.on.won,NA,NA,NA,D,WAS,Krieger,challenged,NA,NA,NA,fouls.won,NA,fouls.conceded,NA,NA,NA,NA
+408,30,NA,ORL,Spencer,take.on.won,NA,NA,NA,D,WAS,Krieger,challenged,NA,NA,NA,fouls.won,NA,fouls.conceded,NA,NA,NA,NA
 409,31,NA,ORL,Alleway,shots.stopped.by.gk,A3C,NA,free.kick,GK,WAS,Labbe,gk.s.o.g.stop,D6,caught,standing,NA,NA,NA,NA,NA,NA,NA
 410,31,GK,WAS,Labbe,passes.f,NA,NA,gk.drop.kick,D,ORL,Catley,clearances,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 410,31,NA,NA,NA,NA,NA,NA,launch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -467,7 +467,7 @@ event,time,poss.position,poss.team,poss.player,poss.action,poss.location,poss.pl
 418,32,NA,ORL,Alleway,passes.f,NA,NA,launch,GK,WAS,Labbe,clearances,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 419,32,D,ORL,Pressley,recoveries,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 420,32,D,ORL,Pressley,passes.f.c,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-421,32,NA,NA,Spencer (23),passes.s,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+421,32,NA,ORL,Spencer,passes.s,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 422,32,D,WAS,Huster,recoveries,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 423,32,D,WAS,Huster,passes.f.c,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 424,32,M,WAS,Nairn,passes.f.c,NA,NA,through,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -509,8 +509,8 @@ event,time,poss.position,poss.team,poss.player,poss.action,poss.location,poss.pl
 454,37,F,ORL,Belanger,passes.b.c,NA,NA,NA,D,WAS,Huster,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 455,37,D,ORL,Evans,take.on.won,NA,NA,NA,M,WAS,Matheson,dribbled.tackles.missed,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 456,37,D,ORL,Evans,passes.f.c,NA,A3L,switch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-457,37,NA,NA,Spencer (23),movement,A3L,A18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-458,37,NA,NA,Spencer (23),passes.s,NA,NA,corner.crosses,D,WAS,Krieger,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+457,37,NA,ORL,Spencer,movement,A3L,A18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+458,37,NA,ORL,Spencer,passes.s,NA,NA,corner.crosses,D,WAS,Krieger,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 458,37,NA,NA,NA,NA,NA,NA,NA,D,WAS,Zadorsky,clearances,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 459,37,F,WAS,Dunn,recoveries,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 460,37,F,WAS,Dunn,dispossessed,NA,NA,NA,F,ORL,Belanger,tackles.ball,NA,NA,NA,NA,out.of.bounds.keep.poss,NA,NA,NA,NA,NA
@@ -619,8 +619,8 @@ event,time,poss.position,poss.team,poss.player,poss.action,poss.location,poss.pl
 557,44,D,ORL,Catley,passes.b.c,NA,NA,corner.kick,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 558,44,D,ORL,Edmonds,passes.s,NA,NA,corner.crosses,F,WAS,Dunn,pressured,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 558,44,NA,NA,NA,NA,NA,NA,NA,D,WAS,Kleiner,clearances,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-559,44,NA,NA,Spencer (23),recoveries,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-560,44,NA,NA,Spencer (23),shots.missed,A3C,NA,NA,F,WAS,Banini,pressured,D3C,NA,NA,NA,out.of.bounds.lost.poss,NA,NA,NA,NA,NA
+559,44,NA,ORL,Spencer,recoveries,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+560,44,NA,ORL,Spencer,shots.missed,A3C,NA,NA,F,WAS,Banini,pressured,D3C,NA,NA,NA,out.of.bounds.lost.poss,NA,NA,NA,NA,NA
 561,45,GK,WAS,Labbe,passes.f.c,NA,NA,goal.kick,GK,WAS,Labbe,gk.shot.miss,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 562,45,D,WAS,Krieger,passes.f.c,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 563,45,M,WAS,Nairn,passes.s.c,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
