@@ -720,7 +720,7 @@ recalculatePctColumns <- function(match_sheet, location="none", section="everyth
   if(location == "none") {
     if(section=="everything" | section=="attacking"){
       match_sheet[,"Shot Accuracy"] <- rowSums(match_sheet[,c("Goals","Shots Stopped by GK", "Shots Stopped by Def")])/rowSums(match_sheet[,c("Goals","Shots Stopped by GK", "Shots Stopped by Def","Shots Missed")])
-      match_sheet[,"Pct Shots Pressed"] <- match_sheet[,"Shots Pressed"]/match_sheet[,"Shots"]
+      match_sheet[,"Pct Shots Pressed"] <- match_sheet[,"Shots Pressed"]/match_sheet[,"All Shots"]
       match_sheet[,"BC Conversion Pct"] <- match_sheet[,"BC Scored"]/match_sheet[,"Big Chances"]
     }
     if(section=="everything" | section=="passing"){
@@ -776,7 +776,7 @@ recalculatePctColumns <- function(match_sheet, location="none", section="everyth
     for(index in locations){
       if(section=="everything" | section=="attacking"){
         match_sheet[,paste(index, "Shot Accuracy")] <- rowSums(match_sheet[,paste(index, c("Goals","Shots Stopped by GK", "Shots Stopped by Def"))])/rowSums(match_sheet[,paste(index, c("Goals","Shots Stopped by GK", "Shots Stopped by Def","Shots Missed"))])
-        match_sheet[,paste(index,"Pct Shots Pressed")] <- match_sheet[,paste(index,"Shots Pressed")]/match_sheet[,paste(index,"Shots")]
+        match_sheet[,paste(index,"Pct Shots Pressed")] <- match_sheet[,paste(index,"Shots Pressed")]/match_sheet[,paste(index,"All Shots")]
         match_sheet[,paste(index,"BC Conversion Pct")] <- match_sheet[,paste(index,"BC Scored")]/match_sheet[,paste(index,"Big Chances")]
       }
       if(section=="everything" | section=="passing"){
