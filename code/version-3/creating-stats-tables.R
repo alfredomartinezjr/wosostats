@@ -16,7 +16,7 @@ getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA,
     match_sheet <- read.csv(textConnection(match_sheet), stringsAsFactors = FALSE)
   } else if (!is.na(filename)) {
     match_sheet <- read.csv(filename, stringsAsFactors = FALSE)
-  } else if (!is.na(match_csv)) {
+  } else if (is.data.frame(match_csv)) {
     match_sheet <- match_csv
   } else if (!is.na(matchup)){
     if(is.na(database)) {
