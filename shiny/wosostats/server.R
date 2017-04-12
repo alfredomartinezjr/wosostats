@@ -2,7 +2,7 @@ library(RCurl)
 library(dplyr)
 database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
 database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
-stats <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/stats.csv")
+stats <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/resources/shiny-stats.csv")
 stats <- read.csv(textConnection(stats), stringsAsFactors = FALSE)
 
 shinyServer(function(input, output) {
@@ -34,7 +34,6 @@ shinyServer(function(input, output) {
   })
   
   output$shots <- renderDataTable(dataInput()[,c("Player","Team","GP","GS","MP",stats[stats[,"Panel"]=="Shots","Acronym"])], options = list(pageLength = 10))
-  output$shotlocation <- renderDataTable(dataInput()[,c("Player","Team","GP","GS","MP", "Shots" ,stats[stats[,"Panel"]=="Shot Location","Acronym"])], options = list(pageLength = 10))
   output$keypasses <- renderDataTable(dataInput()[,c("Player","Team","GP","GS","MP",stats[stats[,"Panel"]=="Key Passes","Acronym"])], options = list(pageLength = 10))
   output$bigchances <- renderDataTable(dataInput()[,c("Player","Team","GP","GS","MP",stats[stats[,"Panel"]=="Big Chances","Acronym"])], options = list(pageLength = 10))
   
@@ -50,9 +49,6 @@ shinyServer(function(input, output) {
   output$openplaydirectionpassing <- renderDataTable(dataInput()[,c("Player","Team","GP","GS","MP",stats[stats[,"Panel"]=="Open Play Passing By Direction","Acronym"])], options = list(pageLength = 10))
   output$passingpressure <- renderDataTable(dataInput()[,c("Player","Team","GP","GS","MP",stats[stats[,"Panel"]=="Passing Under Pressure","Acronym"], stats[stats[,"Panel"]=="Adjusted Passing Under Pressure","Acronym"])], options = list(pageLength = 10))
   output$directionpressuredpassing <- renderDataTable(dataInput()[,c("Player","Team","GP","GS","MP",stats[stats[,"Panel"]=="Passing Under Pressure by Direction","Acronym"])], options = list(pageLength = 10))
-  output$locationpassing <- renderDataTable(dataInput()[,c("Player","Team","GP","GS","MP",stats[stats[,"Panel"]=="Passing by Location","Acronym"])], options = list(pageLength = 10))
-  output$locationopenplaypassing <- renderDataTable(dataInput()[,c("Player","Team","GP","GS","MP",stats[stats[,"Panel"]=="Open Play Passing by Location","Acronym"])], options = list(pageLength = 10))
-  output$passingrange <- renderDataTable(dataInput()[,c("Player","Team","GP","GS","MP",stats[stats[,"Panel"]=="Passing Range","Acronym"])], options = list(pageLength = 10))
   
   output$possession <- renderDataTable(dataInput()[,c("Player","Team","GP","GS","MP",stats[stats[,"Panel"]=="Possession","Acronym"])], options = list(pageLength = 10))
   output$aerialduels <- renderDataTable(dataInput()[,c("Player","Team","GP","GS","MP",stats[stats[,"Panel"]=="Aerial Duels","Acronym"])], options = list(pageLength = 10))
