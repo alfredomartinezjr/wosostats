@@ -146,19 +146,20 @@ getMatchFiles <- function(competition.slug, type, team=NA, round=NA, multi_round
   assign("match_names", names, pos=1)
 }
 
-getStatsInBulk <- function(competition.slug, type="match.csv.link", team=NA, round=NA, multi_round=NA, month_year=NA, location="none",location_complete = FALSE, per90=FALSE, section="everything") {
+getStatsInBulk <- function(competition.slug, type, team=NA, round=NA, multi_round=NA, month_year=NA, location="none",location_complete = FALSE, per90=FALSE, section="everything") {
   database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
   database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
   
-  getMatchFiles(competition.slug=competition.slug, type="match.csv.link", team=team, round=round, multi_round=multi_round, month_year=month_year, location_complete=location_complete, database=database)
-
-  stats_list <- list()
-  for (index in 1:length(match_list)) {
-    all <- getStatsForMatch(match_csv = match_list[[index]], location=location, section=section, per90 = per90)
-    stats_list[[index]] <- all
-  }
+  getMatchFiles(competition.slug=competition.slug, type=type, team=team, round=round, multi_round=multi_round, month_year=month_year, location_complete=location_complete, database=database)
   
-  stats_list
+  if(type=="match.csv.link"){
+    stats_list <- list()
+    for (index in 1:length(match_list)){
+      all <- getStatsForMatch(match_csv = match_list[[index]], location=location, section=section, per90 = per90)
+      stats_list[[index]] <- all
+    }
+    stats_list
+  }
 }
 
 
