@@ -6,10 +6,9 @@
 #
 # OR
 # source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-3/creating-stats-tables.R")
-# getMatchFiles(competition.slug = "nwsl-2016", type="match.csv.link", team="PTFC", database=database)
-#
 # database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
 # database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
+# getMatchFiles(competition.slug = "nwsl-2016", type="match.csv.link", team="PTFC")
 
 createPassingSubset <- function(match_sheet) {
   #create logical vector to check if a given row was a completed pass

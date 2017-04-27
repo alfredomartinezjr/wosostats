@@ -91,7 +91,11 @@ getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA,
   match_stats
 }
 
-getMatchFiles <- function(competition.slug, type, team=NA, round=NA, multi_round=NA, month_year=NA, location_complete=FALSE, database=database) {
+getMatchFiles <- function(competition.slug, type, team=NA, round=NA, multi_round=NA, month_year=NA, location_complete=FALSE, database=NA) {
+  if(is.na(database)){
+    database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
+    database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
+  }
   #type is either "match.csv.link" or "stats.csv.link"
   if(competition.slug == "database"){
     if(location_complete == TRUE){
@@ -147,10 +151,7 @@ getMatchFiles <- function(competition.slug, type, team=NA, round=NA, multi_round
 }
 
 getStatsInBulk <- function(competition.slug, type, team=NA, round=NA, multi_round=NA, month_year=NA, location="none",location_complete = FALSE, per90=FALSE, section="everything") {
-  database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
-  database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
-  
-  getMatchFiles(competition.slug=competition.slug, type=type, team=team, round=round, multi_round=multi_round, month_year=month_year, location_complete=location_complete, database=database)
+  getMatchFiles(competition.slug=competition.slug, type=type, team=team, round=round, multi_round=multi_round, month_year=month_year, location_complete=location_complete)
   
   if(type=="match.csv.link"){
     stats_list <- list()
