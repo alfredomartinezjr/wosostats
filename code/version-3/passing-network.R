@@ -6,9 +6,12 @@
 #
 # OR
 # source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-3/creating-stats-tables.R")
-# database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
-# database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
 # getMatchFiles(competition.slug = "nwsl-2016", type="match.csv.link", team="PTFC")
+#
+# Create table for shared passes for an entire team's matches
+# getMatchFiles(competition_slug = "nwsl-2016", team="TEAMACRONYM", type = "match.csv.link")
+# passing_table <- createPassingNetwork(data_source = match_list, team ="TEAMACRONYM")
+# shared_mins_table <- createSharedMinsNetwork(data_source = match_list, team="TEAMACRONYM")
 
 createPassingSubset <- function(match_sheet) {
   #create logical vector to check if a given row was a completed pass
