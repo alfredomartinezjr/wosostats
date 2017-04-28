@@ -18,7 +18,7 @@ if(!exists("online_mode")){
 #
 # database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
 # database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
-# getMatchFiles(competition.slug = "nwsl-2016", type="stats.csv.link", database=database)
+# getMatchFiles(competition.slug = "nwsl-2016", type="stats.csv.link")
 #
 # for (index in 1:length(your_stats_list)) {
 #   file_name <- paste0(gsub("/","",match_names[index]),".csv")
