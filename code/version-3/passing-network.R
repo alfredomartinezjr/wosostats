@@ -1,3 +1,4 @@
+# get URL for a match's actions spreadsheet from the database in the match.csv.link column
 # match_sheet <- getURL(matchURL)
 # match_sheet <- read.csv(textConnection(match_sheet), stringsAsFactors = FALSE)
 #
@@ -9,9 +10,13 @@
 # getMatchFiles(competition.slug = "nwsl-2016", type="match.csv.link", team="PTFC")
 #
 # Create table for shared passes for an entire team's matches
-# getMatchFiles(competition_slug = "nwsl-2016", team="TEAMACRONYM", type = "match.csv.link")
+# getMatchFiles(competition.slug = "nwsl-2016", team="TEAMACRONYM", type = "match.csv.link")
 # passing_table <- createPassingNetwork(data_source = match_list, team ="TEAMACRONYM")
-# shared_mins_table <- createSharedMinsNetwork(data_source = match_list, team="TEAMACRONYM")
+# sharedmins_table <- createSharedMinsNetwork(data_source = match_list, team="TEAMACRONYM")
+#
+# Create table for shared passes for one match
+# passing_table <- createPassingNetwork(data_source = match_sheet, team ="TEAMACRONYM")
+# sharedmins_table <- createSharedMinsNetwork(data_source = match_sheet, team="TEAMACRONYM")
 
 createPassingSubset <- function(match_sheet) {
   #create logical vector to check if a given row was a completed pass
@@ -36,7 +41,7 @@ createPassingSubset <- function(match_sheet) {
   match_sheet
 }
 
-createPassingNetwork <- function(data_source, team=NA){
+createPassingNetwork <- function(data_source, team=NA, byMatch=FALSE){
   if(class(data_source) == "list") {
     match_list <- data_source
     #create empty list where all the subsets of the match spreadsheets for only completed passes will go
@@ -52,15 +57,23 @@ createPassingNetwork <- function(data_source, team=NA){
       }
       passing_data[[index]] <- match_sheet
     }
-    for(index in 1:length(passing_data)) {
-      if(exists("passing_data_binded")) {
-        passing_data_binded <- rbind(passing_data_binded, passing_data[[index]])
-      } else {
-        passing_data_binded <- passing_data[[index]]
+    if(byMatch){
+      passing_network <- list()
+      for(index in 1:length(passing_data)) {
+        passing_network[[index]] <- as.data.frame(unclass(table(passing_data[[index]]$poss.player,passing_data[[index]]$pass_recipient)))
       }
+      passing_network
+    } else {
+      for(index in 1:length(passing_data)) {
+        if(exists("passing_data_binded")) {
+          passing_data_binded <- rbind(passing_data_binded, passing_data[[index]])
+        } else {
+          passing_data_binded <- passing_data[[index]]
+        }
+      }
+      passing_network <- as.data.frame(unclass(table(passing_data_binded$poss.player,passing_data_binded$pass_recipient)))
+      passing_network
     }
-    passing_network <- as.data.frame(unclass(table(passing_data_binded$poss.player,passing_data_binded$pass_recipient)))
-    passing_network
   } 
   #create passing network for one match
   else if(class(data_source) == "data.frame"){
@@ -179,7 +192,7 @@ createSharedMinsSubset <- function(match_sheet){
   match_shared_minutes_data
 }
 
-createSharedMinsNetwork <- function(data_source, team=NA) {
+createSharedMinsNetwork <- function(data_source, team=NA, byMatch=FALSE) {
   if(class(data_source)=="list") {
     match_list <- data_source
     #create empty list where all the subsets of the match spreadsheets for only completed passes will go
@@ -194,17 +207,23 @@ createSharedMinsNetwork <- function(data_source, team=NA) {
       }
       shared_minutes_data[[index]] <- match_shared_minutes_data
     }
-    
-    for(index in 1:length(shared_minutes_data)) {
-      if(exists("shared_minutes_data_binded")) {
-        shared_minutes_data_binded <- rbind(shared_minutes_data_binded, shared_minutes_data[[index]])
-      } else {
-        shared_minutes_data_binded <- shared_minutes_data[[index]]
+    if(byMatch){
+      shared_minutes_network <- list()
+      for(index in 1:length(shared_minutes_data)){
+        shared_minutes_network[[index]] <- as.data.frame(unclass(table(shared_minutes_data[[index]]$firstplayer,shared_minutes_data[[index]]$sharedplayer)))
       }
+      shared_minutes_network
+    } else {
+      for(index in 1:length(shared_minutes_data)) {
+        if(exists("shared_minutes_data_binded")) {
+          shared_minutes_data_binded <- rbind(shared_minutes_data_binded, shared_minutes_data[[index]])
+        } else {
+          shared_minutes_data_binded <- shared_minutes_data[[index]]
+        }
+      }
+      shared_minutes_network <- as.data.frame(unclass(table(shared_minutes_data_binded$firstplayer,shared_minutes_data_binded$sharedplayer)))
+      shared_minutes_network
     }
-    
-    shared_minutes_network <- as.data.frame(unclass(table(shared_minutes_data_binded$firstplayer,shared_minutes_data_binded$sharedplayer)))
-    shared_minutes_network
   }
   else if (class(data_source)=="data.frame"){
     match_sheet <- data_source
