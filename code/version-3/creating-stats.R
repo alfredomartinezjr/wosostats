@@ -16,8 +16,6 @@ if(!exists("online_mode")){
 #
 # your_stats_list <- getStatsInBulk(competition.slug, team=NA, round=NA, multi_round=NA, month_year=NA, location="none", location_complete = FALSE, per90=FALSE)
 #
-# database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
-# database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
 # getMatchFiles(competition.slug = "nwsl-2016", type="stats.csv.link")
 #
 # for (index in 1:length(your_stats_list)) {
