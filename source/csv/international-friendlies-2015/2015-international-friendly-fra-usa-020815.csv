@@ -820,7 +820,7 @@
 "722","42","M","USA","Holiday","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "723","42","M","USA","Holiday","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "724","42","M","USA","Holiday","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"725","42","D","USA","Sauerbrunn","passes.s",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"725","42","D","USA","Sauerbrunn","passes.s.c",NA,NA,"lay.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "726","42",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "727","42","D","USA","Engen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "728","42","D","USA","Sauerbrunn","passes.f.c",NA,NA,NA,"F","FRA","Le Sommer","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1338,7 +1338,7 @@
 "1148","68","M","FRA","Henry","passes.b.c",NA,NA,NA,"M","USA","Holiday","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1149","68","D","FRA","Houara","passes.f.c",NA,NA,NA,"M","USA","Heath","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1150","68","M","FRA","Thomis","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA
-"1151","68","D","USA","Klingenberg","passes.f",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1151","68","D","USA","Klingenberg","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1152","68",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1153","68","F","FRA","Thiney","dispossessed",NA,NA,NA,"D","USA","Klingenberg","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "1153","68",NA,NA,NA,NA,NA,NA,NA,"M","USA","Heath","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
