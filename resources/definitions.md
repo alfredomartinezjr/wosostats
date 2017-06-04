@@ -297,7 +297,7 @@ Karen Bardsley passes the ball forward, and the pass was both a goal kick and la
 
 ![](http://i.imgur.com/JyNiAMu.png)
 
-Example 2: ![](https://streamable.com/ab02n)
+Example 2: [https://streamable.com/ab02n](https://streamable.com/ab02n)
 
 Le Sommer, the player in white, receives a launched pass from her teammate, Gerard, the goalkeeper and passes the ball forward - and the pass was both a header and a flick-on. Again, the poss.action column is left blank so as not to create a new event:
 
