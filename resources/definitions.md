@@ -297,11 +297,11 @@ Karen Bardsley passes the ball forward, and the pass was both a goal kick and la
 
 ![](http://i.imgur.com/JyNiAMu.png)
 
-Example 2: [http://i.imgur.com/hPSFSq9.gifv](http://i.imgur.com/hPSFSq9.gifv)
+Example 2: ![](https://streamable.com/ab02n)
 
-Fara Williams, the player in red, receives a pass from her teammate Lucy Bronze and passes the ball forward, and the pass was both a header and a flick-on. Again, the poss.action column is left blank so as not to create a new event:
+Le Sommer, the player in white, receives a launched pass from her teammate, Gerard, the goalkeeper and passes the ball forward - and the pass was both a header and a flick-on. Again, the poss.action column is left blank so as not to create a new event:
 
-![](http://i.imgur.com/O1wl4ep.png)
+![](http://i.imgur.com/evFeNMG.png)
 
 **Corner crosses** - `corner.crosses`, `cc`
 
