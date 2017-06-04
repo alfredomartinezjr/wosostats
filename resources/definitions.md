@@ -367,7 +367,7 @@ Kim Little, the player in black and blue, receives a pass from her teammate, Meg
 
 **Flick-on balls** - `flick.on`, `flick`
 
-A glancing pass into the same general direction from which it came from. Does not necessarily have to be a pass to the player who made the previous pass. A header can be a flick-on.
+A glancing one-touch pass that continues moving the ball into the same general direction from which it came from. Does not necessarily have to be a pass to the player who made the previous pass. A header can be a flick-on.
 
 Example 1: [http://i.imgur.com/fB5auDp.gifv](http://i.imgur.com/fB5auDp.gifv)
 
