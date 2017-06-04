@@ -2,7 +2,7 @@
 
 Below is a list of definitions for values to be used when logging match actions in the [match-actions-template.xlsx](https://github.com/amj2012/wosostats/blob/master/resources/match-actions-template.xlsx) Excel document. These values are player actions (such as passes and shots), qualifiers to player actions that further describe the action (such as the type of pass or if a big chance was stopped), and location data. When logging actions, refer to this document when in doubt about what a certain value means and when to log it. Feedback is welcome and should be sent to wosostats.team@gmail or @WoSoStats on Twitter.
 
-#Table of Contents
+# Table of Contents
 * Possessing Player Actions - `poss.action`
 * Play Type - `play.type`
 * Defensive Player Actions - `def.action`
@@ -24,7 +24,7 @@ For each definition, the long name will be shown in **bold like this** and the d
 
 A GIF showing an example will be provided for a definition when appropriate and possible.
 
-#Possessing Player Actions
+# Possessing Player Actions
 Column name: `poss.action`
 
 The actions below will be tracked under the `poss.player.action` column. As the name suggests, these are actions by a player on a team "in possession” of the ball. 
@@ -284,7 +284,7 @@ This should be logged if there is extra time on the way.
 If not a substitution or end of play, any other instances that stop play, such as an injury, should be noted.
 
 
-#Play Types
+# Play Types
 Column name: `play.type`
 
 Certain shots and passes logged in the `poss.action` column will be of special types that will require additional qualifiers to be logged in this column. Sometimes more than one of these will apply, such as a lay off that was also headed, in which case a new row should be created (but leaving the 'poss.action' column blank so as not to create a new event by accident), and the additional qualifier should be added in the new row.
@@ -407,7 +407,7 @@ This is separate from a `goal.kick` in that a drop kick is after a goalkeeper wi
 
 **Penalty kicks** - `pk`
 
-#Defensive Player Actions
+# Defensive Player Actions
 Column name: `def.action`
 
 Not everything in the 'poss.action' will have a reaction from the defending team that gets to be logged. The following defensive actions, when they happen, are to be logged in the `def.action` column within the same event as the possessing action to which the defender is acting upon.
@@ -568,7 +568,7 @@ When a goalkeeper successfully claims a loose ball and wins possession with her 
 
 When a goalkeeper unsuccessfully comes out for a loose ball. Usually the result of mishandling or mistouching the ball.
 
-#Goalkeeper Ball Stops
+# Goalkeeper Ball Stops
 Column name: `gk.ball.stop`
 
 When a goalkeeper makes an attempt to stop a ball with any part of her body, whether it's a high ball, loose ball, or shot, the type of stop attempt should be logged in the `gk.ball.stop` column. The stop will be one of the below.
@@ -613,7 +613,7 @@ When a goalkeeper uses a part of her body other than her hands (such as her body
 
 
 
-#Goalkeeper save attempt
+# Goalkeeper save attempt
 Column name: `gk.s.o.g.attempt`
 
 When a goalkeeper makes a save attempt on a shot on goal with any part of her body, the type of save will be one of the ones below and should be logged in the `gk.s.o.g.attempt` column.
@@ -628,7 +628,7 @@ When a goalkeeper makes a save attempt on a shot on goal with any part of her bo
 
 **No save attempt** - `none`
 
-#Disciplinary notes
+# Disciplinary notes
 Column names: `poss.player.disciplinary` & `def.player.disciplinary`
 
 When a player wins or concedes foul, card, and/or penalty, it should be logged for the possessing player in the `poss.player.disciplinary` column and for the defending player in the `def.player.disciplinary` column. Sometimes more than one of these will apply, such as penalty kick conceded that was also a yellow card, in which case a comma should separate the two in the same cell so it looks like `yellow.cards,penalties.conceded`.
@@ -645,7 +645,7 @@ When a player wins or concedes foul, card, and/or penalty, it should be logged f
 
 **Penalty kicks conceded** - `penalties.conceded`
 
-#Additional Possessing Player Notes
+# Additional Possessing Player Notes
 Column name: `poss.notes`
 
 Certain possessing player actions need additional qualifiers, related to scoring opportunities or defensive mistakes, that don't fit in any of the other aforementioned columns and should instead be be logged in the `poss.notes` column. Sometimes more than one of these will apply, such as a big chance that was shot and missed, and thus went out of bounds, in which case a comma should separate the two in the same cell so it looks like `big.chances.shot.missed,out.of.bounds.lost.poss`.
@@ -726,7 +726,7 @@ As not all assists are necessarily key passes, but it should be noted when an as
 
 **Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`
 
-#Additional Defensive Player Notes
+# Additional Defensive Player Notes
 Column name: `def.notes`
 
 Likewise for defending players, certain defensive actions will also need additional qualifiers, related to defensive accomplishments and mistakes, that don't fit in any of the other aforementioned columns and should instead be be logged in the `def.notes` column.
@@ -741,7 +741,7 @@ When a defending player or a goalkeeper stops a possessing player's big chance f
 
 **Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`
 
-#Location-based Notes
+# Location-based Notes
 Column names: `poss.location`, `poss.play.destination`, & `def.location`
 
 Each `poss.action` will have a location on the pitch, which will either be manually logged or coded into the `poss.location` column. If it is a type of play with a destination, such as a pass or movement, the destination on the pitch will also either be manually logged or coded into the `poss.play.destination` column.
