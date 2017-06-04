@@ -331,7 +331,7 @@ Example 2: [http://i.imgur.com/Ad7Pa60.gifv](http://i.imgur.com/Ad7Pa60.gifv)
 
 Many goal kicks, passes taken by a goalkeeper after the ball has gone out of bounds, end up being launched passes, such as this one by Karen Bardsley, the goalkeeper in green. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
 
-![](http://i.imgur.com/nZAjQFF.png)
+![](http://i.imgur.com/7ufSv3I.png)
 
 **Through balls** - `through`, `th`
 
