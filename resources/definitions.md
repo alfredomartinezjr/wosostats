@@ -357,7 +357,7 @@ Example 1: [http://i.imgur.com/gXJMNcW.gifv](http://i.imgur.com/gXJMNcW.gifv)
 
 Diana Matheson, the player in white, receives a pass from her teammate and in touch passes it back in the same direction to another teammate, Crystal Dunn. Despite the fact that the pass wasn't back to the same player, Matheson should get credited with what's the definition of a lay-off, a one-touch pass into the same general direction. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
 
-![](http://i.imgur.com/Oqcwlvq.png)
+![](http://i.imgur.com/mf3cheW.png)
 
 Example 2: [http://i.imgur.com/QvNtzvr.gifv](http://i.imgur.com/QvNtzvr.gifv)
 
