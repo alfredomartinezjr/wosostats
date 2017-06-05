@@ -6,6 +6,8 @@ library(RCurl)
 # Otherwise, if online_mode hasn't been created yet, you'll just source the "functions.R"## file from the GitHub site
 if(!exists("online_mode")){
   source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-3/creating-stats-columns.R")
+} else if(exists("online_mode") && online_mode == "online") {
+  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-3/creating-stats-columns.R")
 } else if(exists("online_mode") && online_mode == "offline"){
   source("~/wosostats/code/version-3/creating-stats-columns.R")
 }

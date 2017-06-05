@@ -8,6 +8,8 @@ library(RCurl)
 
 if(!exists("online_mode")){
   source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-3/creating-stats-tables.R")
+} else if(exists("online_mode") && online_mode == "online") {
+  source("https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-3/creating-stats-tables.R")
 } else if(exists("online_mode") && online_mode == "offline"){
   source("~/wosostats/code/version-3/creating-stats-columns.R")
 }
