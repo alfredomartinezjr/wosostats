@@ -21,6 +21,16 @@ getMetaData <- function(match_df) {
   meta_df[,"poss.player"] <- trimws(meta_df[,"poss.player"])
   meta_df[,"def.player"] <- trimws(meta_df[,"def.player"])
   
+  for(player_row in 1:nrow(meta_df)){
+    if (grepl("\\(", meta_df[player_row, "poss.player"]) && is.na(meta_df[player_row,"poss.number"])) {
+      player_split_num <- gsub("\\(|\\)","",strsplit(meta_df[player_row, "poss.player"]," ")[[1]][length(strsplit(meta_df[player_row, "poss.player"]," ")[[1]])])
+      meta_df[player_row, "poss.number"] <- player_split_num
+    }
+    if (grepl("\\(", meta_df[player_row, "def.player"]) && is.na(meta_df[player_row,"def.number"])) {
+      player_split_num <- gsub("\\(|\\)","",strsplit(meta_df[player_row, "def.player"]," ")[[1]][length(strsplit(meta_df[player_row, "def.player"]," ")[[1]])])
+      meta_df[player_row, "def.number"] <- player_split_num
+    }
+  }
   assign("meta_df", meta_df, pos=1)
 }
 
