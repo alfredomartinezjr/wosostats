@@ -100,6 +100,9 @@ getMatchFiles <- function(competition.slug, type, team=NA, round=NA, multi_round
   }
   #type is either "match.csv.link" or "stats.csv.link"
   if(competition.slug == "database"){
+    if(!is.na(team)){
+      database <- database[database[,"home.team"] %in% team | database[,"away.team"] %in% team,]
+    }
     if(location_complete == TRUE){
       matches <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes",type]
       names_matchup <- database[!is.na(database[,"match.csv.link"]) & database[,"location.data"]=="yes","matchup"]
