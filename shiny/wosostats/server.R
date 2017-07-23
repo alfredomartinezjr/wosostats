@@ -2,7 +2,7 @@ library(RCurl)
 library(dplyr)
 database <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/database.csv")
 database <- read.csv(textConnection(database), stringsAsFactors = FALSE)
-stats <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/resources/shiny-stats.csv")
+stats <- getURL("https://raw.githubusercontent.com/amj2012/wosostats/master/shiny/shiny-stats.csv")
 stats <- read.csv(textConnection(stats), stringsAsFactors = FALSE)
 
 shinyServer(function(input, output) {
