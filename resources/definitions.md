@@ -6,7 +6,7 @@ Below is a list of definitions for values to be used when logging match actions 
 * Possessing Player Actions - `poss.action`
 * Play Type - `play.type`
 * Defensive Player Actions - `def.action`
-* Goalkeeper Actions - `gk.ball.stop` & `gk.s.o.g.attempt`
+* Goalkeeper Actions - `gk.ball.stop`
 * Disciplinary Actions - `poss.player.disciplinary` & `def.player.disciplinary`
 * Additional Possessing Player Notes - `poss.notes`
 * Additional Defensive Player Notes - `def.notes`
@@ -27,7 +27,7 @@ A GIF showing an example will be provided for a definition when appropriate and 
 # Possessing Player Actions
 Column name: `poss.action`
 
-The actions below will be tracked under the `poss.player.action` column. As the name suggests, these are actions by a player on a team "in possession” of the ball. 
+The actions below will be tracked under the `poss.player.action` column. As the name suggests, these are actions by a player on a team "in possession” of the ball.
 
 **Shots stopped by the goalkeeper** - `shots.stopped.by.gk`, `sog.gk` , `sgk`
 
@@ -61,11 +61,11 @@ Forward pass attempts, regardless of whether the pass attempt was completed
 
 **Sideway pass attempts** - `passes.s`, `ps`
 
-Sideway pass attempts, regardless of whether the pass attempt was completed. For a pass to go sideways, it does not have to be at a perfect 90 angle; if it goes a little bit backwards or forwards but can be deemed to be going largely sideways, it should be logged as such. 
+Sideway pass attempts, regardless of whether the pass attempt was completed. For a pass to go sideways, it does not have to be at a perfect 90 angle; if it goes a little bit backwards or forwards but can be deemed to be going largely sideways, it should be logged as such.
 
 **Backward pass attempts** - `passes.b`, `pb`
 
-Backward pass attempts, regardless of whether the pass attempt was completed 
+Backward pass attempts, regardless of whether the pass attempt was completed
 
 **Movement into another zone** - `movement`, `m`
 
@@ -95,7 +95,7 @@ Erika Tymrak, the player in white and blue, wins a take on against Kendall Fletc
 
 Example 3: [http://i.imgur.com/OVbQKZH.gif](http://i.imgur.com/OVbQKZH.gif)
 
-Megan Rapinoe, the player in yellow and purple, wins a take on against Erika Tymrak, in the white and blue, by turning her and dribbling past her into the open midfield: 
+Megan Rapinoe, the player in yellow and purple, wins a take on against Erika Tymrak, in the white and blue, by turning her and dribbling past her into the open midfield:
 
 **Take ons lost** - `take.on.lost`, `tkl`
 
@@ -127,7 +127,7 @@ Demi Stokes, the player in red who receives the pass, is immediately challenged 
 
 A lost touch is when a player loses possession of the ball due to a mistouch or heavy touch, without it being clear that she was attempting a shot, pass or take-on; or it is when a player attempts to win possession of the ball and unsuccessfully knocks it away with a mistouch or bad touch.
 
-This type of action is meant to be different from the ones defined above (lost take ons and "dispossessions") in that a "lost touch", as it should appear in this Excel spreadsheet, is meant to encompass bad touches. It is not meant to define unsuccessful intentional attempts to get past opponents, and it is not meant to define moments where a player, who wasn't attempting to take on anyone, was dispossessed because of a defender intentional attempt at taking the ball away. 
+This type of action is meant to be different from the ones defined above (lost take ons and "dispossessions") in that a "lost touch", as it should appear in this Excel spreadsheet, is meant to encompass bad touches. It is not meant to define unsuccessful intentional attempts to get past opponents, and it is not meant to define moments where a player, who wasn't attempting to take on anyone, was dispossessed because of a defender intentional attempt at taking the ball away.
 
 Put in other words, if the possessing player wasn't clearly attempting to take on a defender, and the defender who ended up with the ball didn't dispossess the possessing player as much as she actually just recovered a loose ball, then the possessing player's action should be considered a "lost.touch."
 
@@ -145,7 +145,13 @@ Mallory Pugh, the player in white, attempts to win a ball that has been knocked 
 
 Example 3: [http://i.imgur.com/9CaWO5l.gif](http://i.imgur.com/9CaWO5l.gif)
 
-Jess Fishlock, the player in yellow and purple, receives a pass from Kim Little but loses the ball to Maddy Laddish, in the white and blue, due to a bad first touch. Since it is not clear that Fishlock was attempting to take on Laddish with that touch, this is logged as a dispossession: 
+Jess Fishlock, the player in yellow and purple, receives a pass from Kim Little but loses the ball to Maddy Laddish, in the white and blue, due to a bad first touch. Since it is not clear that Fishlock was attempting to take on Laddish with that touch, this is logged as a dispossession:
+
+**Ball touch** - `ball.touch`, `bt`
+
+A catch-all definition for unintentional touches of the ball and other touches of the ball that aren't easily covered by existing actions. Examples are when the ball hits the player without a reasonable amount of time to act on it, or when a ball hits an unsuspecting player such as in the back off of an aerial duel. Should not be mistaken with a `lost.touch` which is meant for bad touches of a ball over which a player had possession or should have won possession, or with a `block` where a defending player intentionally gets in the way of the ball.
+
+Can also be used to account for special instances such as when a player intentionally taps or launches the ball out of play or towards the opposing team due to an injury, as those shouldn't be considered passes.
 
 **Aerial duels won** - `aerial.won`, `aw`
 
@@ -174,6 +180,20 @@ Example 1: [http://i.imgur.com/EspvEYN.gif](http://i.imgur.com/EspvEYN.gif)
 Mallory Pugh, the player in white, and Steph Houghton, the player in red, both have a reasonable chance at winning this launched pass, but neither really manages to get off a good jump, due to running into each other, even though it was a winnable ball in the air for both of them. This goes down as an "aerial.lost" for the "possessing" player (due to the ball still being in "possession" of the team in white), and also an "aerial.lost" for the defending player. On the spreadsheet, this action would look like the following (certain columns have been hidden to better show this):
 
 ![](http://i.imgur.com/lK5EHAs.png)
+
+**Ground 50/50 balls won** - `ground.50.50.won`, `gw`
+
+Ground 50/50 balls are the ground equivalent of aerial duels - when two players challenge for a 50/50 ball on the ground. A player outright winning possession of 50/50 ball is deemed to have won the ground 50/50 ball. If there's no one who outright wins possession (such as if the ball just keeps getting knocked away or knocked out of bounds), the first player to make contact with the ball is deemed to have won the ground 50/50 duel, regardless of where the ball ends up or who recovers it.
+
+In the "poss.action" column, the player logged should be the player on the team that had possession of the ball in the previous event. If she wins the ground 50/50 ball based on the criteria above, she gets a "ground.50.50.won"
+
+**Ground 50/50 balls lost** - `ground.50.50.lost`, `gl`
+
+Ground 50/50 balls are the ground equivalent of aerial duels - when two players challenge for a 50/50 ball on the ground. A player is deemed to have lost a ground 50/50 ball if the other player either won outright possession of the ball or - if there was no one who got outright possession of the ball - if the other player got to the ball first, regardless of where the ball ends up or who recovers it.
+
+In the "poss.action" column, the player logged should be the player on the team that had possession of the ball in the previous event. If she lost the ground 50/50 ball based on the criteria above, she gets a "ground.50.50.lost."
+
+When both players challenge for the 50/50 ball and neither "wins" the ball (such as if the ball happens to just roll through both their legs), but they can reasonably be said to have had a chance to win the ball, then they both get credited with an "ground.50.50.lost."
 
 **Recoveries** - `recoveries`, `r`
 
@@ -239,6 +259,14 @@ Kim Little, the player in black and blue, dribbles the ball towards the corner f
 
 A clearance is logged in the `poss.action` column when a player *in possession of the ball* intentionally kicks the ball away without an intended recipient. Intent, time on the ball, pressure from defenders, and the angle the player was facing when she kicked the ball all should be considered when deciding to consider something a "clearance" rather than a pass attempt.
 
+**Fouls won** - `fouls.won`, `fw`
+
+Fouls won by a possessing player should be logged in the "poss.action" column instead of in the "poss.player.disciplinary" column if there isn't an action that encompasses whatever caused the foul. An example would be a player with possession of the ball getting fouled without doing anything that could be considered something like a "take.on" or even "movement."
+
+**Fouls conceded** `fouls.conceded`, `fc`
+
+Fouls conceded by a possessing player should be logged in the "poss.action" column instead of in the "poss.player.disciplinary" column if there isn't an action that encompasses whatever caused the foul. An example would be a player with possession of the ball who fouled a defender but was not doing anything that could be considered something like a "take.on" or even "movement." Can also be attributed to a possessing player for fouls and misconduct, such as if a goalkeeper holds onto the ball for too long.
+
 **Offside Calls** - `offside.calls`
 
 Logged when a player is called offside.
@@ -249,7 +277,7 @@ Logged when a player is called offside.
 
 These are pesky instances when the broadcast of the game is cut off by something such as a replay or sideline interview. They can completely cut off your ability to log match stats and can affect how stats are analyzed if they aren't outright mentioned. They should be logged in the `poss.action` column.
 
-On super-pesky instances when the broadcast cuts off right after a completed, impeding your ability to tell if the pass was completed or not and to who, log the last pass that could be seen that was completed as "passes.f.c", "passes.s.c", or "passes.b.c", depending on the direction of the pass. The "c" at the end indicates that the pass was completed. You only need add that "c" when a completed pass was the last action before a stoppage in play or broadcast interruption. 
+On super-pesky instances when the broadcast cuts off right after a completed, impeding your ability to tell if the pass was completed or not and to who, log the last pass that could be seen that was completed as "passes.f.c", "passes.s.c", or "passes.b.c", depending on the direction of the pass. The "c" at the end indicates that the pass was completed. You only need add that "c" when a completed pass was the last action before a stoppage in play or broadcast interruption.
 
 The short story for the reason for the "c", and why you don't have to add it to every single completed pass attempt in the game, is that the R code that reads the Excel file, which generates the match actions .csv file that is used to compute match stats, can tell if a pass attempt was completed based on other actions and qualifiers in the surrounding events and columns, except for these instances when play was stopped or cut off directly after a completed pass.
 
@@ -259,7 +287,7 @@ For example, observe this moment: [https://streamable.com/7o9o](https://streamab
 
 **Substitutions** - `substitution.on` & `substitution.off`
 
-Note which players are being substituted on and off. 
+Note which players are being substituted on and off.
 
 The player who gets subbed off should have her substitution logged as occurring during her last minute of play. For example, if play is stopped at 50:35 (the 51st minute), Player A is subbed off, and play does not resume again until 51:10 (the 52nd minute), then Player A should have her substitution logged as having happened during minute 51.
 
@@ -303,17 +331,13 @@ Le Sommer, the player in white, receives a launched pass from her teammate, Gera
 
 ![](http://i.imgur.com/evFeNMG.png)
 
-**Corner crosses** - `corner.crosses`, `cc`
+**Crosses** - `Crosses`, `cr`
 
-Crosses, a ball launched or driven from the left third or right third of the field into the box, that were also struck from within the attacking third. Log this in the play.type column for all types of corner crosses; that includes crosses from open play and set-pieces (free kicks, corner kicks, and throw-ins that are launched or driven into the box).
-
-**Deep crosses** - `deep.crosses`, `dc`
-
-Crosses, a ball launched or driven from the left third or right third of the field into the box, that were also struck from beyond the attacking third. Log this in the play.type column for all types of deep crosses; that includes crosses from open play and set-pieces (free kicks, corner kicks, and throw-ins that are launched or driven into the box).
+A ball launched or driven from the left wing or right wing of the field into the box. Log this in the play.type column for all types of crosses; that includes crosses from open play and set-pieces (free kicks, corner kicks, and throw-ins that are launched or driven into the box).
 
 **Switch** - `switch`, `s`
 
-A long, high ball to an intended recipient across the field.
+A long, high ball to an intended recipient across the field. Often from an opposite wing to another, but sometimes also from the middle third of the field if the player launching the ball is close enough to the wing.
 
 **Launch balls** - `launch`, `lau`
 
@@ -349,38 +373,6 @@ Toni Duggan, the player in red, passes the ball forward, which attempts to meet 
 
 ![](http://i.imgur.com/ICPK2hk.png)
 
-**Lay-off balls** - `lay.off`, `lay`
-
-A one-touch pass back into the same general direction from where the ball came from. Does not necessarily have to be a pass back to the player who made the previous pass.
-
-Example 1: [http://i.imgur.com/gXJMNcW.gifv](http://i.imgur.com/gXJMNcW.gifv)
-
-Diana Matheson, the player in white, receives a pass from her teammate and in touch passes it back in the same direction to another teammate, Crystal Dunn. Despite the fact that the pass wasn't back to the same player, Matheson should get credited with what's the definition of a lay-off, a one-touch pass into the same general direction. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
-
-![](http://i.imgur.com/mf3cheW.png)
-
-Example 2: [http://i.imgur.com/QvNtzvr.gifv](http://i.imgur.com/QvNtzvr.gifv)
-
-Kim Little, the player in black and blue, receives a pass from her teammate, Megan Rapinoe, and in one touch passes it back in the same general direction from where it came from to her teammate Jess Fishlock. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
-
-![](http://i.imgur.com/YLktCyC.png)
-
-**Flick-on balls** - `flick.on`, `flick`
-
-A glancing one-touch pass that continues moving the ball into the same general direction from which it came from. Does not necessarily have to be a pass to the player who made the previous pass. A header can be a flick-on.
-
-Example 1: [http://i.imgur.com/fB5auDp.gifv](http://i.imgur.com/fB5auDp.gifv)
-
-Diana Matheson, the player in white, receives a pass from her teammate and flicks it on into the same direction with a glancing touch. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
-
-![](http://i.imgur.com/I1eM2h3.png)
-
-Example 2: [http://i.imgur.com/bPL1ReE.gifv](http://i.imgur.com/bPL1ReE.gifv)
-
-Demi Stokes, the player in red, receives a throw-in from her teammate and heads it forward with a glancing touch into the same direction. This should be logged as a flick-on. In the spreadsheet, this moment would look like this (certain columns have been hidden to better show this):
-
-![](http://i.imgur.com/ccdyrDc.png)
-
 **Throw-ins** - `throw.in`, `ti`
 
 **Free kicks** - `free.kick`, `fk`
@@ -407,12 +399,16 @@ This is separate from a `goal.kick` in that a drop kick is after a goalkeeper wi
 
 **Penalty kicks** - `pk`
 
+**Pass into pressure** - `pip`
+
+This qualifier should be logged for pass attempts that went to a teammate who was under pressure by the time the pass attempt reached her. This should be logged for all pass attempts that fit this criteria regardless of whether the pass was completed.
+
 # Defensive Player Actions
 Column name: `def.action`
 
 Not everything in the 'poss.action' will have a reaction from the defending team that gets to be logged. The following defensive actions, when they happen, are to be logged in the `def.action` column within the same event as the possessing action to which the defender is acting upon.
 
-Defensive actions end up getting logged in the "def.action" column like this on the spreadsheet (certain columns have been hidden to better show this): 
+Defensive actions end up getting logged in the "def.action" column like this on the spreadsheet (certain columns have been hidden to better show this):
 
 ![](http://i.imgur.com/QTJxw3l.png)
 
@@ -454,9 +450,12 @@ Meghan Klingenberg, the player in white, tackles the ball away from Anna Blasse,
 
 ![](http://i.imgur.com/pdL8BL9.png)
 
-**Dribbled by an opponent due to a missed tackle** - `dribbled.tackles.missed`, `dtm`
+**Dribbled by an opponent** - `dribbled`, `dr`
 
-When a defender goes in for a tackle, either misses the ball or connects with the ball but without being able to dispossess the possessing player, and the possessing player dribbles past the missed tackle.
+When a defender faces a take on and is dribbled past by the possessing player. Encompasses a variety of scenarios including (but not necessarily restricted to) these:
+* When a defender goes in for a tackle, either misses the ball or connects with the ball but without being able to dispossess the possessing player, and the possessing player dribbles past the missed tackle.
+* When a defender gets "burnt" and a possessing player runs past her without the defender getting a chance to go in for a tackle and without getting turned.
+* When a defender is turned and allows a possessing player to dribble past her or get into open space, such as when a defender gets caught going the wrong way due to a feint.
 
 Example 1: [http://i.imgur.com/ACwuQQS.gifv](http://i.imgur.com/ACwuQQS.gifv)
 
@@ -464,21 +463,14 @@ Melanie Behringer, the player in red, attempts to tackle the ball away from Carl
 
 ![](http://i.imgur.com/iLAeIk5.png)
 
-**Dribbled by an opponent due to being out-run** - `dribbled.out.run`, `dor`
 
-Also known as getting "burnt." When a defender has a possessing player dribble past her without clearly going in for a tackle and without getting turned.
-
-Example 1: [http://i.imgur.com/7BuGs8N.gifv](http://i.imgur.com/7BuGs8N.gifv)
+Example 2: [http://i.imgur.com/7BuGs8N.gifv](http://i.imgur.com/7BuGs8N.gifv)
 
 Babett Peter, the player in red, faces Alex Morgan, the player in white with possession of the ball, but proceeds to get out-run by Morgan as she dribbles past her in the 18-yard box. Peter gets credited with a "dribbled.out.run". This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
 ![](http://i.imgur.com/pZ4lCKr.png)
 
-**Dribbled by an opponent due to being turned** - `dribbled.turned`, `dt`
-
-When a defender is turned and allows a possessing player to dribble past her. Usually the result of a defender getting caught going the wrong way due to a feint.
-
-Example 1: [http://i.imgur.com/58zonnm.gifv](http://i.imgur.com/58zonnm.gifv)
+Example 3: [http://i.imgur.com/58zonnm.gifv](http://i.imgur.com/58zonnm.gifv)
 
 Saskia Bartusiak, the player in red, faces Carli Lloyd, the player in white, and gets turned as Carli Lloyd takes on her to create space for a shot. Bartusiak gets credited with a "dribbled.turned." This looks like this on the spreadsheet (certain columns have been hidden to better show this):
 
@@ -508,9 +500,13 @@ When a defender blocks a pass (or sometimes a shot) and clearly wins possession 
 
 When a defender successfully shields ball that was in possession of the opposing team by either stepping up in between the ball and the possessing player; shielding a loose ball away from the possessing team for another player to recover, clear away, or until the ball rolls out of bounds; or shielding a pass from the possessing team for another player to recover, clear away, or until the ball rolls out of bounds.
 
-**Clearances** - `clearances`, `cl`
+**Clearances** - `clearances`, `cl` - can be appended with `.headed`/`.h` and/or `pressed`/`.p`
 
 When a defender intentionally kicks a ball away that was in possession of the opposing team, without an intended recipient and without having deemed to have recovered or intercepted it, and without having clearly won possession of the ball before the ball was cleared. Otherwise, it would be considered either an interception or recovery, followed by a clearance logged in the `poss.action` column.
+
+For instances when a defender intentionally clears away a ball with her head, the `clearances` action should be appended with a `.headed` or `.h`, the latter if a shortcut is being used, for an action that will read `clearances.headed` or `cl.h`. For instances when a defender intentionally clears away a ball and was being pressed by a defender (but wasn't deemed to have possession of the ball) the `clearances` action should be appended with a `.pressed` or `.p`, the latter if a shortcut is being used, for an action that will read `clearances.pressed` or `cl.p`.
+
+For instances when a player intentionally clears a way a ball with her head and was also being pressed, append with both a `.headed` and `.pressed` or `.h` and `p`, the latter if shortcuts are being used, for an action that will read `clearances.headed.pressed` or `cl.h.p`.
 
 **Aerial duels won** - `aerial.won`, `aw`
 
@@ -527,6 +523,26 @@ A player is deemed to have lost an aerial duel if the player challenging her for
 If a defender loses an aerial duel, the possessing player who won that aerial duel must have that "aerial.won" action logged in the "poss.action" column.
 
 When both players challenge for the ball and neither wins the ball (i.e., they both mistime their jumps) but can reasonably be said to have had a chance to win the ball, then they both get credited with an "aerial.lost."
+
+**Ground 50/50 balls won** - `ground.50.50.won`, `gw`
+
+Ground 50/50 balls are the ground equivalent of aerial duels - when two players challenge for a 50/50 ball on the ground. A player outright winning possession of 50/50 ball is deemed to have won the ground 50/50 ball. If there's no one who outright wins possession (such as if the ball just keeps getting knocked away or knocked out of bounds), the first player to make contact with the ball is deemed to have won the ground 50/50 duel, regardless of where the ball ends up or who recovers it.
+
+In the "def.action" column, the player logged should be the player on the defending team - that is, the team that didn't have possession of the ball in the previous event. If she wins the ground 50/50 ball based on the criteria above, she gets a "ground.50.50.won."
+
+**Ground 50/50 balls lost** - `ground.50.50.lost`, `gl`
+
+Ground 50/50 balls are the ground equivalent of aerial duels - when two players challenge for a 50/50 ball on the ground. A player is deemed to have lost a ground 50/50 ball if the other player either won outright possession of the ball or - if there was no one who got outright possession of the ball - if the other player got to the ball first, regardless of where the ball ends up or who recovers it.
+
+In the "def.action" column, the player logged should be the player on the defending team - that is, the team that didn't have possession of the ball in the previous event. If she lost the ground 50/50 ball based on the criteria above, she gets a "ground.50.50.lost."
+
+When both players challenge for the 50/50 ball and neither "wins" the ball (such as if the ball happens to just roll through both their legs), but they can reasonably be said to have had a chance to win the ball, then they both get credited with an "ground.50.50.lost."
+
+**Ball touch** - `ball.touch`, `bt`
+
+A catch-all definition for unintentional touches of the ball and other touches of the ball that aren't easily covered by existing actions. Examples are when the ball hits the player without a reasonable amount of time to act on it, or when a ball hits an unsuspecting player such as in the back off of an aerial duel. Should not be mistaken with a `lost.touch` which is meant for bad touches of a ball over which a player had possession or should have won possession, or with a `block` where a defending player intentionally gets in the way of the ball.
+
+Can also be used to account for special instances such as when a player intentionally taps or launches the ball out of play or towards the opposing team due to an injury, as those shouldn't be considered passes.
 
 **Shots on goal stopped by a goalkeeper** - `gk.s.o.g.stop`
 
@@ -568,6 +584,14 @@ When a goalkeeper successfully claims a loose ball and wins possession with her 
 
 When a goalkeeper unsuccessfully comes out for a loose ball. Usually the result of mishandling or mistouching the ball.
 
+**Fouls won** - `fouls.won`, `fw`
+
+Fouls won by a defending player should be logged in the "def.action" column instead of in the "def.player.disciplinary" column if there isn't a defensive action that encompasses whatever caused the foul. An example would be a defender getting fouled by a player with possession of the ball but the defender was not doing anything that could be considered something like a "tackle" or getting "dribbled."
+
+**Fouls conceded** `fouls.conceded`, `fc`
+
+Fouls conceded by a defending player should be logged in the "def.action" column instead of in the "def.player.disciplinary" column if there isn't a defensive action that encompasses whatever caused the foul. An example would be a defender fouled a player with possession of the ball but the defender was not doing anything that could be considered something like a "tackle" or getting "dribbled."
+
 # Goalkeeper Ball Stops
 Column name: `gk.ball.stop`
 
@@ -581,7 +605,7 @@ Punching a ball out of bounds counts as "to safety."
 
 **Punched to danger** - `punched.to.danger`, `punched.danger`
 
-When a goalkeeper punches the ball away, but close to the goal and at the feet of an opponent ready to make a play on the ball. 
+When a goalkeeper punches the ball away, but close to the goal and at the feet of an opponent ready to make a play on the ball.
 
 **Dropped** - `dropped`
 
@@ -611,22 +635,7 @@ When a goalkeeper uses a part of her body other than her hands (such as her body
 
 When a goalkeeper uses a part of her body other than her hands (such as her body or legs) to deviate the direction of the ball, but it ends up close to goal and at the feet of an opponent ready to make a play on the ball.
 
-
-
-# Goalkeeper save attempt
-Column name: `gk.s.o.g.attempt`
-
-When a goalkeeper makes a save attempt on a shot on goal with any part of her body, the type of save will be one of the ones below and should be logged in the `gk.s.o.g.attempt` column.
-
-**Diving save** - `diving`
-
-**Standing save** - `standing`
-
-**Reaching save** - `reaching`
-
-**Stooping save** - `stooping`
-
-**No save attempt** - `none`
+*[UPDATE: definitions for gk.s.o.g.attempt actions that were previously here have now been removed - July 22, 2017 ]*
 
 # Disciplinary notes
 Column names: `poss.player.disciplinary` & `def.player.disciplinary`
@@ -748,7 +757,7 @@ Each `poss.action` will have a location on the pitch, which will either be manua
 
 Similarly, for each `def.action`, a location on the pitch for the defensive action will be either manually logged or coded into the `def.location` column.
 
-The acronyms used for each location are defined below. To better get an idea of how the pitch is split up, refer to this image: 
+The acronyms used for each location are defined below. To better get an idea of how the pitch is split up, refer to this image:
 
 ![](http://i.imgur.com/EQLmpYp.png)
 
@@ -756,29 +765,29 @@ The acronyms used for each location are defined below. To better get an idea of 
 
 **Opponent’s 18-yard box** - `A18`
 
-**Attacking third, left wing** - `A3L`
+**Attacking third, left wing** - `AL`
 
-**Attacking third, center field** - `A3C`
+**Attacking third, center field** - `AC`
 
-**Attacking third, right wing** - `A3R`
+**Attacking third, right wing** - `AR`
 
-**Opponent’s half of middle third, left wing** - `AM3L`
+**Opponent’s half of middle third, left wing** - `AML`
 
-**Opponent’s half of middle third, center field** - `AM3C`
+**Opponent’s half of middle third, center field** - `AMC`
 
-**Opponent’s half of middle third, right wing** - `AM3R`
+**Opponent’s half of middle third, right wing** - `AMR`
 
-**Own half of middle third, left wing** - `DM3L`
+**Own half of middle third, left wing** - `DML`
 
-**Own half of middle third, center field** - `DM3C`
+**Own half of middle third, center field** - `DMC`
 
-**Own half of middle third, right wing** - `DM3R`
+**Own half of middle third, right wing** - `DMR`
 
-**Defensive third, left wing** - `D3L`
+**Defensive third, left wing** - `DL`
 
-**Defensive third, center field** - `D3C`
+**Defensive third, center field** - `DC`
 
-**Defensive third, right wing** - `D3R`
+**Defensive third, right wing** - `DR`
 
 **Own 18-yard box** - `D18`
 
