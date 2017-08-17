@@ -32,9 +32,9 @@ if(online_mode == "online") {
 # will return a "tidied_list" list with each match in a data frame, and a "tidied_names" vector with filenames
 # for when you write the files
 #
-# tidyMatchExcel(match.file = "nameoffileinworkingdirectory")
+# match.sheet <- TidyMatchExcel(match.file = "nameoffileinworkingdirectory")
 
-# tidyMultiMatchExcels(competition.slug, team="teamacronym", round="week-X")
+# TidyMultiMatchExcels(competition.slug, team="teamacronym", round="week-X")
 
 # for (index in 1:length(tidied_list)) {
 #   file_name <- tidied_names[index]
