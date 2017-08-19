@@ -4,16 +4,16 @@ require(RCurl)
 
 # Functions for individual sheets---------
 GetMetaData <- function(match.df) {
-  meta.df <- match.df[1:(grep("kickoff", match.df[, "poss.action"])[1] - 1),]
+  meta.df <- match.df[1:(grep("kickoff", match.df[, "poss.action"])[1] - 1), ]
   meta.df[, "poss.player"] <- trimws(meta.df[, "poss.player"])
   meta.df[, "def.player"] <- trimws(meta.df[, "def.player"])
   for(player.row in 1:nrow(meta.df)) {
     if (grepl("\\(", meta.df[player.row, "poss.player"]) && is.na(meta.df[player.row, "poss.number"])) {
-      player.split.num <- gsub("\\(|\\)", "", strsplit(meta.df[player.row, "poss.player"]," ")[[1]][length(strsplit(meta.df[player.row, "poss.player"], " ")[[1]])])
+      player.split.num <- gsub("\\(|\\)", "", strsplit(meta.df[player.row, "poss.player"], " ")[[1]][length(strsplit(meta.df[player.row, "poss.player"], " ")[[1]])])
       meta.df[player.row, "poss.number"] <- player.split.num
     }
     if (grepl("\\(", meta.df[player.row, "def.player"]) && is.na(meta.df[player.row, "def.number"])) {
-      player.split.num <- gsub("\\(|\\)", "", strsplit(meta.df[player.row, "def.player"]," ")[[1]][length(strsplit(meta.df[player.row, "def.player"]," ")[[1]])])
+      player.split.num <- gsub("\\(|\\)", "", strsplit(meta.df[player.row, "def.player"], " ")[[1]][length(strsplit(meta.df[player.row, "def.player"], " ")[[1]])])
       meta.df[player.row, "def.number"] <- player.split.num
     }
   }
@@ -120,7 +120,7 @@ SetPlayerInfo <- function(sheet.row, match.df, col.set) {
         }
         # if meta.rownum is still more than 1 number, check if number column is filled for sheet.row
         if (!is.na(player.number) && length(meta.rownum) > 1) {
-          meta.rownum.pos <- grep(paste0("^", player.number,"$"), meta.df[meta.rownum, number.col])
+          meta.rownum.pos <- grep(paste0("^", player.number, "$"), meta.df[meta.rownum, number.col])
           meta.rownum     <- meta.rownum[meta.rownum.pos]
         }
         # if meta_rownumn is still more than 1 number, check if position column is filled for sheet.row
@@ -130,8 +130,8 @@ SetPlayerInfo <- function(sheet.row, match.df, col.set) {
         }
         # if meta_rownumn is still more than 1 number, check if the number is in the player string
         if (grepl("\\(", player.string) && length(meta.rownum) > 1) {
-          player.split.num <- gsub("\\(|\\)","", strsplit(player.string, " ")[[1]][length(strsplit(player.string, " ")[[1]])])
-          meta.rownum.pos  <- grep(paste0("^", player.split.num,"$"), meta.df[meta.rownum, number.col])
+          player.split.num <- gsub("\\(|\\)", "", strsplit(player.string, " ")[[1]][length(strsplit(player.string, " ")[[1]])])
+          meta.rownum.pos  <- grep(paste0("^", player.split.num, "$"), meta.df[meta.rownum, number.col])
           meta.rownum      <- meta.rownum[meta.rownum.pos]
         }
         if (length(meta.rownum) == 1) {
@@ -169,7 +169,7 @@ GetDefLocation <- function(sheet.row, match.df) {
     event.poss.location <- match.df[!is.na(match.df[, "event"]) & match.df[, "event"]==sheet.event, "poss.location"][1]
     if (!is.na(event.poss.location)) {
       # returns the opposite of event_poss_location
-      as.character(kOpposites[as.character(kOpposites[, "posslocations"]) == as.character(event.poss.location),"deflocations"])
+      as.character(kOpposites[as.character(kOpposites[, "posslocations"]) == as.character(event.poss.location), "deflocations"])
     } else {
       NA
       # def location cannot be determined
@@ -191,60 +191,70 @@ GetDefLocation <- function(sheet.row, match.df) {
 }
 
 IsCompletedPass <- function(sheet.row, match.df) {
-  sheet.event        <- as.numeric(match.df[sheet.row, "event"][1])
-  sheet.event.next   <- as.numeric(sheet.event) + 1
-  sheet.row.nextevent <- grep(paste0("^", sheet.event.next,"$"), match.df[, "event"])[1]
-  # checks if next event isn't an instance that cut off the broadcast or stopped play, or an offside call.
-  !grepl("playcutoffbybroadcast|stoppage|
-         substitution|halftime|fulltime|end.of.match|offside", match.df[sheet.row.nextevent, "poss.action"]) &&
-    # checks if next event isn't a lost aerial duel
-    !grepl("aerial.lost", match.df[sheet.row.nextevent, "poss.action"]) &&
-    # checks if next event isn't a recovery
-    !grepl("recoveries", match.df[sheet.row.nextevent, "poss.action"]) &&
-    # checks if the defensive action isn't something that by definition disrupted a pass attempt
-    !(TRUE %in% grepl("interceptions|blocks|clearances|shield|high.balls.won|smothers.won|loose.balls.won", match.df[match.df[, "event"] == sheet.event & !is.na(match.df[, "event"]), "def.action"])) &&
-    # checks if the "gk.ball.stop" column isn't a value besides "missed.the.ball"
-    !grepl("caught|punched|dropped|collected|parried|deflected", match.df[match.df[, "event"] == sheet.event & !is.na(match.df[, "event"]), "gk.ball.stop"]) &&
-    # checks if "poss.player.disciplinary" column is blank
-    !grepl("fouls|fouls|yellow|red|penalties", match.df[match.df[, "event"] == sheet.event & !is.na(match.df[, "event"]), "poss.player.disciplinary"]) &&
-    # checks if the ball didn't go out of bounds
-    !(TRUE %in% grepl("out.of.bounds", match.df[match.df[, "event"] == sheet.event & !is.na(match.df[, "event"]), "poss.notes"]))
+  # Returns TRUE if, based on surrounding data, a pass attempt is completed
+  event      <- as.numeric(match.df[sheet.row, "event"][1])
+  next.event <- as.numeric(event) + 1
+  row.of.next.event <- grep(paste0("^", next.event,"$"), match.df[, "event"])[1]
+  # Series of logical variables & their dependent variables about what 
+  # happened in an event, to be used to determine if a pass was completed.
+  cutoff.actions             <- "playcutoffbybroadcast|stoppage|substitution|halftime|fulltime|end.of.match|offside"
+  next.event.wasnt.cutoff    <- !grepl(cutoff.actions, match.df[row.of.next.event, "poss.action"])
+  next.event.wasnt.lost.duel <- !grepl("aerial.lost|ground.50.50.lost", match.df[row.of.next.event, "poss.action"])
+  next.event.wasnt.recovery  <- !grepl("recoveries", match.df[row.of.next.event, "poss.action"])
+  ball.disrupt.actions       <- "interceptions|blocks|clearances|shield|high.balls.won|smothers.won|loose.balls.won"
+  def.actions                <- match.df[match.df[, "event"] == event & !is.na(match.df[, "event"]), "def.action"]
+  ball.wasnt.disrupted       <- !(TRUE %in% grepl(ball.disrupt.actions, def.actions))
+  gk.disrupt.actions         <- "caught|punched|dropped|collected|parried|deflected"
+  gk.actions                 <- match.df[match.df[, "event"] == event & !is.na(match.df[, "event"]), "gk.ball.stop"]
+  gk.didnt.stop.ball         <- !grepl(gk.disrupt.actions, gk.actions)
+  poss.player.didnt.foul     <- !grepl("fouls|fouls|yellow|red|penalties", match.df[match.df[, "event"] == event & !is.na(match.df[, "event"]), "poss.player.disciplinary"])
+  ball.didnt.go.out          <- !(TRUE %in% grepl("out.of.bounds", unlist(match.df[match.df[, "event"] == event & !is.na(match.df[, "event"]), c("play.type","poss.notes")])))
+  # Series of if statements to determine if event is a completed pass, creates
+  # the TRUE/FALSE statement to be returned by the function.
+  next.event.wasnt.cutoff && next.event.wasnt.lost.duel && 
+    next.event.wasnt.recovery && ball.wasnt.disrupted && gk.didnt.stop.ball && 
+    poss.player.didnt.foul && ball.didnt.go.out
 }
 
 TidyMatchExcel <- function(match.file) {
-  # Reading the Excel file----------
-  # "match.file" must be a string value and the Excel file must be in the working directory
+  # Reads a match spreadsheet in untidied, Excel format and creates a match
+  # spreadsheet in .csv format that can be read by creating-stats.R files.
   match.df <- as.data.frame(read_excel(match.file))
-  # Cleaning up excess cells and characters--------
-  match.df <- TrimRowsColumns(match.df)
-  match.df <- CleanUpCells(match.df)
-  # Get metadata----------
-  GetMetaData(match.df)
+  match.df <- TrimRowsColumns(match.df) # removes excess columns & rows
+  match.df <- CleanUpCells(match.df) # trims whitespace, creates NAs
+  GetMetaData(match.df) # creates meta.df in global environment
   match.df <- match.df[grep("kickoff", match.df[,"poss.action"])[1]:nrow(match.df),]
-  # Expand shortcuts and calculate missing values
+  kKickoffRow <- grep("kickoff", match.df[, "poss.action"])[1] + 1
+  kEndOfMatchRow <- nrow(match.df)
   abbreviation_processor <- AbbreviationProcessor$new()
-  for (sheet.row in ((grep("kickoff", match.df[, "poss.action"])[1]) + 1):nrow(match.df)) {
+  # Expands shorcuts, calculate missing values
+  for (sheet.row in kKickoffRow:kEndOfMatchRow) {
     match.df[sheet.row, ] = abbreviation_processor$process_row(match.df[sheet.row,])
-    match.df[sheet.row, "time"] <- CalcTimeValue(sheet.row, match.df = match.df)
-    match.df[sheet.row, "event"] <- CalcEventValue(sheet.row, match.df = match.df)
-    match.df[sheet.row, c("poss.position", "poss.team", "poss.number", "poss.player")] <- SetPlayerInfo(sheet.row, match.df = match.df, col.set = "poss")
-    match.df[sheet.row, c("def.position", "def.team", "def.number", "def.player")] <- SetPlayerInfo(sheet.row, match.df = match.df, col.set = "def")
-    if (!is.na(match.df[sheet.row, "def.action"]) & is.na(match.df[sheet.row, "def.location"])) {
+    match.df[sheet.row, "time"] <- CalcTimeValue(sheet.row, match.df)
+    match.df[sheet.row, "event"] <- CalcEventValue(sheet.row, match.df)
+    match.df[sheet.row, c("poss.position", "poss.team", "poss.number", "poss.player")] <- SetPlayerInfo(sheet.row, match.df, "poss")
+    match.df[sheet.row, c("def.position", "def.team", "def.number", "def.player")] <- SetPlayerInfo(sheet.row, match.df, "def")
+    has.missing.def.location <- !is.na(match.df[sheet.row, "def.action"]) & is.na(match.df[sheet.row, "def.location"])
+    if (has.missing.def.location) {
       match.df[sheet.row, c("def.location")] <- GetDefLocation(sheet.row, match.df = match.df)
     }
   }
-  # Calculate completed passes and missing "poss.play.destination" locations----------
-  for (sheet.row in ((grep("kickoff", match.df[, "poss.action"])[1]) + 1):nrow(match.df)) {
-    if (grepl("pass", match.df[sheet.row, "poss.action"]) & !grepl("c", match.df[sheet.row, "poss.action"])) {
-      if (IsCompletedPass(sheet.row, match.df = match.df) == TRUE) {
-        # add a ".c" to the end of the "poss.action" value to signify that it's a completed pass,
-        match.df[sheet.row, "poss.action"] <- paste0(match.df[sheet.row, "poss.action"], ".c")
-        # set value in "poss.play.destination" if NA
-        if (is.na(match.df[sheet.row, "poss.play.destination"])) {
-          sheet.event.next <- as.numeric(match.df[sheet.row, "event"][1]) + 1
-          sheet.row.nextevent <- grep(paste0("^", sheet.event.next, "$"), match.df[, "event"])[1]
-          match.df[sheet.row, "poss.play.destination"] <- match.df[sheet.row.nextevent, "poss.location"]
-        }
+  # Calculates completed passes and missing "poss.play.destination" locations
+  for (sheet.row in kKickoffRow:kEndOfMatchRow) {
+    is.inconclusive.pass <-
+      grepl("pass", match.df[sheet.row, "poss.action"]) &
+      !grepl("c", match.df[sheet.row, "poss.action"])
+    if (is.inconclusive.pass &
+        IsCompletedPass(sheet.row, match.df = match.df) == TRUE) {
+      match.df[sheet.row, "poss.action"] <-
+        paste0(match.df[sheet.row, "poss.action"], ".c") # add a ".c" to the end of the "pass.f/s/b"
+      # Sets value in "poss.play.destination" if it's an NA
+      if (is.na(match.df[sheet.row, "poss.play.destination"])) {
+        next.event <- as.numeric(match.df[sheet.row, "event"][1]) + 1
+        sheet.row.of.next.event <-
+          grep(paste0("^", next.event, "$"), match.df[, "event"])[1]
+        match.df[sheet.row, "poss.play.destination"] <-
+          match.df[sheet.row.of.next.event, "poss.location"]
       }
     }
   }
