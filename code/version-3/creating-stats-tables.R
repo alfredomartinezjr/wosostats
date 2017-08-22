@@ -12,7 +12,8 @@ if(!exists("online_mode")){
   source("~/wosostats/code/version-3/creating-stats-columns.R")
 }
 
-getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA, location="none", section="everything", per90=FALSE, database=NA) {
+getStatsForMatch <- function(matchURL=NA, filename=NA, match_csv=NA, matchup=NA,
+                             location="none", section="everything", per90=FALSE, database=NA) {
   if(!is.na(matchURL)) {
     match_sheet <- getURL(matchURL)
     match_sheet <- read.csv(textConnection(match_sheet), stringsAsFactors = FALSE)

@@ -5,28 +5,30 @@
 ## Function that takes a pattern and a column name
 ## The pattern will be the factors as well
 
-createStatsTable <- function(pattern=character(), target_col=character(), source_df, new_sumcol = NA, new_divcol = list(), 
-                             stat_names = NA, drop_cols = NA, team = "poss", isPassing=FALSE, extra_col_names=character(),
+createStatsTable <- function(pattern=character(), target_col=character(), 
+                             source_df, new_sumcol = NA, new_divcol = list(), 
+                             stat_names = NA, drop_cols = NA, team = "poss",
+                             isPassing=FALSE, extra_col_names=character(),
                              location="none") {
-  source_df <- source_df[!(grepl("end.of.match|stoppage.in.play|halftime|playcutoff|kickoff",source_df[,"poss.action"])),]
-  if(isPassing){
-    pattern <- c("completed", "attempts", "pct",  "passes.f.c", "passes.f", "passes.s.c", "passes.s", "passes.b.c", "passes.b",extra_col_names)
+  source_df <- source_df[!(grepl("end.of.match|stoppage.in.play|halftime|playcutoff|kickoff", source_df[, "poss.action"])), ]
+  if(isPassing) {
+    pattern <- c("completed", "attempts", "pct",  "passes.f.c", "passes.f",
+                 "passes.s.c", "passes.s", "passes.b.c", "passes.b", extra_col_names)
     target_col <- "poss.action"
   }
   # Set factors, in case all events specified in the pattern don't show up, so that they show up in the table
   source_df[,target_col] <- factor(as.character(source_df[,target_col]), levels=c(pattern))
-  
   ## Create the table
   if(location=="none"){
     if(team == "poss") {
-      stats_table <- table(paste(source_df$poss.team, source_df$poss.number, source_df$poss.player, sep="_"), source_df[,target_col])
+      stats_table <- table(paste(source_df$poss.team, source_df$poss.number, source_df$poss.player, sep="_"), source_df[, target_col])
     } else if (team == "def") {
-      stats_table <- table(paste(source_df$def.team, source_df$def.number, source_df$def.player, sep="_"), source_df[,target_col])
+      stats_table <- table(paste(source_df$def.team, source_df$def.number, source_df$def.player, sep="_"), source_df[, target_col])
     }
     stats_table <- data.frame(unclass(stats_table))
-    stats_table <- cbind(Player=sapply(rownames(stats_table),function(x) strsplit(x,"_")[[1]][3]), 
-                         Team = sapply(rownames(stats_table),function(x) strsplit(x,"_")[[1]][1]),
-                         Number = sapply(rownames(stats_table),function(x) strsplit(x,"_")[[1]][2]),
+    stats_table <- cbind(Player=sapply(rownames(stats_table),function(x) strsplit(x, "_")[[1]][3]), 
+                         Team = sapply(rownames(stats_table),function(x) strsplit(x, "_")[[1]][1]),
+                         Number = sapply(rownames(stats_table),function(x) strsplit(x, "_")[[1]][2]),
                          stats_table)
     if(nrow(source_df)==0){
       stats_table <- cbind(data.frame(Player=character(),Team=character(),Number=integer()),stats_table)
@@ -154,25 +156,19 @@ fillBlanks <- function(df) {
   }
   df
 }
-
-## Function that creates a subset of a source_df data frame based on certain patterns in a given column
-createSubset <- function(pattern, col, source_df=match_sheet, clean=FALSE) {
-  ## Get event number for all events that have that pattern in the specified column
-  events <- source_df[source_df[,col] %in% c(pattern),"event"]
-  ## Add a "^" and "$" to each event value
-  events <- paste0("^", events, "$")
-  
-  ## Go back to original data frame and get all rows with an "event" value from events
-  source_df <- source_df[grep(paste(events, collapse = "|"), source_df[,"event"]),]
-  if(clean==TRUE){
+createSubset <- function(pattern, col, source_df = match_sheet, clean = FALSE) {
+  # Function that creates a subset of a source_df data frame based on certain patterns in a given column
+  #events <- source_df[source_df[, col] %in% c(pattern), "event"] # all events with pattern in specified column
+  events <- source_df[grepl(pattern, source_df[, col]), "event"] # all events with pattern in specified column
+  events <- paste0("^", events, "$") # adds "^" and "$" to each event value
+  source_df <- source_df[grep(paste(events, collapse = "|"), source_df[,"event"]),] # subsets to rows with event number
+  if(clean == TRUE) {
     source_df <- fillBlanks(source_df)
-    source_df <- source_df[!grepl("end.of.match|stoppage.in.play|halftime|playcutoff|kickoff",source_df[,"poss.action"]),]
+    source_df <- source_df[!grepl("end.of.match|stoppage.in.play|halftime|playcutoff|kickoff", source_df[, "poss.action"]), ]
     source_df <- source_df[!duplicated(source_df$event),]
   }
-  
   source_df
 }
-
 ## Adds column that fills in yes/no values based on qualifiers
 addColumnForQualifier <- function(newcol, pattern, patternLocation, ogdf, ndf, invert=FALSE) {
   newcol_vec <- logical(nrow(ndf))
