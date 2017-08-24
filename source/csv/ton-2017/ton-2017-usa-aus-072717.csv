@@ -1,0 +1,1632 @@
+"event","time","poss.position","poss.team","poss.player","poss.action","poss.location","poss.play.destination","play.type","def.position","def.team","def.player","def.action","def.location","gk.ball.stop","gk.s.o.g.attempt","poss.player.disciplinary","poss.notes","def.player.disciplinary","def.notes","xG","poss.number","def.number"
+"1","1",NA,NA,NA,"kickoff",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"2","1","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"3","1","M/AM","AUS","Gorry","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"4","1","D/CB","USA","Dahlkemper","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"5","1","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"6","1","M/W","USA","Rapinoe","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"7","1","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"8","1","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,"M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","3"
+"9","1","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"10","1","M/CM","AUS","Foord","passes.f",NA,NA,"crosses","M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","15"
+"10","1",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","USA","Dahlkemper","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"11","1","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"12","1","M/W","USA","Pugh","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"13","1","D/FB","AUS","Carpenter","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"14","1","D/FB","AUS","Carpenter","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"15","1","D/CB","AUS","Kennedy","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"16","1","D/CB","AUS","Catley","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"17","1","D/CB","AUS","Kennedy","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"18","1","D/CB","AUS","Catley","passes.f.c",NA,NA,"pass.into.pressure","F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","23"
+"19","1","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"launch","M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"20","1","M/CM","USA","Mewis","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"21","1","M/CM","USA","Mewis","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"22","1","F","USA","Horan","aerial.won",NA,NA,NA,"M/DM","AUS","Van Egmond","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"9","10"
+"23","1","M/CM","USA","Long","dispossessed",NA,NA,NA,"M/AM","AUS","Butt","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"20","13"
+"24","1","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"25","1","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"26","1","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,"M/CM","USA","Long","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"10","20"
+"27","1","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,NA,"M/W","USA","Pugh","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"28","1","M/W","USA","Pugh","passes.f",NA,NA,"pass.into.pressure","D/CB","AUS","Kennedy","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"22","14"
+"28","1",NA,NA,NA,NA,NA,NA,NA,"F","AUS","De Vanna","ball.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,"11"
+"29","1","D/FB","USA","Smith","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"30","2","D/FB","USA","Smith","passes.f.c",NA,NA,"pass.into.pressure","F","AUS","De Vanna","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"16","11"
+"31","2","F","USA","Press","passes.b",NA,NA,"pass.into.pressure","D/CB","AUS","Catley","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"23","7"
+"31","2",NA,NA,NA,NA,NA,NA,NA,"F","AUS","De Vanna","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"11"
+"31","2",NA,NA,NA,NA,NA,NA,NA,"M/AM","AUS","Gorry","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
+"32","2","M/AM","AUS","Gorry","passes.f.c",NA,NA,NA,"D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","16"
+"33","2","M/CM","AUS","Foord","dispossessed",NA,NA,NA,"D/FB","USA","Short","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"33","2",NA,NA,NA,NA,NA,NA,NA,"M/W","USA","Rapinoe","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,"15"
+"34","2","M/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"35","2","M/W","USA","Rapinoe","movement",NA,NA,NA,"M/CM","AUS","Foord","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","9"
+"36","2","M/W","USA","Rapinoe","take.on.won",NA,NA,NA,"M/CM","AUS","Foord","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"15","9"
+"37","2","M/W","USA","Rapinoe","passes.b.c",NA,NA,NA,"M/CM","AUS","Foord","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"15","9"
+"38","2","GK","USA","Naeher","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"38","2",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"39","2","D/FB","AUS","Carpenter","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"40","2","D/FB","AUS","Carpenter","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"41","2","M/AM","AUS","Butt","passes.b",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
+"41","2",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"42","2","D/FB","USA","Smith","passes.f",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"43","2","D/FB","AUS","Carpenter","recoveries",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"44","2","D/FB","AUS","Carpenter","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"44","2",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"45","2","D/FB","USA","Smith","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"45","2",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"46","2","F","USA","Press","passes.f.c",NA,NA,"pass.into.pressure","M/AM","AUS","Butt","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"23","13"
+"47","2","M/CM","USA","Mewis","take.on.won",NA,NA,NA,"M/AM","AUS","Gorry","dribbled",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,"3","19"
+"48","3","M/W","USA","Rapinoe","passes.f",NA,NA,"launch","D/FB","AUS","Kellond-Knight","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"15","8"
+"48","3",NA,NA,NA,NA,NA,NA,"free.kick","D/FB","AUS","Carpenter","ball.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,"21"
+"48","3",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"49","3","M/W","USA","Pugh","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"50","3","M/W","USA","Pugh","passes.f.c",NA,NA,"pass.into.pressure","D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","21"
+"51","3","D/CB","USA","Dahlkemper","passes.b.c",NA,NA,NA,"D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","21"
+"51","3",NA,NA,NA,NA,NA,NA,NA,"F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"20"
+"52","3","M/W","USA","Pugh","lost.touch",NA,NA,NA,"M/AM","AUS","Gorry","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"22","19"
+"53","3","M/AM","AUS","Gorry","fouls.won",NA,NA,NA,"M/W","USA","Pugh","fouls.conceded",NA,NA,NA,NA,NA,NA,NA,NA,"19","22"
+"54","3","GK","AUS","Williams","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"55","3","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"56","3","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"pass.into.pressure","M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"56","3",NA,NA,NA,NA,NA,NA,NA,"F","AUS","De Vanna","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"11"
+"57","3","M/CM","USA","Long","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"58","3","M/CM","USA","Long","passes.s.c",NA,NA,NA,"F","AUS","De Vanna","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","11"
+"59","4","M/W","USA","Pugh","passes.f.c",NA,NA,"pass.into.pressure","F","AUS","De Vanna","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","11"
+"60","4","F","USA","Horan","lost.touch",NA,NA,"out.of.bounds.lost.poss","D/CB","AUS","Catley","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","7"
+"61","4","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"62","4","D/CB","AUS","Catley","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"63","4","D/CB","AUS","Kennedy","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"64","4","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"65","4","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"65","4",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"66","4","F","AUS","De Vanna","dispossessed",NA,NA,"out.of.bounds.keep.poss","D/CB","USA","Sauerbrunn","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"11","4"
+"67","4","D/FB","AUS","Kellond-Knight","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"68","4","M/AM","AUS","Gorry","take.on.lost",NA,NA,NA,"M/CM","USA","Long","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"19","20"
+"68","4",NA,NA,NA,NA,NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"9"
+"69","4","M/CM","USA","Mewis","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"70","4","M/CM","USA","Mewis","passes.f.c",NA,NA,NA,"F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","20"
+"71","4","M/W","USA","Rapinoe","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"72","4","M/W","USA","Rapinoe","passes.f.c",NA,NA,"switch","M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","19"
+"73","4","F","USA","Horan","passes.s.c",NA,NA,"pass.into.pressure","M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","13"
+"74","4","M/CM","USA","Mewis","passes.b.c",NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","19"
+"75","4","D/FB","USA","Short","passes.s.c",NA,NA,NA,"F","AUS","De Vanna","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","11"
+"76","5","M/CM","USA","Mewis","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"77","5","D/CB","USA","Sauerbrunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"78","5","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,"pass.into.pressure","M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","13"
+"79","5","D/FB","USA","Smith","passes.f.c",NA,NA,"pass.into.pressure","F","AUS","De Vanna","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","11"
+"79","5",NA,NA,NA,NA,NA,NA,NA,"M/AM","AUS","Butt","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,"13"
+"80","5","M/W","USA","Pugh","passes.b.c",NA,NA,NA,"F","AUS","De Vanna","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","11"
+"80","5",NA,NA,NA,NA,NA,NA,NA,"D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
+"81","5","D/CB","USA","Sauerbrunn","passes.f",NA,NA,"launch","M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","13"
+"81","5",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"82","5","F","USA","Press","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"83","5","GK","AUS","Williams","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"83","5",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"83","5",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"84","5","M/DM","AUS","Van Egmond","aerial.won",NA,NA,NA,"M/W","USA","Pugh","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"10","22"
+"85","5","F","AUS","De Vanna","ground.50.50.lost",NA,NA,NA,"D/FB","USA","Smith","ground.50.50.won",NA,NA,NA,NA,NA,NA,NA,NA,"11","16"
+"86","5","D/FB","USA","Smith","passes.f.c",NA,NA,"pass.into.pressure","F","AUS","De Vanna","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","11"
+"87","5","M/W","USA","Pugh","lost.touch",NA,NA,"out.of.bounds.lost.poss","M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","10"
+"88","6","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"throw.in","M/CM","USA","Long","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"8","20"
+"88","6",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"89","6","M/CM","USA","Long","passes.f.c",NA,NA,"pass.into.pressure","M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","13"
+"90","6","M/W","USA","Pugh","passes.b.c",NA,NA,NA,"M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","13"
+"91","6","D/CB","USA","Sauerbrunn","passes.b.c",NA,NA,"pass.into.pressure","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","20"
+"92","6","D/CB","USA","Dahlkemper","passes.b.c",NA,NA,"pass.into.pressure","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","20"
+"93","6","GK","USA","Naeher","clearances",NA,NA,NA,"F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"1","20"
+"94","6","M/W","USA","Pugh","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"95","6","M/W","USA","Pugh","take.on.won",NA,NA,NA,"D/FB","AUS","Kellond-Knight","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"22","8"
+"96","6","M/W","USA","Pugh","movement",NA,NA,NA,"D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","8"
+"97","6","M/W","USA","Pugh","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"98","6","M/W","USA","Pugh","passes.f.c",NA,NA,"pass.into.pressure","D/CB","AUS","Catley","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","7"
+"99","6","F","USA","Press","passes.s.c",NA,NA,"pass.into.pressure","D/CB","AUS","Kennedy","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"23","14"
+"100","6","M/W","USA","Pugh","lost.touch",NA,NA,NA,"M/DM","AUS","Van Egmond","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"22","10"
+"100","6",NA,NA,NA,NA,NA,NA,NA,"D/CB","AUS","Kennedy","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"101","6","D/FB","USA","Short","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"102","6","D/FB","USA","Short","passes.b.c",NA,NA,NA,"M/CM","AUS","Foord","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"103","6","GK","USA","Naeher","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"104","6","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,"launch","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","20"
+"104","6",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"105","6","M/W","USA","Rapinoe","passes.f.c",NA,NA,NA,"D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"106","6","F","USA","Horan","passes.b.c",NA,NA,NA,"D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","21"
+"106","6",NA,NA,NA,NA,NA,NA,NA,"M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"10"
+"107","7","M/W","USA","Rapinoe","passes.f",NA,NA,"crosses","D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"107","7",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","AUS","Catley","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"108","7","F","AUS","De Vanna","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
+"109","7","F","AUS","De Vanna","take.on.lost",NA,NA,NA,"M/CM","USA","Mewis","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"11","3"
+"109","7",NA,NA,NA,NA,NA,NA,NA,"D/CB","USA","Sauerbrunn","ball.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
+"110","7","D/FB","USA","Smith","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"111","7","D/FB","USA","Smith","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"112","7","D/FB","USA","Smith","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"113","7","M/W","USA","Pugh","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"114","7","M/CM","USA","Long","passes.f.c",NA,NA,NA,"M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","13"
+"115","7","F","USA","Horan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"116","7","M/W","USA","Rapinoe","passes.f.c",NA,NA,"pass.into.pressure","D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"116","7",NA,NA,NA,NA,NA,NA,NA,"M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"10"
+"117","7","F","USA","Press","passes.b",NA,NA,NA,"M/DM","AUS","Van Egmond","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"23","10"
+"118","7","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"119","7","M/AM","AUS","Gorry","passes.f",NA,NA,"launch","D/CB","USA","Dahlkemper","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"19","7"
+"119","7",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"120","7","F","AUS","Kerr","aerial.lost",NA,NA,NA,"D/CB","USA","Dahlkemper","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"20","7"
+"121","7","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"122","7","M/CM","USA","Long","passes.b.c",NA,NA,NA,"M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","13"
+"123","7","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,NA,"F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","20"
+"124","7","M/W","USA","Pugh","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"125","7","M/CM","USA","Long","fouls.won",NA,NA,NA,"M/CM","AUS","Foord","fouls.conceded",NA,NA,NA,NA,NA,NA,NA,NA,"20","9"
+"126","8","D/CB","USA","Dahlkemper","passes.f",NA,NA,"free.kick","D/CB","AUS","Kennedy","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"7","14"
+"126","8",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"126","8",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"127","8","D/CB","AUS","Kennedy","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"128","8","D/CB","AUS","Kennedy","passes.f.c",NA,NA,"headed","F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"129","8","F","AUS","Kerr","movement",NA,NA,NA,"M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","3"
+"130","8","F","AUS","Kerr","passes.f",NA,NA,"pass.into.pressure","M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","3"
+"130","8",NA,NA,NA,NA,NA,NA,NA,"D/CB","USA","Dahlkemper","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"130","8",NA,NA,NA,NA,NA,NA,NA,"D/FB","USA","Short","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"130","8",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Naeher","gk.loose.balls.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
+"131","8","GK","USA","Naeher","passes.f",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"131","8",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"132","8","D/FB","AUS","Kellond-Knight","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"132","8",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"133","8","M/AM","AUS","Gorry","take.on.won",NA,NA,NA,"F","USA","Horan","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"19","9"
+"134","8","M/AM","AUS","Gorry","dispossessed",NA,NA,"out.of.bounds.lost.poss","M/W","USA","Pugh","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"19","22"
+"135","9","D/FB","USA","Smith","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"136","9","D/CB","USA","Sauerbrunn","passes.f",NA,NA,NA,"M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","13"
+"136","9",NA,NA,NA,NA,NA,NA,NA,"M/DM","AUS","Van Egmond","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"10"
+"137","9","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"138","9","F","AUS","Kerr","lost.touch",NA,NA,NA,"M/CM","USA","Mewis","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"20","3"
+"138","9",NA,NA,NA,NA,NA,NA,NA,"M/CM","USA","Long","ball.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,"20"
+"139","9","M/AM","AUS","Butt","aerial.won",NA,NA,NA,"D/CB","USA","Sauerbrunn","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"13","4"
+"140","9","F","AUS","Kerr","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"141","9","F","AUS","Kerr","passes.f",NA,NA,"headed","D/FB","USA","Smith","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"20","16"
+"141","9",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"142","9","D/CB","AUS","Kennedy","aerial.won",NA,NA,NA,"F","USA","Press","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"14","23"
+"143","9","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"144","9","M/AM","AUS","Gorry","passes.s.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","22"
+"145","9","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"146","9","M/AM","AUS","Gorry","take.on.won",NA,NA,NA,"M/CM","USA","Long","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"19","20"
+"147","9","M/AM","AUS","Gorry","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"148","9","F","AUS","De Vanna","dispossessed",NA,NA,NA,"M/CM","USA","Long","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"11","20"
+"149","9","M/CM","USA","Long","passes.b.c",NA,NA,NA,"F","AUS","De Vanna","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"20","11"
+"150","9","D/FB","USA","Smith","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"151","9","M/W","USA","Pugh","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"152","9","F","USA","Horan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"153","9","M/W","USA","Rapinoe","passes.f",NA,NA,"switch","M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","10"
+"154","9","F","USA","Horan","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"155","10",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"156","10","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"157","10","D/FB","AUS","Carpenter","passes.b.c",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","15"
+"158","10","GK","AUS","Williams","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"159","10","D/FB","AUS","Carpenter","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"160","10","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","9"
+"161","10","D/CB","AUS","Catley","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"162","10","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"163","10","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"pass.into.pressure","D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","16"
+"163","10",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss","D/CB","USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
+"164","10","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"throw.in","D/CB","USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"8","4"
+"164","10",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"165","10","D/FB","AUS","Kellond-Knight","passes.s",NA,NA,"throw.in","M/CM","USA","Mewis","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"8","3"
+"165","10",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"166","10","D/CB","AUS","Kennedy","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"167","10",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"168","10","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"169","10","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"170","10","D/CB","AUS","Catley","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"171","10","D/CB","AUS","Catley","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"172","10","D/CB","AUS","Kennedy","passes.s.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","23"
+"173","10","D/CB","AUS","Catley","passes.f",NA,NA,"launch","F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","9"
+"173","10",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","USA","Sauerbrunn","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
+"174","10","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"174","10",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"175","10","M/CM","USA","Mewis","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"176","10","F","USA","Horan","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"177","10","M/CM","USA","Mewis","passes.f.c",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"177","10",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"178","10","F","USA","Press","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"179","10","F","USA","Press","take.on.won",NA,NA,NA,"D/CB","AUS","Kennedy","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"23","14"
+"180","10","F","USA","Press","passes.f.c",NA,NA,NA,"D/CB","AUS","Kennedy","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"23","14"
+"181","10","M/W","USA","Rapinoe","shots.stopped.by.gk",NA,NA,"out.of.bounds.keep.poss","D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"181","10",NA,NA,NA,NA,NA,NA,NA,"GK","AUS","Williams","gk.s.o.g.stop",NA,"deflected.to.safety",NA,NA,NA,NA,NA,NA,NA,"1"
+"182","12","M/W","USA","Rapinoe","passes.s",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"182","12",NA,NA,NA,NA,NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"182","12",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"183","12","GK","AUS","Williams","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"183","12",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"183","12",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"184","12","M/AM","AUS","Butt","aerial.lost",NA,NA,NA,"M/CM","USA","Long","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"13","20"
+"185","12","D/CB","AUS","Catley","aerial.lost",NA,NA,NA,"F","USA","Press","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"7","23"
+"186","12","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"187","12","M/AM","AUS","Gorry","passes.f",NA,NA,"launch","M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","3"
+"188","12","GK","USA","Naeher","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"189","12","GK","USA","Naeher","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"190","13","F","USA","Horan","aerial.lost",NA,NA,NA,"D/CB","AUS","Kennedy","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"191","13","M/CM","USA","Mewis","aerial.lost",NA,NA,NA,"M/AM","AUS","Gorry","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"3","19"
+"192","13","F","USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"193","13","F","USA","Horan","passes.s.c",NA,NA,"pass.into.pressure","M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","19"
+"193","13",NA,NA,NA,NA,NA,NA,NA,"M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"10"
+"194","13","M/W","USA","Pugh","passes.f.c",NA,NA,"launch","M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","13"
+"194","13",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
+"195","13","F","USA","Press","lost.touch",NA,NA,"out.of.bounds.keep.poss","D/CB","AUS","Kennedy","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"23","14"
+"196","13","D/FB","USA","Smith","passes.f",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"196","13",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"197","13","GK","AUS","Williams","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"197","13",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"197","13",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"198","13","M/DM","AUS","Van Egmond","aerial.lost",NA,NA,NA,"M/CM","USA","Mewis","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"10","3"
+"199","13","D/FB","AUS","Carpenter","clearances",NA,NA,"out.of.bounds.lost.poss","F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","9"
+"200","14","D/FB","USA","Short","passes.f",NA,NA,"throw.in","M/DM","AUS","Van Egmond","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"14","10"
+"200","14",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"201","14","F","USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"202","14","F","USA","Horan","passes.b.c",NA,NA,"headed","M/CM","AUS","Foord","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","9"
+"202","14",NA,NA,NA,NA,NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
+"203","14","M/CM","USA","Mewis","passes.f.c",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"204","14","D/FB","USA","Smith","take.on.lost",NA,NA,NA,"F","AUS","De Vanna","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"16","11"
+"204","14",NA,NA,NA,NA,NA,NA,NA,"D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
+"205","14","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"206","14","D/FB","AUS","Kellond-Knight","passes.s.c",NA,NA,NA,"D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","16"
+"207","14","F","AUS","De Vanna","take.on.lost",NA,NA,NA,"M/W","USA","Pugh","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"11","22"
+"208","14","M/W","USA","Pugh","movement",NA,NA,NA,"F","AUS","De Vanna","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"22","11"
+"209","14","M/W","USA","Pugh","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"210","14","M/CM","USA","Mewis","passes.b.c",NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","19"
+"211","14","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,"pass.into.pressure","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","20"
+"212","14","F","USA","Press","passes.b.c",NA,NA,NA,"M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"23","10"
+"212","14",NA,NA,NA,NA,NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
+"213","14","D/FB","USA","Smith","passes.f",NA,NA,"out.of.bounds.lost.poss","F","AUS","De Vanna","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","11"
+"213","14",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"214","14","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"214","14",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"215","15","F","AUS","Kerr","aerial.won",NA,NA,NA,"M/CM","USA","Mewis","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"20","3"
+"216","15","F","AUS","Kerr","passes.f",NA,NA,"headed","M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","3"
+"216","15",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","USA","Sauerbrunn","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
+"217","15","F","AUS","Kerr","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"218","15","F","AUS","Kerr","passes.f",NA,NA,"pass.into.pressure","D/CB","USA","Sauerbrunn","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"20","4"
+"219","15","D/CB","USA","Sauerbrunn","passes.s.c",NA,NA,NA,"F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","20"
+"220","15","M/CM","USA","Long","passes.b.c",NA,NA,NA,"M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","13"
+"221","15","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"222","15","D/FB","USA","Short","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"223","15","M/W","USA","Rapinoe","passes.f.c",NA,NA,"pass.into.pressure","M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","13"
+"224","15","D/FB","USA","Short","dispossessed",NA,NA,"out.of.bounds.keep.poss","D/FB","AUS","Carpenter","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"14","21"
+"225","15","M/W","USA","Rapinoe","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"225","15",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"226","15","F","USA","Horan","dispossessed",NA,NA,NA,"M/DM","AUS","Van Egmond","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"9","10"
+"227","15","M/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"228","15","M/W","USA","Rapinoe","passes.b",NA,NA,"pass.into.pressure","M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","13"
+"228","15",NA,NA,NA,NA,NA,NA,NA,"M/AM","AUS","Butt","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"13"
+"229","15","M/AM","AUS","Butt","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
+"230","15","M/AM","AUS","Butt","passes.f.c",NA,NA,"pass.into.pressure","M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","15"
+"231","15","M/CM","AUS","Foord","dispossessed",NA,NA,"pass.into.pressure","D/CB","USA","Dahlkemper","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"9","7"
+"232","15","M/AM","AUS","Gorry","ground.50.50.lost",NA,NA,NA,"M/CM","USA","Long","ground.50.50.won",NA,NA,NA,NA,NA,NA,NA,NA,"19","20"
+"233","15","M/CM","USA","Mewis","passes.f.c",NA,NA,NA,"M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","10"
+"234","15","M/W","USA","Pugh","movement",NA,NA,NA,"D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","8"
+"235","15","M/W","USA","Pugh","take.on.won",NA,NA,NA,"D/FB","AUS","Kellond-Knight","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"22","8"
+"236","15","M/W","USA","Pugh","shots.blocked",NA,NA,"out.of.bounds.keep.poss","D/CB","AUS","Catley","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"22","7"
+"236","15",NA,NA,NA,NA,NA,NA,NA,"D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
+"236","15",NA,NA,NA,NA,NA,NA,NA,"M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"10"
+"237","16","M/W","USA","Rapinoe","passes.s",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"237","16",NA,NA,NA,NA,NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"237","16",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"238","16","GK","AUS","Williams","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"238","16",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"239","16","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"239","16",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"240","16","M/CM","AUS","Foord","passes.b.c",NA,NA,NA,"D/FB","USA","Smith","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","16"
+"241","16","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","22"
+"242","16","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"243","16","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"244","16","D/CB","AUS","Kennedy","passes.s.c",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","15"
+"245","16","D/CB","AUS","Catley","passes.b.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","23"
+"246","16","GK","AUS","Williams","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"247","17","GK","AUS","Williams","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"248","17","M/AM","AUS","Gorry","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"249","17","M/AM","AUS","Gorry","passes.s.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","9"
+"250","17","D/CB","AUS","Kennedy","passes.f.c",NA,NA,"pass.into.pressure","F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"251","17","M/AM","AUS","Butt","passes.b.c",NA,NA,"pass.into.pressure","M/CM","USA","Mewis","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"13","3"
+"252","17","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"253","17","D/CB","AUS","Kennedy","passes.b",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"253","17",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"254","17","M/W","USA","Pugh","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"254","17",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"255","17","D/FB","USA","Smith","dispossessed",NA,NA,"out.of.bounds.keep.poss","M/CM","AUS","Foord","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"16","9"
+"256","17","D/FB","USA","Smith","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"256","17",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"257","17","F","USA","Press","passes.b.c",NA,NA,"headed","M/AM","AUS","Gorry","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"23","19"
+"258","17","D/FB","USA","Smith","passes.b.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"259","17","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,"pass.into.pressure","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","20"
+"260","17","M/CM","USA","Long","dispossessed",NA,NA,NA,"F","AUS","De Vanna","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"20","11"
+"261","17","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"262","17","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,NA,"M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","20"
+"263","17","F","AUS","Kerr","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"264","17","F","AUS","Kerr","passes.f.c",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"264","17",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"265","17","M/AM","AUS","Butt","shots.missed",NA,NA,"out.of.bounds.lost.poss","D/FB","USA","Short","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"13","14"
+"265","17",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Naeher","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
+"266","18","GK","USA","Naeher","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"266","18",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"266","18",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"267","18","F","USA","Horan","aerial.won",NA,NA,NA,"M/DM","AUS","Van Egmond","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"9","10"
+"268","18","M/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"269","18","M/W","USA","Rapinoe","passes.f.c",NA,NA,"pass.into.pressure","M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","13"
+"270","18","M/CM","USA","Mewis","take.on.won",NA,NA,NA,"M/AM","AUS","Gorry","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"3","19"
+"271","18","M/CM","USA","Mewis","passes.f",NA,NA,"th","D/CB","AUS","Kennedy","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"3","14"
+"272","18","D/CB","AUS","Kennedy","passes.b.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"273","18","GK","AUS","Williams","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"274","18","M/AM","AUS","Gorry","ground.50.50.won",NA,NA,"out.of.bounds.lost.poss","D/FB","USA","Short","ground.50.50.lost",NA,NA,NA,NA,NA,NA,NA,NA,"19","14"
+"275","18","D/FB","USA","Short","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"275","18",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"276","18","F","USA","Horan","passes.b.c",NA,NA,NA,"F","AUS","De Vanna","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","11"
+"277","19","D/FB","USA","Short","take.on.lost",NA,NA,"out.of.bounds.lost.poss","F","AUS","De Vanna","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"14","11"
+"277","19",NA,NA,NA,NA,NA,NA,NA,"D/FB","AUS","Carpenter","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"21"
+"278","19",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"279","19","GK","AUS","Williams","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"280","19","M/DM","AUS","Van Egmond","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"281","19","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"282","19","D/CB","AUS","Catley","movement",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","23"
+"283","19","D/CB","AUS","Catley","passes.f.c",NA,NA,"pass.into.pressure","F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","23"
+"284","19","M/AM","AUS","Gorry","take.on.won",NA,NA,NA,"M/W","USA","Pugh","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"19","22"
+"285","19","M/AM","AUS","Gorry","take.on.lost",NA,NA,NA,"M/CM","USA","Mewis","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"19","3"
+"286","19","M/CM","USA","Mewis","passes.s.c",NA,NA,"pass.into.pressure","M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","19"
+"287","19","M/W","USA","Pugh","passes.s",NA,NA,"pass.into.pressure","M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","19"
+"287","19",NA,NA,NA,NA,NA,NA,NA,"F","AUS","Kerr","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"20"
+"288","19","F","AUS","Kerr","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"289","19","M/AM","AUS","Butt","passes.f",NA,NA,NA,"M/W","USA","Rapinoe","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"13","15"
+"289","19",NA,NA,NA,NA,NA,NA,NA,"M/W","USA","Rapinoe","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"15"
+"290","19","M/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"291","19","M/W","USA","Rapinoe","passes.b.c",NA,NA,NA,"M/AM","AUS","Butt","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"15","13"
+"292","19","M/CM","USA","Long","passes.b.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"293","19","GK","USA","Naeher","clearances",NA,NA,"out.of.bounds.lost.poss","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"1","20"
+"294","20",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"295","20","M/AM","AUS","Butt","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
+"296","20","M/DM","AUS","Van Egmond","passes.f",NA,NA,"pass.into.pressure","D/CB","USA","Dahlkemper","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"10","7"
+"297","20","M/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"298","20","M/W","USA","Rapinoe","passes.f",NA,NA,"pass.into.pressure","D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"299","20","D/CB","AUS","Kennedy","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"300","20","D/CB","AUS","Kennedy","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"301","20","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"302","20","D/CB","AUS","Kennedy","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"303","20","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"304","20","D/FB","AUS","Kellond-Knight","passes.s.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"305","20","F","AUS","Kerr","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"306","20","M/CM","AUS","Foord","passes.s",NA,NA,NA,"M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","20"
+"306","20",NA,NA,NA,NA,NA,NA,NA,"M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"3"
+"306","20",NA,NA,NA,NA,NA,NA,NA,"M/CM","USA","Long","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"20"
+"307","20","M/CM","USA","Mewis","ground.50.50.won",NA,NA,NA,"M/CM","AUS","Foord","ground.50.50.lost",NA,NA,NA,NA,NA,NA,NA,NA,"3","9"
+"308","20","M/CM","USA","Mewis","passes.s.c",NA,NA,NA,"M/CM","AUS","Foord","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"3","9"
+"309","20","M/W","USA","Pugh","passes.f",NA,NA,"pass.into.pressure","D/CB","AUS","Kennedy","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"22","14"
+"310","20","D/CB","AUS","Kennedy","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"311","20","M/AM","AUS","Gorry","passes.s.c",NA,NA,NA,"M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","3"
+"312","20","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"313","20","M/CM","AUS","Foord","take.on.lost",NA,NA,"out.of.bounds.lost.poss","D/FB","USA","Smith","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"9","16"
+"314","20","D/FB","USA","Smith","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"315","20","F","USA","Press","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"316","20","D/FB","USA","Smith","clearances",NA,NA,"out.of.bounds.lost.poss","M/CM","AUS","Foord","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","9"
+"317","21","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"317","21",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"318","21","M/CM","AUS","Foord","passes.s.c",NA,NA,NA,"M/CM","USA","Long","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","20"
+"319","21","M/AM","AUS","Gorry","passes.s.c",NA,NA,"pass.into.pressure","M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","20"
+"320","21","M/CM","AUS","Foord","shots.missed",NA,NA,"out.of.bounds.lost.poss","M/CM","USA","Long","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","20"
+"320","21",NA,NA,NA,NA,NA,NA,NA,"M/W","USA","Rapinoe","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,"15"
+"320","21",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Naeher","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
+"321","21","GK","USA","Naeher","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"321","21",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"321","21",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"322","21","F","USA","Horan","aerial.lost",NA,NA,NA,"D/CB","AUS","Kennedy","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"323","21","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"324","21","F","USA","Press","passes.b.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"325","21","M/W","USA","Pugh","take.on.won",NA,NA,NA,"M/AM","AUS","Gorry","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"22","19"
+"326","21","F","USA","Press","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"327","21","M/CM","USA","Mewis","passes.f.c",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"327","21",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"327","21",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"328","21","M/W","USA","Rapinoe","shots.missed",NA,NA,"out.of.bounds.lost.poss","D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"328","21",NA,NA,NA,NA,NA,NA,NA,"GK","AUS","Williams","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
+"329","22","GK","AUS","Williams","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"329","22",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"329","22",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"330","22","F","AUS","Kerr","aerial.lost",NA,NA,NA,"M/CM","USA","Mewis","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"20","3"
+"331","22","D/FB","AUS","Carpenter","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"332","22","D/FB","AUS","Carpenter","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"333","22","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"333","22",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"333","22",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"334","22","F","AUS","De Vanna","lost.touch",NA,NA,NA,"D/CB","USA","Dahlkemper","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"11","7"
+"335","22","D/CB","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"336","22","D/CB","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"337","22","GK","USA","Naeher","clearances",NA,NA,"out.of.bounds.lost.poss","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"1","20"
+"338","22","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"339","22","M/AM","AUS","Gorry","shots.missed",NA,NA,"out.of.bounds.lost.poss","M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","20"
+"339","22",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Naeher","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
+"340","23","GK","USA","Naeher","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"340","23",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"340","23",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"341","23","F","USA","Horan","aerial.lost",NA,NA,NA,"D/CB","AUS","Kennedy","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"342","23","F","AUS","Kerr","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"343","23","F","AUS","Kerr","passes.f",NA,NA,NA,"M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","3"
+"343","23",NA,NA,NA,NA,NA,NA,NA,"D/FB","USA","Short","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"344","23","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"345","23","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"346","23","M/CM","AUS","Foord","lost.touch",NA,NA,NA,"D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","16"
+"347","23","M/CM","USA","Mewis","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"348","23","M/CM","USA","Mewis","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"349","23","D/FB","USA","Smith","take.on.won",NA,NA,NA,"M/CM","AUS","Foord","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"16","9"
+"350","23","D/FB","USA","Smith","passes.f.c",NA,NA,NA,"M/CM","AUS","Foord","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","9"
+"351","23","F","USA","Press","lost.touch",NA,NA,NA,"D/CB","AUS","Catley","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"23","7"
+"352","23","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"353","23","M/AM","AUS","Gorry","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"354","23","M/DM","AUS","Van Egmond","passes.b",NA,NA,"pass.into.pressure","M/W","USA","Pugh","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"10","22"
+"355","23","M/W","USA","Pugh","dispossessed",NA,NA,NA,"M/DM","AUS","Van Egmond","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"22","10"
+"356","23","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"357","23","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","22"
+"358","23","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"359","24","D/CB","AUS","Catley","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"360","24","GK","AUS","Williams","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"361","24","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"362","24","D/CB","AUS","Catley","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"363","24","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"364","24","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","9"
+"365","24","D/FB","AUS","Carpenter","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"366","24","M/AM","AUS","Gorry","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"367","24","D/CB","AUS","Catley","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"368","24","D/CB","AUS","Catley","passes.f",NA,NA,"launch","GK","USA","Naeher","gk.loose.balls.won",NA,"collected",NA,NA,NA,NA,NA,NA,"7","1"
+"368","24",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"368","24",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"369","24",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"370","24","D/CB","USA","Dahlkemper","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"370","24",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"371","24","D/FB","AUS","Carpenter","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"372","24","D/FB","AUS","Carpenter","ball.shield",NA,NA,NA,"M/W","USA","Rapinoe","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"21","15"
+"373","24","D/FB","AUS","Carpenter","passes.b.c",NA,NA,NA,"M/W","USA","Rapinoe","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"21","15"
+"374","24","D/CB","AUS","Kennedy","passes.f",NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"375","25","M/W","USA","Rapinoe","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"376","25","F","USA","Press","passes.b",NA,NA,"pass.into.pressure","D/CB","AUS","Catley","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"23","7"
+"377","25","D/CB","AUS","Catley","passes.f",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","9"
+"378","25","M/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"379","25","M/W","USA","Rapinoe","passes.f.c",NA,NA,"pass.into.pressure","D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"380","25","F","USA","Press","passes.f.c",NA,NA,NA,"M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"23","10"
+"381","25","M/W","USA","Rapinoe","passes.s.c",NA,NA,"crosses","D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"382","25","F","USA","Horan","dispossessed",NA,NA,NA,"D/FB","AUS","Kellond-Knight","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"9","8"
+"383","25","D/CB","AUS","Catley","clearances",NA,NA,NA,"M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","3"
+"384","25","M/AM","AUS","Butt","clearances",NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
+"385","25",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"386","25","D/FB","USA","Smith","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"387","25","D/CB","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"388","25","GK","USA","Naeher","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"389","25","GK","USA","Naeher","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"389","25",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"390","25","M/W","USA","Pugh","aerial.lost",NA,NA,NA,"M/DM","AUS","Van Egmond","aerial.won",NA,NA,NA,"fouls.conceded",NA,"fouls.won",NA,NA,"22","10"
+"391","26","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"391","26",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"392","26","M/CM","AUS","Foord","passes.f",NA,NA,"pass.into.pressure","D/FB","USA","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"392","26",NA,NA,NA,NA,NA,NA,NA,"D/CB","USA","Dahlkemper","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"392","26",NA,NA,NA,NA,NA,NA,NA,"D/FB","USA","Short","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"393","26","D/FB","AUS","Carpenter","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"394","26","D/FB","AUS","Carpenter","passes.f.c",NA,NA,"pass.into.pressure","M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","15"
+"395","26","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","9"
+"396","26","M/CM","AUS","Foord","passes.f",NA,NA,"crosses","D/FB","USA","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"396","26",NA,NA,NA,NA,NA,NA,NA,"D/CB","USA","Dahlkemper","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"397","26","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"398","26","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"398","26",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"399","26","D/FB","USA","Short","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"400","26","D/FB","USA","Short","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"401","26","M/W","USA","Rapinoe","ground.50.50.won",NA,NA,"out.of.bounds.lost.poss","D/FB","AUS","Carpenter","ground.50.50.lost",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"402","26","D/FB","AUS","Carpenter","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"402","26",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"403","26","M/CM","AUS","Foord","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"404","26","D/FB","AUS","Carpenter","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"405","27","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"406","27","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"407","27","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"408","27","D/CB","AUS","Catley","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"409","27","D/CB","AUS","Kennedy","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"410","27","D/FB","AUS","Carpenter","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"411","27","D/CB","AUS","Kennedy","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"412","27","M/AM","AUS","Gorry","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"413","27","M/AM","AUS","Gorry","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"414","27","D/FB","AUS","Carpenter","passes.b.c",NA,NA,NA,"D/FB","USA","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","14"
+"415","27","M/AM","AUS","Gorry","passes.f",NA,NA,"crosses","M/W","USA","Rapinoe","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"19","15"
+"416","27","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"417","27","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"418","27","D/CB","AUS","Kennedy","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"419","27","D/CB","AUS","Catley","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"420","27","D/CB","AUS","Kennedy","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"421","27","D/CB","AUS","Catley","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"422","27","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,NA,"D/FB","USA","Short","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"10","14"
+"423","28","D/CB","AUS","Catley","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"424","28","D/CB","AUS","Kennedy","passes.s.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"425","28","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"426","28","F","AUS","De Vanna","lost.touch",NA,NA,NA,"M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","3"
+"426","28",NA,NA,NA,NA,NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"22"
+"427","28","M/W","USA","Pugh","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"428","28","M/W","USA","Pugh","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"429","28","M/W","USA","Pugh","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"430","28","F","USA","Horan","fouls.won",NA,NA,NA,"M/AM","AUS","Gorry","fouls.conceded",NA,NA,NA,NA,NA,NA,NA,NA,"9","19"
+"431","28","D/CB","USA","Dahlkemper","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"431","28",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"431","28",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"432","28","F","USA","Horan","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"433","29","GK","AUS","Williams","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"433","29",NA,NA,NA,NA,NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"434","29","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,"pass.into.pressure","M/W","USA","Pugh","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"435","29","D/CB","AUS","Catley","passes.f",NA,NA,"launch","F","USA","Press","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"7","23"
+"435","29",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","USA","Sauerbrunn","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
+"436","29","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"437","29","F","USA","Horan","lost.touch",NA,NA,NA,"M/AM","AUS","Butt","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","13"
+"438","29","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"439","29","D/FB","AUS","Kellond-Knight","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"440","29","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"441","29","F","AUS","Kerr","passes.f.c",NA,NA,"pass.into.pressure","D/CB","USA","Dahlkemper","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","7"
+"441","29",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"442","29","F","AUS","De Vanna","dispossessed",NA,NA,"out.of.bounds.keep.poss","D/FB","USA","Smith","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"11","16"
+"443","30","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"444","30","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"445","30","M/AM","AUS","Gorry","passes.f",NA,NA,"crosses","F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","23"
+"445","30",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
+"446","30","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"447","30","M/AM","AUS","Gorry","passes.f",NA,NA,"launch","F","USA","Press","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"19","23"
+"447","30",NA,NA,NA,NA,NA,NA,"pass.into.pressure","GK","USA","Naeher","gk.loose.balls.won",NA,"collected",NA,NA,NA,NA,NA,NA,NA,"1"
+"448","30",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"449","30","F","USA","Horan","aerial.lost",NA,NA,NA,"M/DM","AUS","Van Egmond","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"9","10"
+"450","30","F","USA","Press","lost.touch",NA,NA,NA,"D/CB","AUS","Catley","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"23","7"
+"451","30","D/CB","AUS","Kennedy","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"452","30","D/CB","AUS","Kennedy","passes.b.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","23"
+"453","30","GK","AUS","Williams","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"454","30","D/CB","AUS","Catley","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"455","30","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"456","30","D/CB","AUS","Kennedy","passes.s.c",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","15"
+"457","30","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"458","30","D/FB","AUS","Carpenter","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"459","31","M/AM","AUS","Butt","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
+"460","31","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"crosses","D/CB","USA","Dahlkemper","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"8","7"
+"460","31",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"461","31","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"462","31","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"crosses","F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","9"
+"462","31",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","USA","Dahlkemper","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"463","31","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,"headed","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","20"
+"464","31","M/CM","USA","Long","passes.b.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"465","31","M/CM","USA","Mewis","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"466","31","M/W","USA","Rapinoe","passes.s.c",NA,NA,NA,"D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"467","31","M/CM","USA","Long","passes.b.c",NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","19"
+"468","31","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"469","31","D/FB","USA","Smith","take.on.won",NA,NA,NA,"M/CM","AUS","Foord","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"16","9"
+"470","31","D/FB","USA","Smith","take.on.won",NA,NA,NA,"M/DM","AUS","Van Egmond","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"16","10"
+"471","31","D/FB","USA","Smith","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"472","31","M/W","USA","Pugh","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"473","31","F","USA","Horan","passes.b.c",NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","19"
+"474","31","M/CM","USA","Long","passes.b.c",NA,NA,NA,"F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","20"
+"475","31","D/CB","USA","Dahlkemper","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"475","31",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"476","31","D/FB","AUS","Carpenter","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"477","31","D/FB","AUS","Carpenter","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"478","31","M/AM","AUS","Butt","passes.b.c",NA,NA,NA,"M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","3"
+"479","31","D/CB","AUS","Kennedy","passes.b.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"480","31","GK","AUS","Williams","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"481","31","GK","AUS","Williams","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"482","31","D/CB","AUS","Catley","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"483","32","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"484","32","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"485","32","D/FB","AUS","Kellond-Knight","passes.s",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"485","32",NA,NA,NA,NA,NA,NA,NA,"M/CM","USA","Long","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"20"
+"486","32","M/CM","USA","Long","passes.b.c",NA,NA,NA,"M/CM","AUS","Foord","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","9"
+"487","32","M/W","USA","Pugh","passes.b.c",NA,NA,NA,"M/CM","AUS","Foord","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","9"
+"488","32","D/FB","USA","Smith","passes.f.c",NA,NA,"pass.into.pressure","M/CM","AUS","Foord","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","9"
+"489","32","M/CM","USA","Mewis","passes.b.c",NA,NA,NA,"M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","13"
+"490","32","M/W","USA","Pugh","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"490","32",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"491","32","D/CB","AUS","Catley","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"492","32","D/CB","AUS","Catley","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"493","32","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"494","32","M/AM","AUS","Butt","passes.f",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
+"494","32",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"494","32",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"495","32","GK","USA","Naeher","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"495","32",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"495","32",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"496","32","F","USA","Horan","aerial.won",NA,NA,NA,"M/DM","AUS","Van Egmond","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"9","10"
+"497","32","F","USA","Press","lost.touch",NA,NA,NA,"D/CB","AUS","Kennedy","ball.touch",NA,NA,NA,NA,NA,NA,NA,NA,"23","14"
+"498","32","D/CB","AUS","Kennedy","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"499","32","D/CB","AUS","Kennedy","passes.f",NA,NA,"pass.into.pressure","M/CM","USA","Mewis","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"14","3"
+"500","32","M/CM","USA","Mewis","passes.b.c",NA,NA,NA,"F","AUS","De Vanna","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","11"
+"501","32","D/FB","USA","Short","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"502","32","M/CM","USA","Long","passes.b.c",NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","19"
+"503","33","D/CB","USA","Dahlkemper","take.on.won",NA,NA,NA,"F","AUS","Kerr","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"7","20"
+"504","33","D/CB","USA","Dahlkemper","movement",NA,NA,NA,"F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","20"
+"505","33","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"506","33","M/CM","USA","Long","passes.f.c",NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"507","33","D/FB","USA","Smith","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"508","33","D/FB","USA","Smith","passes.f",NA,NA,"pass.into.pressure","M/CM","AUS","Foord","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","9"
+"508","33",NA,NA,NA,NA,NA,NA,NA,"M/CM","AUS","Foord","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"9"
+"509","33","M/CM","AUS","Foord","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"510","33","M/CM","AUS","Foord","passes.b.c",NA,NA,NA,"D/FB","USA","Smith","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","16"
+"511","33","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"512","33","M/AM","AUS","Gorry","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"513","33","F","AUS","Kerr","dispossessed",NA,NA,NA,"D/CB","USA","Sauerbrunn","ball.shield",NA,NA,NA,NA,NA,NA,NA,NA,"20","4"
+"514","33","D/CB","USA","Dahlkemper","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"515","33","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"516","33","M/W","USA","Pugh","lost.touch",NA,NA,NA,"D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","8"
+"517","33","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"518","33","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"519","33","D/CB","AUS","Catley","passes.f",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"520","34",NA,NA,NA,"stoppage.in.play",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"521","35","D/CB","AUS","Catley","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"522","35","GK","AUS","Williams","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"523","35","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"524","35","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"525","35","F","AUS","De Vanna","take.on.lost",NA,NA,NA,"D/CB","USA","Sauerbrunn","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"11","4"
+"526","35","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"527","35","F","USA","Press","passes.b.c",NA,NA,NA,"F","AUS","De Vanna","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"23","11"
+"528","35","M/CM","USA","Mewis","dispossessed",NA,NA,NA,"F","AUS","De Vanna","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"3","11"
+"529","35","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"530","35","F","USA","Press","passes.s.c",NA,NA,"pass.into.pressure","M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"23","19"
+"531","35","D/FB","USA","Smith","passes.f",NA,NA,NA,"D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","8"
+"531","35",NA,NA,NA,NA,NA,NA,NA,"D/FB","AUS","Kellond-Knight","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
+"532","35","M/CM","USA","Mewis","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"533","35","M/CM","USA","Mewis","clearances",NA,NA,NA,"F","AUS","De Vanna","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","11"
+"534","35","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"535","35","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","23"
+"536","35","M/AM","AUS","Gorry","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"536","35",NA,NA,NA,NA,NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"537","36","M/CM","AUS","Foord","passes.b.c",NA,NA,NA,"D/FB","USA","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"538","36","M/AM","AUS","Gorry","passes.f.c",NA,NA,"pass.into.pressure","M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","3"
+"539","36","M/CM","AUS","Foord","passes.b.c",NA,NA,NA,"M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","3"
+"540","36","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","23"
+"541","36","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"541","36",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"542","36","GK","USA","Naeher","passes.f",NA,NA,"launch","D/CB","AUS","Kennedy","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"1","14"
+"542","36",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"542","36",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"543","36","M/W","USA","Pugh","aerial.won",NA,NA,NA,"F","AUS","De Vanna","aerial.lost",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,"22","11"
+"544","37","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"544","37",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"544","37",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"545","37","F","USA","Horan","aerial.won",NA,NA,"out.of.bounds.lost.poss","D/CB","AUS","Kennedy","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"546","37","GK","AUS","Williams","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"546","37",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"546","37",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"547","37","M/DM","AUS","Van Egmond","aerial.won",NA,NA,NA,"M/W","USA","Pugh","aerial.lost",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,"10","22"
+"548","37","D/FB","AUS","Kellond-Knight","passes.s.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"549","37","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"550","38","D/CB","AUS","Kennedy","passes.s.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"551","38","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","23"
+"552","38","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,"pass.into.pressure","M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"553","38","F","AUS","De Vanna","passes.b.c",NA,NA,"pass.into.pressure","M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","20"
+"554","38","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,NA,"M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","20"
+"555","38","F","AUS","Kerr","passes.f",NA,NA,"pass.into.pressure","D/CB","USA","Sauerbrunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","4"
+"555","38",NA,NA,NA,NA,NA,NA,NA,"D/FB","USA","Smith","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"16"
+"556","38","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"557","38","M/AM","AUS","Gorry","shots.stopped.by.gk",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","15"
+"557","38",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Naeher","gk.s.o.g.stop",NA,"collected",NA,NA,NA,NA,NA,NA,NA,"1"
+"558","38",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"559","38","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"560","38","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"561","38","F","AUS","De Vanna","passes.b.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","9"
+"562","38","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"563","38","D/FB","AUS","Kellond-Knight","passes.s",NA,NA,"crosses","D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","16"
+"563","38",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"564","38","M/CM","AUS","Foord","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"565","39","GK","USA","Naeher","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"565","39",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"565","39",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"566","39","F","USA","Horan","aerial.lost",NA,NA,NA,"D/CB","AUS","Kennedy","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"567","39","M/CM","USA","Long","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"568","39","M/CM","USA","Long","passes.f.c",NA,NA,NA,"M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","13"
+"569","39","M/W","USA","Pugh","passes.b.c",NA,NA,NA,"D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","8"
+"570","39","M/CM","USA","Long","passes.b.c",NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","19"
+"571","39","GK","USA","Naeher","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"572","39","D/FB","USA","Smith","aerial.lost",NA,NA,NA,"F","AUS","De Vanna","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"16","11"
+"573","39","D/CB","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"574","39","D/CB","USA","Sauerbrunn","passes.b.c",NA,NA,"pass.into.pressure","F","AUS","De Vanna","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"4","11"
+"575","39","GK","USA","Naeher","clearances",NA,NA,NA,"M/CM","AUS","Foord","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"1","9"
+"576","39","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"577","39","M/DM","AUS","Van Egmond","passes.s",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"578","39","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"579","39","F","USA","Press","lost.touch",NA,NA,NA,"D/CB","AUS","Catley","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"23","7"
+"580","39","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"581","39","M/AM","AUS","Gorry","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"582","39","M/AM","AUS","Gorry","passes.f.c",NA,NA,"th","D/CB","USA","Sauerbrunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","4"
+"582","39",NA,NA,NA,NA,NA,NA,"pass.into.pressure","M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"20"
+"583","40","F","AUS","De Vanna","passes.s",NA,NA,"crosses","D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","16"
+"583","40",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"584","40","GK","USA","Naeher","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"584","40",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"584","40",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"585","40","F","USA","Horan","aerial.won",NA,NA,NA,"D/CB","AUS","Kennedy","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"586","40","D/CB","AUS","Catley","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"587","40","D/CB","AUS","Catley","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"588","40","GK","AUS","Williams","passes.f",NA,NA,NA,"F","USA","Horan","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"1","9"
+"589","40","F","USA","Horan","lost.touch",NA,NA,NA,"M/DM","AUS","Van Egmond","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","10"
+"590","40","D/FB","AUS","Carpenter","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"591","40","D/FB","AUS","Carpenter","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"591","40",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"592","40","M/CM","AUS","Foord","aerial.won",NA,NA,NA,"D/FB","USA","Short","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"593","40","M/CM","AUS","Foord","passes.s.c",NA,NA,NA,"M/CM","USA","Mewis","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","3"
+"594","40","M/AM","AUS","Butt","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
+"595","40","M/CM","AUS","Foord","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"596","41","M/CM","AUS","Foord","passes.f.c",NA,NA,NA,"M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","3"
+"597","41","M/AM","AUS","Gorry","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"598","41","F","AUS","De Vanna","take.on.won",NA,NA,NA,"D/FB","USA","Smith","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"11","16"
+"599","41","F","AUS","De Vanna","passes.f.c",NA,NA,NA,"D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","16"
+"599","41",NA,NA,NA,NA,NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"22"
+"600","41","M/AM","AUS","Gorry","dispossessed",NA,NA,NA,"M/CM","USA","Long","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"19","20"
+"601","41","M/CM","USA","Long","take.on.won",NA,NA,NA,"M/AM","AUS","Gorry","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"20","19"
+"602","41","M/CM","USA","Long","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"603","41","M/W","USA","Pugh","take.on.won",NA,NA,NA,"D/FB","AUS","Kellond-Knight","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"22","8"
+"604","41","M/W","USA","Pugh","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"605","41","F","USA","Horan","passes.f.c",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA,NA,"9",NA
+"606","41","F","USA","Press","shots.missed",NA,NA,"out.of.bounds.lost.poss","GK","AUS","Williams","gk.shot.miss",NA,NA,NA,NA,"big.chances.shot.missed",NA,NA,NA,"23","1"
+"606","41",NA,NA,NA,NA,NA,NA,NA,"D/CB","AUS","Catley","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"606","41",NA,NA,NA,NA,NA,NA,NA,"GK","AUS","Williams","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
+"607","41",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"608","41","D/FB","AUS","Carpenter","passes.b.c",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","15"
+"609","41","D/CB","AUS","Kennedy","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"610","41","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"611","42","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,"M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","20"
+"612","42","D/CB","AUS","Kennedy","passes.f.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"613","42","D/FB","AUS","Carpenter","passes.f.c",NA,NA,"pass.into.pressure","M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","15"
+"614","42","M/CM","AUS","Foord","passes.f",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"614","42",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"614","42",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"615","42","GK","USA","Naeher","passes.f",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"615","42",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"615","42",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"616","42","F","USA","Horan","aerial.lost",NA,NA,NA,"M/DM","AUS","Van Egmond","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"9","10"
+"617","42","F","USA","Press","aerial.won",NA,NA,NA,"D/CB","AUS","Catley","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"23","7"
+"618","42","F","USA","Horan","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"619","42","D/FB","AUS","Carpenter","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"620","42","D/FB","AUS","Carpenter","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"621","42","M/AM","AUS","Butt","passes.s.c",NA,NA,NA,"M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","20"
+"621","42",NA,NA,NA,NA,NA,NA,NA,"M/CM","USA","Mewis","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,"3"
+"622","42","M/CM","AUS","Foord","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"623","42","M/CM","AUS","Foord","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"624","43","M/CM","AUS","Foord","passes.f",NA,NA,"pass.into.pressure","D/FB","USA","Short","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"625","43","D/FB","USA","Short","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"626","43","M/CM","USA","Mewis","clearances",NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","19"
+"627","43","GK","AUS","Williams","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"628","43","GK","AUS","Williams","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"629","43","M/DM","AUS","Van Egmond","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"630","43","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"631","43","D/CB","AUS","Catley","passes.f",NA,NA,"launch","F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","23"
+"631","43",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","USA","Sauerbrunn","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
+"632","43","D/CB","USA","Sauerbrunn","passes.f",NA,NA,"launch","M/DM","AUS","Van Egmond","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"4","10"
+"633","43","M/DM","AUS","Van Egmond","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"634","43","D/FB","AUS","Kellond-Knight","aerial.lost",NA,NA,NA,"M/W","USA","Pugh","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"635","43","D/CB","AUS","Catley","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"636","43","D/CB","AUS","Catley","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"636","43",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"637","43","F","AUS","De Vanna","passes.b.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","22"
+"638","43","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,NA,"M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","20"
+"639","43","F","AUS","Kerr","passes.f.c",NA,NA,"pass.into.pressure","D/CB","USA","Sauerbrunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","4"
+"639","43",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"640","43","F","AUS","De Vanna","passes.s",NA,NA,"crosses","D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","16"
+"640","43",NA,NA,NA,NA,NA,NA,"pass.into.pressure","GK","USA","Naeher","gk.loose.balls.won",NA,"collected",NA,NA,NA,NA,NA,NA,NA,"1"
+"641","43",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"642","43","D/CB","AUS","Kennedy","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"643","43","D/CB","AUS","Kennedy","passes.f.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"644","44","F","AUS","Kerr","passes.s",NA,NA,"crosses","D/CB","USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"20","4"
+"644","44",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"645","44","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"646","44","M/AM","AUS","Gorry","passes.f.c",NA,NA,NA,"M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","3"
+"647","44","F","AUS","Kerr","passes.s",NA,NA,"crosses","D/FB","USA","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","14"
+"647","44",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/FB","USA","Short","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"647","44",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"648","44","D/FB","AUS","Kellond-Knight","passes.s",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"648","44",NA,NA,NA,NA,NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"648","44",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"649","44","D/CB","AUS","Kennedy","aerial.lost",NA,NA,NA,"F","USA","Horan","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"650","44","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"651","44","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","22"
+"652","44","D/FB","AUS","Carpenter","passes.s.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"653","44","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","23"
+"654","45","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,"pass.into.pressure","M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","15"
+"655","45","M/CM","AUS","Foord","passes.b.c",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","15"
+"656","45","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","15"
+"657","45","M/CM","AUS","Foord","passes.f",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"657","45",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"658","45","F","AUS","Kerr","aerial.lost",NA,NA,NA,"GK","USA","Naeher","gk.high.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,"20","1"
+"659","45","GK","USA","Naeher","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"659","45",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"660","45","D/FB","AUS","Carpenter","passes.f",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"660","45",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"661","45","D/FB","USA","Short","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"662","45","D/FB","USA","Short","passes.b.c",NA,NA,"pass.into.pressure","M/CM","AUS","Foord","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"663","45","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,"launch","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","20"
+"663","45",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"664","45","F","USA","Horan","passes.s.c",NA,NA,NA,"M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","10"
+"665","45","M/W","USA","Rapinoe","passes.s",NA,NA,"pass.into.pressure","F","AUS","De Vanna","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"15","11"
+"666","45","F","AUS","De Vanna","dispossessed",NA,NA,NA,"M/CM","USA","Mewis","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"11","3"
+"667","45+1","M/CM","USA","Mewis","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"668","45+1","D/FB","USA","Smith","movement",NA,NA,NA,"F","AUS","De Vanna","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","11"
+"669","45+1","D/FB","USA","Smith","take.on.lost",NA,NA,NA,"F","AUS","De Vanna","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"16","11"
+"670","45+1","F","AUS","De Vanna","passes.b.c",NA,NA,NA,"D/FB","USA","Smith","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"11","16"
+"671","45+1","D/FB","AUS","Kellond-Knight","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"672","45+1","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"673","45+1","D/CB","AUS","Catley","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"674","45+1","D/CB","AUS","Kennedy","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"675","45+1","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"676","45+1","M/AM","AUS","Gorry","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"677","45+1","M/AM","AUS","Gorry","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"678","45+1","F","AUS","De Vanna","fouls.won",NA,NA,NA,"D/FB","USA","Smith","fouls.conceded",NA,NA,NA,NA,NA,NA,NA,NA,"11","16"
+"678","45+1",NA,NA,NA,NA,NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"679","45+1",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"680","45+1","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"681","45+1","D/CB","AUS","Kennedy","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"681","45+1",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"681","45+1",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"682","45+1",NA,NA,NA,"halftime",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"682","46",NA,NA,NA,"kickoff",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"683","46","M/CM","USA","Long","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"684","46","M/CM","USA","Mewis","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"684","46",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","AUS","Kennedy","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"685","46","F","USA","Press","aerial.lost",NA,NA,NA,"D/CB","AUS","Kennedy","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"23","14"
+"686","46","M/CM","USA","Mewis","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"687","46","M/CM","USA","Mewis","passes.f",NA,NA,NA,"M/AM","AUS","Gorry","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"3","19"
+"687","46",NA,NA,NA,NA,NA,NA,NA,"M/AM","AUS","Gorry","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
+"688","46","D/FB","USA","Smith","ball.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"689","46","M/CM","USA","Mewis","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"690","46","M/CM","USA","Mewis","passes.f",NA,NA,"launch","M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","19"
+"691","46","D/CB","AUS","Catley","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"692","46","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","23"
+"693","46","M/AM","AUS","Gorry","passes.f",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","22"
+"694","46","D/CB","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"695","46","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"696","46","M/CM","USA","Long","dispossessed",NA,NA,NA,"F","AUS","Kerr","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"20","20"
+"697","46","M/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"698","46","M/W","USA","Rapinoe","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"699","46","D/FB","USA","Short","passes.b.c",NA,NA,NA,"D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","21"
+"700","46","D/CB","USA","Dahlkemper","passes.f",NA,NA,"out.of.bounds.keep.poss","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","20"
+"700","46",NA,NA,NA,NA,NA,NA,NA,"F","AUS","Kerr","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"20"
+"701","46","D/FB","USA","Short","passes.f",NA,NA,"throw.in","M/CM","AUS","Foord","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"701","46",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"702","46","M/W","USA","Rapinoe","aerial.lost",NA,NA,NA,"M/CM","AUS","Foord","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"15","9"
+"703","46","D/FB","USA","Short","ground.50.50.won",NA,NA,NA,"M/CM","AUS","Foord","aerial.lost",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,"14","9"
+"704","47","D/CB","USA","Dahlkemper","passes.s.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"705","47","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"706","47","D/FB","USA","Smith","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"707","47","D/FB","USA","Smith","passes.s",NA,NA,"crosses","D/CB","AUS","Catley","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","7"
+"707","47",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss","D/CB","AUS","Catley","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"708","47","M/W","USA","Rapinoe","passes.s",NA,NA,"corner.kick","M/AM","AUS","Butt","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"15","13"
+"708","47",NA,NA,NA,NA,NA,NA,"crosses","M/DM","AUS","Van Egmond","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"10"
+"708","47",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"709","47","D/FB","USA","Smith","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"710","47","D/FB","USA","Smith","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"711","47","M/W","USA","Rapinoe","take.on.won",NA,NA,NA,"D/FB","AUS","Kellond-Knight","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"15","8"
+"712","47","M/W","USA","Rapinoe","passes.s",NA,NA,"crosses","D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","8"
+"712","47",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss","D/CB","AUS","Catley","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"713","48","M/W","USA","Rapinoe","passes.s.c",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"713","48",NA,NA,NA,NA,NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"713","48",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"714","48","M/CM","USA","Mewis","aerial.won",NA,NA,NA,"D/FB","AUS","Kellond-Knight","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"3","8"
+"714","48",NA,NA,NA,NA,NA,NA,NA,"F","AUS","Kerr","blocks",NA,NA,NA,NA,NA,NA,"errors.to.big.chances",NA,NA,"20"
+"715","48","D/CB","USA","Dahlkemper","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"716","48",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"717","48","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"718","48","D/FB","AUS","Kellond-Knight","passes.s",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"718","48",NA,NA,NA,NA,NA,NA,NA,"D/FB","USA","Short","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"719","48","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"720","48","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"721","48","D/CB","AUS","Kennedy","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"722","48","D/FB","AUS","Carpenter","passes.s.c",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"722","48",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"723","49","M/CM","AUS","Foord","passes.s",NA,NA,"pass.into.pressure","D/CB","USA","Dahlkemper","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","7"
+"723","49",NA,NA,NA,NA,NA,NA,NA,"D/CB","USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
+"724","49","M/AM","AUS","Gorry","fouls.conceded",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"725","49","D/CB","USA","Dahlkemper","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"725","49",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"726","49","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"727","49","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"728","49","D/CB","USA","Sauerbrunn","recoveries",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"729","49","D/CB","USA","Sauerbrunn","passes.f",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"730","49","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"731","49","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"732","49","M/AM","AUS","Butt","aerial.lost",NA,NA,NA,"M/CM","USA","Mewis","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"13","3"
+"733","49","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"734","49","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"735","49","M/CM","AUS","Foord","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"736","49","D/FB","USA","Short","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"737","49","D/FB","USA","Short","passes.f",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"738","49","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"739","49","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"740","49","D/FB","AUS","Carpenter","passes.f.c",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","15"
+"741","49","M/CM","AUS","Foord","passes.f.c",NA,NA,"pass.into.pressure","D/FB","USA","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"742","49","M/AM","AUS","Gorry","shots.stopped.by.gk",NA,NA,NA,"M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","20"
+"742","49",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Naeher","gk.s.o.g.stop",NA,"caught",NA,NA,NA,NA,NA,NA,NA,"1"
+"743","50","GK","USA","Naeher","passes.f",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"744","50","F","USA","Press","aerial.lost",NA,NA,NA,"D/FB","AUS","Kellond-Knight","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"23","8"
+"745","50","M/CM","USA","Mewis","aerial.won",NA,NA,NA,"M/AM","AUS","Butt","aerial.lost",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,"3","13"
+"746","50",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"747","50","M/CM","USA","Mewis","shots.blocked",NA,NA,"out.of.bounds.keep.poss","D/CB","AUS","Catley","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","7"
+"747","50",NA,NA,NA,NA,NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
+"747","50",NA,NA,NA,NA,NA,NA,NA,"D/CB","AUS","Catley","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"747","50",NA,NA,NA,NA,NA,NA,NA,"GK","AUS","Williams","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
+"748","50","M/W","USA","Rapinoe","passes.s.c",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"748","50",NA,NA,NA,NA,NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"749","50","M/CM","USA","Mewis","ground.50.50.won",NA,NA,NA,"M/AM","AUS","Butt","ground.50.50.lost",NA,NA,NA,NA,NA,NA,NA,NA,"3","13"
+"750","50","D/FB","USA","Short","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"751","50","D/FB","USA","Short","lost.touch",NA,NA,NA,"F","AUS","De Vanna","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"14","11"
+"752","50","F","AUS","De Vanna","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
+"753","51","F","AUS","De Vanna","take.on.won",NA,NA,NA,"D/FB","USA","Short","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"11","14"
+"754","51","F","AUS","De Vanna","take.on.lost",NA,NA,NA,"M/W","USA","Rapinoe","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"11","15"
+"755","51","M/W","USA","Rapinoe","passes.s.c",NA,NA,"pass.into.pressure","D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"756","51","M/CM","USA","Mewis","dispossessed",NA,NA,NA,"M/AM","AUS","Gorry","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"3","19"
+"757","51","M/DM","AUS","Van Egmond","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"758","51","M/CM","USA","Mewis","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"759","51","M/CM","USA","Mewis","passes.f",NA,NA,NA,"M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","10"
+"759","51",NA,NA,NA,NA,NA,NA,NA,"M/AM","AUS","Gorry","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
+"759","51",NA,NA,NA,NA,NA,NA,NA,"M/AM","AUS","Gorry","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
+"760","51","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"761","51","M/DM","AUS","Van Egmond","passes.f",NA,NA,"launch","M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","3"
+"761","51",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"762","51","D/CB","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"763","51","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,NA,"F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","20"
+"764","51","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"765","51","F","USA","Press","passes.b.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"766","51","D/FB","USA","Short","passes.f",NA,NA,"launch","M/CM","AUS","Foord","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"766","51",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"767","51","D/FB","AUS","Carpenter","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"768","51","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","9"
+"769","51","D/FB","AUS","Carpenter","passes.b.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","9"
+"770","51","D/CB","AUS","Kennedy","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"771","51","D/CB","AUS","Catley","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"772","51","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"773","51","D/CB","AUS","Kennedy","passes.f.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"774","51","D/FB","AUS","Carpenter","passes.f",NA,NA,"crosses","D/FB","USA","Smith","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"21","16"
+"774","51",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"775","51","F","AUS","Kerr","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"776","51","F","AUS","Kerr","passes.f",NA,NA,"through","D/CB","USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"20","4"
+"776","51",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"777","52","M/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"778","52","M/W","USA","Rapinoe","dispossessed",NA,NA,NA,"D/FB","AUS","Carpenter","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"779","52","D/FB","AUS","Carpenter","passes.b.c",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","15"
+"780","52","F","AUS","Kerr","passes.f.c",NA,NA,"through","M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","15"
+"781","52","M/CM","AUS","Foord","passes.s",NA,NA,"crosses","D/FB","USA","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"781","52",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Naeher","gk.high.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,"1"
+"782","52","GK","USA","Naeher","passes.f",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"783","52","D/CB","AUS","Kennedy","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"784","52","D/CB","AUS","Kennedy","passes.f.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"785","52","M/DM","AUS","Van Egmond","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"786","52","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"787","52","F","USA","Press","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"788","52","M/W","USA","Rapinoe","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"789","52","M/CM","USA","Mewis","passes.b.c",NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","19"
+"790","52","GK","USA","Naeher","passes.f",NA,NA,"launch","D/CB","AUS","Kennedy","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"1","14"
+"790","52",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"791","52","D/CB","USA","Sauerbrunn","clearances",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"792","52","M/W","USA","Pugh","aerial.won",NA,NA,NA,"D/FB","AUS","Kellond-Knight","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"22","8"
+"793","52","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"794","52","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"795","52","D/CB","AUS","Kennedy","passes.b.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"796","52","GK","AUS","Williams","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"797","52","D/CB","AUS","Kennedy","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"798","52","D/CB","AUS","Kennedy","passes.f.c",NA,NA,"pass.into.pressure","M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","3"
+"799","53","D/FB","AUS","Carpenter","movement",NA,NA,NA,"D/FB","USA","Short","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"21","14"
+"800","53","D/FB","AUS","Carpenter","passes.s.c",NA,NA,NA,"D/FB","USA","Short","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"21","14"
+"801","53","M/CM","AUS","Foord","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"802","53","M/CM","AUS","Foord","passes.b",NA,NA,"crosses","D/FB","USA","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"802","53",NA,NA,NA,NA,NA,NA,NA,"D/FB","USA","Short","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"802","53",NA,NA,NA,NA,NA,NA,NA,"D/CB","USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
+"802","53",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss","F","USA","Press","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"23"
+"803","53","F","AUS","De Vanna","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
+"804","53","F","AUS","Raso","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"805","53","D/FB","AUS","Carpenter","passes.f",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"805","53",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"806","53","F","AUS","Kerr","aerial.lost",NA,NA,"out.of.bounds.keep.poss","D/FB","USA","Short","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"20","14"
+"807","54","D/FB","AUS","Carpenter","passes.f",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"808","54","M/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"809","54","M/W","USA","Rapinoe","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"810","54","F","USA","Press","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"811","54","M/CM","USA","Mewis","passes.f.c",NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","19"
+"812","54","M/W","USA","Rapinoe","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"813","54","F","USA","Press","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"813","54",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"814","54","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"815","54","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"816","54","GK","AUS","Williams","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"817","54","D/FB","AUS","Kellond-Knight","passes.s.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"818","54","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"819","54","GK","AUS","Williams","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"820","54","D/CB","AUS","Catley","passes.f.c",NA,NA,"pass.into.pressure","F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","9"
+"821","54","D/FB","AUS","Kellond-Knight","passes.s.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"822","54","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,NA,"M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","20"
+"823","54","D/FB","AUS","Kellond-Knight","passes.s.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"824","54","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"825","54","M/AM","AUS","Butt","passes.f.c",NA,NA,NA,"M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","20"
+"826","54","F","AUS","Kerr","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"827","54","F","AUS","Kerr","take.on.lost",NA,NA,NA,"D/CB","USA","Sauerbrunn","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"20","4"
+"828","54","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"829","54","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"830","54","M/CM","AUS","Foord","passes.s.c",NA,NA,NA,"D/FB","USA","Smith","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","16"
+"831","54","F","AUS","Raso","passes.b.c",NA,NA,NA,"M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","22"
+"832","54","D/FB","AUS","Kellond-Knight","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"833","54","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"834","54","F","AUS","Kerr","passes.f.c",NA,NA,"pass.into.pressure","D/CB","USA","Dahlkemper","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","7"
+"835","55","M/CM","AUS","Foord","passes.b.c",NA,NA,"pass.into.pressure","D/CB","USA","Sauerbrunn","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","4"
+"835","55",NA,NA,NA,NA,NA,NA,NA,"D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"16"
+"836","55","F","AUS","Kerr","passes.f",NA,NA,"pass.into.pressure","D/CB","USA","Sauerbrunn","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"20","4"
+"837","55","F","AUS","Kerr","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"838","55","F","AUS","Kerr","passes.f",NA,NA,"pass.into.pressure","M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","3"
+"838","55",NA,NA,NA,NA,NA,NA,NA,"D/CB","USA","Dahlkemper","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"839","55","M/CM","USA","Long","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"840","55","M/CM","USA","Long","passes.f.c",NA,NA,NA,"M/CM","AUS","Foord","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","9"
+"841","55","M/CM","USA","Mewis","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"842","55","M/CM","USA","Mewis","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"843","55","M/CM","USA","Mewis","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"844","55","M/W","USA","Rapinoe","passes.f",NA,NA,NA,"D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"845","55","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"846","55","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"847","55","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"848","55","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"849","55","D/CB","AUS","Catley","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"850","55","D/CB","AUS","Kennedy","passes.f.c",NA,NA,NA,"D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","16"
+"851","55","D/FB","AUS","Carpenter","passes.b.c",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","15"
+"852","55","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"853","55","D/CB","AUS","Catley","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"854","55","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"855","55","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,"pass.into.pressure","M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"856","55","F","AUS","Raso","lost.touch",NA,NA,"out.of.bounds.lost.poss","D/FB","USA","Smith","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"16","16"
+"857","56","GK","USA","Naeher","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"857","56",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"857","56",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"858","56","F","USA","Horan","aerial.lost",NA,NA,NA,"M/DM","AUS","Van Egmond","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"9","10"
+"859","56","F","USA","Press","ground.50.50.lost",NA,NA,NA,"M/AM","AUS","Gorry","ground.50.50.won",NA,NA,NA,NA,NA,NA,NA,NA,"23","19"
+"860","56","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,"M/W","USA","Rapinoe","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"19","15"
+"860","56",NA,NA,NA,NA,NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"23"
+"861","56","D/FB","AUS","Carpenter","passes.f.c",NA,NA,"pass.into.pressure","F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","9"
+"862","56","M/CM","AUS","Foord","movement",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","15"
+"863","56","M/CM","AUS","Foord","movement",NA,NA,NA,"F","USA","Horan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","9"
+"864","56","M/CM","AUS","Foord","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"865","56","M/CM","AUS","Foord","passes.f.c",NA,NA,"pass.into.pressure","M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","20"
+"866","56","F","AUS","Kerr","passes.b",NA,NA,"pass.into.pressure","D/CB","USA","Sauerbrunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","4"
+"866","56",NA,NA,NA,NA,NA,NA,NA,"M/CM","USA","Mewis","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"3"
+"867","56","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"868","56","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"869","56","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"870","56","D/FB","AUS","Kellond-Knight","passes.s.c",NA,NA,"crosses","M/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
+"870","56",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"871","56","F","AUS","Kerr","aerial.won",NA,NA,NA,"D/CB","USA","Dahlkemper","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"20","7"
+"872","56","F","AUS","Kerr","shots.missed",NA,NA,"out.of.bounds.lost.poss","D/CB","USA","Dahlkemper","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","7"
+"872","56",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Naeher","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
+"873","57","GK","USA","Naeher","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"873","57",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"873","57",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"874","57","M/W","USA","Rapinoe","aerial.won",NA,NA,NA,"D/FB","AUS","Carpenter","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"875","57","F","USA","Press","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"876","57","F","USA","Press","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"877","57","F","USA","Horan","dispossessed",NA,NA,NA,"D/CB","AUS","Kennedy","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"878","57","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"879","57","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"880","57","D/FB","USA","Smith","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"880","57",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"881","57","F","USA","Horan","dispossessed",NA,NA,NA,"F","AUS","Raso","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"9","16"
+"881","57",NA,NA,NA,NA,NA,NA,NA,"D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
+"882","57","F","AUS","Raso","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"883","57","M/AM","AUS","Butt","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
+"884","57","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"885","57","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"886","57","D/CB","AUS","Kennedy","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"887","57","D/CB","AUS","Catley","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"888","58","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,NA,"F","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","9"
+"889","58","D/CB","AUS","Catley","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"890","58","D/CB","AUS","Catley","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"891","58","D/CB","AUS","Catley","passes.f.c",NA,NA,"pass.into.pressure","M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","20"
+"892","58","F","AUS","Raso","passes.f",NA,NA,"out.of.bounds.lost.poss","D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","16"
+"893","58","M/W","USA","Pugh","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
+"894","58","F","USA","Dunn","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"895","58","D/FB","USA","Smith","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"896","58","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,"pass.into.pressure","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","20"
+"897","58","D/FB","USA","Smith","passes.f",NA,NA,"pass.into.pressure","F","AUS","Raso","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"16","16"
+"897","58",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss","F","AUS","Raso","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"16"
+"898","59","D/FB","USA","Smith","passes.f",NA,NA,"throw.in","D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","8"
+"898","59",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/FB","AUS","Kellond-Knight","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
+"899","59","M/CM","USA","Long","aerial.won",NA,NA,NA,"M/AM","AUS","Butt","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"20","13"
+"900","59","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"901","59","D/FB","AUS","Kellond-Knight","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"902","59","M/AM","AUS","Gorry","passes.f.c",NA,NA,"pass.into.pressure","M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","3"
+"903","59","M/AM","AUS","Butt","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
+"904","59","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"905","59","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"905","59",NA,NA,NA,NA,NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"906","59","D/FB","AUS","Carpenter","passes.b.c",NA,NA,NA,"D/FB","USA","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","14"
+"907","59","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","15"
+"908","59","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"909","59","M/CM","AUS","Foord","passes.s",NA,NA,NA,"M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","3"
+"909","59",NA,NA,NA,NA,NA,NA,NA,"D/FB","USA","Smith","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"16"
+"910","59","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"911","59","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","19"
+"912","59","F","AUS","Kerr","passes.f",NA,NA,"th","GK","USA","Naeher","gk.loose.balls.won",NA,"collected",NA,NA,NA,NA,NA,NA,"20","1"
+"913","59","GK","USA","Naeher","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"913","59",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"914","59","F","USA","Horan","aerial.won",NA,NA,NA,"M/DM","AUS","Van Egmond","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"9","10"
+"915","59","F","USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"916","59","F","USA","Horan","dispossessed",NA,NA,NA,"D/FB","AUS","Carpenter","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"9","21"
+"917","60","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"918","60","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"919","60","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"920","60","D/CB","AUS","Kennedy","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"921","60","D/FB","AUS","Carpenter","passes.f.c",NA,NA,"pass.into.pressure","D/FB","USA","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","14"
+"922","60","M/CM","AUS","Foord","dispossessed",NA,NA,NA,"D/CB","USA","Dahlkemper","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"9","7"
+"923","60","M/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"924","60","M/W","USA","Rapinoe","clearances",NA,NA,NA,"M/CM","AUS","Foord","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","9"
+"924","60",NA,NA,NA,NA,NA,NA,NA,"D/CB","AUS","Kennedy","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"925","60","M/CM","USA","Mewis","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"926","60","M/CM","USA","Mewis","passes.f.c",NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","19"
+"927","60","M/W","USA","Rapinoe","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"928","60","M/CM","USA","Long","passes.b.c",NA,NA,NA,"M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","13"
+"929","60","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,NA,"M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","13"
+"930","60","M/W","USA","Rapinoe","passes.s.c",NA,NA,NA,"D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"931","60","F","USA","Horan","passes.b.c",NA,NA,NA,"F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","20"
+"932","60","GK","USA","Naeher","passes.f",NA,NA,"launch","M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"1","13"
+"932","60",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"933","60","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"934","60","M/DM","AUS","Van Egmond","passes.f",NA,NA,"launch","D/CB","USA","Dahlkemper","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"10","7"
+"934","60",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"935","60","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"935","60",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"936","60","F","USA","Press","take.on.lost",NA,NA,NA,"D/CB","AUS","Catley","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"23","7"
+"937","60","D/CB","AUS","Catley","passes.s.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","23"
+"938","60","F","AUS","Raso","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"939","61","F","AUS","Raso","lost.touch",NA,NA,NA,"D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","16"
+"940","61","GK","USA","Naeher","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"941","61","GK","USA","Naeher","passes.f",NA,NA,"launch","D/CB","AUS","Kennedy","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"1","14"
+"942","61","D/FB","USA","Smith","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"943","61","D/FB","USA","Smith","ground.50.50.won",NA,NA,NA,"F","AUS","Raso","ground.50.50.lost",NA,NA,NA,NA,NA,NA,NA,NA,"16","16"
+"944","61","D/FB","USA","Smith","clearances",NA,NA,"out.of.bounds.lost.poss","F","AUS","Raso","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","16"
+"945","61","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"throw.in","D/CB","USA","Sauerbrunn","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"8","4"
+"945","61",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"946","61","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"947","61","F","USA","Dunn","dispossessed",NA,NA,NA,"F","AUS","Raso","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"19","16"
+"947","61",NA,NA,NA,NA,NA,NA,NA,"D/FB","AUS","Kellond-Knight","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
+"948","61","D/CB","AUS","Kennedy","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"949","61","D/CB","AUS","Kennedy","passes.f.c",NA,NA,NA,"M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","20"
+"950","61","F","AUS","Raso","passes.f",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","19"
+"951","61","M/CM","AUS","Foord","ground.50.50.lost",NA,NA,NA,"D/CB","USA","Dahlkemper","ground.50.50.won",NA,NA,NA,NA,NA,NA,NA,NA,"9","7"
+"952","61","M/CM","USA","Long","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"953","62","M/CM","USA","Long","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"954","62","D/FB","USA","Smith","passes.f.c",NA,NA,"launch","F","AUS","Raso","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","16"
+"955","62","F","USA","Press","lost.touch",NA,NA,"out.of.bounds.lost.poss","M/DM","AUS","Van Egmond","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"23","10"
+"956","62","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"957","62","M/AM","AUS","Butt","passes.s",NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
+"958","62","F","USA","Dunn","passes.f",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"959","62","F","USA","Horan","aerial.lost",NA,NA,"out.of.bounds.keep.poss","F","AUS","Raso","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"9","16"
+"960","63",NA,NA,NA,"stoppage.in.play",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"961","63","F","USA","Horan","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"962","63","F","USA","Press","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+"963","64","M/CM","USA","Lloyd","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"964","64","F","USA","Morgan","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
+"965","65","D/CB","USA","Dahlkemper","passes.b.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"966","65","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"967","65","D/CB","USA","Dahlkemper","passes.f",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"967","65",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"968","65","M/CM","USA","Long","aerial.lost",NA,NA,NA,"D/CB","AUS","Kennedy","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"20","14"
+"969","65","M/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"970","65","M/W","USA","Rapinoe","passes.f.c",NA,NA,"pass.into.pressure","M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","10"
+"971","65","M/CM","USA","Long","dispossessed",NA,NA,NA,"D/CB","AUS","Catley","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"20","7"
+"971","65",NA,NA,NA,NA,NA,NA,NA,"D/CB","AUS","Kennedy","ball.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"972","65","M/CM","USA","Long","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"973","65","M/CM","USA","Long","passes.s.c",NA,NA,NA,"D/CB","AUS","Kennedy","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","14"
+"974","65","M/CM","USA","Lloyd","passes.f",NA,NA,"pass.into.pressure","D/FB","AUS","Kellond-Knight","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"10","8"
+"974","65",NA,NA,NA,NA,NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"975","65","F","AUS","Kerr","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"976","65","F","AUS","Kerr","passes.f",NA,NA,"headed","D/FB","USA","Smith","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"20","16"
+"976","65",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"977","65","D/FB","USA","Smith","fouls.won",NA,NA,NA,"F","AUS","Kerr","fouls.conceded",NA,NA,NA,NA,NA,NA,NA,NA,"16","20"
+"978","66","M/W","USA","Rapinoe","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"978","66",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"979","66","F","USA","Horan","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"980","66","F","USA","Horan","shots.missed",NA,NA,"headed","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","20"
+"980","66",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss","M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
+"981","66","GK","AUS","Williams","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"981","66",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"981","66",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"982","66","M/AM","AUS","Butt","aerial.won",NA,NA,NA,"M/CM","USA","Mewis","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"13","3"
+"982","66",NA,NA,NA,NA,NA,NA,NA,"M/W","USA","Rapinoe","ball.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,"15"
+"983","66","D/FB","AUS","Carpenter","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"984","66","D/FB","AUS","Carpenter","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"985","66","M/CM","AUS","Foord","passes.f",NA,NA,"out.of.bounds.keep.poss","D/FB","USA","Short","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"985","66",NA,NA,NA,NA,NA,NA,NA,"D/FB","USA","Short","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"986","66","D/FB","AUS","Carpenter","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"986","66",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"987","66","F","AUS","Kerr","passes.s",NA,NA,"pass.into.pressure","D/CB","USA","Dahlkemper","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","7"
+"987","66",NA,NA,NA,NA,NA,NA,"crosses","D/CB","USA","Dahlkemper","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"987","66",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"988","67","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"989","67","M/DM","AUS","Van Egmond","passes.s",NA,NA,"crosses","F","USA","Morgan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"10","13"
+"989","67",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","USA","Dahlkemper","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"990","67","D/CB","USA","Dahlkemper","clearances",NA,NA,NA,"F","AUS","Raso","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","16"
+"991","67","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"992","67","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"headed","F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","19"
+"992","67",NA,NA,NA,NA,NA,NA,NA,"D/CB","USA","Sauerbrunn","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
+"992","67",NA,NA,NA,NA,NA,NA,NA,"D/CB","USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
+"993","67","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"994","67","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,"th","D/FB","USA","Short","pressured",NA,NA,NA,NA,"assists",NA,NA,NA,"8","14"
+"995","67","M/AM","AUS","Butt","shots.scored",NA,NA,NA,"M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","20"
+"995","67",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Naeher","gk.s.o.g.scored",NA,"none",NA,NA,NA,NA,NA,NA,NA,"1"
+"996","68",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"997","68","D/CB","USA","Dahlkemper","passes.s.c",NA,NA,NA,"M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","13"
+"998","68","M/CM","USA","Mewis","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"999","68","D/FB","USA","Smith","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"1000","68","D/FB","USA","Smith","take.on.won",NA,NA,NA,"F","AUS","Raso","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"16","16"
+"1001","68","D/FB","USA","Smith","passes.f",NA,NA,"th","D/CB","AUS","Catley","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"16","7"
+"1001","68",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1001","68",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1002","68","D/FB","USA","Smith","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"1002","68",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1003","68","M/CM","USA","Lloyd","passes.s",NA,NA,"pass.into.pressure","M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","13"
+"1003","68",NA,NA,NA,NA,NA,NA,NA,"M/AM","AUS","Gorry","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
+"1004","68","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"1005","69","GK","AUS","Williams","take.on.won",NA,NA,NA,"F","USA","Morgan","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"1","13"
+"1006","69","GK","AUS","Williams","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"1007","69","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,"M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","3"
+"1008","69","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"1009","69","GK","AUS","Williams","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"1010","69","M/CM","AUS","Foord","aerial.won",NA,NA,NA,"D/FB","USA","Short","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"1011","69","M/DM","AUS","Van Egmond","ground.50.50.lost",NA,NA,NA,"M/CM","USA","Mewis","ground.50.50.won",NA,NA,NA,NA,NA,NA,NA,NA,"10","3"
+"1012","69","M/CM","USA","Mewis","passes.b.c",NA,NA,NA,"M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","10"
+"1013","69","M/CM","USA","Long","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"1014","69","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,NA,"F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","20"
+"1015","69","M/CM","USA","Long","passes.b.c",NA,NA,NA,"F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","20"
+"1016","69","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"1017","69","M/CM","USA","Long","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"1018","69","M/CM","USA","Lloyd","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"1019","69","F","USA","Morgan","passes.s.c",NA,NA,NA,"D/CB","AUS","Catley","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","7"
+"1020","69","F","USA","Dunn","passes.f.c",NA,NA,NA,"F","AUS","Raso","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","16"
+"1021","69","D/FB","USA","Smith","passes.s",NA,NA,"crosses","D/CB","AUS","Catley","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"16","7"
+"1021","69",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1022","69","M/CM","USA","Mewis","aerial.won",NA,NA,NA,"M/AM","AUS","Butt","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"3","13"
+"1023","69","M/CM","USA","Mewis","passes.f",NA,NA,"headed","M/AM","AUS","Butt","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"3","13"
+"1023","69",NA,NA,NA,NA,NA,NA,NA,"M/DM","AUS","Van Egmond","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"10"
+"1024","69","D/FB","USA","Smith","aerial.lost",NA,NA,NA,"F","AUS","Raso","aerial.won",NA,NA,NA,"fouls.conceded",NA,"fouls.won",NA,NA,"16","16"
+"1025","69",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1026","70","D/CB","AUS","Catley","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"1027","70","GK","AUS","Williams","passes.f",NA,NA,"launch","D/FB","USA","Short","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"1","14"
+"1028","70","D/FB","USA","Short","passes.f.c",NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","19"
+"1029","70","M/W","USA","Rapinoe","passes.s.c",NA,NA,"crosses","D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"1030","70","M/CM","USA","Lloyd","shots.stopped.by.gk",NA,NA,NA,"GK","AUS","Williams","gk.s.o.g.stop",NA,"parried.to.safety",NA,NA,NA,NA,NA,NA,"10","1"
+"1031","70","F","USA","Dunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"1032","70","F","USA","Dunn","passes.s",NA,NA,"crosses","D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","8"
+"1032","70",NA,NA,NA,NA,NA,NA,NA,"GK","AUS","Williams","gk.high.balls.won",NA,"parried.to.danger",NA,NA,NA,NA,NA,NA,NA,"1"
+"1033","70","M/CM","USA","Lloyd","shots.missed",NA,NA,"out.of.bounds.lost.poss","GK","AUS","Williams","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA,NA,"10","1"
+"1033","70",NA,NA,NA,NA,NA,NA,NA,"M/AM","AUS","Butt","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"13"
+"1034","70","GK","AUS","Williams","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"1034","70",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1035","70","M/CM","USA","Mewis","aerial.won",NA,NA,NA,"M/AM","AUS","Butt","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"3","13"
+"1036","71",NA,NA,NA,"stoppage.in.play",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1037","71","M/AM","AUS","Butt","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
+"1038","72","M","AUS","Logarzo","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
+"1039","72","D/FB","USA","Short","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"1040","72","D/CB","USA","Dahlkemper","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"1041","72","D/CB","USA","Sauerbrunn","passes.b.c",NA,NA,NA,"F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","20"
+"1042","72","GK","USA","Naeher","passes.f",NA,NA,NA,"F","AUS","Raso","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"1","16"
+"1043","72","D/FB","USA","Smith","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"1044","72","D/FB","USA","Smith","fouls.won",NA,NA,NA,"F","AUS","Raso","fouls.conceded",NA,NA,NA,NA,NA,NA,NA,NA,"16","16"
+"1045","73",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1046","73","GK","USA","Naeher","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"1046","73",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1047","73","M/CM","USA","Long","aerial.lost",NA,NA,NA,"M/AM","AUS","Gorry","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"20","19"
+"1048","73","M/CM","USA","Lloyd","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"1049","73","M/CM","USA","Lloyd","movement",NA,NA,NA,"M","AUS","Logarzo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","6"
+"1050","73","M/CM","USA","Lloyd","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"1051","73","D/FB","USA","Short","passes.f",NA,NA,"pass.into.pressure","D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","21"
+"1051","73",NA,NA,NA,NA,NA,NA,NA,"D/CB","AUS","Catley","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"1052","73","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","15"
+"1053","73","D/FB","AUS","Carpenter","clearances",NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"1054","73","D/FB","USA","Short","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"1054","73",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1055","73","F","USA","Morgan","fouls.won",NA,NA,NA,"M","AUS","Logarzo","fouls.conceded",NA,NA,NA,NA,NA,NA,NA,NA,"13","6"
+"1056","73",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1057","74","M/W","USA","Rapinoe","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"1057","74",NA,NA,NA,NA,NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1058","74","M/CM","USA","Lloyd","aerial.lost",NA,NA,NA,"M/DM","AUS","Van Egmond","aerial.won",NA,NA,NA,"fouls.conceded",NA,"fouls.won",NA,NA,"10","10"
+"1059","74",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1060","74","D/CB","AUS","Catley","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"1061","74","F","AUS","Raso","passes.f.c",NA,NA,NA,"M/CM","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","10"
+"1061","74",NA,NA,NA,NA,NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
+"1062","74","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"1063","74","F","AUS","Kerr","passes.s",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"1064","74","D/FB","USA","Smith","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"1065","74","D/FB","USA","Smith","passes.f.c",NA,NA,"pass.into.pressure","F","AUS","Raso","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","16"
+"1066","74","F","USA","Dunn","passes.f",NA,NA,"out.of.bounds.keep.poss","M","AUS","Logarzo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","6"
+"1066","74",NA,NA,NA,NA,NA,NA,"pass.into.pressure","M","AUS","Logarzo","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"6"
+"1067","75","D/FB","USA","Smith","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"1067","75",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1068","75","F","USA","Morgan","aerial.won",NA,NA,NA,"D/FB","AUS","Kellond-Knight","aerial.lost",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,"13","8"
+"1069","75","D/CB","USA","Dahlkemper","passes.b.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"1070","75","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"1071","75","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,"launch","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","20"
+"1072","75","M/W","USA","Rapinoe","dispossessed",NA,NA,NA,"D/FB","AUS","Carpenter","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"1073","75","D/FB","AUS","Carpenter","passes.s.c",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","15"
+"1073","75",NA,NA,NA,NA,NA,NA,NA,"M/CM","USA","Lloyd","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,"10"
+"1074","75","M/AM","AUS","Gorry","fouls.won",NA,NA,"launch","M/CM","USA","Lloyd","fouls.conceded",NA,NA,NA,NA,NA,NA,NA,NA,"19","10"
+"1075","76",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1076","76","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,NA,"M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","15"
+"1077","76","GK","AUS","Williams","passes.f.c",NA,NA,"launch","M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"1","15"
+"1078","76","D/FB","AUS","Kellond-Knight","passes.s.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","19"
+"1079","76","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,NA,"M/CM","USA","Long","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","20"
+"1080","76","M","AUS","Logarzo","passes.f",NA,NA,"th","D/FB","USA","Smith","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"6","16"
+"1080","76",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1081","76","D/FB","USA","Smith","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"1082","76","M/CM","USA","Long","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"1083","77","D/FB","USA","O'Hara","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
+"1084","77","M/CM","USA","Brian","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
+"1085","77",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1086","77","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"1087","77","M/AM","AUS","Gorry","shots.blocked",NA,NA,NA,"D/CB","USA","Dahlkemper","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","7"
+"1087","77",NA,NA,NA,NA,NA,NA,NA,"D/CB","USA","Dahlkemper","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"1088","77","M/CM","USA","Lloyd","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"1089","77","M/CM","USA","Lloyd","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"1090","77","M/CM","USA","Lloyd","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"1091","77","M/CM","USA","Lloyd","passes.f",NA,NA,"pass.into.pressure","M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","10"
+"1091","77",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss","D/FB","AUS","Carpenter","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"21"
+"1092","77","M/CM","USA","Lloyd","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"1092","77",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1093","77","M/W","USA","Rapinoe","passes.b.c",NA,NA,"pass.into.pressure","D/FB","AUS","Carpenter","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"1094","77","F","USA","Dunn","passes.f",NA,NA,"pass.into.pressure","M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","10"
+"1094","77",NA,NA,NA,NA,NA,NA,NA,"D/FB","AUS","Carpenter","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"21"
+"1095","77","D/FB","AUS","Carpenter","passes.f.c",NA,NA,"pass.into.pressure","F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","19"
+"1096","77","M/CM","AUS","Foord","passes.b.c",NA,NA,"pass.into.pressure","M/CM","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","10"
+"1097","77","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,NA,"F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","19"
+"1098","77","D/CB","AUS","Kennedy","clearances",NA,NA,NA,"F","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","13"
+"1099","77","M/CM","USA","Mewis","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"1100","77","M/CM","USA","Mewis","passes.b.c",NA,NA,NA,"M","AUS","Logarzo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","6"
+"1101","77","D/CB","USA","Sauerbrunn","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"1102","77","D/FB","USA","O'Hara","passes.f.c",NA,NA,"pass.into.pressure","F","AUS","Raso","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"5","16"
+"1103","77","M/CM","USA","Brian","passes.f",NA,NA,"pass.into.pressure","M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"6","19"
+"1103","77",NA,NA,NA,NA,NA,NA,NA,"D/FB","AUS","Kellond-Knight","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
+"1104","78","M/CM","USA","Mewis","aerial.won",NA,NA,NA,"M","AUS","Logarzo","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"3","6"
+"1105","78","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"1106","78","M/DM","AUS","Van Egmond","passes.f.c",NA,NA,NA,"M/CM","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","10"
+"1107","78","M","AUS","Logarzo","lost.touch",NA,NA,NA,"M/CM","USA","Mewis","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"6","3"
+"1107","78",NA,NA,NA,NA,NA,NA,NA,"M/CM","USA","Brian","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,"6"
+"1108","78","M/CM","USA","Mewis","dispossessed",NA,NA,NA,"M","AUS","Logarzo","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"3","6"
+"1109","78","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"1110","78","M/AM","AUS","Gorry","passes.f.c",NA,NA,NA,"M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","3"
+"1111","78","F","AUS","Kerr","passes.b.c",NA,NA,"pass.into.pressure","M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","3"
+"1112","78","M","AUS","Logarzo","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
+"1113","78","M/CM","AUS","Foord","take.on.won",NA,NA,NA,"D/FB","USA","Short","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"1114","78","M/CM","AUS","Foord","movement",NA,NA,NA,"D/FB","USA","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","14"
+"1115","78","M/CM","AUS","Foord","passes.b",NA,NA,NA,"M/CM","USA","Lloyd","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","10"
+"1115","78",NA,NA,NA,NA,NA,NA,NA,"F","USA","Dunn","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
+"1116","78","F","USA","Dunn","take.on.won",NA,NA,NA,"D/FB","AUS","Kellond-Knight","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"19","8"
+"1117","78","F","USA","Dunn","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"1118","78","F","USA","Dunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"1119","78","M/W","USA","Rapinoe","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"1120","78","D/FB","USA","O'Hara","passes.s.c",NA,NA,"crosses","D/CB","AUS","Catley","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"5","7"
+"1121","78","M/W","USA","Rapinoe","shots.blocked",NA,NA,NA,"D/CB","AUS","Kennedy","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"15","14"
+"1121","78",NA,NA,NA,NA,NA,NA,NA,"D/CB","AUS","Kennedy","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"1122","78","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"1123","78","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"1124","78","F","AUS","Raso","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"1125","78","D/CB","AUS","Catley","passes.f",NA,NA,"out.of.bounds.lost.poss","M/CM","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","10"
+"1126","78",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1127","79","D/FB","USA","O'Hara","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
+"1127","79",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1128","79","F","USA","Dunn","passes.s.c",NA,NA,NA,"D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","8"
+"1129","79","M/CM","USA","Brian","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
+"1130","79","F","USA","Morgan","dispossessed",NA,NA,NA,"M/DM","AUS","Van Egmond","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"13","10"
+"1131","79","D/CB","AUS","Catley","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"1132","79","D/CB","AUS","Catley","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"1133","79","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"1134","79","GK","AUS","Williams","clearances",NA,NA,NA,"F","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"1","13"
+"1135","79","D/FB","USA","Short","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"1136","79","D/FB","USA","Short","passes.f.c",NA,NA,"pass.into.pressure","M/CM","AUS","Foord","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
+"1137","79","M/W","USA","Rapinoe","passes.b.c",NA,NA,NA,"D/FB","AUS","Carpenter","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"1137","79",NA,NA,NA,NA,NA,NA,NA,"M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
+"1138","79","M/CM","USA","Lloyd","take.on.won",NA,NA,NA,"M/AM","AUS","Gorry","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"10","19"
+"1139","79","M/CM","USA","Lloyd","lost.touch",NA,NA,NA,"M","AUS","Logarzo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","6"
+"1139","79",NA,NA,NA,NA,NA,NA,NA,"M/DM","AUS","Van Egmond","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,NA,"10"
+"1140","79","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"1141","79","GK","AUS","Williams","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"1142","79","D/CB","AUS","Kennedy","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"1143","79","D/FB","AUS","Kellond-Knight","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"1144","79","F","AUS","Raso","take.on.lost",NA,NA,"out.of.bounds.keep.poss","D/CB","USA","Sauerbrunn","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"16","4"
+"1145","80","M/DM","AUS","Van Egmond","passes.b.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"1146","80","M/AM","AUS","Gorry","passes.f.c",NA,NA,NA,"F","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","13"
+"1146","80",NA,NA,NA,NA,NA,NA,NA,"F","USA","Dunn","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
+"1147","80","M/DM","AUS","Van Egmond","passes.s",NA,NA,"crosses","F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","19"
+"1148","80","F","AUS","Raso","aerial.lost",NA,NA,NA,"M/CM","USA","Mewis","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"16","3"
+"1148","80",NA,NA,NA,NA,NA,NA,NA,"M/W","USA","Rapinoe","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"15"
+"1149","80","M","AUS","Logarzo","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
+"1150","80","M","AUS","Logarzo","fouls.won",NA,NA,NA,"M/CM","USA","Lloyd","fouls.conceded",NA,NA,NA,NA,NA,NA,NA,NA,"6","10"
+"1151","81","M/CM","AUS","Foord","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+"1152","82","F","AUS","Gielnik","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"1153","82","D/CB","AUS","Kennedy","shots.missed",NA,NA,"free.kick","GK","USA","Naeher","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA,NA,"14","1"
+"1153","82",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1154","82","GK","USA","Naeher","passes.f",NA,NA,"launch","F","AUS","Gielnik","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"1","15"
+"1154","82",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1155","82","D/FB","USA","Short","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"1156","82","D/CB","USA","Dahlkemper","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"1157","82","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,"pass.into.pressure","F","AUS","Gielnik","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","15"
+"1158","82","M/W","USA","Rapinoe","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"1159","82","M/W","USA","Rapinoe","passes.f.c",NA,NA,"th","M/DM","AUS","Van Egmond","pressured",NA,NA,NA,NA,"key.passes",NA,NA,NA,"15","10"
+"1159","82",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1160","82","F","USA","Morgan","take.on.won",NA,NA,NA,"D/CB","AUS","Catley","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"13","7"
+"1161","82","F","USA","Morgan","shots.missed",NA,NA,"out.of.bounds.lost.poss","GK","AUS","Williams","gk.shot.miss",NA,NA,NA,NA,"big.chances.shot.missed",NA,NA,NA,"13","1"
+"1162","83","GK","AUS","Williams","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"1162","83",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1162","83",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1163","83","M","AUS","Logarzo","aerial.lost",NA,NA,NA,"M/CM","USA","Mewis","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"6","3"
+"1164","83","M/DM","AUS","Van Egmond","aerial.won",NA,NA,NA,"F","USA","Morgan","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"10","13"
+"1165","83","D/FB","AUS","Carpenter","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"1166","83","D/FB","AUS","Carpenter","passes.f",NA,NA,"pass.into.pressure","M/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","15"
+"1167","83","F","AUS","Raso","aerial.lost",NA,NA,NA,"D/CB","USA","Sauerbrunn","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"16","4"
+"1168","83","D/FB","USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
+"1169","83","D/FB","USA","O'Hara","passes.f",NA,NA,"pass.into.pressure","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"5","20"
+"1169","83",NA,NA,NA,NA,NA,NA,NA,"D/FB","AUS","Kellond-Knight","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
+"1170","83","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"1171","83","D/CB","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"1172","83","D/CB","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"1173","83","GK","USA","Naeher","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"1173","83",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1174","83","F","USA","Morgan","aerial.lost",NA,NA,NA,"D/CB","AUS","Kennedy","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"13","14"
+"1175","83","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"1176","83","M/AM","AUS","Gorry","movement",NA,NA,NA,"M/CM","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","6"
+"1177","83","M/AM","AUS","Gorry","passes.f",NA,NA,"launch","M/CM","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","6"
+"1177","83",NA,NA,NA,NA,NA,NA,"switch","D/FB","USA","Short","ball.shield",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"1177","83",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1178","84","GK","USA","Naeher","passes.f",NA,NA,"goal.kick","D/CB","AUS","Kennedy","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"1","14"
+"1178","84",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1178","84",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1179","84","D/CB","AUS","Kennedy","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"1180","84","F","AUS","Raso","passes.f",NA,NA,"pass.into.pressure","M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","3"
+"1180","84",NA,NA,NA,NA,NA,NA,NA,"M/CM","USA","Mewis","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"3"
+"1181","84","F","AUS","Raso","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"1182","84","F","AUS","Raso","passes.f",NA,NA,"out.of.bounds.keep.poss","D/FB","USA","Short","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","14"
+"1182","84",NA,NA,NA,NA,NA,NA,NA,"D/FB","USA","Short","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"1183","84","D/FB","AUS","Carpenter","passes.f",NA,NA,"throw.in","D/FB","USA","Short","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"21","14"
+"1183","84",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1184","84","F","AUS","Gielnik","aerial.lost",NA,NA,"out.of.bounds.keep.poss","D/FB","USA","Short","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"15","14"
+"1185","84","F","AUS","Gielnik","passes.f",NA,NA,"throw.in","D/CB","USA","Dahlkemper","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"15","7"
+"1185","84",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1186","84","D/CB","USA","Dahlkemper","clearances",NA,NA,"out.of.bounds.lost.poss","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","20"
+"1187","85","D/FB","AUS","Carpenter","passes.s",NA,NA,"throw.in","M/CM","USA","Mewis","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"21","3"
+"1188","85","M/DM","AUS","Van Egmond","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"1189","85","M/DM","AUS","Van Egmond","passes.f",NA,NA,"headed","M/CM","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","10"
+"1190","85","M/AM","AUS","Gorry","aerial.lost",NA,NA,NA,"F","USA","Dunn","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"19","19"
+"1191","85","M/CM","USA","Brian","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
+"1192","85","M/CM","USA","Brian","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
+"1193","85","D/FB","USA","O'Hara","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
+"1194","85","D/FB","USA","O'Hara","passes.f.c",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA,NA,"5",NA
+"1195","85","F","USA","Dunn","shots.stopped.by.gk",NA,NA,"out.of.bounds.lost.poss","GK","AUS","Williams","pressured",NA,NA,NA,NA,"big.chances.shot.on.goal",NA,NA,NA,"19","1"
+"1195","85",NA,NA,NA,NA,NA,NA,NA,"GK","AUS","Williams","gk.s.o.g.stop",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
+"1195","85",NA,NA,NA,NA,NA,NA,NA,"D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"21"
+"1196","86","M/W","USA","Rapinoe","passes.s",NA,NA,"crosses","D/CB","AUS","Kennedy","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"15","14"
+"1196","86",NA,NA,NA,NA,NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1197","86","D/FB","USA","Short","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"1198","86","D/FB","USA","Short","passes.f",NA,NA,"pass.into.pressure","F","AUS","Kerr","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"14","20"
+"1199","86","GK","USA","Naeher","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"1200","86","GK","USA","Naeher","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"1201","86","D/CB","USA","Sauerbrunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"1202","86","GK","USA","Naeher","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"1203","86","D/CB","USA","Dahlkemper","passes.s.c",NA,NA,NA,"F","AUS","Gielnik","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","15"
+"1204","86","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"1205","86","M/CM","USA","Mewis","passes.b.c",NA,NA,NA,"M","AUS","Logarzo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","6"
+"1206","86","D/CB","USA","Sauerbrunn","passes.f",NA,NA,"pass.into.pressure","F","AUS","Kerr","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","20"
+"1206","86",NA,NA,NA,NA,NA,NA,NA,"F","AUS","Raso","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"16"
+"1207","86","F","AUS","Raso","lost.touch",NA,NA,NA,"D/FB","USA","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","5"
+"1207","86",NA,NA,NA,NA,NA,NA,NA,"D/CB","USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
+"1208","86","M/AM","AUS","Gorry","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"1209","86","M/AM","AUS","Gorry","shots.stopped.by.gk",NA,NA,NA,"GK","USA","Naeher","gk.s.o.g.stop",NA,NA,NA,NA,NA,NA,NA,NA,"19","1"
+"1210","86","GK","USA","Naeher","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"1211","86","D/FB","USA","Short","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"1212","86","M/W","USA","Rapinoe","passes.f.c",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"1213","86","F","USA","Morgan","passes.s",NA,NA,"crosses","D/FB","AUS","Carpenter","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"13","21"
+"1214","86","D/FB","AUS","Carpenter","clearances",NA,NA,"out.of.bounds.lost.poss","F","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","13"
+"1215","87",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1216","87","D/CB","AUS","Kennedy","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"1216","87",NA,NA,NA,NA,NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1217","87","F","AUS","Gielnik","aerial.won",NA,NA,"out.of.bounds.lost.poss","D/FB","USA","Short","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"15","14"
+"1218","87","D/FB","USA","Short","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"1218","87",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1219","87","M/W","USA","Rapinoe","passes.f.c",NA,NA,"pass.into.pressure","D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"1220","87","F","USA","Dunn","passes.s.c",NA,NA,"pass.into.pressure","D/CB","AUS","Kennedy","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"19","14"
+"1221","87","M/W","USA","Rapinoe","movement",NA,NA,NA,"D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"1222","87","M/W","USA","Rapinoe","passes.f",NA,NA,"pass.into.pressure","M/AM","AUS","Gorry","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","19"
+"1222","87",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss","D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"21"
+"1222","87",NA,NA,NA,NA,NA,NA,NA,"D/FB","AUS","Carpenter","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"21"
+"1223","88","M/W","USA","Rapinoe","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"1224","88","D/FB","USA","Short","passes.f",NA,NA,"out.of.bounds.lost.poss","M","AUS","Logarzo","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"14","6"
+"1224","88",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1225","88","GK","AUS","Williams","passes.f",NA,NA,"launch","M/CM","USA","Lloyd","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"1","10"
+"1225","88",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1226","88","M/CM","USA","Lloyd","passes.f",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"1227","88","D/FB","AUS","Kellond-Knight","aerial.lost",NA,NA,NA,"F","USA","Morgan","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"8","13"
+"1228","88","D/CB","AUS","Catley","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"1229","88","D/CB","AUS","Catley","passes.f.c",NA,NA,"launch","F","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","19"
+"1229","88",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1230","88","F","AUS","Kerr","passes.f",NA,NA,"headed","M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"20","3"
+"1230","88",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1230","88",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1231","88","D/CB","USA","Sauerbrunn","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"1232","88","D/CB","USA","Sauerbrunn","take.on.won",NA,NA,NA,"F","AUS","Raso","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"4","16"
+"1233","88","D/CB","USA","Sauerbrunn","passes.b.c",NA,NA,NA,"M","AUS","Logarzo","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","6"
+"1234","88","D/CB","USA","Dahlkemper","passes.f",NA,NA,"launch","D/FB","AUS","Carpenter","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"7","21"
+"1234","88",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1235","88","M/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"1236","88","M/W","USA","Rapinoe","take.on.won",NA,NA,NA,"D/FB","AUS","Carpenter","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"1237","89","M/W","USA","Rapinoe","passes.s",NA,NA,"crosses","D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"1237","89",NA,NA,NA,NA,NA,NA,NA,"D/CB","AUS","Kennedy","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"14"
+"1238","89","D/FB","USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
+"1239","89","D/FB","USA","O'Hara","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
+"1240","89","M/CM","USA","Lloyd","passes.f",NA,NA,"pass.into.pressure","D/FB","AUS","Kellond-Knight","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","8"
+"1240","89",NA,NA,NA,NA,NA,NA,NA,"D/FB","AUS","Kellond-Knight","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
+"1241","89","F","AUS","Raso","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+"1242","89","F","AUS","Raso","passes.f",NA,NA,"out.of.bounds.keep.poss","D/FB","USA","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","5"
+"1242","89",NA,NA,NA,NA,NA,NA,NA,"D/CB","USA","Sauerbrunn","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
+"1243","89","D/FB","AUS","Kellond-Knight","passes.f",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"1243","89",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1244","89","F","AUS","Kerr","aerial.lost",NA,NA,NA,"D/FB","USA","O'Hara","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"20","5"
+"1245","89","M/CM","USA","Mewis","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"1246","89","M/CM","USA","Mewis","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"1247","89","M/W","USA","Rapinoe","take.on.won",NA,NA,NA,"M/AM","AUS","Gorry","dribbled",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,"15","19"
+"1248","90","M/CM","USA","Mewis","passes.f",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,"yellow.cards",NA,NA,"3",NA
+"1248","90",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1249","90","GK","AUS","Williams","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"1249","90",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1249","90",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1250","90","D/FB","AUS","Carpenter","passes.f",NA,NA,NA,"F","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"21","13"
+"1251","90","M","AUS","Logarzo","aerial.lost",NA,NA,NA,"M/CM","USA","Mewis","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"6","3"
+"1252","90","M/CM","USA","Mewis","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"1253","90","M/CM","USA","Mewis","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"1254","90","M/W","USA","Rapinoe","movement",NA,NA,NA,"D/FB","AUS","Carpenter","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","21"
+"1255","90+1","M/W","USA","Rapinoe","shots.missed",NA,NA,"out.of.bounds.lost.poss","GK","AUS","Williams","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA,NA,"15","1"
+"1256","90+1","GK","AUS","Williams","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"1256","90+1",NA,NA,NA,NA,NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1256","90+1",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1257","90+1","M/DM","AUS","Van Egmond","aerial.won",NA,NA,NA,"M/CM","USA","Brian","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"10","6"
+"1258","90+1","D/FB","USA","Short","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"1259","90+1","D/FB","USA","Short","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"1260","90+1","M/CM","USA","Brian","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
+"1261","90+1","F","USA","Morgan","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
+"1262","90+1","M/CM","USA","Brian","passes.f",NA,NA,"th","D/CB","AUS","Catley","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"6","7"
+"1263","90+1","F","USA","Dunn","lost.touch",NA,NA,"out.of.bounds.lost.poss","D/CB","AUS","Catley","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"19","7"
+"1264","90+2","GK","AUS","Williams","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
+"1264","90+2",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1264","90+2",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1265","90+2","M/DM","AUS","Van Egmond","aerial.won",NA,NA,NA,"M/CM","USA","Mewis","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"10","3"
+"1266","90+2","F","AUS","Kerr","aerial.won",NA,NA,NA,"D/CB","USA","Sauerbrunn","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"20","4"
+"1267","90+2","D/CB","USA","Dahlkemper","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"1268","90+2","D/CB","USA","Dahlkemper","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"1269","90+2","GK","USA","Naeher","passes.f.c",NA,NA,"launch","F","AUS","Gielnik","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"1","15"
+"1269","90+2",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1270","90+2","F","USA","Morgan","aerial.won",NA,NA,NA,"D/FB","AUS","Kellond-Knight","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"13","8"
+"1270","90+2",NA,NA,NA,NA,NA,NA,NA,"D/CB","AUS","Catley","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
+"1271","90+2","D/FB","AUS","Kellond-Knight","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"1272","90+2","D/FB","AUS","Kellond-Knight","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
+"1273","90+2","D/CB","AUS","Kennedy","passes.f",NA,NA,"launch","D/FB","USA","O'Hara","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"14","5"
+"1273","90+2",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1274","90+2","D/FB","USA","O'Hara","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
+"1275","90+2","D/CB","USA","Sauerbrunn","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
+"1276","90+2","M/CM","USA","Lloyd","passes.b.c",NA,NA,NA,"F","AUS","Gielnik","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","15"
+"1277","90+2","M/CM","USA","Mewis","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
+"1278","90+2","D/FB","USA","Short","lost.touch",NA,NA,"out.of.bounds.lost.poss","D/FB","AUS","Carpenter","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"14","21"
+"1279","90+2","F","AUS","Kerr","substitution.off",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"20",NA
+"1280","90+2","F","AUS","Ibini","substitution.on",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
+"1281","90+3","D/FB","AUS","Carpenter","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"1281","90+3",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1282","90+3","F","AUS","Gielnik","aerial.won",NA,NA,NA,"D/FB","USA","Short","aerial.lost",NA,NA,NA,"fouls.won",NA,"fouls.conceded",NA,NA,"15","14"
+"1283","90+3","D/CB","AUS","Kennedy","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"1283","90+3",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1283","90+3",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1284","90+3","M","AUS","Logarzo","passes.f",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
+"1284","90+3",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1285","90+3","D/CB","USA","Dahlkemper","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
+"1286","90+3","D/CB","USA","Dahlkemper","clearances",NA,NA,"out.of.bounds.lost.poss","F","AUS","Ibini","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","17"
+"1287","90+4","D/FB","AUS","Carpenter","passes.f",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21",NA
+"1288","90+4","F","AUS","Gielnik","aerial.lost",NA,NA,"out.of.bounds.keep.poss","D/CB","USA","Dahlkemper","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"15","7"
+"1289","90+4","M/DM","AUS","Van Egmond","passes.s.c",NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+"1290","90+4","M","AUS","Logarzo","dispossessed",NA,NA,NA,"F","USA","Morgan","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"6","13"
+"1290","90+4",NA,NA,NA,NA,NA,NA,NA,"M/W","USA","Rapinoe","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,"15"
+"1291","90+4","F","USA","Morgan","passes.f",NA,NA,"launch","D/CB","AUS","Kennedy","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"13","14"
+"1291","90+4",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1291","90+4",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1292","90+4","D/CB","AUS","Kennedy","passes.b.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
+"1293","90+4","M/AM","AUS","Gorry","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
+"1294","90+4","GK","AUS","Williams","passes.f",NA,NA,"launch","M/CM","USA","Mewis","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"1","3"
+"1294","90+4",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1295","90+4","M","AUS","Logarzo","aerial.lost",NA,NA,NA,"M/CM","USA","Brian","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"6","6"
+"1296","90+4","F","AUS","Gielnik","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"1297","90+4","F","AUS","Gielnik","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"1298","90+4","F","AUS","Gielnik","dispossessed",NA,NA,NA,"F","USA","Morgan","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"15","13"
+"1299","90+4","M/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"1300","90+4","M/W","USA","Rapinoe","movement",NA,NA,NA,"F","AUS","Gielnik","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","15"
+"1301","90+5","M/W","USA","Rapinoe","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+"1301","90+5",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"1302","90+5","F","USA","Dunn","passes.b",NA,NA,"out.of.bounds.lost.poss","D/CB","AUS","Kennedy","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","14"
+"1302","90+5",NA,NA,NA,NA,NA,NA,NA,"F","AUS","Gielnik","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"15"
+"1303","90+5",NA,NA,NA,"end.of.match",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
