@@ -1,20 +1,20 @@
 So you want to log matches on your own? You’re amazing! Here are the steps you to take. If you have questions, send me a DM/mention at [@WoSoStats](https://twitter.com/wosostats) or email me at wosostats.team@gmail.com.
 
-#Requirements
+# Requirements
 1. A thorough understanding of [the definitions.md document](https://github.com/amj2012/wosostats/blob/master/resources/definitions.md).
 2. Access to Excel
 
-#Before you start logging the match stats
+# Before you start logging the match stats
 1. Download the match-stats-template.xlsx Excel document from this link: https://github.com/amj2012/wosostats/blob/master/resources/match-actions-template.xlsx.  
   * Using Excel is highly recommended as the ability to format, auto-fill, auto-complete, and utilize formulas makes the job of logging stats way easier and faster.
-  * To get an idea of what this spreadsheet should look like, I highly recommend to look over the Excel file for the NWSL 2016 regular season matchup between Chicago and Seattle, which can be found here https://github.com/amj2012/wosostats/blob/master/source/excel/nwsl-2016/nwsl-2016-srfc-crs-052216.xlsx, and look at it alongside the actual match which can be seen here: https://www.youtube.com/watch?v=zUSj5D67xB0. 
+  * To get an idea of what this spreadsheet should look like, I highly recommend to look over the Excel file for the international friendly matchup between the United States and New Zealand from September 15th, 2017, which can be found here https://github.com/amj2012/wosostats/blob/master/source/excel/international-friendlies-2017/international-friendlies-2017-usa-nzl-091517.xlsx, and look at it alongside the actual match.
 2. Write into the spreadsheet metadata for player names, player teams, and player positions
   1. In the `poss.player` column, write in the last name of each player who played in the match as either a starter or a sub, starting with all the home team players. Do the same for the `def.player` column.
   2. In the `poss.team` and `def.team` columns, write in the acronym of the team for each respective player. 
     * For club teams, refer to the acronyms.csv spreadsheet which can be found at: https://github.com/amj2012/woso-stats/blob/master/resources/abbreviations.csv.
     * For international teams, refer to the FIFA country code
   3. In the `poss.position` and `def.position` columns, write in the starting position for each respective player. Don’t get too fancy. Just write in one of “GK,” “D,” “M,” or “F.”
-  4. When this is done, the top of the spreadsheet, above the "kickoff" action, should look like this, using the USA-England 2016 SheBelieves match as an example: ![](http://i.imgur.com/ofxSTGP.png)
+  4. When this is done, the top of the spreadsheet, above the "kickoff" action, should look like this, using the USA-NZL 2017 Sept 15th international friendly match as an example: ![](https://i.imgur.com/FiMW7gI.png)
 5. Field dimensions can vary widely, so figure out where the borders of the middle third are, so you can tell if a player is in their attacking, middle, or defensive third. Try to also get a sense of where the left, center, and right thirds of the fields are. The left and right thirds will usually cut a few yards into the 18-yard box, and the center third will usually extend a few yards from the center circle. Width of the field can vary widely, so use your best judgment here.
   * The breakdown of the field should be based on this: ![](http://i.imgur.com/EQLmpYp.png)
   * It helps to use landmarks around the stadium to figure this out. For example, if the field has football lines or lawn stripes, you can use them to figure out the thirds of the field. ![](http://i.imgur.com/atMDAJZ.png)
@@ -23,7 +23,7 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
 6. The template spreadsheet should be 1500 rows long. However, if the match you are logging requires more rows and ends up going into blank rows (beyond the ones filled in with “-” hyphens), then guesstimate how many more rows you’ll need and fill them all in with additional “-” hyphens (more on what those are about below).
 
 #While logging match actions
-1. **IMPORTANT: If you decide to start logging matches, IT IS NOT recommended that you log location data for events in the `poss.location`, `poss.play.destination`, OR `def.location` columns, EXCEPT for `poss.location` data for shots. Logging location data on top of everything else is VERY time-consuming and, while interesting, is not as important as getting a match logged and done, which can be logged for location data later, anyways, as the location data columns will still be there.**
+1. **IMPORTANT: If you decide to start logging matches, IT IS NOT recommended that you log location data for events in the `poss.location`, `poss.play.destination`, OR `def.location` columns. Logging location data on top of everything else is VERY time-consuming and, while interesting, is not as important as getting a match logged and done, which can be logged for location data later, anyways, as the location data columns will still be there.**
 2. It is **HIGHLY** recommended that you use shorthand keywords and letters for players, actions, and qualifiers. For example, in the Excel file it is recommended you write down "pf" for a forward pass instead of typing out "passes.f", or even a shortened nickname for a player with a long name.
   * If you use a shortcut that isn't featured in the metadata above the kickoff (i.e. anything other than "pf", "passes.f" or "pf (passes.f)" for a forward pass) or isn't featured as a shortcut in the definitions.md document, then you will have to search and replace this with a term that is in the metadata section. Otherwise, the R code that computes stats from this spreadsheet won't be able to read what your shortcut is.
 3. Start logging actions in the row below the one with “kickoff” in the `poss.action` column.
@@ -41,11 +41,16 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
   * **Take ons lost** - `take.on.lost`
   * **Dispossessed of the ball** - `dispossessed`
   * **Lost touch** - `lost.touch`
+  * **Ball touch** - `ball.touch`
   * **Aerial duels won** - `aerial.won`
   * **Aerial duels lost** - `aerial.lost`
+  * **Ground duels won** - `ground.50.50.won`
+  * **Ground duels lost** - `ground.50.50.lost`
   * **Recoveries** - `recoveries`
   * **Balls shielded** - `ball.shield`
   * **Clearances** - `clearances`
+  * **Fouls won** - `fouls.won`
+  * **Fouls conceded** - `fouls.conceded`
   * **Offside Calls** - `offside.calls`
   * **Substitutions** - `substitution.on` & `substitution.off`
   * There will be instances where play is either stopped or peskily cut off by the broadcast. There will also be breaks in play. These instances should be noted.
@@ -61,33 +66,30 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
   * If the `poss.action` column has a “-” denoting that there are additional defensive actions being credited to the event, then the value in the `event` column should remain the same. The idea is that a new event is only triggered by a new possessive action or something like a stoppage in play or break in broadcast.
 6. For every single new action logged in the `poss.action` column, log the possessing player’s name in `poss.player`
   * ![](http://i.imgur.com/O9z0QG7.gif)
-7. You do NOT have to define the event's location in `poss.location` for anything other than shots. If you decided to log the location of every event, it could take about as much as 50% longer to finish the entire match. It is recommended that you leave `poss.location` blank unless otherwise specified, or unless you know what you're getting yourself into.
+7. You do NOT have to define the event's location in `poss.location` for anything. If you decided to log the location of every event, it could take about as much as 50% longer to finish the entire match. It is recommended that you leave `poss.location` blank unless otherwise specified, or unless you know what you're getting yourself into.
   * In the `poss.location` column, the value must be one of the appropriate acronyms, shown in italics below. The location is relative to the player for which you are logging it (e.g. a player is in her 18-yard box if she is defending someone in possession of the ball in the opponent’s 18-yard box, and vice versa). 
     * **Opponent’s 6-yard box** - `A6`
     * **Opponent’s 18-yard box** - `A18`
-    * **Attacking third, left wing** - `A3L`
-    * **Attacking third, center field** - `A3C`
-    * **Attacking third, right wing** - `A3R`
-    * **Opponent’s half of middle third, left wing** - `AM3L`
-    * **Opponent’s half of middle third, center field** - `AM3C`
-    * **Opponent’s half of middle third, right wing** - `AM3R`
-    * **Own half of middle third, left wing** - `DM3L`
-    * **Own half of middle third, center field** - `DM3C`
-    * **Own half of middle third, right wing** - `DM3R`
-    * **Defensive third, left wing** - `D3L`
-    * **Defensive third, center field** - `D3C`
-    * **Defensive third, right wing** - `D3R`
+    * **Attacking third, left wing** - `AL`
+    * **Attacking third, center field** - `AC`
+    * **Attacking third, right wing** - `AR`
+    * **Opponent’s half of middle third, left wing** - `AML`
+    * **Opponent’s half of middle third, center field** - `AMC`
+    * **Opponent’s half of middle third, right wing** - `AMR`
+    * **Own half of middle third, left wing** - `DML`
+    * **Own half of middle third, center field** - `DMC`
+    * **Own half of middle third, right wing** - `DMR`
+    * **Defensive third, left wing** - `DL`
+    * **Defensive third, center field** - `DC`
+    * **Defensive third, right wing** - `DR`
     * **Own 18-yard box** - `D18`
     * **Own 6-yard box** - `D6`
 8. The `play.type` column should be filled in for the following types of passing and shots actions written in italics below. Refer to the action-definitions.doc file at [https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md](https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md) for in-depth definitions for each qualifier.
-  * In the event that a play has more than one `play.type` qualifier that could apply, log each one in a different row but leave the `poss.player` column blank so as not to accidentally create a new event: ![](http://i.imgur.com/sVAefoq.png) 
-  * **Corner crosses** - `corner.crosses`
-  * **Deep crosses** - `deep.crosses`
+  * In the event that a play has more than one `play.type` qualifier that could apply, log each one in a different row but leave the `poss.player` column blank so as not to accidentally create a new event: ![](https://i.imgur.com/Oa55hfi.png) 
+  * **Crosses** - `crosses`
   * **Switch** - `switch`
   * **Launch balls** - `launch`
   * **Through balls** - `through`
-  * **Lay-off balls** - `lay.off`
-  * **Flick-on balls** - `flick.on`
   * **Throw-ins** - `throw.in`
   * **Free kicks** - `free.kick`
   * **Headed balls** - `headed`
@@ -96,13 +98,12 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
   * **Goalkeeper throws** - `gk.throws`
   * **Goalkeeper drop kicks** - `gk.drop.kick`
   * **Penalty kicks** - `pk`
+  * **Passed the ball into pressure** - `pass.into.pressure`
 9. For each event in the `poss.action` column, log any of the following defensive actions in italics below in the `def.action` column. Refer to the action-definitions.doc file at [https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md](https://github.com/amj2012/woso-stats/blob/master/resources/definitions.md) for in-depth definitions for each action.
   * Create a new row if necessary when there are multiple defensive actions for one possessing event, but be sure to leave the `poss.action` column blank so that a new event number is not accidentally created: ![](http://i.imgur.com/i4dtSCV.png)
   * **Dispossessing the opponent** - `dispossess`
   * **Tackling the ball** - `tackles.ball`
-  * **Dibbled by an opponent due to a missed tackle** - `dribbled.tackles.missed`
-  * **Dribbled by an opponent due to being out-run** - `dribbled.out.run`
-  * **Dribbled by an opponent due to being turned** - `dribbled.turned`
+  * **Dibbled by an opponent** - `dribbled`
   * **Pressuring an opponent** - `pressured`
   * **Challenging an opponent** - `challenged`
   * **Blocks** - `blocks`
@@ -111,6 +112,10 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
   * **Clearances** - `clearances`
   * **Aerial duels won** - `aerial.won`
   * **Aerial duels lost** - `aerial.lost`
+  * **Ground duels won** - `ground.50.50.won`
+  * **Ground duels lost** - `ground.50.50.lost`
+  * **Fouls won** - `fouls.won`
+  * **Fouls conceded** - `fouls.conceded`
   * Goalkeepers have their own types of defensive actions in the “def.event” column”
   * **Shots on goal stopped by a goalkeeper** - `gk.s.o.g.stop`
   * **Shots on goal stopped by a defender** - `gk.s.o.g.def.stop`
@@ -140,12 +145,7 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
   * **Parried to danger** - `parried.to.danger`
   * **Deflected to safety** - `deflected.to.safety`
   * **Deflected to danger** - `deflected.to.danger`
-13. For goalkeeper defensive actions that are shots on goals, log the type of save attempt, regardless of whether it was successful, by filling in the `gk.s.o.g.attempt` column with one of the following values to be written as it is shown in italics below:
-  * **Diving save** - `diving`
-  * **Standing save** - `standing`
-  * **Reaching save** - `reaching`
-  * **Stooping save** - `stooping`
-14. If a foul was committed, log for the possessing player in the `poss.player.disciplinary` column and for the defending player in the `def.player.disciplinary` column one of the following values to be written as it is shown in italics below:
+13. If a foul was committed, log for the possessing player in the `poss.player.disciplinary` column and for the defending player in the `def.player.disciplinary` column one of the following values to be written as it is shown in italics below:
   * In the event that a play has more than one `poss.player.disciplinary` or `def.player.disciplinary` qualifiers that could apply, log each one in a different row but leave the `poss.player` column blank so as not to accidentally create a new event: ![](http://i.imgur.com/kw6zb5R.png)
   * **Fouls won** - `fouls.won`
   * **Fouls conceded** `fouls.conceded`
@@ -153,7 +153,7 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
   * **Red cards** - `red.cards`
   * **Penalty kicks won** - `penalties.won`
   * **Penalty kicks conceded** - `penalties.conceded`
-15. Certain possessing player actions need additional qualifiers, related to scoring opportunities or defensive mistakes, that should be added in the `poss.notes` column, to be written in as they are shown in italics below. In the event that more than one of these apply to the same event, add them all into the same cell but separate them by a comma:
+14. Certain possessing player actions need additional qualifiers, related to scoring opportunities or defensive mistakes, that should be added in the `poss.notes` column, to be written in as they are shown in italics below. In the event that more than one of these apply to the same event, add them all into the same cell but separate them by a comma:
   * In the event that a play has more than one `poss.notes` qualifier that could apply, log each one in a different row but leave the `poss.player` column blank so as not to accidentally create a new event: ![](http://i.imgur.com/OJaytuw.png)
   * **Big chances scored** - `big.chances.scored`
   * **Big chances shot on goal** - `big.chances.shot.on.goal`
@@ -168,12 +168,12 @@ So you want to log matches on your own? You’re amazing! Here are the steps you
   * **Ball goes out of bounds and possession is lost** - `out.of.bounds.lost.poss`
   * **Errors leading to a goal for the opposition** - `errors.to.goals`
   * **Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`
-16. Similarly, certain defending player actions need additional qualifiers, related to defensive accomplishments and mistakes, that should be added in the `def.notes` column, to be written in as they are shown in italics below. In the event that a play has more than one `def.notes` qualifier that could apply, log each one in a different row but leave the `poss.player` column blank so as not to accidentally create a new event
+15. Similarly, certain defending player actions need additional qualifiers, related to defensive accomplishments and mistakes, that should be added in the `def.notes` column, to be written in as they are shown in italics below. In the event that a play has more than one `def.notes` qualifier that could apply, log each one in a different row but leave the `poss.player` column blank so as not to accidentally create a new event
   * **Big chances stopped** - `big.chances.stopped`
   * **Own goals allowed** - `own.goals`
   * **Errors leading to a goal for the opposition** - `errors.to.goals`
   * **Errors leading to an unscored big chance for the opposition** - `errors.to.big.chances`
-17. When a new minute in play is reached, change the “time” column for the first event of each minute to the time in minutes. An event in the first 30 seconds is in minute 1, an event at 30:34 is in minute 31, and so on. 
+16. When a new minute in play is reached, change the “time” column for the first event of each minute to the time in minutes. An event in the first 30 seconds is in minute 1, an event at 30:34 is in minute 31, and so on. 
 For stoppage time, use a plus sign to denote how much stoppage time was added. For example, 2 minutes into stoppage time after 90 minutes should be written as “90+3”, NOT as “93.” The same goes with examples such as “45+3”, “120+1”, and so on.
 
 #After logging match stats
@@ -190,8 +190,7 @@ For stoppage time, use a plus sign to denote how much stoppage time was added. F
 2. Turn the Excel file into the filled-in completed .csv file that will be used for the actual analyses, by doing one of the following:
   * IF you are comfortable with using R:
     * set the directory in which the Excel file is as the working directory
-    * source the tidy-excel.R file in https://raw.githubusercontent.com/amj2012/wosostats/master/code/version-2/tidy-excel.R. This should create a data frame named df in your working environment.
-    * save the df data frame as a .csv file in either your working directory or anywhere else you’d like
+    * source the tidy-excel.R file in https://github.com/amj2012/wosostats/blob/master/code/version-3/tidy-excel.R. Use the functions to create the type of sheet you're interested in.
     * If you’re comfortable with GitHub, push the new .csv file as an addition to the appropriate folder in the wo-so depository. Otherwise, just email me the .csv file at wosostats.team@gmail.com.
   * IF you are not comfortable with using R to create this .csv file yourself, just notify me via email and I’ll take care of it.
 3. You’re done! Please do celebrate, as this is great data that can be analyzed and it surely takes a lot of work for each match.
