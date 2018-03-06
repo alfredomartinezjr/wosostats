@@ -16,7 +16,7 @@ if(!exists("online_mode")){
 
 # your_stats <- getStatsForMatch(matchup=NA, match_csv=NA, filename=NA, matchURL=NA, location="none", per90=FALSE, database=NA)
 #
-# your_stats_list <- getStatsInBulk(competition.slug, team=NA, round=NA, multi_round=NA, month_year=NA, location="none", location_complete = FALSE, per90=FALSE)
+# your_stats_list <- getStatsInBulk(competition.slug, type, team=NA, round=NA, multi_round=NA, month_year=NA, location="none", location_complete = FALSE, per90=FALSE)
 #
 # getMatchFiles(competition.slug = "nwsl-2016", type="stats.csv.link")
 #
