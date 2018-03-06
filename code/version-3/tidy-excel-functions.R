@@ -249,6 +249,7 @@ TidyMatchExcel <- function(match.file) {
       }
     }
   }
+  match.df$event <- as.integer(match.df$event)
   match.df
 }
 

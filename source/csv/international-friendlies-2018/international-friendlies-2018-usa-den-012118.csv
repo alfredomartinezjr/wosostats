@@ -105,7 +105,7 @@
 86,"6","M/DM","USA","Ertz","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
 87,"6","D/CB","USA","Dahlkemper","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
 88,"6","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,NA,"M/W","DEN","Troelsgaard","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","7"
-89,"6","D/FB","USA","Smith","passes.f",NA,NA,"th","M/W","DEN","Troelsgaard","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","7"
+89,"6","D/FB","USA","Smith","passes.f",NA,NA,"through","M/W","DEN","Troelsgaard","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","7"
 89,"6",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/FB","DEN","Nielsen","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
 89,"6",NA,NA,NA,NA,NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 90,"6","D/FB","DEN","Nielsen","passes.b.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
@@ -127,7 +127,7 @@
 103,"7","F/W","USA","Rapinoe","passes.f.c",NA,NA,"pass.into.pressure","M/DM","DEN","Kildemoes","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","4"
 104,"7","F/C","USA","Morgan","passes.b.c",NA,NA,NA,"M/DM","DEN","Pedersen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","13"
 105,"7","M/CM","USA","Horan","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
-106,"7","M/CM","USA","Sullivan","passes.f",NA,NA,"th","D/CB","DEN","Arnth","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"6","3"
+106,"7","M/CM","USA","Sullivan","passes.f",NA,NA,"through","D/CB","DEN","Arnth","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"6","3"
 106,"7",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","DEN","Larsen","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"12"
 107,"7","D/CB","DEN","Larsen","take.on.won",NA,NA,NA,"M/CM","USA","Sullivan","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"12","6"
 108,"7","D/CB","DEN","Larsen","take.on.lost",NA,NA,NA,"M/CM","USA","Horan","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"12","9"
@@ -209,7 +209,7 @@
 168,"10","D/CB","DEN","Arnth","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
 169,"10","D/CB","DEN","Arnth","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
 169,"10",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-169,"10",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+169,"10",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 170,"10","D/CB","USA","Dahlkemper","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
 171,"10","D/CB","USA","Dahlkemper","passes.f",NA,NA,"pass.into.pressure","F","DEN","Harder","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","10"
 171,"10",NA,NA,NA,NA,NA,NA,NA,"M/W","DEN","Troelsgaard","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
@@ -253,7 +253,7 @@
 209,"12","D/CB","USA","Davidson","passes.s.c",NA,NA,NA,"F","DEN","Harder","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"17","10"
 210,"13","D/CB","USA","Dahlkemper","passes.f",NA,NA,"launch","D/CB","DEN","Arnth","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"14","3"
 210,"13",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-210,"13",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+210,"13",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 211,"13","D/CB","DEN","Arnth","passes.b.c",NA,NA,NA,"F/C","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","13"
 212,"13","M/DM","DEN","Pedersen","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
 213,"13","F","DEN","Nadim","aerial.won",NA,NA,NA,"M/CM","USA","Sullivan","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"9","6"
@@ -325,7 +325,7 @@
 264,"16","D/FB","USA","O'Hara","passes.f",NA,NA,"pass.into.pressure","F","DEN","Harder","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"5","10"
 264,"16",NA,NA,NA,NA,NA,NA,NA,"D/CB","DEN","Larsen","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"12"
 265,"16","D/CB","DEN","Larsen","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
-266,"16","F","DEN","Nadim","passes.f",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
+266,"16","F","DEN","Nadim","passes.f",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
 266,"16",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 267,"16","M/DM","USA","Ertz","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
 268,"16","M/DM","USA","Ertz","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
@@ -366,7 +366,7 @@
 293,"-19","M/CM","USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
 294,"-19","M/CM","USA","Horan","dispossessed",NA,NA,NA,"M/W","DEN","Thogersen","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"9","15"
 295,"-19","M/DM","DEN","Kildemoes","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
-296,"-19","M/DM","DEN","Kildemoes","passes.f",NA,NA,"th","M/CM","USA","Horan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"4","9"
+296,"-19","M/DM","DEN","Kildemoes","passes.f",NA,NA,"through","M/CM","USA","Horan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"4","9"
 296,"-19",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","USA","Davidson","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"17"
 297,"-19","D/CB","USA","Davidson","passes.f.c",NA,NA,NA,"F","DEN","Harder","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"17","10"
 298,"-19","D/FB","USA","O'Hara","passes.s.c",NA,NA,NA,"F","DEN","Nadim","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"5","9"
@@ -393,7 +393,7 @@
 314,"20","D/CB","DEN","Arnth","passes.s.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
 315,"20","M/DM","DEN","Pedersen","passes.s",NA,NA,"pass.into.pressure","F/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","11"
 315,"20",NA,NA,NA,NA,NA,NA,NA,"F/C","USA","Morgan","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"13"
-316,"20","F/C","USA","Morgan","passes.f",NA,NA,"th","M/DM","DEN","Kildemoes","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","4"
+316,"20","F/C","USA","Morgan","passes.f",NA,NA,"through","M/DM","DEN","Kildemoes","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","4"
 316,"20",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","DEN","Arnth","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"3"
 317,"21","D/CB","DEN","Arnth","passes.f.c",NA,NA,NA,"F/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","11"
 318,"21","D/FB","DEN","Veje","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
@@ -462,7 +462,7 @@
 372,"24","M/W","DEN","Thogersen","passes.f",NA,NA,"crosses","GK","USA","Naeher","gk.high.balls.won",NA,"punched.to.safety",NA,NA,NA,NA,NA,NA,"15","1"
 372,"24",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 373,"24","M/DM","DEN","Kildemoes","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
-374,"24","M/DM","DEN","Kildemoes","passes.f",NA,NA,"th","F/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","15"
+374,"24","M/DM","DEN","Kildemoes","passes.f",NA,NA,"through","F/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","15"
 374,"24",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/FB","USA","O'Hara","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"5"
 374,"24",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 375,"24","D/FB","DEN","Veje","passes.s.c",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
@@ -520,7 +520,7 @@
 418,"28","D/CB","DEN","Arnth","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
 419,"28","D/CB","DEN","Larsen","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
 419,"28",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-419,"28",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+419,"28",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 420,"28","M/W","DEN","Thogersen","take.on.lost",NA,NA,NA,"D/CB","USA","Davidson","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"15","17"
 421,"28","D/CB","USA","Davidson","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
 422,"28","D/CB","USA","Davidson","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
@@ -573,7 +573,7 @@
 463,"30","M/W","DEN","Thogersen","lost.touch",NA,NA,"out.of.bounds.lost.poss","D/FB","USA","O'Hara","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"15","5"
 464,"30","D/FB","USA","O'Hara","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
 465,"30","M/CM","USA","Horan","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
-466,"30","F/C","USA","Morgan","passes.f",NA,NA,"th","M/DM","DEN","Pedersen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","13"
+466,"30","F/C","USA","Morgan","passes.f",NA,NA,"through","M/DM","DEN","Pedersen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","13"
 466,"30",NA,NA,NA,NA,NA,NA,NA,"D/CB","DEN","Larsen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"12"
 467,"30","GK","DEN","Peterson","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 468,"30","GK","DEN","Peterson","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
@@ -613,7 +613,7 @@
 496,"32","D/FB","USA","O'Hara","passes.b.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
 497,"32","D/CB","USA","Dahlkemper","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"14",NA
 498,"32","D/CB","USA","Davidson","passes.f.c",NA,NA,"launch","F","DEN","Harder","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"17","10"
-498,"32",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+498,"32",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 498,"32",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 499,"33","F/W","USA","Rapinoe","take.on.won",NA,NA,NA,"D/FB","DEN","Nielsen","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"15","8"
 500,"33","F/W","USA","Rapinoe","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
@@ -750,7 +750,7 @@
 605,"39","M/DM","USA","Ertz","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
 606,"39","D/CB","USA","Davidson","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
 607,"39","D/CB","USA","Davidson","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
-608,"39","F/W","USA","Rapinoe","passes.f",NA,NA,"th","D/FB","DEN","Nielsen","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"15","8"
+608,"39","F/W","USA","Rapinoe","passes.f",NA,NA,"through","D/FB","DEN","Nielsen","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"15","8"
 608,"39",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 609,"39","D/FB","DEN","Nielsen","lost.touch",NA,NA,NA,"D/FB","USA","O'Hara","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"8","5"
 610,"39","D/FB","USA","O'Hara","passes.b",NA,NA,NA,"D/FB","DEN","Nielsen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"5","8"
@@ -823,7 +823,7 @@
 673,"42","M/DM","USA","Ertz","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
 674,"42","M/DM","USA","Ertz","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
 675,"42","D/FB","USA","O'Hara","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
-675,"42",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+675,"42",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 676,"42","F/W","USA","Rapinoe","passes.s",NA,NA,"crosses","M/W","DEN","Thogersen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","15"
 676,"42",NA,NA,NA,NA,NA,NA,"pass.into.pressure","GK","DEN","Peterson","gk.high.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,"1"
 677,"42",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -885,7 +885,7 @@
 725,"45","M/DM","DEN","Kildemoes","take.on.won",NA,NA,"pass.into.pressure","M/CM","USA","Sullivan","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"4","6"
 726,"45","M/DM","DEN","Kildemoes","dispossessed",NA,NA,NA,"M/DM","USA","Ertz","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"4","8"
 727,"45","M/DM","USA","Ertz","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
-728,"45","F/C","USA","Morgan","passes.f.c",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA,NA,"13",NA
+728,"45","F/C","USA","Morgan","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA,NA,"13",NA
 728,"45",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 729,"45","F/W","USA","Rapinoe","lost.touch",NA,NA,NA,"GK","DEN","Peterson","pressured",NA,NA,NA,NA,"big.chances.lost",NA,NA,NA,"15","1"
 729,"45",NA,NA,NA,NA,NA,NA,NA,"D/FB","DEN","Nielsen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
@@ -1035,7 +1035,7 @@
 846,"51","D/FB","DEN","Nielsen","passes.b",NA,NA,NA,"F/C","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","13"
 846,"51",NA,NA,NA,NA,NA,NA,NA,"F/C","USA","Morgan","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"13"
 847,"51","F/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
-848,"51","F/W","USA","Rapinoe","passes.f",NA,NA,"th","GK","DEN","Peterson","gk.loose.balls.won",NA,"collected",NA,NA,NA,NA,NA,NA,"15","1"
+848,"51","F/W","USA","Rapinoe","passes.f",NA,NA,"through","GK","DEN","Peterson","gk.loose.balls.won",NA,"collected",NA,NA,NA,NA,NA,NA,"15","1"
 848,"51",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 849,"51","GK","DEN","Peterson","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 850,"51","D/CB","DEN","Larsen","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
@@ -1058,7 +1058,7 @@
 865,"52","D/CB","USA","Davidson","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
 866,"52","D/FB","USA","O'Hara","passes.f",NA,NA,"crosses","GK","DEN","Peterson","gk.loose.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,"5","1"
 866,"52",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-866,"52",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+866,"52",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 867,"52","GK","DEN","Peterson","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 868,"52","D/CB","DEN","Arnth","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
 869,"52","GK","DEN","Peterson","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
@@ -1068,7 +1068,7 @@
 872,"52",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","DEN","Larsen","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"12"
 872,"52",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 873,"52","D/FB","USA","O'Hara","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
-874,"53","M/CM","USA","Horan","passes.f",NA,NA,"th","M/W","DEN","Thogersen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","15"
+874,"53","M/CM","USA","Horan","passes.f",NA,NA,"through","M/W","DEN","Thogersen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","15"
 874,"53",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 874,"53",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 875,"53","GK","DEN","Peterson","passes.f",NA,NA,"goal.kick","M/CM","USA","Horan","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"1","9"
@@ -1157,7 +1157,7 @@
 946,"58","D/CB","USA","Davidson","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
 947,"58","M/DM","USA","Ertz","passes.f.c",NA,NA,"pass.into.pressure","M","DEN","Christiansen","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"8","6"
 948,"58","D/FB","USA","O'Hara","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
-949,"58","F/C","USA","Morgan","passes.f",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
+949,"58","F/C","USA","Morgan","passes.f",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
 950,"58","F/W","USA","Rapinoe","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
 951,"59",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 952,"59","D/CB","DEN","Arnth","passes.f.c",NA,NA,NA,"F/C","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","13"
@@ -1312,7 +1312,7 @@
 1078,"66",NA,NA,NA,NA,NA,NA,NA,"D/FB","USA","O'Hara","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"5"
 1079,"66","M/CM","USA","Sullivan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
 1080,"66","M/CM","USA","Sullivan","passes.f.c",NA,NA,NA,"M/W","DEN","Thogersen","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"6","15"
-1081,"66","F/W","USA","Rapinoe","passes.f.c",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+1081,"66","F/W","USA","Rapinoe","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
 1081,"66",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1082,"66","F/C","USA","Morgan","lost.touch",NA,NA,"out.of.bounds.lost.poss","D/CB","DEN","Larsen","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"13","12"
 1082,"66",NA,NA,NA,NA,NA,NA,NA,"GK","DEN","Peterson","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
@@ -1427,7 +1427,7 @@
 1173,"73","M/W","DEN","Thogersen","passes.b.c",NA,NA,NA,"F/W","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","19"
 1174,"73","D/FB","DEN","Nielsen","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
 1174,"73",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1174,"73",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1174,"73",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1175,"74","M/W","DEN","Troelsgaard","fouls.won",NA,NA,NA,"M/DM","USA","Ertz","fouls.conceded",NA,NA,NA,"yellow.cards",NA,NA,NA,NA,"7","8"
 1176,"75","F","DEN","Harder","shots.missed",NA,NA,"free.kick","GK","USA","Naeher","gk.shot.miss",NA,NA,NA,NA,NA,NA,NA,NA,"10","1"
 1176,"75",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1453,7 +1453,7 @@
 1190,"76","D/FB","USA","O'Hara","passes.f.c",NA,NA,"pass.into.pressure","M/W","DEN","Thogersen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"5","15"
 1191,"76","M","USA","McCaskill","passes.f.c",NA,NA,NA,"M","DEN","Christiansen","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"26","6"
 1192,"76","F/W","USA","Dunn","passes.s.c",NA,NA,NA,"D/FB","DEN","Nielsen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","8"
-1193,"76","F","USA","Press","passes.f.c",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
+1193,"76","F","USA","Press","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
 1194,"76","F/W","USA","Dunn","passes.s",NA,NA,"crosses","D/FB","DEN","Nielsen","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"19","8"
 1194,"76",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss","D/FB","DEN","Nielsen","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
 1195,"77","M","USA","McCaskill","passes.s",NA,NA,"crosses","D/CB","DEN","Larsen","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"26","12"
@@ -1478,7 +1478,7 @@
 1211,"78","D/FB","USA","Sonnett","passes.f.c",NA,NA,"pass.into.pressure","M","DEN","Sorensen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","14"
 1212,"78","F/W","USA","Dunn","passes.f.c",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
 1212,"78",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1212,"78",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1212,"78",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1213,"78","F","USA","Press","dispossessed",NA,NA,"out.of.bounds.keep.poss","D/CB","DEN","Larsen","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"23","12"
 1214,"78","D/FB","USA","Sonnett","passes.s.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
 1214,"78",NA,NA,NA,NA,NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1522,7 +1522,7 @@
 1240,"81",NA,NA,NA,NA,NA,NA,NA,"D/FB","USA","Sonnett","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,"16"
 1241,"81","M","USA","Lloyd","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
 1242,"81","M","USA","Lloyd","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
-1243,"81","M","USA","Lloyd","passes.f",NA,NA,"th","M/W","DEN","Troelsgaard","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"10","7"
+1243,"81","M","USA","Lloyd","passes.f",NA,NA,"through","M/W","DEN","Troelsgaard","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"10","7"
 1243,"81",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1244,"81","F/W","USA","Williams","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
 1245,"81","F/W","USA","Williams","movement",NA,NA,NA,"D/CB","DEN","Arnth","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"12","3"
@@ -1536,7 +1536,7 @@
 1251,"82","M/CM","USA","Horan","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
 1251,"82",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1252,"82","F/W","USA","Dunn","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
-1253,"82","M","USA","McCaskill","passes.f",NA,NA,"th","M","DEN","Christiansen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"26","6"
+1253,"82","M","USA","McCaskill","passes.f",NA,NA,"through","M","DEN","Christiansen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"26","6"
 1253,"82",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1253,"82",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1254,"83","GK","DEN","Peterson","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
@@ -1551,7 +1551,7 @@
 1261,"83","M/DM","USA","Ertz","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
 1262,"83","D/FB","USA","Sonnett","passes.f.c",NA,NA,"pass.into.pressure","M","DEN","Sorensen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","14"
 1263,"83","M","USA","Lloyd","passes.f.c",NA,NA,"pass.into.pressure","F","DEN","Harder","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","10"
-1263,"83",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1263,"83",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1264,"83","F/W","USA","Williams","passes.s",NA,NA,"crosses","D/FB","DEN","Veje","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"12","11"
 1264,"83",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","DEN","Larsen","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"12"
 1265,"83","D/CB","DEN","Larsen","passes.f.c",NA,NA,NA,"F","USA","Press","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"12","23"
@@ -1564,7 +1564,7 @@
 1269,"84",NA,NA,NA,NA,NA,NA,NA,"F/W","USA","Dunn","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
 1270,"84","M","DEN","Sorensen","passes.f.c",NA,NA,"pass.into.pressure","D/FB","USA","Sonnett","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"14","16"
 1271,"84","F","DEN","Harder","passes.f",NA,NA,"pass.into.pressure","M/CM","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","9"
-1271,"84",NA,NA,NA,NA,NA,NA,"th","M/DM","USA","Ertz","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
+1271,"84",NA,NA,NA,NA,NA,NA,"through","M/DM","USA","Ertz","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"8"
 1271,"84",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss","D/FB","USA","Sonnett","ball.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,"16"
 1272,"84",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1273,"84","F","DEN","Nadim","lost.touch",NA,NA,"out.of.bounds.lost.poss","M","USA","Lloyd","dispossessed",NA,NA,NA,NA,NA,NA,NA,NA,"9","10"
@@ -1608,7 +1608,7 @@
 1305,"87",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1306,"87","F","USA","Press","passes.b.c",NA,NA,NA,"M","DEN","Christiansen","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"23","6"
 1307,"87","D/FB","USA","O'Hara","passes.f",NA,NA,"launch","D/FB","DEN","Nielsen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"5","8"
-1307,"87",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1307,"87",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1307,"87",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1308,"88","GK","DEN","Peterson","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 1309,"88","M/W","DEN","Thogersen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
@@ -1631,7 +1631,7 @@
 1325,"88","D/FB","DEN","Veje","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
 1326,"88","M/W","DEN","Troelsgaard","passes.f",NA,NA,"launch","D/FB","USA","O'Hara","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"7","5"
 1326,"88",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1326,"88",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1326,"88",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1327,"88","D/FB","USA","O'Hara","passes.s.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
 1328,"88","D/CB","USA","Davidson","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
 1329,"88","M/W","DEN","Troelsgaard","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
@@ -1639,11 +1639,11 @@
 1331,"88","D/FB","DEN","Nielsen","take.on.won",NA,NA,NA,"M","USA","Lloyd","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"8","10"
 1332,"88","D/FB","DEN","Nielsen","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
 1333,"88","F","DEN","Harder","passes.f",NA,NA,"pass.into.pressure","D/FB","USA","O'Hara","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"10","5"
-1333,"88",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1333,"88",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1334,"88","D/FB","USA","O'Hara","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
 1335,"89","F","USA","Press","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
 1335,"89",NA,NA,NA,NA,NA,NA,"switch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1335,"89",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1335,"89",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1335,"89",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1336,"89","F/W","USA","Williams","passes.s",NA,NA,"crosses","D/FB","DEN","Veje","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"12","11"
 1336,"89",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","DEN","Arnth","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"3"
@@ -1652,7 +1652,7 @@
 1339,"89","D/FB","DEN","Nielsen","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
 1340,"89","D/FB","DEN","Nielsen","passes.s.c",NA,NA,NA,"M","USA","McCaskill","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","26"
 1341,"89","F","DEN","Harder","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
-1342,"89","F","DEN","Harder","passes.f.c",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+1342,"89","F","DEN","Harder","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
 1342,"89",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1343,"89","M","DEN","Sorensen","passes.s",NA,NA,"crosses","M/CM","USA","Horan","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"14","9"
 1343,"89",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1678,7 +1678,7 @@
 1361,"90","F","USA","Press","movement",NA,NA,NA,"D/CB","DEN","Larsen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"23","12"
 1362,"90","F","USA","Press","take.on.won",NA,NA,NA,"D/CB","DEN","Larsen","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"23","12"
 1363,"90","F","USA","Press","movement",NA,NA,NA,"D/CB","DEN","Larsen","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"23","12"
-1364,"90","F","USA","Press","passes.f.c",NA,NA,"th","D/CB","DEN","Larsen","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"23","12"
+1364,"90","F","USA","Press","passes.f.c",NA,NA,"through","D/CB","DEN","Larsen","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"23","12"
 1365,"90","F/W","USA","Williams","passes.s",NA,NA,"out.of.bounds.keep.poss","D/CB","DEN","Arnth","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"12","3"
 1365,"90",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","DEN","Arnth","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,"3"
 1366,"90","M","USA","McCaskill","passes.s",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"26",NA
@@ -1734,5 +1734,5 @@
 1407,"90+2","F/W","USA","Williams","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
 1408,"90+2","F/W","USA","Williams","passes.f",NA,NA,"crosses","D/CB","DEN","Larsen","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"12","12"
 1408,"90+2",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1408,"90+2",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1408,"90+2",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1409,"90+2",NA,NA,NA,"end.of.match",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
