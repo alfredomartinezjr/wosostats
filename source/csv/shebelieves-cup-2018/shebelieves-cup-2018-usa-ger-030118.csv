@@ -116,7 +116,7 @@
 93,"6","M","GER","Marozsan","passes.f",NA,NA,"launch","M/CM","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","9"
 93,"6",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/FB","USA","O'Hara","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"5"
 94,"6","D/FB","USA","O'Hara","passes.f",NA,NA,"headed","F","GER","Popp","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"5","11"
-95,"6","F","GER","Popp","passes.f.c",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
+95,"6","F","GER","Popp","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
 95,"6",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 96,"6","F","GER","Huth","passes.s",NA,NA,"out.of.bounds.lost.poss","D/FB","USA","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","5"
 96,"6",NA,NA,NA,NA,NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -149,7 +149,7 @@
 117,"8","D/FB","GER","Faisst","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
 118,"8","F","GER","Popp","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
 119,"8","M","GER","Dallmann","passes.f.c",NA,NA,NA,"D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","22"
-120,"8","F","GER","Popp","passes.f",NA,NA,"th","D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","22"
+120,"8","F","GER","Popp","passes.f",NA,NA,"through","D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","22"
 120,"8",NA,NA,NA,NA,NA,NA,"pass.into.pressure","GK","USA","Naeher","gk.smothers.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
 121,"8",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 122,"8","D/FB","USA","O'Hara","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
@@ -166,7 +166,7 @@
 132,"9","M","GER","Dallmann","passes.b.c",NA,NA,NA,"D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","22"
 133,"9","M","GER","Kemme","passes.f",NA,NA,"launch","D/FB","USA","O'Hara","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"22","5"
 133,"9",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-133,"9",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+133,"9",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 134,"9","D/FB","USA","O'Hara","passes.s.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
 134,"9",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 135,"9","D/CB","USA","Dahlkemper","passes.f",NA,NA,"out.of.bounds.keep.poss","F","GER","Popp","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"7","11"
@@ -221,7 +221,7 @@
 172,"11","F/W","USA","Pugh","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
 173,"11","F/W","USA","Pugh","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
 174,"11","M/CM","USA","Horan","dispossessed",NA,NA,NA,"F","GER","Huth","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"9","19"
-175,"11","F","GER","Huth","passes.f",NA,NA,"th","M/DM","USA","Ertz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","8"
+175,"11","F","GER","Huth","passes.f",NA,NA,"through","M/DM","USA","Ertz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","8"
 175,"11",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","USA","Dahlkemper","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
 176,"11","F","GER","Popp","ball.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
 177,"11","D/FB","USA","Smith","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
@@ -240,7 +240,7 @@
 187,"12","D/CB","USA","Dahlkemper","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
 188,"12","M/DM","USA","Ertz","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
 189,"12","M/DM","USA","Ertz","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
-189,"12",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+189,"12",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 190,"12","F/W","USA","Pugh","take.on.lost",NA,NA,"out.of.bounds.keep.poss","D/FB","GER","Faisst","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"11","17"
 191,"13","F/W","USA","Rapinoe","passes.s.c",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
 191,"13",NA,NA,NA,NA,NA,NA,"corner.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -264,7 +264,7 @@
 207,"14","D/FB","GER","Faisst","clearances",NA,NA,"out.of.bounds.lost.poss","F/C","USA","Morgan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"17","13"
 208,"14","D/FB","USA","Smith","passes.s.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
 208,"14",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-209,"14","F/C","USA","Morgan","passes.f.c",NA,NA,"th","D/CB","GER","Peter","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"13","5"
+209,"14","F/C","USA","Morgan","passes.f.c",NA,NA,"through","D/CB","GER","Peter","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"13","5"
 210,"14","F/W","USA","Pugh","lost.touch",NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
 211,"15","GK","GER","Schult","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 212,"15","D/FB","GER","Maier","passes.f",NA,NA,NA,"F/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","15"
@@ -305,7 +305,7 @@
 239,"17","M","GER","Marozsan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
 240,"17","M","GER","Dallmann","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
 241,"17","M","GER","Dallmann","passes.s.c",NA,NA,"pass.into.pressure","M/CM","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","9"
-242,"17","F","GER","Popp","passes.f",NA,NA,"th","M/DM","USA","Ertz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","8"
+242,"17","F","GER","Popp","passes.f",NA,NA,"through","M/DM","USA","Ertz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","8"
 242,"17",NA,NA,NA,NA,NA,NA,"pass.into.pressure","GK","USA","Naeher","gk.loose.balls.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
 243,"17","GK","USA","Naeher","passes.f.c",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,"second.assists",NA,NA,NA,"1",NA
 243,"17",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA,NA,NA,NA
@@ -326,7 +326,7 @@
 254,"18","M/CM","USA","Horan","passes.b.c",NA,NA,"pass.into.pressure","D/FB","GER","Maier","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"9","4"
 255,"18","D/FB","USA","O'Hara","dispossessed",NA,NA,NA,"F","GER","Huth","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"5","19"
 256,"18","M","GER","Marozsan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
-257,"18","M","GER","Marozsan","passes.f.c",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
+257,"18","M","GER","Marozsan","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
 258,"18","F","GER","Huth","passes.s.c",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
 258,"18",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 259,"18","M","GER","Marozsan","shots.missed",NA,NA,"headed","M/DM","USA","Ertz","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"10","8"
@@ -377,7 +377,7 @@
 295,"21","D/FB","GER","Maier","movement",NA,NA,NA,"F/C","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","13"
 296,"21","D/FB","GER","Maier","passes.f.c",NA,NA,NA,"F/C","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","13"
 296,"21",NA,NA,NA,NA,NA,NA,NA,"M/CM","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"9"
-297,"21","M","GER","Dallmann","passes.f",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+297,"21","M","GER","Dallmann","passes.f",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
 297,"21",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 298,"21","M/DM","USA","Ertz","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
 299,"21","M/DM","USA","Ertz","clearances",NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
@@ -498,7 +498,7 @@
 398,"27","F","GER","Dabritz","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
 399,"27","F","GER","Dabritz","passes.f",NA,NA,"launch","D/FB","USA","Smith","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"13","22"
 400,"27","M","GER","Dallmann","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
-401,"27","M","GER","Dallmann","passes.f",NA,NA,"th","D/CB","USA","Davidson","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","17"
+401,"27","M","GER","Dallmann","passes.f",NA,NA,"through","D/CB","USA","Davidson","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"16","17"
 401,"27",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/FB","USA","O'Hara","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"5"
 402,"27","D/FB","USA","O'Hara","passes.f.c",NA,NA,"pass.into.pressure","F","GER","Huth","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"5","19"
 403,"27","M/DM","USA","Ertz","passes.f.c",NA,NA,NA,"M","GER","Kemme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","22"
@@ -519,7 +519,7 @@
 412,"28",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 413,"28","GK","GER","Schult","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 414,"28","M","GER","Marozsan","movement",NA,NA,NA,"M/CM","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","9"
-415,"29","M","GER","Marozsan","passes.f",NA,NA,"th","M/CM","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","9"
+415,"29","M","GER","Marozsan","passes.f",NA,NA,"through","M/CM","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","9"
 416,"29","D/FB","USA","Smith","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
 417,"29","D/FB","USA","Smith","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
 418,"29","GK","USA","Naeher","passes.f.c",NA,NA,"launch","F","GER","Huth","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"1","19"
@@ -730,7 +730,7 @@
 592,"42","D/CB","USA","Dahlkemper","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
 593,"42","M/CM","USA","Lloyd","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
 594,"42","M/CM","USA","Lloyd","passes.f",NA,NA,"pass.into.pressure","M","GER","Kemme","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","22"
-594,"42",NA,NA,NA,NA,NA,NA,"th","D/CB","GER","Peter","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"5"
+594,"42",NA,NA,NA,NA,NA,NA,"through","D/CB","GER","Peter","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"5"
 595,"42","D/CB","GER","Peter","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
 596,"42","F","GER","Dabritz","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
 597,"42","F","GER","Dabritz","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
@@ -838,7 +838,7 @@
 680,"47",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 681,"47","M/CM","USA","Horan","dispossessed",NA,NA,NA,"M","GER","Kemme","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"9","22"
 682,"47","F","GER","Popp","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
-683,"47","F","GER","Popp","passes.f",NA,NA,"th","M/CM","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","9"
+683,"47","F","GER","Popp","passes.f",NA,NA,"through","M/CM","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","9"
 683,"47",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 683,"47",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 684,"47","GK","USA","Naeher","passes.f",NA,NA,"goal.kick","F","GER","Huth","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"1","19"
@@ -852,7 +852,7 @@
 689,"48","F","GER","Huth","aerial.lost",NA,NA,NA,"M/DM","USA","Ertz","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"19","8"
 690,"48","F","GER","Popp","aerial.won",NA,NA,NA,"M/CM","USA","Horan","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"11","9"
 691,"48","F","GER","Popp","passes.f",NA,NA,"pass.into.pressure","M/CM","USA","Horan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"11","9"
-691,"48",NA,NA,NA,NA,NA,NA,"th","D/CB","USA","Davidson","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"17"
+691,"48",NA,NA,NA,NA,NA,NA,"through","D/CB","USA","Davidson","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"17"
 692,"48","M","GER","Marozsan","ball.touch",NA,NA,"out.of.bounds.keep.poss","D/CB","USA","Davidson","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"10","17"
 693,"48","D/FB","GER","Maier","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
 694,"48","F","GER","Huth","passes.f",NA,NA,"pass.into.pressure","F/W","USA","Rapinoe","blocks",NA,NA,NA,NA,NA,NA,NA,NA,"19","15"
@@ -919,7 +919,7 @@
 744,"52","F","GER","Popp","clearances",NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
 745,"52","F/W","USA","Rapinoe","passes.f",NA,NA,"throw.in","D/FB","GER","Maier","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"15","4"
 745,"52",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-745,"52",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+745,"52",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 746,"52","D/FB","GER","Maier","passes.f",NA,NA,"launch","F/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","15"
 746,"52",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 747,"52","M/DM","USA","Ertz","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
@@ -937,7 +937,7 @@
 755,"52","M","GER","Marozsan","passes.b.c",NA,NA,NA,"D/CB","USA","Davidson","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","17"
 756,"53","M","GER","Kemme","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
 757,"53","F/W","USA","Pugh","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
-758,"53","F/W","USA","Pugh","passes.f.c",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
+758,"53","F/W","USA","Pugh","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
 758,"53",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 759,"53","F/W","USA","Rapinoe","shots.blocked",NA,NA,NA,"D/FB","GER","Maier","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","4"
 759,"53",NA,NA,NA,NA,NA,NA,NA,"D/FB","GER","Maier","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
@@ -981,7 +981,7 @@
 791,"56","F/W","USA","Rapinoe","lost.touch",NA,NA,NA,"D/FB","GER","Maier","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"15","4"
 792,"56","F/W","USA","Rapinoe","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
 793,"56","F/W","USA","Rapinoe","passes.f",NA,NA,"pass.into.pressure","D/CB","GER","Hendrich","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"15","3"
-793,"56",NA,NA,NA,NA,NA,NA,"th","D/FB","GER","Maier","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
+793,"56",NA,NA,NA,NA,NA,NA,"through","D/FB","GER","Maier","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"4"
 794,"56","D/FB","GER","Maier","passes.s.c",NA,NA,NA,"F/C","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","13"
 795,"56","M","GER","Kemme","passes.f",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
 796,"56","D/FB","USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
@@ -1039,7 +1039,7 @@
 834,"59","M","GER","Goessling","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
 835,"59","M","GER","Goessling","passes.s.c",NA,NA,NA,"M/CM","USA","Lloyd","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","10"
 836,"59","F/W","USA","Pugh","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
-836,"59",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+836,"59",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 836,"59",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 837,"59","F/C","USA","Morgan","movement",NA,NA,NA,"D/CB","GER","Hendrich","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","3"
 838,"59","F/C","USA","Morgan","passes.s.c",NA,NA,"pass.into.pressure","D/CB","GER","Hendrich","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","3"
@@ -1135,13 +1135,13 @@
 913,"63","M","GER","Goessling","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8",NA
 914,"63","F","GER","Dabritz","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
 915,"63","M","GER","Goessling","passes.f.c",NA,NA,"launch","F/C","USA","Morgan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"8","13"
-916,"63","M","GER","Dallmann","passes.f",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
+916,"63","M","GER","Dallmann","passes.f",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16",NA
 916,"63",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 917,"64",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 918,"64","D/FB","GER","Maier","passes.f.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4",NA
 919,"64","F","GER","Dabritz","dispossessed",NA,NA,NA,"M/DM","USA","Ertz","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"13","8"
 920,"64","M","GER","Kemme","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
-921,"64","M","GER","Kemme","passes.f",NA,NA,"th","F/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","15"
+921,"64","M","GER","Kemme","passes.f",NA,NA,"through","F/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","15"
 921,"64",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/FB","USA","O'Hara","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"5"
 922,"64","D/FB","USA","O'Hara","passes.f.c",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
 923,"64","M/CM","USA","Horan","fouls.conceded",NA,NA,NA,"M","GER","Kemme","fouls.won",NA,NA,NA,NA,NA,NA,NA,NA,"9","22"
@@ -1166,7 +1166,7 @@
 938,"66",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 939,"66","M","GER","Marozsan","passes.b.c",NA,NA,NA,"M/CM","USA","Horan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"10","9"
 940,"66","D/FB","GER","Maier","passes.f",NA,NA,"launch","M/CM","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"4","9"
-940,"66",NA,NA,NA,NA,NA,NA,"th","GK","USA","Naeher","gk.loose.balls.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
+940,"66",NA,NA,NA,NA,NA,NA,"through","GK","USA","Naeher","gk.loose.balls.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
 940,"66",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 941,"66","GK","USA","Naeher","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 941,"66",NA,NA,NA,NA,NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1222,7 +1222,7 @@
 976,"69","M","GER","Marozsan","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10",NA
 977,"69","D/CB","GER","Hendrich","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
 978,"69","F","GER","Popp","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
-979,"69","F","GER","Popp","passes.f.c",NA,NA,"th","M/DM","USA","Ertz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","8"
+979,"69","F","GER","Popp","passes.f.c",NA,NA,"through","M/DM","USA","Ertz","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","8"
 979,"69",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 980,"69","F","GER","Huth","take.on.lost",NA,NA,"out.of.bounds.keep.poss","D/FB","USA","O'Hara","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"19","5"
 981,"69",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1416,7 +1416,7 @@
 1126,"81","M","GER","Marozsan","passes.f.c",NA,NA,"headed","F/W","USA","Pugh","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"10","11"
 1127,"81","D/FB","GER","Faisst","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
 1127,"81",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1127,"81",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1127,"81",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1128,"81",NA,"GER","Kayikci","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
 1129,"82","GK","USA","Naeher","passes.f.c",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 1129,"82",NA,NA,NA,NA,NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1503,7 +1503,7 @@
 1192,"86","F","GER","Popp","passes.b.c",NA,NA,NA,"D/FB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","22"
 1193,"86","M","GER","Goessling","passes.f",NA,NA,"launch","F/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"8","11"
 1193,"86",NA,NA,NA,NA,NA,NA,"pass.into.pressure","GK","USA","Naeher","gk.loose.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,"1"
-1193,"86",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1193,"86",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1194,"87","GK","USA","Naeher","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 1194,"87",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1195,"87","D/CB","GER","Hendrich","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
@@ -1529,7 +1529,7 @@
 1213,"87","M","GER","Kemme","movement",NA,NA,NA,"F/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","11"
 1214,"87","M","GER","Kemme","passes.f",NA,NA,"launch","F/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"22","11"
 1214,"87",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D","USA","Short","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"2"
-1214,"87",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1214,"87",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1214,"87",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1215,"88","D/FB","GER","Faisst","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
 1215,"88",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1577,7 +1577,7 @@
 1247,"89","D/FB","GER","Faisst","passes.f",NA,NA,NA,"F/W","USA","Pugh","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"17","11"
 1248,"89","M/CM","USA","Horan","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
 1249,"89","M/CM","USA","Horan","passes.f",NA,NA,"crosses","GK","GER","Schult","gk.loose.balls.won",NA,"collected",NA,NA,NA,NA,NA,NA,"9","1"
-1249,"89",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1249,"89",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1249,"89",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1250,"90","GK","GER","Schult","passes.f.c",NA,NA,"gk.throws",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 1251,"90","M","GER","Kemme","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
@@ -1607,7 +1607,7 @@
 1268,"90+2","M","GER","Kemme","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"22",NA
 1269,"90+3","M","GER","Marozsan","passes.f",NA,NA,"launch","F","USA","Williams","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"10","12"
 1269,"90+3",NA,NA,NA,NA,NA,NA,"pass.into.pressure","GK","USA","Naeher","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
-1269,"90+3",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1269,"90+3",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1269,"90+3",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1270,"90+3","F","GER","Popp","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"11",NA
 1271,"90+3",NA,"GER","Kayikci","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
@@ -1636,7 +1636,7 @@
 1291,"90+4","M","GER","Marozsan","passes.f.c",NA,NA,"launch","M","USA","Long","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"10","20"
 1292,"90+4",NA,"GER","Kayikci","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
 1293,"90+4","F","GER","Huth","passes.s.c",NA,NA,NA,"M","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","6"
-1294,"90+4",NA,"GER","Kayikci","passes.f",NA,NA,"th","D","USA","Sonnett","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"12","16"
+1294,"90+4",NA,"GER","Kayikci","passes.f",NA,NA,"through","D","USA","Sonnett","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"12","16"
 1294,"90+4",NA,NA,NA,NA,NA,NA,"pass.into.pressure","GK","USA","Naeher","gk.smothers.won",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
 1295,"90+4","GK","USA","Naeher","passes.f.c",NA,NA,"gk.drop.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 1295,"90+4",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

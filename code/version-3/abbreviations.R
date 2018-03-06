@@ -48,7 +48,7 @@ AbbreviationConverter_PlayType <-
   R6Class("Abbreviation_PlayType", inherit = AbbreviationConverter_Base,
           public = list(column_name = "play.type", 
                         initialize = function() {
-                          self$add_abbreviation("^th ",                    "through")
+                          self$add_abbreviation("^th|^th$",             "through")
                           self$add_abbreviation("^cc|^cr|^dc",             "crosses")
                           self$add_abbreviation("^s",                      "switch")
                           self$add_abbreviation("^lau",                    "launch")

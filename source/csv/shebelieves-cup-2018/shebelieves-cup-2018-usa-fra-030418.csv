@@ -92,7 +92,7 @@
 74,"5","F","FRA","Thiney","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
 75,"5","M/CM","FRA","Geyoro","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
 76,"5","M/CM","FRA","Henry","passes.f",NA,NA,"launch","M/CM","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"6","6"
-76,"5",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+76,"5",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 76,"5",NA,NA,NA,NA,NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 77,"6",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 78,"6","D/WB","USA","O'Hara","passes.b.c",NA,NA,"pass.into.pressure","M/W","FRA","Asseyi","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"5","18"
@@ -146,7 +146,7 @@
 116,"9",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","FRA","Mbock","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"19"
 117,"9","D/CB","FRA","Mbock","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
 118,"9","M/W","FRA","Asseyi","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18",NA
-118,"9",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+118,"9",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 119,"9","GK","USA","Naeher","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 120,"9","GK","USA","Naeher","clearances",NA,NA,"out.of.bounds.lost.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 121,"9","D/FB","FRA","Torrent","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
@@ -180,7 +180,7 @@
 146,"10","F","FRA","Thiney","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
 147,"10","M/CM","FRA","Henry","passes.f.c",NA,NA,"launch","M/DM","USA","Sullivan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"6","3"
 147,"10",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-147,"10",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+147,"10",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 148,"10","M/W","FRA","Asseyi","passes.f",NA,NA,"crosses","D/WB","USA","O'Hara","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"18","5"
 148,"10",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 148,"10",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -205,7 +205,7 @@
 164,"12",NA,NA,NA,NA,NA,NA,NA,"D/CB","USA","Dahlkemper","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
 165,"12","D/FB","FRA","Majri","aerial.lost",NA,NA,NA,"D/WB","USA","Smith","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"7","22"
 166,"12","D/FB","FRA","Majri","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
-167,"12","D/FB","FRA","Majri","passes.f",NA,NA,"th","M/CM","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","6"
+167,"12","D/FB","FRA","Majri","passes.f",NA,NA,"through","M/CM","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","6"
 167,"12",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Naeher","gk.loose.balls.won",NA,"caught",NA,NA,NA,NA,NA,NA,NA,"1"
 168,"12",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 169,"12","M/DM","USA","Sullivan","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
@@ -279,13 +279,13 @@
 232,"16","F/W","USA","Rapinoe","aerial.lost",NA,NA,NA,"M/W","FRA","Asseyi","aerial.won",NA,NA,NA,NA,NA,NA,NA,NA,"15","18"
 233,"16","M/CM","USA","Brian","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
 234,"16","M/CM","USA","Brian","passes.f.c",NA,NA,NA,"F","FRA","Thiney","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"6","12"
-235,"16","F/W","USA","Rapinoe","passes.f",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
+235,"16","F/W","USA","Rapinoe","passes.f",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15",NA
 235,"16",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 236,"16","F/C","USA","Morgan","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
 237,"17","GK","FRA","Bouhaddi","passes.f.c",NA,NA,"free.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 237,"17",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 238,"17","D/FB","FRA","Majri","passes.f.c",NA,NA,"pass.into.pressure","D/WB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","22"
-238,"17",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+238,"17",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 239,"17","D/CB","USA","Dahlkemper","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
 240,"17","GK","USA","Naeher","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 241,"17","M/CM","USA","Brian","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
@@ -335,7 +335,7 @@
 280,"20","GK","FRA","Bouhaddi","passes.f.c",NA,NA,"goal.kick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 281,"20","D/CB","FRA","Mbock","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
 282,"20","D/FB","FRA","Torrent","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
-282,"20",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+282,"20",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 282,"20",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 283,"20","D/WB","USA","O'Hara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
 284,"20","D/WB","USA","O'Hara","passes.s.c",NA,NA,NA,"M/W","FRA","Asseyi","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"5","18"
@@ -407,7 +407,7 @@
 343,"24","M/CM","FRA","Geyoro","take.on.won",NA,NA,NA,"D/WB","USA","Smith","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"23","22"
 344,"24","M/CM","FRA","Geyoro","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
 344,"24",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-344,"24",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+344,"24",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 345,"24","M/W","FRA","Le Sommer","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
 346,"24",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 347,"24","M/DM","USA","Sullivan","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3",NA
@@ -415,7 +415,7 @@
 349,"24","M/CM","USA","Brian","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
 350,"24","D/WB","USA","Smith","passes.s.c",NA,NA,"pass.into.pressure","M/W","FRA","Le Sommer","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"22","9"
 351,"24","F","FRA","Thiney","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
-352,"24","F","FRA","Thiney","passes.f",NA,NA,"th","F/W","USA","Rapinoe","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"12","15"
+352,"24","F","FRA","Thiney","passes.f",NA,NA,"through","F/W","USA","Rapinoe","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"12","15"
 352,"24",NA,NA,NA,NA,NA,NA,"pass.into.pressure","GK","USA","Naeher","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"1"
 353,"24","F/C","USA","Morgan","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13",NA
 354,"25",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -455,7 +455,7 @@
 380,"26","M/CM","FRA","Geyoro","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
 381,"26","M/CM","FRA","Geyoro","passes.f",NA,NA,"launch","D/CB","USA","Davidson","clearances",NA,NA,NA,NA,NA,NA,NA,NA,"23","17"
 381,"26",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-381,"26",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+381,"26",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 382,"26","M/CM","USA","Brian","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
 383,"26","M/CM","USA","Brian","passes.s",NA,NA,"headed",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6",NA
 383,"26",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -481,7 +481,7 @@
 400,"27","M/W","FRA","Asseyi","aerial.won",NA,NA,NA,"M/CM","USA","Horan","aerial.lost",NA,NA,NA,NA,NA,NA,NA,NA,"18","9"
 401,"27","M/W","FRA","Asseyi","passes.f.c",NA,NA,"headed","M/CM","USA","Horan","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"18","9"
 401,"27",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-402,"28","M/W","FRA","Le Sommer","passes.f",NA,NA,"th","D/CB","USA","Davidson","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","17"
+402,"28","M/W","FRA","Le Sommer","passes.f",NA,NA,"through","D/CB","USA","Davidson","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","17"
 402,"28",NA,NA,NA,NA,NA,NA,"pass.into.pressure","D/CB","USA","Dahlkemper","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"7"
 402,"28",NA,NA,NA,NA,NA,NA,NA,"D/WB","USA","O'Hara","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"5"
 403,"28","D/WB","USA","O'Hara","movement",NA,NA,NA,"F","FRA","Thiney","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"5","12"
@@ -587,7 +587,7 @@
 485,"36",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 486,"36","M/CM","FRA","Henry","take.on.won",NA,NA,NA,"F/W","USA","Pugh","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"6","11"
 487,"36","M/CM","FRA","Henry","passes.f",NA,NA,"launch","F/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"6","11"
-487,"36",NA,NA,NA,NA,NA,NA,"th","D/CB","USA","Davidson","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"17"
+487,"36",NA,NA,NA,NA,NA,NA,"through","D/CB","USA","Davidson","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"17"
 487,"36",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 487,"36",NA,NA,NA,NA,NA,NA,"out.of.bounds.keep.poss",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 488,"37","D/FB","FRA","Majri","passes.s.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
@@ -615,7 +615,7 @@
 505,"37","F","FRA","Thiney","shots.blocked",NA,NA,NA,"M/CM","USA","Horan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"12","9"
 505,"37",NA,NA,NA,NA,NA,NA,NA,"M/CM","USA","Horan","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"9"
 506,"37","F","FRA","Thiney","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
-507,"37","F","FRA","Thiney","passes.f.c",NA,NA,"th","M/DM","USA","Sullivan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"12","3"
+507,"37","F","FRA","Thiney","passes.f.c",NA,NA,"through","M/DM","USA","Sullivan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"12","3"
 507,"37",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 508,"37","F","FRA","Gauvin","shots.missed",NA,NA,NA,"D/CB","USA","Dahlkemper","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"13","7"
 508,"37",NA,NA,NA,NA,NA,NA,NA,"D/WB","USA","Smith","challenged",NA,NA,NA,NA,NA,NA,NA,NA,NA,"22"
@@ -640,7 +640,7 @@
 525,"38","D/CB","FRA","Tounkara","passes.s.c",NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2",NA
 526,"38","D/CB","FRA","Mbock","take.on.won",NA,NA,NA,"F/W","USA","Rapinoe","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"19","15"
 527,"38","D/CB","FRA","Mbock","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"19",NA
-528,"38","D/CB","FRA","Mbock","passes.f.c",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA,NA,"19",NA
+528,"38","D/CB","FRA","Mbock","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,"key.passes",NA,NA,NA,"19",NA
 528,"38",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,"assists",NA,NA,NA,NA,NA
 528,"38",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 529,"38","M/W","FRA","Le Sommer","take.on.won",NA,NA,NA,"GK","USA","Naeher","gk.smothers.lost",NA,NA,NA,NA,NA,NA,NA,NA,"9","1"
@@ -666,7 +666,7 @@
 547,"40",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 548,"40","F","FRA","Thiney","passes.b.c",NA,NA,NA,"D/WB","USA","O'Hara","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"12","5"
 549,"40","M/CM","FRA","Henry","passes.f.c",NA,NA,"launch","M/DM","USA","Sullivan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"6","3"
-549,"40",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+549,"40",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 549,"40",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 550,"40","M/W","FRA","Le Sommer","take.on.lost",NA,NA,NA,"D/WB","USA","Smith","tackles.ball",NA,NA,NA,NA,NA,NA,NA,NA,"9","22"
 551,"40","D/FB","FRA","Majri","lost.touch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
@@ -706,13 +706,13 @@
 581,"42","D/CB","USA","Dahlkemper","passes.f",NA,NA,"pass.into.pressure","D/FB","FRA","Majri","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"7","7"
 581,"42",NA,NA,NA,NA,NA,NA,NA,"F","FRA","Thiney","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,NA,"12"
 582,"42","F","FRA","Thiney","passes.s.c",NA,NA,NA,"M/CM","USA","Brian","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"12","6"
-583,"42","M/W","FRA","Le Sommer","passes.f.c",NA,NA,"th","D/WB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","22"
+583,"42","M/W","FRA","Le Sommer","passes.f.c",NA,NA,"through","D/WB","USA","Smith","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","22"
 584,"42","F","FRA","Thiney","passes.s",NA,NA,"crosses","M/CM","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"12","6"
 584,"42",NA,NA,NA,NA,NA,NA,"pass.into.pressure","M/DM","USA","Sullivan","clearances",NA,NA,NA,NA,NA,NA,NA,NA,NA,"3"
 585,"43","M/CM","FRA","Geyoro","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
 586,"43","M/CM","FRA","Geyoro","passes.s.c",NA,NA,NA,"F/W","USA","Pugh","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"23","11"
 587,"43","F","FRA","Thiney","passes.f",NA,NA,"crosses",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
-587,"43",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+587,"43",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 588,"43","GK","USA","Naeher","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 589,"43","GK","USA","Naeher","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
 590,"43","D/CB","USA","Davidson","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
@@ -738,7 +738,7 @@
 607,"44","D/CB","FRA","Tounkara","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2",NA
 608,"44","D/CB","FRA","Tounkara","passes.f.c",NA,NA,NA,"F/C","USA","Morgan","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"2","13"
 609,"44","M/W","FRA","Le Sommer","passes.f",NA,NA,"launch","M/CM","USA","Brian","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"9","6"
-609,"44",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+609,"44",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 609,"44",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 610,"44","M/W","FRA","Asseyi","offside.calls",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18",NA
 611,"45",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1159,7 +1159,7 @@
 926,"71","D/WB","USA","O'Hara","passes.b.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5",NA
 927,"71","M/DM","USA","Sullivan","passes.b.c",NA,NA,NA,"F","FRA","Thiney","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"3","12"
 928,"71","D/CB","USA","Davidson","passes.f.c",NA,NA,"pass.into.pressure","F","FRA","Thiney","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"17","12"
-928,"71",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+928,"71",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 928,"71",NA,NA,NA,NA,NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 929,"71","F/W","USA","Pugh","passes.b",NA,NA,"out.of.bounds.keep.poss","D/FB","FRA","Torrent","pressured",NA,NA,NA,NA,NA,NA,NA,NA,"11","17"
 929,"71",NA,NA,NA,NA,NA,NA,NA,"M/W","FRA","Asseyi","blocks",NA,NA,NA,NA,NA,NA,NA,NA,NA,"18"
@@ -1191,7 +1191,7 @@
 951,"73","D/FB","USA","Short","passes.f.c",NA,NA,"throw.in",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2",NA
 951,"73",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 952,"73","F/C","USA","Morgan","passes.f.c",NA,NA,"pass.into.pressure","D/CB","FRA","Mbock","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"13","19"
-952,"73",NA,NA,NA,NA,NA,NA,"th","D/FB","FRA","Torrent","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"17"
+952,"73",NA,NA,NA,NA,NA,NA,"through","D/FB","FRA","Torrent","pressured",NA,NA,NA,NA,NA,NA,NA,NA,NA,"17"
 953,"73","F/W","USA","Pugh","take.on.won",NA,NA,NA,"D/FB","FRA","Torrent","dribbled",NA,NA,NA,NA,NA,NA,NA,NA,"11","17"
 954,"73","F/W","USA","Pugh","passes.b",NA,NA,"crosses","D/CB","FRA","Tounkara","interceptions",NA,NA,NA,NA,NA,NA,NA,NA,"11","2"
 954,"73",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1249,7 +1249,7 @@
 991,"79","D/CB","FRA","Mbock","passes.s.c",NA,NA,NA,"D/FB","USA","Dunn","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"19","19"
 992,"79","F","FRA","Thiney","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
 992,"79",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-992,"79",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+992,"79",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 993,"79","D/CB","USA","Davidson","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
 994,"79","D/CB","USA","Davidson","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"17",NA
 995,"79","GK","USA","Naeher","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
@@ -1295,7 +1295,7 @@
 1028,"82","M/W","FRA","Le Sommer","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
 1029,"82","M/CM","FRA","Geyoro","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
 1030,"82","M/CM","FRA","Geyoro","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
-1031,"82","M/W","FRA","Asseyi","passes.f.c",NA,NA,"th","D/CB","USA","Davidson","pressured",NA,NA,NA,NA,"key.passes",NA,NA,NA,"18","17"
+1031,"82","M/W","FRA","Asseyi","passes.f.c",NA,NA,"through","D/CB","USA","Davidson","pressured",NA,NA,NA,NA,"key.passes",NA,NA,NA,"18","17"
 1031,"82",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1032,"82","F","FRA","Gauvin","shots.stopped.by.gk",NA,NA,"out.of.bounds.keep.poss","D/FB","USA","Dunn","pressured",NA,NA,NA,NA,"big.chances.shot.on.goal",NA,NA,NA,"13","19"
 1032,"82",NA,NA,NA,NA,NA,NA,NA,"GK","USA","Naeher","gk.s.o.g.stop",NA,"parried.to.safety",NA,NA,NA,NA,NA,NA,NA,"1"
@@ -1321,7 +1321,7 @@
 1047,"83","D/FB","FRA","Majri","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
 1048,"83","D/FB","FRA","Majri","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
 1049,"83","M/W","FRA","Le Sommer","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9",NA
-1050,"83","F","FRA","Thiney","passes.f.c",NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
+1050,"83","F","FRA","Thiney","passes.f.c",NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12",NA
 1050,"83",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1051,"83","D/FB","FRA","Majri","lost.touch",NA,NA,NA,"D/WB","USA","O'Hara","challenged",NA,NA,NA,NA,NA,NA,NA,NA,"7","5"
 1052,"84",NA,NA,NA,"playcutoffbybroadcast",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1348,7 +1348,7 @@
 1072,"84","M/CM","FRA","Geyoro","movement",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
 1073,"84","M/CM","FRA","Geyoro","passes.f",NA,NA,"launch",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"23",NA
 1073,"84",NA,NA,NA,NA,NA,NA,"pass.into.pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1073,"84",NA,NA,NA,NA,NA,NA,"th",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1073,"84",NA,NA,NA,NA,NA,NA,"through",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1074,"85","D/CB","USA","Dahlkemper","recoveries",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
 1075,"85","D/CB","USA","Dahlkemper","passes.b.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7",NA
 1076,"85","GK","USA","Naeher","passes.f.c",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1",NA
