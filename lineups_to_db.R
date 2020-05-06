@@ -48,7 +48,7 @@ grabMeta <- function(fpath) {
     print("Error with database check: filename appears more than once in match database.")
     break
   }
-  match_id <- matches$matchid[matchid_indx]
+  match_id <- matches$match_id[matchid_indx]
   meta <- cbind(match_id, lineup_player_id, meta)
 }
 lineups <- lapply(fpaths, grabMeta)
