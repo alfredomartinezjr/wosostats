@@ -183,10 +183,6 @@ AbbreviationProcessor <-
 # and shortcuts taken while logging a match, as well as 
 # extracting the match metadata.
 TrimRowsColumns        <- function(match.df) {
-  # removes NA columns
-  match.df <- match.df[, !grepl("^NA", names(match.df))] 
-  # removes rows after the "end.of.match"
-  match.df <- match.df[1:max(grep("end.of.match", match.df[, "poss.action"])), ]
   # adds missing columns
   if (!("xG" %in% colnames(match.df))) {
     (match.df$xG <- NA)
@@ -204,10 +200,8 @@ TrimRowsColumns        <- function(match.df) {
 }
 
 CleanUpCells           <- function(match.df) {
-  # Trims whitespace, creates NAs
-  match.df[(match.df) == "-" | (match.df) == " " | (match.df) == ""] <- NA
   match.df <- as.data.frame(apply(match.df, 2, trimws), stringsAsFactors = FALSE)
-  kColumnsToLower   <- c("poss.action", "play.type", "def.action", 
+  kColumnsToLower   <- c("poss.position","poss.team","poss.player","poss.action", "play.type", "def.action", 
                            "gk.ball.stop", "gk.s.o.g.attempt", 
                            "poss.player.disciplinary", "poss.notes",
                            "def.player.disciplinary", "def.notes")
@@ -221,6 +215,7 @@ CleanUpCells           <- function(match.df) {
   match.df
 }
 
+library(dplyr)
 GetMetaData            <- function(match.df) {
   metadata.range <- grep("kickoff", 
                           match.df[, "poss.action"])[1] - 1
@@ -425,9 +420,11 @@ TidyMatchExcel <- function(path) {
   # Reads a match spreadsheet in untidied, Excel format and creates a match
   # spreadsheet in .csv format that can be read by creating-stats.R files.
   abbreviation_processor <- AbbreviationProcessor$new()
-  match.df <- as.data.frame(read_excel(path))
-  match.df <- TrimRowsColumns(match.df)
+  match.df <- read_excel(path, na = c("","-"," "), col_types = "text")
+  # removes rows after "end.of.match"
+  match.df <- match.df[1:max(which(match.df$poss.action %in% "end.of.match")), ]
   match.df <- CleanUpCells(match.df)
+  # match.df <- TrimRowsColumns(match.df)
   meta.df  <- GetMetaData(match.df) # creates metadata subset
   kMatchDataRange <- grep("kickoff", 
                            match.df[,"poss.action"])[1]:nrow(match.df)
