@@ -162,7 +162,7 @@ SetPlayerInfo <- function(mytables_ls,
                              which(x == tolower(my_lineup$player)))
     my_ids[id_missing] <- sapply(name_matches[id_missing],
                                  function(x) 
-                                   ifelse(length(x) > 1, 
+                                   ifelse(length(x) != 1, 
                                           0, 
                                           my_lineup$lineup_player_id[x[1]])
     )
@@ -219,10 +219,9 @@ SetPlayerInfo <- function(mytables_ls,
       id_missing <- is_player & my_ids == 0
     }
     if (length(my_ids[id_missing]) > 0){
-      print("Error: Was unable to find every player in the log in the lineup.", 
-            "Match:", mypath, 
-            "Players missing: ", 
-            my_players[id_missing])
+      print(paste("Error: Was unable to find every player in the log in the lineup.", 
+            "Match. Players missing: ", 
+            my_players[id_missing]))
       break
     }
     my_ids[my_ids == 0] <- NA
@@ -277,12 +276,18 @@ SetPlayerInfo <- function(mytables_ls,
 
 GetDefLocation         <- function(mytables_ls) {
   poss_events <- mytables_ls[["events"]]
+  poss_events2 <- poss_events[c("event", "poss_location")] %>%
+    filter(!is.na(poss_location))
   def_events <- left_join(mytables_ls[["defend_events"]], 
-                          poss_events[c("event", "poss_location")], 
+                          poss_events2, 
                           by = "event")
   ev_vals_int <- def_events$event[grep("intercept", def_events$def_action)]
   ev_vals_afterint <- poss_events$event[which(poss_events$event %in% ev_vals_int) + 1]
   ev_loc_afterint <- poss_events$poss_location[poss_events$event %in% ev_vals_afterint]
+  if (length(ev_vals_int) != length(ev_loc_afterint)) {
+    print(paste("Error: a defend_id is duplicated due to a missing player value"))
+    break
+  }
   poss_evs_afterint <- as.data.frame(cbind(event = ev_vals_int,
                                            poss_location_afterint = ev_loc_afterint), 
                                      stringsAsFactors = FALSE)
