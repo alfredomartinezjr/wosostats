@@ -74,29 +74,29 @@ for (i in list.files("source/excel")) {
 }
 
 alltables_ls[["events"]] <- 
-  cbind(uniq_event_id = c(1000000:(1000000+nrow(alltables_ls[["events"]])-1)), 
+  cbind(uniq_event_id = c(1000001:(1000001+nrow(alltables_ls[["events"]])-1)), 
         alltables_ls[["events"]])
 alltables_ls[["ev_type"]] <- 
-  cbind(uniq_ev_type_id = c(1000000:(1000000+nrow(alltables_ls[["ev_type"]])-1)),
+  cbind(uniq_ev_type_id = c(1000001:(1000001+nrow(alltables_ls[["ev_type"]])-1)),
         alltables_ls[["ev_type"]])
 alltables_ls[["defend_events"]] <- 
-  cbind(uniq_def_ev_id = c(1000000:(1000000+nrow(alltables_ls[["defend_events"]])-1)),
+  cbind(uniq_def_ev_id = c(1000001:(1000001+nrow(alltables_ls[["defend_events"]])-1)),
         alltables_ls[["defend_events"]])
 if (class(alltables_ls[["defend_events"]]$def_location) == "list") {
   print("Error at line 85: check why def_location is a list")
   break
 }
 alltables_ls[["poss_discp"]] <- 
-  cbind(uniq_poss_discp_id = c(1000000:(1000000+nrow(alltables_ls[["poss_discp"]])-1)),
+  cbind(uniq_poss_discp_id = c(1000001:(1000001+nrow(alltables_ls[["poss_discp"]])-1)),
         alltables_ls[["poss_discp"]])
 alltables_ls[["def_discp"]] <- 
-  cbind(uniq_def_discp_id = c(1000000:(1000000+nrow(alltables_ls[["def_discp"]])-1)),
+  cbind(uniq_def_discp_id = c(1000001:(1000001+nrow(alltables_ls[["def_discp"]])-1)),
         alltables_ls[["def_discp"]])
 alltables_ls[["poss_notes"]] <- 
-  cbind(uniq_poss_notes_id = c(1000000:(1000000+nrow(alltables_ls[["poss_notes"]])-1)),
+  cbind(uniq_poss_notes_id = c(1000001:(1000001+nrow(alltables_ls[["poss_notes"]])-1)),
         alltables_ls[["poss_notes"]])
 alltables_ls[["def_notes"]] <- 
-  cbind(uniq_def_notes_id = c(1000000:(1000000+nrow(alltables_ls[["def_notes"]])-1)),
+  cbind(uniq_def_notes_id = c(1000001:(1000001+nrow(alltables_ls[["def_notes"]])-1)),
         alltables_ls[["def_notes"]])
 
 write_csv(alltables_ls[["events"]], "source/temp_database/events.csv", na = "")
