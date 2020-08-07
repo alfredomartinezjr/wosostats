@@ -1,6 +1,11 @@
 # WoSo Stats
 This GitHub repository is for the WoSo Stats project, dedicated to collecting, analyzing, and distributing data about women's soccer from around the world. In this repository you'll find a variety of code, files, and documents relevant to our work.
 
+Most of you are probably here because you want the advanced stats. To get right to it, run this in R:
+``` r
+source("calc_stats.R")
+```
+
 The main Twitter account for this project where you'll find the most up-to-date info on recent news, stats, and overall developments is [@WoSoStats](https://twitter.com/wosostats). The website is at www.wosostats.com. Any questions about the project or how to join can be directed to the Twitter account or to Alfredo at wosostats.team@gmail.com.
 
 To see just some of the data that has been tracked, view [the WoSo Stats Shiny app](https://amj2012.shinyapps.io/wosostats/). There you can see stats for players. Currently, our biggest database is for 2016 USWNT matches and for the 2016 NWSL season. While this project is still being occasionally worked on, matches are not being logged as regularly as in the past and it is more likely that this project will try to log and archive data from historical matches (pre-2016) as advanced stats have recently been tracked more regularly for certain women's soccer competitions.
