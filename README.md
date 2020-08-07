@@ -6,12 +6,6 @@ Most of you are probably here because you want the advanced stats. To get right 
 source("https://raw.githubusercontent.com/alfredomartinezjr/wosostats/master/calc_stats.R")
 ```
 
-[The WoSo Stats Shiny app](https://amj2012.shinyapps.io/wosostats/) is an interactive web app, running on Shiny, that allows you to browse through the stats in the database.
-
-Most of what you see in [the Shiny app](https://amj2012.shinyapps.io/wosostats/) is sourced from the [stats](https://github.com/amj2012/woso-stats/tree/master/stats) directory, although this due to change soon. The data in the stats directory, while essentially the same as the tbl_all table described above, is based on old code, is made up of over a hundred tables instead of one (albeit large) table, and will not be updated from now on. Soon, the data the Shiny app represents will be the tbl_all table.
-
-The [shiny](https://github.com/amj2012/wosostats/tree/master/shiny/wosostats) directory is where to find the R code behind the WoSo Stats Shiny app, which can be found at [https://amj2012.shinyapps.io/wosostats](https://amj2012.shinyapps.io/wosostats/).
-
 The [resources](https://github.com/amj2012/woso-stats/tree/master/resources) directory is where to find necessary and helpful resources for how to log stats on your own and definitions for what is being measured and analyzed. While matches are not currently being actively logged, this is still useful if you want to go through and see how matches are logged and definitions for the stats in the tbl_all table.
 
 The [source](https://github.com/amj2012/woso-stats/tree/master/source) directory is where to find all the match spreadsheets that have been logged. The raw Excel match logs are in the excel directory. The temp_database directory is a database of tables based on the Excel files, which are a result of running the lineups_to_db.R and excel_to_db.R scripts. That last directory is not meant to be a permanent location for that database, hence the name, and the plan is to also move it off of Github and somewhere onto the WoSo Stats site.
