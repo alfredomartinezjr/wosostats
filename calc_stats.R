@@ -197,4 +197,3 @@ addMetadata <- function(tbl_all) {
 
 tbl_all <- getStats()
 tbl_all <- addMetadata(tbl_all)
-tbl_all
