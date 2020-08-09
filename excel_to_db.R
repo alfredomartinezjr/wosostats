@@ -41,13 +41,11 @@ CleanUpCells <- function(match_source) {
 }
 
 CalcEventValues <- function(match_source) {
-  is_prev_event <- is.na(match_source$poss_player) & 
-    !grepl("end.of|stoppage.in.play|halftime|fulltime|playcutoff",
-           match_source$poss_action)
+  is_newevent <- !is.na(match_source$poss_action)
   for (i in seq_along(match_source$event)[-1]) {
-    if (is_prev_event[i]) {
+    if (!is_newevent[i]) {
       match_source$event[i] <- match_source$event[i-1]
-    } else if (!is_prev_event[i]){
+    } else if (is_newevent[i]){
       match_source$event[i] <- match_source$event[i-1]+1
     }
   }
@@ -377,7 +375,8 @@ GetDefLocation         <- function(mytables_ls) {
   }
   poss_evs_afterint <- as.data.frame(cbind(event = ev_vals_int,
                                            poss_location_afterint = ev_loc_afterint), 
-                                     stringsAsFactors = FALSE)
+                                     stringsAsFactors = FALSE) %>%
+    mutate(event = as.numeric(event))
   def_events <- left_join(def_events, poss_evs_afterint, by = "event")
   kPossLocation <- c("A6", "A18", "A3L", "A3C", 
                      "A3R", "AM3L", "AM3C", "AM3R", 
@@ -538,30 +537,55 @@ for (i in list.files("source/excel")) {
 }
 
 alltables_ls[["events"]] <- 
-  cbind(uniq_event_id = c(1000001:(1000001+nrow(alltables_ls[["events"]])-1)), 
+  cbind(uniq_event_id = c(1000001:
+                            (1000001+nrow(alltables_ls[["events"]])-1)),
         alltables_ls[["events"]])
 alltables_ls[["ev_type"]] <- 
-  cbind(uniq_ev_type_id = c(1000001:(1000001+nrow(alltables_ls[["ev_type"]])-1)),
-        alltables_ls[["ev_type"]])
-alltables_ls[["defend_events"]] <- 
-  cbind(uniq_def_ev_id = c(1000001:(1000001+nrow(alltables_ls[["defend_events"]])-1)),
-        alltables_ls[["defend_events"]])
+  cbind(uniq_evtype_id = c(1000001:
+                             (1000001+nrow(alltables_ls[["ev_type"]])-1)),
+        right_join(select(alltables_ls[["events"]], 
+                          uniq_event_id, match_id, event),
+                   alltables_ls[["ev_type"]],
+                   by = c("match_id", "event")))
 if (class(alltables_ls[["defend_events"]]$def_location) == "list") {
-  print("Error at line 85: check why def_location is a list")
+  print("Error: check why def_location returns a list")
   break
 }
+alltables_ls[["defend_events"]] <- 
+  cbind(uniq_evtype_id = c(1000001:
+                             (1000001+nrow(alltables_ls[["defend_events"]])-1)),
+        right_join(select(alltables_ls[["events"]], 
+                          uniq_event_id, match_id, event),
+                   alltables_ls[["defend_events"]],
+                   by = c("match_id", "event")))
 alltables_ls[["poss_discp"]] <- 
-  cbind(uniq_poss_discp_id = c(1000001:(1000001+nrow(alltables_ls[["poss_discp"]])-1)),
-        alltables_ls[["poss_discp"]])
+  cbind(uniq_poss_discp_id = c(1000001:
+                                 (1000001+nrow(alltables_ls[["poss_discp"]])-1)),
+        right_join(select(alltables_ls[["events"]], 
+                          uniq_event_id, match_id, event),
+                   alltables_ls[["poss_discp"]],
+                   by = c("match_id", "event")))
 alltables_ls[["def_discp"]] <- 
-  cbind(uniq_def_discp_id = c(1000001:(1000001+nrow(alltables_ls[["def_discp"]])-1)),
-        alltables_ls[["def_discp"]])
+  cbind(uniq_def_discp_id = c(1000001:
+                                (1000001+nrow(alltables_ls[["def_discp"]])-1)),
+        right_join(select(alltables_ls[["events"]], 
+                          uniq_event_id, match_id, event),
+                   alltables_ls[["def_discp"]],
+                   by = c("match_id", "event")))
 alltables_ls[["poss_notes"]] <- 
-  cbind(uniq_poss_notes_id = c(1000001:(1000001+nrow(alltables_ls[["poss_notes"]])-1)),
-        alltables_ls[["poss_notes"]])
+  cbind(uniq_poss_notes_id = c(1000001:
+                                 (1000001+nrow(alltables_ls[["poss_notes"]])-1)),
+        right_join(select(alltables_ls[["events"]], 
+                          uniq_event_id, match_id, event),
+                   alltables_ls[["poss_notes"]],
+                   by = c("match_id", "event")))
 alltables_ls[["def_notes"]] <- 
-  cbind(uniq_def_notes_id = c(1000001:(1000001+nrow(alltables_ls[["def_notes"]])-1)),
-        alltables_ls[["def_notes"]])
+  cbind(uniq_def_notes_id = c(1000001:
+                                (1000001+nrow(alltables_ls[["def_notes"]])-1)),
+        right_join(select(alltables_ls[["events"]], 
+                          uniq_event_id, match_id, event),
+                   alltables_ls[["def_notes"]],
+                   by = c("match_id", "event")))
 
 write_csv(alltables_ls[["events"]], "source/temp_database/events.csv", na = "")
 write_csv(alltables_ls[["ev_type"]], "source/temp_database/event_type.csv", na = "")
