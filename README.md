@@ -1,10 +1,12 @@
 # WoSo Stats
 This GitHub repository is for the WoSo Stats project, dedicated to collecting, analyzing, and distributing data about women's soccer from around the world. In this repository you'll find a variety of code, files, and documents relevant to our work.
 
-Most of you are probably here because you want the advanced stats. To get right to it, run the following in R, which will create a `tbl_all` data frame in your working directory with a large collection of stats for each player in each game in the database. You can also directly download the table [here](https://raw.githubusercontent.com/alfredomartinezjr/wosostats/master/stats/tbl_all.csv), for now, as this is not the intended final destination for this. Ideally it'll be hosted somewhere on the WoSo Stats site.
+Most of you are probably here because you want the advanced stats. To get right to it, run the following in R, which will create a `tbl_all` data frame in your working directory with a large collection of stats for each player in each game in the database. **You can also directly download the table [here](https://raw.githubusercontent.com/alfredomartinezjr/wosostats/master/stats/tbl_all.csv)**, for now, as this is not the intended final destination for this. Ideally it'll be hosted somewhere on the WoSo Stats site.
 ``` r
 source("https://raw.githubusercontent.com/alfredomartinezjr/wosostats/master/calc_stats.R")
 ```
+
+You can more easily view the stats in [the WoSo Stats Shiny app](https://amj2012.shinyapps.io/wosostats/). It is a Shiny app, an interactive web app that runs on R.
 
 The [resources](https://github.com/amj2012/woso-stats/tree/master/resources) directory is where to find necessary and helpful resources for how to log stats on your own and definitions for what is being measured and analyzed. While matches are not currently being actively logged, this is still useful if you want to go through and see how matches are logged and definitions for the stats in the tbl_all table.
 
