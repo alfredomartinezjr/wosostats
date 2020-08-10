@@ -552,7 +552,7 @@ if (class(alltables_ls[["defend_events"]]$def_location) == "list") {
   break
 }
 alltables_ls[["defend_events"]] <- 
-  cbind(uniq_evtype_id = c(1000001:
+  cbind(uniq_defend_id = c(1000001:
                              (1000001+nrow(alltables_ls[["defend_events"]])-1)),
         right_join(select(alltables_ls[["events"]], 
                           uniq_event_id, match_id, event),
