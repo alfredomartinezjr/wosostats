@@ -37,8 +37,8 @@ ui <- fluidPage(
         tabPanel('Defending', DT::dataTableOutput('defending')),
         tabPanel('Goalkeeping', DT::dataTableOutput('goalkeeping')),
         navbarMenu("More",
+                   tabPanel('Adv Passing', DT::dataTableOutput('adv_passing')),
                    tabPanel('Big Chances', DT::dataTableOutput('bigchances')),
-                   tabPanel('Disciplinary', DT::dataTableOutput('disciplinary')),
                    tabPanel('Errors', DT::dataTableOutput('errors'))
         )
       )), style="font-size:12px")
@@ -63,53 +63,62 @@ server <- function(input, output) {
     DT::renderDataTable({
       DT::datatable(dataInput()[,c("player", "position", "team", "matchup", "date", 
                                    "goals", "shots", "shots_saved", "shots_missed", 
-                                   "shots_blocked")],
+                                   "shots_blocked", "shots_pressed")],
                     options = list(pageLength = 10))
     })
   output$passing <- 
     DT::renderDataTable({
       DT::datatable(dataInput()[,c("player", "position", "team", "matchup", "date", 
-                                   "pass_att", "pass_comp", "crosses_comp", "crosses", 
-                                   "through_comp", "through_att", "throwin_comp", 
-                                   "throwin_att", "ck_comp", "ck_taken", "fk_taken", 
-                                   "fk_passcomp", "fk_passatt", "fk_shot", "fk_scored")], 
+                                   "pass_att", "pass_comp", "crosses", "crosses_comp",  
+                                   "through_att", "through_comp", "throwin_att", 
+                                   "throwin_comp", "ck_taken", "ck_comp", "fk_taken", 
+                                   "fk_passatt", "fk_passcomp", "fk_shot", "fk_scored")], 
                     options = list(pageLength = 10))
     })
+  output$adv_passing <- DT::renderDataTable({
+    DT::datatable(dataInput()[,c("player", "position", "team", "matchup", "date", 
+                                 "ppass_att", "ppass_comp", "op_pass_att", "op_pass_comp", 
+                                 "op_ppass_att", "op_ppass_comp", "fw_pass_att", 
+                                 "fw_pass_comp", "s_pass_att", "s_pass_comp", 
+                                 "b_pass_att", "b_pass_comp", "fw_op_pass_att", 
+                                 "fw_op_pass_comp", "s_op_pass_att", "s_op_pass_comp", 
+                                 "b_op_pass_att", "b_op_pass_comp", "fw_ppass_att", 
+                                 "fw_ppass_comp", "s_ppass_att", "s_ppass_comp", 
+                                 "b_ppass_att", "b_ppass_comp")], 
+                  options = list(pageLength = 10))
+  })
+    
   output$possession <- 
     DT::renderDataTable({
       DT::datatable(dataInput()[,c("player", "position", "team", "matchup", "date",
                                    "take_ons", "take_ons_won", "dispossessed", 
-                                   "aerial_duels", "aerials_won")], 
+                                   "aerial_duels", "aerials_won", "recoveries")], 
                     options = list(pageLength = 10))
     })
   output$defending <- 
     DT::renderDataTable({
       DT::datatable(dataInput()[,c("player", "position", "team", "matchup", "date",
                                    "tackles", "dispossess_opp", "dribbled_byopp",
-                                   "recoveries", "interceptions", "blocks",
-                                   "clearances", "bc_stopped")], 
+                                   "interceptions", "blocks", "pass_blocks", "shot_blocks",
+                                   "clearances", "bc_stopped", "pressured_opp", 
+                                   "challenged_opp", "ball_shields")], 
                     options = list(pageLength = 10))
     })
   output$goalkeeping <- 
     DT::renderDataTable({
       DT::datatable(dataInput()[,c("player", "position", "team", "matchup", "date",
-                                   "gk_saves", "gk_goal_conceded", "gk_highballs",
+                                   "gk_saves", "gk_goal_conceded", "gk_bigchances_conceded",
+                                   "gk_bigchances_sog_faced", "gk_highballs",
                                    "gk_highballs_won")], 
                     options = list(pageLength = 10))
     })
   output$bigchances <- 
     DT::renderDataTable({
       DT::datatable(dataInput()[,c("player", "position", "team", "matchup", "date", 
-                                   "assists", "key_passes", "second_assists", 
-                                   "big_chances", "bc_goals", "bc_sog", "bc_smiss",
-                                   "bc_dispossessed", "bc_created", "bc_lost")], 
-                    options = list(pageLength = 10))
-    })
-  output$disciplinary <- 
-    DT::renderDataTable({
-      DT::datatable(dataInput()[,c("player", "position", "team", "matchup", "date",
-                                   "fouls_won", "fouls_conceded", "yellowcards",
-                                   "redcards", "pk_won", "pk_conceded")], 
+                                   "assists", "key_passes", "key_assists",
+                                   "second_assists", "big_chances", "bc_goals", 
+                                   "bc_sog", "bc_smiss", "bc_dispossessed", 
+                                   "bc_created", "bc_lost")], 
                     options = list(pageLength = 10))
     })
   output$errors <- 
