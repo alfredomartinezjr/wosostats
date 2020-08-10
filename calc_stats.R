@@ -4,71 +4,153 @@ getStats <- function() {
   events <- read_csv("source/temp_database/events.csv", 
                      col_types = cols()) %>%
     filter(!is.na(lineup_player_id))
+  event_type <- read_csv("source/temp_database/event_type.csv", 
+                         col_types = cols())
+  defending <- read_csv("source/temp_database/defending.csv", 
+                        col_types = cols()) %>%
+    filter(!is.na(lineup_player_id))
+  poss_notes <- read_csv("source/temp_database/poss_notes.csv", 
+                         col_types = cols())
+  def_notes <- read_csv("source/temp_database/def_notes.csv", 
+                        col_types = cols()) %>%
+    filter(!is.na(lineup_player_id))
   
-  tbl_events <- events %>% group_by(match_id, lineup_player_id) %>%
-    summarise(aerial_duels_p = sum(grepl("^aerial", poss_action)), # to be merged with same stat from defending tblable
-              aerials_won_p = sum(grepl("aerial\\.won", poss_action)), # to be merged with same stat from defending tblable
-              clearances_p = sum(grepl("clearances", poss_action)), # to be merged with same stat from defending tblable
+  pressd_ev <- events$uniq_event_id %in% 
+    unique(defending$uniq_event_id[grep("press|challeng",
+                                        defending$def_action)])
+  openplay_ev <- !events$uniq_event_id %in% 
+    unique(event_type$uniq_event_id[grepl("free\\.kick|corner\\.kick|goal\\.kick|throw", 
+                                         event_type$play_type)])
+  cross_ev <- events$uniq_event_id %in% 
+    unique(event_type$uniq_event_id[grep("cross", 
+                                         event_type$play_type)])
+  ck_ev <- events$uniq_event_id %in% 
+    unique(event_type$uniq_event_id[grep("corner\\.kick", 
+                                         event_type$play_type)])
+  fk_ev <- events$uniq_event_id %in% 
+    unique(event_type$uniq_event_id[grep("free\\.kick", 
+                                         event_type$play_type)])
+  through_ev <- events$uniq_event_id %in% 
+    unique(event_type$uniq_event_id[grep("through", 
+                                         event_type$play_type)])
+  throw_ev <- events$uniq_event_id %in% 
+    unique(event_type$uniq_event_id[grep("throw\\.in", 
+                                         event_type$play_type)])
+  launch_ev <- events$uniq_event_id %in% 
+    unique(event_type$uniq_event_id[grep("launch", 
+                                         event_type$play_type)])
+  assist_ev <- events$uniq_event_id %in% 
+    unique(poss_notes$uniq_event_id[grep("^assists$", 
+                                         poss_notes$poss_notes)])
+  keypass_ev <- events$uniq_event_id %in% 
+    unique(poss_notes$uniq_event_id[grep("^key\\.pass", 
+                                         poss_notes$poss_notes)])
+  
+  def_passes_ev <- defending$uniq_event_id %in%
+    unique(events$uniq_event_id[grep("passes", events$poss_action)])
+  def_shots_ev <- defending$uniq_event_id %in%
+    unique(events$uniq_event_id[grep("^shot", events$poss_action)])
+  def_bigchances <- defending$uniq_event_id %in%
+    unique(def_notes$uniq_event_id[grep("^big\\.", poss_notes$poss_notes)])
+  
+  tbl_events <- events %>% 
+    cbind(pressd_ev = pressd_ev, openplay_ev = openplay_ev, cross_ev = cross_ev,
+          ck_ev = ck_ev, fk_ev = fk_ev, through_ev = through_ev, throw_ev = throw_ev,
+          launch_ev = launch_ev, assist_ev = assist_ev, keypass_ev = keypass_ev) %>%
+    group_by(match_id, lineup_player_id) %>%
+    summarise(aerial_duels_p = sum(grepl("^aerial", poss_action)),
+              aerials_won_p = sum(grepl("aerial\\.won", poss_action)),
+              clearances_p = sum(grepl("clearances", poss_action)),
               dispossessed = sum(grepl("dispossessed", poss_action)),
               pass_att = sum(grepl("passes", poss_action)),
               pass_comp = sum(grepl("passes.*c", poss_action)),
+              ppass_att = sum(grepl("passes", poss_action) & pressd_ev),
+              ppass_comp = sum(grepl("passes.*c", poss_action) & pressd_ev),
+              op_pass_att = sum(grepl("passes", poss_action) & openplay_ev),
+              op_pass_comp = sum(grepl("passes.*c", poss_action) & openplay_ev),
+              op_ppass_att = sum(grepl("passes", poss_action) & pressd_ev & openplay_ev),
+              op_ppass_comp = sum(grepl("passes.*c", poss_action) & pressd_ev & openplay_ev),
+              fw_pass_att = sum(grepl("passes\\.f", poss_action)),
+              fw_pass_comp = sum(grepl("passes\\.f\\.c", poss_action)),
+              s_pass_att = sum(grepl("passes\\.s", poss_action)),
+              s_pass_comp = sum(grepl("passes\\.s\\.c", poss_action)),
+              b_pass_att = sum(grepl("passes\\.b", poss_action)),
+              b_pass_comp = sum(grepl("passes\\.b\\.c", poss_action)),
+              fw_op_pass_att = sum(grepl("passes\\.f", poss_action) & openplay_ev),
+              fw_op_pass_comp = sum(grepl("passes\\.f\\.c", poss_action) & openplay_ev),
+              s_op_pass_att = sum(grepl("passes\\.s", poss_action) & openplay_ev),
+              s_op_pass_comp = sum(grepl("passes\\.s\\.c", poss_action) & openplay_ev),
+              b_op_pass_att = sum(grepl("passes\\.b", poss_action) & openplay_ev),
+              b_op_pass_comp = sum(grepl("passes\\.b\\.c", poss_action) & openplay_ev),
+              fw_ppass_att = sum(grepl("passes\\.f", poss_action) & pressd_ev),
+              fw_ppass_comp = sum(grepl("passes\\.f\\.c", poss_action) & pressd_ev),
+              s_ppass_att = sum(grepl("passes\\.s", poss_action) & pressd_ev),
+              s_ppass_comp = sum(grepl("passes\\.s\\.c", poss_action) & pressd_ev),
+              b_ppass_att = sum(grepl("passes\\.b", poss_action) & pressd_ev),
+              b_ppass_comp = sum(grepl("passes\\.b\\.c", poss_action) & pressd_ev),
               recoveries = sum(grepl("recoveries", poss_action)),
               shots = sum(grepl("^shot", poss_action)),
               goals = sum(grepl("^shots\\.scored", poss_action)),
               shots_missed = sum(grepl("^shots\\.missed", poss_action)),
               shots_blocked = sum(grepl("^shots\\.blocked", poss_action)),
               shots_saved = sum(grepl("^shots\\.stopped", poss_action)),
+              shots_pressed = sum(grepl("^shot", poss_action)  & pressd_ev),
               take_ons = sum(grepl("^take\\.on", poss_action)),
-              take_ons_won = sum(grepl("^take\\.on\\.won", poss_action))
+              take_ons_won = sum(grepl("^take\\.on\\.won", poss_action)),
+              crosses = sum(uniq_event_id %in% cross_ev),
+              crosses_comp = sum(grepl("passes.*c", poss_action) & cross_ev),
+              launch_att = sum(uniq_event_id %in% launch_ev),
+              launch_comp = sum(grepl("passes.*c", poss_action) & launch_ev),
+              ck_taken = sum(ck_ev),
+              ck_comp = sum(grepl("passes.*c", poss_action) & ck_ev),
+              ck_assists = sum(ck_ev & assist_ev),
+              ck_key_passes = sum(ck_ev & keypass_ev),
+              fk_taken = sum(fk_ev),
+              fk_passatt = sum(grepl("passes", poss_action) & fk_ev),
+              fk_passcomp = sum(grepl("passes.*c", poss_action) & fk_ev),
+              fk_shot = sum(grepl("^shot", poss_action) & fk_ev),
+              fk_scored = sum(grepl("^shots\\.scored", poss_action) & fk_ev),
+              fk_assists = sum(fk_ev & assist_ev),
+              fk_key_passes = sum(fk_ev & keypass_ev),
+              through_att = sum(through_ev),
+              through_comp = sum(grepl("passes.*c", poss_action) & through_ev),
+              throwin_att = sum(throw_ev),
+              throwin_comp = sum(grepl("passes.*c", poss_action) & throw_ev),
+              assists = sum(assist_ev),
     )
   
-  event_type <- read_csv("source/temp_database/event_type.csv", 
-                         col_types = cols())
-  tbl_evtype <- left_join(events, event_type, by = c("match_id", "event")) %>%
+  tbl_defending <- defending %>% 
     group_by(match_id, lineup_player_id) %>%
-    summarise(crosses = sum(grepl("crosses", play_type)),
-              crosses_comp = sum(grepl("crosses", play_type) & 
-                                   grepl("passes.*c", poss_action)),
-              ck_taken = sum(grepl("corner\\.kick", play_type)),
-              ck_comp = sum(grepl("corner\\.kick", play_type) & 
-                              grepl("passes.*c", poss_action)),
-              fk_taken = sum(grepl("free\\.kick", play_type)),
-              fk_passatt = sum(grepl("free\\.kick", play_type) & 
-                                 grepl("passes", poss_action)),
-              fk_passcomp = sum(grepl("free\\.kick", play_type) & 
-                                  grepl("passes.*c", poss_action)),
-              fk_shot = sum(grepl("free\\.kick", play_type) & 
-                              grepl("^shot", poss_action)),
-              fk_scored = sum(grepl("free\\.kick", play_type) & 
-                                grepl("^shots\\.scored", poss_action)),
-              through_att = sum(grepl("through", play_type)),
-              through_comp = sum(grepl("through", play_type) & 
-                                   grepl("passes.*c", poss_action)),
-              throwin_att = sum(grepl("throw\\.in", play_type)),
-              throwin_comp = sum(grepl("throw\\.in", play_type) & 
-                                   grepl("passes.*c", poss_action))
-    )
-  tbl_all <- left_join(tbl_events, tbl_evtype, 
-                       by = c("match_id", "lineup_player_id"))
-  
-  defending <- read_csv("source/temp_database/defending.csv", 
-                        col_types = cols()) %>%
-    filter(!is.na(lineup_player_id))
-  tbl_defending <- defending %>% group_by(match_id, lineup_player_id) %>%
-    summarise(aerial_duels_d = sum(grepl("^aerial", def_action)), # to be merged with same stat from events tblable
-              aerials_won_d = sum(grepl("aerial\\.won", def_action)), # to be merged with same stat from events tblable
+    cbind(def_passes_ev = def_passes_ev, def_shots_ev = def_shots_ev,
+          def_bigchances = def_bigchances) %>%
+    summarise(aerial_duels_d = sum(grepl("^aerial", def_action)),
+              aerials_won_d = sum(grepl("aerial\\.won", def_action)),
               blocks = sum(grepl("blocks", def_action)),
-              clearances_d = sum(grepl("clearances", def_action)), # to be merged with same stat from events tblable
+              shot_blocks = sum(grepl("blocks", def_action) & def_shots_ev),
+              pass_blocks = sum(grepl("blocks", def_action) & def_passes_ev),
+              clearances_d = sum(grepl("clearances", def_action)),
               dispossess_opp = sum(grepl("^dispossess", def_action)),
               interceptions = sum(grepl("^intercept", def_action)),
               tackles = sum(grepl("tackles|^tkw", def_action)),
               dribbled_byopp = sum(grepl("dribbled", def_action)),
+              pressured_opp = sum(grepl("pressure", def_action)),
+              challenged_opp = sum(grepl("challenge", def_action)),
+              ball_shields = sum(grepl("ball\\.shield", def_action)),
               gk_saves = sum(grepl("gk.s.o.g.stop", def_action)),
               gk_goal_conceded = sum(grepl("gk.s.o.g.scored", def_action)),
+              gk_bigchances_saved = sum(grepl("gk.s.o.g.stop", def_action) & 
+                                          def_bigchances),
+              gk_bigchances_conceded = 
+                sum(grepl("gk.s.o.g.scored", def_action) & 
+                      def_bigchances),
+              gk_bigchances_sog_faced = 
+                sum(grepl("gk.*score|gk.s.o.g.stop|gk.shot.on.goal", def_action) & 
+                      def_bigchances),
               gk_highballs = sum(grepl("^gk\\.high\\.ball", def_action)),
-              gk_highballs_won = sum(grepl("^gk\\.high\\.ball.*won", def_action))
+              gk_highballs_won = sum(grepl("^gk\\.high\\.ball.*won", 
+                                           def_action))
     )
-  tbl_all <- full_join(tbl_all, tbl_defending, 
+  tbl_all <- full_join(tbl_events, tbl_defending, 
                        by = c("match_id", "lineup_player_id")) %>%
     replace(., is.na(.), 0) %>%
     mutate(aerial_duels_p = aerial_duels_p + aerial_duels_d,
@@ -79,12 +161,10 @@ getStats <- function() {
            clearances = clearances_p) %>%
     select(-aerial_duels_d, -aerials_won_d, -clearances_d)
   
-  poss_notes <- read_csv("source/temp_database/poss_notes.csv", 
-                         col_types = cols())
-  tbl_possnotes <- left_join(events, poss_notes, by = c("match_id", "event")) %>%
+  tbl_possnotes <- left_join(poss_notes, select(events, uniq_event_id, lineup_player_id), 
+                             by = c("uniq_event_id")) %>%
     group_by(match_id, lineup_player_id) %>%
-    summarise(assists = sum(grepl("^assists$", poss_notes)),
-              big_chances = sum(grepl("^big\\.", poss_notes) & 
+    summarise(big_chances = sum(grepl("^big\\.", poss_notes) & 
                                   !grepl("created", poss_notes)),
               bc_goals = sum(grepl("^big\\..*scored", poss_notes)),
               bc_sog = sum(grepl("^big\\..*on\\.goal", poss_notes)),
@@ -94,6 +174,8 @@ getStats <- function() {
               bc_created = sum(grepl("^big\\..*created", poss_notes) &
                                  grepl("^key\\.pass", poss_notes)),
               key_passes = sum(grepl("^key\\.pass", poss_notes)),
+              key_assists = sum(grepl("^key\\.pass", poss_notes) &
+                                  grepl("^assists$", poss_notes)),
               second_assists = sum(grepl("second\\.assists", poss_notes)),
               err_togoals_p = sum(grepl("errors\\.to\\.goals", poss_notes)),
               err_tobc_p = sum(grepl("errors\\..*chances", poss_notes))
@@ -102,11 +184,7 @@ getStats <- function() {
                        by = c("match_id", "lineup_player_id")) %>%
     replace(., is.na(.), 0)
   
-  def_notes <- read_csv("source/temp_database/def_notes.csv", 
-                        col_types = cols()) %>%
-    filter(!is.na(lineup_player_id))
-  tbl_defnotes <- left_join(defending, def_notes, 
-                            by = c("match_id", "event", "lineup_player_id")) %>%
+  tbl_defnotes <- def_notes %>%
     group_by(match_id, lineup_player_id) %>%
     summarise(bc_stopped = sum(grepl("^big\\..*\\.stopped$", def_notes)),
               own_goals = sum(grepl("own\\.goals", def_notes)),
@@ -122,64 +200,6 @@ getStats <- function() {
            err_tobc = err_tobc_p) %>%
     select(-err_togoals_d, -err_tobc_d)
   
-  poss_discipline <- read_csv("source/temp_database/poss_discipline.csv", 
-                              col_types = cols())
-  tbl_possdiscp <- left_join(events, poss_discipline,
-                             by = c("match_id","event")) %>%
-    group_by(match_id, lineup_player_id) %>%
-    summarise(fouls_won_p = sum(grepl("foul.*won", poss_action) |
-                                  grepl("foul.*won", poss_player_disciplinary)),
-              fouls_conceded_p = sum(grepl("foul.*concede", poss_action) |
-                                       grepl("foul.*concede", poss_player_disciplinary)),
-              yellowcards_p = sum(grepl("yellow", poss_action) |
-                                    grepl("yellow", poss_player_disciplinary)),
-              redcards_p = sum(grepl("red", poss_action) |
-                                 grepl("red", poss_player_disciplinary)),
-              pk_won_p = sum(grepl("penalties\\.won", poss_action) |
-                               grepl("penalties\\.won", poss_player_disciplinary)),
-              pk_conceded_p = sum(grepl("penalties\\.concede", poss_action) |
-                                    grepl("penalties\\.concede", poss_player_disciplinary))
-    )
-  tbl_all <- left_join(tbl_all, tbl_possdiscp, 
-                       by = c("match_id", "lineup_player_id")) %>%
-    replace(., is.na(.), 0)
-  
-  def_discipline <- read_csv("source/temp_database/def_discipline.csv", 
-                             col_types = cols()) %>%
-    filter(!is.na(lineup_player_id))
-  tbl_defdiscp <- left_join(defending, def_discipline,
-                            by = c("match_id", "event", "lineup_player_id")) %>%
-    group_by(match_id, lineup_player_id) %>%
-    summarise(fouls_won_d = sum(grepl("foul.*won", def_action) |
-                                  grepl("foul.*won", def_player_disciplinary)),
-              fouls_conceded_d = sum(grepl("foul.*concede", def_action) |
-                                       grepl("foul.*concede", def_player_disciplinary)),
-              yellowcards_d = sum(grepl("yellow", def_action) |
-                                    grepl("yellow", def_player_disciplinary)),
-              redcards_d = sum(grepl("red", def_action) |
-                                 grepl("red", def_player_disciplinary)),
-              pk_won_d = sum(grepl("penalties\\.won", def_action) |
-                               grepl("penalties\\.won", def_player_disciplinary)),
-              pk_conceded_d = sum(grepl("penalties\\.concede", def_action) |
-                                    grepl("penalties\\.concede", def_player_disciplinary))
-    )
-  tbl_all <- left_join(tbl_all, tbl_defdiscp, 
-                       by = c("match_id", "lineup_player_id")) %>%
-    replace(., is.na(.), 0) %>%
-    mutate(fouls_won_p = fouls_won_p + fouls_won_d,
-           fouls_conceded_p = fouls_conceded_p + fouls_conceded_d,
-           yellowcards_p = yellowcards_p + yellowcards_d,
-           redcards_p = redcards_p + redcards_d,
-           pk_won_p = pk_won_p + pk_won_d,
-           pk_conceded_p = pk_conceded_p + pk_conceded_d) %>%
-    rename(fouls_won = fouls_won_p,
-           fouls_conceded = fouls_conceded_p,
-           yellowcards = yellowcards_p,
-           redcards = redcards_p,
-           pk_won = pk_won_p,
-           pk_conceded = pk_conceded_p) %>%
-    select(-fouls_won_d, -fouls_conceded_d, -yellowcards_d, 
-           -redcards_d, -pk_won_d, -pk_conceded_d)
   tbl_all
 }
 
