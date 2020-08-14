@@ -1,17 +1,17 @@
 library(tidyverse)
 
 getStats <- function() {
-  events <- read_csv("source/temp_database/events.csv", 
+  events <- read_csv("data/database/events.csv", 
                      col_types = cols()) %>%
     filter(!is.na(lineup_player_id))
-  event_type <- read_csv("source/temp_database/event_type.csv", 
+  event_type <- read_csv("data/database/event_type.csv", 
                          col_types = cols())
-  defending <- read_csv("source/temp_database/defending.csv", 
+  defending <- read_csv("data/database/defending.csv", 
                         col_types = cols()) %>%
     filter(!is.na(lineup_player_id))
-  poss_notes <- read_csv("source/temp_database/poss_notes.csv", 
+  poss_notes <- read_csv("data/database/poss_notes.csv", 
                          col_types = cols())
-  def_notes <- read_csv("source/temp_database/def_notes.csv", 
+  def_notes <- read_csv("data/database/def_notes.csv", 
                         col_types = cols()) %>%
     filter(!is.na(lineup_player_id))
   
@@ -204,11 +204,11 @@ getStats <- function() {
 }
 
 addMetadata <- function(tbl_all) {
-  tbl_all <- read_csv("source/temp_database/lineups.csv", 
+  tbl_all <- read_csv("data/database/lineups.csv", 
                       col_types = cols()) %>% 
     select(-number) %>%
     right_join(tbl_all, by = c("match_id", "lineup_player_id"))
-  tbl_all <- read_csv("source/temp_database/matches.csv", 
+  tbl_all <- read_csv("data/database/matches.csv", 
                       col_types = cols()) %>%
     select(match_id, competition_slug, date, matchup) %>%
     right_join(tbl_all, by = "match_id")
