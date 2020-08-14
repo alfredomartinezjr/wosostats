@@ -1,3 +1,6 @@
+## Excel match logs can be downloaded from this Google Drive folder:
+## https://drive.google.com/drive/folders/13-8Ws14GougTk_FZBv4k-VUCaRyml1hj?usp=sharing
+
 library(readr)
 GetMatchId <- function(path, matches) {
   filenames <- paste(matches$competition_slug, 
