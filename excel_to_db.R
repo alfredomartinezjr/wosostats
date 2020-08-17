@@ -467,16 +467,16 @@ IsCompletedPass        <- function(my_tbl_ls) {
     ev_notpossfouled & ev_notballout
 }
 
-matches_tbl <- read_csv("source/temp_database/matches.csv", col_types = cols())
-lineups_tbl <- read_csv("source/temp_database/lineups.csv", col_types = cols())
+matches_tbl <- read_csv("https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/matches.csv", col_types = cols())
+lineups_tbl <- read_csv("https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/lineups.csv", col_types = cols())
 
 library(readxl)
 library(lubridate)
 library(dplyr)
-TidyMatchExcel <- function(filename, directory="source/excel", 
+TidyMatchExcel <- function(filename, 
                            matches=matches_tbl,
                            lineups=lineups_tbl) {
-  mypath <- paste(directory, filename, sep="/")
+  mypath <- paste(filename, sep="/")
   match_id <- GetMatchId(path = mypath, matches = matches)
   match_source <- ReadMatchLog(path = mypath)
   match_source <- CleanUpCells(match_source)
@@ -504,7 +504,7 @@ TidyMatchExcel <- function(filename, directory="source/excel",
 }
 
 alltables_ls <- list()
-for (i in list.files("source/excel")) {
+for (i in list.files()) {
   print(paste("reading ", i, "..."))
   itables_ls <- TidyMatchExcel(filename = i)
   print(paste(i, ": excel successfully tidied."))
@@ -590,10 +590,10 @@ alltables_ls[["def_notes"]] <-
                    alltables_ls[["def_notes"]],
                    by = c("match_id", "event")))
 
-write_csv(alltables_ls[["events"]], "source/temp_database/events.csv", na = "")
-write_csv(alltables_ls[["ev_type"]], "source/temp_database/event_type.csv", na = "")
-write_csv(alltables_ls[["defend_events"]], "source/temp_database/defending.csv", na = "")
-write_csv(alltables_ls[["poss_discp"]], "source/temp_database/poss_discipline.csv", na = "")
-write_csv(alltables_ls[["def_discp"]], "source/temp_database/def_discipline.csv", na = "")
-write_csv(alltables_ls[["poss_notes"]], "source/temp_database/poss_notes.csv", na = "")
-write_csv(alltables_ls[["def_notes"]], "source/temp_database/def_notes.csv", na = "")
+# write_csv(alltables_ls[["events"]], "events.csv", na = "")
+# write_csv(alltables_ls[["ev_type"]], "event_type.csv", na = "")
+# write_csv(alltables_ls[["defend_events"]], "defending.csv", na = "")
+# write_csv(alltables_ls[["poss_discp"]], "poss_discipline.csv", na = "")
+# write_csv(alltables_ls[["def_discp"]], "def_discipline.csv", na = "")
+# write_csv(alltables_ls[["poss_notes"]], "poss_notes.csv", na = "")
+# write_csv(alltables_ls[["def_notes"]], "def_notes.csv", na = "")
