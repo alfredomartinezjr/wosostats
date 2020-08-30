@@ -10,6 +10,7 @@ You can also directly download the table [here](https://raw.githubusercontent.co
 
 The database is made up a variety of tables, listed below, that are sourced from Excel match logs by running the `lineups_to_db.R` and `excel_to_db.R` scripts. Details of what the various values across the database represent, and how the matches were logged, can be found in the ["How matches are logged"](https://wosostats.com/how-matches-are-logged/) section of the WoSo Stats website.
 * [lineups](https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/lineups.csv)
+* [rosters](https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/rosters.csv)
 * [matches](https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/matches.csv)
 * [events](https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/events.csv)
 * [event_type](https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/event_type.csv)
