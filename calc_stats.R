@@ -1,5 +1,112 @@
 library(tidyverse)
 
+getMinsPlayed <- function() {
+  calcTime <- function(x) {
+    sum(as.numeric(unlist(strsplit(x, "\\+"))))
+  }
+  calcHalf <- function(x) {
+    regtime <- as.numeric(trimws(strsplit(x, "\\+")[[1]][1]))
+    if (regtime <= 45) 1
+    else if (regtime <= 90) 2
+    else if (regtime <= 105) 3
+    else if (regtime <= 120) 4
+  }
+  events <- read.csv("https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/events.csv", 
+                         stringsAsFactors = FALSE)
+  events <- select(events, match_id, time, lineup_player_id, poss_action)
+  
+  #events$time_calc <- sapply(events$time, calcTime)
+  #events$half <- sapply(events$time, calcHalf)
+  match_dat <- events %>% group_by(match_id) %>%
+    summarise(#firsth_min_n = time_calc[poss_action == "halftime"],
+              firsth_endmin = time[poss_action == "halftime"],
+              # secondh_min_n = ifelse("fulltime" %in% poss_action, 
+              #                   time_calc[poss_action == "fulltime"] - 45, 
+              #                   time_calc[poss_action == "end.of.match"] - 45),
+              secondh_endmin = ifelse("fulltime" %in% poss_action, 
+                                     time[poss_action == "fulltime"], 
+                                     time[poss_action == "end.of.match"]),
+              # firstet_min_n = ifelse("end.of.1.et" %in% poss_action,
+              #                  time_calc[poss_action == "end.of.1.et"] - 90,
+              #                  NA),
+              firstet_endmin = ifelse("end.of.1.et" %in% poss_action,
+                                     time[poss_action == "end.of.1.et"],
+                                     ""),
+              # secondet_min_n = ifelse("end.of.1.et" %in% poss_action,
+              #                   time_calc[poss_action == "end.of.2.et" | 
+              #                               poss_action == "end.of.match"] - 105,
+              #                   NA),
+              secondet_endmin = ifelse("end.of.1.et" %in% poss_action,
+                                      time[poss_action == "end.of.2.et" | 
+                                                  poss_action == "end.of.match"],
+                                      "")#,
+              # totaltime  = sum(firsth_min_n, secondh_min_n, 
+              #                  firstet_min_n, secondet_min_n, na.rm = TRUE)
+              )
+  plyr_mins <- events  %>%
+    filter(!is.na(lineup_player_id))  %>%
+    left_join(match_dat, by = "match_id") %>%
+    group_by(match_id, lineup_player_id) %>% 
+    summarise(subbedon = "substitution.on" %in% poss_action,
+              subbedoff = "substitution.off" %in% poss_action,
+              startplay_min = ifelse(subbedon, 
+                                     time[poss_action %in% "substitution.on"], "1"),
+              endplay_min = ifelse(subbedoff, 
+                                   time[poss_action %in% "substitution.off"],
+                                   ifelse(sum(secondet_endmin == "") > 0,
+                                          max(secondh_endmin), 
+                                          max(secondet_endmin))),
+              startplay_half = calcHalf(startplay_min),
+              endplay_half = calcHalf(endplay_min),
+              firsth_end = max(firsth_endmin),
+              secondh_end = max(secondh_endmin),  
+              firstet_end = max(firstet_endmin), 
+              secondet_end = max(secondet_endmin),
+              firsth_startplay = ifelse(1 %in% startplay_half:endplay_half,
+                                        startplay_min, 
+                                        "-1"),
+              firsth_endplay = ifelse(1 %in% seq(from = startplay_half, to = endplay_half),
+                                      ifelse(endplay_half == 1,
+                                             endplay_min,
+                                             firsth_end),
+                                      "-2"),
+              secondh_startplay = ifelse(2 %in% startplay_half:endplay_half,
+                                         ifelse(startplay_half == 2, 
+                                                startplay_min,
+                                                "46"),
+                                         "-1"),
+              secondh_endplay = ifelse(2 %in% startplay_half:endplay_half,
+                                       ifelse(endplay_half == 2,
+                                              endplay_min,
+                                              secondh_end),
+                                       "-2"),
+              firstet_startplay = ifelse(3 %in% startplay_half:endplay_half,
+                                         ifelse(startplay_half == 3,
+                                                startplay_min,
+                                                "91"),
+                                         "-1"),
+              firstet_endplay = ifelse(3 %in% startplay_half:endplay_half,
+                                       ifelse(endplay_half == 3,
+                                              endplay_min,
+                                              firstet_end),
+                                       "-2"),
+              secondet_startplay = ifelse(4 %in% startplay_half:endplay_half,
+                                         ifelse(startplay_half == 4,
+                                                startplay_min,
+                                                "105"),
+                                         "-1"),
+              secondet_endplay = ifelse(4 %in% startplay_half:endplay_half,
+                                        endplay_min,
+                                        "-2"),
+              firsth_minplayed = calcTime(firsth_endplay) - calcTime(firsth_startplay) +1,
+              secondh_minplayed = calcTime(secondh_endplay) - calcTime(secondh_startplay) +1,
+              firstet_minplayed = calcTime(firstet_endplay) - calcTime(firstet_startplay) +1,
+              secondet_minplayed = calcTime(secondet_endplay) - calcTime(secondet_startplay) +1,
+              MP = firsth_minplayed + secondh_minplayed + firstet_minplayed + secondet_minplayed
+    )
+  select(plyr_mins, match_id, lineup_player_id, MP)
+}
+
 getStats <- function() {
   events <- read_csv("https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/events.csv", 
                      col_types = cols()) %>%
@@ -45,13 +152,14 @@ getStats <- function() {
   keypass_ev <- events$uniq_event_id %in% 
     unique(poss_notes$uniq_event_id[grep("^key\\.pass", 
                                          poss_notes$poss_notes)])
-  
   def_passes_ev <- defending$uniq_event_id %in%
     unique(events$uniq_event_id[grep("passes", events$poss_action)])
   def_shots_ev <- defending$uniq_event_id %in%
     unique(events$uniq_event_id[grep("^shot", events$poss_action)])
   def_bigchances <- defending$uniq_event_id %in%
     unique(def_notes$uniq_event_id[grep("^big\\.", poss_notes$poss_notes)])
+  
+  
   
   tbl_events <- events %>% 
     cbind(pressd_ev = pressd_ev, openplay_ev = openplay_ev, cross_ev = cross_ev,
@@ -215,5 +323,5 @@ addMetadata <- function(tbl_all) {
   tbl_all
 }
 
-tbl_all <- getStats()
+tbl_all <- left_join(getMinsPlayed(), getStats(), by= c("match_id", "lineup_player_id"))
 tbl_all <- addMetadata(tbl_all)
