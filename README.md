@@ -6,7 +6,7 @@ Most of you are probably here because you want the advanced stats. To get right 
 source("https://raw.githubusercontent.com/alfredomartinezjr/wosostats/master/calc_stats.R")
 ```
 
-You can also directly download the table [here](https://raw.githubusercontent.com/alfredomartinezjr/wosostats/master/data/summary/tbl_all.csv). And you can view and interact with the stats in [the WoSo Stats Shiny app](https://amj2012.shinyapps.io/wosostats/). A glossary for what the columns in the `tbl_all` table represent are in the [Glossary](https://wosostats.com/glossary/). 
+You can also directly download the table [here](https://raw.githubusercontent.com/alfredomartinezjr/wosostats/master/data/tbl_all.csv). And you can view and interact with the stats in [the WoSo Stats Shiny app](https://amj2012.shinyapps.io/wosostats/). A glossary for what the columns in the `tbl_all` table represent are in the [Glossary](https://wosostats.com/glossary/). 
 
 The database is made up a variety of tables, listed below, that are sourced from Excel match logs by running the `lineups_to_db.R` and `excel_to_db.R` scripts. Details of what the various values across the database represent, and how the matches were logged, can be found in the ["How matches are logged"](https://wosostats.com/how-matches-are-logged/) section of the WoSo Stats website.
 * [lineups](https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/lineups.csv)
