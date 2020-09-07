@@ -135,8 +135,8 @@ ExpandAbbrevs <- function(match_source) {
   match_source$def_player_disciplinary <- dp_discip
   
   poss_notes <- match_source$poss_notes
-  poss_notes[grep("^keep.poss|^kept.poss", poss_notes)] <- "out.of.bounds.keep.poss"
-  poss_notes[grep("^lost.poss|^lose.poss", poss_notes)] <- "out.of.bounds.lost.poss"
+  poss_notes[grep("keep.poss|kept.poss", poss_notes)] <- "out.of.bounds.keep.poss"
+  poss_notes[grep("lost.poss|lose.poss", poss_notes)] <- "out.of.bounds.lost.poss"
   match_source$poss_notes <- poss_notes
   match_source
 }
