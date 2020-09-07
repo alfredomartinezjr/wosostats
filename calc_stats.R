@@ -284,9 +284,9 @@ getStats <- function() {
               key_passes = sum(grepl("^key\\.pass", poss_notes)),
               key_assists = sum(grepl("^key\\.pass", poss_notes) &
                                   grepl("^assists$", poss_notes)),
-              second_assists = sum(grepl("second\\.assists", poss_notes)),
-              err_togoals_p = sum(grepl("errors\\.to\\.goals", poss_notes)),
-              err_tobc_p = sum(grepl("errors\\..*chances", poss_notes))
+              second_assists = sum(grepl("second\\.assist", poss_notes)),
+              err_togoals_p = sum(grepl("error.*to\\.goal", poss_notes)),
+              err_tobc_p = sum(grepl("errors.*chance", poss_notes))
     )
   tbl_all <- left_join(tbl_all, tbl_possnotes, 
                        by = c("match_id", "lineup_player_id")) %>%
@@ -296,8 +296,8 @@ getStats <- function() {
     group_by(match_id, lineup_player_id) %>%
     summarise(bc_stopped = sum(grepl("^big\\..*\\.stopped$", def_notes)),
               own_goals = sum(grepl("own\\.goals", def_notes)),
-              err_togoals_d = sum(grepl("errors\\.to\\.goals", def_notes)),
-              err_tobc_d = sum(grepl("errors\\..*chances", def_notes))
+              err_togoals_d = sum(grepl("error.*to\\.goal", def_notes)),
+              err_tobc_d = sum(grepl("errors.*chance", def_notes))
     )
   tbl_all <- left_join(tbl_all, tbl_defnotes, 
                        by = c("match_id", "lineup_player_id")) %>%
