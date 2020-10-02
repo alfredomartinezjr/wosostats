@@ -1,0 +1,28 @@
+Package: wosostats
+Title: Access and analyze the WoSo Stats database
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Alfredo",
+           family = "Martinez Jr.",
+           role = c("aut", "cre"),
+           email = "alfredom790@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+URL: https://www.wosostats.com/
+Description: An R package for the WoSo Stats database with functions for accessing 
+    the database, tidying data, analyzing results, and generally exploring the dataset. 
+    The WoSo Stats project is an open-source project that logged data for 100+ women's 
+    soccer matches - largely NWSL matches from 2016 and numerous USWNT matches. More 
+    about the project can be found at wososostats.com.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports:
+    dplyr,
+    lubridate,
+    readxl,
+    rlang
+URL: https://github.com/alfredomartinezjr/wosostats
+BugReports: https://github.com/alfredomartinezjr/wosostats/issues
+

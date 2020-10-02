@@ -1,27 +1,24 @@
-## Excel match logs can be downloaded from this Google Drive folder:
-## https://drive.google.com/drive/folders/13-8Ws14GougTk_FZBv4k-VUCaRyml1hj?usp=sharing
-
-library(readr)
+#' @import dplyr
+#' @importFrom rlang .data
 GetMatchId <- function(path, matches) {
   filenames <- paste(matches$competition_slug, 
                      tolower(matches$matchup), 
-                     format(mdy(matches$date), "%m%d%y"),
+                     format(lubridate::mdy(matches$date), "%m%d%y"),
                      sep="-")
   match_indx <- which(gsub("source\\/excel\\/|\\.xlsx","",path) == filenames)
   if (length(match_indx)==0) {
-    print(paste("Error: file", path, "does not represent a match that could be found in the match database."))
-    break
+    stop("File", path, 
+         "doesn't represent a match in match database.")
+  } else if (length(match_indx)>1) {
+    stop("Filename appears more than once in match database.")
+  } else {
+    match_id <- matches$match_id[match_indx]
+    match_id
   }
-  if (length(match_indx)>1) {
-    print("Error with database check: filename appears more than once in match database.")
-    break
-  }
-  match_id <- matches$match_id[match_indx]
-  match_id
 }
 
 ReadMatchLog <- function(path) {
-  match_source <- read_excel(path, na = c("","-"," "), col_types = "text")
+  match_source <- readxl::read_excel(path, na = c("","-"," "), col_types = "text")
   events_range <- c(min(which(match_source$poss.action %in% "kickoff")), 
                     max(which(match_source$poss.action %in% "end.of.match")))
   match_source <- match_source[events_range[1]:events_range[2], ]
@@ -141,21 +138,20 @@ ExpandAbbrevs <- function(match_source) {
   match_source
 }
 
-CreateTables <- function(match_source = match_source, 
-                         match_id = match_id) {
+CreateTables <- function(match_source, match_id) {
   mytables_ls <- list()
   mytables_ls[["events"]] <- match_source %>% 
     select(c("event", "time", "poss_team","poss_position", 
              "poss_player","poss_action", "poss_location", 
              "poss_play_destination")) %>% 
-    filter(!is.na(poss_action)) %>%
-    rename(team = poss_team, 
-           position = poss_position, 
-           player = poss_player)
+    filter(!is.na(.data$poss_action)) %>%
+    rename(team = .data$poss_team, 
+           position = .data$poss_position, 
+           player = .data$poss_player)
   mytables_ls[["events"]] <- cbind(match_id, mytables_ls[["events"]])
   mytables_ls[["ev_type"]] <- match_source %>% 
     select(c("event", "play_type")) %>%
-    filter(!is.na(play_type))
+    filter(!is.na(.data$play_type))
   if (nrow(mytables_ls[["ev_type"]]) > 0) {
     mytables_ls[["ev_type"]] <- cbind(match_id, 
                                       evtype_id = c(1001:(1001+nrow(mytables_ls[["ev_type"]])-1)), 
@@ -169,11 +165,15 @@ CreateTables <- function(match_source = match_source,
     select(c("event", "def_team", "def_position", 
              "def_player", "def_action",
              "def_location", "gk_ball_stop")) %>% 
-    filter(!is.na(def_action)) %>%
-    rename(team = def_team, position = def_position, player = def_player)
+    filter(!is.na(.data$def_action)) %>%
+    rename(team = .data$def_team, 
+           position = .data$def_position, 
+           player = .data$def_player)
   if (nrow(mytables_ls[["defend_events"]]) > 0) {
     mytables_ls[["defend_events"]] <- cbind(match_id, 
-                                            defend_id = c(1001:(1001+nrow(mytables_ls[["defend_events"]])-1)), 
+                                            defend_id = 
+                                              c(1001:
+                                                  (1001+nrow(mytables_ls[["defend_events"]])-1)), 
                                             mytables_ls[["defend_events"]])
   } else if (nrow(mytables_ls[["defend_events"]]) == 0) {
     mytables_ls[["defend_events"]] <- cbind(match_id = numeric(), 
@@ -182,10 +182,12 @@ CreateTables <- function(match_source = match_source,
   }
   mytables_ls[["poss_discp"]] <- match_source %>% 
     select(c("event", "poss_player_disciplinary")) %>%
-    filter(!is.na(poss_player_disciplinary))
+    filter(!is.na(.data$poss_player_disciplinary))
   if (nrow(mytables_ls[["poss_discp"]]) > 0) {
     mytables_ls[["poss_discp"]] <- cbind(match_id,
-                                         possdiscp_id = c(1001:(1001+nrow(mytables_ls[["poss_discp"]])-1)),
+                                         possdiscp_id = 
+                                           c(1001:
+                                               (1001+nrow(mytables_ls[["poss_discp"]])-1)),
                                          mytables_ls[["poss_discp"]])
   } else if (nrow(mytables_ls[["poss_discp"]]) == 0) {
     mytables_ls[["poss_discp"]] <- cbind(match_id = numeric(),
@@ -195,11 +197,15 @@ CreateTables <- function(match_source = match_source,
   mytables_ls[["def_discp"]] <- match_source %>% 
     select(c("event", "def_team", "def_position", 
              "def_player", "def_player_disciplinary")) %>% 
-    filter(!is.na(def_player_disciplinary)) %>%
-    rename(team = def_team, position = def_position, player = def_player)
+    filter(!is.na(.data$def_player_disciplinary)) %>%
+    rename(team = .data$def_team, 
+           position = .data$def_position, 
+           player = .data$def_player)
   if (nrow(mytables_ls[["def_discp"]]) > 0) {
     mytables_ls[["def_discp"]] <- cbind(match_id,
-                                        defdiscp_id = c(1001:(1001+nrow(mytables_ls[["def_discp"]])-1)),
+                                        defdiscp_id = 
+                                          c(1001:
+                                              (1001+nrow(mytables_ls[["def_discp"]])-1)),
                                         mytables_ls[["def_discp"]])
   } else if (nrow(mytables_ls[["def_discp"]]) == 0) {
     mytables_ls[["def_discp"]] <- cbind(match_id = numeric(),
@@ -208,10 +214,12 @@ CreateTables <- function(match_source = match_source,
   }
   mytables_ls[["poss_notes"]] <- match_source %>%
     select(c("event", "poss_notes")) %>%
-    filter(!is.na(poss_notes))
+    filter(!is.na(.data$poss_notes))
   if (nrow(mytables_ls[["poss_notes"]]) > 0) {
     mytables_ls[["poss_notes"]] <- cbind(match_id,
-                                         possnotes_id = c(1001:(1001+nrow(mytables_ls[["poss_notes"]])-1)),
+                                         possnotes_id = 
+                                           c(1001:
+                                               (1001+nrow(mytables_ls[["poss_notes"]])-1)),
                                          mytables_ls[["poss_notes"]])
   } else if (nrow(mytables_ls[["poss_notes"]]) == 0) {
     mytables_ls[["poss_notes"]] <- cbind(match_id = numeric(),
@@ -221,11 +229,15 @@ CreateTables <- function(match_source = match_source,
   mytables_ls[["def_notes"]] <- match_source %>% 
     select(c("event", "def_team", "def_position", 
              "def_player", "def_notes")) %>% 
-    filter(!is.na(def_notes)) %>% 
-    rename(team = def_team, position = def_position, player = def_player)
+    filter(!is.na(.data$def_notes)) %>% 
+    rename(team = .data$def_team, 
+           position = .data$def_position, 
+           player = .data$def_player)
   if (nrow(mytables_ls[["def_notes"]]) > 0) {
     mytables_ls[["def_notes"]] <- cbind(match_id,
-                                        defnotes_id = c(1001:(1001+nrow(mytables_ls[["def_notes"]])-1)),
+                                        defnotes_id = 
+                                          c(1001:
+                                              (1001+nrow(mytables_ls[["def_notes"]])-1)),
                                         mytables_ls[["def_notes"]])
   } else if (nrow(mytables_ls[["def_notes"]]) == 0) {
     mytables_ls[["def_notes"]] <- cbind(match_id = numeric(), 
@@ -307,10 +319,9 @@ SetPlayerInfo <- function(mytables_ls,
       id_missing <- is_player & my_ids == 0
     }
     if (length(my_ids[id_missing]) > 0){
-      print(paste("Error: Was unable to find every player in the log in the lineup.", 
-                  "Match. Players missing: ", 
-                  my_players[id_missing]))
-      break
+      stop("Was unable to find every player in the log in the lineup.", 
+                  "Players missing: ", 
+                  my_players[id_missing])
     }
     my_ids[my_ids == 0] <- NA
     my_ids
@@ -328,9 +339,10 @@ SetPlayerInfo <- function(mytables_ls,
   mytables_ls[["defend_events"]] <- cbind(select(mytables_ls[["defend_events"]], 
                                                  c("match_id", "defend_id", 
                                                    "event")), 
-                                          lineup_player_id = GetPlayerIds(my_tbl = mytables_ls[["defend_events"]], 
-                                                                          lineups = lineups, 
-                                                                          match_id = match_id),
+                                          lineup_player_id = 
+                                            GetPlayerIds(my_tbl = mytables_ls[["defend_events"]], 
+                                                         lineups = lineups, 
+                                                         match_id = match_id),
                                           select(mytables_ls[["defend_events"]], 
                                                  -c("match_id", "defend_id", 
                                                     "event", "team", 
@@ -339,9 +351,10 @@ SetPlayerInfo <- function(mytables_ls,
   mytables_ls[["def_discp"]] <- cbind(select(mytables_ls[["def_discp"]], 
                                              c("match_id", "defdiscp_id", 
                                                "event")), 
-                                      lineup_player_id = GetPlayerIds(my_tbl = mytables_ls[["def_discp"]], 
-                                                                      lineups = lineups, 
-                                                                      match_id = match_id),
+                                      lineup_player_id = 
+                                        GetPlayerIds(my_tbl = mytables_ls[["def_discp"]], 
+                                                     lineups = lineups, 
+                                                     match_id = match_id),
                                       select(mytables_ls[["def_discp"]], 
                                              -c("match_id", "defdiscp_id", 
                                                 "event", "team", 
@@ -350,9 +363,10 @@ SetPlayerInfo <- function(mytables_ls,
   mytables_ls[["def_notes"]] <- cbind(select(mytables_ls[["def_notes"]], 
                                              c("match_id", "defnotes_id", 
                                                "event")), 
-                                      lineup_player_id = GetPlayerIds(my_tbl = mytables_ls[["def_notes"]], 
-                                                                      lineups = lineups, 
-                                                                      match_id = match_id),
+                                      lineup_player_id = 
+                                        GetPlayerIds(my_tbl = mytables_ls[["def_notes"]], 
+                                                     lineups = lineups, 
+                                                     match_id = match_id),
                                       select(mytables_ls[["def_notes"]], 
                                              -c("match_id", "defnotes_id", 
                                                 "event", "team", 
@@ -363,9 +377,10 @@ SetPlayerInfo <- function(mytables_ls,
 }
 
 GetDefLocation         <- function(mytables_ls) {
+  utils::globalVariables(c("poss_location", "event"))
   poss_events <- mytables_ls[["events"]]
   poss_events2 <- poss_events[c("event", "poss_location")] %>%
-    filter(!is.na(poss_location))
+    filter(!is.na(.data$poss_location))
   def_events <- left_join(mytables_ls[["defend_events"]], 
                           poss_events2, 
                           by = "event")
@@ -373,13 +388,12 @@ GetDefLocation         <- function(mytables_ls) {
   ev_vals_afterint <- poss_events$event[which(poss_events$event %in% ev_vals_int) + 1]
   ev_loc_afterint <- poss_events$poss_location[poss_events$event %in% ev_vals_afterint]
   if (length(ev_vals_int) != length(ev_loc_afterint)) {
-    print(paste("Error: a defend_id is duplicated due to a missing player value"))
-    break
+    stop("A defend_id is duplicated due to a missing player value")
   }
   poss_evs_afterint <- as.data.frame(cbind(event = ev_vals_int,
                                            poss_location_afterint = ev_loc_afterint), 
                                      stringsAsFactors = FALSE) %>%
-    mutate(event = as.numeric(event))
+    mutate(event = as.numeric(.data$event))
   def_events <- left_join(def_events, poss_evs_afterint, by = "event")
   kPossLocation <- c("A6", "A18", "A3L", "A3C", 
                      "A3R", "AM3L", "AM3C", "AM3R", 
@@ -466,134 +480,3 @@ IsCompletedPass        <- function(my_tbl_ls) {
     nev_notrecovery & ev_notbdisruptd & ev_notgkdisrupt & 
     ev_notpossfouled & ev_notballout
 }
-
-matches_tbl <- read_csv("https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/matches.csv", col_types = cols())
-lineups_tbl <- read_csv("https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/lineups.csv", col_types = cols())
-
-library(readxl)
-library(lubridate)
-library(dplyr)
-TidyMatchExcel <- function(filename, 
-                           matches=matches_tbl,
-                           lineups=lineups_tbl) {
-  mypath <- paste(filename, sep="/")
-  match_id <- GetMatchId(path = mypath, matches = matches)
-  match_source <- ReadMatchLog(path = mypath)
-  match_source <- CleanUpCells(match_source)
-  for (i in seq_along(match_source$time)) 
-    if(is.na(match_source$time[i])) 
-      match_source$time[i] <- match_source$time[i-1]
-  match_source <- CalcEventValues(match_source = match_source)
-  match_source <- ExpandAbbrevs(match_source = match_source)
-  mytables_ls <- CreateTables(match_source = match_source, 
-                              match_id = match_id)
-  mytables_ls <- SetPlayerInfo(mytables_ls = mytables_ls,
-                               lineups = lineups_tbl, 
-                               match_id = match_id)
-  if (matches$location_data[matches$match_id == match_id]) {
-    mytables_ls[["defend_events"]]$def_location <- 
-      unlist(GetDefLocation(mytables_ls = mytables_ls))
-  }
-  if (class(mytables_ls[["defend_events"]]$def_location) == "list") {
-    print("Error at line 31: check why def_location is a list")
-    break
-  }
-  mytables_ls[["events"]]$poss_action[IsCompletedPass(mytables_ls)] <- 
-    paste0(mytables_ls[["events"]]$poss_action[IsCompletedPass(mytables_ls)], ".c")
-  mytables_ls
-}
-
-alltables_ls <- list()
-for (i in list.files()) {
-  print(paste("reading ", i, "..."))
-  itables_ls <- TidyMatchExcel(filename = i)
-  print(paste(i, ": excel successfully tidied."))
-  if(!exists("alltables_ls")) {
-    alltables_ls <- itables_ls
-    if (class(alltables_ls[["defend_events"]]$def_location) == "list") {
-      print("Error at line 47: check why def_location is a list")
-      break
-    }
-  } else {
-    alltables_ls[["events"]] <- rbind(alltables_ls[["events"]],
-                                       itables_ls[["events"]])
-    alltables_ls[["ev_type"]] <- rbind(alltables_ls[["ev_type"]],
-                                       itables_ls[["ev_type"]])
-    alltables_ls[["defend_events"]] <- rbind(alltables_ls[["defend_events"]],
-                                        itables_ls[["defend_events"]])
-    if (class(alltables_ls[["defend_events"]]$def_location) == "list") {
-      print("Error at line 58: check why def_location is a list")
-      break
-    }
-    alltables_ls[["poss_discp"]] <- rbind(alltables_ls[["poss_discp"]],
-                                        itables_ls[["poss_discp"]])
-    alltables_ls[["def_discp"]] <- rbind(alltables_ls[["def_discp"]],
-                                        itables_ls[["def_discp"]])
-    alltables_ls[["poss_notes"]] <- rbind(alltables_ls[["poss_notes"]],
-                                        itables_ls[["poss_notes"]])
-    alltables_ls[["def_notes"]] <- rbind(alltables_ls[["def_notes"]],
-                                        itables_ls[["def_notes"]])
-  }
-  print(paste("database has", nrow(alltables_ls[["events"]]), "events", 
-              "and represents", length(unique(alltables_ls[["events"]]$match_id)),
-              "matches"))
-}
-
-alltables_ls[["events"]] <- 
-  cbind(uniq_event_id = c(1000001:
-                            (1000001+nrow(alltables_ls[["events"]])-1)),
-        alltables_ls[["events"]])
-alltables_ls[["ev_type"]] <- 
-  cbind(uniq_evtype_id = c(1000001:
-                             (1000001+nrow(alltables_ls[["ev_type"]])-1)),
-        right_join(select(alltables_ls[["events"]], 
-                          uniq_event_id, match_id, event),
-                   alltables_ls[["ev_type"]],
-                   by = c("match_id", "event")))
-if (class(alltables_ls[["defend_events"]]$def_location) == "list") {
-  print("Error: check why def_location returns a list")
-  break
-}
-alltables_ls[["defend_events"]] <- 
-  cbind(uniq_defend_id = c(1000001:
-                             (1000001+nrow(alltables_ls[["defend_events"]])-1)),
-        right_join(select(alltables_ls[["events"]], 
-                          uniq_event_id, match_id, event),
-                   alltables_ls[["defend_events"]],
-                   by = c("match_id", "event")))
-alltables_ls[["poss_discp"]] <- 
-  cbind(uniq_poss_discp_id = c(1000001:
-                                 (1000001+nrow(alltables_ls[["poss_discp"]])-1)),
-        right_join(select(alltables_ls[["events"]], 
-                          uniq_event_id, match_id, event),
-                   alltables_ls[["poss_discp"]],
-                   by = c("match_id", "event")))
-alltables_ls[["def_discp"]] <- 
-  cbind(uniq_def_discp_id = c(1000001:
-                                (1000001+nrow(alltables_ls[["def_discp"]])-1)),
-        right_join(select(alltables_ls[["events"]], 
-                          uniq_event_id, match_id, event),
-                   alltables_ls[["def_discp"]],
-                   by = c("match_id", "event")))
-alltables_ls[["poss_notes"]] <- 
-  cbind(uniq_poss_notes_id = c(1000001:
-                                 (1000001+nrow(alltables_ls[["poss_notes"]])-1)),
-        right_join(select(alltables_ls[["events"]], 
-                          uniq_event_id, match_id, event),
-                   alltables_ls[["poss_notes"]],
-                   by = c("match_id", "event")))
-alltables_ls[["def_notes"]] <- 
-  cbind(uniq_def_notes_id = c(1000001:
-                                (1000001+nrow(alltables_ls[["def_notes"]])-1)),
-        right_join(select(alltables_ls[["events"]], 
-                          uniq_event_id, match_id, event),
-                   alltables_ls[["def_notes"]],
-                   by = c("match_id", "event")))
-
-# write_csv(alltables_ls[["events"]], "events.csv", na = "")
-# write_csv(alltables_ls[["ev_type"]], "event_type.csv", na = "")
-# write_csv(alltables_ls[["defend_events"]], "defending.csv", na = "")
-# write_csv(alltables_ls[["poss_discp"]], "poss_discipline.csv", na = "")
-# write_csv(alltables_ls[["def_discp"]], "def_discipline.csv", na = "")
-# write_csv(alltables_ls[["poss_notes"]], "poss_notes.csv", na = "")
-# write_csv(alltables_ls[["def_notes"]], "def_notes.csv", na = "")
