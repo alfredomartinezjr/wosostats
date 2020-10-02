@@ -8,7 +8,7 @@ devtools::install_github("alfredomartinezjr/wosostats")
 
 More documentation for the R package is pending.
 
-The database is made up a variety of tables, listed below, that are sourced from Excel match logs.Details of what the various values across the database represent, and how the matches were logged, can be found in the ["How matches are logged"](https://wosostats.com/how-matches-are-logged/) section of the WoSo Stats website. The R package provides functions for accessing all of these tables.
+The database is made up a variety of tables, listed below, that are sourced from Excel match logs. Details of what the various values across the database represent, and how the matches were logged, can be found in the ["How matches are logged"](https://wosostats.com/how-matches-are-logged/) section of the WoSo Stats website. The R package provides functions for accessing all of these tables.
 * [lineups](https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/lineups.csv)
 * [rosters](https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/rosters.csv)
 * [matches](https://wosostats-data-database-public.s3-us-west-1.amazonaws.com/matches.csv)
